@@ -257,14 +257,16 @@ function matchSet(list) {
   for (const w of list) { if (out.length >= 5) break; if (he.has(w.he) || en.has(w.en) || out.some(x => sameMeaning(x, w))) continue; out.push(w); he.add(w.he); en.add(w.en); }
   return out;
 }
-function buildLearn(u) {
+// only = לחיצה על יחידה מסוימת: רק המילים של היחידה. בלי only («המשך ללמוד») נכנסות גם חזרות מכל היחידות
+function buildLearn(u, only) {
   const unit = UNITS[u], t = now();
   const fresh = unit.items.filter(w => !S.w[w.id]).slice(0, 5);
   const used = new Set(fresh.map(w => w.id));
-  const rev = shuffle(introduced().filter(w => ws(w).due <= t)).sort((a, b) => box(a) - box(b)).slice(0, fresh.length ? 6 : 10);
+  const pool = only ? unit.items.filter(w => S.w[w.id]) : introduced();
+  const rev = shuffle(pool.filter(w => ws(w).due <= t)).sort((a, b) => box(a) - box(b)).slice(0, fresh.length ? 6 : 10);
   rev.forEach(w => used.add(w.id));
   const want = fresh.length ? 5 : 10;
-  const extra = [...unit.items, ...shuffle(introduced())].filter(w => S.w[w.id] && !used.has(w.id)).sort((a, b) => box(a) - box(b));
+  const extra = [...unit.items, ...(only ? [] : shuffle(introduced()))].filter(w => S.w[w.id] && !used.has(w.id)).sort((a, b) => box(a) - box(b));
   for (const w of extra) { if (rev.length >= want) break; if (!used.has(w.id)) { rev.push(w); used.add(w.id); } }
   const revQ = rev.map(w => ({ k: 'q', w }));
   const q = [];
@@ -468,7 +470,7 @@ function renderHome() {
 }
 function openUnit(u) {
   if (!unlocked(u)) { toast('קודם תכיר את כל המילים ביחידה הקודמת'); return; }
-  startLesson(buildLearn(u), 'יחידה ' + (u + 1));
+  startLesson(buildLearn(u, true), 'יחידה ' + (u + 1));
 }
 
 function renderLesson() {
@@ -505,7 +507,7 @@ function renderLesson() {
     if (c.type === 'category') h += `<div class="prompt">לאיזו קבוצה המילה שייכת?</div><div class="big"><span class="en">${esc(disp(w.en))}</span> <button class="spk" onclick="say(${w.i})">🔊</button></div>`;
     if (c.type === 'sentence') h += `<div class="prompt">איזו מילה משלימה את המשפט?</div><div class="sent en">${blankSentence(c.sent.s)}</div>`;
     if (c.type === 'type') h += `<div class="prompt">כתוב את המילה באנגלית</div><div class="big he">${esc(w.he)}</div>${chip(w.cat)}${pairHint(w)}`;
-    if (c.type === 'typeSentence') h += `<div class="prompt">השלם את המשפט במילה הנכונה</div><div class="sent en">${blankSentence(c.sent.s)}</div><div class="exhe">${esc(c.sent.sh)}</div>${pairHint(w)}`;
+    if (c.type === 'typeSentence') h += `<div class="prompt">השלם את המשפט במילה הנכונה</div><div class="sent en">${blankSentence(c.sent.s)}</div>${chip(w.cat)}${pairHint(w)}`;
     if (c.opts) {
       const startCap = c.type === 'sentence' && /(^|[.!?]\s+)___/.test(c.sent.s);
       h += `<div class="opts ${c.type === 'meaning' || c.type === 'category' ? '' : 'ltr'}">`;
@@ -533,11 +535,37 @@ function matchBtn(c, w, side, i, label, cls) {
   else if (c.sel && c.sel.side === side && c.sel.idx === i) st = 'sel';
   return `<button class="mt ${cls} ${st}" onclick="matchTap('${side}',${i})" ${st === 'done' ? 'disabled' : ''}>${label}</button>`;
 }
+// «למה לא»: מסבירים למה התשובה שבחרת לא מתאימה — לפי הדקדוק כשהוא שונה, ואחרת לפי המשמעות
+const POS_RULE = {
+  c: 'מילת חיבור: אחריה בא משפט שלם, עם נושא ופועל',
+  p: 'מילת יחס: אחריה בא שם עצם או ing, לא משפט שלם',
+  a: 'מקשרת בין שני משפטים נפרדים, בדרך כלל עם פסיק אחריה',
+  i: 'אחריה בא פועל בצורת המקור (to go)',
+};
+const POS_HERE = {
+  c: 'כאן אחרי החסר בא משפט שלם',
+  p: 'כאן אחרי החסר בא שם עצם',
+  a: 'כאן החסר מחבר בין שני משפטים נפרדים',
+  i: 'כאן אחרי החסר בא פועל',
+};
+function whyNot(w, c) {
+  const chosen = c.opts[c.ans.i];
+  if (c.type === 'category') return `<div class="sh-c">💡 למה לא ${esc(CATS[chosen].he)}? ${esc(CATS[chosen].tip)}. כאן: ${esc(CATS[w.cat].tip)}.</div>`;
+  const x = c.type === 'meaning' ? ITEMS.find(y => y.he === chosen) : (ITEMS.find(y => y.en === chosen && y.pos !== w.pos) || ITEMS.find(y => y.en === chosen));
+  if (c.type === 'meaning') return x ? `<div class="sh-c">💡 «${esc(chosen)}» זה הפירוש של <b class="en">${esc(disp(x.en))}</b>.</div>` : '';
+  const name = `<b class="en">${esc(disp(chosen))}</b>`;
+  if (!x) return `<div class="sh-c">💡 למה לא ${name}? היא לא מתאימה למשמעות של המשפט. כאן צריך «${esc(w.he)}».</div>`;
+  let h = `<div class="sh-c">💡 למה לא ${name}? ${name} = ${esc(x.he)}.`;
+  if (c.type === 'sentence' && x.pos !== w.pos && POS_RULE[x.pos] && POS_HERE[w.pos]) h += ` היא ${POS_RULE[x.pos]}. ${POS_HERE[w.pos]}, ולכן <b class="en">${esc(disp(w.en))}</b>.`;
+  else if (x.cat !== w.cat) h += ` זו ${esc(CATS[x.cat].he)}, וכאן הקשר הוא ${esc(CATS[w.cat].he)}: ${esc(CATS[w.cat].tip)}.`;
+  return h + '</div>';
+}
 function sheet(w, c) {
   const a = c.ans, ok = a.ok;
   const praise = pick(['מעולה!', 'יפה מאוד!', 'נכון!', 'אלוף!', 'בדיוק!']);
   let h = `<div class="sheet ${ok ? 'ok' : 'bad'}"><div class="sh-t">${ok ? '✅ ' + praise : '❌ לא בדיוק'}</div>`;
-  if (!ok) h += `<div class="sh-c">התשובה הנכונה: <b class="en">${esc(c.type === 'category' ? '' : disp(w.en))}</b>${c.type === 'category' ? `<b>${CATS[w.cat].icon} ${CATS[w.cat].he}</b>` : ''}${c.type === 'meaning' ? ` = ${esc(w.he)}` : ''}</div>`;
+  if (!ok) h += `<div class="sh-c">התשובה הנכונה: ${c.type === 'category' ? `<b>${CATS[w.cat].icon} ${CATS[w.cat].he}</b>` : `<b class="en">${esc(disp(w.en))}</b>`}${c.type === 'meaning' ? ` = ${esc(w.he)}` : ''}</div>`;
+  if (!ok && c.opts && a.i !== undefined) h += whyNot(w, c);
   if (a.typo) h += `<div class="sh-c">שים לב לאיות: <b class="en">${esc(w.en)}</b></div>`;
   if (a.alt) h += `<div class="sh-c">גם נכון! המילה שתרגלנו כאן: <b class="en">${esc(disp(w.en))}</b></div>`;
   h += `<div class="sh-i"><b class="en">${esc(disp(w.en))}</b> = ${esc(w.he)} ${chip(w.cat)}</div>`;
