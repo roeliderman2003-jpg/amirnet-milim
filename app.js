@@ -87,7 +87,10 @@ for (const lvl of [1, 2, 3]) {
 return UNITS;
 }
 setTopic('link');
-const LEVEL_NAMES = { 1: 'שלב 1 · בסיס', 2: 'שלב 2 · בינוני', 3: 'שלב 3 · מתקדם' };
+// שלבים לפי הסדר שבו הם מופיעים בנושא (באוצר המילים אין שלב בסיס, כי המילים הקלות הוסרו)
+const LEVEL_HE = { 1: 'בסיס', 2: 'בינוני', 3: 'מתקדם' };
+const levelsOf = () => [...new Set(UNITS.map(u => u.lvl))];
+const levelName = lvl => `שלב ${levelsOf().indexOf(lvl) + 1} · ${LEVEL_HE[lvl]}`;
 
 // ===== שמירה וחשבון =====
 // כניסה עם Google בלבד (Supabase Auth). ההתקדמות נשמרת בדפדפן (עותק מהיר) ובענן; הגרסה עם savedAt החדש יותר מנצחת.
@@ -312,7 +315,7 @@ function unitInfo(u) {
   return { intro, total: its.length, score, done: its.every(w => box(w) >= MASTER) };
 }
 // דילוג: מי שמרגיש ברמה גבוהה יותר קופץ ליחידה מסוימת. כל היחידות עד אליה נפתחות, ו«המשך ללמוד» ממשיך משם
-const jumpOf = () => (S.jump && S.jump[topic]) || 0;
+const jumpOf = () => Math.min((S.jump && S.jump[topic]) || 0, UNITS.length - 1);
 function unlocked(u) { return u === 0 || u <= jumpOf() || UNITS[u - 1].items.every(w => S.w[w.id]); }
 function currentUnit() {
   for (let u = jumpOf(); u < UNITS.length; u++) if (UNITS[u].items.some(w => !S.w[w.id])) return u;
@@ -574,7 +577,7 @@ function renderHome() {
   h += `<div class="row"><button class="btn blue" onclick="startLesson(buildReview(),'חזרה')">🔁 חזרה${dueN ? ` (${dueN})` : ''}</button><button class="btn ghost" onclick="startLesson(buildWeak(),'נקודות חלשות')">🎯 חלשות${weakN ? ` (${weakN})` : ''}</button></div>`;
   let lvl = 0;
   UNITS.forEach((un, u) => {
-    if (un.lvl !== lvl) { lvl = un.lvl; h += `<h2 class="sec lvlh"><span>${LEVEL_NAMES[lvl]}</span>${!unlocked(u) ? `<button class="skip" onclick="jumpTo(${u})">⏭️ לדלג לשלב הזה</button>` : ''}</h2>`; }
+    if (un.lvl !== lvl) { lvl = un.lvl; h += `<h2 class="sec lvlh"><span>${levelName(lvl)}</span>${!unlocked(u) ? `<button class="skip" onclick="jumpTo(${u})">⏭️ לדלג לשלב הזה</button>` : ''}</h2>`; }
     const inf = unitInfo(u), lock = !unlocked(u), k = CATS[un.cats[0]];
     const names = un.cats.map(c => CATS[c].he).join(' · ');
     h += `<button class="unit ${lock ? 'locked' : ''} ${u === cu ? 'cur' : ''}" onclick="openUnit(${u})">
@@ -733,7 +736,7 @@ function renderSettings() {
   return topBar() + `<main><h2 class="sec">⚙️ הגדרות</h2>
     <div class="card"><label class="sw"><input type="checkbox" ${S.sound ? 'checked' : ''} onchange="S.sound=this.checked;save()"> צלילים והקראה של המילים</label></div>
     <div class="card"><b>איך זה עובד</b>
-      <p>${TOPICS[topic].icon} ${TOPICS[topic].he}: ${ITEMS.length} מילים ב-${UNITS.length} יחידות ו-3 שלבים, מהקל לקשה. ${topic === 'link' ? 'כל מילה עוברת 3 פורמטים: פירוש ← קבוצה ← השלמת משפט. היא נחשבת «שולט» 👑 אחרי כמה השלמות משפט נכונות ברצף, במשפטים שונים.' : 'כל מילה עוברת 4 פורמטים: פירוש ← תרגום לאנגלית ← השלמת משפט ← כתיבה לבד. היא נחשבת «שולט» 👑 רק אחרי שכתבת אותה נכון.'}</p>
+      <p>${TOPICS[topic].icon} ${TOPICS[topic].he}: ${ITEMS.length} מילים ב-${UNITS.length} יחידות ו-${levelsOf().length} שלבים, מהקל לקשה. ${topic === 'link' ? 'כל מילה עוברת 3 פורמטים: פירוש ← קבוצה ← השלמת משפט. היא נחשבת «שולט» 👑 אחרי כמה השלמות משפט נכונות ברצף, במשפטים שונים.' : 'כל מילה עוברת 4 פורמטים: פירוש ← תרגום לאנגלית ← השלמת משפט ← כתיבה לבד. היא נחשבת «שולט» 👑 רק אחרי שכתבת אותה נכון.'}</p>
       <p>טעית? המילה יורדת שלב וחוזרת עוד באותו שיעור ובשיעור הבא. צדקת? היא חוזרת אחרי 10 דקות, שעה, 4 שעות, 10 שעות, יום ויומיים.</p>
       <p>יעד: ${planDays()} ימים (לכל נושא יעד משלו). כל יום כתוב בכרטיס הראשי כמה מילים חדשות צריך כדי לעמוד ביעד. מומלץ לפתוח «חזרה» כמה פעמים ביום, גם ל-5 דקות.</p></div>
     <div class="card"><b>👤 ${esc(ME.name)}</b><p><span class="en">${esc(ME.email || '')}</span><br>ההתקדמות נשמרת בחשבון ${syncIcon()} ${sync === 'ok' ? 'הכול מגובה' : sync === 'wait' ? 'שומר...' : 'לא נשמר כרגע (אין אינטרנט?), ייקלט כשיחזור החיבור'}. אפשר להיכנס עם אותו חשבון Google מכל טלפון או מחשב.</p>

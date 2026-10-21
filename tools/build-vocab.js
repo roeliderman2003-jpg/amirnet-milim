@@ -41,6 +41,13 @@ if (fs.existsSync(listFile)) {
   if (missing.length) errs.push(`חסרות ${missing.length} מילים מהרשימה: ${missing.slice(0, 30).join(', ')}${missing.length > 30 ? ' ...' : ''}`);
   if (extra.length) errs.push(`${extra.length} מילים שלא ברשימה: ${extra.slice(0, 30).join(', ')}`);
 }
+// מילים קלות מדי (רועי 21/10): נשארות במקור ובבדיקת הכיסוי, אבל לא נכנסות לאפליקציה. רשימה ב-drop.json
+const dropFile = path.join(src, 'drop.json');
+const drop = new Set(fs.existsSync(dropFile) ? JSON.parse(fs.readFileSync(dropFile, 'utf8')).words.map(w => w.toLowerCase()) : []);
+[...drop].filter(w => !seen.has(w)).forEach(w => errs.push(`drop.json: ${w} לא קיימת במקור`));
+const all = rows.length;
+for (let i = rows.length - 1; i >= 0; i--) if (drop.has(rows[i][0].toLowerCase())) rows.splice(i, 1);
+if (drop.size) console.log(`הוסרו ${all - rows.length} מילים קלות (drop.json)`);
 const byCat = {}, byLvl = {};
 rows.forEach(r => { byCat[r[2]] = (byCat[r[2]] || 0) + 1; byLvl[r[4]] = (byLvl[r[4]] || 0) + 1; });
 console.log(`${rows.length} מילים מ-${files.length} קבצים · רמות ${JSON.stringify(byLvl)}`);
