@@ -238,7 +238,7 @@ function renderSimQuestion() {
     h += `<button class="simtog" onclick="simToggleText()">${SM.showText ? '▲ להסתיר את הקטע' : '▼ להציג את הקטע'}</button>`;
     if (SM.showText) h += simPassage(c);
   }
-  h += `<div class="prompt simq">${SM.qi + 1}. ${c.type === 'sc' ? 'השלימו את המשפט' : c.type === 'rs' ? 'איזה משפט אומר את אותו הדבר?' : 'שאלה על הקטע'}</div>`;
+  h += `<div class="prompt simq">${SM.qi + 1}. ${c.type === 'sc' ? 'השלימו את המשפט' : c.type === 'rs' ? 'איזה משפט אומר את אותו הדבר?' : 'שאלה על הקטע'}${simFlag(SM.ch, SM.qi)}</div>`;
   if (c.type === 'sc') h += `<div class="sent en">${simBlank(q.q)}</div>`;
   else h += `<div class="sent en simsrc">${esc(q.q)}</div>`;
   h += `<div class="opts simopts">${q.o.map((o, i) => `<button class="opt en ${a === i ? 'sel' : ''}" onclick="simPick(${i})"><span class="simn">${i + 1}</span>${esc(o)}</button>`).join('')}</div></main>`;
@@ -249,6 +249,12 @@ function renderSimQuestion() {
 }
 function simPassage(c) {
   return `<div class="simtext en"><b>${esc(c.title || '')}</b>${c.text.map((p, i) => `<p><span class="simpn">(${i + 1})</span> ${esc(p)}</p>`).join('')}</div>`;
+}
+// דיווח על טעות בשאלה (openReport ב-app.js שומר ב-amirnet_report ושולח לרועי בווצאפ)
+function simFlag(ci, qi) { return typeof openReport === 'function' ? `<button class="simflag" onclick="event.stopPropagation();simReport(${ci},${qi})" title="מצאת טעות? דווח" aria-label="דיווח על טעות">🚩</button>` : ''; }
+function simReport(ci, qi) {
+  const c = SM.chs[ci], q = c.qs[qi], my = (SM.rec ? SM.rec.ans : SM.ans)[ci][qi];
+  openReport({ item: `sim:${c.ref}:${qi + 1}`, topic: 'sim', q: { type: { sc: 'sentence', rs: 'restatement', rc: 'reading' }[c.type], text: q.q, options: q.o.join(' / '), correct: q.o[q.a], chosen: my >= 0 ? q.o[my] : '' } });
 }
 function simToggleOpen(k) { simOpen[k] = !simOpen[k]; render(); }
 function renderSimResult() {
@@ -284,7 +290,7 @@ function renderSimResult() {
     c.qs.forEach((q, qi) => {
       num++;
       const my = ans[ci][qi], ok = my === q.a, k = ci + ':' + qi, open = simOpen[k] === undefined ? !ok : simOpen[k];
-      h += `<div class="simr ${ok ? 'ok' : 'bad'}"><div class="simrh" onclick="simOpen['${k}']=${!open};render()"><span>${ok ? '✅' : '❌'} ${num}.</span><span class="en simrq">${esc(c.type === 'sc' ? q.q.replace(/___/g, '____') : q.q)}</span><span class="simar">${open ? '▲' : '▼'}</span></div>`;
+      h += `<div class="simr ${ok ? 'ok' : 'bad'}"><div class="simrh" onclick="simOpen['${k}']=${!open};render()"><span>${ok ? '✅' : '❌'} ${num}.</span><span class="en simrq">${esc(c.type === 'sc' ? q.q.replace(/___/g, '____') : q.q)}</span>${simFlag(ci, qi)}<span class="simar">${open ? '▲' : '▼'}</span></div>`;
       if (open) {
         h += `<div class="simrb">${q.o.map((o, i) => `<div class="simro ${i === q.a ? 'right' : i === my ? 'wrong' : ''}"><span class="simn">${i + 1}</span><span class="en">${esc(o)}</span>${i === q.a ? ' ✓' : i === my ? ' ✗' : ''}</div>`).join('')}
           ${my < 0 ? '<div class="sh-s">לא סימנת תשובה (נחשב טעות).</div>' : ''}
@@ -321,6 +327,8 @@ function simTip(by) {
 .simtile.did .simtb b{color:var(--gd)}
 .simbest{color:var(--mut);font-size:12px}
 .simtr{background:var(--soft);border:0;border-top:2px solid var(--line);padding:8px;font-weight:700;color:var(--bd);font-size:13px}
+.simflag{background:none;border:0;font-size:15px;padding:0 6px;opacity:.55;vertical-align:middle;cursor:pointer}
+.simflag:hover{opacity:1}
 .simpath{font-size:14px;color:var(--mut);font-weight:700;margin-top:4px}
 .simrec{font-size:12px;background:var(--g);color:#fff;border-radius:99px;padding:2px 10px;vertical-align:middle;margin-right:6px}
 .simhead{gap:10px;border-bottom:2px solid var(--line)}
