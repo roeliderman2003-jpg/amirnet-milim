@@ -284,8 +284,19 @@ function unitInfo(u) {
   const score = its.reduce((a, w) => a + Math.min(MASTER, box(w)), 0) / (its.length * MASTER);
   return { intro, total: its.length, score, done: its.every(w => box(w) >= MASTER) };
 }
-function unlocked(u) { return u === 0 || UNITS[u - 1].items.every(w => S.w[w.id]); }
-function currentUnit() { for (let u = 0; u < UNITS.length; u++) if (UNITS[u].items.some(w => !S.w[w.id])) return u; return -1; }
+// דילוג: מי שמרגיש ברמה גבוהה יותר קופץ ליחידה מסוימת. כל היחידות עד אליה נפתחות, ו«המשך ללמוד» ממשיך משם
+const jumpOf = () => (S.jump && S.jump[topic]) || 0;
+function unlocked(u) { return u === 0 || u <= jumpOf() || UNITS[u - 1].items.every(w => S.w[w.id]); }
+function currentUnit() {
+  for (let u = jumpOf(); u < UNITS.length; u++) if (UNITS[u].items.some(w => !S.w[w.id])) return u;
+  for (let u = 0; u < jumpOf(); u++) if (UNITS[u].items.some(w => !S.w[w.id])) return u;
+  return -1;
+}
+function jumpTo(u, start) {
+  S.jump = Object.assign({}, S.jump, { [topic]: u }); save();
+  if (start) startLesson(buildLearn(u, true), 'יחידה ' + (u + 1));
+  else { toast('קפצת ליחידה ' + (u + 1) + '. היחידות שלפניה פתוחות, ואפשר לחזור אליהן מתי שתרצה'); render(); }
+}
 function matchSet(list) {
   const out = [], he = new Set(), en = new Set();
   for (const w of list) { if (out.length >= 5) break; if (he.has(w.he) || en.has(w.en) || out.some(x => sameMeaning(x, w))) continue; out.push(w); he.add(w.he); en.add(w.en); }
@@ -501,7 +512,7 @@ function renderHome() {
   h += `<div class="row"><button class="btn blue" onclick="startLesson(buildReview(),'חזרה')">🔁 חזרה${dueN ? ` (${dueN})` : ''}</button><button class="btn ghost" onclick="startLesson(buildWeak(),'נקודות חלשות')">🎯 חלשות${weakN ? ` (${weakN})` : ''}</button></div>`;
   let lvl = 0;
   UNITS.forEach((un, u) => {
-    if (un.lvl !== lvl) { lvl = un.lvl; h += `<h2 class="sec">${LEVEL_NAMES[lvl]}</h2>`; }
+    if (un.lvl !== lvl) { lvl = un.lvl; h += `<h2 class="sec lvlh"><span>${LEVEL_NAMES[lvl]}</span>${!unlocked(u) ? `<button class="skip" onclick="jumpTo(${u})">⏭️ לדלג לשלב הזה</button>` : ''}</h2>`; }
     const inf = unitInfo(u), lock = !unlocked(u), k = CATS[un.cats[0]];
     const names = un.cats.map(c => CATS[c].he).join(' · ');
     h += `<button class="unit ${lock ? 'locked' : ''} ${u === cu ? 'cur' : ''}" onclick="openUnit(${u})">
@@ -514,7 +525,7 @@ function renderHome() {
   return h + '</main>' + navBar();
 }
 function openUnit(u) {
-  if (!unlocked(u)) { toast('קודם תכיר את כל המילים ביחידה הקודמת'); return; }
+  if (!unlocked(u)) { if (confirm('לדלג ליחידה ' + (u + 1) + '? כל היחידות שלפניה יישארו פתוחות, ואפשר לחזור אליהן מתי שתרצה.')) jumpTo(u, true); return; }
   startLesson(buildLearn(u, true), 'יחידה ' + (u + 1));
 }
 
