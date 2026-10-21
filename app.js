@@ -404,10 +404,10 @@ function knowSome() {
 function knowIt() {
   const w = L.q[0].w;
   markKnown(w); dropFromLesson(w);
-  toast('הועברה ל«מילים שאני מכיר». אפשר להחזיר אותה מהמילון');
+  toast('✓ נוסף למילים שאני מכיר');
   next();
 }
-function knowFromSheet() { const w = L.q[0].w; markKnown(w); dropFromLesson(w); toast('הועברה ל«מילים שאני מכיר»'); next(); }
+function knowFromSheet() { const w = L.q[0].w; markKnown(w); dropFromLesson(w); toast('✓ נוסף למילים שאני מכיר'); next(); }
 // טעות בבחירה: זוכרים עם מה התבלבלת, ומציגים בסוף השיעור
 function noteConfusion(w, c, chosen) {
   const other = c.type === 'meaning' ? ITEMS.find(x => x.he === chosen) : c.type === 'category' ? null : ITEMS.find(x => x.en === chosen);
@@ -775,8 +775,8 @@ function toast(t) {
   const el = document.createElement('div');
   el.className = 'toast'; el.textContent = t;
   document.body.appendChild(el);
-  setTimeout(() => el.classList.add('out'), 2200);
-  setTimeout(() => el.remove(), 2600);
+  setTimeout(() => el.classList.add('out'), 1400);
+  setTimeout(() => el.remove(), 1750);
 }
 function render() {
   const app = document.getElementById('app');
