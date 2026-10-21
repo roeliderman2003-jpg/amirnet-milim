@@ -27,6 +27,7 @@ async function runLesson(P, T, wrongRate, given) {
     }
     const w = it.w;
     T[c.type] = (T[c.type] || 0) + 1;
+    chk(!(w.topic === 'link' && (c.type === 'type' || c.type === 'typeSentence')), 'שאלת כתיבה במילות קישור ' + w.en, P);
     const wrong = Math.random() < wrongRate;
     if (c.opts) {
       chk(c.opts.length === 4, `${c.type} ${w.en}: ${c.opts.length} אפשרויות`, P);

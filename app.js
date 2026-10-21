@@ -208,11 +208,16 @@ function say(i) { speak(ALL[i].en, true); }
 
 // ===== חזרה מרווחת =====
 function introduce(w) { S.w[w.id] = { b: 0, due: now(), ok: 0, bad: 0, intro: now() }; const d = today(), k = freshKey(w.topic); d[k] = (d[k] || 0) + 1; save(); }
-function typeFor(b) {
-  const opts = b <= 0 ? ['meaning'] : b === 1 ? ['meaning', 'reverse', 'category'] : b === 2 ? ['reverse', 'category', 'sentence']
+// במילות קישור אין כתיבה: כמעט תמיד יש כמה מילים שמתאימות (רועי 21/10). השלמת משפט מחליפה אותה ומעלה עד «שולט»
+const noTyping = w => w.topic === 'link';
+const capOf = (w, type) => noTyping(w) && type === 'sentence' ? CAP.typeSentence : CAP[type];
+function typeFor(w) {
+  const b = box(w);
+  let opts = b <= 0 ? ['meaning'] : b === 1 ? ['meaning', 'reverse', 'category'] : b === 2 ? ['reverse', 'category', 'sentence']
     : b === 3 ? ['sentence', 'sentence', 'typeSentence'] : b === 4 ? ['type', 'typeSentence', 'sentence'] : ['type', 'typeSentence', 'typeSentence', 'sentence'];
+  if (noTyping(w)) opts = opts.map(t => t === 'type' || t === 'typeSentence' ? 'sentence' : t);
   // תרגיל שהתקרה שלו כבר הושגה לא מקדם את המילה, אז בוחרים קשה ממנו
-  const up = opts.filter(t => CAP[t] > b);
+  const up = opts.filter(t => capOf(w, t) > b);
   return pick(up.length ? up : opts);
 }
 function easier(t) { return { type: 'sentence', typeSentence: 'sentence', sentence: 'reverse', reverse: 'meaning', category: 'meaning' }[t] || 'meaning'; }
@@ -221,7 +226,7 @@ function grade(w, type, ok) {
   d.ans++;
   if (ok) {
     s.ok++; d.ok++; s.run = (s.run || 0) + 1;
-    if (s.b < CAP[type]) s.b++;
+    if (s.b < capOf(w, type)) s.b++;
     s.due = t + INT[s.b] * 60000;
     S.xp += 10; d.xp += 10; if (L) { L.xp += 10; L.ok++; }
   } else {
@@ -377,7 +382,7 @@ function prepare() {
   const w = it.w;
   if (w.topic !== topic) setTopic(w.topic); // מילה מנושא אחר (למשל מסימולציה): מסיחים וקבוצות מהנושא שלה
   if (!S.w[w.id]) introduce(w);
-  let type = it.type || typeFor(box(w));
+  let type = it.type || typeFor(w);
   // באוצר מילים אין שאלות «לאיזו קבוצה» (רועי 21/10). במקומן: איך אומרים באנגלית
   if (type === 'category' && w.topic === 'vocab') type = 'reverse';
   const c = { k: 'q', type, ans: null };
@@ -546,7 +551,7 @@ function renderHome() {
       <span class="bar sm"><i style="width:${Math.round(inf.score * 100)}%;background:${inf.done ? 'var(--y)' : 'var(--g)'}"></i></span>
       <span class="us">${inf.intro}/${inf.total} מילים · ${Math.round(inf.score * 100)}% שליטה</span></span></button>`;
   });
-  h += `<p class="foot">טעית? המילה תחזור בקרוב. צדקת? היא תחזור בעוד יותר זמן. כל מילה עוברת מפירוש, לקבוצה, למשפט ובסוף לכתיבה.</p>`;
+  h += `<p class="foot">טעית? המילה תחזור בקרוב. צדקת? היא תחזור בעוד יותר זמן. ${topic === 'link' ? 'כל מילה עוברת מפירוש, לקבוצה ובסוף להשלמת משפטים.' : 'כל מילה עוברת מפירוש, לתרגום לאנגלית, למשפט ובסוף לכתיבה.'}</p>`;
   return h + '</main>' + navBar();
 }
 function openUnit(u) {
@@ -695,7 +700,7 @@ function renderSettings() {
   return topBar() + `<main><h2 class="sec">⚙️ הגדרות</h2>
     <div class="card"><label class="sw"><input type="checkbox" ${S.sound ? 'checked' : ''} onchange="S.sound=this.checked;save()"> צלילים והקראה של המילים</label></div>
     <div class="card"><b>איך זה עובד</b>
-      <p>${TOPICS[topic].icon} ${TOPICS[topic].he}: ${ITEMS.length} מילים ב-${UNITS.length} יחידות ו-3 שלבים, מהקל לקשה. כל מילה עוברת 4 פורמטים: פירוש ← קבוצה ← השלמת משפט ← כתיבה לבד. היא נחשבת «שולט» 👑 רק אחרי שכתבת אותה נכון.</p>
+      <p>${TOPICS[topic].icon} ${TOPICS[topic].he}: ${ITEMS.length} מילים ב-${UNITS.length} יחידות ו-3 שלבים, מהקל לקשה. ${topic === 'link' ? 'כל מילה עוברת 3 פורמטים: פירוש ← קבוצה ← השלמת משפט. היא נחשבת «שולט» 👑 אחרי כמה השלמות משפט נכונות ברצף, במשפטים שונים.' : 'כל מילה עוברת 4 פורמטים: פירוש ← תרגום לאנגלית ← השלמת משפט ← כתיבה לבד. היא נחשבת «שולט» 👑 רק אחרי שכתבת אותה נכון.'}</p>
       <p>טעית? המילה יורדת שלב וחוזרת עוד באותו שיעור ובשיעור הבא. צדקת? היא חוזרת אחרי 10 דקות, שעה, 4 שעות, 10 שעות, יום ויומיים.</p>
       <p>יעד: ${planDays()} ימים (לכל נושא יעד משלו). כל יום כתוב בכרטיס הראשי כמה מילים חדשות צריך כדי לעמוד ביעד. מומלץ לפתוח «חזרה» כמה פעמים ביום, גם ל-5 דקות.</p></div>
     <div class="card"><b>👤 ${esc(ME.name)}</b><p><span class="en">${esc(ME.email || '')}</span><br>ההתקדמות נשמרת בחשבון ${syncIcon()} ${sync === 'ok' ? 'הכול מגובה' : sync === 'wait' ? 'שומר...' : 'לא נשמר כרגע (אין אינטרנט?), ייקלט כשיחזור החיבור'}. אפשר להיכנס עם אותו חשבון Google מכל טלפון או מחשב.</p>
