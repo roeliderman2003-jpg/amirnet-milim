@@ -129,6 +129,8 @@ main{flex:1;padding:16px 16px 100px}
 .login h1{margin:0;font-size:26px}
 .sub{margin:0 0 10px;color:var(--mut)}
 .login .search{text-align:right;font-size:18px}
+.gbtn{display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#3c3c3c;border:2px solid var(--line);box-shadow:0 4px 0 var(--line);font-size:17px}
+.gbtn:active{box-shadow:0 1px 0 var(--line)}
 .lmsg{min-height:20px;color:var(--rd);font-weight:600;font-size:14px}
 .toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:#3c3c3c;color:#fff;padding:12px 18px;border-radius:14px;z-index:20;font-weight:600;max-width:90vw;text-align:center;transition:opacity .4s}
 .toast.out{opacity:0}
@@ -137,6 +139,7 @@ main{flex:1;padding:16px 16px 100px}
 <body>
 <div id="app"></div>
 <script src="words.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script src="cloud.js"></script>
 <script src="app.js"></script>
 </body>
