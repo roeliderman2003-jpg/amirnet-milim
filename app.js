@@ -1,6 +1,7 @@
 'use strict';
 // ===== נתונים =====
 const ITEMS = RAW.map((r, i) => ({ id: r[0] + '|' + r[2], en: r[0], he: r[1], cat: r[2], pos: r[3], lvl: r[4], s: r[5], sh: r[6], note: r[7] || null, d: r[8] || null, i }));
+if (typeof S2 !== 'undefined') ITEMS.forEach(w => { if (S2[w.id]) w.s2 = { s: S2[w.id][0], sh: S2[w.id][1] }; });
 const CAT_KEYS = Object.keys(CATS);
 const INT = [1, 10, 60, 240, 600, 1440, 2880, 4320]; // דקות עד החזרה הבאה, לפי תיבה
 const CAP = { meaning: 2, match: 2, category: 3, reverse: 3, sentence: 4, type: 7, typeSentence: 7 }; // תרגיל קל לא מעלה מעבר לתיבה הזו
@@ -11,6 +12,33 @@ const KEY = 'amirnet-milim-v1';
 // מילים עם כמה משמעויות לא משמשות כמסיחים, כי הן יכולות להתאים לכמה משפטים
 const AMBIG = new Set(['as', 'for', 'since', 'while', 'still', 'once', 'so', 'yet', 'like', 'that', 'through', 'even', 'apart from', 'besides', 'also', 'too', 'as well',
   'in fact', 'actually', 'indeed', 'especially', 'mainly', 'overall', 'undoubtedly', 'essentially', 'primarily', 'chiefly', 'notably', 'above all', 'ultimately', 'after all', 'otherwise']);
+// מילים שאפשר להחליף זו בזו באותו משפט: מתקבלות בכתיבה, ולא מופיעות יחד כמסיחים או בהתאמה
+const SYN_GROUPS = [
+  ['although', 'even though', 'though'], ['despite', 'in spite of', 'notwithstanding'],
+  ['nevertheless', 'nonetheless', 'even so', 'all the same', 'still', 'yet', 'however'],
+  ['whereas', 'while'], ['in contrast', 'on the other hand'],
+  ['moreover', 'furthermore', 'in addition', 'additionally', "what's more", 'besides'], ['also', 'too', 'as well'],
+  ['in addition to', 'as well as', 'along with', 'coupled with'],
+  ['because', 'since', 'as', 'for', 'seeing that', 'inasmuch as', 'given that'],
+  ['because of', 'due to', 'owing to', 'on account of', 'as a result of', 'thanks to'],
+  ['therefore', 'thus', 'consequently', 'hence', 'as a result', 'accordingly', 'for this reason', 'so'],
+  ['in order to', 'so as to'], ['so that', 'in order that'],
+  ['provided that', 'providing', 'as long as', 'on condition that', 'only if'],
+  ['for example', 'for instance', 'e.g.'], ['that is', 'i.e.', 'in other words', 'namely'], ['such as', 'like', 'including'],
+  ['in particular', 'especially', 'notably', 'specifically'], ['mainly', 'chiefly', 'primarily', 'essentially', 'above all'],
+  ['in conclusion', 'to sum up', 'in short', 'in brief', 'overall'], ['in fact', 'actually', 'indeed'],
+  ['eventually', 'ultimately'], ['similarly', 'likewise', 'in the same way', 'equally', 'correspondingly'], ['similar to', 'like', 'compared to'],
+  ['except', 'except for', 'apart from', 'aside from', 'other than', 'besides'], ['instead of', 'rather than'],
+  ['hardly', 'barely', 'scarcely'], ['rarely', 'seldom'], ['almost', 'nearly', 'virtually'], ['merely', 'solely'],
+  ['regarding', 'concerning', 'as for', 'with regard to', 'in terms of'], ['through', 'via', 'by means of'],
+  ['meanwhile', 'in the meantime', 'simultaneously'], ['afterwards', 'subsequently', 'thereafter'], ['previously', 'formerly'], ['prior to', 'before'],
+  ['as soon as', 'once', 'when'], ['who', 'that', 'whom'], ['which', 'that'], ['whereby', 'in which'],
+];
+const SYN = {};
+SYN_GROUPS.forEach(g => g.forEach(e => { SYN[e] = SYN[e] || new Set(); g.forEach(x => SYN[e].add(x)); }));
+const syn = (a, b) => a === b || !!(SYN[a] && SYN[a].has(b));
+const heParts = w => new Set(w.he.split(/[,;]/).map(x => x.replace(/\(.*?\)/g, '').replace(/\.\.\./g, '').trim()).filter(Boolean));
+const sameMeaning = (a, b) => syn(a.en, b.en) || [...heParts(a)].some(x => heParts(b).has(x));
 
 // יחידות: לפי רמה, ובתוך כל רמה לפי קבוצה, עד ~8 מילים ביחידה
 const UNITS = [];
@@ -148,24 +176,23 @@ function say(i) { speak(ITEMS[i].en, true); }
 // ===== חזרה מרווחת =====
 function introduce(w) { S.w[w.id] = { b: 0, due: now(), ok: 0, bad: 0, intro: now() }; today().fresh++; save(); }
 function typeFor(b) {
-  if (b <= 0) return 'meaning';
-  if (b === 1) return pick(['meaning', 'reverse', 'category']);
-  if (b === 2) return pick(['reverse', 'category', 'sentence']);
-  if (b === 3) return pick(['sentence', 'sentence', 'reverse']);
-  if (b === 4) return pick(['type', 'typeSentence', 'sentence']);
-  return pick(['type', 'typeSentence', 'typeSentence', 'sentence']);
+  const opts = b <= 0 ? ['meaning'] : b === 1 ? ['meaning', 'reverse', 'category'] : b === 2 ? ['reverse', 'category', 'sentence']
+    : b === 3 ? ['sentence', 'sentence', 'typeSentence'] : b === 4 ? ['type', 'typeSentence', 'sentence'] : ['type', 'typeSentence', 'typeSentence', 'sentence'];
+  // תרגיל שהתקרה שלו כבר הושגה לא מקדם את המילה, אז בוחרים קשה ממנו
+  const up = opts.filter(t => CAP[t] > b);
+  return pick(up.length ? up : opts);
 }
 function easier(t) { return { type: 'sentence', typeSentence: 'sentence', sentence: 'reverse', reverse: 'meaning', category: 'meaning' }[t] || 'meaning'; }
 function grade(w, type, ok) {
   const s = ws(w), t = now(), d = today();
   d.ans++;
   if (ok) {
-    s.ok++; d.ok++;
+    s.ok++; d.ok++; s.run = (s.run || 0) + 1;
     if (s.b < CAP[type]) s.b++;
     s.due = t + INT[s.b] * 60000;
     S.xp += 10; d.xp += 10; if (L) { L.xp += 10; L.ok++; }
   } else {
-    s.bad++;
+    s.bad++; s.run = 0;
     s.b = Math.max(0, s.b - (DROP[type] || 2));
     s.due = t + 60000;
     if (L) L.bad++;
@@ -174,11 +201,14 @@ function grade(w, type, ok) {
   save();
 }
 
+// מילה חלשה = טעית בה, ועוד לא ענית עליה נכון פעמיים ברצף מאז
+function isWeak(w) { const s = S.w[w.id]; return !!s && s.bad > 0 && (s.run !== undefined ? s.run < 2 : s.b < 3); }
+
 // ===== מסיחים =====
-function farPool(w) { return ITEMS.filter(x => x.cat !== w.cat && !near(x.cat, w.cat) && x.en !== w.en); }
+function farPool(w) { return ITEMS.filter(x => x.cat !== w.cat && !near(x.cat, w.cat) && x.en !== w.en && !sameMeaning(x, w)); }
 function meaningDistractors(w) {
   const out = [];
-  for (const x of shuffle(farPool(w))) { if (out.length >= 3) break; if (x.he !== w.he && !out.includes(x.he)) out.push(x.he); }
+  for (const x of shuffle(farPool(w))) { if (out.length >= 3) break; if (!sameMeaning(x, w) && !out.includes(x.he)) out.push(x.he); }
   return out;
 }
 function reverseDistractors(w) {
@@ -190,7 +220,7 @@ function reverseDistractors(w) {
 }
 function sentenceOptions(w) {
   if (w.d) return shuffle([w.en, ...w.d.slice(0, 3)]);
-  const pool = farPool(w).filter(x => x.cat !== 'rel' && x.cat !== 'deg' && !x.en.includes('...') && !AMBIG.has(x.en));
+  const pool = farPool(w).filter(x => !syn(x.en, w.en) && x.cat !== 'rel' && x.cat !== 'deg' && !x.en.includes('...') && !AMBIG.has(x.en));
   const same = shuffle(pool.filter(x => x.pos === w.pos)), other = shuffle(pool.filter(x => x.pos !== w.pos));
   const out = [];
   for (const x of [...same, ...other]) { if (out.length >= 3) break; if (!out.includes(x.en)) out.push(x.en); }
@@ -207,9 +237,9 @@ function checkTyped(w, input) {
   const a = norm(input), t = norm(w.en);
   if (!a) return null;
   if (a === t) return { ok: true };
-  if (t.length >= 5 && lev(a, t) <= 1) return { ok: true, typo: true };
-  const alt = ITEMS.find(x => x !== w && x.cat === w.cat && x.pos === w.pos && norm(x.en) === a);
-  if (alt) return { ok: true, alt };
+  const other = ITEMS.find(x => norm(x.en) === a);
+  if (other) return syn(other.en, w.en) ? { ok: true, alt: other } : { ok: false };
+  if (t.length >= 5 && lev(a, t) <= (t.length >= 9 ? 2 : 1)) return { ok: true, typo: true };
   return { ok: false };
 }
 
@@ -224,7 +254,7 @@ function unlocked(u) { return u === 0 || UNITS[u - 1].items.every(w => S.w[w.id]
 function currentUnit() { for (let u = 0; u < UNITS.length; u++) if (UNITS[u].items.some(w => !S.w[w.id])) return u; return -1; }
 function matchSet(list) {
   const out = [], he = new Set(), en = new Set();
-  for (const w of list) { if (out.length >= 5) break; if (he.has(w.he) || en.has(w.en)) continue; out.push(w); he.add(w.he); en.add(w.en); }
+  for (const w of list) { if (out.length >= 5) break; if (he.has(w.he) || en.has(w.en) || out.some(x => sameMeaning(x, w))) continue; out.push(w); he.add(w.he); en.add(w.en); }
   return out;
 }
 function buildLearn(u) {
@@ -247,7 +277,7 @@ function buildLearn(u) {
 }
 function buildReview() {
   const t = now(), intro = introduced();
-  let list = intro.filter(w => ws(w).due <= t).sort((a, b) => ws(a).due - ws(b).due).slice(0, 12);
+  let list = shuffle(intro.filter(w => ws(w).due <= t)).sort((a, b) => box(a) - box(b)).slice(0, 12);
   if (list.length < 8) {
     const more = shuffle(intro).filter(w => !list.includes(w)).sort((a, b) => box(a) - box(b));
     list = list.concat(more.slice(0, 8 - list.length));
@@ -257,9 +287,10 @@ function buildReview() {
   if (ms.length >= 4) q.splice(Math.min(5, q.length), 0, { k: 'match', ws: ms });
   return q;
 }
+// כל מילה חלשה מופיעה פעמיים, כך ששיעור שעבר בהצלחה מוציא אותה מהרשימה
 function buildWeak() {
-  const list = introduced().filter(w => ws(w).bad > 0).sort((a, b) => (ws(b).bad / (ws(b).ok + 1)) - (ws(a).bad / (ws(a).ok + 1))).slice(0, 10);
-  return shuffle(list).map(w => ({ k: 'q', w }));
+  const list = shuffle(introduced().filter(isWeak)).sort((a, b) => (ws(b).bad / (ws(b).ok + 1)) - (ws(a).bad / (ws(a).ok + 1))).slice(0, 8);
+  return [...shuffle(list), ...shuffle(list)].map(w => ({ k: 'q', w }));
 }
 
 // ===== מצב השיעור =====
@@ -290,9 +321,17 @@ function prepare() {
   const c = { k: 'q', type, ans: null };
   if (type === 'meaning') { c.opts = shuffle([w.he, ...meaningDistractors(w)]); c.correct = w.he; }
   else if (type === 'reverse') { c.opts = shuffle([w.en, ...reverseDistractors(w)]); c.correct = w.en; }
-  else if (type === 'category') { c.opts = shuffle([w.cat, ...shuffle(CAT_KEYS.filter(k => k !== w.cat)).slice(0, 3)]); c.correct = w.cat; }
+  else if (type === 'category') { const own = new Set(ITEMS.filter(x => x.en === w.en).map(x => x.cat)); c.opts = shuffle([w.cat, ...shuffle(CAT_KEYS.filter(k => !own.has(k))).slice(0, 3)]); c.correct = w.cat; }
   else if (type === 'sentence') { c.opts = sentenceOptions(w); c.correct = w.en; }
+  if (type === 'sentence' || type === 'typeSentence') c.sent = w.s2 && (box(w) >= 3 ? Math.random() < 0.7 : Math.random() < 0.4) ? w.s2 : w;
   L.cur = c;
+}
+// מילה שכבר מכירים: קופצת לשלב המשפטים, ובודקים אותה מיד במשפט
+function knowIt() {
+  const it = L.q[0], s = S.w[it.w.id];
+  s.b = Math.max(s.b, 3); s.due = now(); save();
+  L.q = [it, { k: 'q', w: it.w, type: 'sentence' }, ...L.q.slice(1).filter(x => x.w !== it.w)];
+  next();
 }
 function answerOpt(i) {
   const c = L.cur;
@@ -388,7 +427,7 @@ function renderHome() {
   const td = today();
   const target = Math.max(1, Math.ceil((total - intro + td.fresh) / daysLeft));
   const dueN = introduced().filter(w => ws(w).due <= now()).length;
-  const weakN = introduced().filter(w => ws(w).bad > 0).length;
+  const weakN = introduced().filter(isWeak).length;
   const cu = currentUnit();
   const dayLabel = dayIdx <= PLAN_DAYS ? `יום ${dayIdx} מתוך ${PLAN_DAYS}` : `יום ${dayIdx} (היעד היה ${PLAN_DAYS} ימים, ממשיכים עד שליטה מלאה)`;
   const pctFresh = Math.min(100, Math.round(td.fresh / target * 100));
@@ -444,7 +483,7 @@ function renderLesson() {
       <div class="ex"><div class="en">${fillSentence(w.s, w.en)}</div><div class="exhe">${esc(w.sh)}</div></div>
       ${w.note ? `<div class="note">💡 ${esc(w.note)}</div>` : ''}
       <div class="tip">${CATS[w.cat].icon} <b>${CATS[w.cat].he}:</b> ${CATS[w.cat].tip}</div>`;
-    foot = `<div class="lfoot"><button class="btn" onclick="next()">הבנתי, ממשיכים</button></div>`;
+    foot = `<div class="lfoot row2"><button class="btn ghost" onclick="knowIt()">כבר מכיר ✓</button><button class="btn" onclick="next()">הבנתי, ממשיכים</button></div>`;
   } else if (c.k === 'match') {
     h += `<div class="prompt">התאם כל מילה לפירוש שלה</div><div class="match"><div class="col">`;
     c.right.forEach((w, i) => { h += matchBtn(c, w, 'r', i, esc(w.he), ''); });
@@ -456,11 +495,11 @@ function renderLesson() {
     if (c.type === 'meaning') h += `<div class="prompt">מה הפירוש?</div><div class="big"><span class="en">${esc(disp(w.en))}</span> <button class="spk" onclick="say(${w.i})">🔊</button></div>`;
     if (c.type === 'reverse') h += `<div class="prompt">איך אומרים באנגלית?</div><div class="big he">${esc(w.he)}</div>`;
     if (c.type === 'category') h += `<div class="prompt">לאיזו קבוצה המילה שייכת?</div><div class="big"><span class="en">${esc(disp(w.en))}</span> <button class="spk" onclick="say(${w.i})">🔊</button></div>`;
-    if (c.type === 'sentence') h += `<div class="prompt">איזו מילה משלימה את המשפט?</div><div class="sent en">${blankSentence(w.s)}</div>`;
-    if (c.type === 'type') h += `<div class="prompt">כתוב את המילה באנגלית</div><div class="big he">${esc(w.he)}</div>${chip(w.cat)}`;
-    if (c.type === 'typeSentence') h += `<div class="prompt">השלם את המשפט במילה הנכונה</div><div class="sent en">${blankSentence(w.s)}</div><div class="exhe">${esc(w.sh)}</div>`;
+    if (c.type === 'sentence') h += `<div class="prompt">איזו מילה משלימה את המשפט?</div><div class="sent en">${blankSentence(c.sent.s)}</div>`;
+    if (c.type === 'type') h += `<div class="prompt">כתוב את המילה באנגלית</div><div class="big he">${esc(w.he)}</div>${chip(w.cat)}${pairHint(w)}`;
+    if (c.type === 'typeSentence') h += `<div class="prompt">השלם את המשפט במילה הנכונה</div><div class="sent en">${blankSentence(c.sent.s)}</div><div class="exhe">${esc(c.sent.sh)}</div>${pairHint(w)}`;
     if (c.opts) {
-      const startCap = c.type === 'sentence' && /(^|[.!?]\s+)___/.test(w.s);
+      const startCap = c.type === 'sentence' && /(^|[.!?]\s+)___/.test(c.sent.s);
       h += `<div class="opts ${c.type === 'meaning' || c.type === 'category' ? '' : 'ltr'}">`;
       c.opts.forEach((o, i) => {
         let label = c.type === 'category' ? `${CATS[o].icon} ${CATS[o].he}` : c.type === 'meaning' ? esc(o) : esc(startCap ? cap(disp(o)) : disp(o));
@@ -478,6 +517,7 @@ function renderLesson() {
   }
   return h + '</main>' + foot;
 }
+function pairHint(w) { return w.en.includes('...') ? '<div class="exhe">כתוב את שני החלקים ברצף, למשל: <span class="en">not only but also</span></div>' : ''; }
 function matchBtn(c, w, side, i, label, cls) {
   let st = '';
   if (c.done.has(w.id)) st = 'done';
@@ -494,7 +534,8 @@ function sheet(w, c) {
   if (a.alt) h += `<div class="sh-c">גם נכון! המילה שתרגלנו כאן: <b class="en">${esc(disp(w.en))}</b></div>`;
   h += `<div class="sh-i"><b class="en">${esc(disp(w.en))}</b> = ${esc(w.he)} ${chip(w.cat)}</div>`;
   if (c.type === 'category') h += `<div class="sh-s">${CATS[w.cat].icon} ${CATS[w.cat].tip}</div>`;
-  h += `<div class="sh-s en">${fillSentence(w.s, w.en)}</div><div class="sh-s">${esc(w.sh)}</div>`;
+  const sn = c.sent || w;
+  h += `<div class="sh-s en">${fillSentence(sn.s, w.en)}</div><div class="sh-s">${esc(sn.sh)}</div>`;
   if (w.note && (!ok || c.type === 'sentence')) h += `<div class="sh-s">💡 ${esc(w.note)}</div>`;
   return h + `<button class="btn ${ok ? '' : 'red'}" onclick="next()">המשך</button></div>`;
 }
