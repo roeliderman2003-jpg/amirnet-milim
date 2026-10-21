@@ -365,7 +365,9 @@ function prepare() {
   const w = it.w;
   if (w.topic !== topic) setTopic(w.topic); // מילה מנושא אחר (למשל מסימולציה): מסיחים וקבוצות מהנושא שלה
   if (!S.w[w.id]) introduce(w);
-  const type = it.type || typeFor(box(w));
+  let type = it.type || typeFor(box(w));
+  // באוצר מילים אין שאלות «לאיזו קבוצה» (רועי 21/10). במקומן: איך אומרים באנגלית
+  if (type === 'category' && w.topic === 'vocab') type = 'reverse';
   const c = { k: 'q', type, ans: null };
   if (type === 'meaning') { c.opts = shuffle([w.he, ...meaningDistractors(w)]); c.correct = w.he; }
   else if (type === 'reverse') { c.opts = shuffle([w.en, ...reverseDistractors(w)]); c.correct = w.en; }
@@ -563,7 +565,7 @@ function renderLesson() {
     if (c.type === 'category') h += `<div class="prompt">לאיזו קבוצה המילה שייכת?</div><div class="big"><span class="en">${esc(disp(w.en))}</span> <button class="spk" onclick="say(${w.i})">🔊</button></div>`;
     if (c.type === 'sentence') h += `<div class="prompt">איזו מילה משלימה את המשפט?</div><div class="sent en">${blankSentence(c.sent.s)}</div>`;
     if (c.type === 'type') h += `<div class="prompt">כתוב את המילה באנגלית</div><div class="big he">${esc(w.he)}</div>${chip(w.cat)}${pairHint(w)}`;
-    if (c.type === 'typeSentence') h += `<div class="prompt">השלם את המשפט במילה הנכונה</div><div class="sent en">${blankSentence(c.sent.s)}</div>${chip(w.cat)}${pairHint(w)}`;
+    if (c.type === 'typeSentence') h += `<div class="prompt">השלם את המשפט במילה הנכונה</div><div class="sent en">${blankSentence(c.sent.s)}</div><div class="exhe">המילה החסרה: <b>${esc(w.he)}</b></div>${pairHint(w)}`;
     if (c.opts) {
       const startCap = c.type === 'sentence' && /(^|[.!?]\s+)___/.test(c.sent.s);
       h += `<div class="opts ${c.type === 'meaning' || c.type === 'category' ? '' : 'ltr'}">`;
