@@ -50,7 +50,10 @@ async function runLesson(P, T, wrongRate, given) {
     } else {
       const inp = document.getElementById('ty');
       if (!inp) { P.push('אין שדה כתיבה'); break; }
-      inp.value = wrong ? 'qqqq' : w.en; checkType();
+      const idk = wrong && Math.random() < 0.5;
+      chk(document.body.innerHTML.includes('typeDontKnow()'), 'אין כפתור «לא יודע» בכתיבה', P);
+      if (idk) { const b0 = box(w); typeDontKnow(); chk(c.ans && c.ans.idk && !c.ans.ok && box(w) <= b0, `לא יודע ${w.en}: לא נחשב כטעות`, P); T.idk = (T.idk || 0) + 1; }
+      else { inp.value = wrong ? 'qqqq' : w.en; checkType(); }
       chk(c.ans && c.ans.ok === !wrong, `כתיבה ${w.en}: הבדיקה הפוכה`, P);
     }
     htmlOk(P, 'משוב');

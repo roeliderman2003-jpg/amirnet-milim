@@ -444,6 +444,16 @@ function checkType() {
   if (r.ok) speak(w.en);
   render();
 }
+// «לא יודע» בשאלת כתיבה: במקום לנחש סתם, רואים את התשובה. נחשב כטעות, אז המילה חוזרת לתרגול (רועי 21/10)
+function typeDontKnow() {
+  const c = L.cur;
+  if (!c || c.ans || c.opts) return;
+  const w = L.q[0].w;
+  c.ans = { typed: '', ok: false, idk: true };
+  grade(w, c.type, false);
+  speak(w.en);
+  render();
+}
 function next() {
   const it = L.q.shift(), c = L.cur;
   L.done++;
@@ -611,9 +621,9 @@ function renderLesson() {
       });
       h += `</div>`;
     } else {
-      const v = c.ans ? esc(c.ans.typed) : '';
-      h += `<input id="ty" class="ty en ${c.ans ? (c.ans.ok ? 'right' : 'wrong') : ''}" dir="ltr" lang="en" placeholder="Type in English" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="${v}" ${c.ans ? 'disabled' : ''} onkeydown="if(event.key==='Enter')checkType()">`;
-      if (!c.ans) foot = `<div class="lfoot"><button class="btn" onclick="checkType()">בדוק</button></div>`;
+      const v = c.ans ? esc(c.ans.idk ? disp(w.en) : c.ans.typed) : '';
+      h += `<input id="ty" class="ty en ${c.ans && !c.ans.idk ? (c.ans.ok ? 'right' : 'wrong') : ''}" dir="ltr" lang="en" placeholder="Type in English" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="${v}" ${c.ans ? 'disabled' : ''} onkeydown="if(event.key==='Enter')checkType()">`;
+      if (!c.ans) foot = `<div class="lfoot row2"><button class="btn ghost" onclick="typeDontKnow()">לא יודע</button><button class="btn" onclick="checkType()">בדוק</button></div>`;
     }
     if (c.ans) foot = sheet(w, c);
   }
@@ -655,8 +665,8 @@ function whyNot(w, c) {
 function sheet(w, c) {
   const a = c.ans, ok = a.ok;
   const praise = pick(['מעולה!', 'יפה מאוד!', 'נכון!', 'אלוף!', 'בדיוק!']);
-  let h = `<div class="sheet ${ok ? 'ok' : 'bad'}"><div class="sh-t">${ok ? '✅ ' + praise : '❌ לא בדיוק'}</div>`;
-  if (!ok) h += `<div class="sh-c">התשובה הנכונה: ${c.type === 'category' ? `<b>${CATS[w.cat].icon} ${CATS[w.cat].he}</b>` : `<b class="en">${esc(disp(w.en))}</b>`}${c.type === 'meaning' ? ` = ${esc(w.he)}` : ''}</div>`;
+  let h = `<div class="sheet ${ok ? 'ok' : 'bad'}"><div class="sh-t">${ok ? '✅ ' + praise : a.idk ? '💡 זו המילה, היא תחזור בקרוב' : '❌ לא בדיוק'}</div>`;
+  if (!ok && !a.idk) h += `<div class="sh-c">התשובה הנכונה: ${c.type === 'category' ? `<b>${CATS[w.cat].icon} ${CATS[w.cat].he}</b>` : `<b class="en">${esc(disp(w.en))}</b>`}${c.type === 'meaning' ? ` = ${esc(w.he)}` : ''}</div>`;
   if (!ok && c.opts && a.i !== undefined) h += whyNot(w, c);
   if (a.typo) h += `<div class="sh-c">שים לב לאיות: <b class="en">${esc(w.en)}</b></div>`;
   if (a.alt) h += `<div class="sh-c">גם נכון! המילה שתרגלנו כאן: <b class="en">${esc(disp(w.en))}</b></div>`;
