@@ -561,7 +561,7 @@ function renderLesson() {
   }
   const total = L.done + L.q.length, pct = Math.round(L.done / total * 100);
   const it = L.q[0], c = L.cur;
-  let h = `<header class="lhead"><button class="x" onclick="quitLesson()" aria-label="יציאה">✕</button><div class="bar"><i style="width:${pct}%"></i></div></header><main class="lbody">`;
+  let h = `<header class="lhead"><button class="x" onclick="quitLesson()" aria-label="יציאה">✕</button><div class="bar"><i style="width:${pct}%"></i></div><button class="flag" onclick="openReport()" aria-label="דיווח על טעות" title="מצאת טעות? דווח">🚩</button></header><main class="lbody">`;
   let foot = '';
   if (c.k === 'intro') {
     const w = it.w;
@@ -656,6 +656,7 @@ function sheet(w, c) {
   h += `<div class="sh-s en">${fillSentence(sn.s, w.en)}</div><div class="sh-s">${esc(sn.sh)}</div>`;
   if (w.note && (!ok || c.type === 'sentence')) h += `<div class="sh-s">💡 ${esc(w.note)}</div>`;
   if (ok && L.q[0] && L.q[0].k === 'q') h += `<button class="linkbtn" onclick="knowFromSheet()">אני מכיר אותה, לא לתרגל אותה יותר</button>`;
+  h += `<button class="linkbtn" onclick="openReport()">🚩 מצאת טעות בשאלה? דווח לנו</button>`;
   return h + `<button class="btn ${ok ? '' : 'red'}" onclick="next()">המשך</button></div>`;
 }
 
@@ -783,3 +784,46 @@ function render() {
   if (ty && !ty.disabled) setTimeout(() => ty.focus(), 50);
 }
 boot();
+
+
+// ===== דיווח על טעות =====
+// נשלח ל-amirnet_report: נשמר בטבלה amirnet.reports ומגיע לרועי בווצאפ מיד. גם הסימולציות קוראות ל-openReport(ctx)
+const REPORT_KINDS = ['התשובה שסומנה כנכונה לא נכונה', 'יש יותר מתשובה נכונה אחת', 'הפירוש או התרגום לא מדויק', 'שגיאה באנגלית או משפט לא ברור', 'אחר'];
+function lessonContext() {
+  const it = L && L.q[0], c = L && L.cur;
+  if (!it || !c) return {};
+  const w = it.w || (it.ws && it.ws[0]);
+  if (!w) return {};
+  const q = { type: c.type || c.k, word: w.en, meaning: w.he };
+  if (c.sent) q.text = c.sent.s;
+  else if (c.k === 'intro') q.text = w.s;
+  if (c.opts) q.options = c.opts.map(o => c.type === 'category' ? CATS[o].he : o).join(' / ');
+  if (c.correct) q.correct = c.type === 'category' ? CATS[c.correct].he : c.correct;
+  if (c.ans) q.chosen = c.ans.typed !== undefined ? c.ans.typed : c.opts && c.ans.i !== undefined ? c.opts[c.ans.i] : '';
+  return { item: w.id, topic: w.topic || 'link', q };
+}
+function openReport(ctx) {
+  const x = ctx || lessonContext();
+  window.__report = x;
+  const el = document.createElement('div');
+  el.className = 'modal';
+  el.innerHTML = `<div class="mbox"><b class="mt1">🚩 דיווח על טעות</b>
+    ${x.q && (x.q.text || x.q.word) ? `<div class="mq en">${esc(x.q.text || x.q.word)}</div>` : ''}
+    <div class="kinds">${REPORT_KINDS.map((k, i) => `<label><input type="radio" name="rk" value="${i}" ${i === 0 ? 'checked' : ''}> ${k}</label>`).join('')}</div>
+    <textarea id="rmsg" maxlength="1000" placeholder="מה לא נכון? מה צריך להיות? (לא חובה)"></textarea>
+    <div class="row"><button class="btn ghost" onclick="this.closest('.modal').remove()">ביטול</button><button class="btn" onclick="sendReport(this)">שליחה</button></div></div>`;
+  document.body.appendChild(el);
+}
+async function sendReport(btn) {
+  const box = btn.closest('.modal'), x = window.__report || {};
+  const kind = REPORT_KINDS[+box.querySelector('input[name=rk]:checked').value];
+  btn.disabled = true; btn.textContent = 'שולח...';
+  try {
+    const r = await rpc('amirnet_report', { p_item: x.item || '', p_topic: x.topic || '', p_kind: kind, p_question: x.q || {}, p_message: box.querySelector('#rmsg').value.trim() });
+    if (r && r.error) throw r;
+    box.remove(); toast('תודה! הדיווח נשלח, ונבדוק אותו');
+  } catch (e) {
+    btn.disabled = false; btn.textContent = 'שליחה';
+    toast(e && e.error === 'too_many' ? 'שלחת הרבה דיווחים היום. נסה שוב מחר' : 'השליחה לא הצליחה, נסה שוב');
+  }
+}

@@ -150,6 +150,14 @@ main{flex:1;padding:16px 16px 100px}
 .tabs button.on{background:var(--bg);color:var(--bd);box-shadow:0 2px 0 var(--line)}
 .tabs small{font-weight:500;font-size:12px;opacity:.8}
 .sel{font-family:inherit;font-size:16px;padding:6px 8px;border:2px solid var(--line);border-radius:10px;background:var(--soft);margin-right:6px}
+.flag{background:none;border:0;font-size:20px;padding:0 2px;opacity:.7}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:30;display:flex;align-items:flex-end;justify-content:center}
+.mbox{background:var(--bg);width:100%;max-width:560px;border-radius:20px 20px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom));display:flex;flex-direction:column;gap:10px;max-height:90vh;overflow:auto}
+.mt1{font-size:19px}
+.mq{background:var(--soft);border-radius:12px;padding:10px;font-size:15px}
+.kinds{display:flex;flex-direction:column;gap:8px;font-size:15px}
+.kinds input{width:18px;height:18px;vertical-align:middle;margin-left:6px}
+.mbox textarea{width:100%;min-height:80px;border:2px solid var(--line);border-radius:12px;padding:10px;font:inherit;font-size:15px}
 .toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:#3c3c3c;color:#fff;padding:12px 18px;border-radius:14px;z-index:20;font-weight:600;max-width:90vw;text-align:center;transition:opacity .4s}
 .toast.out{opacity:0}
 </style>
