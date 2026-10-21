@@ -12,6 +12,9 @@ for (const [k, t] of Object.entries(TOPICS)) {
   t.items = t.raw.map(r => { const w = { id: t.id(r), topic: k, en: r[0], he: r[1], cat: r[2], pos: r[3], lvl: r[4], s: r[5], sh: r[6], note: r[7] || null, d: r[8] || null, i: ALL.length }; ALL.push(w); return w; });
 }
 if (typeof S2 !== 'undefined') TOPICS.link.items.forEach(w => { if (S2[w.id]) w.s2 = { s: S2[w.id][0], sh: S2[w.id][1] }; });
+if (typeof S3 !== 'undefined') TOPICS.link.items.forEach(w => { if (S3[w.id]) w.s3 = { s: S3[w.id][0], sh: S3[w.id][1] }; });
+// כל המשפטים של מילה: מהכרטיס, ומשפטים נוספים בהקשרים אחרים
+const sentencesOf = w => [w, w.s2, w.s3].filter(Boolean);
 Object.assign(CATS, VCATS);
 Object.assign(NEAR, VNEAR);
 let topic = 'link', ITEMS, CAT_KEYS, UNITS;
@@ -256,12 +259,20 @@ function lev(a, b) {
   for (let i = 1; i <= m; i++) for (let j = 1; j <= n; j++) d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
   return d[m][n];
 }
+const DIRECTION = { con: 'against', cnc: 'against', add: 'add', cau: 'cause', res: 'result', pur: 'purpose', exm: 'example', cmp: 'same', emp: 'stress' };
 function checkTyped(w, input) {
   const a = norm(input), t = norm(w.en);
   if (!a) return null;
   if (a === t) return { ok: true };
-  const other = ITEMS.find(x => norm(x.en) === a);
-  if (other) return syn(other.en, w.en) ? { ok: true, alt: other } : { ok: false };
+  // מילה אחרת מהרשימה: נכונה אם היא נרדפת, או מאותו כיוון לוגי (למשל but ו-on the other hand, שתיהן ניגוד).
+  // בקבוצות שבהן מילים באותה קבוצה הפוכות זו לזו (תנאי, זמן, מידה, זיקה) — רק נרדפת
+  const others = ITEMS.filter(x => norm(x.en) === a);
+  if (others.length) {
+    // מילת יחס (+שם עצם) ומילה שאחריה פועל לא מתחלפות עם מילה שאחריה בא משפט
+    const sameGrammar = x => x.pos === w.pos || !['p', 'i'].includes(x.pos) && !['p', 'i'].includes(w.pos);
+    const fit = others.find(x => syn(x.en, w.en) || (DIRECTION[x.cat] && DIRECTION[x.cat] === DIRECTION[w.cat] && sameGrammar(x)));
+    return fit ? { ok: true, alt: fit } : { ok: false };
+  }
   if (t.length >= 5 && lev(a, t) <= (t.length >= 9 ? 2 : 1)) return { ok: true, typo: true };
   return { ok: false };
 }
@@ -349,7 +360,12 @@ function prepare() {
   else if (type === 'reverse') { c.opts = shuffle([w.en, ...reverseDistractors(w)]); c.correct = w.en; }
   else if (type === 'category') { const own = new Set(ITEMS.filter(x => x.en === w.en).map(x => x.cat)); c.opts = shuffle([w.cat, ...shuffle(CAT_KEYS.filter(k => !own.has(k))).slice(0, 3)]); c.correct = w.cat; }
   else if (type === 'sentence') { c.opts = sentenceOptions(w); c.correct = w.en; }
-  if (type === 'sentence' || type === 'typeSentence') c.sent = w.s2 && (box(w) >= 3 ? Math.random() < 0.7 : Math.random() < 0.4) ? w.s2 : w;
+  // משפט בסבב: לא אותו משפט כמו בפעם הקודמת שהמילה נשאלה
+  if (type === 'sentence' || type === 'typeSentence') {
+    const all = sentencesOf(w), st = S.w[w.id];
+    const pickI = pick(all.map((_, i) => i).filter(i => all.length < 2 || i !== st.ls));
+    st.ls = pickI; c.sent = all[pickI];
+  }
   L.cur = c;
 }
 // מילה שכבר מכירים: קופצת לשלב המשפטים, ובודקים אותה מיד במשפט
