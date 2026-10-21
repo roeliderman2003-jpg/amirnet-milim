@@ -103,9 +103,10 @@ async function runAll(n = 60, wrongRate = 0.15) {
   // מילים בשני הנושאים: התקדמות זהה בשניהם, וגם התקדמות ישנה בצד אחד עוברת לשני בטעינה
   { const P = [], pairs = Object.keys(TWIN);
     for (const id of pairs) { const a = S.w[id], b = S.w[TWIN[id].id]; if (!!a !== !!b || (a && (a.b !== b.b || !!a.known !== !!b.known || a.due !== b.due))) P.push('לא מסונכרן ' + id); }
-    const old = parse({ w: { 'however|con': { b: 4, due: 1, ok: 5, bad: 0, intro: 1 }, 'v:despite': { b: 0, due: 1, ok: 0, bad: 1, intro: 1, known: true } }, savedAt: 1 });
-    chk(old.w['v:however'] && old.w['v:however'].b === 4, 'התקדמות ישנה לא עברה לתאומה', P);
-    chk(old.w['despite|cnc'] && old.w['despite|cnc'].known, '«מכיר» לא עבר לתאומה', P);
+    const [l1, l2] = TOPICS.link.items.filter(w => TWIN[w.id]), v2 = TWIN[l2.id];
+    const old = parse({ w: { [l1.id]: { b: 4, due: 1, ok: 5, bad: 0, intro: 1 }, [v2.id]: { b: 0, due: 1, ok: 0, bad: 1, intro: 1, known: true } }, savedAt: 1 });
+    chk(old.w[TWIN[l1.id].id] && old.w[TWIN[l1.id].id].b === 4, 'התקדמות ישנה לא עברה לתאומה', P);
+    chk(old.w[l2.id] && old.w[l2.id].known, '«מכיר» לא עבר לתאומה', P);
     out.twins = { pairs: pairs.length / 2, introducedPairs: pairs.filter(id => S.w[id]).length / 2, problems: P }; }
   out.simItem = typeof simAppItem === 'function' ? [!!simAppItem('although'), !!simAppItem('abundant')] : 'no sims';
   out.errors = window.__errors.slice(0, 20);

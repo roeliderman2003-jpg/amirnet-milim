@@ -238,7 +238,9 @@ function grade(w, type, ok) {
   d.ans++;
   if (ok) {
     s.ok++; d.ok++; s.run = (s.run || 0) + 1;
-    if (s.b < capOf(w, type)) s.b++;
+    // מסלול מהיר: מילה שלא טעית בה (או 3 נכונות ברצף) עולה שתי תיבות, כדי לא לחפור על מה שכבר יודעים (רועי 21/10)
+    const step = s.bad === 0 || s.run >= 3 ? 2 : 1;
+    if (s.b < capOf(w, type)) s.b = Math.min(capOf(w, type), s.b + step);
     s.due = t + INT[s.b] * 60000;
     S.xp += 10; d.xp += 10; if (L) { L.xp += 10; L.ok++; }
   } else {
@@ -333,12 +335,14 @@ function matchSet(list) {
   return out;
 }
 // only = לחיצה על יחידה מסוימת: רק המילים של היחידה. בלי only («המשך ללמוד») נכנסות גם חזרות מכל היחידות
+// סדר החזרות: קודם מילים חלשות, ואז מי שמחכה הכי הרבה זמן. כך גם מילים שכבר יודעים מתקדמות ולא נתקעות מאחורי חדשות
+const byNeed = (a, b) => (isWeak(b) - isWeak(a)) || ws(a).due - ws(b).due;
 function buildLearn(u, only) {
   const unit = UNITS[u], t = now();
   const fresh = unit.items.filter(w => !S.w[w.id]).slice(0, 5);
   const used = new Set(fresh.map(w => w.id));
   const pool = only ? unit.items.filter(w => S.w[w.id] && !isKnown(w)) : practiced();
-  const rev = shuffle(pool.filter(w => ws(w).due <= t)).sort((a, b) => box(a) - box(b)).slice(0, fresh.length ? 6 : 10);
+  const rev = shuffle(pool.filter(w => ws(w).due <= t).sort(byNeed).slice(0, fresh.length ? 6 : 10));
   rev.forEach(w => used.add(w.id));
   const want = fresh.length ? 5 : 10;
   const extra = [...unit.items, ...(only ? [] : shuffle(practiced()))].filter(w => S.w[w.id] && !isKnown(w) && !used.has(w.id)).sort((a, b) => box(a) - box(b));
@@ -354,7 +358,7 @@ function buildLearn(u, only) {
 }
 function buildReview() {
   const t = now(), intro = practiced();
-  let list = shuffle(intro.filter(w => ws(w).due <= t)).sort((a, b) => box(a) - box(b)).slice(0, 12);
+  let list = intro.filter(w => ws(w).due <= t).sort(byNeed).slice(0, 12);
   if (list.length < 8) {
     const more = shuffle(intro).filter(w => !list.includes(w)).sort((a, b) => box(a) - box(b));
     list = list.concat(more.slice(0, 8 - list.length));
