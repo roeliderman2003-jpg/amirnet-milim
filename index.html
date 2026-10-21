@@ -94,6 +94,29 @@ main{flex:1;padding:16px 16px 100px}
 .conf{width:100%;text-align:right}
 .cf{display:flex;flex-direction:column;gap:2px;border-top:1px solid var(--line);padding:8px 0;font-size:14px}
 .cf span:first-child{color:var(--gd)}.cf span:last-child{color:var(--rd)}
+/* כרטיס מילה חדשה */
+.newcard{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.nc-top{display:flex;gap:8px;align-items:center;justify-content:center;flex-wrap:wrap}
+.nc-new{font-size:13px;font-weight:800;color:#e5a000;background:#fff7d6;border-radius:99px;padding:3px 10px}
+.nc-word{display:flex;align-items:center;gap:12px;font-size:clamp(26px,9vw,40px);max-width:100%;font-weight:800;margin-top:6px;line-height:1.1;flex-wrap:wrap;justify-content:center}
+.nc-word .spk{font-size:18px;padding:8px 11px}
+.nc-word .en{overflow-wrap:anywhere;min-width:0}
+.nc-mean{font-size:24px;font-weight:800;color:var(--gd)}
+.nc-ex{width:100%;background:var(--soft);border:2px solid var(--line);border-radius:16px;padding:14px;text-align:right;line-height:1.55}
+.nc-ex .en{font-size:18px;text-align:left}
+.nc-note{width:100%;background:#fff7d6;border-radius:14px;padding:10px 12px;font-size:14px;text-align:right;line-height:1.5}
+.nc-tip{font-size:13px;color:var(--mut);line-height:1.5;padding:0 6px}
+.lbody:has(.newcard){padding-bottom:190px}
+.know3{padding-top:10px}
+.k3{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.kbtn{display:flex;flex-direction:column;align-items:center;gap:2px;border-radius:16px;padding:10px 4px;border:2px solid var(--line);background:var(--bg);box-shadow:0 4px 0 var(--line);color:var(--ink);font-family:inherit}
+.kbtn:active{transform:translateY(3px);box-shadow:0 1px 0 var(--line)}
+.kbtn .ki{font-size:22px;line-height:1.2}
+.kbtn b{font-size:15px}
+.kbtn small{font-size:11.5px;color:var(--mut)}
+.k-good{border-color:#a5e07a;box-shadow:0 4px 0 #a5e07a}.k-good b{color:var(--gd)}
+.k-some{border-color:#9fdcfb;box-shadow:0 4px 0 #9fdcfb}.k-some b{color:var(--bd)}
+.k-new{background:var(--g);border-color:var(--g);box-shadow:0 4px 0 var(--gd);color:#fff}.k-new small{color:#eaffd8}
 .match{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .col{display:flex;flex-direction:column;gap:10px}
 .mt{background:var(--bg);border:2px solid var(--line);border-radius:14px;padding:14px 6px;font-size:16px;font-weight:600;min-height:62px;box-shadow:0 4px 0 var(--line);color:var(--ink)}

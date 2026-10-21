@@ -565,17 +565,19 @@ function renderLesson() {
   let foot = '';
   if (c.k === 'intro') {
     const w = it.w;
-    h += `<div class="prompt">מילה חדשה ✨</div>${chip(w.cat)}
-      <div class="big"><span class="en">${esc(disp(w.en))}</span> <button class="spk" onclick="say(${w.i})" aria-label="השמע">🔊</button></div>
-      <div class="mean">${esc(w.he)}</div>
-      <div class="ex"><div class="en">${fillSentence(w.s, w.en)}</div><div class="exhe">${esc(w.sh)}</div></div>
-      ${w.note ? `<div class="note">💡 ${esc(w.note)}</div>` : ''}
-      <div class="tip">${CATS[w.cat].icon} <b>${CATS[w.cat].he}:</b> ${CATS[w.cat].tip}</div>`;
+    // כרטיס מילה חדשה: המילה והפירוש במרכז, דוגמה אחת, והסבר הקבוצה כשורה קטנה ולא כתיבה נוספת
+    h += `<div class="newcard">
+      <div class="nc-top"><span class="nc-new">✨ מילה חדשה</span>${chip(w.cat)}</div>
+      <div class="nc-word"><span class="en">${esc(disp(w.en))}</span><button class="spk" onclick="say(${w.i})" aria-label="השמע">🔊</button></div>
+      <div class="nc-mean">${esc(w.he)}</div>
+      <div class="nc-ex"><div class="en">${fillSentence(w.s, w.en)}</div><div class="exhe">${esc(w.sh)}</div></div>
+      ${w.note ? `<div class="nc-note">💡 ${esc(w.note)}</div>` : ''}
+      <div class="nc-tip">${CATS[w.cat].icon} ${esc(CATS[w.cat].tip)}</div></div>`;
     // שלוש אפשרויות למילה חדשה (רועי 21/10): מכיר טוב = לא מתרגלים בכלל, מכיר = מתחילים משלב המשפטים, לא מכיר = מההתחלה
-    foot = `<div class="lfoot col3"><div class="q3">כמה אתה מכיר את המילה?</div>
-      <button class="btn ghost" onclick="knowIt()">✅ מכיר טוב, לא רוצה לתרגל</button>
-      <button class="btn blue" onclick="knowSome()">👍 מכיר, רוצה לתרגל</button>
-      <button class="btn" onclick="next()">🆕 לא מכיר בכלל</button></div>`;
+    foot = `<div class="lfoot know3"><div class="q3">כמה אתה מכיר את המילה?</div><div class="k3">
+      <button class="kbtn k-good" onclick="knowIt()"><span class="ki">✅</span><b>מכיר טוב</b><small>בלי תרגול</small></button>
+      <button class="kbtn k-some" onclick="knowSome()"><span class="ki">👍</span><b>מכיר קצת</b><small>נתרגל במשפטים</small></button>
+      <button class="kbtn k-new" onclick="next()"><span class="ki">🆕</span><b>לא מכיר</b><small>נלמד מההתחלה</small></button></div></div>`;
   } else if (c.k === 'match') {
     h += `<div class="prompt">התאם כל מילה לפירוש שלה</div><div class="match"><div class="col">`;
     c.right.forEach((w, i) => { h += matchBtn(c, w, 'r', i, esc(w.he), ''); });
