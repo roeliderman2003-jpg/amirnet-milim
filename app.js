@@ -156,6 +156,15 @@ const ws = w => S.w[w.id];
 const box = w => (S.w[w.id] ? S.w[w.id].b : 0);
 function today() { const k = dayKey(); if (!S.days[k]) S.days[k] = { xp: 0, fresh: 0, ans: 0, ok: 0 }; return S.days[k]; }
 function introduced() { return ITEMS.filter(w => S.w[w.id]); }
+// «מילים שאני מכיר»: מילה שסומנה כידועה לא נכנסת יותר לתרגול, לחזרה או לחלשות (רועי 21/10)
+const isKnown = w => !!(S.w[w.id] && S.w[w.id].known);
+function practiced() { return introduced().filter(w => !isKnown(w)); }
+function markKnown(w) {
+  S.w[w.id] = Object.assign(S.w[w.id] || { ok: 0, bad: 0, intro: now() }, { known: true, b: MASTER, due: now() + 3650 * 864e5 });
+  save();
+}
+function unmarkKnown(w) { const s = S.w[w.id]; if (!s) return; s.known = false; s.b = 3; s.due = now(); save(); }
+function toggleKnown(i) { const w = ALL[i]; isKnown(w) ? unmarkKnown(w) : markKnown(w); document.getElementById('dl').innerHTML = dictList(); }
 function near(a, b) { return (NEAR[a] || []).includes(b) || (NEAR[b] || []).includes(a); }
 // יעד יומי לכל נושא: יום ההתחלה, מספר הימים ומונה המילים החדשות של היום נפרדים
 const freshKey = t => t === 'link' ? 'fresh' : 'fresh_' + t;
@@ -307,11 +316,11 @@ function buildLearn(u, only) {
   const unit = UNITS[u], t = now();
   const fresh = unit.items.filter(w => !S.w[w.id]).slice(0, 5);
   const used = new Set(fresh.map(w => w.id));
-  const pool = only ? unit.items.filter(w => S.w[w.id]) : introduced();
+  const pool = only ? unit.items.filter(w => S.w[w.id] && !isKnown(w)) : practiced();
   const rev = shuffle(pool.filter(w => ws(w).due <= t)).sort((a, b) => box(a) - box(b)).slice(0, fresh.length ? 6 : 10);
   rev.forEach(w => used.add(w.id));
   const want = fresh.length ? 5 : 10;
-  const extra = [...unit.items, ...(only ? [] : shuffle(introduced()))].filter(w => S.w[w.id] && !used.has(w.id)).sort((a, b) => box(a) - box(b));
+  const extra = [...unit.items, ...(only ? [] : shuffle(practiced()))].filter(w => S.w[w.id] && !isKnown(w) && !used.has(w.id)).sort((a, b) => box(a) - box(b));
   for (const w of extra) { if (rev.length >= want) break; if (!used.has(w.id)) { rev.push(w); used.add(w.id); } }
   const revQ = rev.map(w => ({ k: 'q', w }));
   const q = [];
@@ -323,7 +332,7 @@ function buildLearn(u, only) {
   return q;
 }
 function buildReview() {
-  const t = now(), intro = introduced();
+  const t = now(), intro = practiced();
   let list = shuffle(intro.filter(w => ws(w).due <= t)).sort((a, b) => box(a) - box(b)).slice(0, 12);
   if (list.length < 8) {
     const more = shuffle(intro).filter(w => !list.includes(w)).sort((a, b) => box(a) - box(b));
@@ -336,12 +345,12 @@ function buildReview() {
 }
 // כל מילה חלשה מופיעה פעמיים, כך ששיעור שעבר בהצלחה מוציא אותה מהרשימה
 function buildWeak() {
-  const list = shuffle(introduced().filter(isWeak)).sort((a, b) => (ws(b).bad / (ws(b).ok + 1)) - (ws(a).bad / (ws(a).ok + 1))).slice(0, 8);
+  const list = shuffle(practiced().filter(isWeak)).sort((a, b) => (ws(b).bad / (ws(b).ok + 1)) - (ws(a).bad / (ws(a).ok + 1))).slice(0, 8);
   return [...shuffle(list), ...shuffle(list)].map(w => ({ k: 'q', w }));
 }
 
 // ===== מצב השיעור =====
-let view = 'home', L = null, dictQ = '', dictOpen = -1;
+let view = 'home', L = null, dictQ = '', dictOpen = -1, dictKnown = false;
 function startLesson(q, title) {
   if (!q.length) { toast('אין כרגע מה לתרגל כאן'); return; }
   L = { q, done: 0, ok: 0, bad: 0, xp: 0, fresh: 0, retries: {}, title, cur: null, conf: [] };
@@ -381,13 +390,17 @@ function prepare() {
   }
   L.cur = c;
 }
-// מילה שכבר מכירים: קופצת לשלב המשפטים, ובודקים אותה מיד במשפט
+// מילה שכבר מכירים: עוברת ל«מילים שאני מכיר» ויוצאת מהשיעור
+function dropFromLesson(w) {
+  L.q = [L.q[0], ...L.q.slice(1).filter(x => x.w !== w).map(x => x.ws ? Object.assign({}, x, { ws: x.ws.filter(y => y !== w) }) : x).filter(x => !x.ws || x.ws.length >= 3)];
+}
 function knowIt() {
-  const it = L.q[0], s = S.w[it.w.id];
-  s.b = Math.max(s.b, 3); s.due = now(); save();
-  L.q = [it, { k: 'q', w: it.w, type: 'sentence' }, ...L.q.slice(1).filter(x => x.w !== it.w)];
+  const w = L.q[0].w;
+  markKnown(w); dropFromLesson(w);
+  toast('הועברה ל«מילים שאני מכיר». אפשר להחזיר אותה מהמילון');
   next();
 }
+function knowFromSheet() { const w = L.q[0].w; markKnown(w); dropFromLesson(w); toast('הועברה ל«מילים שאני מכיר»'); next(); }
 // טעות בבחירה: זוכרים עם מה התבלבלת, ומציגים בסוף השיעור
 function noteConfusion(w, c, chosen) {
   const other = c.type === 'meaning' ? ITEMS.find(x => x.he === chosen) : c.type === 'category' ? null : ITEMS.find(x => x.en === chosen);
@@ -493,8 +506,8 @@ function renderHome() {
   const daysLeft = Math.max(1, PLAN_DAYS - dayIdx + 1);
   const td = today(), fresh = td[freshKey(topic)] || 0;
   const target = Math.max(1, Math.ceil((total - intro + fresh) / daysLeft));
-  const dueN = introduced().filter(w => ws(w).due <= now()).length;
-  const weakN = introduced().filter(isWeak).length;
+  const dueN = practiced().filter(w => ws(w).due <= now()).length;
+  const weakN = practiced().filter(isWeak).length;
   const cu = currentUnit();
   const dayLabel = dayIdx <= PLAN_DAYS ? `יום ${dayIdx} מתוך ${PLAN_DAYS}` : `יום ${dayIdx} (היעד היה ${PLAN_DAYS} ימים, ממשיכים עד שליטה מלאה)`;
   const pctFresh = Math.min(100, Math.round(fresh / target * 100));
@@ -551,7 +564,7 @@ function renderLesson() {
       <div class="ex"><div class="en">${fillSentence(w.s, w.en)}</div><div class="exhe">${esc(w.sh)}</div></div>
       ${w.note ? `<div class="note">💡 ${esc(w.note)}</div>` : ''}
       <div class="tip">${CATS[w.cat].icon} <b>${CATS[w.cat].he}:</b> ${CATS[w.cat].tip}</div>`;
-    foot = `<div class="lfoot row2"><button class="btn ghost" onclick="knowIt()">כבר מכיר ✓</button><button class="btn" onclick="next()">הבנתי, ממשיכים</button></div>`;
+    foot = `<div class="lfoot row2"><button class="btn ghost" onclick="knowIt()">מכיר, לא לתרגל ✓</button><button class="btn" onclick="next()">הבנתי, ממשיכים</button></div>`;
   } else if (c.k === 'match') {
     h += `<div class="prompt">התאם כל מילה לפירוש שלה</div><div class="match"><div class="col">`;
     c.right.forEach((w, i) => { h += matchBtn(c, w, 'r', i, esc(w.he), ''); });
@@ -631,28 +644,30 @@ function sheet(w, c) {
   const sn = c.sent || w;
   h += `<div class="sh-s en">${fillSentence(sn.s, w.en)}</div><div class="sh-s">${esc(sn.sh)}</div>`;
   if (w.note && (!ok || c.type === 'sentence')) h += `<div class="sh-s">💡 ${esc(w.note)}</div>`;
+  if (ok && L.q[0] && L.q[0].k === 'q') h += `<button class="linkbtn" onclick="knowFromSheet()">אני מכיר אותה, לא לתרגל אותה יותר</button>`;
   return h + `<button class="btn ${ok ? '' : 'red'}" onclick="next()">המשך</button></div>`;
 }
 
 function renderDict() {
   return topBar() + `<main>${topicTabs()}<h2 class="sec">📖 ${TOPICS[topic].he}: כל המילים לפי קבוצות</h2>
     <input class="search" placeholder="חיפוש בעברית או באנגלית" value="${esc(dictQ)}" oninput="dictQ=this.value;document.getElementById('dl').innerHTML=dictList()">
-    <div class="legend"><span><i class="dot b0"></i>חדש</span><span><i class="dot b1"></i>לומד</span><span><i class="dot b3"></i>מכיר</span><span><i class="dot b5"></i>שולט</span></div>
+    <button class="skip knownf ${dictKnown ? 'on' : ''}" onclick="dictKnown=!dictKnown;document.getElementById('dl').innerHTML=dictList();this.classList.toggle('on')">✓ מילים שאני מכיר (${ITEMS.filter(isKnown).length})</button>
+    <div class="legend"><span><i class="dot bk"></i>מכיר מראש</span><span><i class="dot b0"></i>חדש</span><span><i class="dot b1"></i>לומד</span><span><i class="dot b3"></i>מכיר</span><span><i class="dot b5"></i>שולט</span></div>
     <div id="dl">${dictList()}</div></main>` + navBar();
 }
-function dotClass(w) { if (!S.w[w.id]) return 'b0'; const b = box(w); return b >= MASTER ? 'b5' : b >= 3 ? 'b3' : 'b1'; }
+function dotClass(w) { if (!S.w[w.id]) return 'b0'; if (isKnown(w)) return 'bk'; const b = box(w); return b >= MASTER ? 'b5' : b >= 3 ? 'b3' : 'b1'; }
 function dictList() {
   const q = dictQ.trim().toLowerCase();
   let h = '';
   for (const c of CAT_KEYS) {
-    const its = ITEMS.filter(w => w.cat === c && (!q || w.en.toLowerCase().includes(q) || w.he.includes(q)));
+    const its = ITEMS.filter(w => w.cat === c && (!dictKnown || isKnown(w)) && (!q || w.en.toLowerCase().includes(q) || w.he.includes(q)));
     if (!its.length) continue;
     const k = CATS[c];
     h += `<div class="dcat"><div class="dch" style="--c:${k.color}">${k.icon} ${k.he} <span class="en">${k.en}</span></div><div class="dtip">${k.tip}</div>`;
     its.forEach(w => {
       h += `<div class="dw" onclick="dictOpen=dictOpen===${w.i}?-1:${w.i};document.getElementById('dl').innerHTML=dictList()">
         <i class="dot ${dotClass(w)}"></i><b class="en">${esc(disp(w.en))}</b><span class="dhe">${esc(w.he)}</span><span class="lv">${'•'.repeat(w.lvl)}</span></div>`;
-      if (dictOpen === w.i) h += `<div class="dx"><div class="en">${fillSentence(w.s, w.en)}</div><div>${esc(w.sh)}</div>${w.note ? `<div>💡 ${esc(w.note)}</div>` : ''}<button class="spk" onclick="event.stopPropagation();say(${w.i})">🔊 השמע</button></div>`;
+      if (dictOpen === w.i) h += `<div class="dx"><div class="en">${fillSentence(w.s, w.en)}</div><div>${esc(w.sh)}</div>${w.note ? `<div>💡 ${esc(w.note)}</div>` : ''}<div class="row"><button class="spk" onclick="event.stopPropagation();say(${w.i})">🔊 השמע</button><button class="skip" onclick="event.stopPropagation();toggleKnown(${w.i})">${isKnown(w) ? '↩️ להחזיר לתרגול' : '✓ אני מכיר, לא לתרגל'}</button></div></div>`;
     });
     h += '</div>';
   }
