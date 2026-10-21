@@ -13,14 +13,13 @@ window.supabase = { createClient: () => ({
 try { localStorage.clear(); } catch (e) {}
 </script>
 </head><body><div id="app"></div>
-<script src="words.js"></script><script src="vocab.js"></script>
 <script>window.CLOUD = { url: 'x', key: 'x' };</script>
 <script>
-// app.js נטען עם ה-CSS של index.html
-fetch('index.html').then(r => r.text()).then(t => {
-  const css = t.match(/<style>([\s\S]*?)<\/style>/)[1];
-  const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
-  const s = document.createElement('script'); s.src = 'app.js'; document.body.appendChild(s);
+// טוענים את אותם קבצים כמו index.html (חוץ מ-supabase ו-cloud.js שמדומים כאן), ואת ה-CSS שלו
+fetch('index.html').then(r => r.text()).then(async t => {
+  const st = document.createElement('style'); st.textContent = t.match(/<style>([\s\S]*?)<\/style>/)[1]; document.head.appendChild(st);
+  const srcs = [...t.matchAll(/<script src="([^"]+)"/g)].map(m => m[1]).filter(x => !/supabase|cloud\.js/.test(x));
+  for (const src of srcs) await new Promise(ok => { const s = document.createElement('script'); s.src = src; s.onload = s.onerror = ok; document.body.appendChild(s); });
 });
 </script>
 <script src="tools/drive.js"></script>

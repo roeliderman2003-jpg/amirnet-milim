@@ -4,10 +4,10 @@ function htmlOk(P, where) {
   const h = document.getElementById('app').innerHTML;
   if (/undefined|NaN|\[object/.test(h)) P.push(where + ': undefined/NaN בתצוגה');
 }
-async function runLesson(P, T, wrongRate) {
+async function runLesson(P, T, wrongRate, given) {
   const cu = currentUnit();
   const r = Math.random();
-  const q = cu < 0 || r < 0.2 ? buildReview() : r < 0.27 ? buildWeak() : buildLearn(cu);
+  const q = given || (cu < 0 || r < 0.2 ? buildReview() : r < 0.27 ? buildWeak() : buildLearn(cu));
   if (!q.length) return false;
   startLesson(q, 'בדיקה');
   let steps = 0;
@@ -34,7 +34,8 @@ async function runLesson(P, T, wrongRate) {
       chk(c.opts.includes(c.correct), `${c.type} ${w.en}: אין תשובה נכונה`, P);
       if (c.type === 'sentence') chk(c.opts.filter(o => o === w.en).length === 1, 'משפט: התשובה פעמיים', P);
       if (c.type === 'meaning') chk(c.opts.filter(o => o === w.he).length === 1, 'פירוש כפול ' + w.en, P);
-      chk(c.opts.every(o => (c.type === 'category' ? CAT_KEYS.includes(o) : true)), 'קבוצה מנושא אחר ' + w.en, P);
+      chk(c.opts.every(o => (c.type === 'category' ? TOPICS[w.topic].keys.includes(o) : true)), 'קבוצה מנושא אחר ' + w.en, P);
+      chk(c.type !== 'meaning' || c.opts.every(o => TOPICS[w.topic].items.some(x => x.he === o)), 'פירוש מנושא אחר ' + w.en, P);
       const i = wrong ? c.opts.findIndex(o => o !== c.correct) : c.opts.indexOf(c.correct);
       answerOpt(i);
       chk(c.ans && c.ans.ok === !wrong, `${c.type} ${w.en}: הבדיקה הפוכה`, P);
@@ -74,6 +75,13 @@ async function runAll(n = 60, wrongRate = 0.15) {
     go('home'); htmlOk(P, 'בית אחרי');
     out[k] = { lessons, words: ITEMS.length, units: UNITS.length, introduced: introduced().length, mastered: ITEMS.filter(w => box(w) >= MASTER).length, types: T, problems: [...new Set(P)].slice(0, 40), problemCount: P.length };
   }
+  // שיעור מעורב (כמו מילים חלשות מסימולציה): כל שאלה מקבלת מסיחים מהנושא של המילה, והנושא חוזר אחרי השיעור
+  { const P = [], T = {}; pickTopic('link');
+    const mix = shuffle([...TOPICS.link.items.slice(0, 5), ...TOPICS.vocab.items.slice(0, 5)]).flatMap(w => [{ k: 'q', w, type: 'category' }, { k: 'q', w, type: 'meaning' }, { k: 'q', w, type: 'sentence' }]);
+    await runLesson(P, T, 0.2, mix);
+    chk(topic === 'link', 'הנושא לא חזר אחרי שיעור מעורב', P);
+    out.mixed = { types: T, problems: [...new Set(P)] }; }
+  out.simItem = typeof simAppItem === 'function' ? [!!simAppItem('although'), !!simAppItem('abundant')] : 'no sims';
   out.errors = window.__errors.slice(0, 20);
   out.savedTopic = window.__saved && window.__saved.topic;
   return out;

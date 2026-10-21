@@ -102,7 +102,7 @@ function simWeakWords(sim, ans) {
   return [...out.values()];
 }
 // מילה מהסימולציה שקיימת באפליקציה (מילות קישור / אוצר מילים) מקבלת את הפריט שלה
-function simAppItem(en) { const k = en.toLowerCase(); return ITEMS.find(w => w.en.toLowerCase() === k) || null; }
+function simAppItem(en) { const k = en.toLowerCase(); return (typeof ALL !== 'undefined' ? ALL : ITEMS).find(w => w.en.toLowerCase() === k) || null; } // שני הנושאים: מילות קישור קודם, ואז אוצר מילים
 function simFinish() {
   clearInterval(simTick);
   const { sim, ans } = SM;

@@ -341,6 +341,7 @@ function prepare() {
     return;
   }
   const w = it.w;
+  if (w.topic !== topic) setTopic(w.topic); // מילה מנושא אחר (למשל מסימולציה): מסיחים וקבוצות מהנושא שלה
   if (!S.w[w.id]) introduce(w);
   const type = it.type || typeFor(box(w));
   const c = { k: 'q', type, ans: null };
@@ -436,7 +437,7 @@ function finish() {
 }
 function quitLesson() {
   if (L && !L.finished && L.done > 0 && !confirm('לצאת מהשיעור? מה שענית עד עכשיו כבר נשמר.')) return;
-  L = null; view = 'home'; render();
+  L = null; view = 'home'; setTopic(S.topic); render();
 }
 
 // ===== מסכים =====
