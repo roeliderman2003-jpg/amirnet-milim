@@ -36,6 +36,13 @@ async function runLesson(P, T, wrongRate, given) {
       if (c.type === 'meaning') chk(c.opts.filter(o => o === w.he).length === 1, 'פירוש כפול ' + w.en, P);
       chk(c.opts.every(o => (c.type === 'category' ? TOPICS[w.topic].keys.includes(o) : true)), 'קבוצה מנושא אחר ' + w.en, P);
       chk(c.type !== 'meaning' || c.opts.every(o => TOPICS[w.topic].items.some(x => x.he === o)), 'פירוש מנושא אחר ' + w.en, P);
+      // מסיחים ממילים שכבר נחשפו: כשיש מספיק כאלה, אף מסיח לא אמור להיות מילה שעוד לא ראית
+      if (['meaning', 'reverse', 'sentence'].includes(c.type) && !(c.type === 'sentence' && w.d)) {
+        const seen = o => ITEMS.some(x => (c.type === 'meaning' ? x.he : x.en) === o && S.w[x.id]);
+        const ds = c.opts.filter(o => o !== c.correct);
+        T.dist = (T.dist || 0) + ds.length; T.distSeen = (T.distSeen || 0) + ds.filter(seen).length;
+        if (c.type !== 'sentence' && farPool(w).filter(x => S.w[x.id]).length >= 10) chk(ds.every(seen), `${c.type} ${w.en}: מסיח ממילה שעוד לא נחשפה`, P);
+      }
       const i = wrong ? c.opts.findIndex(o => o !== c.correct) : c.opts.indexOf(c.correct);
       answerOpt(i);
       chk(c.ans && c.ans.ok === !wrong, `${c.type} ${w.en}: הבדיקה הפוכה`, P);

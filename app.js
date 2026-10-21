@@ -240,25 +240,28 @@ function isWeak(w) { const s = S.w[w.id]; return !!s && s.bad > 0 && (s.run !== 
 // ===== מסיחים =====
 function farPool(w) { return ITEMS.filter(x => x.cat !== w.cat && !near(x.cat, w.cat) && x.en !== w.en && !sameMeaning(x, w)); }
 // באוצר המילים מסיחים מאותו חלק דיבור קודם, כדי שלא יזהו את התשובה לפי הצורה (פועל / שם עצם / תואר)
-const posFirst = (w, a) => w.topic === 'link' ? a : [...a.filter(x => x.pos === w.pos), ...a.filter(x => x.pos !== w.pos)];
+const samePosFirst = (w, a) => [...a.filter(x => x.pos === w.pos), ...a.filter(x => x.pos !== w.pos)];
+const posFirst = (w, a) => w.topic === 'link' ? a : samePosFirst(w, a);
+// מסיחים ממילים שכבר נחשפת אליהן קודם. אחרת המילה החדשה היא היחידה המוכרת בין 4 האפשרויות, ובוחרים אותה בלי לחשוב (רועי 21/10)
+const seenFirst = a => [...a.filter(x => S.w[x.id]), ...a.filter(x => !S.w[x.id])];
+const distPool = w => seenFirst(posFirst(w, shuffle(farPool(w))));
 function meaningDistractors(w) {
   const out = [];
-  for (const x of posFirst(w, shuffle(farPool(w)))) { if (out.length >= 3) break; if (!sameMeaning(x, w) && !out.includes(x.he)) out.push(x.he); }
+  for (const x of distPool(w)) { if (out.length >= 3) break; if (!sameMeaning(x, w) && !out.includes(x.he)) out.push(x.he); }
   return out;
 }
 function reverseDistractors(w) {
   const pair = w.en.includes('...');
   const out = [];
-  for (const x of posFirst(w, shuffle(farPool(w)))) { if (out.length >= 3) break; if (x.en.includes('...') !== pair && Math.random() < 0.8) continue; if (!out.includes(x.en)) out.push(x.en); }
-  for (const x of shuffle(farPool(w))) { if (out.length >= 3) break; if (!out.includes(x.en)) out.push(x.en); }
+  for (const x of distPool(w)) { if (out.length >= 3) break; if (x.en.includes('...') !== pair && Math.random() < 0.8) continue; if (!out.includes(x.en)) out.push(x.en); }
+  for (const x of distPool(w)) { if (out.length >= 3) break; if (!out.includes(x.en)) out.push(x.en); }
   return out;
 }
 function sentenceOptions(w) {
   if (w.d) return shuffle([w.en, ...w.d.slice(0, 3)]);
   const pool = farPool(w).filter(x => !syn(x.en, w.en) && x.cat !== 'rel' && x.cat !== 'deg' && !x.en.includes('...') && !AMBIG.has(x.en));
-  const same = shuffle(pool.filter(x => x.pos === w.pos)), other = shuffle(pool.filter(x => x.pos !== w.pos));
   const out = [];
-  for (const x of [...same, ...other]) { if (out.length >= 3) break; if (!out.includes(x.en)) out.push(x.en); }
+  for (const x of seenFirst(samePosFirst(w, shuffle(pool)))) { if (out.length >= 3) break; if (!out.includes(x.en)) out.push(x.en); }
   return shuffle([w.en, ...out]);
 }
 const norm = s => s.toLowerCase().replace(/[’‘`]/g, "'").replace(/…/g, ' ').replace(/\.{3}/g, ' ').replace(/\./g, '').replace(/[,!?;:]/g, ' ').replace(/\s+/g, ' ').trim();
