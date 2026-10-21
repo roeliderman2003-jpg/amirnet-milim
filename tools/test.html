@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- בדיקה מקומית: האפליקציה עם כניסה ושמירה מדומות, ו-drive.js שמריץ שיעורים לבד. פותחים: /tools/test.html?n=60 -->
+<html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<base href="../">
+<script>
+window.__errors = [];
+window.addEventListener('error', e => window.__errors.push(String(e.message)));
+window.__saved = null;
+window.supabase = { createClient: () => ({
+  auth: { getSession: async () => ({ data: { session: { user: { id: 'test-user', email: 'test@example.com', user_metadata: { full_name: 'בודק אוטומטי' } } } } }), signOut: async () => ({}), signInWithOAuth: async () => ({}) },
+  rpc: async (fn, body) => { if (fn === 'amirnet_save') { window.__saved = body.p_data; return { data: { ok: true } }; } return { data: { data: window.__saved } }; },
+}) };
+try { localStorage.clear(); } catch (e) {}
+</script>
+</head><body><div id="app"></div>
+<script src="words.js"></script><script src="vocab.js"></script>
+<script>window.CLOUD = { url: 'x', key: 'x' };</script>
+<script>
+// app.js נטען עם ה-CSS של index.html
+fetch('index.html').then(r => r.text()).then(t => {
+  const css = t.match(/<style>([\s\S]*?)<\/style>/)[1];
+  const st = document.createElement('style'); st.textContent = css; document.head.appendChild(st);
+  const s = document.createElement('script'); s.src = 'app.js'; document.body.appendChild(s);
+});
+</script>
+<script src="tools/drive.js"></script>
+</body></html>

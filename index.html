@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>מילות קישור לאמירנט</title>
-<meta name="description" content="לימוד מילות קישור לאמירנט בשיטת חזרה מרווחת, כמו בדואלינגו">
+<title>מילים לאמירנט</title>
+<meta name="description" content="לימוד מילות קישור ואוצר מילים לאמירנט בשיטת חזרה מרווחת, כמו בדואלינגו">
 <meta name="theme-color" content="#58cc02">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
@@ -137,6 +137,11 @@ main{flex:1;padding:16px 16px 100px}
 .gbtn{display:flex;align-items:center;justify-content:center;gap:10px;background:#fff;color:#3c3c3c;border:2px solid var(--line);box-shadow:0 4px 0 var(--line);font-size:17px}
 .gbtn:active{box-shadow:0 1px 0 var(--line)}
 .lmsg{min-height:20px;color:var(--rd);font-weight:600;font-size:14px}
+.tabs{display:flex;gap:8px;margin:0 0 14px;background:var(--soft);border:2px solid var(--line);border-radius:16px;padding:4px}
+.tabs button{flex:1;border:0;background:none;border-radius:12px;padding:10px 4px;font-weight:800;font-size:15px;color:var(--mut)}
+.tabs button.on{background:var(--bg);color:var(--bd);box-shadow:0 2px 0 var(--line)}
+.tabs small{font-weight:500;font-size:12px;opacity:.8}
+.sel{font-family:inherit;font-size:16px;padding:6px 8px;border:2px solid var(--line);border-radius:10px;background:var(--soft);margin-right:6px}
 .toast{position:fixed;top:70px;left:50%;transform:translateX(-50%);background:#3c3c3c;color:#fff;padding:12px 18px;border-radius:14px;z-index:20;font-weight:600;max-width:90vw;text-align:center;transition:opacity .4s}
 .toast.out{opacity:0}
 </style>
@@ -144,6 +149,7 @@ main{flex:1;padding:16px 16px 100px}
 <body>
 <div id="app"></div>
 <script src="words.js"></script>
+<script src="vocab.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
 <script src="sentences2.js" onerror="void 0"></script>
 <script src="cloud.js"></script>

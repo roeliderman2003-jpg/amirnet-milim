@@ -1,13 +1,25 @@
 'use strict';
 // ===== נתונים =====
-const ITEMS = RAW.map((r, i) => ({ id: r[0] + '|' + r[2], en: r[0], he: r[1], cat: r[2], pos: r[3], lvl: r[4], s: r[5], sh: r[6], note: r[7] || null, d: r[8] || null, i }));
-if (typeof S2 !== 'undefined') ITEMS.forEach(w => { if (S2[w.id]) w.s2 = { s: S2[w.id][0], sh: S2[w.id][1] }; });
-const CAT_KEYS = Object.keys(CATS);
+// שני נושאים: מילות קישור (words.js) ואוצר מילים כללי (vocab.js). לכל נושא קבוצות, יחידות ויעד משלו.
+// ההתקדמות משותפת באותו חשבון, ולכן המזהים של אוצר המילים מתחילים ב-v:
+const TOPICS = {
+  link: { he: 'מילות קישור', icon: '🔗', raw: RAW, cats: CATS, days: 3, id: r => r[0] + '|' + r[2] },
+  vocab: { he: 'אוצר מילים', icon: '📚', raw: VRAW, cats: VCATS, days: 30, id: r => 'v:' + r[0] },
+};
+const ALL = [];
+for (const [k, t] of Object.entries(TOPICS)) {
+  t.keys = Object.keys(t.cats);
+  t.items = t.raw.map(r => { const w = { id: t.id(r), topic: k, en: r[0], he: r[1], cat: r[2], pos: r[3], lvl: r[4], s: r[5], sh: r[6], note: r[7] || null, d: r[8] || null, i: ALL.length }; ALL.push(w); return w; });
+}
+if (typeof S2 !== 'undefined') TOPICS.link.items.forEach(w => { if (S2[w.id]) w.s2 = { s: S2[w.id][0], sh: S2[w.id][1] }; });
+Object.assign(CATS, VCATS);
+Object.assign(NEAR, VNEAR);
+let topic = 'link', ITEMS, CAT_KEYS, UNITS;
+function setTopic(k) { topic = TOPICS[k] ? k : 'link'; ({ items: ITEMS, keys: CAT_KEYS, units: UNITS } = TOPICS[topic]); }
 const INT = [1, 10, 60, 240, 600, 1440, 2880, 4320]; // דקות עד החזרה הבאה, לפי תיבה
 const CAP = { meaning: 2, match: 2, category: 3, reverse: 3, sentence: 4, type: 7, typeSentence: 7 }; // תרגיל קל לא מעלה מעבר לתיבה הזו
 const DROP = { type: 1, typeSentence: 1, match: 1 }; // כמה תיבות יורדות בטעות (ברירת מחדל 2)
 const MASTER = 5;
-const PLAN_DAYS = 3;
 const KEY = 'amirnet-milim-v1';
 // מילים עם כמה משמעויות לא משמשות כמסיחים, כי הן יכולות להתאים לכמה משפטים
 const AMBIG = new Set(['as', 'for', 'since', 'while', 'still', 'once', 'so', 'yet', 'like', 'that', 'through', 'even', 'apart from', 'besides', 'also', 'too', 'as well',
@@ -41,6 +53,8 @@ const heParts = w => new Set(w.he.split(/[,;]/).map(x => x.replace(/\(.*?\)/g, '
 const sameMeaning = (a, b) => syn(a.en, b.en) || [...heParts(a)].some(x => heParts(b).has(x));
 
 // יחידות: לפי רמה, ובתוך כל רמה לפי קבוצה, עד ~8 מילים ביחידה
+for (const t of Object.values(TOPICS)) t.units = buildUnits(t.items, t.keys);
+function buildUnits(ITEMS, CAT_KEYS) {
 const UNITS = [];
 for (const lvl of [1, 2, 3]) {
   let cur = null;
@@ -67,21 +81,24 @@ for (const lvl of [1, 2, 3]) {
     else UNITS.push(cur);
   }
 }
+return UNITS;
+}
+setTopic('link');
 const LEVEL_NAMES = { 1: 'שלב 1 · בסיס', 2: 'שלב 2 · בינוני', 3: 'שלב 3 · מתקדם' };
 
 // ===== שמירה וחשבון =====
 // כניסה עם Google בלבד (Supabase Auth). ההתקדמות נשמרת בדפדפן (עותק מהיר) ובענן; הגרסה עם savedAt החדש יותר מנצחת.
 const sb = supabase.createClient(CLOUD.url, CLOUD.key, { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
-const BYID = Object.fromEntries(ITEMS.map(w => [w.id, w]));
+const BYID = Object.fromEntries(ALL.map(w => [w.id, w]));
 let ME = null, booting = true;
 const userKey = () => KEY + ':' + ME.id;
-function blank() { return { start: dayKey(), xp: 0, streak: 0, lastDay: null, days: {}, w: {}, sound: true, savedAt: 0 }; }
+function blank() { return { start: dayKey(), starts: {}, plan: {}, topic: 'link', xp: 0, streak: 0, lastDay: null, days: {}, w: {}, sound: true, savedAt: 0 }; }
 // מזהה מילה = מילה|קבוצה. כשמילה עוברת קבוצה (למשל ויתור שנפרד מניגוד), ההתקדמות עוברת איתה
 function migrate(s) {
   for (const id of Object.keys(s.w)) {
     if (BYID[id]) continue;
     const en = id.split('|')[0];
-    const it = ITEMS.find(x => x.en === en && !s.w[x.id] && (x.cat === 'con' || x.cat === 'cnc'));
+    const it = TOPICS.link.items.find(x => x.en === en && !s.w[x.id] && (x.cat === 'con' || x.cat === 'cnc'));
     if (it) s.w[it.id] = s.w[id];
     delete s.w[id];
   }
@@ -137,6 +154,10 @@ const box = w => (S.w[w.id] ? S.w[w.id].b : 0);
 function today() { const k = dayKey(); if (!S.days[k]) S.days[k] = { xp: 0, fresh: 0, ans: 0, ok: 0 }; return S.days[k]; }
 function introduced() { return ITEMS.filter(w => S.w[w.id]); }
 function near(a, b) { return (NEAR[a] || []).includes(b) || (NEAR[b] || []).includes(a); }
+// יעד יומי לכל נושא: יום ההתחלה, מספר הימים ומונה המילים החדשות של היום נפרדים
+const freshKey = t => t === 'link' ? 'fresh' : 'fresh_' + t;
+function planStart() { if (topic === 'link') return S.start; if (!S.starts[topic]) S.starts[topic] = dayKey(); return S.starts[topic]; }
+function planDays() { return S.plan[topic] || TOPICS[topic].days; }
 function streakNow() { if (!S.lastDay) return 0; return daysBetween(S.lastDay, dayKey()) <= 1 ? S.streak : 0; }
 
 function fillSentence(s, en) {
@@ -171,10 +192,10 @@ function speak(t, force) {
   if ((!S.sound && !force) || !window.speechSynthesis) return;
   try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t.replace(/\.\.\./g, ', ')); u.lang = 'en-US'; u.rate = 0.9; speechSynthesis.speak(u); } catch (e) {}
 }
-function say(i) { speak(ITEMS[i].en, true); }
+function say(i) { speak(ALL[i].en, true); }
 
 // ===== חזרה מרווחת =====
-function introduce(w) { S.w[w.id] = { b: 0, due: now(), ok: 0, bad: 0, intro: now() }; today().fresh++; save(); }
+function introduce(w) { S.w[w.id] = { b: 0, due: now(), ok: 0, bad: 0, intro: now() }; const d = today(), k = freshKey(w.topic); d[k] = (d[k] || 0) + 1; save(); }
 function typeFor(b) {
   const opts = b <= 0 ? ['meaning'] : b === 1 ? ['meaning', 'reverse', 'category'] : b === 2 ? ['reverse', 'category', 'sentence']
     : b === 3 ? ['sentence', 'sentence', 'typeSentence'] : b === 4 ? ['type', 'typeSentence', 'sentence'] : ['type', 'typeSentence', 'typeSentence', 'sentence'];
@@ -206,15 +227,17 @@ function isWeak(w) { const s = S.w[w.id]; return !!s && s.bad > 0 && (s.run !== 
 
 // ===== מסיחים =====
 function farPool(w) { return ITEMS.filter(x => x.cat !== w.cat && !near(x.cat, w.cat) && x.en !== w.en && !sameMeaning(x, w)); }
+// באוצר המילים מסיחים מאותו חלק דיבור קודם, כדי שלא יזהו את התשובה לפי הצורה (פועל / שם עצם / תואר)
+const posFirst = (w, a) => w.topic === 'link' ? a : [...a.filter(x => x.pos === w.pos), ...a.filter(x => x.pos !== w.pos)];
 function meaningDistractors(w) {
   const out = [];
-  for (const x of shuffle(farPool(w))) { if (out.length >= 3) break; if (!sameMeaning(x, w) && !out.includes(x.he)) out.push(x.he); }
+  for (const x of posFirst(w, shuffle(farPool(w)))) { if (out.length >= 3) break; if (!sameMeaning(x, w) && !out.includes(x.he)) out.push(x.he); }
   return out;
 }
 function reverseDistractors(w) {
   const pair = w.en.includes('...');
   const out = [];
-  for (const x of shuffle(farPool(w))) { if (out.length >= 3) break; if (x.en.includes('...') !== pair && Math.random() < 0.8) continue; if (!out.includes(x.en)) out.push(x.en); }
+  for (const x of posFirst(w, shuffle(farPool(w)))) { if (out.length >= 3) break; if (x.en.includes('...') !== pair && Math.random() < 0.8) continue; if (!out.includes(x.en)) out.push(x.en); }
   for (const x of shuffle(farPool(w))) { if (out.length >= 3) break; if (!out.includes(x.en)) out.push(x.en); }
   return out;
 }
@@ -425,25 +448,30 @@ function navBar() {
   const b = (v, ic, t) => `<button class="${view === v ? 'on' : ''}" onclick="go('${v}')"><span class="ic">${ic}</span>${t}</button>`;
   return `<nav class="nav">${b('home', '🏠', 'לימוד')}${b('sims', '📝', 'מבחנים')}${b('dict', '📖', 'מילון')}${b('settings', '⚙️', 'הגדרות')}</nav>`;
 }
+// בחירת נושא: מילות קישור / אוצר מילים
+function topicTabs() {
+  return `<div class="tabs">${Object.entries(TOPICS).map(([k, t]) => `<button class="${k === topic ? 'on' : ''}" onclick="pickTopic('${k}')">${t.icon} ${t.he} <small>${t.items.length}</small></button>`).join('')}</div>`;
+}
+function pickTopic(k) { if (k === topic) return; setTopic(k); S.topic = topic; dictOpen = -1; save(); render(); window.scrollTo(0, 0); }
 function go(v) { view = v; render(); window.scrollTo(0, 0); }
 
 function renderHome() {
   const total = ITEMS.length, intro = introduced().length;
   const mastered = ITEMS.filter(w => box(w) >= MASTER).length;
   const known = ITEMS.filter(w => box(w) >= 3).length;
-  const dayIdx = Math.max(1, daysBetween(S.start, dayKey()) + 1);
+  const PLAN_DAYS = planDays(), dayIdx = Math.max(1, daysBetween(planStart(), dayKey()) + 1);
   const daysLeft = Math.max(1, PLAN_DAYS - dayIdx + 1);
-  const td = today();
-  const target = Math.max(1, Math.ceil((total - intro + td.fresh) / daysLeft));
+  const td = today(), fresh = td[freshKey(topic)] || 0;
+  const target = Math.max(1, Math.ceil((total - intro + fresh) / daysLeft));
   const dueN = introduced().filter(w => ws(w).due <= now()).length;
   const weakN = introduced().filter(isWeak).length;
   const cu = currentUnit();
   const dayLabel = dayIdx <= PLAN_DAYS ? `יום ${dayIdx} מתוך ${PLAN_DAYS}` : `יום ${dayIdx} (היעד היה ${PLAN_DAYS} ימים, ממשיכים עד שליטה מלאה)`;
-  const pctFresh = Math.min(100, Math.round(td.fresh / target * 100));
-  let h = topBar() + '<main>';
+  const pctFresh = Math.min(100, Math.round(fresh / target * 100));
+  let h = topBar() + '<main>' + topicTabs();
   h += `<section class="card plan">
-    <div class="plan-h"><b>${dayLabel}</b><span>${td.fresh >= target && intro < total ? 'עמדת ביעד של היום 🎉' : ''}</span></div>
-    <div class="lbl"><span>מילים חדשות היום</span><span>${td.fresh}/${target}</span></div>
+    <div class="plan-h"><b>${dayLabel}</b><span>${fresh >= target && intro < total ? 'עמדת ביעד של היום 🎉' : ''}</span></div>
+    <div class="lbl"><span>מילים חדשות היום</span><span>${fresh}/${target}</span></div>
     <div class="bar"><i style="width:${pctFresh}%"></i></div>
     <div class="lbl"><span>מכיר (שלב משפטים ומעלה)</span><span>${known}/${total}</span></div>
     <div class="bar"><i style="width:${known / total * 100}%;background:var(--b)"></i></div>
@@ -577,7 +605,7 @@ function sheet(w, c) {
 }
 
 function renderDict() {
-  return topBar() + `<main><h2 class="sec">📖 כל המילים לפי קבוצות</h2>
+  return topBar() + `<main>${topicTabs()}<h2 class="sec">📖 ${TOPICS[topic].he}: כל המילים לפי קבוצות</h2>
     <input class="search" placeholder="חיפוש בעברית או באנגלית" value="${esc(dictQ)}" oninput="dictQ=this.value;document.getElementById('dl').innerHTML=dictList()">
     <div class="legend"><span><i class="dot b0"></i>חדש</span><span><i class="dot b1"></i>לומד</span><span><i class="dot b3"></i>מכיר</span><span><i class="dot b5"></i>שולט</span></div>
     <div id="dl">${dictList()}</div></main>` + navBar();
@@ -605,12 +633,13 @@ function renderSettings() {
   return topBar() + `<main><h2 class="sec">⚙️ הגדרות</h2>
     <div class="card"><label class="sw"><input type="checkbox" ${S.sound ? 'checked' : ''} onchange="S.sound=this.checked;save()"> צלילים והקראה של המילים</label></div>
     <div class="card"><b>איך זה עובד</b>
-      <p>${ITEMS.length} מילות קישור ב-${UNITS.length} יחידות ו-3 שלבים, מהקל לקשה. כל מילה עוברת 4 פורמטים: פירוש ← קבוצה ← השלמת משפט ← כתיבה לבד. היא נחשבת «שולט» 👑 רק אחרי שכתבת אותה נכון.</p>
+      <p>${TOPICS[topic].icon} ${TOPICS[topic].he}: ${ITEMS.length} מילים ב-${UNITS.length} יחידות ו-3 שלבים, מהקל לקשה. כל מילה עוברת 4 פורמטים: פירוש ← קבוצה ← השלמת משפט ← כתיבה לבד. היא נחשבת «שולט» 👑 רק אחרי שכתבת אותה נכון.</p>
       <p>טעית? המילה יורדת שלב וחוזרת עוד באותו שיעור ובשיעור הבא. צדקת? היא חוזרת אחרי 10 דקות, שעה, 4 שעות, 10 שעות, יום ויומיים.</p>
-      <p>יעד: 3 ימים. כל יום כתוב בכרטיס הראשי כמה מילים חדשות צריך כדי לעמוד ביעד. מומלץ לפתוח «חזרה» כמה פעמים ביום, גם ל-5 דקות.</p></div>
+      <p>יעד: ${planDays()} ימים (לכל נושא יעד משלו). כל יום כתוב בכרטיס הראשי כמה מילים חדשות צריך כדי לעמוד ביעד. מומלץ לפתוח «חזרה» כמה פעמים ביום, גם ל-5 דקות.</p></div>
     <div class="card"><b>👤 ${esc(ME.name)}</b><p><span class="en">${esc(ME.email || '')}</span><br>ההתקדמות נשמרת בחשבון ${syncIcon()} ${sync === 'ok' ? 'הכול מגובה' : sync === 'wait' ? 'שומר...' : 'לא נשמר כרגע (אין אינטרנט?), ייקלט כשיחזור החיבור'}. אפשר להיכנס עם אותו חשבון Google מכל טלפון או מחשב.</p>
       <button class="btn ghost" onclick="logout()">התנתק</button></div>
-    <div class="card"><div class="row"><button class="btn ghost" onclick="restartPlan()">התחל את 3 הימים מהיום</button><button class="btn red" onclick="resetAll()">איפוס מלא</button></div></div>
+    <div class="card"><label class="sw">יעד ל${TOPICS[topic].he}: <select class="sel" onchange="setPlan(this.value)">${[3, 7, 14, 21, 30, 45, 60, 90].map(n => `<option value="${n}" ${n === planDays() ? 'selected' : ''}>${n} ימים</option>`).join('')}</select></label></div>
+    <div class="card"><div class="row"><button class="btn ghost" onclick="restartPlan()">התחל את ${planDays()} הימים מהיום</button><button class="btn red" onclick="resetAll()">איפוס מלא</button></div></div>
   </main>` + navBar();
 }
 
@@ -619,8 +648,8 @@ const G_LOGO = '<svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="tru
 function renderLogin() {
   return `<main class="login">
     <img src="icon.svg" alt="" class="logo">
-    <h1>מילות קישור לאמירנט</h1>
-    <p class="sub">${ITEMS.length} מילים · 3 ימים · כמו דואלינגו</p>
+    <h1>מילים לאמירנט</h1>
+    <p class="sub">${Object.values(TOPICS).map(t => `${t.items.length} ${t.he}`).join(' · ')} · כמו דואלינגו</p>
     ${booting ? '<p class="sub">טוען...</p>' : `<button class="btn gbtn" onclick="googleLogin()">${G_LOGO}<span>כניסה עם Google</span></button>
     <div id="lmsg" class="lmsg"></div>
     <p class="foot">ההתקדמות נשמרת בחשבון שלך, ואפשר להמשיך מכל טלפון או מחשב.</p>`}
@@ -643,6 +672,7 @@ async function enter(user) {
     S = server && server.savedAt >= local.savedAt ? server : local;
     if (S !== server) push();
   } catch (e) { setSync('err'); }
+  setTopic(S.topic);
   try { localStorage.removeItem(KEY); localStorage.removeItem('amirnet-session'); localStorage.setItem(userKey(), JSON.stringify(S)); } catch (e) {}
 }
 async function logout(forced) {
@@ -662,7 +692,7 @@ async function refreshFromCloud() {
     if (server && server.savedAt > S.savedAt) {
       S = server;
       try { localStorage.setItem(userKey(), JSON.stringify(S)); } catch (e) {}
-      if (view !== 'lesson') render();
+      if (view !== 'lesson') { setTopic(S.topic); render(); }
     } else if (server && server.savedAt < S.savedAt) push();
   } catch (e) { setSync('err'); }
 }
@@ -678,8 +708,9 @@ async function boot() {
   booting = false;
   render();
 }
-function restartPlan() { S.start = dayKey(); save(); toast('ספירת 3 הימים מתחילה מהיום'); go('home'); }
-function resetAll() { if (!confirm('למחוק את כל ההתקדמות ולהתחיל מאפס?')) return; S = blank(); save(); go('home'); }
+function restartPlan() { if (topic === 'link') S.start = dayKey(); else S.starts[topic] = dayKey(); save(); toast(`ספירת ${planDays()} הימים מתחילה מהיום`); go('home'); }
+function setPlan(n) { S.plan[topic] = +n; save(); render(); }
+function resetAll() { if (!confirm('למחוק את כל ההתקדמות ולהתחיל מאפס?')) return; S = blank(); S.topic = topic; save(); go('home'); }
 
 function toast(t) {
   const el = document.createElement('div');
