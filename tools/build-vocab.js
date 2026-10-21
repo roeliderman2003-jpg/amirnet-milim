@@ -5,7 +5,9 @@
 const fs = require('fs'), path = require('path');
 const root = path.join(__dirname, '..'), src = path.join(root, 'vocab-src');
 const { cats, near } = JSON.parse(fs.readFileSync(path.join(src, 'cats.json'), 'utf8'));
-const files = fs.readdirSync(src).filter(f => /^part-.*\.json$/.test(f)).sort();
+// --file part-03.json → בודק רק את הקובץ הזה ואת הכיסוי של chunk-3.txt, בלי לכתוב
+const only = process.argv.includes('--file') ? process.argv[process.argv.indexOf('--file') + 1] : null;
+const files = only ? [only] : fs.readdirSync(src).filter(f => /^part-.*\.json$/.test(f)).sort();
 const errs = [], rows = [], seen = new Map();
 const HE = /[֐-׿]/;
 for (const f of files) {
@@ -30,7 +32,7 @@ for (const f of files) {
   });
 }
 // כיסוי: כל מילה ברשימת המקור מופיעה
-const listFile = path.join(src, 'words.txt');
+const listFile = path.join(src, only ? only.replace(/^part-0*(\d+)\.json$/, 'chunk-$1.txt') : 'words.txt');
 let missing = [];
 if (fs.existsSync(listFile)) {
   const want = fs.readFileSync(listFile, 'utf8').split(/\r?\n/).map(x => x.trim()).filter(Boolean);
@@ -44,7 +46,7 @@ rows.forEach(r => { byCat[r[2]] = (byCat[r[2]] || 0) + 1; byLvl[r[4]] = (byLvl[r
 console.log(`${rows.length} מילים מ-${files.length} קבצים · רמות ${JSON.stringify(byLvl)}`);
 console.log(Object.entries(byCat).map(([k, n]) => `${k}:${n}`).join(' '));
 if (errs.length) { console.log(`\n${errs.length} שגיאות:\n` + errs.slice(0, 200).join('\n')); process.exitCode = 1; }
-if (process.argv.includes('--check') || errs.length) return;
+if (process.argv.includes('--check') || only || errs.length) return;
 const out = `// אוצר מילים כללי לאמירנט. נבנה אוטומטית מ-vocab-src (node tools/build-vocab.js). לא לערוך ידנית.
 // [מילה, פירוש, קבוצה, חלק דיבור (n שם עצם / v פועל / j תואר / r תואר פועל / x אחר), רמה, משפט עם ___, תרגום המשפט, הערה, מסיחים קבועים]
 const VCATS = ${JSON.stringify(cats, null, 1)};
