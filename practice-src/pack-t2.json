@@ -1,0 +1,1515 @@
+{
+ "tier": 2,
+ "sc": [
+  {
+   "qs": [
+    {
+     "q": "Independent laboratories were unable to ___ the company's claim that its new battery could be fully recharged in under five minutes, so the product's launch was postponed until further tests could be carried out.",
+     "o": [
+      "undermine",
+      "anticipate",
+      "corroborate",
+      "retract"
+     ],
+     "a": 2,
+     "ex": "«corroborate» = לאשש, לאשר בעזרת ראיות נוספות. המעבדות לא הצליחו לאשר את הטענה, ולכן ההשקה נדחתה עד לבדיקות נוספות. «undermine» (לערער) לא מתאים: אם המעבדות לא הצליחו לערער את הטענה, לא הייתה סיבה לדחות את ההשקה. «retract» (לחזור בו) הוא משהו שרק החברה עצמה יכולה לעשות לטענה שלה.",
+     "w": [
+      [
+       "corroborate",
+       "לאשש, לאמת"
+      ],
+      [
+       "undermine",
+       "לערער, לחתור תחת"
+      ],
+      [
+       "postpone",
+       "לדחות (למועד מאוחר יותר)"
+      ]
+     ]
+    },
+    {
+     "q": "The new bridge was expected to ease congestion in the old town; ___, traffic there has actually grown since it opened, because drivers now use the area as a shortcut.",
+     "o": [
+      "ironically",
+      "consequently",
+      "similarly",
+      "in addition"
+     ],
+     "a": 0,
+     "ex": "«ironically» = באופן אירוני, דווקא ההפך ממה שציפו. ציפו שהגשר יקל על העומס, ובפועל התנועה גדלה. «consequently» (כתוצאה מכך) היה אומר שהגידול בתנועה נובע מהציפייה להקלה, וזה לא הגיוני. «similarly» (באופן דומה) לא מתאים, כי אין כאן שני דברים דומים אלא ניגוד.",
+     "w": [
+      [
+       "ironically",
+       "באופן אירוני, דווקא"
+      ],
+      [
+       "consequently",
+       "כתוצאה מכך"
+      ],
+      [
+       "congestion",
+       "עומס (תנועה)"
+      ]
+     ]
+    },
+    {
+     "q": "Because the symptoms of the disease are so ___, appearing in one patient as a mild rash and in another as severe joint pain, doctors often fail to diagnose it for months.",
+     "o": [
+      "conspicuous",
+      "uniform",
+      "acute",
+      "variable"
+     ],
+     "a": 3,
+     "ex": "«variable» = משתנה, לא קבוע. אצל מטופל אחד יש פריחה קלה ואצל אחר כאבי מפרקים קשים, כלומר התסמינים משתנים מאדם לאדם, ולכן קשה לאבחן את המחלה. «conspicuous» (בולט לעין) היה דווקא מקל על האבחון, ו-«uniform» (אחיד) אומר את ההפך מהדוגמה שבמשפט.",
+     "w": [
+      [
+       "variable",
+       "משתנה, לא קבוע"
+      ],
+      [
+       "conspicuous",
+       "בולט, נראה לעין"
+      ],
+      [
+       "diagnose",
+       "לאבחן"
+      ]
+     ]
+    },
+    {
+     "q": "___ the director's public promise to return the stolen statue, it remained on display in the museum for another decade.",
+     "o": [
+      "Owing to",
+      "Notwithstanding",
+      "In accordance with",
+      "On behalf of"
+     ],
+     "a": 1,
+     "ex": "«notwithstanding» = למרות, חרף. המנהל הבטיח בפומבי להחזיר את הפסל, ובכל זאת הפסל נשאר בתצוגה עוד עשור, כלומר יש כאן ניגוד. «owing to» (בגלל) היה הופך את ההבטחה לסיבה להשארת הפסל, וזה לא הגיוני. «in accordance with» (בהתאם ל...) היה אומר שהפסל נשאר כפי שהובטח, וזה ההפך מההבטחה.",
+     "w": [
+      [
+       "notwithstanding",
+       "למרות, חרף"
+      ],
+      [
+       "owing to",
+       "בגלל, עקב"
+      ],
+      [
+       "on display",
+       "מוצג (לקהל)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The minister's sudden resignation, coming only days before the budget vote, threatened to ___ months of careful negotiations between the coalition partners.",
+     "o": [
+      "finalize",
+      "derail",
+      "reinforce",
+      "commemorate"
+     ],
+     "a": 1,
+     "ex": "«derail» = להוריד מהפסים, לסכל. התפטרות פתאומית ימים ספורים לפני ההצבעה מאיימת להרוס חודשים של משא ומתן. «threatened to» מעיד על משהו שלילי, ולכן «reinforce» (לחזק) ו-«finalize» (להשלים, לסגור סופית) לא מתאימים, כי הם תוצאות חיוביות.",
+     "w": [
+      [
+       "derail",
+       "לסכל, להוריד מהפסים"
+      ],
+      [
+       "resignation",
+       "התפטרות"
+      ],
+      [
+       "reinforce",
+       "לחזק"
+      ]
+     ]
+    },
+    {
+     "q": "The two research teams worked entirely ___, which makes it all the more striking that they reached almost identical conclusions.",
+     "o": [
+      "jointly",
+      "reluctantly",
+      "simultaneously",
+      "independently"
+     ],
+     "a": 3,
+     "ex": "«independently» = באופן עצמאי, בנפרד זה מזה. דווקא העובדה שהצוותים לא עבדו יחד הופכת את המסקנות הזהות למפתיעות. «jointly» (במשותף) היה הופך את הדמיון במסקנות למובן מאליו. «simultaneously» (בו-זמנית) מפתה, אבל עבודה באותו זמן לא מסבירה למה הדמיון מפתיע.",
+     "w": [
+      [
+       "independently",
+       "באופן עצמאי, בנפרד"
+      ],
+      [
+       "jointly",
+       "במשותף, ביחד"
+      ],
+      [
+       "striking",
+       "בולט, מפתיע"
+      ]
+     ]
+    },
+    {
+     "q": "The drug is highly effective against the infection; ___, its side effects are so severe that doctors prescribe it only as a last resort.",
+     "o": [
+      "nonetheless",
+      "accordingly",
+      "in other words",
+      "for instance"
+     ],
+     "a": 0,
+     "ex": "«nonetheless» = אף על פי כן, ובכל זאת. התרופה יעילה מאוד, אבל תופעות הלוואי קשות ולכן נותנים אותה רק כמוצא אחרון, כלומר ניגוד. «in other words» (במילים אחרות) היה מציג את תופעות הלוואי כניסוח אחר של היעילות, וזה לא נכון. «accordingly» (בהתאם לכך) יוצר קשר של סיבה ותוצאה שאין כאן.",
+     "w": [
+      [
+       "nonetheless",
+       "אף על פי כן, ובכל זאת"
+      ],
+      [
+       "last resort",
+       "מוצא אחרון"
+      ],
+      [
+       "prescribe",
+       "לרשום (תרופה)"
+      ]
+     ]
+    },
+    {
+     "q": "When the new mayor took office, the city was on the ___ of bankruptcy, with barely enough money left to pay its employees' salaries.",
+     "o": [
+      "peak",
+      "core",
+      "verge",
+      "surface"
+     ],
+     "a": 2,
+     "ex": "«on the verge of» = על סף. בקושי נשאר כסף למשכורות, כלומר העירייה הייתה קרובה מאוד לפשיטת רגל. «peak» (שיא) מפתה, אבל «on the peak of bankruptcy» אינו צירוף תקין באנגלית, ושיא מתאים בדרך כלל להצלחה ולא לקריסה.",
+     "w": [
+      [
+       "on the verge of",
+       "על סף"
+      ],
+      [
+       "bankruptcy",
+       "פשיטת רגל"
+      ],
+      [
+       "take office",
+       "להיכנס לתפקיד"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The species was believed to have died out in the 1930s; ___, when a small population was discovered on a remote island in 2019, biologists were astonished.",
+     "o": [
+      "thus",
+      "whereas",
+      "otherwise",
+      "meanwhile"
+     ],
+     "a": 0,
+     "ex": "«thus» = לכן, כך ש... מכיוון שחשבו שהמין נכחד כבר בשנות ה-30, הגילוי ב-2019 הדהים את הביולוגים, כלומר סיבה ותוצאה. «whereas» (בעוד ש) משווה בין שני נושאים מנוגדים, ו-«otherwise» (אחרת) לא מתאים, כי אין כאן תנאי.",
+     "w": [
+      [
+       "thus",
+       "לכן, כך"
+      ],
+      [
+       "die out",
+       "להיכחד"
+      ],
+      [
+       "astonished",
+       "נדהם"
+      ]
+     ]
+    },
+    {
+     "q": "Her reputation as a ___ negotiator was well deserved: she rarely made a concession without obtaining something of greater value in return.",
+     "o": [
+      "naive",
+      "hesitant",
+      "shrewd",
+      "generous"
+     ],
+     "a": 2,
+     "ex": "«shrewd» = ממולח, פיקח וחד. היא כמעט אף פעם לא ויתרה על משהו בלי לקבל בתמורה משהו שווה יותר, וזו בדיוק התנהגות של מנהלת משא ומתן חכמה. «naive» (תמימה) ו-«generous» (נדיבה) אומרים כמעט את ההפך, כי מי שנדיבה מוותרת בלי לדרוש תמורה.",
+     "w": [
+      [
+       "shrewd",
+       "ממולח, פיקח"
+      ],
+      [
+       "concession",
+       "ויתור"
+      ],
+      [
+       "naive",
+       "תמים"
+      ]
+     ]
+    },
+    {
+     "q": "Rather than ___ the protesters' demands, the government chose to ignore them, hoping that the movement would lose momentum over the summer.",
+     "o": [
+      "dismiss",
+      "address",
+      "overlook",
+      "imitate"
+     ],
+     "a": 1,
+     "ex": "«address» = לטפל ב..., להתייחס ברצינות ל... «rather than» יוצר ניגוד בין מה שהממשלה לא עשתה לבין מה שעשתה (התעלמה), ולכן צריך פועל שהוא ההפך מהתעלמות. «dismiss» (לבטל, לדחות) ו-«overlook» (להתעלם) דומים ל-«ignore», ואז אין כאן ניגוד.",
+     "w": [
+      [
+       "address",
+       "לטפל ב..., להתייחס ל..."
+      ],
+      [
+       "dismiss",
+       "לבטל, לדחות"
+      ],
+      [
+       "momentum",
+       "תנופה"
+      ]
+     ]
+    },
+    {
+     "q": "___ its small size, the device can store more data than the computers that filled entire rooms in the 1970s.",
+     "o": [
+      "Because of",
+      "Thanks to",
+      "Instead of",
+      "For all"
+     ],
+     "a": 3,
+     "ex": "«for all» = למרות (כל ה...). המכשיר קטן, ובכל זאת שומר יותר מידע ממחשבים שמילאו חדרים שלמים, כלומר ניגוד. «because of» ו-«thanks to» (בזכות) הופכים את הגודל הקטן לסיבה ליכולת האחסון הגדולה, וזה לא הגיוני.",
+     "w": [
+      [
+       "for all",
+       "למרות"
+      ],
+      [
+       "store",
+       "לאחסן, לשמור"
+      ],
+      [
+       "thanks to",
+       "בזכות"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The instructions that came with the furniture were so ___ that even the store's own employees could not work out how the pieces fitted together.",
+     "o": [
+      "explicit",
+      "concise",
+      "durable",
+      "convoluted"
+     ],
+     "a": 3,
+     "ex": "«convoluted» = מסובך ומפותל. אם אפילו עובדי החנות לא הבינו איך מרכיבים את הרהיט, ההוראות היו מסובכות מאוד. «explicit» (מפורש) ו-«concise» (תמציתי) הם תכונות של הוראות טובות, ולכן הם לא מסבירים למה איש לא הבין אותן.",
+     "w": [
+      [
+       "convoluted",
+       "מסובך, מפותל"
+      ],
+      [
+       "explicit",
+       "מפורש, ברור"
+      ],
+      [
+       "work out",
+       "להבין, לפענח"
+      ]
+     ]
+    },
+    {
+     "q": "Some economists argue that raising the minimum wage leads to job losses, ___ others maintain that it increases spending and therefore creates new jobs.",
+     "o": [
+      "so that",
+      "whereas",
+      "unless",
+      "because"
+     ],
+     "a": 1,
+     "ex": "«whereas» = בעוד ש..., ואילו. המשפט מציג שתי עמדות מנוגדות של כלכלנים. «so that» (כדי ש) ו-«because» (מפני ש) יוצרים קשר של מטרה או סיבה בין שתי העמדות, וזה לא הגיוני. «unless» (אלא אם כן) הוא תנאי, ואין כאן תנאי.",
+     "w": [
+      [
+       "whereas",
+       "בעוד ש..., ואילו"
+      ],
+      [
+       "maintain",
+       "לטעון, לגרוס"
+      ],
+      [
+       "minimum wage",
+       "שכר מינימום"
+      ]
+     ]
+    },
+    {
+     "q": "The new regulations are intended to ___ the use of pesticides near rivers, not to ban it altogether.",
+     "o": [
+      "prohibit",
+      "encourage",
+      "curb",
+      "disguise"
+     ],
+     "a": 2,
+     "ex": "«curb» = לרסן, להגביל. התקנות נועדו להגביל את השימוש בחומרי הדברה ולא לאסור אותו לגמרי. «prohibit» (לאסור) הוא בדיוק מה שהמשפט שולל («not to ban it»). «encourage» (לעודד) לא מתאים, כי אין סיבה לנגד בין עידוד לבין איסור, ותקנות ליד נהרות נועדו להגן עליהם.",
+     "w": [
+      [
+       "curb",
+       "לרסן, להגביל"
+      ],
+      [
+       "prohibit",
+       "לאסור"
+      ],
+      [
+       "altogether",
+       "לגמרי, כליל"
+      ]
+     ]
+    },
+    {
+     "q": "The village had been ___ abandoned by the 1950s; only a handful of elderly residents still lived among its empty houses.",
+     "o": [
+      "virtually",
+      "barely",
+      "recently",
+      "temporarily"
+     ],
+     "a": 0,
+     "ex": "«virtually» = כמעט לגמרי, למעשה. רק קומץ תושבים קשישים נשארו בכפר, כלומר הוא ננטש כמעט לגמרי. «barely» (בקושי) היה אומר שכמעט אף אחד לא עזב, וזה ההפך. «temporarily» (באופן זמני) לא נתמך בשום דבר במשפט.",
+     "w": [
+      [
+       "virtually",
+       "כמעט לגמרי, למעשה"
+      ],
+      [
+       "abandon",
+       "לנטוש"
+      ],
+      [
+       "a handful of",
+       "קומץ, מעט"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Persistent ___ between the two ministries delayed the project for years, as each blamed the other for the rising costs.",
+     "o": [
+      "cooperation",
+      "harmony",
+      "friction",
+      "curiosity"
+     ],
+     "a": 2,
+     "ex": "«friction» = חיכוך, מתיחות. כל משרד האשים את המשרד השני בעליית העלויות, וזה סימן למתיחות שעיכבה את הפרויקט. «cooperation» (שיתוף פעולה) ו-«harmony» (הרמוניה) אומרים את ההפך, והם לא היו גורמים לעיכוב.",
+     "w": [
+      [
+       "friction",
+       "חיכוך, מתיחות"
+      ],
+      [
+       "persistent",
+       "מתמשך, עיקש"
+      ],
+      [
+       "blame",
+       "להאשים"
+      ]
+     ]
+    },
+    {
+     "q": "The museum agreed to lend the painting to the exhibition ___ it would be kept at a constant temperature and protected from direct sunlight.",
+     "o": [
+      "so that",
+      "in case",
+      "now that",
+      "provided that"
+     ],
+     "a": 3,
+     "ex": "«provided that» = בתנאי ש... המוזיאון הסכים להשאיל את הציור רק אם ישמרו עליו בטמפרטורה קבועה ויגנו עליו מאור שמש, כלומר תנאי. «so that» (כדי ש) הופך את השמירה על הציור למטרה של ההשאלה, וזה לא הגיוני. «now that» (עכשיו כש) מניח שהדבר כבר קורה, ולא מציב תנאי.",
+     "w": [
+      [
+       "provided that",
+       "בתנאי ש..."
+      ],
+      [
+       "lend",
+       "להשאיל"
+      ],
+      [
+       "constant",
+       "קבוע"
+      ]
+     ]
+    },
+    {
+     "q": "Although the new policy was presented as a temporary measure, many observers suspected that it would prove far more ___ than the government admitted.",
+     "o": [
+      "enduring",
+      "fleeting",
+      "transparent",
+      "affordable"
+     ],
+     "a": 0,
+     "ex": "«enduring» = מתמשך, שנשאר לאורך זמן. «although» יוצר ניגוד ל-«temporary» (זמני), ולכן המשקיפים חשדו שהמדיניות תימשך הרבה יותר זמן ממה שהממשלה הודתה. «fleeting» (חולף, קצר) הוא בעצם «זמני», ולכן אין בו ניגוד.",
+     "w": [
+      [
+       "enduring",
+       "מתמשך, עמיד"
+      ],
+      [
+       "fleeting",
+       "חולף, קצר מועד"
+      ],
+      [
+       "measure",
+       "צעד, אמצעי"
+      ]
+     ]
+    },
+    {
+     "q": "The rescue team had to ___ the search at nightfall because the strong winds made it too dangerous to continue.",
+     "o": [
+      "intensify",
+      "suspend",
+      "launch",
+      "extend"
+     ],
+     "a": 1,
+     "ex": "«suspend» = להשעות, להפסיק זמנית. הרוחות החזקות הפכו את המשך החיפוש למסוכן מדי, ולכן הצוות עצר אותו. «intensify» (להגביר) ו-«extend» (להאריך) אומרים את ההפך מעצירה, ו-«launch» (להתחיל) לא מתאים לחיפוש שכבר התנהל.",
+     "w": [
+      [
+       "suspend",
+       "להשעות, להפסיק זמנית"
+      ],
+      [
+       "intensify",
+       "להגביר, להעצים"
+      ],
+      [
+       "nightfall",
+       "רדת הלילה"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The factory has cut its water use by forty percent; ___, it now recycles almost all of its waste.",
+     "o": [
+      "nevertheless",
+      "moreover",
+      "otherwise",
+      "conversely"
+     ],
+     "a": 1,
+     "ex": "«moreover» = יתר על כן. המפעל חסך במים וגם ממחזר כמעט את כל הפסולת, כלומר שני הישגים שמתווספים זה לזה. «nevertheless» (למרות זאת) ו-«conversely» (לעומת זאת) דורשים ניגוד, ואין כאן ניגוד בין שני ההישגים.",
+     "w": [
+      [
+       "moreover",
+       "יתר על כן"
+      ],
+      [
+       "recycle",
+       "למחזר"
+      ],
+      [
+       "conversely",
+       "לעומת זאת, להפך"
+      ]
+     ]
+    },
+    {
+     "q": "The senator's response to the scandal was deliberately ___; reporters left the press conference still unsure whether she intended to resign.",
+     "o": [
+      "ambiguous",
+      "decisive",
+      "sincere",
+      "emphatic"
+     ],
+     "a": 0,
+     "ex": "«ambiguous» = דו-משמעי, לא חד. העיתונאים יצאו ממסיבת העיתונאים בלי לדעת אם היא מתכוונת להתפטר, ולכן התשובה שלה הייתה מעורפלת. «decisive» (החלטי) ו-«emphatic» (נחרץ) היו משאירים תמונה ברורה, וזה ההפך.",
+     "w": [
+      [
+       "ambiguous",
+       "דו-משמעי, מעורפל"
+      ],
+      [
+       "decisive",
+       "החלטי"
+      ],
+      [
+       "resign",
+       "להתפטר"
+      ]
+     ]
+    },
+    {
+     "q": "Few people outside the region had heard of the festival; ___, it attracted more than fifty thousand visitors in its first year.",
+     "o": [
+      "as a result",
+      "in short",
+      "that is",
+      "all the same"
+     ],
+     "a": 3,
+     "ex": "«all the same» = בכל זאת, למרות זאת. מעטים הכירו את הפסטיבל, ובכל זאת הגיעו אליו יותר מחמישים אלף מבקרים, כלומר ניגוד. «as a result» (כתוצאה מכך) היה הופך את חוסר ההיכרות לסיבה להצלחה, וזה לא הגיוני. «that is» (כלומר) מציג הסבר, לא ניגוד.",
+     "w": [
+      [
+       "all the same",
+       "בכל זאת, למרות זאת"
+      ],
+      [
+       "attract",
+       "למשוך"
+      ],
+      [
+       "in short",
+       "בקיצור"
+      ]
+     ]
+    },
+    {
+     "q": "The expedition had to turn back after only three days because of a ___ of fresh water: two of their four tanks had leaked during the crossing.",
+     "o": [
+      "surplus",
+      "flood",
+      "shortage",
+      "source"
+     ],
+     "a": 2,
+     "ex": "«shortage» = מחסור. שניים מארבעת המכלים דלפו, ולכן לא היו מספיק מים והמשלחת נאלצה לחזור. «surplus» (עודף) הוא ההפך, ועודף מים לא היה גורם למשלחת לחזור.",
+     "w": [
+      [
+       "shortage",
+       "מחסור"
+      ],
+      [
+       "surplus",
+       "עודף"
+      ],
+      [
+       "leak",
+       "לדלוף"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "rs": [
+  {
+   "qs": [
+    {
+     "q": "Although the new vaccine proved highly effective in clinical trials, its high cost and the need to store it at extremely low temperatures have limited its use in poorer countries.",
+     "o": [
+      "Because the new vaccine has been used less in poorer countries, its price has risen and it must now be stored at extremely low temperatures.",
+      "The new vaccine worked very well in trials, but because it is expensive and must be kept very cold, it has been used less in poorer countries.",
+      "The new vaccine proved less effective in trials than expected, which is why poorer countries have chosen not to buy it or store it.",
+      "Despite its high cost, the new vaccine is now widely used in poorer countries, since most of them can store it at very low temperatures."
+     ],
+     "a": 1,
+     "ex": "המקור: החיסון היה יעיל מאוד בניסויים, אבל המחיר הגבוה והצורך לשמור אותו בקור קיצוני הגבילו את השימוש בו במדינות עניות. התשובה הנכונה אומרת אותו דבר («very well» במקום «highly effective», «kept very cold» במקום «store at extremely low temperatures»). אחת השגויות הופכת סיבה ותוצאה, אחרת אומרת שהחיסון היה פחות יעיל, והרביעית אומרת שהוא נמצא בשימוש נרחב, בניגוד למקור.",
+     "w": [
+      [
+       "effective",
+       "יעיל"
+      ],
+      [
+       "store",
+       "לאחסן, לשמור"
+      ],
+      [
+       "limit",
+       "להגביל"
+      ]
+     ]
+    },
+    {
+     "q": "It was not until the late nineteenth century that doctors widely accepted that many diseases are spread by germs, an idea that had been proposed decades earlier.",
+     "o": [
+      "In the late nineteenth century, doctors first proposed that many diseases are spread by germs, and the idea was widely accepted within a few decades.",
+      "Decades before the late nineteenth century, most doctors already accepted the idea that germs spread many diseases, but few of them could prove it.",
+      "Doctors in the late nineteenth century rejected the idea that germs spread disease, even though it had been widely accepted several decades earlier.",
+      "The idea that germs spread many diseases was suggested decades before most doctors finally came to accept it in the late nineteenth century."
+     ],
+     "a": 3,
+     "ex": "«It was not until X that Y» = רק ב-X קרה Y. הרעיון שחיידקים מפיצים מחלות הוצע עשרות שנים קודם, אבל רוב הרופאים קיבלו אותו רק בסוף המאה ה-19. התשובה הנכונה שומרת על הסדר הזה. אחת השגויות אומרת שהרעיון רק הוצע בסוף המאה, אחרת אומרת שהרופאים כבר קיבלו אותו קודם, והרביעית אומרת שהם דחו אותו.",
+     "w": [
+      [
+       "not until",
+       "רק כאשר, לא לפני"
+      ],
+      [
+       "widely",
+       "באופן נרחב"
+      ],
+      [
+       "propose",
+       "להציע"
+      ]
+     ]
+    },
+    {
+     "q": "The more choices consumers are offered, the less satisfied they tend to be with whatever they finally decide to buy.",
+     "o": [
+      "Consumers who are given a wider range of options are generally less content with their eventual purchases.",
+      "Consumers who are offered more choices tend to buy more products, although they are usually less satisfied with each of them.",
+      "The less satisfied consumers are with their purchases, the more choices they demand the next time they decide to buy something.",
+      "Offering consumers fewer choices makes them less satisfied, because they feel that they have not been allowed to decide for themselves."
+     ],
+     "a": 0,
+     "ex": "«The more X, the less Y» = ככל ש-X גדל, Y קטן. ככל שמציעים לצרכנים יותר אפשרויות, הם פחות מרוצים ממה שקנו בסוף. התשובה הנכונה אומרת זאת במילים אחרות («a wider range of options», «less content»). אחת השגויות מוסיפה שהם קונים יותר מוצרים, אחרת הופכת את כיוון הסיבה, והרביעית טוענת שפחות אפשרויות פוגעות בשביעות הרצון, וזה ההפך.",
+     "w": [
+      [
+       "the more... the less",
+       "ככל ש... יותר, כך... פחות"
+      ],
+      [
+       "satisfied",
+       "מרוצה"
+      ],
+      [
+       "content",
+       "שבע רצון, מרוצה"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Far from being a recent invention, the practice of sending children to summer camps dates back to the 1880s, when it was promoted as a cure for the supposed weakness of city children.",
+     "o": [
+      "Summer camps for children were invented quite recently, although the idea that city children are weak was first promoted in the 1880s.",
+      "In the 1880s, summer camps were criticized for making city children weaker, which is why they did not become popular until much more recently.",
+      "Summer camps are not a new idea; they started in the 1880s and were promoted as a cure for the alleged frailty of urban children.",
+      "Summer camps, which date back to the 1880s, were originally intended for country children, who were thought to be weaker than children in the city."
+     ],
+     "a": 2,
+     "ex": "«Far from being X» = רחוק מלהיות X, כלומר ממש לא X. מחנות הקיץ אינם המצאה חדשה, הם התחילו בשנות ה-1880 והוצגו כתרופה לחולשה כביכול של ילדי העיר. «supposed» = כביכול, ובתשובה הנכונה «alleged». אחת השגויות אומרת שהמחנות חדשים, אחרת אומרת שבשנות ה-1880 ביקרו אותם, והרביעית מחליפה את ילדי העיר בילדי הכפר.",
+     "w": [
+      [
+       "far from",
+       "רחוק מ..., ממש לא"
+      ],
+      [
+       "date back to",
+       "להתחיל ב..., לחזור עד"
+      ],
+      [
+       "supposed",
+       "כביכול, משוער"
+      ]
+     ]
+    },
+    {
+     "q": "Unless the airline reduces its fuel costs significantly, it will have to cancel several of its least profitable routes next year.",
+     "o": [
+      "If the airline fails to cut its fuel costs substantially, it will be forced to drop some of its least profitable routes next year.",
+      "The airline will cancel several of its least profitable routes next year in order to reduce its fuel costs significantly.",
+      "Even if the airline reduces its fuel costs significantly, it will still have to cancel several of its least profitable routes next year.",
+      "The airline has already reduced its fuel costs significantly, so it will not have to cancel any of its routes next year."
+     ],
+     "a": 0,
+     "ex": "«Unless» = אלא אם כן, כלומר «if not». אם חברת התעופה לא תקטין מאוד את הוצאות הדלק, היא תצטרך לבטל כמה קווים. התשובה הנכונה משתמשת ב-«if... fails to». אחת השגויות הופכת את ביטול הקווים לאמצעי לחיסכון בדלק, אחרת («even if») מבטלת את התנאי, והרביעית אומרת שהחיסכון כבר קרה, וזה לא נאמר.",
+     "w": [
+      [
+       "unless",
+       "אלא אם כן"
+      ],
+      [
+       "significantly",
+       "באופן משמעותי"
+      ],
+      [
+       "profitable",
+       "רווחי"
+      ]
+     ]
+    },
+    {
+     "q": "Critics of the plan point out that the new stadium, far from boosting the local economy, would mainly benefit a handful of wealthy investors.",
+     "o": [
+      "Critics of the plan admit that the new stadium would boost the local economy, but they complain that it would also benefit a few wealthy investors.",
+      "According to the plan's critics, the new stadium would do little for the local economy and would chiefly profit a small number of rich investors.",
+      "A handful of wealthy investors have criticized the plan, claiming that the new stadium would harm the local economy more than it would help it.",
+      "Critics of the plan argue that the new stadium would benefit wealthy investors only if it first managed to boost the local economy significantly."
+     ],
+     "a": 1,
+     "ex": "לפי המבקרים, האצטדיון לא יחזק את הכלכלה המקומית («far from boosting»), אלא בעיקר ירוויחו ממנו מעט משקיעים עשירים. התשובה הנכונה אומרת את זה במילים אחרות. אחת השגויות אומרת שהמבקרים מודים שהכלכלה תתחזק, אחרת מחליפה את המבקרים במשקיעים עצמם, והרביעית מוסיפה תנאי שלא קיים במקור.",
+     "w": [
+      [
+       "boost",
+       "לחזק, להגביר"
+      ],
+      [
+       "benefit",
+       "להועיל, להיטיב עם"
+      ],
+      [
+       "a handful of",
+       "קומץ, מעט"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Rarely has a single invention changed daily life as dramatically as the refrigerator, which transformed not only how people store food but also how often they shop.",
+     "o": [
+      "The refrigerator changed how people store food, but it rarely affected how often they shop, so its effect on daily life was less dramatic than expected.",
+      "Many inventions have changed daily life more dramatically than the refrigerator, which mainly transformed how often people go shopping for food.",
+      "Because people began shopping less often, the refrigerator was invented to store food for longer, which dramatically changed their daily life.",
+      "Few inventions have altered everyday life as much as the refrigerator, which changed both the way people keep food and how frequently they go shopping."
+     ],
+     "a": 3,
+     "ex": "«Rarely has X» = לעתים רחוקות X, כלומר מעט המצאות שינו את חיי היומיום כמו המקרר. המקרר שינה גם את אופן שמירת המזון וגם את תדירות הקניות («not only... but also»). התשובה הנכונה שומרת על שני החלקים. אחת השגויות טוענת שהמקרר כמעט לא השפיע על הקניות, אחרת אומרת שהמצאות רבות שינו את החיים יותר ממנו, והרביעית הופכת סיבה ותוצאה.",
+     "w": [
+      [
+       "rarely",
+       "לעתים רחוקות"
+      ],
+      [
+       "transform",
+       "לשנות מן היסוד"
+      ],
+      [
+       "not only... but also",
+       "לא רק... אלא גם"
+      ]
+     ]
+    },
+    {
+     "q": "The researchers stress that their findings, though promising, are based on a small sample and must be confirmed by larger studies before any treatment can be recommended.",
+     "o": [
+      "The researchers stress that, because their findings were based on a large sample, the treatment can be recommended without any further studies.",
+      "Although their findings were based on a small sample, the researchers are already recommending the treatment while larger studies are carried out.",
+      "The findings are encouraging, but the researchers emphasize that the sample was small and larger studies are needed before a treatment is recommended.",
+      "The researchers stress that their findings are disappointing and that larger studies are unlikely to change their decision not to recommend treatment."
+     ],
+     "a": 2,
+     "ex": "המקור: הממצאים מבטיחים, אבל המדגם קטן, ולכן צריך לאשר אותם במחקרים גדולים יותר לפני שממליצים על טיפול. התשובה הנכונה אומרת זאת («encouraging» במקום «promising», «emphasize» במקום «stress»). אחת השגויות הופכת את המדגם לגדול, אחרת אומרת שהחוקרים כבר ממליצים על הטיפול, והרביעית אומרת שהממצאים מאכזבים.",
+     "w": [
+      [
+       "stress",
+       "להדגיש"
+      ],
+      [
+       "promising",
+       "מבטיח, מעודד"
+      ],
+      [
+       "sample",
+       "מדגם"
+      ]
+     ]
+    },
+    {
+     "q": "Whereas earlier generations of farmers in the valley grew mostly wheat, their grandchildren have turned to vineyards, which require less land but far more labor.",
+     "o": [
+      "Farmers in the valley once grew mainly wheat, but their grandchildren now cultivate grapes, which need less land and much more work.",
+      "Farmers in the valley once grew mainly grapes, but their grandchildren have switched to wheat, which needs less land and much more work.",
+      "The grandchildren of the valley's farmers grow both wheat and grapes, since vineyards need less land and less labor than wheat fields do.",
+      "Earlier generations in the valley grew mostly wheat because vineyards, which their grandchildren now prefer, required more land than they owned."
+     ],
+     "a": 0,
+     "ex": "«Whereas» = בעוד ש..., ואילו. הדורות הקודמים גידלו בעיקר חיטה, והנכדים עברו לכרמים, שדורשים פחות אדמה אבל הרבה יותר עבודה. אחת השגויות מחליפה בין החיטה לענבים, אחרת אומרת שכרמים דורשים פחות עבודה, והרביעית ממציאה סיבה (שכרמים דרשו יותר אדמה), וזה גם סותר את המקור.",
+     "w": [
+      [
+       "whereas",
+       "בעוד ש..., ואילו"
+      ],
+      [
+       "vineyard",
+       "כרם"
+      ],
+      [
+       "labor",
+       "עבודה (פיזית)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Only a small fraction of the plastic collected for recycling is actually turned into new products; the rest is burned, buried, or shipped abroad.",
+     "o": [
+      "A large proportion of the plastic collected for recycling is turned into new products, and only a small amount is burned, buried, or shipped abroad.",
+      "Most of the plastic gathered for recycling is not made into new products but is instead burned, buried, or sent to other countries.",
+      "Only a small fraction of plastic is collected for recycling, because most of it is burned, buried, or shipped abroad before it can be collected.",
+      "The plastic that is burned, buried, or shipped abroad is later turned into new products, so very little of the collected plastic is wasted."
+     ],
+     "a": 1,
+     "ex": "«a small fraction» = חלק קטן. רק חלק קטן מהפלסטיק שנאסף למיחזור הופך למוצרים חדשים, וכל השאר נשרף, נקבר או נשלח לחו״ל. כלומר רוב הפלסטיק לא ממוחזר, וזה מה שאומרת התשובה הנכונה. אחת השגויות הופכת את הכמויות, אחרת אומרת שרק מעט פלסטיק נאסף (המקור מדבר על מה שקורה אחרי האיסוף), והרביעית סותרת את המקור.",
+     "w": [
+      [
+       "fraction",
+       "חלק קטן, שבר"
+      ],
+      [
+       "recycling",
+       "מיחזור"
+      ],
+      [
+       "abroad",
+       "לחו״ל"
+      ]
+     ]
+    },
+    {
+     "q": "Despite having no formal training in architecture, she designed several of the most admired public buildings of her era.",
+     "o": [
+      "Because she had no formal training in architecture, few of the public buildings that she designed were admired by people of her era.",
+      "After receiving formal training in architecture, she designed several public buildings, which were not admired until long after her era.",
+      "She admired several public buildings of her era so much that she decided to study architecture formally despite having no experience.",
+      "Although she had never formally studied architecture, she was responsible for some of the most highly regarded public buildings of her time."
+     ],
+     "a": 3,
+     "ex": "«Despite» = למרות. למרות שלא למדה אדריכלות באופן פורמלי, היא תכננה כמה מהבניינים הציבוריים המוערכים ביותר בתקופתה. התשובה הנכונה משתמשת ב-«although» ו-«highly regarded» (מוערך). אחת השגויות הופכת את הניגוד לסיבה ואומרת שהבניינים לא הוערכו, אחרת אומרת שהיא כן למדה, והרביעית מחליפה את מי שמעריך את מי.",
+     "w": [
+      [
+       "despite",
+       "למרות"
+      ],
+      [
+       "formal training",
+       "הכשרה פורמלית"
+      ],
+      [
+       "admired",
+       "מוערך, נערץ"
+      ]
+     ]
+    },
+    {
+     "q": "The governor's decision to close the factory was motivated less by environmental concerns than by the fear of losing votes in the coming election.",
+     "o": [
+      "The governor closed the factory mainly out of concern for the environment, although he also feared that it might cost him votes in the election.",
+      "The governor refused to close the factory because he feared that doing so would cost him votes, despite the environmental concerns it had raised.",
+      "Worry about losing votes in the next election, rather than concern for the environment, was the main reason the governor shut the factory.",
+      "The governor's decision to close the factory, which was motivated by environmental concerns alone, caused him to lose votes in the election."
+     ],
+     "a": 2,
+     "ex": "«less by X than by Y» = פחות בגלל X ויותר בגלל Y. הסיבה העיקרית לסגירת המפעל הייתה החשש לאבד קולות, ולא הדאגה לסביבה. התשובה הנכונה אומרת זאת עם «rather than». אחת השגויות הופכת את סדר החשיבות, אחרת אומרת שהמושל סירב לסגור את המפעל, והרביעית אומרת שהסיבה הייתה רק הסביבה ומוסיפה שהוא הפסיד קולות.",
+     "w": [
+      [
+       "motivated by",
+       "מונע על ידי"
+      ],
+      [
+       "concern",
+       "דאגה"
+      ],
+      [
+       "rather than",
+       "ולא, במקום"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Not only did the new software fail to speed up the processing of applications, but it also introduced errors that took months to correct.",
+     "o": [
+      "The new software did not make applications any faster to process, and it also created mistakes that needed months to fix.",
+      "The new software sped up the processing of applications, although it also introduced several errors that took months to correct.",
+      "Because it took months to correct the errors in the new software, the processing of applications did not speed up at all.",
+      "The new software introduced no errors, but it failed to speed up the processing of applications as much as had been promised."
+     ],
+     "a": 0,
+     "ex": "«Not only... but also» = לא רק... אלא גם. התוכנה החדשה לא זירזה את הטיפול בבקשות, וגם יצרה שגיאות שלקח חודשים לתקן. התשובה הנכונה שומרת על שני הכישלונות. אחת השגויות אומרת שהתוכנה כן זירזה את הטיפול, אחרת הופכת את השגיאות לסיבה, והרביעית אומרת שלא היו שגיאות.",
+     "w": [
+      [
+       "not only... but also",
+       "לא רק... אלא גם"
+      ],
+      [
+       "fail to",
+       "לא להצליח ל..."
+      ],
+      [
+       "introduce",
+       "להכניס, ליצור"
+      ]
+     ]
+    },
+    {
+     "q": "Most visitors to the national park never venture more than a kilometer from the parking lots, leaving its vast interior almost untouched.",
+     "o": [
+      "Because the vast interior of the national park is almost untouched, most visitors are not allowed to go more than a kilometer from the parking lots.",
+      "Since the majority of the park's visitors stay within about a kilometer of the parking areas, its huge interior remains nearly undisturbed.",
+      "Most visitors to the national park walk several kilometers from the parking lots, so few parts of its vast interior remain untouched.",
+      "Only a few visitors to the national park stay near the parking lots, while the rest explore its vast interior, which is almost untouched."
+     ],
+     "a": 1,
+     "ex": "«venture» = להעז ללכת, להתרחק. רוב המבקרים לא מתרחקים יותר מקילומטר מהחניונים, ולכן הפנים העצום של הפארק נשאר כמעט בלי מגע אדם. התשובה הנכונה אומרת זאת. אחת השגויות הופכת סיבה ותוצאה ומוסיפה איסור, ושתי האחרות אומרות שרוב המבקרים כן מתרחקים.",
+     "w": [
+      [
+       "venture",
+       "להעז ללכת, להרחיק"
+      ],
+      [
+       "vast",
+       "עצום, נרחב"
+      ],
+      [
+       "untouched",
+       "שלא נגעו בו"
+      ]
+     ]
+    },
+    {
+     "q": "The professor argued that the economic crisis was not caused by the collapse of the banks; rather, the banks collapsed because the crisis had already begun.",
+     "o": [
+      "The professor argued that the collapse of the banks caused the economic crisis, which did not begin until the banks had already failed.",
+      "The professor argued that the economic crisis and the collapse of the banks were caused by the same factors and began at the same time.",
+      "According to the professor, the banks collapsed for reasons that had nothing to do with the economic crisis, which began much later.",
+      "In the professor's view, the crisis was already under way when the banks failed, so their failure was its result rather than its cause."
+     ],
+     "a": 3,
+     "ex": "«rather» = אלא, נהפוך הוא. לפי הפרופסור קריסת הבנקים לא גרמה למשבר, אלא היא נבעה ממשבר שכבר התחיל. התשובה הנכונה אומרת שהקריסה הייתה תוצאה ולא סיבה. אחת השגויות הופכת בדיוק את הסיבה והתוצאה, אחרת אומרת ששניהם התחילו באותו זמן, והרביעית מנתקת את הקשר בין השניים.",
+     "w": [
+      [
+       "collapse",
+       "קריסה"
+      ],
+      [
+       "rather",
+       "אלא, נהפוך הוא"
+      ],
+      [
+       "under way",
+       "בעיצומו, כבר מתרחש"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Although sharks are often portrayed as relentless hunters of humans, attacks on people are extremely rare, and most of them appear to be cases of mistaken identity.",
+     "o": [
+      "Because sharks often mistake people for other prey, their attacks on humans are much more common than most films and books usually suggest.",
+      "Sharks are rarely portrayed as hunters of humans, although they attack people quite often and seem to mistake them for their usual prey.",
+      "Sharks are often depicted as hunting people, yet they seldom attack humans, and most attacks seem to result from mistaking people for other prey.",
+      "Sharks attack humans only rarely, but when they do, they almost always recognize them as people and hunt them deliberately."
+     ],
+     "a": 2,
+     "ex": "«portray» = לתאר, להציג. כרישים מוצגים כציידי בני אדם, אבל בפועל הם תוקפים אנשים לעתים נדירות מאוד, ורוב ההתקפות נובעות מטעות בזיהוי. התשובה הנכונה אומרת זאת («seldom» במקום «extremely rare»). שתי שגויות אומרות שההתקפות נפוצות, והרביעית אומרת שהכרישים מזהים את האנשים ותוקפים בכוונה, וזה ההפך מ-«mistaken identity».",
+     "w": [
+      [
+       "portray",
+       "לתאר, להציג"
+      ],
+      [
+       "relentless",
+       "בלתי נלאה, שאינו מרפה"
+      ],
+      [
+       "mistaken identity",
+       "טעות בזיהוי"
+      ]
+     ]
+    },
+    {
+     "q": "The museum's decision to charge an entrance fee, which was meant to raise money for repairs, has instead driven away so many visitors that its income has actually fallen.",
+     "o": [
+      "The museum began charging admission to pay for repairs, but this has scared off so many visitors that it now earns less than before.",
+      "The museum's income has fallen so much that it has been forced to charge an entrance fee in order to pay for the necessary repairs.",
+      "The entrance fee has driven away some visitors, but it has still raised enough money for the museum to carry out the planned repairs.",
+      "Many visitors stopped coming to the museum because of the repairs, so it decided to charge an entrance fee to make up for the lost income."
+     ],
+     "a": 0,
+     "ex": "דמי הכניסה נועדו לגייס כסף לשיפוצים, אבל במקום זה («instead») הם הרחיקו כל כך הרבה מבקרים שההכנסות דווקא ירדו. התשובה הנכונה אומרת זאת («earns less than before»). אחת השגויות הופכת סיבה ותוצאה, אחרת אומרת שהכסף בכל זאת הספיק לשיפוצים, והרביעית אומרת שהשיפוצים הרחיקו את המבקרים.",
+     "w": [
+      [
+       "charge a fee",
+       "לגבות תשלום"
+      ],
+      [
+       "drive away",
+       "להרחיק, להבריח"
+      ],
+      [
+       "income",
+       "הכנסה"
+      ]
+     ]
+    },
+    {
+     "q": "Few of the town's residents could have predicted that the abandoned railway line, long considered an eyesore, would one day become its most popular attraction.",
+     "o": [
+      "Most of the town's residents predicted that the abandoned railway line would become popular, even though visitors considered it an eyesore.",
+      "Hardly anyone in the town expected the old disused railway, which people had long regarded as ugly, to turn into its greatest attraction.",
+      "The town's residents considered the railway line their most popular attraction until it was abandoned and became an eyesore.",
+      "Few of the town's residents visit the abandoned railway line, which tourists consider an eyesore despite its great popularity."
+     ],
+     "a": 1,
+     "ex": "«eyesore» = דבר מכוער שפוגע בנוף. מעט תושבים יכלו לצפות שקו הרכבת הנטוש, שנחשב זמן רב למכוער, יהפוך לאטרקציה הפופולרית ביותר. התשובה הנכונה אומרת זאת («hardly anyone» במקום «few»). אחת השגויות אומרת שרוב התושבים צפו את זה, אחרת הופכת את סדר הזמנים, והרביעית אומרת שתושבים מעטים מבקרים שם.",
+     "w": [
+      [
+       "eyesore",
+       "מפגע חזותי, דבר מכוער"
+      ],
+      [
+       "abandoned",
+       "נטוש"
+      ],
+      [
+       "predict",
+       "לחזות, לצפות"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "rc": [
+  {
+   "title": "The Great Stink: A Right Decision for the Wrong Reason",
+   "text": [
+    "In the summer of 1858, London was overwhelmed by a smell. For decades the city had poured its waste directly into the Thames, and an unusually hot, dry season reduced the river's flow and left the sewage baking in the sun. Newspapers called the episode the Great Stink. Members of Parliament, whose building stood on the riverbank, soaked the curtains in chemicals in a desperate attempt to block the odor, and there was serious talk of moving the government out of the city altogether.",
+    "The smell alone might not have provoked action had it not been for a widely held theory about disease. Most doctors at the time believed that illnesses such as cholera were caused by 'miasma', a poisonous vapor rising from rotting matter. If the air above the Thames was foul, they reasoned, it must also be deadly. Within weeks, a bill that had been delayed for years was passed, giving the engineer Joseph Bazalgette the funds to build a vast network of sewers that would carry the city's waste far downstream, away from where people lived.",
+    "The miasma theory was wrong. A few years earlier, a physician named John Snow had traced an outbreak of cholera to a single contaminated water pump, concluding that the disease spread through drinking water rather than through the air. His argument persuaded few of his colleagues. Ironically, however, Bazalgette's sewers solved the very problem Snow had identified: by keeping sewage out of the river from which much of the city drew its water, they cut off the route by which cholera actually traveled. After the system was completed, the disease never again struck London on the scale of earlier epidemics.",
+    "Historians sometimes cite the Great Stink as an example of a right decision made for the wrong reasons. It also illustrates how rarely evidence by itself drives public spending. Snow's careful research had changed almost nothing; a few weeks of unpleasant air, felt directly by the people who controlled the budget, changed a great deal."
+   ],
+   "qs": [
+    {
+     "q": "The main purpose of the passage is to",
+     "o": [
+      "explain why Parliament rejected John Snow's research on cholera",
+      "argue that the miasma theory was more accurate than its critics claimed",
+      "compare London's sewer system with those of other large cities",
+      "describe how a public health improvement grew out of a mistaken belief"
+     ],
+     "a": 3,
+     "ex": "הקטע מספר איך הסירחון של 1858, יחד עם האמונה השגויה ב-miasma (אדים רעילים), הוביל לבניית מערכת הביוב, ואיך הביוב עצר בכל זאת את הכולרה. כלומר שיפור בבריאות הציבור שנולד מתוך טעות. הקטע לא אומר שהפרלמנט דחה את המחקר של סנואו (רק שהוא שכנע מעט עמיתים), וגם אומר במפורש שתאוריית ה-miasma הייתה שגויה.",
+     "w": [
+      [
+       "mistaken",
+       "שגוי, מוטעה"
+      ],
+      [
+       "sewer",
+       "ביוב, תעלת ביוב"
+      ],
+      [
+       "sewage",
+       "שפכים"
+      ]
+     ]
+    },
+    {
+     "q": "According to the first paragraph, the smell in the summer of 1858 was made worse by",
+     "o": [
+      "chemicals that were used to treat the curtains of Parliament",
+      "hot, dry weather that reduced the flow of the river",
+      "a sudden increase in the population of the city",
+      "the construction of new sewers along the riverbank"
+     ],
+     "a": 1,
+     "ex": "בפסקה 1 כתוב: «an unusually hot, dry season reduced the river's flow and left the sewage baking in the sun», כלומר מזג אוויר חם ויבש הקטין את זרימת הנהר. הכימיקלים על הווילונות נועדו לחסום את הריח ולא גרמו לו, והביוב החדש נבנה רק אחרי האירוע.",
+     "w": [
+      [
+       "flow",
+       "זרימה"
+      ],
+      [
+       "overwhelm",
+       "להציף, להכריע"
+      ],
+      [
+       "odor",
+       "ריח (רע)"
+      ]
+     ]
+    },
+    {
+     "q": "In the third paragraph, the phrase 'cut off the route' is closest in meaning to",
+     "o": [
+      "shortened the journey",
+      "revealed the source",
+      "blocked the path",
+      "changed the direction"
+     ],
+     "a": 2,
+     "ex": "«cut off» = לחסום, לנתק. הביוב הרחיק את השפכים מהנהר שממנו העיר שאבה מים, ובכך חסם את הדרך שבה הכולרה עברה בפועל (דרך מי השתייה). «revealed the source» (חשף את המקור) מפתה, כי סנואו גילה את מקור ההתפרצות, אבל הביטוי מתאר את מה שעשה הביוב, כלומר חסימה.",
+     "w": [
+      [
+       "cut off",
+       "לחסום, לנתק"
+      ],
+      [
+       "route",
+       "דרך, נתיב"
+      ],
+      [
+       "contaminated",
+       "מזוהם"
+      ]
+     ]
+    },
+    {
+     "q": "The word 'Ironically' in the third paragraph is used to point out that",
+     "o": [
+      "the sewers stopped cholera even though they were built to fight a false cause",
+      "John Snow himself helped Bazalgette to design part of the sewer system",
+      "Bazalgette secretly agreed with Snow but did not dare to say so",
+      "the sewers made the city's drinking water dirtier than it had been before"
+     ],
+     "a": 0,
+     "ex": "האירוניה היא שהביוב נבנה כדי להיפטר מאוויר מסריח, מתוך אמונה שגויה שהוא גורם למחלות, ובכל זאת הוא פתר את הבעיה האמיתית שסנואו זיהה: זיהום מי השתייה. הקטע לא אומר שסנואו השתתף בתכנון או שבאזלג׳ט הסכים איתו בסתר, והביוב דווקא שמר על המים נקיים יותר.",
+     "w": [
+      [
+       "ironically",
+       "באופן אירוני"
+      ],
+      [
+       "identify",
+       "לזהות"
+      ],
+      [
+       "epidemic",
+       "מגפה"
+      ]
+     ]
+    },
+    {
+     "q": "It can be inferred from the last paragraph that the author believes",
+     "o": [
+      "Snow's research was carelessly conducted and therefore deserved to be ignored",
+      "public spending should never be based on scientific evidence alone",
+      "decision makers react more readily to problems they suffer from personally than to research",
+      "the Great Stink was a far less serious event than historians usually claim"
+     ],
+     "a": 2,
+     "ex": "בפסקה האחרונה כתוב שהמחקר הקפדני של סנואו כמעט לא שינה דבר, ואילו כמה שבועות של אוויר מסריח, «felt directly by the people who controlled the budget», שינו הרבה. כלומר מקבלי ההחלטות הגיבו למה שהרגישו בעצמם יותר מאשר לראיות. המחבר מתאר את המחקר כ-«careful» (קפדני), ולכן הטענה שהוא נעשה ברשלנות סותרת את הקטע.",
+     "w": [
+      [
+       "illustrate",
+       "להמחיש"
+      ],
+      [
+       "cite",
+       "לצטט, להביא כדוגמה"
+      ],
+      [
+       "budget",
+       "תקציב"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Built by Me: Why Effort Raises Value",
+   "text": [
+    "Ask people how much they would pay for a simple storage box, and their answers will be fairly consistent. Ask the same question of people who have just spent twenty minutes assembling that box themselves, and the figure rises noticeably. Researchers who documented this pattern in a series of experiments named it the 'IKEA effect', after the furniture company whose customers famously put together their own shelves and tables. The finding suggests that labor does not merely produce things we value; it can also increase the value we place on them.",
+    "The effect appeared well beyond furniture. In one study, participants who folded paper animals following written instructions were willing to pay almost as much for their own clumsy creations as others would pay for models folded by experts, while people who had not made them regarded the amateur versions as nearly worthless. Crucially, the boost depended on completing the task. When participants built an object and then took it apart, or were stopped before finishing, their valuation of it fell back to ordinary levels.",
+    "Why should effort translate into affection? One explanation is that successfully building something makes people feel competent, and they transfer that pleasant feeling to the object itself. Another is that people dislike believing they have wasted their time, so they persuade themselves that the result was worth the trouble. The two explanations can easily coexist, and both may operate at once.",
+    "Businesses have long exploited this tendency, sometimes without understanding it. A frequently repeated story claims that instant cake mixes sold poorly until manufacturers required customers to add a fresh egg, giving home bakers a sense that they had genuinely cooked. Whether or not the story is true, the principle has a darker side. Managers who have devoted years to a failing project may overrate its prospects for the same reason that amateurs overrate their paper animals, continuing to invest long after an outsider would have given up."
+   ],
+   "qs": [
+    {
+     "q": "Which of the following is the best title for the passage?",
+     "o": [
+      "Why We Value What We Make Ourselves",
+      "How Furniture Companies Cut Their Costs",
+      "The Art of Folding Paper Animals",
+      "Why Unfinished Projects Are Worth More"
+     ],
+     "a": 0,
+     "ex": "הקטע כולו עוסק בתופעה שבה אנשים מעריכים יותר דברים שבנו בעצמם: הניסויים (פסקאות 1 ו-2), ההסברים (פסקה 3) והשימוש בעסקים (פסקה 4). קיפול חיות נייר הוא רק דוגמה אחת, ולפי פסקה 2 דווקא דברים שלא הושלמו לא מקבלים ערך נוסף.",
+     "w": [
+      [
+       "value",
+       "להעריך; ערך"
+      ],
+      [
+       "assemble",
+       "להרכיב"
+      ],
+      [
+       "labor",
+       "עבודה, עמל"
+      ]
+     ]
+    },
+    {
+     "q": "According to the second paragraph, what happened when participants were stopped before they finished building an object?",
+     "o": [
+      "They valued it more highly than the experts' models",
+      "They asked to be allowed to complete it at home",
+      "They were willing to pay extra in order to finish it",
+      "They valued it no more highly than people usually do"
+     ],
+     "a": 3,
+     "ex": "בפסקה 2 כתוב שכאשר עצרו את המשתתפים לפני שסיימו, «their valuation of it fell back to ordinary levels», כלומר הם העריכו את החפץ כמו כל אחד אחר, בלי תוספת. «Crucially, the boost depended on completing the task» מראה שהתוספת בערך תלויה בסיום המשימה. הקטע לא מזכיר בקשה לסיים בבית או נכונות לשלם כדי לסיים.",
+     "w": [
+      [
+       "crucially",
+       "באופן מכריע, וזה העיקר"
+      ],
+      [
+       "valuation",
+       "הערכת שווי"
+      ],
+      [
+       "boost",
+       "דחיפה, תוספת"
+      ]
+     ]
+    },
+    {
+     "q": "In the last paragraph, the word 'exploited' is closest in meaning to",
+     "o": [
+      "failed to notice",
+      "taken advantage of",
+      "openly criticized",
+      "carefully measured"
+     ],
+     "a": 1,
+     "ex": "«exploit» = לנצל. עסקים ניצלו את הנטייה הזאת, לפעמים בלי להבין אותה, כמו בסיפור על תערובות העוגה. «failed to notice» (לא שמו לב) מפתה בגלל «without understanding it», אבל אפשר לנצל משהו בלי להבין אותו, והדוגמה מראה שימוש פעיל בנטייה ולא התעלמות ממנה.",
+     "w": [
+      [
+       "exploit",
+       "לנצל"
+      ],
+      [
+       "tendency",
+       "נטייה"
+      ],
+      [
+       "take advantage of",
+       "לנצל, להפיק תועלת מ..."
+      ]
+     ]
+    },
+    {
+     "q": "The author mentions the cake mixes in the last paragraph in order to",
+     "o": [
+      "prove that food companies were the first to discover the effect",
+      "show that customers prefer products that are quick to prepare",
+      "give an example of how a business may have made use of the effect",
+      "argue that most popular stories about business are untrue"
+     ],
+     "a": 2,
+     "ex": "הסיפור על תערובות העוגה מובא כדוגמה לכך שעסקים ניצלו את הנטייה: הוספת ביצה נתנה לאופים תחושה שהם באמת בישלו. המחבר כותב «Whether or not the story is true», ולכן הוא לא מנסה להוכיח דבר בעזרתו, וגם לא טוען שרוב הסיפורים שקריים.",
+     "w": [
+      [
+       "genuinely",
+       "באמת, באופן אמיתי"
+      ],
+      [
+       "manufacturer",
+       "יצרן"
+      ],
+      [
+       "instant",
+       "מיידי, להכנה מהירה"
+      ]
+     ]
+    },
+    {
+     "q": "It can be inferred from the last paragraph that managers of a failing project",
+     "o": [
+      "usually abandon it sooner than an outsider would",
+      "may judge it more favorably than someone who did not work on it",
+      "are less affected by the IKEA effect than amateurs are",
+      "rarely invest much of their own time in it"
+     ],
+     "a": 1,
+     "ex": "כתוב שמנהלים שהשקיעו שנים בפרויקט כושל עלולים להעריך יותר מדי את סיכוייו, ולהמשיך להשקיע «long after an outsider would have given up». מכאן שהם שופטים אותו בעין יפה יותר ממי שלא עבד עליו. התשובה שהם נוטשים אותו מוקדם יותר אומרת את ההפך, והקטע משווה אותם לחובבנים, כלומר הם מושפעים מהתופעה באותה מידה.",
+     "w": [
+      [
+       "overrate",
+       "להעריך יתר על המידה"
+      ],
+      [
+       "prospects",
+       "סיכויים"
+      ],
+      [
+       "give up",
+       "לוותר"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Half Asleep: Resting One Side of the Brain",
+   "text": [
+    "For most mammals, sleep is an all-or-nothing affair: the whole brain slows down together, and the sleeper becomes largely unaware of its surroundings. Dolphins cannot afford such a luxury. Because they must rise to the surface to breathe and remain alert to predators, they have evolved the ability to rest one half of the brain while the other stays awake. During this state, the eye controlled by the waking half usually remains open, and the animal continues to swim slowly. After a while the two halves switch roles, so that each eventually gets the rest it needs.",
+    "Birds use a similar strategy, and in some cases they adjust it to their circumstances. In a well-known experiment, ducks sleeping in a row were recorded on video. Those at the ends of the row slept with the eye facing away from the group open far more often than those in the middle, and the half of the brain connected to that eye showed signs of wakefulness. In other words, the birds most exposed to danger kept watch while still getting some rest.",
+    "Even more remarkable are frigatebirds, which can stay aloft over the ocean for weeks without landing. Researchers who attached small brain monitors to these birds found that they do sleep in flight, sometimes with one hemisphere and occasionally with both. Yet they slept for less than an hour a day while flying, compared with more than twelve hours a day on land. How they cope with such a severe shortage of sleep remains unclear.",
+    "Humans were long assumed to lack any version of this ability. However, studies of people spending their first night in an unfamiliar place have found that one hemisphere sleeps less deeply than the other and responds more quickly to unusual sounds. This may explain why travelers often sleep poorly in a new hotel room: part of the brain, it seems, is still on guard. Interestingly, the imbalance largely disappears on the second night, once the surroundings have become familiar and the sleeper's brain apparently judges them to be safe."
+   ],
+   "qs": [
+    {
+     "q": "Which of the following best expresses the main idea of the passage?",
+     "o": [
+      "Dolphins need more sleep than other mammals because they spend their whole lives in water.",
+      "Birds sleep more deeply when they are in groups than when they are alone.",
+      "Several animals, and perhaps humans too, can let part of the brain rest while another part stays alert.",
+      "Sleeping with one eye open is harmful to an animal's health in the long run."
+     ],
+     "a": 2,
+     "ex": "הקטע מתאר שינה של חצי מוח אצל דולפינים (פסקה 1), ברווזים (פסקה 2) וציפורי פריגטה (פסקה 3), ומציע שגם אצל בני אדם יש גרסה של זה (פסקה 4). הקטע לא אומר שדולפינים צריכים יותר שינה, ולא טוען ששינה בעין פקוחה מזיקה.",
+     "w": [
+      [
+       "alert",
+       "ער, דרוך"
+      ],
+      [
+       "hemisphere",
+       "חצי (של המוח), המיספרה"
+      ],
+      [
+       "mammal",
+       "יונק"
+      ]
+     ]
+    },
+    {
+     "q": "According to the second paragraph, the ducks at the ends of the row",
+     "o": [
+      "kept open the eye facing away from the group more often",
+      "slept more deeply than the ducks in the middle of the row",
+      "kept both of their eyes closed for most of the night",
+      "woke up the other ducks whenever they sensed danger"
+     ],
+     "a": 0,
+     "ex": "בפסקה 2 כתוב שהברווזים בקצוות ישנו «with the eye facing away from the group open far more often than those in the middle», כלומר העין שפונה החוצה הייתה פקוחה לעתים קרובות יותר. הקטע לא אומר שהם ישנו עמוק יותר (להפך, חצי מהמוח שלהם היה ער), ולא מזכיר שהם העירו את האחרים.",
+     "w": [
+      [
+       "exposed to",
+       "חשוף ל..."
+      ],
+      [
+       "keep watch",
+       "לשמור, לעמוד על המשמר"
+      ],
+      [
+       "wakefulness",
+       "עירנות, מצב ער"
+      ]
+     ]
+    },
+    {
+     "q": "In the third paragraph, the word 'aloft' is closest in meaning to",
+     "o": [
+      "alone",
+      "awake",
+      "underwater",
+      "in the air"
+     ],
+     "a": 3,
+     "ex": "«aloft» = באוויר, למעלה. ציפורי הפריגטה יכולות להישאר מעל האוקיינוס שבועות «without landing» (בלי לנחות), והמשפט הבא מדבר על שינה בזמן מעוף. «awake» (ער) מפתה, אבל הפסקה אומרת שהן כן ישנות בזמן שהן באוויר.",
+     "w": [
+      [
+       "aloft",
+       "באוויר, למעלה"
+      ],
+      [
+       "land",
+       "לנחות; יבשה"
+      ],
+      [
+       "cope with",
+       "להתמודד עם"
+      ]
+     ]
+    },
+    {
+     "q": "Which of the following is NOT mentioned in the passage?",
+     "o": [
+      "Why dolphins need to stay partly alert",
+      "How long frigatebirds sleep on land",
+      "How an unfamiliar place affects human sleep",
+      "How many hours a day dolphins sleep"
+     ],
+     "a": 3,
+     "ex": "הקטע מסביר למה דולפינים צריכים להישאר ערים בחלקם (כדי לעלות לנשום ולהיזהר מטורפים), מציין שציפורי פריגטה ישנות יותר משתים עשרה שעות ביום על היבשה, ומתאר שינה של בני אדם במקום חדש. כמה שעות ביום דולפינים ישנים לא נאמר בשום מקום.",
+     "w": [
+      [
+       "unfamiliar",
+       "לא מוכר, זר"
+      ],
+      [
+       "predator",
+       "טורף"
+      ],
+      [
+       "evolve",
+       "להתפתח (באבולוציה)"
+      ]
+     ]
+    },
+    {
+     "q": "The author suggests that a traveler's poor sleep in a new hotel room may be",
+     "o": [
+      "a way of staying alert to possible danger",
+      "caused by the unusual noises found in most hotels",
+      "a sign that both halves of the brain are fully awake",
+      "more common among people who rarely travel"
+     ],
+     "a": 0,
+     "ex": "בפסקה האחרונה כתוב שבלילה הראשון במקום חדש חצי אחד של המוח ישן פחות עמוק ומגיב מהר לקולות חריגים, ולכן «part of the brain... is still on guard», כלומר נשאר דרוך מפני סכנה. הקטע לא אומר שבבתי מלון יש רעשים חריגים, ולא שני חצאי המוח ערים לגמרי, אלא רק חצי אחד ישן פחות עמוק.",
+     "w": [
+      [
+       "on guard",
+       "על המשמר, דרוך"
+      ],
+      [
+       "respond",
+       "להגיב"
+      ],
+      [
+       "poorly",
+       "באופן גרוע"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1415 @@
+{
+ "tier": 0,
+ "sc": [
+  {
+   "qs": [
+    {
+     "q": "My grandmother cannot read small letters without her glasses, so she always ___ them in her bag.",
+     "o": [
+      "sells",
+      "breaks",
+      "carries",
+      "washes"
+     ],
+     "a": 2,
+     "ex": "«carries» = נושאת, לוקחת איתה. סבתא צריכה את המשקפיים כדי לקרוא, ולכן היא תמיד לוקחת אותם בתיק. «breaks» (שוברת) לא הגיוני: מי שצריך משקפיים לא שובר אותם תמיד, ו-«sells» (מוכרת) לא קשור לצורך לקרוא.",
+     "w": [
+      [
+       "carry",
+       "לשאת, לקחת איתך"
+      ],
+      [
+       "glasses",
+       "משקפיים"
+      ]
+     ]
+    },
+    {
+     "q": "Entrance to the museum was free on Friday, ___ there was a long line of visitors at the door.",
+     "o": [
+      "so",
+      "although",
+      "unless",
+      "but"
+     ],
+     "a": 0,
+     "ex": "«so» = לכן. הכניסה הייתה חינם, ולכן הגיעו הרבה מבקרים ונוצר תור ארוך: סיבה ותוצאה. «although» (למרות ש) ו-«but» (אבל) דורשים ניגוד, ואין ניגוד בין כניסה חינם לתור ארוך.",
+     "w": [
+      [
+       "so",
+       "לכן, אז"
+      ],
+      [
+       "entrance",
+       "כניסה"
+      ],
+      [
+       "line",
+       "תור; שורה"
+      ]
+     ]
+    },
+    {
+     "q": "Dana ___ her keys at home, so she had to wait outside until her brother came back.",
+     "o": [
+      "found",
+      "left",
+      "made",
+      "opened"
+     ],
+     "a": 1,
+     "ex": "«left» = השאירה (מ-leave). דנה השאירה את המפתחות בבית, ולכן חיכתה בחוץ. «found» (מצאה) הפוך: מי שמצא את המפתחות לא צריך לחכות בחוץ.",
+     "w": [
+      [
+       "leave",
+       "להשאיר; לעזוב"
+      ],
+      [
+       "until",
+       "עד ש..."
+      ]
+     ]
+    },
+    {
+     "q": "The old bridge is not strong enough for trucks; ___, only cars and bicycles may cross it.",
+     "o": [
+      "however",
+      "for example",
+      "although",
+      "therefore"
+     ],
+     "a": 3,
+     "ex": "«therefore» = לכן. הגשר לא חזק מספיק למשאיות, ולכן רק מכוניות ואופניים יכולים לעבור. «however» (עם זאת) דורש ניגוד, אבל החלק השני הוא תוצאה של הראשון.",
+     "w": [
+      [
+       "therefore",
+       "לכן"
+      ],
+      [
+       "cross",
+       "לחצות, לעבור"
+      ],
+      [
+       "truck",
+       "משאית"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The soup was too ___ to eat, so we waited a few minutes for it to cool down.",
+     "o": [
+      "sweet",
+      "hot",
+      "cold",
+      "thin"
+     ],
+     "a": 1,
+     "ex": "«hot» = חם. חיכו שהמרק יתקרר («cool down»), ולכן הוא היה חם מדי. «cold» (קר) הוא ההפך: מרק קר לא צריך להתקרר.",
+     "w": [
+      [
+       "hot",
+       "חם"
+      ],
+      [
+       "cool down",
+       "להתקרר"
+      ]
+     ]
+    },
+    {
+     "q": "___ it was raining hard, the players continued the game until the end.",
+     "o": [
+      "Because",
+      "Unless",
+      "Since",
+      "Although"
+     ],
+     "a": 3,
+     "ex": "«Although» = למרות ש. ירד גשם חזק, ובכל זאת השחקנים המשיכו לשחק: זה ניגוד. «Because» (כי) ו-«Since» (מכיוון ש) לא הגיוניים, כי גשם הוא לא סיבה להמשיך במשחק.",
+     "w": [
+      [
+       "although",
+       "למרות ש... (+משפט)"
+      ],
+      [
+       "continue",
+       "להמשיך"
+      ]
+     ]
+    },
+    {
+     "q": "The doctor told Moshe to ___ sugar and to eat more fruit and vegetables instead.",
+     "o": [
+      "avoid",
+      "add",
+      "buy",
+      "prefer"
+     ],
+     "a": 0,
+     "ex": "«avoid» = להימנע מ. הרופא אמר לו להימנע מסוכר ולאכול פירות וירקות במקומו («instead»). «prefer» (להעדיף) סותר את «instead»: אי אפשר להעדיף סוכר ולאכול משהו אחר במקומו.",
+     "w": [
+      [
+       "avoid",
+       "להימנע מ..."
+      ],
+      [
+       "instead",
+       "במקום זאת"
+      ]
+     ]
+    },
+    {
+     "q": "Noa never eats ice cream ___ milk makes her feel sick.",
+     "o": [
+      "unless",
+      "so",
+      "because",
+      "although"
+     ],
+     "a": 2,
+     "ex": "«because» = כי. נועה לא אוכלת גלידה כי חלב גורם לה להרגיש רע: החלק השני הוא הסיבה. «so» (לכן) הופך את הכיוון, ו-«although» (למרות ש) דורש ניגוד שאין כאן.",
+     "w": [
+      [
+       "because",
+       "כי, מפני ש..."
+      ],
+      [
+       "sick",
+       "חולה, לא טוב (בבטן)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The airport was very ___ during the holiday, with long lines at every counter.",
+     "o": [
+      "empty",
+      "quiet",
+      "small",
+      "crowded"
+     ],
+     "a": 3,
+     "ex": "«crowded» = צפוף, מלא אנשים. תורים ארוכים בכל דלפק מראים שהיו בשדה התעופה הרבה אנשים. «empty» (ריק) ו-«quiet» (שקט) הפוכים לתיאור הזה.",
+     "w": [
+      [
+       "crowded",
+       "צפוף, הומה אדם"
+      ],
+      [
+       "counter",
+       "דלפק"
+      ]
+     ]
+    },
+    {
+     "q": "You will not be allowed into the concert ___ you show your ticket at the gate.",
+     "o": [
+      "because",
+      "unless",
+      "after",
+      "so that"
+     ],
+     "a": 1,
+     "ex": "«unless» = אלא אם כן. לא תוכל להיכנס להופעה אלא אם תראה כרטיס. «because» (כי) לא הגיוני: הצגת כרטיס היא לא סיבה לא להכניס מישהו.",
+     "w": [
+      [
+       "unless",
+       "אלא אם כן"
+      ],
+      [
+       "allow",
+       "להרשות"
+      ]
+     ]
+    },
+    {
+     "q": "The teacher asked us to ___ our answers carefully before we handed in the test.",
+     "o": [
+      "throw",
+      "hide",
+      "check",
+      "forget"
+     ],
+     "a": 2,
+     "ex": "«check» = לבדוק. המורה ביקש לבדוק את התשובות בזהירות לפני ההגשה. «hide» (להסתיר) ו-«forget» (לשכוח) לא הגיוניים, כי המורה צריך לראות את התשובות.",
+     "w": [
+      [
+       "check",
+       "לבדוק"
+      ],
+      [
+       "carefully",
+       "בזהירות, בקפידה"
+      ],
+      [
+       "hand in",
+       "להגיש"
+      ]
+     ]
+    },
+    {
+     "q": "Tamar loves animals; ___, she volunteers at a dog shelter every weekend.",
+     "o": [
+      "in fact",
+      "however",
+      "instead",
+      "otherwise"
+     ],
+     "a": 0,
+     "ex": "«in fact» = למעשה, ויותר מזה. החלק השני מחזק את הראשון: תמר כל כך אוהבת בעלי חיים שהיא אפילו מתנדבת במקלט לכלבים. «however» (עם זאת) דורש ניגוד, ואין ניגוד בין אהבת חיות להתנדבות עם כלבים. «instead» (במקום זאת) ו-«otherwise» (אחרת) לא מתאימים למשמעות.",
+     "w": [
+      [
+       "in fact",
+       "למעשה, ויותר מזה"
+      ],
+      [
+       "volunteer",
+       "להתנדב"
+      ],
+      [
+       "shelter",
+       "מקלט"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The movie was so ___ that half of the audience fell asleep before the end.",
+     "o": [
+      "boring",
+      "exciting",
+      "funny",
+      "short"
+     ],
+     "a": 0,
+     "ex": "«boring» = משעמם. חצי מהקהל נרדם, וזה קורה כשסרט משעמם. «exciting» (מרגש) ו-«funny» (מצחיק) הם ההפך: בסרט כזה אנשים לא נרדמים.",
+     "w": [
+      [
+       "boring",
+       "משעמם"
+      ],
+      [
+       "audience",
+       "קהל"
+      ]
+     ]
+    },
+    {
+     "q": "Uri studied hard for the test for two weeks; ___, he got the highest grade in the class.",
+     "o": [
+      "in contrast",
+      "instead",
+      "as a result",
+      "otherwise"
+     ],
+     "a": 2,
+     "ex": "«as a result» = כתוצאה מכך. אורי למד קשה, ולכן קיבל את הציון הכי גבוה. «in contrast» (לעומת זאת) דורש ניגוד, ואין ניגוד בין למידה לציון גבוה.",
+     "w": [
+      [
+       "as a result",
+       "כתוצאה מכך"
+      ],
+      [
+       "grade",
+       "ציון"
+      ]
+     ]
+    },
+    {
+     "q": "This shirt is too ___ for me; do you have it in a larger size?",
+     "o": [
+      "long",
+      "cheap",
+      "wide",
+      "small"
+     ],
+     "a": 3,
+     "ex": "«small» = קטן. הוא מבקש מידה גדולה יותר, ולכן החולצה קטנה מדי. «wide» (רחב) הפוך: מי שהחולצה רחבה עליו לא יבקש מידה גדולה יותר.",
+     "w": [
+      [
+       "size",
+       "מידה, גודל"
+      ],
+      [
+       "larger",
+       "גדול יותר"
+      ]
+     ]
+    },
+    {
+     "q": "___ the heavy traffic, we arrived at the wedding on time.",
+     "o": [
+      "Because of",
+      "Despite",
+      "Thanks to",
+      "Instead of"
+     ],
+     "a": 1,
+     "ex": "«Despite» = למרות. היו פקקים כבדים, ובכל זאת הגענו בזמן: זה ניגוד. «Because of» (בגלל) ו-«Thanks to» (הודות ל) לא הגיוניים, כי פקקים לא עוזרים להגיע בזמן.",
+     "w": [
+      [
+       "despite",
+       "למרות (+שם עצם)"
+      ],
+      [
+       "traffic",
+       "תנועה, פקקים"
+      ],
+      [
+       "on time",
+       "בזמן"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The farmers were happy because the rain finally ___ after three dry months.",
+     "o": [
+      "stopped",
+      "froze",
+      "returned",
+      "disappeared"
+     ],
+     "a": 2,
+     "ex": "«returned» = חזר. אחרי שלושה חודשים יבשים הגשם סוף סוף חזר, ולכן החקלאים שמחו. «stopped» (נפסק) ו-«disappeared» (נעלם) לא מתאימים, כי בחודשים היבשים כבר לא היה גשם.",
+     "w": [
+      [
+       "return",
+       "לחזור"
+      ],
+      [
+       "finally",
+       "סוף סוף"
+      ],
+      [
+       "dry",
+       "יבש"
+      ]
+     ]
+    },
+    {
+     "q": "Shira speaks three languages, ___ her younger brother speaks only Hebrew.",
+     "o": [
+      "because",
+      "whereas",
+      "so",
+      "therefore"
+     ],
+     "a": 1,
+     "ex": "«whereas» = בעוד ש, ואילו. שירה מדברת שלוש שפות, ואילו אחיה רק עברית: השוואה בין שני אנשים. «because» (כי) ו-«so» (לכן) יוצרים קשר של סיבה, ואין קשר כזה בין השפות שלה לשפה של אחיה.",
+     "w": [
+      [
+       "whereas",
+       "בעוד ש..., ואילו"
+      ],
+      [
+       "language",
+       "שפה"
+      ]
+     ]
+    },
+    {
+     "q": "Please walk ___ in the hallway, because many of the patients are sleeping.",
+     "o": [
+      "loudly",
+      "quickly",
+      "angrily",
+      "quietly"
+     ],
+     "a": 3,
+     "ex": "«quietly» = בשקט. החולים ישנים, ולכן צריך ללכת בשקט במסדרון. «loudly» (ברעש) הוא ההפך, ו-«quickly» (מהר) לא קשור לכך שאנשים ישנים.",
+     "w": [
+      [
+       "quietly",
+       "בשקט"
+      ],
+      [
+       "hallway",
+       "מסדרון"
+      ],
+      [
+       "patient",
+       "מטופל, חולה"
+      ]
+     ]
+    },
+    {
+     "q": "The bus came twenty minutes late, ___ I missed the first lesson of the day.",
+     "o": [
+      "so",
+      "although",
+      "unless",
+      "but"
+     ],
+     "a": 0,
+     "ex": "«so» = לכן. האוטובוס איחר, ולכן פספסתי את השיעור הראשון: סיבה ותוצאה. «but» (אבל) ו-«although» (למרות ש) דורשים ניגוד, אבל פספוס השיעור הוא תוצאה של האיחור.",
+     "w": [
+      [
+       "so",
+       "לכן, אז"
+      ],
+      [
+       "miss",
+       "לפספס; להתגעגע"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Before you cross the street, you should always look in both ___.",
+     "o": [
+      "pockets",
+      "directions",
+      "colors",
+      "minutes"
+     ],
+     "a": 1,
+     "ex": "«directions» = כיוונים. לפני שחוצים כביש מסתכלים לשני הכיוונים, ימינה ושמאלה. «pockets» (כיסים) ו-«minutes» (דקות) לא קשורים לחציית כביש.",
+     "w": [
+      [
+       "direction",
+       "כיוון"
+      ],
+      [
+       "cross",
+       "לחצות"
+      ]
+     ]
+    },
+    {
+     "q": "Eitan was very ___ when he heard that he had won first prize in the competition.",
+     "o": [
+      "excited",
+      "bored",
+      "tired",
+      "angry"
+     ],
+     "a": 0,
+     "ex": "«excited» = נרגש. מי ששומע שזכה בפרס ראשון מתרגש. «bored» (משועמם) ו-«angry» (כועס) לא מתאימים לחדשות טובות כאלה.",
+     "w": [
+      [
+       "excited",
+       "נרגש"
+      ],
+      [
+       "competition",
+       "תחרות"
+      ],
+      [
+       "prize",
+       "פרס"
+      ]
+     ]
+    },
+    {
+     "q": "Mira usually takes the bus to work; ___, today she walked because the weather was so nice.",
+     "o": [
+      "therefore",
+      "for example",
+      "in addition",
+      "however"
+     ],
+     "a": 3,
+     "ex": "«however» = עם זאת, אולם. בדרך כלל מירה נוסעת באוטובוס, אבל היום הלכה ברגל: זה ניגוד להרגל שלה. «therefore» (לכן) לא הגיוני, כי ההרגל לנסוע באוטובוס הוא לא הסיבה ללכת ברגל.",
+     "w": [
+      [
+       "however",
+       "עם זאת, אולם"
+      ],
+      [
+       "usually",
+       "בדרך כלל"
+      ]
+     ]
+    },
+    {
+     "q": "Prices at the market are ___ than in the supermarket, so many families do their shopping there.",
+     "o": [
+      "higher",
+      "bigger",
+      "lower",
+      "later"
+     ],
+     "a": 2,
+     "ex": "«lower» = נמוכים יותר. משפחות רבות קונות בשוק כי המחירים שם נמוכים יותר. «higher» (גבוהים יותר) ו-«bigger» (גדולים יותר) הם ההפך: מחירים גבוהים לא מושכים קונים.",
+     "w": [
+      [
+       "lower",
+       "נמוך יותר"
+      ],
+      [
+       "price",
+       "מחיר"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "rs": [
+  {
+   "qs": [
+    {
+     "q": "Because the summer was very dry, the farmers in the north had a smaller harvest than usual.",
+     "o": [
+      "The summer was very dry because the farmers in the north harvested less than they usually do.",
+      "The farmers in the north harvested less than usual, since there was very little rain that summer.",
+      "Although the summer was very dry, the farmers in the north had a bigger harvest than usual.",
+      "The farmers in the north had a smaller harvest than usual, because they planted the wrong seeds."
+     ],
+     "a": 1,
+     "ex": "«Because» הפך ל-«since» (מכיוון ש), «very dry» הפך ל-«very little rain», ו-«a smaller harvest» ל-«harvested less». הקיץ היבש נשאר הסיבה. התשובה עם «the wrong seeds» מחליפה את הסיבה בסיבה שאין במקור, ו-«bigger harvest» הופך את התוצאה.",
+     "w": [
+      [
+       "harvest",
+       "יבול, קציר"
+      ],
+      [
+       "since",
+       "מכיוון ש..."
+      ],
+      [
+       "usual",
+       "רגיל"
+      ]
+     ]
+    },
+    {
+     "q": "Most of the students in the class preferred to take the test on Thursday rather than on Sunday.",
+     "o": [
+      "All of the students in the class wanted to take the test on Thursday and not on Sunday.",
+      "Most of the students in the class preferred to take the test on Sunday rather than on Thursday.",
+      "Most of the students in the class did not want to take the test at all, on any day.",
+      "The majority of the students in the class would rather have the test on Thursday than on Sunday."
+     ],
+     "a": 3,
+     "ex": "«Most» הפך ל-«The majority» (הרוב), ו-«preferred ... rather than» הפך ל-«would rather ... than» (מעדיפים). התשובה עם «All» משנה «רוב» ל«כולם», והתשובה עם «on Sunday rather than on Thursday» מחליפה בין הימים.",
+     "w": [
+      [
+       "majority",
+       "רוב"
+      ],
+      [
+       "would rather",
+       "מעדיף ש..."
+      ],
+      [
+       "prefer",
+       "להעדיף"
+      ]
+     ]
+    },
+    {
+     "q": "The museum allows children under six to enter for free, but adults must buy a ticket.",
+     "o": [
+      "Adults must pay for a museum ticket, while children younger than six get in at no cost.",
+      "Children under six must buy a ticket to the museum, but adults can enter it for free.",
+      "Both adults and children under six have to buy a ticket before they enter the museum.",
+      "The museum lets children of all ages enter for free, but adults must still buy a ticket."
+     ],
+     "a": 0,
+     "ex": "«buy a ticket» הפך ל-«pay for a museum ticket», «for free» הפך ל-«at no cost», ו-«under six» ל-«younger than six». התשובה הראשונה מחליפה בין המבוגרים לילדים, והתשובה עם «children of all ages» משנה את הכמות: לא רק ילדים מתחת לגיל שש.",
+     "w": [
+      [
+       "allow",
+       "להרשות"
+      ],
+      [
+       "at no cost",
+       "ללא עלות, בחינם"
+      ],
+      [
+       "while",
+       "בעוד ש..."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Dan rarely eats breakfast at home, because he usually wakes up late.",
+     "o": [
+      "Dan usually wakes up late because he rarely eats breakfast at home.",
+      "Dan often eats breakfast at home, even though he usually wakes up late.",
+      "Since Dan tends to get up late, he seldom has breakfast at home.",
+      "Dan rarely eats breakfast at home, because his family does not cook."
+     ],
+     "a": 2,
+     "ex": "«rarely» = «seldom» (לעיתים רחוקות), ו-«usually wakes up late» = «tends to get up late». הקימה המאוחרת נשארה הסיבה. התשובה הראשונה הופכת סיבה ותוצאה, ו-«often» (לעיתים קרובות) הופך את «rarely».",
+     "w": [
+      [
+       "rarely",
+       "לעיתים רחוקות"
+      ],
+      [
+       "seldom",
+       "לעיתים רחוקות"
+      ],
+      [
+       "tend to",
+       "נוטה ל..."
+      ]
+     ]
+    },
+    {
+     "q": "The new phone is lighter than the old model, but its battery does not last as long.",
+     "o": [
+      "The new phone weighs less than the old model, but the old model's battery lasts longer.",
+      "The new phone is heavier than the old model, and its battery does not last as long.",
+      "The new phone is lighter than the old model, and its battery also lasts much longer.",
+      "The new phone is lighter than the old model because its battery is much smaller."
+     ],
+     "a": 0,
+     "ex": "«lighter» = «weighs less» (שוקל פחות). «its battery does not last as long» אומר שהסוללה של הטלפון החדש מחזיקה פחות, כלומר הסוללה של הדגם הישן מחזיקה יותר. התשובה עם «heavier» הופכת את המשקל, והתשובה האחרונה מוסיפה סיבה שאין במקור.",
+     "w": [
+      [
+       "light",
+       "קל (במשקל)"
+      ],
+      [
+       "weigh",
+       "לשקול"
+      ],
+      [
+       "last",
+       "להחזיק מעמד, להימשך"
+      ]
+     ]
+    },
+    {
+     "q": "If it rains tomorrow, the school trip to the beach will be moved to next week.",
+     "o": [
+      "The school trip to the beach will take place tomorrow, even if it rains all day long.",
+      "In case of rain tomorrow, the class trip to the beach will take place next week instead.",
+      "If it rains tomorrow, the school trip to the beach will be cancelled and not happen at all.",
+      "Because it rained last week, the school trip to the beach was moved to tomorrow."
+     ],
+     "a": 1,
+     "ex": "«If it rains» הפך ל-«In case of rain» (במקרה של גשם), ו-«will be moved to next week» ל-«will take place next week instead». התשובה עם «even if it rains» סותרת את התנאי, והתשובה עם «cancelled» אומרת שהטיול יבוטל ולא יידחה.",
+     "w": [
+      [
+       "in case of",
+       "במקרה של"
+      ],
+      [
+       "take place",
+       "להתקיים"
+      ],
+      [
+       "instead",
+       "במקום זאת"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Many tourists visit the old city in the spring, when the weather is neither too hot nor too cold.",
+     "o": [
+      "Few tourists visit the old city in the spring, because the weather is too cold for them.",
+      "Many tourists visit the old city in the summer, when the weather is very hot and dry.",
+      "Many tourists visit the old city in the spring, although the weather is often terrible.",
+      "The old city attracts many tourists in spring, as it is not too hot or too cold then."
+     ],
+     "a": 3,
+     "ex": "«Many tourists visit» הפך ל-«attracts many tourists» (מושכת הרבה תיירים), ו-«neither too hot nor too cold» ל-«not too hot or too cold». התשובה עם «Few» הופכת את הכמות, והתשובה עם «terrible» אומרת שמזג האוויר גרוע, בניגוד למקור.",
+     "w": [
+      [
+       "attract",
+       "למשוך"
+      ],
+      [
+       "neither ... nor",
+       "לא ... וגם לא"
+      ]
+     ]
+    },
+    {
+     "q": "The team lost the final game, even though its best player scored three goals.",
+     "o": [
+      "The team won the final game, because its best player scored three goals.",
+      "The team lost the final game, because its best player did not score any goals.",
+      "Despite three goals by its best player, the team did not win the final game.",
+      "The team's best player scored three goals in every game except the final."
+     ],
+     "a": 2,
+     "ex": "«even though» (אף על פי ש) הפך ל-«Despite» (למרות), ו-«lost» הפך ל-«did not win». התשובה עם «won» הופכת את התוצאה, והתשובה עם «did not score any goals» סותרת את שלושת השערים.",
+     "w": [
+      [
+       "even though",
+       "אף על פי ש..."
+      ],
+      [
+       "despite",
+       "למרות (+שם עצם)"
+      ],
+      [
+       "score",
+       "להבקיע"
+      ]
+     ]
+    },
+    {
+     "q": "Only a few people came to the meeting, so the manager decided to hold it again next month.",
+     "o": [
+      "Many people came to the meeting, so the manager decided not to hold it again.",
+      "Only a few people came to the meeting, because the manager held it last month.",
+      "The manager has decided to hold the meeting again next month, since very few people attended it.",
+      "The manager decided to cancel all meetings next month, although many people came."
+     ],
+     "a": 2,
+     "ex": "«decided» נשאר («has decided»), «so» (לכן) הפך ל-«since» (מכיוון ש) וסדר החלקים התהפך, ו-«came» הפך ל-«attended» (השתתפו). התשובה עם «Many people» הופכת את הכמות, והתשובה עם «because the manager held it last month» הופכת את הסיבה והתוצאה.",
+     "w": [
+      [
+       "attend",
+       "להשתתף, להגיע ל..."
+      ],
+      [
+       "hold a meeting",
+       "לקיים פגישה"
+      ],
+      [
+       "a few",
+       "מעט, כמה"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Unlike her sister, who loves the city, Michal prefers to live in a quiet village.",
+     "o": [
+      "Like her sister, Michal loves the city and does not want a quiet village.",
+      "Michal loves the city, but her sister prefers to live in a quiet village.",
+      "Michal and her sister both moved from the city to a quiet village.",
+      "Michal would rather live in a quiet village, whereas her sister loves city life."
+     ],
+     "a": 3,
+     "ex": "«Unlike» (בניגוד ל) הפך ל-«whereas» (ואילו), ו-«prefers» ל-«would rather». התשובה עם «Like her sister» (כמו אחותה) הופכת את הניגוד לדמיון, והתשובה השנייה מחליפה בין מיכל לאחותה.",
+     "w": [
+      [
+       "unlike",
+       "בניגוד ל... (+שם עצם)"
+      ],
+      [
+       "whereas",
+       "בעוד ש..., ואילו"
+      ],
+      [
+       "village",
+       "כפר"
+      ]
+     ]
+    },
+    {
+     "q": "Doctors say that walking for thirty minutes a day can improve sleep.",
+     "o": [
+      "Doctors say that a thirty-minute walk every day always cures sleep problems.",
+      "According to doctors, a daily half-hour walk may help people sleep better.",
+      "Doctors say that people who sleep better tend to walk thirty minutes a day.",
+      "Doctors say that walking for thirty minutes at night can make sleep worse."
+     ],
+     "a": 1,
+     "ex": "«thirty minutes» = «half-hour» (חצי שעה), «can improve» = «may help ... better» (יכול לשפר). התשובה עם «always cures» משנה «יכול לעזור» ל«תמיד מרפא», והתשובה עם «people who sleep better» הופכת סיבה ותוצאה.",
+     "w": [
+      [
+       "improve",
+       "לשפר"
+      ],
+      [
+       "according to",
+       "לפי"
+      ],
+      [
+       "daily",
+       "יומי"
+      ]
+     ]
+    },
+    {
+     "q": "The restaurant became popular soon after a famous chef started working in its kitchen.",
+     "o": [
+      "Not long after a well-known chef joined its kitchen, the restaurant became popular.",
+      "The famous chef started working in the restaurant because it was already popular.",
+      "The restaurant lost many customers soon after a famous chef started working there.",
+      "The restaurant became popular long before a famous chef started working there."
+     ],
+     "a": 0,
+     "ex": "«soon after» = «Not long after» (זמן קצר אחרי), ו-«famous» = «well-known» (מפורסם). התשובה עם «long before» (הרבה לפני) משנה את סדר הזמנים, והתשובה עם «lost many customers» הופכת את התוצאה.",
+     "w": [
+      [
+       "soon after",
+       "זמן קצר אחרי"
+      ],
+      [
+       "well-known",
+       "ידוע, מפורסם"
+      ],
+      [
+       "popular",
+       "פופולרי, אהוד"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Children who read every day usually learn new words faster than children who do not.",
+     "o": [
+      "Children who read every day always learn every new word faster than other kids.",
+      "Children who do not read every day usually learn new words faster than those who do.",
+      "Children read every day because they want to learn new words faster than friends.",
+      "In general, kids who do not read daily learn new words more slowly than kids who do."
+     ],
+     "a": 3,
+     "ex": "«usually» הפך ל-«In general» (באופן כללי), וההשוואה התהפכה: מי שלא קורא לומד «more slowly» (לאט יותר), וזו אותה משמעות. התשובה עם «always ... every new word» משנה «בדרך כלל» ל«תמיד», והתשובה השנייה הופכת את ההשוואה.",
+     "w": [
+      [
+       "in general",
+       "באופן כללי"
+      ],
+      [
+       "slowly",
+       "לאט"
+      ],
+      [
+       "daily",
+       "יומי, כל יום"
+      ]
+     ]
+    },
+    {
+     "q": "The shop will give you your money back if you return the shoes within two weeks.",
+     "o": [
+      "If you bring the shoes back no later than two weeks after buying them, you will get a refund.",
+      "The shop will give your money back only if you keep the shoes for more than two weeks.",
+      "The shop never gives money back, even if you return the shoes within two weeks of buying them.",
+      "If you return the shoes within two weeks, the shop will give you a new pair for free."
+     ],
+     "a": 0,
+     "ex": "«return» = «bring back» (להחזיר), «within two weeks» = «no later than two weeks» (לא יאוחר משבועיים), ו-«give you your money back» = «refund» (החזר כספי). התשובה עם «never» סותרת את המקור, והתשובה עם «a new pair» מחליפה את החזר הכסף בזוג חדש.",
+     "w": [
+      [
+       "refund",
+       "החזר כספי"
+      ],
+      [
+       "within",
+       "בתוך, תוך"
+      ],
+      [
+       "no later than",
+       "לא יאוחר מ..."
+      ]
+     ]
+    },
+    {
+     "q": "Although the hotel was far from the beach, the guests enjoyed their stay there.",
+     "o": [
+      "The guests did not enjoy their stay, because the hotel was far from the beach.",
+      "The guests enjoyed their stay because the hotel was right next to the beach.",
+      "The guests had a good time at the hotel, even though it was not close to the beach.",
+      "The hotel was far from the beach, so the guests spent their stay at the pool."
+     ],
+     "a": 2,
+     "ex": "«Although» הפך ל-«even though», «enjoyed» ל-«had a good time», ו-«far from» ל-«not close to». התשובה הראשונה הופכת את ההנאה, והתשובה עם «right next to the beach» סותרת את המרחק מהחוף.",
+     "w": [
+      [
+       "even though",
+       "אף על פי ש..."
+      ],
+      [
+       "stay",
+       "שהייה"
+      ],
+      [
+       "far from",
+       "רחוק מ..."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The price of the concert tickets was reduced, and as a result, many more people bought them.",
+     "o": [
+      "Many more people bought concert tickets, so the price of the tickets went up.",
+      "Because the concert tickets became cheaper, a lot more people decided to buy them.",
+      "The concert tickets became cheaper, but fewer people decided to buy them this time.",
+      "The price of the concert tickets went down because many people complained about it."
+     ],
+     "a": 1,
+     "ex": "«was reduced» (הורד) = «became cheaper» (הפך לזול יותר), ו-«as a result» הפך ל-«Because» בתחילת המשפט, באותו כיוון: המחיר ירד ולכן קנו יותר. התשובה עם «fewer people» הופכת את התוצאה, והתשובה עם «complained» מוסיפה סיבה שאין במקור.",
+     "w": [
+      [
+       "reduce",
+       "להפחית, להוריד"
+      ],
+      [
+       "as a result",
+       "כתוצאה מכך"
+      ],
+      [
+       "complain",
+       "להתלונן"
+      ]
+     ]
+    },
+    {
+     "q": "Ron had never seen snow before he moved to Canada at the age of twenty.",
+     "o": [
+      "Ron had seen snow many times before he moved to Canada at age twenty.",
+      "Until he moved to Canada at twenty, Ron had not seen snow even once.",
+      "Ron moved to Canada at the age of twenty because he wanted to see snow.",
+      "Ron moved to Canada at the age of twenty, after seeing snow there on a trip."
+     ],
+     "a": 1,
+     "ex": "«never ... before he moved» הפך ל-«Until he moved ... had not seen snow even once» (עד שעבר, לא ראה שלג אפילו פעם אחת). התשובה עם «many times» סותרת את «never», התשובה עם «after seeing snow there on a trip» אומרת שראה שלג לפני המעבר, והתשובה עם «because he wanted to see snow» מוסיפה סיבה שאין במקור.",
+     "w": [
+      [
+       "never",
+       "אף פעם"
+      ],
+      [
+       "until",
+       "עד ש..."
+      ],
+      [
+       "even once",
+       "אפילו פעם אחת"
+      ]
+     ]
+    },
+    {
+     "q": "Not all of the plants in the garden need much water; some can live for weeks without it.",
+     "o": [
+      "All of the plants in the garden need a lot of water and die quickly without it.",
+      "None of the plants in the garden can live for more than a few days without water.",
+      "Some plants in the garden do not need much water and can survive for weeks without any.",
+      "All of the plants in the garden can live for weeks without water, so none need much."
+     ],
+     "a": 2,
+     "ex": "«Not all ... need much water» (לא כולם צריכים הרבה מים) אומר שיש צמחים שלא צריכים, וזה «Some plants ... do not need much water». «live» הפך ל-«survive» (לשרוד). התשובות עם «All» ו-«None» משנות את הכמות: המקור מדבר רק על חלק מהצמחים.",
+     "w": [
+      [
+       "not all",
+       "לא כל ה..."
+      ],
+      [
+       "survive",
+       "לשרוד"
+      ],
+      [
+       "none",
+       "אף אחד, אף לא אחד"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "rc": [
+  {
+   "title": "Why Onions Make Us Cry",
+   "text": [
+    "Many people who cook have had the same experience: they start cutting an onion, and a few seconds later tears are running down their face. The onion is not making them sad, of course. Instead, it is defending itself, and the cook's eyes are simply caught in the middle.",
+    "An onion growing in the ground has a problem: it cannot run away from animals that want to eat it. For this reason, it has a chemical defense. As long as the onion is whole, certain substances inside its cells are kept apart. When a knife breaks the cells, these substances mix and quickly produce a gas. The gas does not harm the onion, but it is an unpleasant surprise for an animal that bites into it.",
+    "When the gas reaches our eyes, it irritates the small nerves on their surface, and these nerves send a message to the brain. The brain answers by telling the eyes to make more tears, in order to wash the gas away. In other words, the tears are not a sign of damage. They are the body's way of protecting itself.",
+    "Cooks have found several ways to cry less. Putting the onion in the refrigerator for half an hour helps, because the chemical reactions are slower when the onion is cold. A sharp knife is also useful, since it breaks fewer cells than a dull one. Some people even cut onions next to an open window or a fan, so that the gas blows away before it reaches their eyes."
+   ],
+   "qs": [
+    {
+     "q": "The passage mainly explains",
+     "o": [
+      "why cutting onions makes people cry",
+      "how to grow onions without chemicals",
+      "why tears show that the eyes are damaged",
+      "which kitchen tools are best for cooking"
+     ],
+     "a": 0,
+     "ex": "כל הקטע מסביר למה חיתוך בצל גורם לדמעות: ההגנה הכימית של הבצל (פסקה 2), מה קורה בעין (פסקה 3) ואיך לבכות פחות (פסקה 4). האפשרות על דמעות כסימן לנזק סותרת את פסקה 3, שאומרת שהדמעות «are not a sign of damage».",
+     "w": [
+      [
+       "mainly",
+       "בעיקר"
+      ],
+      [
+       "explain",
+       "להסביר"
+      ]
+     ]
+    },
+    {
+     "q": "According to the second paragraph, the gas is produced when",
+     "o": [
+      "the onion is kept in a cold place",
+      "the onion grows too large in the ground",
+      "water touches the outside of the onion",
+      "the cells of the onion are broken"
+     ],
+     "a": 3,
+     "ex": "בפסקה 2 כתוב «When a knife breaks the cells, these substances mix and quickly produce a gas»: הגז נוצר כשהתאים נשברים. מקום קר מוזכר רק בפסקה 4, ושם הוא מאט את התגובה ולא יוצר את הגז.",
+     "w": [
+      [
+       "produce",
+       "לייצר"
+      ],
+      [
+       "cell",
+       "תא"
+      ],
+      [
+       "substance",
+       "חומר"
+      ]
+     ]
+    },
+    {
+     "q": "In the third paragraph, the word 'They' in 'They are the body's way of protecting itself' refers to",
+     "o": [
+      "the eyes",
+      "the tears",
+      "the nerves",
+      "the cells"
+     ],
+     "a": 1,
+     "ex": "המשפט שלפני אומר «the tears are not a sign of damage», והמשפט הבא ממשיך «They are the body's way of protecting itself»: הדמעות הן הדרך של הגוף להגן על עצמו, כי הן שוטפות את הגז מהעין. העצבים (nerves) רק מרגישים את הגז ושולחים הודעה למוח.",
+     "w": [
+      [
+       "refer to",
+       "להתייחס ל..."
+      ],
+      [
+       "protect",
+       "להגן"
+      ],
+      [
+       "nerve",
+       "עצב"
+      ]
+     ]
+    },
+    {
+     "q": "It can be inferred from the last paragraph that cutting a warm onion with a dull knife would probably",
+     "o": [
+      "produce less gas than usual",
+      "make the onion taste better",
+      "cause more tears than usual",
+      "stop the chemical reactions"
+     ],
+     "a": 2,
+     "ex": "בפסקה 4 כתוב שבצל קר התגובות איטיות יותר, ושסכין חדה שוברת פחות תאים מסכין קהה («dull»). לכן בצל חם וסכין קהה יעשו את ההפך: יותר גז ויותר דמעות. «produce less gas» הפוך למה שאפשר להסיק.",
+     "w": [
+      [
+       "infer",
+       "להסיק"
+      ],
+      [
+       "dull",
+       "קהה"
+      ],
+      [
+       "sharp",
+       "חד"
+      ]
+     ]
+    },
+    {
+     "q": "Why does the writer mention animals in the second paragraph?",
+     "o": [
+      "to show that animals also cry when they eat onions",
+      "to explain why onions have a chemical defense",
+      "to suggest that onions are dangerous for pets",
+      "to compare onions with other vegetables"
+     ],
+     "a": 1,
+     "ex": "בפסקה 2 כתוב שהבצל לא יכול לברוח מבעלי חיים שרוצים לאכול אותו, «For this reason, it has a chemical defense». בעלי החיים מוזכרים כדי להסביר למה יש לבצל הגנה. הקטע לא אומר שבעלי חיים בוכים או שבצל מסוכן לחיות מחמד.",
+     "w": [
+      [
+       "mention",
+       "להזכיר"
+      ],
+      [
+       "defense",
+       "הגנה"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Built for the Desert",
+   "text": [
+    "Few animals are as well suited to the desert as the camel. For thousands of years, people in North Africa and the Middle East have used camels to carry goods across hot, dry lands where horses would quickly die. Their ability to go for a long time without drinking has made them famous, but it has also led to some popular mistakes.",
+    "The most common mistake is the belief that a camel stores water in its hump. In fact, the hump is made mostly of fat. When food is hard to find, the camel's body uses this fat for energy, and the hump becomes smaller and may even fall to one side. Keeping the fat in one place, instead of all over the body, also helps the camel lose heat more easily.",
+    "The real secret is the way a camel uses water. It loses very little water through sweat, because its body temperature can rise by several degrees during the day before it starts to sweat. It can also lose about a quarter of its body weight in water and still survive, something that would kill most other mammals. When it finally reaches water, a thirsty camel can drink more than 100 liters in about ten minutes.",
+    "Other parts of the camel's body help as well. Two rows of long eyelashes protect its eyes from blowing sand, and it can close its nostrils during a sandstorm. Its wide feet spread its weight, so it does not sink into soft sand. Thanks to all these features, the camel can travel where few other large animals can."
+   ],
+   "qs": [
+    {
+     "q": "Which of the following is the best title for the passage?",
+     "o": [
+      "How Horses Cross the Desert",
+      "Why Camels Are Disappearing",
+      "The History of Desert Trade",
+      "The Camel: Made for Desert Life"
+     ],
+     "a": 3,
+     "ex": "כל הקטע מתאר איך הגוף של הגמל מותאם למדבר: הדבשת, השימוש במים, הריסים והרגליים. סוסים מוזכרים רק במשפט אחד, ובקטע אין שום דבר על כך שגמלים נעלמים.",
+     "w": [
+      [
+       "suited to",
+       "מתאים ל..."
+      ],
+      [
+       "title",
+       "כותרת"
+      ]
+     ]
+    },
+    {
+     "q": "According to the second paragraph, a camel's hump",
+     "o": [
+      "is full of water that the camel drinks later",
+      "grows larger when food is hard to find",
+      "contains mostly fat that the camel uses for energy",
+      "makes it harder for the camel to lose heat"
+     ],
+     "a": 2,
+     "ex": "בפסקה 2 כתוב «the hump is made mostly of fat», והגוף משתמש בשומן הזה לאנרגיה. המים בדבשת הם בדיוק «the most common mistake», והדבשת קטנה, לא גדלה, כשאין אוכל.",
+     "w": [
+      [
+       "hump",
+       "דבשת"
+      ],
+      [
+       "store",
+       "לאחסן"
+      ],
+      [
+       "fat",
+       "שומן"
+      ]
+     ]
+    },
+    {
+     "q": "In the third paragraph, the phrase 'the real secret' refers to",
+     "o": [
+      "the way the camel uses water",
+      "the fat stored in the hump",
+      "the camel's long eyelashes",
+      "the camel's wide feet"
+     ],
+     "a": 0,
+     "ex": "המשפט אומר «The real secret is the way a camel uses water». אחרי שפסקה 2 הסבירה שהדבשת לא שומרת מים, פסקה 3 מסבירה מה באמת מאפשר לגמל לחיות בלי לשתות. הריסים והרגליים מופיעים רק בפסקה 4.",
+     "w": [
+      [
+       "secret",
+       "סוד"
+      ],
+      [
+       "sweat",
+       "זיעה; להזיע"
+      ]
+     ]
+    },
+    {
+     "q": "Which of the following is NOT mentioned in the passage as something that helps the camel in the desert?",
+     "o": [
+      "thick fur that keeps out the sun",
+      "closing its nostrils in a sandstorm",
+      "wide feet that do not sink into sand",
+      "long eyelashes that protect its eyes"
+     ],
+     "a": 0,
+     "ex": "פרווה עבה לא מוזכרת בשום מקום בקטע. שלוש האפשרויות האחרות מופיעות בפסקה 4: הריסים הארוכים, סגירת הנחיריים בסופת חול והרגליים הרחבות.",
+     "w": [
+      [
+       "mention",
+       "להזכיר"
+      ],
+      [
+       "nostril",
+       "נחיר"
+      ],
+      [
+       "eyelash",
+       "ריס"
+      ]
+     ]
+    },
+    {
+     "q": "The writer mentions horses in the first paragraph in order to",
+     "o": [
+      "explain that horses are faster than camels",
+      "suggest that horses can carry more goods",
+      "show that camels can survive where other animals cannot",
+      "describe how horses store water in the desert"
+     ],
+     "a": 2,
+     "ex": "בפסקה 1 כתוב שגמלים נושאים סחורה באזורים «where horses would quickly die». הסוסים מוזכרים כדי להראות שהגמל שורד במקום שבו בעלי חיים אחרים לא שורדים. הקטע לא משווה מהירות או כמות סחורה.",
+     "w": [
+      [
+       "in order to",
+       "כדי ל..."
+      ],
+      [
+       "goods",
+       "סחורה"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "The Power of 99",
+   "text": [
+    "Walk into almost any shop and you will see prices like 9.99 or 49.90 instead of 10 or 50. The difference is only a few cents, so why do sellers bother? The answer has less to do with money than with the way our brains read numbers.",
+    "When we read a price, we start from the left, and we pay the most attention to the first digit. By the time we reach the end, we have often already formed an opinion. As a result, 2.99 feels closer to 2 than to 3, even though it is almost exactly 3. Researchers call this the 'left-digit effect.' In several studies, shoppers bought more of a product when its price ended in 9, even when the difference was just one cent.",
+    "Prices ending in 9 also send a message. Many shoppers have learned to connect them with sales and special offers. For this reason, a price of 39 may seem like a bargain, while 40 seems like a normal price, although the store earns almost the same amount of money in both cases.",
+    "Interestingly, expensive shops often do the opposite. A fancy restaurant or a jewelry store may choose round prices such as 100 or 500. Round numbers feel simple and confident, and they suggest quality rather than a discount. In other words, the right price depends not only on how much a product costs, but also on what the seller wants customers to feel."
+   ],
+   "qs": [
+    {
+     "q": "The passage mainly discusses",
+     "o": [
+      "how shops decide which products to sell",
+      "how much money shops lose during sales",
+      "why expensive shops are more successful",
+      "why sellers often use prices that end in 9"
+     ],
+     "a": 3,
+     "ex": "הקטע פותח בשאלה למה מוכרים משתמשים במחירים כמו 9.99, ועונה עליה: איך המוח קורא מספרים (פסקה 2) והמסר של מבצע (פסקה 3). גם פסקה 4 עוסקת באותו נושא, כי היא מסבירה מתי בוחרים דווקא במחיר עגול.",
+     "w": [
+      [
+       "discuss",
+       "לדון ב..."
+      ],
+      [
+       "seller",
+       "מוכר"
+      ]
+     ]
+    },
+    {
+     "q": "According to the second paragraph, when people read a price, they",
+     "o": [
+      "look at the last digit before the others",
+      "pay the most attention to the first digit",
+      "always round it up to the next number",
+      "compare it with prices in other shops"
+     ],
+     "a": 1,
+     "ex": "בפסקה 2 כתוב «we pay the most attention to the first digit». האפשרות על הספרה האחרונה הפוכה, כי קוראים משמאל, וקונים לא מעגלים למעלה: לכן 2.99 מרגיש קרוב ל-2.",
+     "w": [
+      [
+       "digit",
+       "ספרה"
+      ],
+      [
+       "attention",
+       "תשומת לב"
+      ],
+      [
+       "round up",
+       "לעגל כלפי מעלה"
+      ]
+     ]
+    },
+    {
+     "q": "In the third paragraph, the word 'bargain' probably means",
+     "o": [
+      "a product of very high quality",
+      "a price that is hard to read",
+      "a normal, everyday purchase",
+      "something sold at a good, low price"
+     ],
+     "a": 3,
+     "ex": "בפסקה 3 מחירים שנגמרים ב-9 מזכירים «sales and special offers» (מבצעים), והמחיר 39 נראה «bargain» לעומת 40 שנראה «a normal price». לכן «bargain» = מציאה, משהו זול. «a normal, everyday purchase» הוא בדיוק מה שהמשפט מנגיד ל-bargain.",
+     "w": [
+      [
+       "bargain",
+       "מציאה"
+      ],
+      [
+       "special offer",
+       "מבצע"
+      ]
+     ]
+    },
+    {
+     "q": "The main purpose of the last paragraph is to",
+     "o": [
+      "explain why some shops prefer round prices",
+      "show that round prices make products cheaper",
+      "describe the history of the jewelry business",
+      "warn customers about fancy restaurants"
+     ],
+     "a": 0,
+     "ex": "הפסקה האחרונה מסבירה שחנויות יקרות בוחרות במחירים עגולים, כי הם מרמזים על איכות ולא על הנחה. היא לא אומרת שמחירים עגולים מוזילים מוצרים, ולא מספרת היסטוריה.",
+     "w": [
+      [
+       "purpose",
+       "מטרה"
+      ],
+      [
+       "round",
+       "עגול"
+      ],
+      [
+       "quality",
+       "איכות"
+      ]
+     ]
+    },
+    {
+     "q": "It can be inferred from the passage that a shop that wants its customers to think a product is on sale would probably choose the price",
+     "o": [
+      "80.00",
+      "100.00",
+      "79.99",
+      "200.00"
+     ],
+     "a": 2,
+     "ex": "לפי פסקאות 2 ו-3 מחיר שנגמר ב-9 נראה זול יותר ומזכיר מבצע, ולכן 79.99 מתאים. המחירים העגולים 80.00, 100.00 ו-200.00 נראים לפי פסקה 4 כמו מחיר רגיל או סימן לאיכות, לא כמו הנחה.",
+     "w": [
+      [
+       "on sale",
+       "במבצע"
+      ],
+      [
+       "infer",
+       "להסיק"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

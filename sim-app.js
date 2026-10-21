@@ -112,6 +112,7 @@ function simEndChapter() {
 }
 function simNextChapter() {
   clearInterval(simTick);
+  if (SM.practice) return prFinish();
   const c = SM.chs[SM.ch], ok = c.qs.filter((q, i) => SM.ans[SM.ch][i] === q.a).length;
   if (SM.ch < SIM_ORDER.length - 1) {
     const key = simNextKey(c.key, ok, c.qs.length), nx = simChapter(SM.form.slots[SM.ch + 1][key], key);
@@ -121,7 +122,7 @@ function simNextChapter() {
   simFinish();
 }
 function simQuit() {
-  if (SM && !SM.done && !confirm('לצאת מהסימולציה? התשובות של הניסיון הזה לא יישמרו.')) return;
+  if (SM && !SM.done && !confirm(SM.practice ? 'לצאת מהתרגול? התשובות של הפרק הזה לא יישמרו.' : 'לצאת מהסימולציה? התשובות של הניסיון הזה לא יישמרו.')) return;
   clearInterval(simTick); SM = null; render(); window.scrollTo(0, 0);
 }
 
@@ -136,6 +137,17 @@ function simWeakWords(chs, ans) {
 }
 // מילה מהסימולציה שקיימת באפליקציה (מילות קישור / אוצר מילים) מקבלת את הפריט שלה
 function simAppItem(en) { const k = en.toLowerCase(); return (typeof ALL !== 'undefined' ? ALL : ITEMS).find(w => w.en.toLowerCase() === k) || null; } // שני הנושאים: מילות קישור קודם, ואז אוצר מילים
+// מילים שכבר נלמדו באפליקציה חוזרות מיד ל«חזרה»; כל המילים נשמרות ברשימת החיזוק. מחזיר כמה חזרו לחזרה
+function simKeepWeak(weak) {
+  const st = simStore();
+  let queued = 0;
+  weak.forEach(x => {
+    st.words[x.en.toLowerCase()] = { en: x.en, he: x.he, at: Date.now() };
+    const it = simAppItem(x.en);
+    if (it && S.w[it.id]) { S.w[it.id].due = Date.now(); queued++; }
+  });
+  return queued;
+}
 function simFinish() {
   clearInterval(simTick);
   const { form, chs, ans } = SM;
@@ -144,14 +156,7 @@ function simFinish() {
   chs.forEach((c, ci) => c.qs.forEach((q, qi) => { n++; by[c.type][1]++; if (ans[ci][qi] === q.a) { ok++; by[c.type][0]++; } }));
   const theta = simTheta(simResponses(chs, ans)), est = simScale(theta);
   const st = simStore();
-  const weak = simWeakWords(chs, ans);
-  // מילים שכבר נלמדו באפליקציה חוזרות מיד ל«חזרה»; כל המילים נשמרות ברשימת החיזוק
-  let queued = 0;
-  weak.forEach(x => {
-    st.words[x.en.toLowerCase()] = { en: x.en, he: x.he, at: Date.now() };
-    const it = simAppItem(x.en);
-    if (it && S.w[it.id]) { S.w[it.id].due = Date.now(); queued++; }
-  });
+  const weak = simWeakWords(chs, ans), queued = simKeepWeak(weak);
   const rec = { v: SIM_V, at: Date.now(), form: form.id, ok, n, est, band: simBand(est), theta: Math.round(theta * 100) / 100, tiers: chs.map(c => c.tier), refs: chs.map(c => c.ref), by, ans, notimer: SM.notimer };
   st.r[form.id] = [rec, ...(st.r[form.id] || [])].slice(0, SIM_KEEP);
   save(); push();
@@ -181,16 +186,82 @@ function simPracticeAll() { simPractice(Object.values(simStore().words)); }
 function simPracticeLast() { simPractice(SM.weak); }
 function simClearWords() { if (!confirm('לנקות את רשימת המילים לחיזוק?')) return; simStore().words = {}; save(); render(); }
 
+// ----- תרגול לפי חלק -----
+// מאגר נפרד (PRACTICE_SETS ב-practice.js), כדי שהשאלות בסימולציות יישארו חדשות והציון שם אמין.
+// כל סבב = פרק אחד בזמן של אמירנט, ובסוף תשובות והסברים (רועי 21/10)
+const PR_ICON = { sc: '✏️', rs: '🔄', rc: '📄' }, PR_COLOR = { sc: '#1cb0f6', rs: '#ce82ff', rc: '#ff9600' };
+const prSets = (type, tier) => typeof PRACTICE_SETS === 'undefined' ? [] : Object.values(PRACTICE_SETS).filter(x => x.type === type && x.tier === tier);
+function prStore() { const st = simStore(); if (!st.p || typeof st.p !== 'object') st.p = {}; return st.p; } // מזהה פרק ← { ok, n, at }
+// רמה מומלצת לפי הציון האחרון בסימולציה (בלי סימולציה: בינוני). רמה שנבחרה ידנית נשמרת
+function prTierAuto() {
+  const last = SIM_FORMS.flatMap(f => simRecs(f.id)).sort((a, b) => b.at - a.at)[0];
+  return !last ? 1 : last.est >= 120 ? 3 : last.est >= 100 ? 2 : last.est >= 85 ? 1 : 0;
+}
+function prTier() { const t = simStore().pt; return t >= 0 && t <= 3 ? t : prTierAuto(); }
+function prSetTier(t) { simStore().pt = t; save(); render(); }
+// הפרק הבא: קודם פרק שעוד לא נעשה, ואחרי שכולם נעשו, זה שנעשה הכי מזמן
+function prNext(type, tier) {
+  const done = prStore(), list = prSets(type, tier);
+  return list.find(x => !done[x.id]) || list.slice().sort((a, b) => done[a.id].at - done[b.id].at)[0];
+}
+function prStart(type, tier = prTier()) {
+  const set = prNext(type, tier);
+  if (!set) return toast('אין עדיין פרקים לתרגול ברמה הזו');
+  const ch = Object.assign({}, set, { ref: set.id, key: 'pr' });
+  SM = { practice: { type, tier }, form: { he: 'תרגול' }, chs: [ch], ch: 0, qi: 0, intro: true, ans: [ch.qs.map(() => -1)], pins: {}, notimer: !!simStore().pnt, end: 0, done: false, showText: true };
+  view = 'sims';
+  render(); window.scrollTo(0, 0);
+}
+function prFinish() {
+  clearInterval(simTick);
+  const c = SM.chs[0], ans = SM.ans, ok = c.qs.filter((q, i) => ans[0][i] === q.a).length;
+  prStore()[c.ref] = { ok, n: c.qs.length, at: Date.now() };
+  const weak = simWeakWords(SM.chs, ans), queued = simKeepWeak(weak);
+  save(); push();
+  SM.done = true; SM.rec = { ok, n: c.qs.length, ans, notimer: SM.notimer }; SM.weak = weak; SM.queued = queued;
+  simOpen = {};
+  render(); window.scrollTo(0, 0);
+}
+function prCard() {
+  if (typeof PRACTICE_SETS === 'undefined') return '';
+  const tier = prTier(), auto = prTierAuto(), done = prStore();
+  let h = `<h2 class="sec">🎯 תרגול לפי חלק</h2><div class="card"><p>כל פעם פרק אחד מהמבחן, בזמן של אמירנט, ובסוף התשובות עם הסברים. השאלות כאן נפרדות מהסימולציות, כך שהציון בסימולציה נשאר אמין.</p>
+    <div class="prtiers">${SIM_TIER_HE.map((t, i) => `<button class="${i === tier ? 'on' : ''}" onclick="prSetTier(${i})">${t}${i === auto ? ' ⭐' : ''}</button>`).join('')}</div>
+    <p class="prauto">⭐ מומלץ לך ${SIM_FORMS.some(f => simRecs(f.id).length) ? 'לפי הציון האחרון בסימולציה' : '(אחרי סימולציה ההמלצה תתאים לציון שלך)'}</p>`;
+  for (const type of ['sc', 'rs', 'rc']) {
+    const list = prSets(type, tier), mine = list.filter(x => done[x.id]), t = SIM_TYPE[type];
+    const pct = mine.length ? Math.round(mine.reduce((a, x) => a + done[x.id].ok, 0) / mine.reduce((a, x) => a + done[x.id].n, 0) * 100) : null;
+    h += `<button class="unit" onclick="prStart('${type}')"><span class="uic" style="background:${PR_COLOR[type]}">${PR_ICON[type]}</span>
+      <span class="ut"><span class="uh">${t.he}</span><span class="us">${t.n} שאלות · ${t.min} דקות</span>
+      <span class="us">${mine.length}/${list.length} פרקים נעשו${pct === null ? '' : ` · ${pct}% נכונות`}</span></span></button>`;
+  }
+  return h + `<label class="sw"><input type="checkbox" ${simStore().pnt ? 'checked' : ''} onchange="simStore().pnt=this.checked;save()"> בלי טיימר (תרגול רגוע)</label></div>`;
+}
+function renderPrResult() {
+  const { chs, rec, weak } = SM, { type, tier } = SM.practice, r = rec.ok / rec.n;
+  const up = r >= 0.75 && tier < 3, down = r < 0.5 && tier > 0;
+  let h = topBar() + `<main><div class="done simres"><div class="trophy">${r >= 0.8 ? '🏆' : r >= 0.5 ? '💪' : '📚'}</div>
+    <div class="un">תרגול · ${SIM_TYPE[type].he} · רמה ${SIM_TIER_HE[tier]}${rec.notimer ? ' · בלי טיימר' : ''}</div>
+    <div class="simscore">${rec.ok}/${rec.n}</div><div class="simband">תשובות נכונות</div>
+    ${up ? `<div class="simgoal">הלך מצוין. אפשר לנסות את הרמה הבאה: ${SIM_TIER_HE[tier + 1]}.</div>` : down ? `<div class="simgoal">הרמה הזו עוד קשה. כדאי לתרגל קצת ברמה ${SIM_TIER_HE[tier - 1]} ולחזור.</div>` : ''}</div>
+    <p class="foot">💡 ${SIM_TIPS[type]}</p>`;
+  h += simWeakBlock(weak) + simReview(chs, rec.ans);
+  h += `<div class="row" style="margin-top:16px"><button class="btn" onclick="prStart('${type}',${tier})">עוד פרק</button>
+    ${up ? `<button class="btn blue" onclick="simStore().pt=${tier + 1};prStart('${type}',${tier + 1})">לרמה הבאה</button>` : ''}</div>
+    <button class="btn ghost" onclick="SM=null;render();window.scrollTo(0,0)">חזרה לתרגול ולמבחנים</button>`;
+  return h + '</main>' + navBar();
+}
+
 // ----- מסכים -----
 function renderSims() {
   if (!SM) return renderSimList();
-  if (SM.done) return renderSimResult();
+  if (SM.done) return SM.practice ? renderPrResult() : renderSimResult();
   if (SM.intro) return renderSimIntro();
   return renderSimQuestion();
 }
 function renderSimList() {
   const st = simStore();
-  let h = topBar() + `<main><h2 class="sec">📝 סימולציות אמירנט</h2>
+  let h = topBar() + `<main>${prCard()}<h2 class="sec">📝 סימולציות מלאות</h2>
     <div class="card"><p>מבחן אחד לכולם, כמו אמירנט: 6 פרקים (3 השלמת משפטים, קטע קריאה ו-2 ניסוח מחדש), ${SIM_N} שאלות ו-${SIM_MIN} דקות. הפרק הראשון ברמה בינונית, ולפי ההצלחה בכל פרק הפרק הבא קשה או קל יותר. בסוף מקבלים ציון אחד בסולם 50-150 ואת הרמה.</p>
     <p>בתוך פרק אפשר לעבור בין השאלות ולשנות תשובה עד שהזמן נגמר. שאלה בלי תשובה נחשבת טעות, אז תמיד כדאי לנחש.</p>
     <label class="sw"><input type="checkbox" id="simnotimer"> בלי טיימר (תרגול רגוע)</label></div>`;
@@ -220,17 +291,17 @@ function renderSimList() {
 function renderSimIntro() {
   const c = SM.chs[SM.ch], t = SIM_TYPE[c.type];
   return `<main class="done simintro"><div class="trophy">${c.type === 'rc' ? '📄' : c.type === 'rs' ? '🔄' : '✏️'}</div>
-    <div class="un">${SM.form.he} · פרק ${SM.ch + 1} מתוך ${SIM_ORDER.length}</div>
+    <div class="un">${SM.practice ? `תרגול · רמה ${SIM_TIER_HE[c.tier]}` : `${SM.form.he} · פרק ${SM.ch + 1} מתוך ${SIM_ORDER.length}`}</div>
     <h2>${t.he}</h2><p class="simhow">${t.how}</p>
     <div class="kpis"><div class="kpi b"><b>${c.qs.length}</b><span>שאלות</span></div><div class="kpi y"><b>${SM.notimer ? '∞' : t.min}</b><span>דקות</span></div></div>
     <button class="btn big" onclick="simBeginChapter()">להתחיל את הפרק</button>
-    <button class="btn ghost" onclick="simQuit()">יציאה מהסימולציה</button></main>`;
+    <button class="btn ghost" onclick="simQuit()">${SM.practice ? 'יציאה מהתרגול' : 'יציאה מהסימולציה'}</button></main>`;
 }
 function renderSimQuestion() {
   const c = SM.chs[SM.ch], q = c.qs[SM.qi], a = SM.ans[SM.ch][SM.qi], t = SIM_TYPE[c.type];
   const left = SM.end - Date.now(), last = SM.qi === c.qs.length - 1, pin = SM.pins[SM.ch + ':' + SM.qi];
   let h = `<header class="lhead simhead"><button class="x" onclick="simQuit()" aria-label="יציאה">✕</button>
-    <span class="simt">פרק ${SM.ch + 1}/${SIM_ORDER.length} · ${t.he}</span>
+    <span class="simt">${SM.practice ? `תרגול · ${t.he} · ${SIM_TIER_HE[c.tier]}` : `פרק ${SM.ch + 1}/${SIM_ORDER.length} · ${t.he}`}</span>
     ${SM.notimer ? '' : `<button id="simclock" class="simclock ${left < 60000 ? 'low' : ''} ${SM.hideClock ? 'hid' : ''}" onclick="simToggleClock()" title="הסתרת השעון">${SM.hideClock ? '⏱️' : simClock(left)}</button>`}</header>
     <nav class="simbar">${c.qs.map((x, i) => `<button class="${i === SM.qi ? 'cur' : ''} ${SM.ans[SM.ch][i] >= 0 ? 'ans' : ''}" onclick="simGoQ(${i})">${i + 1}${SM.pins[SM.ch + ':' + i] ? '📌' : ''}</button>`).join('')}</nav>
     <main class="lbody simbody">`;
@@ -260,7 +331,6 @@ function simToggleOpen(k) { simOpen[k] = !simOpen[k]; render(); }
 function renderSimResult() {
   const { form, chs, rec, weak } = SM, ans = rec.ans;
   const pct = Math.round(rec.ok / rec.n * 100);
-  const inApp = weak.filter(x => simAppItem(x.en)).length;
   const best = simRecs(form.id).reduce((m, r) => Math.max(m, r.est), 0);
   let h = topBar() + `<main><div class="done simres"><div class="trophy">${pct >= 80 ? '🏆' : pct >= 55 ? '💪' : '📚'}</div>
     <div class="un">${form.he}${rec.notimer ? ' · בלי טיימר' : ''}</div>
@@ -273,16 +343,26 @@ function renderSimResult() {
     <div class="simpath">מסלול הקושי: ${chs.map(c => SIM_TIER_HE[c.tier]).join(' ← ')}</div></div>
     <p class="foot">איך חושב הציון: ${simScoreHow()}${best > rec.est ? ` הציון הגבוה שלך במבחן הזה: ${best}.` : ''}</p>
     <p class="foot">${simTip(rec.by)}</p>`;
+  h += simWeakBlock(weak) + simReview(chs, ans);
+  h += `<div class="row" style="margin-top:16px"><button class="btn" onclick="simStart('${form.id}')">לנסות שוב</button><button class="btn ghost" onclick="SM=null;render();window.scrollTo(0,0)">לכל המבחנים</button></div>`;
+  return h + '</main>' + navBar();
+}
+function simWeakBlock(weak) {
+  const inApp = weak.filter(x => simAppItem(x.en)).length;
+  let h = '';
   if (weak.length) {
     h += `<h2 class="sec">💪 מילים לחזק (${weak.length})</h2><div class="card">
       ${weak.map(x => `<div class="dw"><b class="en">${esc(x.en)}</b><span class="dhe">${esc(x.he)}</span>${simAppItem(x.en) ? '<span class="simin" title="קיימת בתרגול">✓</span>' : ''}</div>`).join('')}
       ${inApp ? `<button class="btn blue" style="margin-top:12px" onclick="simPracticeLast()">לתרגל עכשיו (${inApp} מילים מהאפליקציה)</button>` : ''}
-      <p class="foot">${SM.queued ? `${SM.queued} מילים שכבר למדת חזרו ל«חזרה». ` : ''}כל המילים נשמרו ברשימת החיזוק במסך הסימולציות.</p></div>`;
+      <p class="foot">${SM.queued ? `${SM.queued} מילים שכבר למדת חזרו ל«חזרה». ` : ''}כל המילים נשמרו ברשימת החיזוק במסך המבחנים.</p></div>`;
   }
-  h += `<h2 class="sec">📋 כל השאלות עם הסברים</h2>`;
+  return h;
+}
+function simReview(chs, ans) {
+  let h = `<h2 class="sec">📋 כל השאלות עם הסברים</h2>`;
   let num = 0;
   chs.forEach((c, ci) => {
-    h += `<div class="simch">פרק ${ci + 1} · ${SIM_TYPE[c.type].he} · ${SIM_TIER_HE[c.tier]}</div>`;
+    if (chs.length > 1) h += `<div class="simch">פרק ${ci + 1} · ${SIM_TYPE[c.type].he} · ${SIM_TIER_HE[c.tier]}</div>`;
     if (c.type === 'rc') {
       const k = 'p' + ci;
       h += `<button class="simtog" onclick="simToggleOpen('${k}')">${simOpen[k] ? '▲ להסתיר את הקטע' : '▼ להציג את הקטע'}</button>${simOpen[k] ? simPassage(c) : ''}`;
@@ -300,20 +380,20 @@ function renderSimResult() {
       h += `</div>`;
     });
   });
-  h += `<div class="row" style="margin-top:16px"><button class="btn" onclick="simStart('${form.id}')">לנסות שוב</button><button class="btn ghost" onclick="SM=null;render();window.scrollTo(0,0)">לכל המבחנים</button></div>`;
-  return h + '</main>' + navBar();
+  return h;
 }
 // עצה לפי החלק החלש
 function simTip(by) {
   const r = k => by[k][1] ? by[k][0] / by[k][1] : 1;
   const worst = ['sc', 'rs', 'rc'].sort((a, b) => r(a) - r(b))[0];
   if (r(worst) >= 0.85) return 'מצוין בכל החלקים. נסו מבחן אחר כדי לראות אם זה יציב.';
-  return {
-    sc: 'החלק החלש: השלמת משפטים. קודם קוראים את כל המשפט ומחפשים את הקשר (ניגוד, סיבה, תוספת), ורק אז מסתכלים על התשובות.',
-    rs: 'החלק החלש: ניסוח מחדש. מסמנים במשפט המקור את מילות הקישור ואת מילות הכמות (all, some, rarely), ופוסלים כל תשובה שמשנה אחת מהן.',
-    rc: 'החלק החלש: הבנת הנקרא. קודם קוראים את השאלה, אחר כך מחפשים בפסקה שהיא מפנה אליה. תשובה נכונה תמיד נשענת על משפט בקטע.',
-  }[worst];
+  return 'החלק החלש: ' + SIM_TYPE[worst].he + '. ' + SIM_TIPS[worst];
 }
+const SIM_TIPS = {
+  sc: 'קודם קוראים את כל המשפט ומחפשים את הקשר (ניגוד, סיבה, תוספת), ורק אז מסתכלים על התשובות.',
+  rs: 'מסמנים במשפט המקור את מילות הקישור ואת מילות הכמות (all, some, rarely), ופוסלים כל תשובה שמשנה אחת מהן.',
+  rc: 'קודם קוראים את השאלה, אחר כך מחפשים בפסקה שהיא מפנה אליה. תשובה נכונה תמיד נשענת על משפט בקטע.',
+};
 
 // עיצוב המסכים של הסימולציות (כאן ולא ב-index.html, כדי שהקובץ יעמוד בפני עצמו)
 (function () {
@@ -378,6 +458,10 @@ function simTip(by) {
 .simex{background:#fff7d6;border:2px solid #ffe28a;border-radius:12px;padding:10px 12px;font-size:14px;line-height:1.55}
 .simw{display:flex;flex-wrap:wrap;gap:6px}
 .simin{color:var(--g);font-weight:800}
+.prtiers{display:flex;gap:6px;background:var(--soft);border:2px solid var(--line);border-radius:14px;padding:4px;margin:6px 0 4px}
+.prtiers button{flex:1;border:0;background:none;border-radius:10px;padding:8px 2px;font-weight:800;font-size:13px;color:var(--mut);white-space:nowrap}
+.prtiers button.on{background:var(--bg);color:var(--bd);box-shadow:0 2px 0 var(--line)}
+.prauto{font-size:12px;color:var(--mut);margin:0 4px 12px!important}
 `;
   const el = document.createElement('style');
   el.textContent = css;

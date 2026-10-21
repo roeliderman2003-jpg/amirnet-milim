@@ -1,0 +1,1491 @@
+{
+ "tier": 1,
+ "sc": [
+  {
+   "qs": [
+    {
+     "q": "The new drug looked promising in the laboratory, but it had to be ___ after several patients suffered serious side effects.",
+     "o": [
+      "endorsed",
+      "enhanced",
+      "withdrawn",
+      "imitated"
+     ],
+     "a": 2,
+     "ex": "«withdrawn» = נמשך, הוסר (מהשוק). המילה «but» מראה ניגוד: התרופה נראתה מבטיחה במעבדה, אבל אחרי תופעות לוואי קשות היה צריך להסיר אותה. «endorsed» (קיבל תמיכה, אושר) ו-«enhanced» (שופר) הם תוצאות חיוביות שלא מתאימות לתופעות לוואי קשות.",
+     "w": [
+      [
+       "withdraw",
+       "למשוך, להסיר"
+      ],
+      [
+       "promising",
+       "מבטיח, מעורר תקווה"
+      ],
+      [
+       "side effect",
+       "תופעת לוואי"
+      ]
+     ]
+    },
+    {
+     "q": "The ancient road was built more than two thousand years ago; ___, parts of it are still used by local farmers today.",
+     "o": [
+      "even so",
+      "therefore",
+      "in other words",
+      "similarly"
+     ],
+     "a": 0,
+     "ex": "«even so» = ובכל זאת, למרות זאת. הדרך נבנתה לפני יותר מאלפיים שנה, ולמרות הגיל הרב חלקים ממנה עדיין בשימוש, וזה ניגוד. «therefore» (לכן) היה הופך את הגיל לסיבה לשימוש, ו-«in other words» (במילים אחרות) מציג ניסוח מחדש של אותו רעיון, וזה לא המצב כאן.",
+     "w": [
+      [
+       "even so",
+       "ובכל זאת, למרות זאת"
+      ],
+      [
+       "in other words",
+       "במילים אחרות"
+      ],
+      [
+       "similarly",
+       "באופן דומה"
+      ]
+     ]
+    },
+    {
+     "q": "The village is so ___ that the nearest hospital is a three-hour drive away over narrow mountain roads.",
+     "o": [
+      "crowded",
+      "modern",
+      "fertile",
+      "remote"
+     ],
+     "a": 3,
+     "ex": "«remote» = מרוחק, נידח. בית החולים הקרוב נמצא במרחק שלוש שעות נסיעה בדרכי הרים, כלומר הכפר רחוק מכל מקום. «crowded» (צפוף) ו-«modern» (מודרני) לא מסבירים את המרחק הגדול מבית החולים.",
+     "w": [
+      [
+       "remote",
+       "מרוחק, נידח"
+      ],
+      [
+       "crowded",
+       "צפוף"
+      ],
+      [
+       "fertile",
+       "פורה (אדמה)"
+      ]
+     ]
+    },
+    {
+     "q": "___ he had no formal training in music, the composer wrote several works that are still performed today.",
+     "o": [
+      "Because",
+      "Even though",
+      "As long as",
+      "So that"
+     ],
+     "a": 1,
+     "ex": "«Even though» = אף על פי ש. אין לו הכשרה פורמלית במוזיקה, ובכל זאת הוא כתב יצירות שמבוצעות עד היום, וזה ניגוד. «Because» (מפני ש) היה הופך את חוסר ההכשרה לסיבה להצלחה, ו-«As long as» (כל עוד) הוא תנאי שלא מתאים לעובדה שכבר קרתה.",
+     "w": [
+      [
+       "even though",
+       "אף על פי ש... (+משפט)"
+      ],
+      [
+       "formal training",
+       "הכשרה פורמלית"
+      ],
+      [
+       "perform",
+       "לבצע (יצירה), להופיע"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The two witnesses gave ___ accounts of the accident: one said the car was red, while the other insisted it was blue.",
+     "o": [
+      "identical",
+      "conflicting",
+      "detailed",
+      "accurate"
+     ],
+     "a": 1,
+     "ex": "«conflicting» = סותרים. אחרי הנקודתיים מוסבר שעד אחד אמר שהמכונית אדומה והשני התעקש שהיא כחולה, כלומר העדויות סותרות זו את זו. «identical» (זהים) הפוך לגמרי, ו-«accurate» (מדויקים) לא ייתכן כששני העדים אומרים דברים שונים.",
+     "w": [
+      [
+       "conflicting",
+       "סותר, מנוגד"
+      ],
+      [
+       "witness",
+       "עד (ראייה)"
+      ],
+      [
+       "insist",
+       "להתעקש, לעמוד על כך"
+      ]
+     ]
+    },
+    {
+     "q": "Sea otters eat large numbers of sea urchins, ___ protecting the kelp forests that the urchins feed on.",
+     "o": [
+      "whereas",
+      "unless",
+      "instead",
+      "thereby"
+     ],
+     "a": 3,
+     "ex": "«thereby» = ובכך, על ידי כך. הלוטרות אוכלות קיפודי ים, וכך הן מגינות על יערות האצות שהקיפודים ניזונים מהם: הפעולה הראשונה מובילה לתוצאה. «whereas» (ואילו) מציג ניגוד בין שני נושאים, ו-«unless» (אלא אם כן) הוא תנאי, ושניהם לא מתאימים לצורה protecting שבאה אחריהם.",
+     "w": [
+      [
+       "thereby",
+       "ובכך, על ידי כך"
+      ],
+      [
+       "whereas",
+       "ואילו, בעוד ש..."
+      ],
+      [
+       "feed on",
+       "להיזון מ..."
+      ]
+     ]
+    },
+    {
+     "q": "The manager asked the team to ___ the report to two pages, since the board members had very little time to read it.",
+     "o": [
+      "condense",
+      "expand",
+      "translate",
+      "publish"
+     ],
+     "a": 0,
+     "ex": "«condense» = לתמצת, לקצר. המנהל רוצה דוח של שני עמודים כי לחברי ההנהלה אין זמן לקרוא, כלומר צריך לקצר אותו. «expand» (להרחיב) הפוך, ו-«translate the report to two pages» (לתרגם לשני עמודים) לא הגיוני.",
+     "w": [
+      [
+       "condense",
+       "לתמצת, לקצר"
+      ],
+      [
+       "expand",
+       "להרחיב"
+      ],
+      [
+       "board",
+       "הנהלה, דירקטוריון"
+      ]
+     ]
+    },
+    {
+     "q": "Wolves usually hunt in packs, ___ foxes tend to hunt alone.",
+     "o": [
+      "because",
+      "so that",
+      "whereas",
+      "provided that"
+     ],
+     "a": 2,
+     "ex": "«whereas» = ואילו, בעוד ש. המשפט משווה בין שני בעלי חיים: זאבים צדים בלהקה, ושועלים צדים לבד. «because» (מפני ש) היה הופך את השועלים לסיבה להתנהגות של הזאבים, ו-«provided that» (בתנאי ש) יוצר תנאי לא הגיוני.",
+     "w": [
+      [
+       "whereas",
+       "ואילו, בעוד ש..."
+      ],
+      [
+       "pack",
+       "להקה"
+      ],
+      [
+       "tend to",
+       "נוטה ל..."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The museum's collection was severely damaged in the flood, and it will take years to ___ the most valuable paintings.",
+     "o": [
+      "restore",
+      "abandon",
+      "purchase",
+      "display"
+     ],
+     "a": 0,
+     "ex": "«restore» = לשקם, לשחזר. הציורים נפגעו קשה בשיטפון, ולכן ייקח שנים להחזיר אותם למצבם הקודם. «display» (להציג) לא דורש שנים של עבודה, ו-«purchase» (לקנות) לא הגיוני כי הציורים כבר שייכים למוזיאון.",
+     "w": [
+      [
+       "restore",
+       "לשקם, לשחזר"
+      ],
+      [
+       "severely",
+       "באופן חמור, קשות"
+      ],
+      [
+       "abandon",
+       "לנטוש"
+      ]
+     ]
+    },
+    {
+     "q": "The company promised to lower its prices; ___, customers are still paying the same amount a year later.",
+     "o": [
+      "consequently",
+      "for example",
+      "however",
+      "in addition"
+     ],
+     "a": 2,
+     "ex": "«however» = אולם, עם זאת. החברה הבטיחה להוריד מחירים, אבל אחרי שנה הלקוחות משלמים אותו דבר: ההבטחה לא קוימה, וזה ניגוד. «consequently» (כתוצאה מכך) היה הופך את ההבטחה לסיבה לכך שהמחיר לא ירד, ו-«in addition» (בנוסף) מוסיף רעיון באותו כיוון.",
+     "w": [
+      [
+       "however",
+       "אולם, עם זאת"
+      ],
+      [
+       "consequently",
+       "כתוצאה מכך"
+      ],
+      [
+       "lower",
+       "להוריד, להפחית"
+      ]
+     ]
+    },
+    {
+     "q": "Her ___ about the project disappeared once she saw how well the first tests had gone.",
+     "o": [
+      "enthusiasm",
+      "skepticism",
+      "ambition",
+      "gratitude"
+     ],
+     "a": 1,
+     "ex": "«skepticism» = ספקנות. מה שנעלם אחרי שהבדיקות הראשונות הצליחו הוא משהו שלילי, כלומר הספקות שלה לגבי הפרויקט. «enthusiasm» (התלהבות) לא נעלמת בגלל הצלחה אלא דווקא גדלה, ו-«gratitude» (הכרת תודה) לא קשורה לתוצאות הבדיקות.",
+     "w": [
+      [
+       "skepticism",
+       "ספקנות"
+      ],
+      [
+       "enthusiasm",
+       "התלהבות"
+      ],
+      [
+       "gratitude",
+       "הכרת תודה"
+      ]
+     ]
+    },
+    {
+     "q": "Many fish species can survive only within a narrow range of temperatures, ___ even a small rise in water temperature may force them to move to cooler areas.",
+     "o": [
+      "unless",
+      "although",
+      "while",
+      "so"
+     ],
+     "a": 3,
+     "ex": "«so» = ולכן. הדגים שורדים רק בטווח טמפרטורות צר, ולכן גם עלייה קטנה עלולה לאלץ אותם לעבור: סיבה ותוצאה. «although» (למרות ש) ו-«while» (בעוד ש) מציגים ניגוד שאין כאן, ו-«unless» (אלא אם כן) יוצר תנאי לא הגיוני.",
+     "w": [
+      [
+       "range",
+       "טווח"
+      ],
+      [
+       "force",
+       "לאלץ, להכריח"
+      ],
+      [
+       "survive",
+       "לשרוד"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The letters were written in a secret code, and historians needed nearly a decade to ___ them.",
+     "o": [
+      "forge",
+      "fold",
+      "ignore",
+      "decipher"
+     ],
+     "a": 3,
+     "ex": "«decipher» = לפענח. מכתבים שנכתבו בקוד סודי צריך לפענח, וזו העבודה שלקחה להיסטוריונים כמעט עשור. «forge» (לזייף) ו-«ignore» (להתעלם) לא מתאימים לעבודה ארוכה של היסטוריונים על קוד.",
+     "w": [
+      [
+       "decipher",
+       "לפענח"
+      ],
+      [
+       "forge",
+       "לזייף"
+      ],
+      [
+       "decade",
+       "עשור"
+      ]
+     ]
+    },
+    {
+     "q": "___ repairing the old printer, the office decided to replace it with a new model.",
+     "o": [
+      "Because of",
+      "Instead of",
+      "In addition to",
+      "According to"
+     ],
+     "a": 1,
+     "ex": "«Instead of» = במקום. המשרד בחר להחליף את המדפסת בחדשה, כלומר לא לתקן אותה. «In addition to» (בנוסף ל) לא הגיוני, כי אין טעם לתקן מדפסת שממילא מחליפים, ו-«Because of» (בגלל) היה הופך את התיקון לסיבה להחלפה.",
+     "w": [
+      [
+       "instead of",
+       "במקום (+שם עצם / ing)"
+      ],
+      [
+       "replace",
+       "להחליף"
+      ],
+      [
+       "repair",
+       "לתקן"
+      ]
+     ]
+    },
+    {
+     "q": "The plan looked good on paper, but it proved ___ in practice, since it required far more money than the town had.",
+     "o": [
+      "profitable",
+      "flexible",
+      "impractical",
+      "popular"
+     ],
+     "a": 2,
+     "ex": "«impractical» = לא מעשי. «but» מראה ניגוד לכך שהתוכנית נראתה טוב על הנייר, והסיבה מופיעה בסוף: היא דרשה הרבה יותר כסף ממה שהיה לעיר. «profitable» (רווחי) ו-«popular» (פופולרי) הם חיוביים ולא מתאימים לניגוד ולסיבה.",
+     "w": [
+      [
+       "impractical",
+       "לא מעשי"
+      ],
+      [
+       "in practice",
+       "בפועל, במציאות"
+      ],
+      [
+       "require",
+       "לדרוש"
+      ]
+     ]
+    },
+    {
+     "q": "The author rarely gives interviews; ___, she spends most of the year alone on a small farm far from the city.",
+     "o": [
+      "in fact",
+      "nonetheless",
+      "otherwise",
+      "by contrast"
+     ],
+     "a": 0,
+     "ex": "«in fact» = למעשה, יתרה מזו. החלק השני מחזק את הראשון: היא לא רק נמנעת מראיונות, אלא חיה רוב השנה לבד בחווה רחוקה. «nonetheless» (למרות זאת) ו-«by contrast» (לעומת זאת) מציגים ניגוד, אבל שני החלקים כאן מצביעים לאותו כיוון.",
+     "w": [
+      [
+       "in fact",
+       "למעשה, בעצם"
+      ],
+      [
+       "nonetheless",
+       "למרות זאת"
+      ],
+      [
+       "by contrast",
+       "לעומת זאת"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The new law ___ smoking in all restaurants and bars, so owners who allow it may now be fined.",
+     "o": [
+      "encourages",
+      "permits",
+      "prohibits",
+      "mentions"
+     ],
+     "a": 2,
+     "ex": "«prohibits» = אוסר. בעלים שמרשים לעשן עלולים לקבל קנס, ולכן החוק אוסר עישון. «permits» (מתיר) ו-«encourages» (מעודד) הפוכים, כי אז לא היה סיבה לקנס.",
+     "w": [
+      [
+       "prohibit",
+       "לאסור"
+      ],
+      [
+       "fine",
+       "לקנוס; קנס"
+      ],
+      [
+       "permit",
+       "להתיר, להרשות"
+      ]
+     ]
+    },
+    {
+     "q": "The experiment was repeated three times ___ make sure that the results had not been caused by chance.",
+     "o": [
+      "as long as",
+      "instead of",
+      "rather than",
+      "in order to"
+     ],
+     "a": 3,
+     "ex": "«in order to» = כדי ל. החזרה על הניסוי היא האמצעי, והמטרה היא לוודא שהתוצאות לא נבעו ממקרה. «instead of» ו-«rather than» (במקום) היו אומרים שהחוקרים לא רצו לוודא את התוצאות, וזה לא הגיוני, ו-«as long as» (כל עוד) צריך אחריו משפט שלם.",
+     "w": [
+      [
+       "in order to",
+       "כדי ל... (+פועל)"
+      ],
+      [
+       "make sure",
+       "לוודא"
+      ],
+      [
+       "by chance",
+       "במקרה"
+      ]
+     ]
+    },
+    {
+     "q": "The difference between the two paintings is so ___ that only an expert can tell which one is the original.",
+     "o": [
+      "subtle",
+      "obvious",
+      "dramatic",
+      "colorful"
+     ],
+     "a": 0,
+     "ex": "«subtle» = עדין, דק, קשה להבחנה. רק מומחה יכול להבחין בין שני הציורים, כלומר ההבדל קטן מאוד. «obvious» (ברור, בולט) ו-«dramatic» (דרמטי) הפוכים, כי אז כל אחד היה רואה את ההבדל.",
+     "w": [
+      [
+       "subtle",
+       "עדין, דק, קשה להבחנה"
+      ],
+      [
+       "obvious",
+       "ברור, בולט"
+      ],
+      [
+       "tell (the difference)",
+       "להבחין, לזהות"
+      ]
+     ]
+    },
+    {
+     "q": "Sales of the phone fell sharply in its second year, ___ the company's decision to raise its price.",
+     "o": [
+      "in spite of",
+      "due to",
+      "regardless of",
+      "apart from"
+     ],
+     "a": 1,
+     "ex": "«due to» = בשל, עקב. העלאת המחיר היא הסיבה לירידה החדה במכירות. «in spite of» (למרות) לא הגיוני, כי העלאת מחיר דווקא מסבירה ירידה במכירות, ו-«regardless of» (בלי קשר ל) מנתק את הקשר בין שני הדברים.",
+     "w": [
+      [
+       "due to",
+       "בשל, עקב"
+      ],
+      [
+       "sharply",
+       "באופן חד"
+      ],
+      [
+       "regardless of",
+       "בלי קשר ל..."
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The professor's lectures were so ___ that students often left the hall more confused than when they had arrived.",
+     "o": [
+      "inspiring",
+      "incoherent",
+      "concise",
+      "entertaining"
+     ],
+     "a": 1,
+     "ex": "«incoherent» = לא קוהרנטי, חסר רצף הגיוני. הסטודנטים יצאו מההרצאות מבולבלים יותר משנכנסו, ולכן ההרצאות היו לא ברורות. «inspiring» (מעורר השראה) ו-«concise» (תמציתי) הם תכונות חיוביות שלא היו מבלבלות את הסטודנטים.",
+     "w": [
+      [
+       "incoherent",
+       "לא קוהרנטי, מבולבל"
+      ],
+      [
+       "concise",
+       "תמציתי"
+      ],
+      [
+       "confused",
+       "מבולבל"
+      ]
+     ]
+    },
+    {
+     "q": "Some scientists believe the drought was caused by climate change; others, ___, argue that it was part of a natural cycle.",
+     "o": [
+      "on the other hand",
+      "as a result",
+      "for instance",
+      "in addition"
+     ],
+     "a": 0,
+     "ex": "«on the other hand» = מצד שני. יש כאן שתי עמדות מנוגדות: חלק מהמדענים מאשימים את שינוי האקלים, ואחרים חושבים שזה מחזור טבעי. «as a result» (כתוצאה מכך) לא מתאים, כי העמדה השנייה לא נובעת מהראשונה, ו-«for instance» (לדוגמה) מציג דוגמה ולא עמדה מנוגדת.",
+     "w": [
+      [
+       "on the other hand",
+       "מצד שני"
+      ],
+      [
+       "drought",
+       "בצורת"
+      ],
+      [
+       "cycle",
+       "מחזור"
+      ]
+     ]
+    },
+    {
+     "q": "The company ___ its success to a small team of engineers who designed its first product in a garage.",
+     "o": [
+      "denies",
+      "prevents",
+      "exposes",
+      "attributes"
+     ],
+     "a": 3,
+     "ex": "«attributes ... to» = מייחס ל. החברה אומרת שההצלחה שלה נובעת מצוות קטן של מהנדסים. «denies» (מכחישה) לא מתאים למבנה «to a small team», ו-«prevents» (מונעת) לא הגיוני, כי חברה לא מונעת את ההצלחה של עצמה.",
+     "w": [
+      [
+       "attribute to",
+       "לייחס ל..."
+      ],
+      [
+       "deny",
+       "להכחיש"
+      ],
+      [
+       "expose",
+       "לחשוף"
+      ]
+     ]
+    },
+    {
+     "q": "You may borrow up to five books at a time, ___ you return them within three weeks.",
+     "o": [
+      "even though",
+      "so that",
+      "as long as",
+      "whereas"
+     ],
+     "a": 2,
+     "ex": "«as long as» = כל עוד, בתנאי ש. מותר לשאול עד חמישה ספרים בתנאי שמחזירים אותם תוך שלושה שבועות. «even though» (אף על פי ש) מציג ניגוד שאין כאן, ו-«so that» (כדי ש) היה אומר שמטרת ההשאלה היא להחזיר את הספרים.",
+     "w": [
+      [
+       "as long as",
+       "כל עוד, בתנאי ש..."
+      ],
+      [
+       "borrow",
+       "לשאול (חפץ)"
+      ],
+      [
+       "at a time",
+       "בכל פעם"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "rs": [
+  {
+   "qs": [
+    {
+     "q": "Although the new vaccine is highly effective, it must be stored at very low temperatures, which makes it difficult to distribute in rural areas.",
+     "o": [
+      "Because the new vaccine is stored at very low temperatures, it is less effective in rural areas than it is in cities.",
+      "The new vaccine works very well, but since it must be kept extremely cold, getting it to rural areas is hard.",
+      "The new vaccine is easy to distribute in rural areas, since it can be kept at normal temperatures without losing its effect.",
+      "People in rural areas have rejected the new vaccine because they doubt that it remains effective at low temperatures."
+     ],
+     "a": 1,
+     "ex": "במקור: החיסון יעיל מאוד, אבל צריך לשמור אותו בטמפרטורה נמוכה מאוד, ולכן קשה להפיץ אותו באזורים כפריים. התשובה הנכונה אומרת את זה במילים אחרות («kept extremely cold», «getting it to rural areas is hard»). התשובה עם «less effective» משנה את הבעיה מהפצה ליעילות, התשובה עם «easy to distribute» הופכת את המשמעות, והתשובה עם «rejected» מוסיפה טענה שאין במקור.",
+     "w": [
+      [
+       "effective",
+       "יעיל"
+      ],
+      [
+       "store",
+       "לאחסן, לשמור"
+      ],
+      [
+       "distribute",
+       "להפיץ, לחלק"
+      ]
+     ]
+    },
+    {
+     "q": "The museum's attendance doubled after it began offering free entry on weekends, but its income from the gift shop barely changed.",
+     "o": [
+      "The museum began offering free weekend entry because its gift shop income had doubled, while attendance stayed about the same.",
+      "After weekend entry became free, attendance at the museum rose only slightly, and the gift shop's income doubled as a result.",
+      "Free entry on weekends doubled both the number of visitors to the museum and the money that it made from its gift shop.",
+      "Once weekend entry became free, twice as many people visited the museum, though the gift shop earned about the same as before."
+     ],
+     "a": 3,
+     "ex": "במקור: מספר המבקרים הוכפל אחרי שהכניסה בסופי שבוע נעשתה חינם, אבל ההכנסה מחנות המתנות כמעט לא השתנתה («barely changed»). התשובה הנכונה: «twice as many people» ו-«earned about the same». התשובה עם «because its gift shop income had doubled» הופכת סיבה ותוצאה, התשובה עם «rose only slightly» משנה את המידה, והתשובה עם «doubled both» אומרת שגם ההכנסה הוכפלה.",
+     "w": [
+      [
+       "attendance",
+       "מספר המבקרים, נוכחות"
+      ],
+      [
+       "double",
+       "להכפיל, להיות כפול"
+      ],
+      [
+       "barely",
+       "בקושי, כמעט לא"
+      ]
+     ]
+    },
+    {
+     "q": "Few of the town's residents were aware of the new recycling rules until fines began to appear in their mailboxes.",
+     "o": [
+      "Most people in the town did not know about the new recycling rules before they started receiving fines by mail.",
+      "Most of the town's residents learned about the new recycling rules early, so very few of them ever received fines.",
+      "The town began sending fines because most residents had openly refused to follow the new recycling rules.",
+      "Few residents received any fines, even though most of them were not aware of the new recycling rules at all."
+     ],
+     "a": 0,
+     "ex": "במקור: מעטים מהתושבים ידעו על כללי המחזור החדשים עד («until») שהתחילו להגיע קנסות לתיבות הדואר. כלומר רובם לא ידעו עד שקיבלו קנס, וזה מה שאומרת התשובה הנכונה. התשובה עם «learned ... early» הופכת את המשמעות, התשובה עם «openly refused» מוסיפה סיבה שאין במקור, והתשובה עם «Few residents received any fines» משנה את הכמות.",
+     "w": [
+      [
+       "resident",
+       "תושב"
+      ],
+      [
+       "be aware of",
+       "להיות מודע ל..."
+      ],
+      [
+       "fine",
+       "קנס"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Contrary to popular belief, camels do not store water in their humps; the humps are made mostly of fat, which the animals can use as energy when food is scarce.",
+     "o": [
+      "As most people believe, camels store water in their humps, and they use the fat in their bodies only when food is scarce.",
+      "A camel's hump is made mostly of water, which the animal is able to turn into fat when it cannot find enough food to eat.",
+      "Many people wrongly think a camel's hump holds water, but it mainly contains fat that serves as an energy source when food is hard to find.",
+      "Camels' humps contain both water and fat, so the animals are able to survive for months without any food or water at all."
+     ],
+     "a": 2,
+     "ex": "במקור: בניגוד לאמונה הרווחת («Contrary to popular belief»), בדבשת אין מים אלא בעיקר שומן, שמשמש לאנרגיה כשאין מספיק מזון. התשובה הנכונה: «wrongly think» ו-«mainly contains fat». התשובה עם «As most people believe» הופכת את המשמעות, התשובה עם «made mostly of water» אומרת את ההפך, והתשובה עם «survive for months» מוסיפה טענה שאין במקור.",
+     "w": [
+      [
+       "contrary to",
+       "בניגוד ל..."
+      ],
+      [
+       "hump",
+       "דבשת"
+      ],
+      [
+       "scarce",
+       "נדיר, חסר"
+      ]
+     ]
+    },
+    {
+     "q": "The author's second novel sold far fewer copies than her first, yet critics consider it her finest work.",
+     "o": [
+      "Critics regard the author's second novel as her best book, even though it sold much less than her first one.",
+      "Critics consider the author's first novel her finest work, mainly because it sold far more copies than her second.",
+      "The author's second novel sold slightly better than her first one, and critics agree that it is her finest work.",
+      "Because critics disliked the author's second novel, it sold far fewer copies than her highly praised first book."
+     ],
+     "a": 0,
+     "ex": "במקור: הרומן השני נמכר הרבה פחות מהראשון, ובכל זאת («yet») המבקרים רואים בו את היצירה הטובה ביותר שלה. התשובה הנכונה שומרת על שני החלקים («regard ... as her best book», «sold much less»). התשובה עם «first novel her finest work» מחליפה בין הספרים, התשובה עם «sold slightly better» הופכת את נתון המכירות, והתשובה עם «Because critics disliked» הופכת את דעת המבקרים ומוסיפה סיבה.",
+     "w": [
+      [
+       "yet",
+       "ובכל זאת, אך"
+      ],
+      [
+       "critic",
+       "מבקר"
+      ],
+      [
+       "regard as",
+       "לראות כ..., להחשיב כ..."
+      ]
+     ]
+    },
+    {
+     "q": "Unless the factory reduces its emissions by the end of the year, the government will withdraw its operating license.",
+     "o": [
+      "The government has already withdrawn the factory's license because it failed to reduce its emissions last year.",
+      "If the factory reduces its emissions by the end of the year, the government will give it a larger operating license.",
+      "The factory will keep its license whether or not it reduces its emissions, as long as it pays a fine this year.",
+      "The factory will lose its operating license if it has not cut its emissions by the time the year ends."
+     ],
+     "a": 3,
+     "ex": "«Unless» = אלא אם כן. במקור: אם המפעל לא יפחית את הפליטות עד סוף השנה, הוא יאבד את הרישיון. התשובה הנכונה אומרת את אותו תנאי עם «if it has not cut». התשובה עם «has already withdrawn» אומרת שזה כבר קרה, התשובה עם «a larger operating license» מוסיפה פרס שאין במקור, והתשובה עם «whether or not» מבטלת את התנאי.",
+     "w": [
+      [
+       "unless",
+       "אלא אם כן"
+      ],
+      [
+       "emissions",
+       "פליטות (מזהמים)"
+      ],
+      [
+       "withdraw",
+       "לשלול, למשוך"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Children who learn a second language before the age of ten are more likely to speak it without a foreign accent than those who start later.",
+     "o": [
+      "Children who start learning a second language after age ten usually speak it without a foreign accent, unlike younger learners.",
+      "Children who learn a second language before age ten always speak it perfectly, while older learners can never lose their accent.",
+      "Children who speak a second language without an accent tend to start learning additional languages before the age of ten.",
+      "Starting a second language before age ten increases a child's chances of speaking it with no foreign accent, compared to starting later."
+     ],
+     "a": 3,
+     "ex": "במקור: ילדים שמתחילים שפה שנייה לפני גיל עשר נוטים יותר («more likely») לדבר אותה בלי מבטא זר. התשובה הנכונה: «increases a child's chances». התשובה עם «after age ten» הופכת את הקבוצות, התשובה עם «always» ו-«never» משנה סיכוי לוודאות, והתשובה עם «tend to start learning additional languages» הופכת סיבה ותוצאה.",
+     "w": [
+      [
+       "be likely to",
+       "צפוי ל..., סביר ש..."
+      ],
+      [
+       "accent",
+       "מבטא"
+      ],
+      [
+       "compared to",
+       "בהשוואה ל..."
+      ]
+     ]
+    },
+    {
+     "q": "The bridge was designed to withstand earthquakes far stronger than any that have been recorded in the region so far.",
+     "o": [
+      "The bridge was badly damaged by an earthquake that was far stronger than any earlier one recorded in the region.",
+      "The bridge was built to survive earthquakes much more powerful than the strongest ones ever measured in the area.",
+      "The bridge can withstand only earthquakes that are weaker than the ones that have already been recorded in the region.",
+      "Engineers designed the bridge only after the region had recorded a long series of unusually strong earthquakes."
+     ],
+     "a": 1,
+     "ex": "«withstand» = לעמוד בפני. במקור: הגשר תוכנן לעמוד ברעידות אדמה חזקות בהרבה מכל רעידה שנמדדה באזור עד היום. התשובה הנכונה: «survive» ו-«more powerful than the strongest ones». התשובה עם «badly damaged» אומרת שהגשר נפגע, התשובה עם «only ... weaker» הופכת את המידה, והתשובה עם «only after» מוסיפה סיבה שאין במקור.",
+     "w": [
+      [
+       "withstand",
+       "לעמוד בפני, לשרוד"
+      ],
+      [
+       "record",
+       "לתעד, לרשום"
+      ],
+      [
+       "region",
+       "אזור"
+      ]
+     ]
+    },
+    {
+     "q": "Rather than banning mobile phones in class, some schools now teach students how to use them as learning tools.",
+     "o": [
+      "Some schools have banned mobile phones in class because students used them as learning tools far too rarely.",
+      "Most schools now teach students to use mobile phones as learning tools, and they have also banned them in class.",
+      "Instead of forbidding phones in the classroom, some schools are now showing students how to use them for learning.",
+      "Some schools now teach students how to learn well without mobile phones, which have been banned from all classes."
+     ],
+     "a": 2,
+     "ex": "«Rather than» = במקום. במקור: במקום לאסור טלפונים בכיתה, חלק מבתי הספר מלמדים להשתמש בהם ללמידה. התשובה הנכונה: «Instead of forbidding». התשובה עם «have banned ... because» הופכת את המשמעות ומוסיפה סיבה, התשובה עם «Most schools» משנה את הכמות ואומרת שגם אסרו, והתשובה עם «without mobile phones» אומרת את ההפך.",
+     "w": [
+      [
+       "rather than",
+       "במקום, ולא"
+      ],
+      [
+       "ban",
+       "לאסור"
+      ],
+      [
+       "forbid",
+       "לאסור"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The disease spread quickly through the city mainly because its early symptoms were so mild that few people sought medical help.",
+     "o": [
+      "The disease spread rapidly in the city chiefly because its first signs were so slight that hardly anyone saw a doctor.",
+      "The disease spread slowly through the city because people with even mild symptoms went to the doctor immediately.",
+      "Because so many people sought medical help, the city's busy doctors failed to notice the mild early symptoms of the disease.",
+      "The disease spread quickly through the city, even though its early symptoms were so severe that most people sought help."
+     ],
+     "a": 0,
+     "ex": "במקור: המחלה התפשטה מהר בעיקר («mainly») כי התסמינים הראשונים היו קלים, ולכן מעטים פנו לעזרה רפואית. התשובה הנכונה: «chiefly because» ו-«hardly anyone saw a doctor». התשובה עם «spread slowly» הופכת את התוצאה, התשובה עם «so many people sought medical help» הופכת את הכמות, והתשובה עם «so severe» הופכת את חומרת התסמינים.",
+     "w": [
+      [
+       "symptom",
+       "תסמין"
+      ],
+      [
+       "mild",
+       "קל, מתון"
+      ],
+      [
+       "seek",
+       "לחפש, לבקש (sought בעבר)"
+      ]
+     ]
+    },
+    {
+     "q": "Only after the company had lost nearly half its customers did its managers admit that the new software was the problem.",
+     "o": [
+      "The company lost nearly half its customers because its managers refused to install the new software in time.",
+      "The managers admitted that the new software was the problem, and as a result they won back half their customers.",
+      "The company's managers did not admit that the new software was to blame until almost half the customers had left.",
+      "As soon as the new software was introduced, the managers admitted it was a problem, so only a few customers left."
+     ],
+     "a": 2,
+     "ex": "«Only after» = רק אחרי. במקור: המנהלים הודו שהתוכנה החדשה היא הבעיה רק אחרי שהחברה איבדה כמעט חצי מהלקוחות. התשובה הנכונה: «did not admit ... until». התשובה עם «refused to install» הופכת את הבעיה, התשובה עם «won back half» מוסיפה תוצאה שאין במקור, והתשובה עם «As soon as» משנה את סדר הזמנים.",
+     "w": [
+      [
+       "admit",
+       "להודות"
+      ],
+      [
+       "to blame",
+       "אשם, האחראי"
+      ],
+      [
+       "nearly",
+       "כמעט"
+      ]
+     ]
+    },
+    {
+     "q": "While solar panels have become much cheaper over the past decade, the cost of storing the energy they produce remains high.",
+     "o": [
+      "Both solar panels and the storage of the energy they produce have become much cheaper over the past decade.",
+      "Solar panels have dropped greatly in price in the past ten years, but keeping the energy they generate is still expensive.",
+      "Solar panels have become more expensive over the past decade because storing the energy they produce costs so much.",
+      "Over the past decade, the cost of storing solar energy has fallen even faster than the price of the panels themselves."
+     ],
+     "a": 1,
+     "ex": "«While» כאן = בעוד ש, ומציג ניגוד. במקור: הפאנלים הסולאריים הוזלו מאוד, אבל אחסון האנרגיה עדיין יקר. התשובה הנכונה: «dropped greatly in price» ו-«still expensive». התשובה עם «Both» אומרת שגם האחסון הוזל, התשובה עם «more expensive» הופכת את המחיר, והתשובה עם «has fallen even faster» אומרת שהאחסון הוזל.",
+     "w": [
+      [
+       "while",
+       "בעוד ש...; כל עוד"
+      ],
+      [
+       "storage",
+       "אחסון"
+      ],
+      [
+       "remain",
+       "להישאר"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Most of the ancient city's population left within a few decades, probably because a long drought destroyed the crops on which it depended.",
+     "o": [
+      "A long drought destroyed the ancient city's crops, but historians are certain that its population did not leave the city.",
+      "The ancient city's population left slowly over several centuries, and researchers are sure that war was the main cause.",
+      "A long drought that ruined the crops people relied on probably explains why most residents abandoned the city within decades.",
+      "Because most of the population had left the ancient city, nobody remained to water the crops during the long drought."
+     ],
+     "a": 2,
+     "ex": "במקור: רוב התושבים עזבו תוך כמה עשורים, כנראה («probably») בגלל בצורת ארוכה שהרסה את היבולים. התשובה הנכונה: «probably explains why» ו-«abandoned the city». התשובה עם «did not leave» הופכת את העובדה, התשובה עם «several centuries» ו-«war» משנה גם את הזמן וגם את הסיבה, והתשובה עם «Because most of the population had left» הופכת סיבה ותוצאה.",
+     "w": [
+      [
+       "drought",
+       "בצורת"
+      ],
+      [
+       "crop",
+       "יבול"
+      ],
+      [
+       "depend on",
+       "להיות תלוי ב..."
+      ]
+     ]
+    },
+    {
+     "q": "The more time employees spend in meetings, the less satisfied they tend to be with their jobs, according to a recent survey.",
+     "o": [
+      "A recent survey found that employees who are satisfied with their jobs usually ask their managers for more meetings.",
+      "According to a recent survey, employees who spend more time in meetings tend to enjoy their jobs a great deal more.",
+      "A recent survey found that the time spent in meetings has no effect on how satisfied employees are with their jobs.",
+      "A recent survey found that workers' job satisfaction generally falls as the hours they spend in meetings rise."
+     ],
+     "a": 3,
+     "ex": "המבנה «The more ..., the less ...» = ככל ש... יותר, כך... פחות. במקור: ככל שעובדים מבלים יותר זמן בישיבות, הם פחות מרוצים מהעבודה. התשובה הנכונה: «satisfaction ... falls as the hours ... rise». התשובה עם «ask ... for more meetings» הופכת את הקשר ומוסיפה טענה, התשובה עם «enjoy their jobs ... more» הופכת את הכיוון, והתשובה עם «no effect» מבטלת את הקשר.",
+     "w": [
+      [
+       "satisfied",
+       "מרוצה"
+      ],
+      [
+       "tend to",
+       "נוטה ל..."
+      ],
+      [
+       "survey",
+       "סקר"
+      ]
+     ]
+    },
+    {
+     "q": "The town's old textile mill, once its largest employer, has been turned into a museum that attracts thousands of tourists every year.",
+     "o": [
+      "The town's old textile mill is still its largest employer, and it also runs a small museum for the tourists who visit.",
+      "Each year thousands of tourists visit a museum in the old textile mill, which used to employ more people than any other business in town.",
+      "The town built a new textile mill next to the museum because thousands of tourists come to visit the museum every year.",
+      "The museum in the old textile mill attracts only a few hundred tourists a year, although the mill was once the town's largest employer."
+     ],
+     "a": 1,
+     "ex": "במקור: מפעל הטקסטיל הישן, שפעם («once») היה המעסיק הגדול ביותר בעיר, הפך למוזיאון שמושך אלפי תיירים בשנה. התשובה הנכונה: «used to employ more people than any other business». התשובה עם «still its largest employer» אומרת שהמפעל עדיין פועל, התשובה עם «built a new textile mill» מוסיפה טענה שאין במקור, והתשובה עם «only a few hundred» משנה את המספר.",
+     "w": [
+      [
+       "once",
+       "פעם, בעבר"
+      ],
+      [
+       "employer",
+       "מעסיק"
+      ],
+      [
+       "attract",
+       "למשוך"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Despite repeated warnings from scientists, the fishing fleet continued to catch cod at such a rate that the population eventually collapsed.",
+     "o": [
+      "Scientists warned again and again, but the fleet kept fishing for cod so heavily that their numbers finally crashed.",
+      "Because scientists warned the fishing fleet in time, the cod population was able to recover before it could collapse.",
+      "The cod population collapsed because of a disease, even though the fishing fleet stopped catching cod as scientists had advised.",
+      "Scientists warned the fishing fleet only once, and as a result the number of cod in the area fell slightly."
+     ],
+     "a": 0,
+     "ex": "במקור: למרות («Despite») אזהרות חוזרות של מדענים, הצי המשיך לדוג בקלה בקצב כזה שהאוכלוסייה קרסה לבסוף. התשובה הנכונה: «warned again and again» ו-«finally crashed». התשובה עם «recover» הופכת את התוצאה, התשובה עם «because of a disease» מוסיפה סיבה אחרת ואומרת שהדיג נעצר, והתשובה עם «only once» ו-«fell slightly» משנה את הכמות ואת המידה.",
+     "w": [
+      [
+       "despite",
+       "למרות (+שם עצם)"
+      ],
+      [
+       "repeated",
+       "חוזר ונשנה"
+      ],
+      [
+       "collapse",
+       "לקרוס"
+      ]
+     ]
+    },
+    {
+     "q": "Horses had disappeared from the Americas thousands of years before European explorers brought them back about five hundred years ago.",
+     "o": [
+      "About five hundred years ago, European explorers found that horses had lived in the Americas for thousands of years.",
+      "Horses had been gone from the Americas for thousands of years when European explorers reintroduced them about five centuries ago.",
+      "Horses disappeared from the Americas about five hundred years ago, shortly after the first European explorers arrived.",
+      "About five hundred years ago, European explorers took the last horses out of the Americas and shipped them to Europe."
+     ],
+     "a": 1,
+     "ex": "במקור: סוסים נעלמו מאמריקה אלפי שנים לפני שחוקרים אירופים החזירו אותם, לפני כחמש מאות שנה. התשובה הנכונה: «had been gone ... for thousands of years» ו-«reintroduced them» (הכניסו אותם מחדש) «about five centuries ago». התשובה עם «had lived ... for thousands of years» אומרת שהסוסים היו שם כל הזמן, התשובה עם «disappeared ... about five hundred years ago» משנה את זמן ההיעלמות, והתשובה עם «took the last horses out» הופכת את כיוון התנועה.",
+     "w": [
+      [
+       "disappear",
+       "להיעלם"
+      ],
+      [
+       "vanish",
+       "להיעלם"
+      ],
+      [
+       "explorer",
+       "חוקר, מגלה ארצות"
+      ]
+     ]
+    },
+    {
+     "q": "Scientists still do not fully understand why some people remember their dreams clearly while others rarely recall them at all.",
+     "o": [
+      "Scientists have discovered exactly why some people remember their dreams clearly and others do not remember them.",
+      "Scientists believe that people who remember their dreams clearly also tend to sleep much better than others do.",
+      "Most people rarely recall their dreams, but scientists have found that everyone can learn to remember them clearly.",
+      "Science has not yet fully explained why certain people recall their dreams in detail while others hardly ever do."
+     ],
+     "a": 3,
+     "ex": "במקור: המדענים עדיין לא מבינים עד הסוף («not fully understand») למה יש אנשים שזוכרים חלומות היטב ואחרים כמעט לא. התשובה הנכונה: «has not yet fully explained». התשובה עם «discovered exactly why» הופכת את המשמעות, התשובה עם «sleep much better» מוסיפה טענה שאין במקור, והתשובה עם «everyone can learn» מוסיפה ממצא שלא הוזכר.",
+     "w": [
+      [
+       "recall",
+       "להיזכר, לזכור"
+      ],
+      [
+       "rarely",
+       "לעיתים רחוקות"
+      ],
+      [
+       "fully",
+       "לגמרי, במלואו"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "rc": [
+  {
+   "title": "Selling Winter to the Tropics",
+   "text": [
+    "In the early 1800s, a young Boston businessman named Frederic Tudor had an idea that most of his neighbors found ridiculous. Every winter, the ponds around Boston froze solid, and in spring the ice was simply left to melt. Tudor believed that people living in hot places, such as the islands of the Caribbean, would pay well for this frozen water if only it could reach them in good condition.",
+    "His first attempt, in 1806, was close to a disaster. He sent a ship loaded with ice to the island of Martinique, but there was nowhere on the island to store it, so much of it melted soon after it arrived, and the people who saw the rest had no idea what to do with it. Tudor lost a large amount of money, and in the following years his debts became so serious that he was arrested more than once. Yet he refused to give up.",
+    "Over the next two decades, Tudor and his partners solved the trade's practical problems one by one. They learned to pack the ice in sawdust, a cheap waste product of local sawmills, which slowed melting dramatically. They built thick-walled storehouses at their destinations so that the ice could be kept for months. A new tool pulled by horses cut the frozen ponds into blocks of identical size, which could be stacked tightly and loaded quickly. By 1833, ice from Massachusetts was surviving a four-month voyage all the way to India.",
+    "Tudor also had to create demand for a product that customers had never needed. At first he gave ice away, showed bar owners how to serve cold drinks, and taught hospitals to use it to cool patients with fevers. Once people had grown used to cold drinks, few wanted to go back. The trade grew for decades, but it faded in the late nineteenth century, when machines that could produce ice anywhere made shipping it across oceans unnecessary."
+   ],
+   "qs": [
+    {
+     "q": "Which of the following is the best title for the passage?",
+     "o": [
+      "How Machines Made Ice Cheap",
+      "Why Boston's Ponds Freeze Every Winter",
+      "The Rise and Fall of a Trade in Natural Ice",
+      "Life in a Debtors' Prison in the 1800s"
+     ],
+     "a": 2,
+     "ex": "הקטע מספר את כל הסיפור של סחר הקרח: הרעיון של טיודור, הכישלון הראשון, הפתרונות שהפכו את הסחר להצלחה, ולבסוף הדעיכה («faded») כשמכונות התחילו לייצר קרח. «How Machines Made Ice Cheap» מתאר רק את המשפט האחרון, והמעצר בגלל חובות מוזכר רק בקצרה בפסקה 2.",
+     "w": [
+      [
+       "rise and fall",
+       "עלייה ונפילה"
+      ],
+      [
+       "trade",
+       "סחר, מסחר"
+      ]
+     ]
+    },
+    {
+     "q": "According to paragraph 3, sawdust was used because it",
+     "o": [
+      "greatly slowed down the melting of the ice",
+      "made the blocks of ice the same size",
+      "was required by the owners of the ships",
+      "kept the ice clean enough to drink"
+     ],
+     "a": 0,
+     "ex": "בפסקה 3 כתוב שאריזת הקרח בנסורת «slowed melting dramatically», כלומר האטה מאוד את ההמסה. את הבלוקים בגודל זהה ייצר כלי חיתוך שנמשך על ידי סוסים, ולא הנסורת.",
+     "w": [
+      [
+       "sawdust",
+       "נסורת"
+      ],
+      [
+       "dramatically",
+       "באופן דרמטי, מאוד"
+      ],
+      [
+       "melt",
+       "להימס"
+      ]
+     ]
+    },
+    {
+     "q": "In paragraph 4, the word \"faded\" (in \"it faded in the late nineteenth century\") is closest in meaning to",
+     "o": [
+      "suddenly expanded",
+      "changed direction",
+      "became illegal",
+      "gradually declined"
+     ],
+     "a": 3,
+     "ex": "«fade» כאן = לדעוך, להיחלש בהדרגה. המשפט מסביר שמכונות שמייצרות קרח בכל מקום הפכו את משלוח הקרח למיותר, ולכן הסחר נחלש. «suddenly expanded» (התרחב פתאום) הפוך, ובקטע אין שום רמז לכך שהסחר נאסר («became illegal»).",
+     "w": [
+      [
+       "fade",
+       "לדעוך, להתעמעם"
+      ],
+      [
+       "decline",
+       "לרדת, לדעוך"
+      ],
+      [
+       "unnecessary",
+       "מיותר, לא נחוץ"
+      ]
+     ]
+    },
+    {
+     "q": "Why does the author mention that Tudor gave ice away at first (paragraph 4)?",
+     "o": [
+      "To show that he was no longer interested in making money",
+      "To show how he created demand for a product people had not used before",
+      "To explain why he was arrested because of his debts",
+      "To show that ice was very cheap to produce in hospitals"
+     ],
+     "a": 1,
+     "ex": "הפסקה נפתחת ב-«Tudor also had to create demand», כלומר היה עליו ליצור ביקוש למוצר שאנשים לא היו צריכים קודם. חלוקת קרח בחינם הייתה דרך לגרום לאנשים להתרגל אליו. היא לא מראה שהוא הפסיק להתעניין ברווח, כי המטרה הייתה שבהמשך יקנו ממנו.",
+     "w": [
+      [
+       "demand",
+       "ביקוש"
+      ],
+      [
+       "give away",
+       "לחלק בחינם"
+      ]
+     ]
+    },
+    {
+     "q": "Which of the following is NOT mentioned as a way that Tudor and his partners improved the ice trade?",
+     "o": [
+      "Packing the ice in sawdust",
+      "Building thick-walled storehouses",
+      "Cutting the ice into blocks of equal size",
+      "Producing ice with machines"
+     ],
+     "a": 3,
+     "ex": "שלוש הדרכים האחרות מופיעות בפסקה 3: נסורת, מחסנים עם קירות עבים, וחיתוך לבלוקים בגודל זהה. מכונות לייצור קרח מוזכרות רק בסוף פסקה 4, והן מה שגרם לסחר של טיודור לדעוך, לא דרך לשפר אותו.",
+     "w": [
+      [
+       "improve",
+       "לשפר"
+      ],
+      [
+       "storehouse",
+       "מחסן"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Paths Nobody Planned",
+   "text": [
+    "Walk across almost any university campus or city park and you will probably notice narrow strips of bare earth cutting across the grass. Planners call them \"desire lines\" or \"desire paths.\" They are created not by designers but by thousands of ordinary people who, one step at a time, choose a route that is shorter or more convenient than the official path.",
+    "For a long time, such paths were treated as a sign of bad behavior. Park managers put up fences, planted thick bushes, and posted signs asking visitors to stay on the paved walkways. These efforts rarely worked for long. If a shortcut saved people enough time, they usually found a way around the obstacle, and sometimes the fence itself became the starting point of a new path.",
+    "In recent decades, some planners have begun to view desire paths differently, seeing them as free and honest information about how people actually move. Instead of guessing where walkways should go, a few universities have opened new buildings surrounded only by grass. After several months, they examine where students have worn the ground down and pave those routes. In some northern cities, planners carry out a similar study each winter by observing which lines of footprints appear first in fresh snow.",
+    "Not every desire path deserves to become permanent, however. Some cross areas where plants or nesting birds need protection, and others lead people straight into dangerous traffic. The challenge for planners is to tell the difference between a path that reveals a real need and one that simply reflects a careless habit. Even so, many of them now agree that it is wiser to listen to people's feet than to fight them."
+   ],
+   "qs": [
+    {
+     "q": "The passage mainly discusses",
+     "o": [
+      "why fences are the most effective way to protect public parks",
+      "how informal walking routes are formed and how planners respond to them",
+      "the history of paved walkways on university campuses",
+      "the dangers that pedestrians face in heavy city traffic"
+     ],
+     "a": 1,
+     "ex": "הקטע מסביר מה הם «desire paths» ואיך הם נוצרים (פסקה 1), איך מתכננים ניסו להילחם בהם (פסקה 2), איך חלקם לומדים מהם היום (פסקה 3), ואילו שבילים לא כדאי לשמר (פסקה 4). לגבי גדרות הקטע אומר דווקא שהן כמעט לא עבדו, והסכנה בתנועה מוזכרת רק כדוגמה אחת בפסקה 4.",
+     "w": [
+      [
+       "informal",
+       "לא רשמי"
+      ],
+      [
+       "respond to",
+       "להגיב ל..."
+      ]
+     ]
+    },
+    {
+     "q": "According to paragraph 2, the fences that were built to stop people from using shortcuts",
+     "o": [
+      "were removed by planners every winter",
+      "were welcomed by most visitors",
+      "were often ineffective",
+      "caused harm to nesting birds"
+     ],
+     "a": 2,
+     "ex": "בפסקה 2 כתוב «These efforts rarely worked for long», ואנשים מצאו דרך לעקוף את המכשול, ולפעמים הגדר עצמה הפכה לתחילת שביל חדש. כלומר הגדרות לא היו יעילות. ציפורים מקננות מוזכרות רק בפסקה 4 ולא בהקשר של גדרות.",
+     "w": [
+      [
+       "ineffective",
+       "לא יעיל"
+      ],
+      [
+       "obstacle",
+       "מכשול"
+      ],
+      [
+       "shortcut",
+       "קיצור דרך"
+      ]
+     ]
+    },
+    {
+     "q": "The author mentions fresh snow in paragraph 3 in order to",
+     "o": [
+      "give another example of how planners learn where people want to walk",
+      "explain why desire paths disappear during the winter",
+      "show that northern cities have fewer parks than other cities",
+      "describe a danger that walkers face in cold weather"
+     ],
+     "a": 0,
+     "ex": "המשפט על השלג מתחיל ב-«a similar study», כלומר זו עוד דוגמה, בדומה לאוניברסיטאות שמחכות לראות איפה הסטודנטים הולכים: המתכננים בודקים אילו עקבות מופיעות ראשונות בשלג כדי לדעת איפה אנשים רוצים ללכת. אין בקטע טענה שהשבילים נעלמים בחורף או שהשלג מסוכן.",
+     "w": [
+      [
+       "in order to",
+       "כדי ל... (+פועל)"
+      ],
+      [
+       "observe",
+       "לצפות, להתבונן"
+      ],
+      [
+       "footprint",
+       "עקבה, טביעת רגל"
+      ]
+     ]
+    },
+    {
+     "q": "In paragraph 4, the phrase \"listen to people's feet\" means",
+     "o": [
+      "ask walkers to fill out a survey about the park",
+      "build quieter walkways in busy areas",
+      "fine people who leave the official path",
+      "pay attention to the routes people actually choose"
+     ],
+     "a": 3,
+     "ex": "זה ביטוי ציורי: «להקשיב לרגליים» של אנשים פירושו לשים לב לאן הם באמת הולכים, כמו המתכננים בפסקה 3 שסוללים את המסלולים שהסטודנטים בחרו. זה ההפך מ-«fight them», כלומר מניסיון לעצור אותם בגדרות ובשלטים. קנסות («fine people») הם בדיוק סוג של מלחמה בהם.",
+     "w": [
+      [
+       "phrase",
+       "ביטוי"
+      ],
+      [
+       "pay attention to",
+       "לשים לב ל..."
+      ]
+     ]
+    },
+    {
+     "q": "It can be inferred from paragraph 4 that the author believes",
+     "o": [
+      "each desire path should be judged on its own before it is paved",
+      "all desire paths should be paved as soon as possible",
+      "desire paths are always a sign of careless behavior",
+      "nesting birds create most of the desire paths in parks"
+     ],
+     "a": 0,
+     "ex": "בפסקה 4 הכותב אומר שלא כל שביל ראוי להיות קבוע («Not every desire path deserves to become permanent»), ושהאתגר הוא להבחין בין שביל שמגלה צורך אמיתי לבין הרגל רשלני. מכאן שצריך לבדוק כל שביל לגופו. «as soon as possible» סותר את ההסתייגות הזאת, ו-«always» סותר את הטענה שחלק מהשבילים מגלים צורך אמיתי.",
+     "w": [
+      [
+       "infer",
+       "להסיק"
+      ],
+      [
+       "permanent",
+       "קבוע"
+      ],
+      [
+       "reveal",
+       "לגלות, לחשוף"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "title": "Nobody Is Watching as Closely as You Think",
+   "text": [
+    "Imagine spilling coffee on your shirt just before an important meeting. For the rest of the day, you may feel that everyone is staring at the stain. Psychologists have a name for this feeling: the spotlight effect. It refers to our tendency to overestimate how much other people notice our appearance and our behavior, as if we were always standing on a brightly lit stage.",
+    "In a well-known experiment, researchers at Cornell University asked students to put on a T-shirt printed with the face of a singer whom most of them considered deeply unfashionable. Each student then entered a room where other students were filling out a questionnaire, stayed briefly, and left. Afterwards, the wearers guessed that about half of the people in the room had noticed the shirt. In fact, only about a quarter had.",
+    "Why do we make this mistake? One explanation is that we are, quite naturally, the center of our own experience. We know every detail of our own appearance and feel our embarrassment strongly, so we find it hard to imagine that others are not equally aware of it. We forget that the people around us are busy with their own concerns, and many of them are probably worrying about how they themselves look.",
+    "Understanding the spotlight effect can be surprisingly useful. People who are afraid of making a small mistake in public, such as forgetting a word during a speech, often suffer more from the fear than from the mistake itself. Knowing that most listeners will barely notice, or will quickly forget, may make it easier to take part in class discussions, try a new activity, or simply walk into a room with greater confidence."
+   ],
+   "qs": [
+    {
+     "q": "The main purpose of the passage is to",
+     "o": [
+      "explain a common error in how people think others see them",
+      "teach readers how to remove stains before a meeting",
+      "show that most students dislike unfashionable clothing",
+      "argue that people should care more about their appearance"
+     ],
+     "a": 0,
+     "ex": "כל הקטע עוסק ב-«spotlight effect»: הנטייה להעריך יתר על המידה כמה אחרים שמים לב אלינו. הוא מגדיר את התופעה, מביא ניסוי, מסביר את הסיבה ומראה למה כדאי להכיר אותה. הכתם על החולצה הוא רק דוגמה בפתיחה, והקטע דווקא מעודד לדאוג פחות למראה, לא יותר.",
+     "w": [
+      [
+       "purpose",
+       "מטרה"
+      ],
+      [
+       "common",
+       "נפוץ"
+      ]
+     ]
+    },
+    {
+     "q": "According to paragraph 2, the students who wore the T-shirt",
+     "o": [
+      "were asked to fill out a questionnaire about singers",
+      "were noticed by about half of the people in the room",
+      "chose that T-shirt because they liked the singer",
+      "believed that more people had noticed it than really had"
+     ],
+     "a": 3,
+     "ex": "בפסקה 2 כתוב שהלובשים העריכו שבערך חצי מהאנשים בחדר שמו לב לחולצה, אבל בפועל («In fact») רק כרבע שמו לב. «noticed by about half» הוא הניחוש שלהם, לא המציאות. את השאלון מילאו האנשים שישבו בחדר, לא לובשי החולצה.",
+     "w": [
+      [
+       "notice",
+       "להבחין, לשים לב"
+      ],
+      [
+       "questionnaire",
+       "שאלון"
+      ],
+      [
+       "in fact",
+       "למעשה, בפועל"
+      ]
+     ]
+    },
+    {
+     "q": "In paragraph 1, the word \"overestimate\" is closest in meaning to",
+     "o": [
+      "think that something is smaller than it really is",
+      "think that something is greater than it really is",
+      "measure something exactly",
+      "refuse to consider something"
+     ],
+     "a": 1,
+     "ex": "«overestimate» = להעריך יתר על המידה (over = יותר מדי, estimate = להעריך). הקטע מסביר שאנחנו חושבים שאחרים שמים לב אלינו יותר ממה שהם באמת שמים לב. «think that something is smaller» הוא בדיוק ההפך, underestimate.",
+     "w": [
+      [
+       "overestimate",
+       "להעריך יתר על המידה"
+      ],
+      [
+       "estimate",
+       "להעריך (כמות)"
+      ],
+      [
+       "appearance",
+       "מראה חיצוני"
+      ]
+     ]
+    },
+    {
+     "q": "According to paragraph 3, one reason for the spotlight effect is that",
+     "o": [
+      "other people are usually very critical of us",
+      "we rarely think about how we look to others",
+      "we are very aware of our own appearance and feelings",
+      "the people around us notice every small detail"
+     ],
+     "a": 2,
+     "ex": "בפסקה 3 כתוב שאנחנו מכירים כל פרט במראה שלנו ומרגישים את המבוכה שלנו בעוצמה, ולכן קשה לנו לדמיין שאחרים לא מודעים לזה באותה מידה. «the people around us notice every small detail» סותר את הפסקה, שאומרת שהאחרים עסוקים בעניינים שלהם.",
+     "w": [
+      [
+       "aware of",
+       "מודע ל..."
+      ],
+      [
+       "embarrassment",
+       "מבוכה"
+      ],
+      [
+       "concern",
+       "דאגה, עניין"
+      ]
+     ]
+    },
+    {
+     "q": "Which of the following can be inferred from paragraph 4?",
+     "o": [
+      "Most speakers forget at least one word during every speech.",
+      "Listeners usually remember small mistakes for a long time.",
+      "The fear of embarrassment may stop people from doing things they would enjoy.",
+      "Class discussions make students more afraid of making mistakes."
+     ],
+     "a": 2,
+     "ex": "בפסקה 4 כתוב שהבנת התופעה יכולה להקל על השתתפות בדיון בכיתה, על ניסיון של פעילות חדשה ועל כניסה לחדר בביטחון. מכאן אפשר להסיק שהפחד ממבוכה מונע מאנשים לעשות דברים כאלה. «remember small mistakes for a long time» סותר את הטענה שהמאזינים ישכחו מהר («quickly forget»).",
+     "w": [
+      [
+       "infer",
+       "להסיק"
+      ],
+      [
+       "confidence",
+       "ביטחון עצמי"
+      ],
+      [
+       "barely",
+       "בקושי"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

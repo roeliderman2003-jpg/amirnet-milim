@@ -1,6 +1,7 @@
 // בונה את sims.js: מאגר פרקים (SIM_SETS) ונוסחים אדפטיביים (SIM_FORMS), ובודק את התוכן. הרצה: node tools/build-sims.js
 // מקורות: sims-src/sim*.json (סימולציות מלאות, כל פרק = פרק במאגר ברמה של הסימולציה)
 //         sims-src/pack-*.json (פרקים נוספים: {"tier":N,"sc":[...],"rs":[...]} או {"tier":N,"rc":[...]})
+//         practice-src/pack-tN.json (מאגר התרגול לפי חלק, נפרד מהסימולציות: {"tier":N,"sc":[...],"rs":[...],"rc":[...]}) ← practice.js
 // נוסח = מבחן רב-שלבי: פרק פתיחה בינוני, ובכל אחד מ-5 הפרקים הבאים גרסה קלה (lo) וגרסה קשה (hi).
 // כל פרק במאגר משמש בנוסח אחד בלבד, כך שאין שאלות שחוזרות בין נוסחים.
 const fs = require('fs'), path = require('path');
@@ -90,7 +91,37 @@ let forms = [];
 for (let n = Math.floor(sets.length / 11); n > 0; n--) { const f = allocate(n); if (f) { forms = f; break; } }
 const MIN_FORMS = +process.env.MIN_FORMS || 12; // לבדיקה מקומית עם מאגר חלקי: MIN_FORMS=1
 if (forms.length < MIN_FORMS) errs.push(`only ${forms.length} complete forms (need ${MIN_FORMS})`);
+
+// מאגר התרגול לפי חלק: אותן בדיקות, ושום משפט או קטע לא חוזרים מהסימולציות (כדי שהציון שם יישאר אמין).
+// ניסוחי שאלות קבועים של הבנת הנקרא («the best title for the passage») חוזרים גם באמירנט עצמו, ולכן לא נבדקים
+const psrc = path.join(root, 'practice-src'), psets = [];
+const PER_TIER = { sc: 6, rs: 6, rc: 3 };
+const key = t => t.toLowerCase().replace(/[^a-z]+/g, ' ').trim();
+const own = x => [...(x.type === 'rc' ? [] : x.qs.map(q => q.q)), ...(x.title ? [x.title] : []), ...(x.text || [])];
+const simTexts = new Set(sets.flatMap(x => own(x).map(key)));
+for (const f of fs.existsSync(psrc) ? fs.readdirSync(psrc).sort() : []) {
+  const m = f.match(/^pack-t(\d)\.json$/);
+  if (!m) continue;
+  const d = JSON.parse(fs.readFileSync(path.join(psrc, f), 'utf8')), mine = [];
+  if (d.tier !== +m[1]) errs.push(f + ': tier');
+  for (const type of ['sc', 'rs', 'rc']) {
+    if ((d[type] || []).length !== PER_TIER[type]) errs.push(`${f}: ${(d[type] || []).length} ${type} chapters (need ${PER_TIER[type]})`);
+    (d[type] || []).forEach((c, i) => mine.push(Object.assign({ id: `x${d.tier}${type}${i + 1}`, tier: d.tier, type }, c)));
+  }
+  mine.forEach(x => {
+    checkSet(x, `${f} ${x.id}`);
+    own(x).forEach(t => { if (simTexts.has(key(t))) errs.push(`${f} ${x.id}: copied from the simulations: ${t.slice(0, 60)}`); });
+  });
+  checkLongest(mine, f);
+  psets.push(...mine);
+}
 if (errs.length) { console.error(errs.join('\n')); process.exit(1); }
+if (psets.length) {
+  const pout = {};
+  psets.forEach(x => { pout[x.id] = x; });
+  fs.writeFileSync(path.join(root, 'practice.js'), '// נוצר אוטומטית מ-practice-src/ ע"י tools/build-sims.js. לא לערוך כאן.\nconst PRACTICE_SETS = ' + JSON.stringify(pout) + ';\n');
+  console.log('practice.js:', psets.length, 'sets,', psets.reduce((a, x) => a + x.qs.length, 0), 'questions');
+}
 
 const out = {};
 sets.forEach(s => { out[s.id] = s; });
