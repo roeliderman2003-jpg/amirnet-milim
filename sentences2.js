@@ -245,4 +245,9 @@ const S2 = {
   "beyond|ref": ["The damage to the old car was ___ repair, so we sold it for parts.", "הנזק למכונית הישנה היה מעבר לתיקון, אז מכרנו אותה לחלקים."],
   "in favor of|ref": ["Most parents are ___ a longer school day, but the teachers oppose it.", "רוב ההורים בעד יום לימודים ארוך יותר, אבל המורים מתנגדים לו."],
   "on behalf of|ref": ["The captain accepted the trophy ___ the whole team.", "הקפטן קיבל את הגביע בשם כל הקבוצה."],
+  "despite the fact that|cnc": ["___ she had a cold, she ran the whole marathon.", "למרות העובדה שהייתה מצוננת, היא רצה את כל המרתון."],
+  "by contrast|con": ["My first job paid very little. ___, my new job pays twice as much.", "העבודה הראשונה שלי שילמה מעט מאוד. לעומת זאת, העבודה החדשה שלי משלמת פי שניים."],
+  "as if|cmp": ["She looked at me ___ she had seen a ghost.", "היא הסתכלה עליי כאילו ראתה רוח רפאים."],
+  "as opposed to|con": ["The new phone uses a fast charger, ___ the slow one in the old model.", "הטלפון החדש משתמש במטען מהיר, בניגוד למטען האיטי בדגם הישן."],
+  "a little|deg": ["Add ___ salt to the soup; it needs just a bit more taste.", "תוסיף קצת מלח למרק; הוא צריך רק עוד קצת טעם."],
 };

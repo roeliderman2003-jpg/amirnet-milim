@@ -16,12 +16,12 @@ const AMBIG = new Set(['as', 'for', 'since', 'while', 'still', 'once', 'so', 'ye
 const SYN_GROUPS = [
   ['although', 'even though', 'though'], ['despite', 'in spite of', 'notwithstanding'],
   ['nevertheless', 'nonetheless', 'even so', 'all the same', 'still', 'yet', 'however'],
-  ['whereas', 'while'], ['in contrast', 'on the other hand'],
+  ['whereas', 'while'], ['in contrast', 'on the other hand', 'by contrast'], ['yet', 'but'], ['although', 'despite the fact that'], ['as if', 'as though'],
   ['moreover', 'furthermore', 'in addition', 'additionally', "what's more", 'besides'], ['also', 'too', 'as well'],
   ['in addition to', 'as well as', 'along with', 'coupled with'],
   ['because', 'since', 'as', 'for', 'seeing that', 'inasmuch as', 'given that'],
-  ['because of', 'due to', 'owing to', 'on account of', 'as a result of', 'thanks to'],
-  ['therefore', 'thus', 'consequently', 'hence', 'as a result', 'accordingly', 'for this reason', 'so'],
+  ['because of', 'due to', 'owing to', 'on account of', 'as a result of'],
+  ['therefore', 'thus', 'consequently', 'as a result', 'accordingly', 'for this reason', 'so'],
   ['in order to', 'so as to'], ['so that', 'in order that'],
   ['provided that', 'providing', 'as long as', 'on condition that', 'only if'],
   ['for example', 'for instance', 'e.g.'], ['that is', 'i.e.', 'in other words', 'namely'], ['such as', 'like', 'including'],
@@ -226,7 +226,7 @@ function sentenceOptions(w) {
   for (const x of [...same, ...other]) { if (out.length >= 3) break; if (!out.includes(x.en)) out.push(x.en); }
   return shuffle([w.en, ...out]);
 }
-const norm = s => s.toLowerCase().replace(/[’‘`]/g, "'").replace(/…/g, ' ').replace(/[.,!?;:]/g, ' ').replace(/\s+/g, ' ').trim();
+const norm = s => s.toLowerCase().replace(/[’‘`]/g, "'").replace(/…/g, ' ').replace(/\.{3}/g, ' ').replace(/\./g, '').replace(/[,!?;:]/g, ' ').replace(/\s+/g, ' ').trim();
 function lev(a, b) {
   const m = a.length, n = b.length, d = Array.from({ length: m + 1 }, (_, i) => [i]);
   for (let j = 1; j <= n; j++) d[0][j] = j;
@@ -297,7 +297,7 @@ function buildWeak() {
 let view = 'home', L = null, dictQ = '', dictOpen = -1;
 function startLesson(q, title) {
   if (!q.length) { toast('אין כרגע מה לתרגל כאן'); return; }
-  L = { q, done: 0, ok: 0, bad: 0, xp: 0, fresh: 0, retries: {}, title, cur: null };
+  L = { q, done: 0, ok: 0, bad: 0, xp: 0, fresh: 0, retries: {}, title, cur: null, conf: [] };
   view = 'lesson';
   prepare();
   render();
@@ -333,11 +333,18 @@ function knowIt() {
   L.q = [it, { k: 'q', w: it.w, type: 'sentence' }, ...L.q.slice(1).filter(x => x.w !== it.w)];
   next();
 }
+// טעות בבחירה: זוכרים עם מה התבלבלת, ומציגים בסוף השיעור
+function noteConfusion(w, c, chosen) {
+  const other = c.type === 'meaning' ? ITEMS.find(x => x.he === chosen) : c.type === 'category' ? null : ITEMS.find(x => x.en === chosen);
+  if (!other || other === w || L.conf.some(p => p[0] === w && p[1] === other)) return;
+  L.conf.push([w, other]);
+}
 function answerOpt(i) {
   const c = L.cur;
   if (!c || c.ans) return;
   const w = L.q[0].w, ok = c.opts[i] === c.correct;
   c.ans = { i, ok };
+  if (!ok) noteConfusion(w, c, c.opts[i]);
   grade(w, c.type, ok);
   beep(ok);
   if (ok) speak(w.en);
@@ -469,6 +476,7 @@ function renderLesson() {
     const acc = L.ok + L.bad ? Math.round(L.ok / (L.ok + L.bad) * 100) : 100;
     return `<main class="done"><div class="trophy">🎉</div><h2>השיעור הושלם!</h2>
       <div class="kpis"><div class="kpi y"><b>+${L.xp}</b><span>נקודות</span></div><div class="kpi g"><b>${acc}%</b><span>דיוק</span></div><div class="kpi b"><b>${L.fresh}</b><span>מילים חדשות</span></div></div>
+      ${L.conf.length ? `<div class="card conf"><b>במה התבלבלת</b>${L.conf.slice(0, 4).map(([a, b]) => `<div class="cf"><span><b class="en">${esc(disp(a.en))}</b> = ${esc(a.he)}</span><span><b class="en">${esc(disp(b.en))}</b> = ${esc(b.he)}</span></div>`).join('')}</div>` : ''}
       <button class="btn big" onclick="quitLesson()">המשך</button></main>`;
   }
   const total = L.done + L.q.length, pct = Math.round(L.done / total * 100);
