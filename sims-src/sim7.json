@@ -1,0 +1,234 @@
+{
+  "title": "סימולציה 7",
+  "level": 2,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The committee's report was truly ___: it covered every aspect of the problem and left no important question unanswered.",
+          "o": ["superficial", "comprehensive", "ambiguous", "premature"],
+          "a": 1,
+          "ex": "«comprehensive» = מקיף. אחרי הנקודתיים מוסבר שהדוח כיסה כל היבט ולא השאיר שאלה פתוחה, כלומר הוא מקיף. «superficial» (שטחי) אומר בדיוק את ההפך.",
+          "w": [["comprehensive", "מקיף"], ["superficial", "שטחי"], ["aspect", "היבט"]]
+        },
+        {
+          "q": "Many small shops in the old market have closed in recent years, ___ the rise of large supermarkets on the edge of town.",
+          "o": ["in spite of", "regardless of", "instead of", "owing to"],
+          "a": 3,
+          "ex": "«owing to» = בשל, עקב. עליית הסופרמרקטים הגדולים היא הסיבה לסגירת החנויות הקטנות. «in spite of» (למרות) היה אומר שהחנויות נסגרו למרות הסופרמרקטים, וזה לא הגיוני.",
+          "w": [["owing to", "בשל, עקב"], ["in spite of", "למרות (+שם עצם)"]]
+        },
+        {
+          "q": "The ancient manuscript is extremely ___, so visitors are allowed to view it only through a sealed glass case.",
+          "o": ["fragile", "durable", "ordinary", "accessible"],
+          "a": 0,
+          "ex": "«fragile» = שביר, עדין. בגלל שכתב היד עדין, מותר להסתכל עליו רק מבעד לזכוכית. «durable» (עמיד) הוא ההפך, ואז לא הייתה סיבה להגן עליו.",
+          "w": [["fragile", "שביר, עדין"], ["durable", "עמיד"], ["manuscript", "כתב יד"]]
+        },
+        {
+          "q": "The new policy was meant to reduce traffic in the city center; ___, it simply moved the congestion to the surrounding neighborhoods.",
+          "o": ["likewise", "furthermore", "accordingly", "instead"],
+          "a": 3,
+          "ex": "«instead» = במקום זאת. המדיניות הייתה אמורה להפחית את התנועה, ובמקום זה רק העבירה את הפקקים לשכונות אחרות. «accordingly» (בהתאם לכך) מציג תוצאה צפויה, אבל כאן התוצאה הפוכה למטרה.",
+          "w": [["instead", "במקום זאת"], ["congestion", "עומס, פקקים"], ["accordingly", "בהתאם לכך, לכן"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The witness's description of the accident was so ___ that the police could not tell which car had entered the junction first.",
+          "o": ["precise", "vague", "detailed", "reliable"],
+          "a": 1,
+          "ex": "«vague» = מעורפל, לא ברור. בגלל שהעדות הייתה מעורפלת, המשטרה לא הצליחה לקבוע מי נכנס ראשון לצומת. «precise» ו-«detailed» (מדויק, מפורט) היו מאפשרים לקבוע בדיוק את זה.",
+          "w": [["vague", "מעורפל, לא ברור"], ["precise", "מדויק"]]
+        },
+        {
+          "q": "Students may submit their essays after the deadline, ___ they inform the lecturer in advance and explain the reason for the delay.",
+          "o": ["so that", "unless", "provided that", "even though"],
+          "a": 2,
+          "ex": "«provided that» = בתנאי ש. מותר להגיש באיחור בתנאי שמודיעים מראש. «unless» (אלא אם כן) היה אומר שמי שמודיע מראש דווקא לא יכול להגיש באיחור, וזה הפוך.",
+          "w": [["provided that", "בתנאי ש..."], ["unless", "אלא אם כן"], ["in advance", "מראש"]]
+        },
+        {
+          "q": "In order to ___ the spread of the disease, the authorities closed schools and banned large public gatherings.",
+          "o": ["encourage", "describe", "curb", "predict"],
+          "a": 2,
+          "ex": "«curb» = לרסן, לבלום. סגירת בתי ספר ואיסור התקהלויות נועדו לבלום את התפשטות המחלה. «encourage» (לעודד) הוא ההפך הגמור.",
+          "w": [["curb", "לרסן, לבלום"], ["in order to", "כדי ל... (+פועל)"], ["ban", "לאסור"]]
+        },
+        {
+          "q": "The professor rarely praises her students' work; ___, when she called one thesis \"excellent\", everyone understood how impressive it must have been.",
+          "o": ["otherwise", "for instance", "similarly", "hence"],
+          "a": 3,
+          "ex": "«hence» = מכאן, ולכן. מכיוון שהיא כמעט אף פעם לא משבחת, כולם הבינו שאם שיבחה, העבודה באמת מצוינת: זו תוצאה. «for instance» (למשל) לא מתאים, כי שבח הוא לא דוגמה לכך שהיא כמעט לא משבחת.",
+          "w": [["hence", "מכאן, ולכן"], ["rarely", "לעיתים רחוקות"], ["praise", "לשבח"]]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "The Language of the Hive",
+      "text": [
+        "For centuries, beekeepers noticed that once a single honeybee discovers a rich patch of flowers, many others from the same hive soon arrive there. How the first bee manages to share this information remained a puzzle, since bees can neither draw maps nor point the way. The answer, it turned out, lay in a series of movements that the returning bee performs on the vertical walls of the hive, in the dark.",
+        "The scientist who decoded these movements was the Austrian biologist Karl von Frisch. Beginning in the 1920s, he trained bees to visit dishes of sugar water and watched them through glass-walled hives. He observed that when the food was close to the hive, the returning bee simply ran around in small circles. When the food was farther away, however, she performed what he called a \"waggle dance\": she ran forward in a straight line while shaking her body from side to side, then circled back and repeated the run.",
+        "After years of measurement, von Frisch realized that each part of the dance carried a precise message. The angle of the straight run, measured against the vertical, matched the angle between the food source and the sun. A bee running straight upward was telling her sisters to fly directly toward the sun, while a run tilted to the right indicated a direction to the right of it. The length of the waggling, in turn, signaled distance: the longer it lasted, the farther away the flowers were.",
+        "Not every scientist accepted these conclusions. In the 1960s, several researchers argued that bees located food mainly by following its smell, and that the dance was merely a sign of excitement. The debate was finally settled decades later, when engineers placed a small dancing robot bee inside a hive. Bees that watched the robot flew in the direction and to the distance it had indicated, even though the robot had never visited any flowers. Von Frisch, who shared the Nobel Prize in 1973, did not live to see this proof that the dancer is, in effect, giving directions."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": ["How Flowers Attract Honeybees", "The Early Life of Karl von Frisch", "Cracking the Code of the Honeybee Dance", "Why Bees Prefer Sugar Water"],
+          "a": 2,
+          "ex": "כל הקטע עוסק בריקוד של הדבורים: מה השאלה, איך פון פריש פענח את המשמעות שלו, ואיך הממצא אושר. «The Early Life of Karl von Frisch» מפתה, אבל הקטע לא מספר על חייו, רק על המחקר שלו.",
+          "w": [["decode", "לפענח"], ["crack a code", "לפצח צופן"]]
+        },
+        {
+          "q": "According to paragraph 2, a bee that has found food very close to the hive",
+          "o": ["runs around in small circles", "shakes her body while running in a straight line", "leads the other bees to the food herself", "does not return to the hive at all"],
+          "a": 0,
+          "ex": "בפסקה 2 כתוב שכשהאוכל קרוב לכוורת, הדבורה רק רצה במעגלים קטנים. ריצה בקו ישר עם ניעור הגוף («waggle dance») מתוארת רק כשהאוכל רחוק יותר.",
+          "w": [["observe", "להבחין, לצפות"], ["farther", "רחוק יותר"]]
+        },
+        {
+          "q": "Based on paragraph 3, a bee whose straight run points directly downward is most probably indicating food that is",
+          "o": ["very close to the hive", "exactly in the direction of the sun", "slightly to the right of the sun", "in the opposite direction from the sun"],
+          "a": 3,
+          "ex": "לפי פסקה 3, ריצה ישר למעלה פירושה לעוף ישר לכיוון השמש. לכן ריצה ישר למטה (הכיוון ההפוך) פירושה לעוף בכיוון ההפוך לשמש. «exactly in the direction of the sun» מתאים לריצה למעלה, לא למטה.",
+          "w": [["indicate", "להצביע על, לסמן"], ["opposite", "הפוך, נגדי"], ["tilted", "נטוי, מוטה"]]
+        },
+        {
+          "q": "In paragraph 4, the word \"settled\" (in \"The debate was finally settled\") could best be replaced by",
+          "o": ["started", "resolved", "ignored", "repeated"],
+          "a": 1,
+          "ex": "«settled» כאן = הוכרע, נפתר. הוויכוח הוכרע כשניסוי רובוט הדבורה הראה שהריקוד מעביר הוראות. «started» (התחיל) לא נכון, כי הוויכוח התחיל כבר בשנות ה-60.",
+          "w": [["settle", "להכריע, ליישב (ויכוח)"], ["resolve", "לפתור, ליישב"], ["debate", "ויכוח, דיון"]]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": ["explain why bees are attracted to the smell of flowers", "describe how robots are used to protect beehives", "present a challenge to von Frisch's findings and show how it was answered", "argue that von Frisch did not deserve the Nobel Prize"],
+          "a": 2,
+          "ex": "הפסקה האחרונה מציגה חוקרים שפקפקו בממצאים (טענו שהדבורים מוצאות אוכל לפי ריח), ואז מספרת איך ניסוי הרובוט הכריע את הוויכוח. «explain why bees are attracted to the smell» מפתה, אבל הריח מוזכר רק כטענה של המתנגדים.",
+          "w": [["challenge", "ערעור, אתגר"], ["proof", "הוכחה"], ["merely", "רק, לא יותר מ..."]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Although the city's population has nearly doubled over the past thirty years, the number of public libraries has remained the same, leaving many neighborhoods without one.",
+          "o": [
+            "Because the city's population has nearly doubled over the past thirty years, the number of public libraries has also grown, so every neighborhood now has one.",
+            "Despite the fact that the city's population has almost doubled in thirty years, no public libraries have been added, so many neighborhoods still have none.",
+            "The city's population has hardly changed in thirty years, which explains why no new public libraries have been built in its neighborhoods.",
+            "Although many public libraries have opened over the past thirty years, the city's growing population still leaves a few neighborhoods without one."
+          ],
+          "a": 1,
+          "ex": "במקור: האוכלוסייה כמעט הוכפלה, אבל מספר הספריות לא השתנה, ולכן בהרבה שכונות אין ספרייה. התשובה הנכונה מחליפה «Although» ב-«Despite the fact that». האפשרות הראשונה הופכת את ההיגיון (הספריות גדלו), והשלישית משנה את הכמות («hardly changed»).",
+          "w": [["although", "למרות ש... (+משפט)"], ["despite", "למרות (+שם עצם)"], ["hardly", "כמעט לא"]]
+        },
+        {
+          "q": "The company decided to delay the launch of its new phone in order to fix a battery problem that had been discovered only a week before the planned date.",
+          "o": [
+            "The company launched its new phone on the planned date as promised, although a serious battery problem had been discovered only a week earlier.",
+            "A battery problem in the company's new phone was actually caused by the decision to delay its launch until a week after the planned date.",
+            "The company postponed the launch of its new phone for a week because customers in a preview program had complained about its battery.",
+            "The company's new phone launch was postponed so that a battery fault found just a week before the due date could be repaired."
+          ],
+          "a": 3,
+          "ex": "במקור: החברה דחתה את ההשקה כדי לתקן תקלה בסוללה שהתגלתה שבוע לפני המועד. התשובה הנכונה עוברת לסביל («was postponed») ומחליפה «in order to» ב-«so that». האפשרות השנייה הופכת סיבה ותוצאה, והשלישית מוסיפה תלונות של לקוחות שלא מופיעות במקור.",
+          "w": [["in order to", "כדי ל... (+פועל)"], ["so that", "כדי ש... (+משפט)"], ["postpone", "לדחות"]]
+        },
+        {
+          "q": "Only a small minority of the patients who took part in the study reported side effects, and in most of those cases the symptoms disappeared within a few days.",
+          "o": [
+            "Few of the study's participants said they suffered side effects, and these generally lasted no longer than a few days.",
+            "Most of the patients in the study reported side effects, although these usually disappeared within a few days.",
+            "A small number of patients reported side effects, and in every case the symptoms lasted for several weeks.",
+            "Only a few patients agreed to take part in the study, because most of them were afraid of its side effects."
+          ],
+          "a": 0,
+          "ex": "במקור: רק מעטים דיווחו על תופעות לוואי, ובדרך כלל הן עברו תוך כמה ימים. «Few» מחליף את «a small minority», ו-«generally» מחליף את «in most of those cases». האפשרות השנייה משנה את הכמות («Most»), והשלישית משנה את משך התסמינים.",
+          "w": [["minority", "מיעוט"], ["few", "מעט (כמעט אין)"], ["side effects", "תופעות לוואי"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Unless the dam is repaired before the rainy season begins, engineers warn, the nearby villages could be flooded, forcing thousands of residents to leave their homes.",
+          "o": [
+            "Engineers warn that repairing the dam before the rainy season could itself cause flooding in the nearby villages and force thousands of residents to leave.",
+            "Because the dam was not repaired before the rainy season began, thousands of residents of the nearby villages have already been forced to leave their homes.",
+            "According to engineers, if the dam is not fixed before the rains start, nearby villages may flood and thousands of people may have to leave.",
+            "Engineers say that even if the dam is repaired in time, the nearby villages will still be flooded during the rainy season."
+          ],
+          "a": 2,
+          "ex": "«Unless» = אלא אם כן, כלומר «if ... not». התשובה הנכונה אומרת: אם הסכר לא יתוקן לפני הגשמים, הכפרים עלולים להיות מוצפים. האפשרות השנייה מתארת משהו שכבר קרה, בעוד שבמקור זו רק אזהרה לעתיד, והרביעית («even if») משנה את התנאי.",
+          "w": [["unless", "אלא אם כן"], ["even if", "גם אם, אפילו אם"], ["resident", "תושב"]]
+        },
+        {
+          "q": "Unlike most birds, which build a new nest every year, eagles often return to the same nest for decades, adding fresh material to it each season.",
+          "o": [
+            "Like most other birds, eagles build a completely new nest every year, often using material taken from the old nests they have abandoned.",
+            "Eagles rarely return to the same nest year after year, since most birds, unlike them, add new material to their nests each season.",
+            "Most birds return to the same nest for decades and add fresh material to it, whereas eagles prefer to build a new one each year.",
+            "Eagles frequently use the same nest for many years, adding new material each season, while most other birds build a new one annually."
+          ],
+          "a": 3,
+          "ex": "«Unlike» = בניגוד ל. התשובה הנכונה מחליפה אותו ב-«while» ומשנה את סדר החלקים, אבל המשמעות זהה: נשרים חוזרים לאותו קן, ורוב הציפורים בונות קן חדש. האפשרות השלישית מחליפה בין הנשרים לשאר הציפורים, והראשונה הופכת ניגוד לדמיון («Like»).",
+          "w": [["unlike", "בניגוד ל... (+שם עצם)"], ["while", "בעוד ש... (ניגוד)"], ["annually", "מדי שנה"]]
+        },
+        {
+          "q": "The researchers' findings were not published for several years, mainly because the journal's editors doubted whether such a small sample could support such a bold conclusion.",
+          "o": [
+            "The journal's editors published the researchers' findings immediately, although they privately doubted whether such a small sample could really support so bold a conclusion.",
+            "The main reason the researchers' findings remained unpublished for years was that the editors questioned whether so small a sample could justify so bold a conclusion.",
+            "The researchers chose to delay publishing their findings for several years because they wanted to collect a much larger sample before drawing such a bold conclusion.",
+            "The researchers' findings were finally published after several years, once the journal's editors realized that the sample was much larger than they had thought."
+          ],
+          "a": 1,
+          "ex": "במקור: המאמר לא פורסם שנים, בעיקר כי העורכים פקפקו אם מדגם קטן יכול לתמוך במסקנה נועזת. התשובה הנכונה מחליפה «mainly because» ב-«The main reason ... was that». האפשרות השלישית משנה מי עשה מה: כאן החוקרים עצמם דחו את הפרסום.",
+          "w": [["doubt", "לפקפק"], ["bold", "נועז"], ["sample", "מדגם"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The two species of frog look almost identical; ___, genetic tests show that they separated from each other millions of years ago.",
+          "o": ["however", "therefore", "for example", "in addition"],
+          "a": 0,
+          "ex": "«however» = עם זאת. הצפרדעים נראות כמעט זהות, אבל הבדיקות הגנטיות מראות שהן נפרדו מזמן: זה ניגוד. «therefore» (לכן) לא מתאים, כי מראה זהה לא מוביל למסקנה שהן רחוקות זו מזו.",
+          "w": [["however", "עם זאת, אולם"], ["identical", "זהה"], ["species", "מין (בביולוגיה)"]]
+        },
+        {
+          "q": "The architect insisted on using local stone ___ imported materials, arguing that it suited the region's hot climate far better.",
+          "o": ["as well as", "rather than", "such as", "along with"],
+          "a": 1,
+          "ex": "«rather than» = במקום, ולא. האדריכל העדיף אבן מקומית על פני חומרים מיובאים, כי לטענתו היא מתאימה יותר לאקלים. «as well as» (וגם) היה אומר שהשתמש בשניהם, וזה סותר את ההעדפה.",
+          "w": [["rather than", "במקום, ולא"], ["insist on", "להתעקש על"], ["imported", "מיובא"]]
+        },
+        {
+          "q": "Although scientists had long ___ that the lakes in the region were shrinking, they lacked clear proof until satellite images became available.",
+          "o": ["demonstrated", "denied", "suspected", "established"],
+          "a": 2,
+          "ex": "«suspected» = חשדו. המדענים חשדו שהאגמים מצטמקים, אבל לא הייתה להם הוכחה. «demonstrated» ו-«established» (הוכיחו, ביססו) סותרים את זה שלא הייתה הוכחה.",
+          "w": [["suspect", "לחשוד"], ["demonstrate", "להוכיח, להראות"], ["lack", "לחסור, להיות חסר"]]
+        },
+        {
+          "q": "The new trade agreement is expected to be ___ beneficial, since both countries will gain access to markets that were previously closed to them.",
+          "o": ["mutually", "hardly", "unequally", "rarely"],
+          "a": 0,
+          "ex": "«mutually» = הדדית. ההסכם מועיל לשני הצדדים, כי שתי המדינות ירוויחו גישה לשווקים חדשים. «hardly» (כמעט לא) סותר את ההסבר שאחרי «since».",
+          "w": [["mutually", "הדדית"], ["beneficial", "מועיל"], ["previously", "קודם לכן, בעבר"]]
+        }
+      ]
+    }
+  ]
+}

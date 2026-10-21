@@ -144,8 +144,13 @@ function renderSimList() {
   let h = topBar() + `<main><h2 class="sec">📝 סימולציות אמירנט</h2>
     <div class="card"><p>כל סימולציה בנויה כמו 6 הפרקים הראשונים של אמירנט: 3 פרקי השלמת משפטים (4 שאלות, 4 דקות), 2 פרקי ניסוח מחדש (3 שאלות, 6 דקות) ופרק הבנת הנקרא (קטע ו-5 שאלות, 15 דקות). בתוך פרק אפשר לעבור בין השאלות ולשנות תשובה עד שהזמן נגמר. שאלה בלי תשובה נחשבת טעות, אז תמיד כדאי לנחש.</p>
     <label class="sw"><input type="checkbox" id="simnotimer"> בלי טיימר (תרגול רגוע)</label></div>`;
+  // רמה מומלצת לפי הציון הגבוה ביותר עד עכשיו (מתחת ל-100 בסיס, עד 119 בינוני, עד 133 מתקדם, אחר כך פטור)
+  const top = Object.values(st.r).flat().reduce((m, r) => Math.max(m, r.est), 0);
+  const rec = top ? (top < 100 ? 0 : top < 120 ? 1 : top < 134 ? 2 : 3) : -1;
+  let tier = -1;
   SIMS.forEach(sim => {
     const rs = st.r[sim.id] || [], last = rs[0], best = rs.reduce((m, r) => Math.max(m, r.est), 0);
+    if (sim.tier !== tier) { tier = sim.tier; h += `<h2 class="sec">רמה: ${esc(sim.tierHe)}${tier === rec ? ' <span class="simrec">מומלץ לך</span>' : ''}</h2>`; }
     h += `<div class="card simc"><div class="plan-h"><b>${esc(sim.title)}</b><span>${simQCount(sim)} שאלות · ${simMinutes(sim)} דק׳</span></div>
       ${last ? `<div class="lbl"><span>ניסיון אחרון: ${last.ok}/${last.n} נכונות · ציון משוער ${last.est}</span><span>שיא ${best}</span></div>` : '<div class="lbl"><span>עוד לא נעשתה</span></div>'}
       <div class="row"><button class="btn" onclick="simStart('${sim.id}')">${last ? 'עוד פעם' : 'להתחיל'}</button>${last ? `<button class="btn ghost" onclick="simShowLast('${sim.id}')">תוצאות והסברים</button>` : ''}</div></div>`;
@@ -252,6 +257,7 @@ function simTip(by) {
 (function () {
   const css = `
 .simc .row{margin-top:10px}
+.simrec{font-size:12px;background:var(--g);color:#fff;border-radius:99px;padding:2px 10px;vertical-align:middle;margin-right:6px}
 .simhead{gap:10px;border-bottom:2px solid var(--line)}
 .simt{flex:1;font-weight:800;font-size:15px}
 .simclock{background:var(--soft);border:2px solid var(--line);border-radius:12px;padding:6px 10px;font-weight:800;font-size:16px;font-variant-numeric:tabular-nums;color:var(--ink);min-width:66px}

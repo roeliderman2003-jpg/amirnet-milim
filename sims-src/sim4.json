@@ -343,10 +343,10 @@
         {
           "q": "Although the new irrigation method reduced water use on most of the farms that adopted it, researchers caution that it has not yet been tested in regions where rainfall is extremely scarce.",
           "o": [
-            "Because the new irrigation method has been tested in very dry regions, researchers believe that it will reduce water use on all farms.",
+            "Because the new irrigation method has already been tested in very dry regions, researchers believe that it will reduce water use on all farms.",
             "The new irrigation method cut water use on most farms using it; nevertheless, researchers warn that it has yet to be tried in areas with very little rain.",
-            "Researchers warn that the new irrigation method reduced water use on only a few farms, since it was mainly used in regions with very little rainfall.",
-            "Although researchers have tested the new irrigation method in extremely dry regions, it failed to reduce water use on most of the farms that adopted it."
+            "Researchers warn that the new irrigation method reduced water use on only a few farms, since it was mainly used in regions with very little rainfall each year.",
+            "Although researchers have tested the new irrigation method in extremely dry regions, it failed to reduce water use on most of the farms that actually adopted it."
           ],
           "a": 1,
           "ex": "התשובה הנכונה שומרת על שני החלקים: חיסכון ברוב החוות (most = the majority), ואזהרה שהשיטה עוד לא נבדקה באזורים יבשים (not yet = has yet to). התשובה השלישית משנה «most» ל-«only a few» ומוסיפה סיבה שלא הייתה במקור.",
@@ -368,10 +368,10 @@
         {
           "q": "Children who eat breakfast regularly tend to perform better at school, but this does not necessarily mean that eating breakfast is what causes their higher grades, as other factors may be involved.",
           "o": [
-            "Since eating breakfast improves children's grades, schools should make sure that every student eats breakfast regularly.",
-            "Children who eat breakfast regularly do not perform better at school than other children, because other factors determine their grades.",
-            "Other factors, rather than breakfast, are what cause some children both to eat breakfast regularly and to get higher grades at school.",
-            "A link exists between regularly eating breakfast and doing well at school; however, it is possible that something other than breakfast accounts for the better results."
+            "Since eating breakfast is clearly what improves children's grades, schools should make sure that every student eats a healthy breakfast regularly before class.",
+            "Children who eat breakfast regularly do not actually perform any better at school than other children, because other factors determine their grades.",
+            "Other factors, rather than breakfast, are certainly what cause some children both to eat breakfast regularly and to get higher grades at school.",
+            "Eating breakfast regularly is linked to doing well at school; however, it is possible that something other than breakfast explains the better results."
           ],
           "a": 3,
           "ex": "המשפט אומר שיש קשר (מתאם) בין ארוחת בוקר לציונים, אבל לא בהכרח שהיא הסיבה. התשובה הנכונה אומרת בדיוק את זה (it is possible). התשובה השלישית מלכודת: היא קובעת בוודאות שגורמים אחרים הם הסיבה, בעוד שבמקור כתוב רק «may».",
@@ -423,10 +423,10 @@
         {
           "q": "The new tax is likely to reduce pollution only insofar as companies find it cheaper to adopt cleaner technologies than to keep paying the tax on their emissions.",
           "o": [
-            "The new tax will probably lower pollution only to the extent that switching to cleaner technologies costs companies less than continuing to pay the tax on their emissions.",
-            "The new tax will certainly reduce pollution, because companies will always prefer cleaner technologies to paying any tax.",
-            "Companies will adopt cleaner technologies only if the new tax fails to reduce pollution from their emissions.",
-            "Since cleaner technologies are cheaper than the new tax, companies have already stopped paying the tax on their emissions."
+            "The new tax will probably lower pollution only to the extent that switching to cleaner technologies costs companies less than paying the tax.",
+            "The new tax will certainly reduce pollution, because companies will always prefer switching to cleaner technologies over paying any tax on their emissions.",
+            "Companies will adopt cleaner technologies only if the new tax fails to reduce pollution, regardless of how much the tax costs them.",
+            "Since cleaner technologies are already much cheaper than the new tax, most companies have stopped paying the tax on their emissions altogether."
           ],
           "a": 0,
           "ex": "«insofar as» = במידה ש..., ככל ש... = «to the extent that». המס יוריד זיהום רק בתנאי שטכנולוגיה נקייה זולה יותר מהמס. התשובה השנייה הופכת «likely» (סביר) ל-«certainly» (בוודאות) ומבטלת את התנאי.",

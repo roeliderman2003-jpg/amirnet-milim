@@ -2,7 +2,13 @@
 const fs = require('fs'), path = require('path');
 const root = path.join(__dirname, '..'), src = path.join(root, 'sims-src');
 const ORDER = ['sc', 'sc', 'rc', 'rs', 'rs', 'sc'], N = { sc: 4, rs: 3, rc: 5 };
-const HI = { 1: 115, 2: 122, 3: 132, 4: 142, 5: 150 }; // הציון המשוער הגבוה ביותר שכל סימולציה יכולה להראות
+// רמות: אילו סימולציות בכל רמה, ו-hi = הציון המשוער הגבוה ביותר שסימולציה ברמה יכולה להראות
+const TIERS = [
+  { he: 'בסיס', hi: 118, sims: [1, 2, 6] },
+  { he: 'בינוני', hi: 132, sims: [3, 7, 8] },
+  { he: 'מתקדם', hi: 142, sims: [4, 9, 10] },
+  { he: 'פטור', hi: 150, sims: [5, 11, 12] },
+];
 const files = fs.readdirSync(src).filter(f => /^sim\d+\.json$/.test(f)).sort((a, b) => parseInt(a.slice(3)) - parseInt(b.slice(3)));
 const errs = [], sims = [];
 for (const f of files) {
@@ -11,6 +17,14 @@ for (const f of files) {
   if (!d.title) e('no title');
   if (d.chapters.map(c => c.type).join() !== ORDER.join()) e('chapter order ' + d.chapters.map(c => c.type).join());
   const pos = [0, 0, 0, 0];
+  // בניסוח מחדש התשובה הנכונה לא בולטת באורך: עד 2 מילים מעל המסיח הארוך, והכי ארוכה ב-2 שאלות לכל היותר
+  let longest = 0;
+  d.chapters.forEach((c, ci) => c.type === 'rs' && c.qs.forEach((q, qi) => {
+    const w = q.o.map(o => o.trim().split(/\s+/).length), other = Math.max(...w.filter((_, i) => i !== q.a));
+    if (w[q.a] > other + 2) e(`ch${ci + 1} q${qi + 1} correct restatement is ${w[q.a]} words vs ${other}`);
+    if (w[q.a] > other) longest++;
+  }));
+  if (longest > 2) e(`correct restatement is the longest in ${longest} questions`);
   d.chapters.forEach((c, ci) => {
     if (c.qs.length !== N[c.type]) e(`ch${ci + 1} has ${c.qs.length} questions`);
     if (c.type === 'rc' && (!Array.isArray(c.text) || c.text.length < 3)) e('rc text');
@@ -24,9 +38,13 @@ for (const f of files) {
       if (!Array.isArray(q.w) || !q.w.every(x => Array.isArray(x) && x.length === 2 && x[0] && x[1])) e(at + ' words');
     });
   });
-  sims.push({ id: 's' + num, title: d.title, level: d.level, hi: HI[num] || 150, chapters: d.chapters });
-  console.log(f, d.title, 'answers by position', pos.join('/'));
+  const ti = TIERS.findIndex(t => t.sims.includes(num));
+  if (ti < 0) { e('not in any tier'); continue; }
+  const t = TIERS[ti], title = `${t.he} · מבחן ${t.sims.indexOf(num) + 1}`;
+  sims.push({ id: 's' + num, title, tier: ti, tierHe: t.he, hi: t.hi, chapters: d.chapters });
+  console.log(f, title, 'answers by position', pos.join('/'));
 }
+sims.sort((a, b) => a.tier - b.tier || a.title.localeCompare(b.title));
 if (errs.length) { console.error(errs.join('\n')); process.exit(1); }
 fs.writeFileSync(path.join(root, 'sims.js'), '// נוצר אוטומטית מ-sims-src/ ע"י tools/build-sims.js. לא לערוך כאן.\nconst SIMS = ' + JSON.stringify(sims) + ';\n');
 console.log('sims.js:', sims.length, 'simulations,', sims.reduce((a, s) => a + s.chapters.reduce((b, c) => b + c.qs.length, 0), 0), 'questions');

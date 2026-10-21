@@ -1,0 +1,259 @@
+{
+  "title": "סימולציה 9",
+  "level": 3,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The scientist's early findings were met with doubt, but they were later ___ by several larger studies that reached exactly the same conclusion.",
+          "o": ["refuted", "corroborated", "fabricated", "overlooked"],
+          "a": 1,
+          "ex": "«corroborate» = לאשש, לחזק. מחקרים גדולים שהגיעו בדיוק לאותה מסקנה מאשרים את הממצאים. «refuted» (הופרכו) הוא ההפך: מחקרים שמגיעים לאותה מסקנה לא מפריכים.",
+          "w": [["corroborate", "לאשש, לחזק"], ["refute", "להפריך"], ["fabricate", "לבדות, לזייף"]]
+        },
+        {
+          "q": "The new hiring policy has, ___, caused some confusion among employees; on the whole, though, it has made the process considerably fairer.",
+          "o": ["consequently", "likewise", "namely", "admittedly"],
+          "a": 3,
+          "ex": "«admittedly» = יש להודות ש... הכותב מודה בחיסרון (בלבול), ואחר כך אומר «though» שבסך הכול המדיניות טובה. «consequently» (כתוצאה מכך) דורש סיבה קודמת, ואין כזו במשפט.",
+          "w": [["admittedly", "יש להודות ש..."], ["consequently", "כתוצאה מכך, לפיכך"], ["considerably", "במידה ניכרת"]]
+        },
+        {
+          "q": "Because the ancient poem survives only in a few ___ copies, scholars must often guess at the words that have been lost.",
+          "o": ["fragmentary", "pristine", "voluminous", "legible"],
+          "a": 0,
+          "ex": "«fragmentary» = חלקי, מקוטע. החוקרים צריכים לנחש מילים שאבדו, ולכן ההעתקים חסרים. «pristine» (שמור בשלמותו) הוא ההפך: בהעתק שלם לא היה צורך לנחש.",
+          "w": [["fragmentary", "חלקי, מקוטע"], ["pristine", "שמור בשלמותו, כחדש"], ["legible", "קריא"]]
+        },
+        {
+          "q": "Most residents could barely afford the rising rents, ___ buy a home in the neighborhood where they had grown up.",
+          "o": ["as well as", "rather than", "let alone", "apart from"],
+          "a": 2,
+          "ex": "«let alone» = ובטח שלא, קל וחומר. אם בקושי יכלו לשלם שכירות, בטח שלא יכלו לקנות בית. «as well as» (וגם) היה אומר שהם כן יכלו לקנות בית, וזה סותר את «barely».",
+          "w": [["let alone", "ובטח שלא, קל וחומר"], ["barely", "בקושי, כמעט לא"], ["as well as", "וגם, בנוסף ל..."]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Talks between the two unions reached a complete ___ when neither side was willing to make any further concessions.",
+          "o": ["outset", "milestone", "impasse", "consensus"],
+          "a": 2,
+          "ex": "«impasse» = מבוי סתום. כשאף צד לא מוכן לוותר, השיחות נתקעות. «consensus» (הסכמה כללית) הוא ההפך: בלי ויתורים לא מגיעים להסכמה.",
+          "w": [["impasse", "מבוי סתום"], ["concession", "ויתור"], ["consensus", "הסכמה כללית"]]
+        },
+        {
+          "q": "The bridge will reopen to traffic ___ engineers confirm that its supports can bear the weight; until then, it will remain closed.",
+          "o": ["provided that", "even if", "lest", "whereas"],
+          "a": 0,
+          "ex": "«provided that» = בתנאי ש... הגשר ייפתח רק אחרי שהמהנדסים יאשרו, וזה מה שהחלק השני אומר (עד אז הוא סגור). «even if» (גם אם) היה אומר שהאישור לא משנה, וזה סותר את «until then».",
+          "w": [["provided that", "בתנאי ש..."], ["even if", "גם אם, אפילו אם"], ["bear", "לשאת, לעמוד ב..."]]
+        },
+        {
+          "q": "The side effects of the treatment proved ___: in most patients they disappeared completely within a few days.",
+          "o": ["substantial", "permanent", "cumulative", "transient"],
+          "a": 3,
+          "ex": "«transient» = חולף, זמני. מה שבא אחרי הנקודתיים מסביר: תופעות הלוואי נעלמו תוך כמה ימים. «permanent» (קבוע) הוא ההפך הגמור.",
+          "w": [["transient", "חולף, זמני"], ["cumulative", "מצטבר"], ["permanent", "קבוע"]]
+        },
+        {
+          "q": "Emissions from the factory fell sharply after new filters were installed, ___ air quality in the town improved only slightly, since most pollution came from traffic.",
+          "o": ["thus", "whereas", "so that", "inasmuch as"],
+          "a": 1,
+          "ex": "«whereas» = בעוד ש..., ואילו. הפליטות ירדו בחדות, ואילו האוויר השתפר רק מעט: זה ניגוד. «thus» (לפיכך) היה הופך את השיפור הקטן לתוצאה של הירידה, אבל המשפט אומר שהסיבה היא התנועה בכבישים.",
+          "w": [["whereas", "בעוד ש..., ואילו"], ["thus", "לפיכך, כך"], ["emissions", "פליטות"]]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "The Price of a Free Ride",
+      "text": [
+        "Over the past two decades, a growing number of cities have experimented with abolishing fares on buses and trams. The appeal is easy to understand. Supporters argue that free transport benefits low-income residents, who spend a larger share of their earnings on travel, and that it persuades drivers to leave their cars at home, which in turn eases congestion and cuts emissions. Yet the experience of the cities that have actually tried the policy suggests that its effects are more modest, and more complicated, than its advocates often claim.",
+        "The first lesson concerns ridership. In almost every case, the number of passengers rose once fares were removed, sometimes considerably. However, surveys of the new riders revealed that relatively few of them had previously driven. Most had formerly walked or cycled, or had simply made fewer trips. In other words, the policy did increase the use of public transport, but it did little to reduce traffic, which was one of its central goals. Some planners concluded that the price of a ticket matters less to drivers than the speed, frequency and reliability of the service.",
+        "The second lesson concerns money. Fares rarely cover the full cost of running a transport system, but in many cities they still provide a substantial portion of its budget. Once that income disappears, it must be replaced, usually by raising local taxes or by cutting other public services. Moreover, the additional passengers place further strain on vehicles that may already be crowded, so a city that abolishes fares may soon have to buy more buses and hire more drivers. Critics point out that the same funds could instead be invested in improving the service itself.",
+        "None of this means that free transport is necessarily a mistake. In small towns, where ticket sales bring in little revenue and collecting fares is itself costly, eliminating them can make financial sense. Furthermore, some researchers maintain that the policy should be judged by its social benefits, such as greater mobility for elderly and poor residents, rather than by its impact on traffic. The debate, then, is not simply about whether free transport works, but about what, exactly, it is supposed to achieve."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": [
+            "Why Every City Should Abolish Bus Fares",
+            "Free Public Transport: Promises and Results",
+            "How Ticket Prices Shape Drivers' Choices",
+            "The Rise of the Tram in Small Towns"
+          ],
+          "a": 1,
+          "ex": "הקטע מציג מה תומכי התחבורה החינמית מבטיחים (פסקה 1) ומה קרה בפועל בערים שניסו (פסקאות 2-4). הוא לא ממליץ לכל עיר לבטל תשלום, ו«מחירי הכרטיסים והנהגים» הוא רק פרט אחד מפסקה 2.",
+          "w": [["abolish", "לבטל"], ["advocate", "תומך, חסיד"]]
+        },
+        {
+          "q": "According to the second paragraph, most of the new passengers attracted by free transport",
+          "o": [
+            "had stopped driving to work",
+            "used the service only occasionally",
+            "complained that the vehicles were crowded",
+            "had not previously traveled by car"
+          ],
+          "a": 3,
+          "ex": "בפסקה 2 כתוב שמעטים מהנוסעים החדשים נהגו קודם, ורובם הלכו ברגל, רכבו על אופניים או נסעו פחות. לכן רובם לא הגיעו מהרכב. הצפיפות מוזכרת רק בפסקה 3, ולא כתלונה של נוסעים.",
+          "w": [["relatively", "יחסית"], ["formerly", "לשעבר, בעבר"], ["in other words", "במילים אחרות"]]
+        },
+        {
+          "q": "In the third paragraph, 'that income' refers to",
+          "o": [
+            "the money collected from fares",
+            "the money raised through local taxes",
+            "the full cost of running a transport system",
+            "the funds needed to buy more buses"
+          ],
+          "a": 0,
+          "ex": "המשפט הקודם מדבר על דמי הנסיעה (fares) שמממנים חלק ניכר מהתקציב. «that income» היא ההכנסה הזו, שנעלמת כשמבטלים את התשלום. המסים המקומיים הם מה שמחליף אותה, לא היא עצמה.",
+          "w": [["income", "הכנסה"], ["substantial", "ניכר, משמעותי"], ["portion", "חלק"]]
+        },
+        {
+          "q": "The last paragraph mainly serves to",
+          "o": [
+            "argue that free transport should be limited to large cities",
+            "show that free transport has failed in every city that tried it",
+            "suggest that the value of free transport depends partly on what it is meant to achieve",
+            "explain why collecting fares costs little in small towns"
+          ],
+          "a": 2,
+          "ex": "הפסקה האחרונה מאזנת את הביקורת: בעיירות קטנות זה יכול להשתלם, ויש מי שמודד את המדיניות לפי התועלת החברתית. המשפט האחרון אומר שהוויכוח הוא על המטרה. הפסקה מדברת על עיירות קטנות ולא על ערים גדולות, ושם גביית דמי נסיעה דווקא יקרה.",
+          "w": [["necessarily", "בהכרח"], ["maintain", "לטעון; לשמר"], ["rather than", "במקום, ולא"]]
+        },
+        {
+          "q": "It can be inferred from the second paragraph that some planners believe drivers would be more willing to use public transport if",
+          "o": [
+            "buses and trams came more often and kept to their schedules",
+            "fares were reduced rather than abolished completely",
+            "more residents chose to walk or cycle instead",
+            "the cities spent less money on new vehicles"
+          ],
+          "a": 0,
+          "ex": "בסוף פסקה 2 המתכננים אומרים שלנהגים המחיר חשוב פחות מהמהירות, התדירות והאמינות של השירות. מכאן שבשירות תדיר ואמין יותר הם היו עוברים. הוזלה חלקית במקום ביטול לא מוזכרת בכלל, וגם לפי הקטע המחיר הוא לא העיקר.",
+          "w": [["infer", "להסיק"], ["frequency", "תדירות"], ["reliability", "אמינות"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Although the reform was intended to benefit all small businesses, only those with fewer than ten employees saw any meaningful reduction in their administrative costs during its first year.",
+          "o": [
+            "The reform, which aimed to help every small business, lowered administrative costs for most of them in its first year, particularly for firms with fewer than ten workers.",
+            "Only businesses with fewer than ten employees were meant to benefit from the reform, and as a result they alone saw their administrative costs fall in its first year.",
+            "Though designed to help every small business, the reform meaningfully cut administrative costs in its first year solely for firms that employed fewer than ten people.",
+            "Small businesses with fewer than ten employees benefited from the reform during its first year, yet their administrative costs rose more sharply than those of larger firms."
+          ],
+          "a": 2,
+          "ex": "במקור: הרפורמה נועדה לעזור לכל העסקים הקטנים, אבל רק עסקים עם פחות מעשרה עובדים נהנו ממנה (only = solely). התשובה הראשונה מלכודת: «most of them» אומר שרוב העסקים נהנו. השנייה משנה את הכוונה: לפי המקור הרפורמה נועדה לכולם.",
+          "w": [["solely", "אך ורק, בלעדית"], ["intend", "להתכוון, לייעד"], ["meaningful", "משמעותי"]]
+        },
+        {
+          "q": "Neighborhoods with more street trees tend to report lower rates of anxiety, but researchers stress that wealthier areas usually have both more trees and better access to health care.",
+          "o": [
+            "Planting more street trees lowers residents' anxiety, which is why researchers recommend that wealthier neighborhoods should also improve their residents' access to health care.",
+            "Lower rates of anxiety are found where street trees are common; however, researchers emphasize that richer areas generally have not only more trees but also better health care.",
+            "Researchers stress that street trees reduce anxiety only in wealthier neighborhoods, where residents also tend to enjoy better access to health care than people living elsewhere.",
+            "Because wealthier neighborhoods have better access to health care, researchers have concluded that street trees have no effect whatsoever on the anxiety levels of residents."
+          ],
+          "a": 1,
+          "ex": "המקור מתאר קשר (מתאם) בין עצים לחרדה נמוכה, ומזהיר שבשכונות עשירות יש גם עצים וגם רפואה טובה, כלומר אולי העושר הוא הגורם. התשובה הראשונה הופכת את הקשר לסיבה ותוצאה. האחרונה מגזימה: החוקרים לא קבעו שלעצים אין שום השפעה.",
+          "w": [["tend to", "נוטה ל..."], ["not only... but also", "לא רק... אלא גם"], ["stress", "להדגיש"]]
+        },
+        {
+          "q": "Few of the volunteers who completed the language course became fluent, yet nearly all of them reported that it had made them more confident when speaking with native speakers.",
+          "o": [
+            "Hardly any of the volunteers who finished the language course achieved fluency; nevertheless, almost all of them said it had increased their confidence with native speakers.",
+            "Nearly all the volunteers who finished the language course became fluent, and as a result they reported feeling much more confident when speaking with native speakers.",
+            "A few of the volunteers who completed the language course became fluent, which explains why almost all of them felt more confident when speaking with native speakers.",
+            "Although most volunteers who completed the language course felt more confident, few of them were actually willing to speak with native speakers once it had ended."
+          ],
+          "a": 0,
+          "ex": "«few» = מעט (כמעט אין) = «hardly any», ו-«yet» = «nevertheless». מעטים הגיעו לשטף, ובכל זאת כמעט כולם הרגישו בטוחים יותר. התשובה השלישית מלכודת: היא הופכת את השטף של מעטים לסיבה לביטחון של כולם, קשר שאין במקור.",
+          "w": [["few", "מעט (כמעט אין)"], ["nevertheless", "למרות זאת, אף על פי כן"], ["fluent", "שוטף (בשפה)"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "The newly discovered settlement is not merely older than archaeologists had assumed; it also appears to have been inhabited continuously for several centuries rather than for a few decades.",
+          "o": [
+            "Archaeologists had assumed that the newly discovered settlement was inhabited for several centuries, but it now turns out to have been occupied for only a few decades.",
+            "The newly discovered settlement is somewhat older than archaeologists had assumed, although it was probably abandoned and resettled several times over the centuries.",
+            "Because the newly discovered settlement was inhabited continuously for several centuries, archaeologists had correctly assumed that it was older than the other sites nearby.",
+            "Besides being older than archaeologists had believed, the newly discovered settlement seems to have been occupied without interruption for centuries, not just for several decades."
+          ],
+          "a": 3,
+          "ex": "«not merely... also» = לא רק... אלא גם, ולכן «Besides». היישוב עתיק יותר מהצפוי, וגם היה מיושב ברציפות (continuously = without interruption) מאות שנים. התשובה השנייה מלכודת: «abandoned and resettled» סותר את הרציפות.",
+          "w": [["merely", "רק, לא יותר מ..."], ["continuously", "ברציפות"], ["inhabit", "לגור, לאכלס"]]
+        },
+        {
+          "q": "The decline in the lake's fish population was initially blamed on overfishing, but subsequent studies indicated that rising water temperatures were largely responsible for it.",
+          "o": [
+            "Subsequent studies showed that overfishing, rather than rising water temperatures, was the main reason why the number of fish in the lake had declined.",
+            "Later studies indicated that the lake's fish population had shrunk solely because of warmer water, and that overfishing had in fact never taken place there.",
+            "At first, overfishing was held responsible for the shrinking number of fish in the lake; later research, however, pointed mainly to warmer water.",
+            "Rising water temperatures were partly caused by overfishing, according to the studies that examined why the lake's fish population had declined."
+          ],
+          "a": 2,
+          "ex": "בהתחלה האשימו את הדיג המופרז, ואחר כך המחקרים הצביעו בעיקר (largely = mainly) על התחממות המים. התשובה השנייה מלכודת: «solely» (אך ורק) חזק מ-«largely», והיא גם מוסיפה שלא היה דיג מופרז בכלל. הראשונה הופכת את המסקנה.",
+          "w": [["subsequent", "שלאחר מכן, מאוחר יותר"], ["largely", "במידה רבה, בעיקר"], ["solely", "אך ורק, בלעדית"]]
+        },
+        {
+          "q": "The new vaccine offers strong protection to adults under sixty, whereas its effectiveness in older patients remains uncertain, since too few of them took part in the clinical trials.",
+          "o": [
+            "Since few patients over sixty took part in the clinical trials, the new vaccine turned out to be less effective for them than it is for younger adults.",
+            "The new vaccine protects adults under sixty well, but how effective it is for older patients is still unclear, as the trials included too few of them.",
+            "The new vaccine offers strong protection to adults of all ages, although older patients were somewhat less willing to take part in the clinical trials.",
+            "Because the new vaccine proved ineffective in older patients, only a small number of them were included in the trials, which focused on younger adults."
+          ],
+          "a": 1,
+          "ex": "במקור: החיסון מגן היטב על צעירים מ-60, ואצל מבוגרים יותר פשוט לא יודעים (uncertain = unclear), כי היו מעט מהם בניסויים. התשובה הראשונה מלכודת: היא הופכת «לא ידוע» ל«פחות יעיל». הרביעית הופכת סיבה ותוצאה.",
+          "w": [["whereas", "בעוד ש..., ואילו"], ["uncertain", "לא ודאי, לא ידוע"], ["take part in", "להשתתף ב..."]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Rather than relying on a single source, the historian ___ evidence from dozens of letters, diaries and official records.",
+          "o": ["compiled", "discarded", "concealed", "fabricated"],
+          "a": 0,
+          "ex": "«compile» = לאסוף ולרכז. במקום מקור אחד, ההיסטוריון אסף ראיות מעשרות מקורות. «discarded» (השליך) הוא ההפך: מי שזורק את המקורות לא מפסיק להסתמך על מקור אחד.",
+          "w": [["compile", "לאסוף, לרכז"], ["discard", "להשליך, לזנוח"], ["rather than", "במקום, ולא"]]
+        },
+        {
+          "q": "The museum's collection, ___ its famous sculptures, includes thousands of ancient coins that are rarely shown to the public.",
+          "o": ["instead of", "by virtue of", "aside from", "in favor of"],
+          "a": 2,
+          "ex": "«aside from» = מלבד. מלבד הפסלים המפורסמים, באוסף יש גם אלפי מטבעות. «instead of» (במקום) היה אומר שאין באוסף פסלים, וזה סותר את «its famous sculptures».",
+          "w": [["aside from", "מלבד"], ["instead of", "במקום"], ["by virtue of", "מתוקף, בזכות"]]
+        },
+        {
+          "q": "To many listeners, the senator's apology sounded ___, since he went on to repeat the very claims he was apologizing for.",
+          "o": ["heartfelt", "hollow", "timely", "explicit"],
+          "a": 1,
+          "ex": "«hollow» = חלול, ריק מתוכן. מי שמתנצל וממשיך לחזור על אותן טענות לא באמת מתכוון. «heartfelt» (כן, מכל הלב) הוא ההפך, וסותר את הסיבה שבסוף המשפט.",
+          "w": [["hollow", "חלול, ריק מתוכן"], ["heartfelt", "כן, מכל הלב"], ["the very", "אותו עצמו, בדיוק אותו"]]
+        },
+        {
+          "q": "Workers are required to wear protective masks at all times, ___ they inhale the toxic dust produced by the machines.",
+          "o": ["so that", "unless", "whereas", "lest"],
+          "a": 3,
+          "ex": "«lest» = פן, כדי שלא. חובשים מסכה כדי שלא ינשמו את האבק הרעיל. «so that» (כדי ש) הופך את המטרה: כאילו המסכה נועדה לגרום להם לנשום אבק.",
+          "w": [["lest", "פן, שמא, כדי שלא"], ["so that", "כדי ש..."], ["inhale", "לשאוף, לנשום פנימה"]]
+        }
+      ]
+    }
+  ]
+}

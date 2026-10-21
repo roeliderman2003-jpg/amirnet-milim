@@ -141,10 +141,10 @@
         {
           "q": "Although the new highway shortened the trip to the city, many local residents were unhappy with it because it brought noise and pollution to their neighborhood.",
           "o": [
-            "Because the new highway made the trip to the city shorter, local residents were pleased with it in spite of the noise and pollution.",
+            "Because the new highway made the trip to the city shorter, local residents were pleased with it in spite of the noise and pollution it brought.",
             "Many local residents opposed the new highway because it made the trip to the city longer and their area noisier.",
             "The new highway made the trip to the city shorter; nevertheless, many people living nearby disliked it, since it caused noise and pollution in their area.",
-            "The noise and pollution in the neighborhood were caused by local residents who used the new highway to travel to the city."
+            "The noise and pollution in the neighborhood were caused mainly by local residents who used the new highway every day to travel to the city."
           ],
           "a": 2,
           "ex": "במקור: הכביש קיצר את הדרך, ובכל זאת התושבים לא מרוצים בגלל רעש וזיהום. «nevertheless» שומר על אותו ניגוד כמו «Although». התשובה הראשונה הופכת את המשמעות (התושבים מרוצים), והשנייה אומרת שהדרך התארכה.",
@@ -206,10 +206,10 @@
         {
           "q": "Despite being one of the oldest buildings in town, the library is visited by hundreds of young people every week, many of whom come to study for exams.",
           "o": [
-            "Because the library is one of the oldest buildings in town, very few young people visit it, except to study for exams.",
-            "Hundreds of young people visit the library every week in order to see one of the oldest buildings in town.",
-            "Although the library is among the oldest buildings in town, hundreds of young people go there each week, and many of them study for their exams there.",
-            "The library, which was built only recently, is visited every week by hundreds of young people who study for exams."
+            "Because the library is one of the oldest buildings in town, very few young people visit it, except those who come to study for exams.",
+            "Hundreds of young people visit the library every week in order to see one of the oldest and most famous buildings in town.",
+            "Although the library is among the oldest buildings in town, hundreds of young people go there each week, many of them to study for exams.",
+            "The library, which was built only a few years ago, is visited every week by hundreds of young people, many of whom come to study for exams."
           ],
           "a": 2,
           "ex": "«Despite» = «Although» (למרות). הבניין ישן, ובכל זאת מאות צעירים מגיעים, ורבים מהם לומדים למבחנים. התשובה הראשונה אומרת שמעט מבקרים, והרביעית אומרת שהבניין חדש.",

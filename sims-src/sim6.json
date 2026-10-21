@@ -1,0 +1,254 @@
+{
+  "title": "סימולציה 6",
+  "level": 1,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Most of the city's parks are crowded on weekends; ___, on weekday mornings they are almost empty.",
+          "o": ["however", "moreover", "therefore", "for example"],
+          "a": 0,
+          "ex": "«however» = עם זאת. בסופי שבוע הפארקים מלאים, ובבקרים של ימי חול הם כמעט ריקים: זה ניגוד. «therefore» (לכן) היה הופך את החלק השני לתוצאה של הראשון, וזה לא הגיוני.",
+          "w": [["however", "עם זאת, אולם"], ["crowded", "צפוף, מלא אנשים"]]
+        },
+        {
+          "q": "The doctor told Maya to drink more water, because her headaches were probably ___ by not drinking enough on hot days.",
+          "o": ["prevented", "solved", "caused", "ignored"],
+          "a": 2,
+          "ex": "«caused by» = נגרם על ידי. הרופא חושב שחוסר שתייה הוא הסיבה לכאבי הראש, ולכן הוא אומר לה לשתות יותר. «prevented» (נמנע) הפוך במשמעות: חוסר שתייה לא מונע כאבי ראש.",
+          "w": [["cause", "לגרום"], ["prevent", "למנוע"]]
+        },
+        {
+          "q": "The library stayed open later in the evening ___ students could study there before their exams.",
+          "o": ["even though", "unless", "whereas", "so that"],
+          "a": 3,
+          "ex": "«so that» = כדי ש. הספרייה נשארה פתוחה מאוחר יותר במטרה שהסטודנטים יוכלו ללמוד. «even though» (אף על פי ש) יוצר ניגוד, ואין כאן ניגוד בין שני החלקים.",
+          "w": [["so that", "כדי ש... (+משפט)"], ["even though", "אף על פי ש..."]]
+        },
+        {
+          "q": "Vegetables stay fresh for many days in a cool, dry place, but in a warm kitchen they ___ quickly.",
+          "o": ["freeze", "spoil", "recover", "shine"],
+          "a": 1,
+          "ex": "«spoil» = להתקלקל. המשפט מנגיד (but) בין מקום קריר שבו הירקות נשארים טריים לבין מטבח חם, ולכן שם הם מתקלקלים. «freeze» (לקפוא) לא קורה במטבח חם.",
+          "w": [["spoil", "להתקלקל"], ["fresh", "טרי"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The outdoor concert was ___ because of the storm, so the band promised to play again next month.",
+          "o": ["recorded", "enjoyed", "canceled", "repeated"],
+          "a": 2,
+          "ex": "«canceled» = בוטל. בגלל הסערה ההופעה בוטלה, ולכן הלהקה הבטיחה לנגן שוב בחודש הבא. «enjoyed» (נהנו ממנו) לא מסביר למה צריך לנגן שוב.",
+          "w": [["cancel", "לבטל"], ["because of", "בגלל (+שם עצם)"]]
+        },
+        {
+          "q": "Many teenagers stay up late looking at their phones; ___, some of them sleep only five or six hours a night.",
+          "o": ["as a result", "in contrast", "for instance", "on the other hand"],
+          "a": 0,
+          "ex": "«as a result» = כתוצאה מכך. השינה הקצרה היא התוצאה של השימוש בטלפון עד מאוחר. «in contrast» ו-«on the other hand» יוצרים ניגוד, ואין כאן ניגוד.",
+          "w": [["as a result", "כתוצאה מכך"], ["in contrast", "לעומת זאת"]]
+        },
+        {
+          "q": "The teacher gave a clear ___ of the problem, and after that everyone in the class understood how to solve it.",
+          "o": ["complaint", "mistake", "question", "explanation"],
+          "a": 3,
+          "ex": "«explanation» = הסבר. אחרי הסבר ברור כולם הבינו איך לפתור את הבעיה. «mistake» (טעות) לא הייתה עוזרת לכיתה להבין.",
+          "w": [["explanation", "הסבר"], ["solve", "לפתור"]]
+        },
+        {
+          "q": "___ Sam had trained for months, he did not finish the race because he hurt his leg.",
+          "o": ["Since", "Even though", "So that", "As soon as"],
+          "a": 1,
+          "ex": "«Even though» = אף על פי ש. הוא התאמן חודשים, ובכל זאת לא סיים את המרוץ: זה ניגוד. «Since» (מכיוון ש) היה אומר שהאימונים הם הסיבה שלא סיים, וזה לא הגיוני.",
+          "w": [["even though", "אף על פי ש..."], ["since", "מכיוון ש..."]]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "Trees on City Streets",
+      "text": [
+        "In many cities around the world, local governments plant thousands of trees along streets every year. At first, this may seem like a simple way to make neighborhoods look nicer. However, city planners say that street trees offer much more than beauty. They help people, buildings and even the city budget.",
+        "The most obvious benefit is shade. On a hot summer day, a sidewalk under a row of trees can be several degrees cooler than a sidewalk in full sun. Trees also release water through their leaves, and this water cools the air around them. As a result, people who live on green streets often use their air conditioners less, which lowers their electricity bills. In addition, leaves and roots catch rainwater, so less water floods the streets after a storm.",
+        "Street trees, however, are not free. A young tree must be watered regularly during its first few years, and older trees need to be cut back so that their branches do not hit buses or power lines. Roots can also cause problems. As they grow, they sometimes push up the sidewalk and damage pipes under the street. For this reason, some cities choose smaller trees for narrow streets, and they plant them in larger holes so that the roots have enough room.",
+        "Despite these costs, most studies find that street trees are a good investment. One city calculated that every dollar it spent on caring for its trees returned more than two dollars in savings, mainly from lower energy use and less damage from rainwater. Because of such findings, many cities now plan to plant even more trees in the coming years."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "how trees release water through their leaves",
+            "the benefits and the costs of trees along city streets",
+            "why some cities have stopped planting trees",
+            "the best kinds of trees for narrow streets"
+          ],
+          "a": 1,
+          "ex": "הקטע מסביר את היתרונות של עצים ברחוב (צל, אוויר קריר, חיסכון) וגם את הבעיות והעלויות שלהם. שחרור מים דרך העלים הוא רק פרט אחד בפסקה 2, ולא הנושא של כל הקטע.",
+          "w": [["benefit", "יתרון, תועלת"], ["cost", "עלות, מחיר"]]
+        },
+        {
+          "q": "According to the second paragraph, people who live on green streets",
+          "o": [
+            "drive more often than other people",
+            "rarely go outside in the summer",
+            "must water the trees every day",
+            "often pay less for electricity"
+          ],
+          "a": 3,
+          "ex": "בפסקה 2 כתוב שהם משתמשים פחות במזגן, ולכן חשבונות החשמל שלהם יורדים («lowers their electricity bills»). שאר התשובות לא כתובות בפסקה.",
+          "w": [["lower", "להוריד, להפחית"], ["bill", "חשבון (לתשלום)"]]
+        },
+        {
+          "q": "In the third paragraph, the word 'they' in 'As they grow' refers to",
+          "o": ["branches", "buses", "roots", "power lines"],
+          "a": 2,
+          "ex": "המשפט שלפני אומר «Roots can also cause problems», ומיד אחריו «As they grow, they sometimes push up the sidewalk». השורשים הם אלה שגדלים, מרימים את המדרכה ופוגעים בצינורות.",
+          "w": [["root", "שורש"], ["damage", "לפגוע, להזיק; נזק"]]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": [
+            "show that street trees save more money than they cost",
+            "explain how roots damage pipes under the street",
+            "describe the work of watering young trees",
+            "suggest that cities should plant fewer trees"
+          ],
+          "a": 0,
+          "ex": "הפסקה האחרונה אומרת שלמרות העלויות, העצים הם השקעה טובה: כל דולר מחזיר יותר משני דולרים. «plant fewer trees» הפוך ממה שכתוב, כי ערים מתכננות לשתול עוד עצים.",
+          "w": [["despite", "למרות (+שם עצם)"], ["investment", "השקעה"]]
+        },
+        {
+          "q": "According to the third paragraph, some cities plant trees in larger holes in order to",
+          "o": [
+            "keep the branches away from buses",
+            "make the trees grow more quickly",
+            "use less water for young trees",
+            "give the roots enough space"
+          ],
+          "a": 3,
+          "ex": "בסוף פסקה 3 כתוב שהם שותלים בבורות גדולים יותר «so that the roots have enough room», כלומר כדי שלשורשים יהיה מספיק מקום. הענפים והאוטובוסים מוזכרים בפסקה, אבל קשורים לגיזום ולא לבורות.",
+          "w": [["in order to", "כדי ל... (+פועל)"], ["room", "מקום, מרחב"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Although the new phone is cheaper than the old model, most customers prefer the old one because its battery lasts longer.",
+          "o": [
+            "Most customers prefer the new phone, because it is cheaper and its battery lasts longer.",
+            "Since the new phone is cheaper than the old model, its battery also lasts longer than the old model's battery.",
+            "Most customers like the old model better since its battery lasts longer, even though the new phone costs less.",
+            "Few customers prefer the old model, although its battery lasts longer than the new phone's battery."
+          ],
+          "a": 2,
+          "ex": "«Although» הוחלף ב-«even though», «prefer» ב-«like better» ו-«cheaper» ב-«costs less». המשמעות זהה: רוב הלקוחות מעדיפים את הדגם הישן בגלל הסוללה. «Few customers» (מעט לקוחות) הופך את «most» (רוב).",
+          "w": [["although", "למרות ש... (+משפט)"], ["even though", "אף על פי ש..."], ["prefer", "להעדיף"]]
+        },
+        {
+          "q": "If students do not hand in their projects by Thursday, they will not be allowed to take part in the science fair.",
+          "o": [
+            "Students may take part in the science fair only if they hand in their projects by Thursday.",
+            "Students who hand in their projects after Thursday will get extra time for the science fair.",
+            "Students will be allowed to take part in the science fair even if they hand in their projects late.",
+            "Because the science fair is on Thursday, students must hand in their projects before it starts."
+          ],
+          "a": 0,
+          "ex": "«only if» = רק אם. מי שלא מגיש עד יום חמישי לא משתתף, כלומר משתתפים רק אם מגישים בזמן. «even if they hand in late» אומר את ההפך, והתשובה האחרונה מוסיפה מידע שלא היה (שהיריד ביום חמישי).",
+          "w": [["only if", "רק אם"], ["if", "אם"], ["hand in", "להגיש"]]
+        },
+        {
+          "q": "Fewer tourists visited the island this year, mainly because flights became much more expensive after the airline raised its prices.",
+          "o": [
+            "More tourists visited the island this year, even though flights became much more expensive after the airline raised its prices.",
+            "The main reason for the drop in the number of tourists on the island this year was the airline's higher prices.",
+            "The airline raised its prices this year mainly because fewer tourists wanted to fly to the island than in the past.",
+            "Flights to the island became much cheaper this year after the airline lowered its prices, so the number of tourists fell."
+          ],
+          "a": 1,
+          "ex": "«Fewer tourists» הפך ל-«drop in the number of tourists» (ירידה במספר התיירים), ו-«mainly because» הפך ל-«the main reason». התשובה השלישית הופכת סיבה ותוצאה: לפי המקור המחירים גרמו לירידה, ולא להפך.",
+          "w": [["mainly", "בעיקר"], ["because", "כי, מפני ש... (+משפט)"], ["raise", "להעלות"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Many young people hardly ever read newspapers; instead, they get most of their news from short videos on social media.",
+          "o": [
+            "Many young people often read newspapers, and they also watch short news videos on social media every day.",
+            "Short videos on social media have made many young people more interested in reading newspapers than they used to be.",
+            "Newspapers are rarely read by older people, who get most of their news from short videos on social media.",
+            "Many young people rarely read newspapers; most of the news they receive comes from short videos on social media."
+          ],
+          "a": 3,
+          "ex": "«hardly ever» = כמעט אף פעם לא, כמו «rarely». המשמעות נשמרת: צעירים כמעט לא קוראים עיתונים ומקבלים חדשות מסרטונים. בתשובה הראשונה «often» (לעיתים קרובות) הופך את המשמעות, ובשלישית מדובר באנשים מבוגרים במקום בצעירים.",
+          "w": [["hardly", "כמעט לא"], ["rarely", "לעיתים רחוקות"], ["instead", "במקום זאת"]]
+        },
+        {
+          "q": "The community center closed for six months so that workers could repair its roof, which had been damaged in a heavy storm.",
+          "o": [
+            "A heavy storm damaged the community center's roof, but the center stayed open for the whole six months while workers repaired it.",
+            "The community center was shut for six months in order to allow workers to fix the roof damaged in a heavy storm.",
+            "Workers accidentally damaged the roof of the community center during the six months that it was closed after a heavy storm.",
+            "The community center closed for six months because of a heavy storm, but workers will only repair its damaged roof next year."
+          ],
+          "a": 1,
+          "ex": "«so that workers could repair» הפך ל-«in order to allow workers to fix»: שתיהן מילות מטרה. «closed» הפך ל-«was shut». בתשובה השלישית הפועלים הם שגרמו לנזק, וזה משנה מי עשה מה.",
+          "w": [["so that", "כדי ש... (+משפט)"], ["in order to", "כדי ל... (+פועל)"], ["repair", "לתקן"]]
+        },
+        {
+          "q": "Unlike her older brother, who enjoys cooking, Noa prefers to eat simple meals and rarely spends time in the kitchen.",
+          "o": [
+            "Noa seldom spends time in the kitchen and likes simple meals, whereas her older brother enjoys cooking.",
+            "Like her older brother, Noa enjoys cooking and often spends time in the kitchen.",
+            "Noa's older brother prefers simple meals, while Noa enjoys spending time in the kitchen.",
+            "Noa rarely spends time in the kitchen because her older brother does all the cooking for her."
+          ],
+          "a": 0,
+          "ex": "«Unlike» (בניגוד ל) הוחלף ב-«whereas» (ואילו), ו-«rarely» ב-«seldom». שני המשפטים אומרים שאחיה אוהב לבשל והיא לא. התשובה השלישית מחליפה בין נועה לאחיה, והאחרונה מוסיפה סיבה שלא הייתה במקור.",
+          "w": [["unlike", "בניגוד ל... (+שם עצם)"], ["whereas", "בעוד ש..., ואילו"], ["seldom", "לעיתים רחוקות"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Our neighbors are very ___; they often bring us food from their garden and lend us tools without asking for anything.",
+          "o": ["rude", "lazy", "generous", "careless"],
+          "a": 2,
+          "ex": "«generous» = נדיב. השכנים נותנים אוכל ומשאילים כלים בלי לבקש דבר בתמורה. «rude» (גס רוח) סותר את מה שמתואר אחרי הנקודה-פסיק.",
+          "w": [["generous", "נדיב"], ["lend", "להשאיל"]]
+        },
+        {
+          "q": "The factory put solar panels on its roof; ___ the sun, it now pays much less for electricity than it did five years ago.",
+          "o": ["thanks to", "instead of", "in spite of", "except for"],
+          "a": 0,
+          "ex": "«thanks to» = הודות ל, בזכות. השמש היא הסיבה הטובה לכך שהמפעל משלם פחות על חשמל. «in spite of» (למרות) היה יוצר ניגוד, אבל השמש עוזרת לחסוך ולא מפריעה.",
+          "w": [["thanks to", "הודות ל..., בזכות"], ["in spite of", "למרות (+שם עצם)"]]
+        },
+        {
+          "q": "Before you buy a used car, it is wise to ___ it carefully to make sure that the engine and the brakes work well.",
+          "o": ["ignore", "borrow", "paint", "examine"],
+          "a": 3,
+          "ex": "«examine» = לבדוק היטב. כדי לוודא שהמנוע והבלמים תקינים צריך לבדוק את המכונית. «ignore» (להתעלם) הפוך ממה שצריך לעשות.",
+          "w": [["examine", "לבדוק, לבחון"], ["wise", "נבון, חכם"]]
+        },
+        {
+          "q": "Some fruits, ___ bananas and oranges, have a thick skin, so they do not need to be washed before you eat them.",
+          "o": ["unlike", "such as", "rather than", "instead of"],
+          "a": 1,
+          "ex": "«such as» = כגון, כמו. בננות ותפוזים הם דוגמאות לפירות עם קליפה עבה. «unlike» (בניגוד ל) היה אומר שלבננות ולתפוזים אין קליפה עבה, וזה לא נכון.",
+          "w": [["such as", "כגון, כמו"], ["unlike", "בניגוד ל... (+שם עצם)"]]
+        }
+      ]
+    }
+  ]
+}

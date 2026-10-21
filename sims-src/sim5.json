@@ -142,7 +142,7 @@
         {
           "q": "Granted that the new vaccine is more expensive than the old one, its far greater effectiveness makes it the better choice for the national health service.",
           "o": [
-            "Because the new vaccine is more expensive than the old one, the national health service should prefer the old one, despite its lower effectiveness.",
+            "Because the new vaccine is more expensive than the old one, the national health service should continue to prefer the old one, despite its considerably lower effectiveness.",
             "Although the new vaccine costs more than the old one, the national health service would do better to choose it, since it is considerably more effective.",
             "The new vaccine is both cheaper and more effective than the old one, so the national health service should choose it.",
             "Although the new vaccine is more effective than the old one, its higher price makes it the less sensible choice for the national health service."
@@ -154,10 +154,10 @@
         {
           "q": "The town's economic decline was caused not so much by the closure of the mine as by the failure of local leaders to develop any alternative source of employment in the years that followed.",
           "o": [
-            "The closure of the mine was the main reason for the town's economic decline, although local leaders also failed to create new jobs afterwards.",
-            "The closure of the mine and the local leaders' failure to create new jobs contributed equally to the town's economic decline.",
+            "The closure of the mine was the main reason for the town's economic decline, although local leaders also failed to create any new jobs in the years that followed.",
+            "The closure of the mine and the local leaders' failure to create new jobs afterwards contributed in equal measure to the town's economic decline.",
             "Local leaders failed to develop new sources of employment because the closure of the mine had already ruined the town's economy.",
-            "It was chiefly the local leaders' failure to create other jobs after the mine closed, rather than the closure itself, that brought about the town's economic decline."
+            "It was chiefly the local leaders' failure to create other jobs after the mine closed, rather than the closure itself, that caused the town's economic decline."
           ],
           "a": 3,
           "ex": "«Not so much X as Y» = לא כל כך X אלא בעיקר Y. הסיבה העיקרית היא כישלון המנהיגים, לא סגירת המכרה. התשובה הראשונה הופכת את הדגש, והשנייה אומרת שהשתיים תרמו באותה מידה.",
@@ -166,10 +166,10 @@
         {
           "q": "Officials delayed announcing the results of the inquiry, lest premature disclosure should provoke public panic before the full extent of the water contamination had been established.",
           "o": [
-            "Officials held back the results of the inquiry for fear that releasing them too early might cause public panic, since the extent of the water contamination was not yet fully known.",
-            "Because the public had already panicked, officials decided to delay announcing the results of the inquiry into the water contamination.",
-            "Officials released the results of the inquiry early in order to prevent public panic over the extent of the water contamination.",
-            "Officials delayed announcing the results of the inquiry until they had confirmed that the water contamination was too limited to cause public panic."
+            "Officials held back the inquiry's results, fearing that releasing them too early might cause public panic before the full extent of the water contamination was known.",
+            "Because the public had already panicked over the water contamination, officials decided to delay announcing the results of the inquiry until the situation had calmed down.",
+            "Officials released the results of the inquiry as early as possible in order to prevent public panic over the extent of the water contamination in the area.",
+            "Officials delayed announcing the results of the inquiry until they had confirmed that the water contamination was far too limited to cause any serious public panic."
           ],
           "a": 0,
           "ex": "«Lest» = מחשש ש..., כדי שלא. הפקידים עיכבו את הפרסום כדי שלא תפרוץ בהלה לפני שהיקף הזיהום ידוע. בתשובה השנייה הבהלה כבר קרתה, והאחרונה מוסיפה טענה שלא נאמרה (שהזיהום מוגבל).",
@@ -186,7 +186,7 @@
             "The company recalled nearly a quarter of a million of its new smartphones before any reports of overheating batteries had appeared.",
             "Several years after the company launched its new smartphone, reports of overheating batteries forced it to recall nearly a quarter of a million devices.",
             "Almost as soon as the company's new smartphone went on sale, reports of overheating batteries emerged, and within a month the company had to recall almost 250,000 devices.",
-            "Almost as soon as the company's new smartphone went on sale, reports of overheating batteries emerged, but the company refused to recall any of the devices."
+            "Almost as soon as the company's new smartphone went on sale, reports of overheating batteries emerged, but the company refused to recall any of the devices it had sold."
           ],
           "a": 2,
           "ex": "«Hardly had... when» = אך ורק... וכבר, מיד אחרי ש.... הדיווחים הופיעו מיד אחרי ההשקה והובילו לריקול. התשובה השנייה משנה את הזמן (כמה שנים אחרי), והאחרונה הופכת את התוצאה (סירבה לריקול).",
@@ -207,10 +207,10 @@
         {
           "q": "The treaty was by no means the first attempt to limit the arms race; it was, nonetheless, the first to include a system for verifying that both sides were actually keeping their commitments.",
           "o": [
-            "The treaty was the first attempt ever made to limit the arms race, and it included a system for checking that both sides kept their commitments.",
-            "Several earlier agreements had tried to limit the arms race, and, like the treaty, they included a system for checking that both sides kept their commitments.",
-            "Other agreements had tried to limit the arms race before this treaty, but it was the first one that provided a means of checking whether both sides honored their commitments.",
-            "Since earlier agreements had failed to limit the arms race, the treaty abandoned the idea of checking whether both sides kept their commitments."
+            "The treaty was the first attempt ever made to limit the arms race, and it also included a system for checking that both sides actually kept their commitments.",
+            "Several earlier agreements had tried to limit the arms race, and, just like the treaty, they included a system for checking that both sides kept their commitments.",
+            "Earlier agreements had tried to limit the arms race, but this treaty was the first to provide a way of checking whether both sides honored their commitments.",
+            "Since earlier agreements had failed to limit the arms race, the treaty's authors abandoned the idea of checking whether both sides were actually keeping their commitments."
           ],
           "a": 2,
           "ex": "«By no means the first» = בשום אופן לא הראשון, כלומר היו ניסיונות קודמים. «nonetheless» = ובכל זאת, הוא הראשון עם מנגנון פיקוח. התשובה הראשונה אומרת שזה הניסיון הראשון, והשנייה אומרת שגם להסכמים הקודמים היה פיקוח.",

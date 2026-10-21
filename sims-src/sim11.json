@@ -1,0 +1,615 @@
+{
+  "title": "סימולציה 11",
+  "level": 3,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Critics dismissed the chief executive's apology as ___, noting that it came only after the scandal had begun to hurt the company's sales.",
+          "o": [
+            "candid",
+            "disingenuous",
+            "spontaneous",
+            "magnanimous"
+          ],
+          "a": 1,
+          "ex": "«disingenuous» = לא כן, מעמיד פנים. המבקרים טוענים שההתנצלות הגיעה רק כשהמכירות נפגעו, כלומר היא לא אמיתית. «candid» (גלוי לב) ו-«spontaneous» (ספונטני) הם ההפך ממה שהמשפט רומז.",
+          "w": [
+            [
+              "disingenuous",
+              "לא כן, צבוע"
+            ],
+            [
+              "dismiss",
+              "לבטל, לפטור כלא חשוב"
+            ],
+            [
+              "candid",
+              "גלוי לב"
+            ]
+          ]
+        },
+        {
+          "q": "The museum will lend the painting to the exhibition ___ it is insured for its full value and kept at a constant temperature throughout the tour.",
+          "o": [
+            "even though",
+            "whereas",
+            "on condition that",
+            "in case"
+          ],
+          "a": 2,
+          "ex": "«on condition that» = בתנאי ש. הביטוח והטמפרטורה הם התנאים שבלעדיהם המוזיאון לא ישאיל את הציור. «in case» (למקרה ש) נותן אמצעי זהירות ולא תנאי, ו-«even though» יוצר ויתור שאין לו היגיון כאן.",
+          "w": [
+            [
+              "on condition that",
+              "בתנאי ש..."
+            ],
+            [
+              "in case",
+              "למקרה ש..."
+            ]
+          ]
+        },
+        {
+          "q": "The once-thriving fishing village has become ___, its harbor silted up and most of its houses standing empty for much of the year.",
+          "o": [
+            "bustling",
+            "affluent",
+            "pristine",
+            "desolate"
+          ],
+          "a": 3,
+          "ex": "«desolate» = שומם, עזוב. נמל סתום ובתים ריקים מתארים מקום נטוש. «bustling» (הומה) ו-«affluent» (אמיד) מתאימים לכפר המשגשג של פעם, לא למצבו היום.",
+          "w": [
+            [
+              "desolate",
+              "שומם, נטוש"
+            ],
+            [
+              "thriving",
+              "משגשג"
+            ],
+            [
+              "bustling",
+              "הומה, שוקק"
+            ]
+          ]
+        },
+        {
+          "q": "The new policy did little to reduce traffic in the city center; ___, by making parking cheaper on the outskirts, it seems to have encouraged even more people to drive.",
+          "o": [
+            "on the contrary",
+            "likewise",
+            "accordingly",
+            "for instance"
+          ],
+          "a": 0,
+          "ex": "«on the contrary» = להפך. החלק השני אומר שהמדיניות לא רק שלא הפחיתה תנועה אלא אף הגבירה אותה, וזה ההפך מהמטרה. «accordingly» (לכן) לא מתאים, כי אי ההצלחה להפחית תנועה איננה סיבה לכך שיותר אנשים נוסעים.",
+          "w": [
+            [
+              "on the contrary",
+              "להפך"
+            ],
+            [
+              "accordingly",
+              "בהתאם לכך, לכן"
+            ],
+            [
+              "outskirts",
+              "פאתי העיר"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The professor's argument was so ___ that even students with no background in philosophy could follow each step without difficulty.",
+          "o": [
+            "convoluted",
+            "esoteric",
+            "lucid",
+            "spurious"
+          ],
+          "a": 2,
+          "ex": "«lucid» = בהיר, צלול. אם גם מי שלא למד פילוסופיה הבין כל שלב, הטיעון היה ברור. «convoluted» (מסובך) ו-«esoteric» (מובן רק למעטים) הם ההפך.",
+          "w": [
+            [
+              "lucid",
+              "בהיר, צלול"
+            ],
+            [
+              "convoluted",
+              "מסובך, מפותל"
+            ],
+            [
+              "esoteric",
+              "מובן רק ליודעי ח״ן"
+            ]
+          ]
+        },
+        {
+          "q": "The reform did raise literacy rates in rural areas, ___ far more slowly and at a far higher cost than its architects had promised.",
+          "o": [
+            "let alone",
+            "thereby",
+            "not to mention",
+            "albeit"
+          ],
+          "a": 3,
+          "ex": "«albeit» = אם כי. הרפורמה הצליחה, אבל עם הסתייגות: לאט ויקר יותר מהמתוכנן. «not to mention» מוסיף עוד דבר באותו כיוון ולא מסייג, ו-«let alone» בא רק אחרי משפט שלילי.",
+          "w": [
+            [
+              "albeit",
+              "אם כי"
+            ],
+            [
+              "not to mention",
+              "שלא לדבר על"
+            ],
+            [
+              "let alone",
+              "ובטח שלא, קל וחומר"
+            ]
+          ]
+        },
+        {
+          "q": "Rather than resolving the dispute, the court's ambiguous ruling only served to ___ it, as both sides claimed that the decision supported their position.",
+          "o": [
+            "alleviate",
+            "exacerbate",
+            "settle",
+            "preclude"
+          ],
+          "a": 1,
+          "ex": "«exacerbate» = להחמיר. «Rather than resolving» אומר שהפסיקה לא פתרה את הסכסוך אלא עשתה משהו הפוך, ושני הצדדים טוענים לניצחון. «alleviate» (להקל) ו-«settle» (ליישב) הם בדיוק מה שלא קרה.",
+          "w": [
+            [
+              "exacerbate",
+              "להחמיר"
+            ],
+            [
+              "alleviate",
+              "להקל"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ]
+          ]
+        },
+        {
+          "q": "___ its modest budget, the documentary attracted a larger audience than any of the big-studio productions released that year.",
+          "o": [
+            "Notwithstanding",
+            "By virtue of",
+            "In view of",
+            "Owing to"
+          ],
+          "a": 0,
+          "ex": "«notwithstanding» = על אף, למרות. תקציב צנוע הוא סיבה לצפות להצלחה קטנה, ובכל זאת הסרט הצליח יותר מהפקות גדולות. שלוש האפשרויות האחרות נותנות סיבה, כאילו התקציב הקטן גרם להצלחה.",
+          "w": [
+            [
+              "notwithstanding",
+              "על אף, למרות"
+            ],
+            [
+              "by virtue of",
+              "מתוקף, בזכות"
+            ],
+            [
+              "owing to",
+              "בשל, עקב"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "When a Language Falls Silent",
+      "text": [
+        "Of the roughly 7,000 languages spoken in the world today, linguists estimate that close to half may fall out of use by the end of this century. Popular accounts tend to picture such a loss as sudden, as though a language vanished at the moment its last speaker died. In reality, that death is usually only the final step in a process that began generations earlier.",
+        "The process typically starts when a community comes under pressure, whether economic, political or social, to adopt a more dominant language. Parents who see that the dominant language opens the way to schooling and employment may stop speaking their ancestral tongue to their children, often out of a sincere wish to spare them disadvantage. Once a single generation grows up without it, the language is in serious danger: it may still be heard among the elderly, but it is no longer being passed on. Linguists call such a language 'moribund' long before its final speaker is gone.",
+        "Revival movements have tried to reverse this decline, with uneven results. The case most often cited as a success is Hebrew, which, although it had been preserved for centuries in prayer and scholarship, had not been anyone's everyday language. Within a few decades it acquired millions of native speakers. Yet Hebrew's case is in many respects exceptional: its revivers could draw on an extensive written tradition, and they were building a new society in which a shared language met an urgent practical need.",
+        "Most communities attempting revival enjoy neither advantage. Programs in which young children are taught entirely in the threatened language, known as 'language nests', have produced a new generation of speakers among the Maori of New Zealand and in Hawaii. Even there, however, many graduates use the language mainly at school and turn to English at home and with friends. Teaching a language, it seems, is considerably easier than restoring the conditions under which people choose to speak it.",
+        "For languages whose last speakers have already died, the goals are necessarily more modest. Recordings, dictionaries and grammars compiled by linguists cannot by themselves bring a language back to life, but they can preserve enough of it for later generations to reclaim, should they so wish. Some scholars argue that this, rather than the number of fluent speakers, is the more realistic measure of success."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "why Hebrew is a model that every endangered language can follow",
+            "how languages decline and how far efforts to revive them have succeeded",
+            "the reasons parents prefer to raise their children in a dominant language",
+            "the methods linguists use to record languages that have no living speakers"
+          ],
+          "a": 1,
+          "ex": "הקטע מתאר איך שפה נעלמת (פסקאות 1-2) ומה הצליחו ולא הצליחו מאמצי ההחייאה (פסקאות 3-5). ההורים, העברית והתיעוד הם רק חלקים מהתמונה, והקטע אף אומר שהעברית היא מקרה חריג ולא מודל.",
+          "w": [
+            [
+              "revive",
+              "להחיות"
+            ],
+            [
+              "decline",
+              "דעיכה; לדעוך"
+            ],
+            [
+              "endangered",
+              "בסכנת הכחדה"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, linguists describe a language as 'moribund' when",
+          "o": [
+            "its last speaker has died",
+            "it is used only in prayer and scholarship",
+            "children no longer learn it, although some people still speak it",
+            "its community is under economic pressure to adopt another language"
+          ],
+          "a": 2,
+          "ex": "בפסקה 2: כשדור שלם גדל בלי השפה, היא עדיין נשמעת אצל הזקנים אבל כבר לא עוברת הלאה, ואז קוראים לה «moribund», עוד הרבה לפני שהדובר האחרון מת. לכן התשובה הראשונה שגויה, והלחץ הכלכלי הוא רק תחילת התהליך.",
+          "w": [
+            [
+              "moribund",
+              "גוסס, על סף מוות"
+            ],
+            [
+              "pass on",
+              "להעביר הלאה"
+            ],
+            [
+              "ancestral",
+              "של האבות, מסורתי"
+            ]
+          ]
+        },
+        {
+          "q": "In the third paragraph, the word 'exceptional' could best be replaced by",
+          "o": [
+            "atypical",
+            "outstanding",
+            "admirable",
+            "unexplained"
+          ],
+          "a": 0,
+          "ex": "בפסקה 3 «exceptional» = חריג, יוצא דופן במובן של לא מייצג. המשפט מסביר שלעברית היו יתרונות שאין לשפות אחרות. «outstanding» (מצוין) מפתה, אבל הכותב לא משבח כאן את העברית אלא אומר שהמקרה שלה לא טיפוסי.",
+          "w": [
+            [
+              "exceptional",
+              "חריג; יוצא מן הכלל"
+            ],
+            [
+              "atypical",
+              "לא טיפוסי"
+            ],
+            [
+              "in many respects",
+              "במובנים רבים"
+            ]
+          ]
+        },
+        {
+          "q": "The main purpose of the fourth paragraph is to",
+          "o": [
+            "argue that language nests are more effective than the methods used to revive Hebrew",
+            "explain why Maori and Hawaiian are no longer considered endangered",
+            "suggest that children should not be taught entirely in a threatened language",
+            "show that even relatively successful programs have not fully restored everyday use of a language"
+          ],
+          "a": 3,
+          "ex": "פסקה 4 מביאה את «language nests» כהצלחה יחסית, ואז אומרת «Even there, however»: הבוגרים מדברים בשפה בעיקר בבית הספר. המטרה היא להראות את הגבול של ההצלחה. הפסקה לא משווה לעברית ולא טוענת שהשפות כבר לא בסכנה.",
+          "w": [
+            [
+              "threatened",
+              "מאוים"
+            ],
+            [
+              "restore",
+              "להשיב, לשקם"
+            ],
+            [
+              "considerably",
+              "במידה ניכרת"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from the last paragraph that some scholars believe that",
+          "o": [
+            "recordings and dictionaries are enough to bring a language back to life",
+            "documenting a language is pointless once its last speakers have died",
+            "an effort may count as successful even if it produces few fluent speakers",
+            "the number of fluent speakers is the only true measure of a revival's success"
+          ],
+          "a": 2,
+          "ex": "המשפט האחרון: יש חוקרים שחושבים ששימור השפה לדורות הבאים, «rather than the number of fluent speakers», הוא מדד ההצלחה הריאלי. כלומר אפשר להצליח גם בלי הרבה דוברים. התשובה הראשונה סותרת את «cannot by themselves bring a language back to life».",
+          "w": [
+            [
+              "reclaim",
+              "לדרוש בחזרה, להשיב לעצמו"
+            ],
+            [
+              "compile",
+              "לחבר, לאסוף לכדי"
+            ],
+            [
+              "measure",
+              "מדד; למדוד"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Only after the old bridge had partially collapsed did the city council agree to fund the repairs that engineers had been urging for more than a decade.",
+          "o": [
+            "The city council agreed to pay for the repairs that engineers had long demanded, so the old bridge, which had been at risk for years, never collapsed.",
+            "Although engineers had pressed for repairs for over ten years, the council did not approve the money for them until part of the old bridge had actually collapsed.",
+            "Engineers began urging the city council to fund repairs only after part of the old bridge had collapsed, and the council approved the money ten years later.",
+            "For more than a decade, the council paid for repairs to the old bridge, but engineers warned that the work could not prevent it from partly collapsing."
+          ],
+          "a": 1,
+          "ex": "«Only after... did» = רק אחרי ש... המועצה הסכימה לממן את התיקון רק אחרי שהגשר קרס חלקית, למרות שהמהנדסים דרשו זאת יותר מעשור. בתשובה השלישית המהנדסים התחילו לדרוש רק אחרי הקריסה, וזה הפוך מהמקור.",
+          "w": [
+            [
+              "only after",
+              "רק לאחר ש..."
+            ],
+            [
+              "urge",
+              "לדחוק, להפציר"
+            ],
+            [
+              "although",
+              "למרות ש..."
+            ]
+          ]
+        },
+        {
+          "q": "But for the timely intervention of a handful of volunteers, the archive of rare manuscripts, which the flood had left soaked and scattered across the library floor, would almost certainly have been lost.",
+          "o": [
+            "The flood scattered the rare manuscripts across the library floor, and although a few volunteers intervened in time, the archive was almost entirely lost.",
+            "A few volunteers had moved the rare manuscripts before the flood arrived, so the archive was neither soaked nor scattered across the library floor.",
+            "Because a handful of volunteers reacted too slowly, the flood soaked the archive of rare manuscripts and scattered it across the library floor.",
+            "The rare manuscripts, soaked and scattered by the flood, would probably have been destroyed had a few volunteers not stepped in just in time."
+          ],
+          "a": 3,
+          "ex": "«but for» = אלמלא. אלמלא המתנדבים, הארכיון היה אובד, כלומר בזכותם הוא ניצל. התשובה הנכונה משתמשת ב-«had... not» באותה משמעות. בתשובה הראשונה הארכיון אבד, ובשנייה כתבי היד בכלל לא נרטבו, בניגוד למקור.",
+          "w": [
+            [
+              "but for",
+              "אלמלא, לולא"
+            ],
+            [
+              "timely",
+              "בזמן, בעיתוי הנכון"
+            ],
+            [
+              "intervention",
+              "התערבות"
+            ]
+          ]
+        },
+        {
+          "q": "Far from slowing the rumor's spread, the company's repeated denials appear to have lent it credibility, since many readers assumed that no one would deny a story so vigorously unless it were true.",
+          "o": [
+            "The company's repeated denials seem to have made the rumor more believable, because many readers took such strong denials as a sign that the story was true.",
+            "The company's repeated denials slowed the spread of the rumor, since many readers assumed that a company would not deny a story so firmly unless it were false.",
+            "Many readers already believed the rumor before the company denied it, so its repeated denials had no effect at all on how widely the story spread.",
+            "Although the company's repeated denials made the rumor seem more credible to some, few readers believed that a story denied so strongly could actually be true."
+          ],
+          "a": 0,
+          "ex": "«Far from slowing» = רחוק מלהאט, כלומר ההכחשות לא האטו את השמועה אלא חיזקו אותה, כי קוראים הניחו שלא מכחישים כך סיפור אלא אם הוא נכון. התשובה השנייה הופכת את התוצאה, והרביעית אומרת שמעטים האמינו, בסתירה למקור.",
+          "w": [
+            [
+              "far from",
+              "רחוק מ..., ממש לא"
+            ],
+            [
+              "credibility",
+              "אמינות"
+            ],
+            [
+              "unless",
+              "אלא אם כן"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "While few economists now dispute that the tariff contributed to the recession, there remains considerable disagreement over whether it was the decisive cause or merely one factor among many.",
+          "o": [
+            "Most economists now agree that the tariff was the main cause of the recession, though a few still argue that it was only one of several contributing factors.",
+            "Few economists now believe that the tariff played any part in the recession, although they still disagree about which of the other factors was the decisive one.",
+            "Most economists now accept that the tariff played some part in the recession, but they still differ on whether it was the main cause or one of several.",
+            "Economists still disagree about whether the tariff played any part at all in the recession, but most of them accept that it was not the decisive cause."
+          ],
+          "a": 2,
+          "ex": "«few dispute that» = מעטים חולקים על כך, כלומר רובם מסכימים שהמכס תרם למיתון. המחלוקת היא רק האם הוא היה הסיבה המכרעת. בתשובה הראשונה רובם כבר מסכימים שהוא הסיבה העיקרית, וזו בדיוק הנקודה שעדיין שנויה במחלוקת.",
+          "w": [
+            [
+              "while",
+              "בעוד ש... (ניגוד)"
+            ],
+            [
+              "dispute",
+              "לחלוק על, לערער"
+            ],
+            [
+              "merely",
+              "רק, לא יותר מ..."
+            ]
+          ]
+        },
+        {
+          "q": "Unless the coral reefs are given at least a decade free from rising water temperatures, scientists warn, even the most ambitious replanting programs will be unable to restore them to their former diversity.",
+          "o": [
+            "Scientists warn that ambitious replanting programs will restore the coral reefs to their former diversity within a decade, even if water temperatures continue to rise.",
+            "According to scientists, replanting programs, however ambitious, can bring back the reefs' former diversity only if water temperatures stop rising for at least ten years.",
+            "Scientists warn that rising water temperatures have already damaged the coral reefs so badly that no replanting program could ever restore their former diversity.",
+            "According to scientists, the reefs will regain their former diversity after ten years of stable water temperatures, provided that no replanting program interferes with them."
+          ],
+          "a": 1,
+          "ex": "«unless» = אלא אם כן. בלי עשור של טמפרטורות יציבות, שום תוכנית לא תצליח; התשובה הנכונה אומרת זאת עם «only if» (רק אם). בתשובה השלישית אין בכלל סיכוי, אבל המקור משאיר תנאי שבו ההצלחה אפשרית.",
+          "w": [
+            [
+              "unless",
+              "אלא אם כן"
+            ],
+            [
+              "only if",
+              "רק אם"
+            ],
+            [
+              "diversity",
+              "מגוון"
+            ]
+          ]
+        },
+        {
+          "q": "The new screening test is no more accurate than the one it replaced; its advantage lies rather in the fact that a nurse can perform it in minutes, without a specialist laboratory.",
+          "o": [
+            "The new screening test is more accurate than the old one and, unlike it, can be carried out in a few minutes by a nurse rather than in a specialist laboratory.",
+            "Although the new screening test is quicker than the old one, it is also less accurate, since it is performed by a nurse rather than in a specialist laboratory.",
+            "The new screening test is no more accurate than the old one and, like it, still requires a specialist laboratory, although a nurse can now perform part of it.",
+            "What makes the new screening test better than the old one is not greater accuracy but the fact that a nurse can do it quickly, without a specialist laboratory."
+          ],
+          "a": 3,
+          "ex": "«no more accurate than» = לא מדויק יותר (מדויק באותה מידה). היתרון היחיד: אחות מבצעת אותה בדקות בלי מעבדה. בתשובה הראשונה הבדיקה מדויקת יותר, ובשנייה פחות מדויקת, ושתיהן משנות את נקודת הדיוק.",
+          "w": [
+            [
+              "no more... than",
+              "לא יותר... מ..."
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "instead of",
+              "במקום (+שם עצם / ing)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Wary of appearing to take sides, the mediator remained scrupulously ___ throughout the negotiations, refusing even to comment on either party's proposals.",
+          "o": [
+            "impartial",
+            "partisan",
+            "vehement",
+            "gullible"
+          ],
+          "a": 0,
+          "ex": "«impartial» = לא משוחד, ניטרלי. המתווך נזהר מלהיראות כמי שבוחר צד, ולכן לא הגיב על אף הצעה. «partisan» (מצדד בצד אחד) הוא בדיוק ההפך.",
+          "w": [
+            [
+              "impartial",
+              "ניטרלי, לא משוחד"
+            ],
+            [
+              "wary",
+              "זהיר, חושש"
+            ],
+            [
+              "partisan",
+              "מפלגתי, מצדד"
+            ]
+          ]
+        },
+        {
+          "q": "Few of the trainees could solve even the basic problems in the manual, ___ the advanced ones that the examiners had added at the end.",
+          "o": [
+            "apart from",
+            "such as",
+            "let alone",
+            "instead of"
+          ],
+          "a": 2,
+          "ex": "«let alone» = ובטח שלא. אם מעטים פתרו אפילו את הבעיות הבסיסיות, ודאי שלא פתרו את המתקדמות. «apart from» (חוץ מ) היה אומר שהמתקדמות דווקא נפתרו, וזה לא הגיוני.",
+          "w": [
+            [
+              "let alone",
+              "ובטח שלא, קל וחומר"
+            ],
+            [
+              "apart from",
+              "חוץ מ...; מלבד"
+            ],
+            [
+              "few",
+              "מעט (כמעט אין)"
+            ]
+          ]
+        },
+        {
+          "q": "The ambassador's ___ remarks, made off the record at a private dinner, caused a diplomatic incident that took both governments months to repair.",
+          "o": [
+            "prudent",
+            "indiscreet",
+            "tactful",
+            "guarded"
+          ],
+          "a": 1,
+          "ex": "«indiscreet» = לא זהיר, חסר טקט בדיבור. דברים שגרמו לתקרית דיפלומטית ארוכה לא היו זהירים. «prudent», «tactful» ו-«guarded» כולן אומרות זהירות, ההפך מהתוצאה.",
+          "w": [
+            [
+              "indiscreet",
+              "לא זהיר בדיבור, פטפטן"
+            ],
+            [
+              "prudent",
+              "נבון, זהיר"
+            ],
+            [
+              "tactful",
+              "בעל טקט"
+            ]
+          ]
+        },
+        {
+          "q": "The study was small and lasted only six weeks; its results, ___, are consistent with those of several much larger and longer trials.",
+          "o": [
+            "all the same",
+            "consequently",
+            "that is",
+            "similarly"
+          ],
+          "a": 0,
+          "ex": "«all the same» = בכל זאת. המחקר קטן וקצר (חולשה), ובכל זאת התוצאות שלו תואמות מחקרים גדולים. «consequently» (כתוצאה מכך) לא מתאים, כי היותו קטן איננה הסיבה להתאמה.",
+          "w": [
+            [
+              "all the same",
+              "בכל זאת"
+            ],
+            [
+              "consequently",
+              "כתוצאה מכך, לפיכך"
+            ],
+            [
+              "consistent with",
+              "תואם, עולה בקנה אחד עם"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

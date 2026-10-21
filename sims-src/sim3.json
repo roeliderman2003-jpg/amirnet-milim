@@ -303,10 +303,10 @@
         {
           "q": "Although the new medication reduced symptoms in most patients, doctors remain cautious because its long-term effects have not yet been studied in sufficient depth.",
           "o": [
-            "Because the new medication reduced symptoms in most patients, doctors are confident that its long-term effects will be safe.",
+            "Because the new medication reduced symptoms in most patients, doctors are confident that its long-term effects will also be safe for them.",
             "The new medication helped only a few patients, so doctors will remain cautious until its long-term effects are studied in depth.",
-            "Doctors have stopped prescribing the new medication, since studies have shown that its long-term effects are harmful.",
-            "Doctors are still careful about the new medication, even though it helped most patients, since not enough research has been done on its long-term effects."
+            "Doctors have stopped prescribing the new medication to most patients, since recent studies have shown that its long-term effects are harmful.",
+            "Doctors are still careful about the new medication, even though it helped most patients, since its long-term effects have not been studied enough."
           ],
           "a": 3,
           "ex": "במקור: התרופה עזרה לרוב החולים, אבל הרופאים זהירים כי ההשפעות ארוכות הטווח לא נחקרו מספיק. התשובה הנכונה מחליפה «Although» ב-«even though» ומשנה את סדר החלקים. «only a few patients» משנה את הכמות (במקור «most»).",
@@ -328,10 +328,10 @@
         {
           "q": "The ancient city was eventually abandoned, not because of a sudden invasion, as was once widely believed, but as a result of a slow decline in its water supply.",
           "o": [
-            "Contrary to a once common view, it was a gradual shortage of water, rather than an unexpected attack, that finally led people to leave the ancient city.",
-            "The ancient city was abandoned after a sudden invasion, which also damaged its water supply.",
-            "Many people once believed that the ancient city had a serious water problem, but it was actually destroyed by invaders.",
-            "Although its water supply was declining slowly, the ancient city was never abandoned by its people."
+            "Contrary to a once common view, a gradual shortage of water, rather than an unexpected attack, finally led people to leave the ancient city.",
+            "As was once widely believed, the ancient city was abandoned after a sudden invasion by its enemies, which also damaged its water supply.",
+            "Many people once believed that the ancient city had a serious water problem, but it was actually destroyed by invaders who attacked it suddenly.",
+            "Although its water supply was declining slowly, the ancient city was never abandoned by its people, who found new sources of water nearby."
           ],
           "a": 0,
           "ex": "במקור: העיר ננטשה לא בגלל פלישה, כפי שחשבו פעם, אלא בגלל ירידה איטית באספקת המים. התשובה הנכונה אומרת את זה עם «rather than» ועם «Contrary to a once common view». האפשרויות על הפולשים הופכות את הסיבה.",
@@ -354,9 +354,9 @@
           "q": "Few employees took advantage of the flexible working hours, since most of them feared that their managers would regard it as a lack of commitment.",
           "o": [
             "Many employees used the flexible working hours, although they feared that their managers would view it as a lack of commitment.",
-            "Worried that their managers might see it as a sign of low commitment, only a small number of employees made use of the flexible working hours.",
+            "Worried that their managers might see it as low commitment, only a small number of employees used the flexible working hours.",
             "Most managers feared that employees who used the flexible hours would show a lack of commitment, so they cancelled the option.",
-            "Because their managers considered them uncommitted, few employees were offered flexible working hours."
+            "Because their managers already considered them uncommitted to the company, only a few employees were ever offered the chance to work flexible hours."
           ],
           "a": 1,
           "ex": "«Few» = מעט מאוד עובדים השתמשו בשעות הגמישות, כי פחדו שהמנהלים יראו בזה חוסר מחויבות. התשובה הנכונה מעבירה את הסיבה לתחילת המשפט ואומרת «only a small number». «Many employees» הופך את הכמות.",
@@ -383,10 +383,10 @@
         {
           "q": "Even though online courses are cheaper and more convenient, many students still prefer traditional classes, in which they can interact directly with teachers and classmates.",
           "o": [
-            "Because online courses are cheaper and more convenient, most students have stopped attending traditional classes.",
-            "Many students prefer online courses, since these allow them to interact directly with teachers and classmates.",
-            "Many students continue to choose traditional classes, where face-to-face contact with teachers and other students is possible, despite the lower cost and greater convenience of online courses.",
-            "Traditional classes are cheaper than online courses, so many students still prefer them in order to meet their teachers."
+            "Because online courses are cheaper and more convenient, most students have stopped attending traditional classes and now study only from home.",
+            "Many students now prefer online courses to traditional classes, since online courses allow them to interact more directly with teachers and classmates.",
+            "Many students still choose traditional classes, which allow face-to-face contact with teachers and classmates, despite the lower cost and greater convenience of online courses.",
+            "Traditional classes are actually cheaper and more convenient than online courses, so many students still prefer them in order to meet their teachers."
           ],
           "a": 2,
           "ex": "במקור: למרות שקורסים מקוונים זולים ונוחים יותר, הרבה סטודנטים עדיין מעדיפים כיתות רגילות, שבהן יש קשר ישיר עם המרצים. התשובה הנכונה מחליפה «Even though» ב-«despite» ומעבירה אותו לסוף. האפשרות הראשונה הופכת את הוויתור לסיבה.",
@@ -408,10 +408,10 @@
         {
           "q": "The government introduced a tax on sugary drinks so as to reduce their consumption, and within two years, sales of such drinks had fallen considerably.",
           "o": [
-            "The government introduced a tax on sugary drinks because their sales had fallen considerably over the previous two years.",
-            "In order to cut the consumption of sugary drinks, a tax was placed on them by the government; within two years, their sales had dropped significantly.",
-            "Although the government taxed sugary drinks in order to reduce their consumption, sales of these drinks hardly changed within two years.",
-            "Drink companies raised the price of sugary drinks so as to reduce their consumption, and sales fell considerably within two years."
+            "The government decided to introduce a tax on sugary drinks because their sales had already fallen considerably over the previous two years.",
+            "In order to cut consumption of sugary drinks, a tax was placed on them by the government; within two years, sales had dropped sharply.",
+            "Although the government taxed sugary drinks in order to reduce their consumption, sales of these drinks hardly changed at all within the next two years.",
+            "Drink companies themselves raised the price of sugary drinks so as to reduce their consumption, and within two years sales had fallen considerably."
           ],
           "a": 1,
           "ex": "במקור: הממשלה הטילה מס על משקאות ממותקים כדי להפחית את הצריכה, ותוך שנתיים המכירות ירדו מאוד. התשובה הנכונה עוברת לסביל («a tax was placed on them by the government») ו-«so as to» הופך ל-«In order to». באפשרות הראשונה הירידה במכירות היא הסיבה למס, וזה הפוך.",
@@ -433,10 +433,10 @@
         {
           "q": "Whereas earlier researchers relied mainly on questionnaires, today's scientists can observe brain activity directly, which allows them to test theories that were once impossible to examine.",
           "o": [
-            "Both earlier and modern researchers have relied mainly on questionnaires, which is why some theories still cannot be tested.",
-            "Today's scientists rely mainly on questionnaires, since observing brain activity directly has turned out to be impossible.",
-            "Earlier researchers observed brain activity directly, whereas today's scientists prefer questionnaires in order to test new theories.",
-            "Unlike researchers in the past, who depended mostly on questionnaires, modern scientists are able to watch the brain at work, and this lets them check theories that could not be tested before."
+            "Both earlier and modern researchers have relied mainly on questionnaires rather than on brain activity, which is why some important theories still cannot be tested today.",
+            "Today's scientists still rely mainly on questionnaires, just as earlier researchers did, since observing brain activity directly has turned out to be impossible.",
+            "Earlier researchers were able to observe brain activity directly, whereas today's scientists prefer to use questionnaires in order to test theories that were once impossible to examine.",
+            "Unlike past researchers, who depended mostly on questionnaires, modern scientists can watch the brain at work, which lets them test theories that could not be tested before."
           ],
           "a": 3,
           "ex": "במקור: חוקרים בעבר הסתמכו בעיקר על שאלונים, ואילו היום אפשר לצפות במוח ישירות ולבדוק תיאוריות שלא היה אפשר לבדוק קודם. התשובה הנכונה מחליפה «Whereas» ב-«Unlike». האפשרות השלישית מחליפה בין העבר להווה.",

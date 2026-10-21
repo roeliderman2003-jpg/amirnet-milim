@@ -1,0 +1,590 @@
+{
+  "title": "סימולציה 8",
+  "level": 2,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The committee's final report was so ___ that even experts in the field struggled to follow its main argument.",
+          "o": [
+            "concise",
+            "obscure",
+            "accessible",
+            "entertaining"
+          ],
+          "a": 1,
+          "ex": "«obscure» = לא ברור, מעורפל. אם אפילו מומחים התקשו לעקוב אחרי הטיעון, הדוח היה לא ברור. «concise» (תמציתי) ו-«accessible» (נגיש) אומרים את ההפך: דוח כזה קל להבנה.",
+          "w": [
+            [
+              "obscure",
+              "לא ברור, מעורפל"
+            ],
+            [
+              "struggle",
+              "להתקשות, להיאבק"
+            ],
+            [
+              "concise",
+              "תמציתי"
+            ]
+          ]
+        },
+        {
+          "q": "The company did not announce any layoffs this year; ___, it hired two hundred new workers last month.",
+          "o": [
+            "on the contrary",
+            "as a result",
+            "for instance",
+            "otherwise"
+          ],
+          "a": 0,
+          "ex": "«on the contrary» = להפך. החברה לא פיטרה, ולהפך: היא אפילו גייסה עובדים חדשים. «as a result» (כתוצאה מכך) לא מתאים, כי היעדר פיטורים לא גורם לגיוס של מאתיים עובדים.",
+          "w": [
+            [
+              "on the contrary",
+              "להפך (דוחה את מה שנאמר)"
+            ],
+            [
+              "layoff",
+              "פיטורים"
+            ]
+          ]
+        },
+        {
+          "q": "To ___ the spread of the disease, health officials closed schools and banned large public gatherings.",
+          "o": [
+            "accelerate",
+            "document",
+            "curb",
+            "justify"
+          ],
+          "a": 2,
+          "ex": "«curb» = לרסן, לבלום. סוגרים בתי ספר ואוסרים התקהלויות כדי לבלום את התפשטות המחלה. «accelerate» (להאיץ) הוא ההפך הגמור ממה שהפקידים רצו.",
+          "w": [
+            [
+              "curb",
+              "לרסן, לבלום"
+            ],
+            [
+              "spread",
+              "התפשטות"
+            ],
+            [
+              "accelerate",
+              "להאיץ"
+            ]
+          ]
+        },
+        {
+          "q": "The new phone sold out within hours, ___ its unusually high price and a number of poor reviews.",
+          "o": [
+            "because of",
+            "in spite of",
+            "in order to",
+            "instead of"
+          ],
+          "a": 1,
+          "ex": "«in spite of» = למרות. מחיר גבוה וביקורות רעות היו אמורים להרחיק קונים, ובכל זאת הטלפון אזל: זה ויתור. «because of» (בגלל) לא הגיוני, כי ביקורות רעות לא גורמות למכירות.",
+          "w": [
+            [
+              "in spite of",
+              "למרות (+שם עצם)"
+            ],
+            [
+              "sell out",
+              "לאזול מהמלאי"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The witness's account was ___ by security camera footage, which showed exactly what she had described.",
+          "o": [
+            "contradicted",
+            "exaggerated",
+            "verified",
+            "postponed"
+          ],
+          "a": 2,
+          "ex": "«verified» = אומת. המצלמה הראתה בדיוק את מה שהעדה תיארה, ולכן הסרטון אישר את דבריה. «contradicted» (הוכחש, נסתר) היה מתאים רק אם הסרטון היה מראה משהו אחר.",
+          "w": [
+            [
+              "verify",
+              "לאמת"
+            ],
+            [
+              "account",
+              "תיאור, דיווח"
+            ],
+            [
+              "contradict",
+              "לסתור"
+            ]
+          ]
+        },
+        {
+          "q": "___ the region's mild climate, it attracts thousands of retirees every winter.",
+          "o": [
+            "Owing to",
+            "Regardless of",
+            "Unlike",
+            "Apart from"
+          ],
+          "a": 0,
+          "ex": "«Owing to» = בשל, עקב. האקלים הנוח הוא הסיבה שפנסיונרים מגיעים בחורף. «Regardless of» (בלי קשר ל...) מנתק את הקשר בין האקלים לבין המבקרים, וזה לא הגיוני.",
+          "w": [
+            [
+              "owing to",
+              "בשל, עקב"
+            ],
+            [
+              "mild",
+              "מתון, נוח"
+            ],
+            [
+              "retiree",
+              "פנסיונר"
+            ]
+          ]
+        },
+        {
+          "q": "Although the two paintings look ___ at first glance, a closer look reveals dozens of small differences.",
+          "o": [
+            "distinct",
+            "ancient",
+            "valuable",
+            "identical"
+          ],
+          "a": 3,
+          "ex": "«identical» = זהים. «Although» מראה ניגוד: במבט ראשון הציורים נראים זהים, אבל מקרוב יש הבדלים. «distinct» (שונים זה מזה) לא יוצר ניגוד להבדלים, ולכן לא מתאים ל-«Although».",
+          "w": [
+            [
+              "identical",
+              "זהה"
+            ],
+            [
+              "although",
+              "למרות ש... (+משפט)"
+            ],
+            [
+              "reveal",
+              "לחשוף, לגלות"
+            ]
+          ]
+        },
+        {
+          "q": "Visitors may enter the nature reserve ___ they stay on the marked trails and do not feed the animals.",
+          "o": [
+            "unless",
+            "provided that",
+            "so that",
+            "even if"
+          ],
+          "a": 1,
+          "ex": "«provided that» = בתנאי ש. מותר להיכנס בתנאי שנשארים בשבילים ולא מאכילים את החיות. «unless» (אלא אם כן) הופך את ההיגיון: לפיו אסור להיכנס דווקא כשמתנהגים כמו שצריך.",
+          "w": [
+            [
+              "provided that",
+              "בתנאי ש..."
+            ],
+            [
+              "unless",
+              "אלא אם כן"
+            ],
+            [
+              "reserve",
+              "שמורה"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "Tomorrow's Problem",
+      "text": [
+        "Almost everyone has postponed an important task while knowing that the delay would only make things worse. For a long time, procrastination was viewed as a simple matter of laziness or poor time management. Psychologists now regard this explanation as incomplete. Studies suggest that many people who procrastinate are not lazy at all; in fact, they often work hard on other, less urgent tasks while the one that really matters is left waiting. This observation led researchers to look for the causes elsewhere.",
+        "According to a growing body of research, procrastination is primarily a problem of managing emotions rather than time. When a task makes us feel anxious, bored or doubtful about our abilities, avoiding it brings immediate relief. That relief, however, is temporary, and it comes at a cost: the unpleasant feelings return, often stronger, as the deadline approaches. Because the brain tends to value an immediate reward more highly than a distant one, the short-term comfort of delay frequently wins over the long-term benefit of finishing the work.",
+        "Researchers have also noticed that people tend to think of their future selves almost as strangers. In one study, brain scans showed that when participants imagined themselves ten years from now, their pattern of brain activity resembled the pattern produced when they thought about other people. This may explain why it feels so easy to leave a difficult job for \"tomorrow's me\": it is, in a sense, someone else's problem.",
+        "Fortunately, these findings also point to practical solutions. Breaking a large project into small, concrete steps makes it seem less threatening, so getting started requires less emotional effort; writing a single paragraph, for example, feels far easier than writing an entire report. Another useful strategy is to forgive oneself for past delays. In one experiment, students who did so procrastinated less before their next exam, presumably because they felt less guilt and anxiety. Finally, picturing one's future self in vivid detail can make that person feel closer and more worth protecting."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "how to manage time more efficiently at work",
+            "the differences between lazy people and hard-working people",
+            "how brain scans are used to study long-term memory",
+            "why people delay tasks and what can help them do so less"
+          ],
+          "a": 3,
+          "ex": "הקטע מסביר למה אנשים דוחים משימות (רגשות, תגמול מיידי, ה«אני» העתידי כזר) ובפסקה האחרונה מה עוזר. ניהול זמן מוזכר רק כהסבר הישן שהחוקרים דוחים, ולכן זו לא התשובה.",
+          "w": [
+            [
+              "procrastinate",
+              "לדחות משימות, להתמהמה"
+            ],
+            [
+              "delay",
+              "לדחות; עיכוב"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, people often avoid an unpleasant task because",
+          "o": [
+            "avoiding it makes them feel better for a short time",
+            "they do not know how to plan their schedule",
+            "they believe the deadline is still very far away",
+            "they prefer to complete tasks together with others"
+          ],
+          "a": 0,
+          "ex": "בפסקה 2 כתוב שהימנעות מהמשימה נותנת «immediate relief» (הקלה מיידית), אבל זמנית. תכנון לוח זמנים הוא בדיוק ההסבר שהפסקה דוחה: הבעיה היא רגשות, לא זמן.",
+          "w": [
+            [
+              "relief",
+              "הקלה"
+            ],
+            [
+              "temporary",
+              "זמני"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ]
+          ]
+        },
+        {
+          "q": "In paragraph 3, the word \"it\" (in \"it is, in a sense, someone else's problem\") refers to",
+          "o": [
+            "the brain scan",
+            "the difficult job",
+            "the study",
+            "the pattern of activity"
+          ],
+          "a": 1,
+          "ex": "המשפט אומר שקל להשאיר עבודה קשה ל«אני של מחר», כי היא בעצם הבעיה של מישהו אחר. «it» חוזר אל «a difficult job». סריקת המוח והמחקר הם לא «בעיה» שמשאירים למחר.",
+          "w": [
+            [
+              "in a sense",
+              "במובן מסוים"
+            ],
+            [
+              "resemble",
+              "להיות דומה ל..."
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from paragraph 3 that people procrastinate partly because they",
+          "o": [
+            "spend too much time thinking about other people",
+            "have less brain activity when they plan ahead",
+            "do not feel strongly connected to the person they will become",
+            "expect to have more free time ten years from now"
+          ],
+          "a": 2,
+          "ex": "לפי פסקה 3, המוח מתייחס ל«אני» העתידי כמו לאדם זר, ולכן קל להעביר אליו את העבודה. כלומר, אין חיבור חזק לאדם שנהיה בעתיד. הפסקה לא אומרת שהפעילות במוח חלשה יותר, רק שהיא דומה לחשיבה על אחרים.",
+          "w": [
+            [
+              "infer",
+              "להסיק"
+            ],
+            [
+              "stranger",
+              "זר"
+            ]
+          ]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": [
+            "present ways of reducing procrastination that are based on the research",
+            "argue that procrastination cannot really be changed",
+            "describe in detail an experiment on brain activity",
+            "criticize the older view that procrastination is laziness"
+          ],
+          "a": 0,
+          "ex": "הפסקה נפתחת ב-«these findings also point to practical solutions» ומונה שלוש דרכים: לפרק משימה לצעדים, לסלוח לעצמך, ולדמיין את ה«אני» העתידי. הביקורת על ההסבר של עצלות מופיעה בפסקה 1, לא באחרונה.",
+          "w": [
+            [
+              "strategy",
+              "אסטרטגיה, דרך פעולה"
+            ],
+            [
+              "forgive",
+              "לסלוח"
+            ],
+            [
+              "presumably",
+              "ככל הנראה"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Because the factory's machines had become too old to repair, the owners decided to replace them all, although this required a large loan from the bank.",
+          "o": [
+            "Because the owners took a large loan from the bank, they were able to repair all of the factory's old machines instead of replacing them with new ones.",
+            "The owners replaced only some of the factory's old machines, since the rest could still be repaired cheaply without taking a large loan from the bank.",
+            "Since the old machines in the factory could no longer be fixed, the owners chose to replace every one of them, even though this meant borrowing heavily from the bank.",
+            "Because the factory's machines were too old to repair, the bank required the owners to replace them all before it would agree to give them a loan."
+          ],
+          "a": 2,
+          "ex": "במקור: המכונות ישנות מדי לתיקון, ולכן הבעלים החליפו את כולן למרות שנדרשה הלוואה גדולה. בתשובה הנכונה «Because» הופך ל-«Since», «although» ל-«even though», ו-«a large loan» ל-«borrowing heavily». «only some» משנה את הכמות, ובאפשרות האחרונה הבנק הוא שדורש, וזה לא במקור.",
+          "w": [
+            [
+              "since",
+              "מכיוון ש..."
+            ],
+            [
+              "even though",
+              "אף על פי ש..."
+            ],
+            [
+              "loan",
+              "הלוואה"
+            ]
+          ]
+        },
+        {
+          "q": "Researchers at the university have shown that regular exposure to natural light during the morning can significantly improve the quality of sleep among night-shift workers.",
+          "o": [
+            "University researchers have shown that night-shift workers actually sleep worse when they are regularly exposed to natural light in the morning hours.",
+            "It has been shown by university researchers that night-shift workers may sleep considerably better if regularly exposed to natural light in the morning.",
+            "University researchers have shown that regular exposure to natural light in the morning considerably improves the sleep of all workers except those who work at night.",
+            "University researchers have shown that night-shift workers need considerably fewer hours of sleep if they regularly spend their mornings outdoors in natural light."
+          ],
+          "a": 1,
+          "ex": "התשובה הנכונה עוברת לסביל («It has been shown by») ומחליפה «significantly» ב-«considerably». «sleep worse» הופך את התוצאה, והאפשרות השלישית מוציאה דווקא את עובדי הלילה, שהם הנושא של המחקר.",
+          "w": [
+            [
+              "exposure",
+              "חשיפה"
+            ],
+            [
+              "significantly",
+              "באופן משמעותי"
+            ],
+            [
+              "considerably",
+              "במידה ניכרת"
+            ]
+          ]
+        },
+        {
+          "q": "While the aquarium's shark tank draws thousands of visitors every summer, its exhibit on local river fish is rarely visited, even by people who live nearby.",
+          "o": [
+            "Both the aquarium's shark tank and its exhibit on local river fish attract thousands of visitors every summer, most of them people who live in the nearby towns.",
+            "The aquarium's exhibit on local river fish is popular mostly with residents of the area, while tourists prefer to visit the shark tank in summer.",
+            "Because its shark tank is so crowded with thousands of visitors in the summer, the aquarium has decided to close its exhibit on local river fish.",
+            "Hardly anyone, not even local residents, visits the aquarium's exhibit on river fish, in contrast to its shark tank, which attracts thousands of visitors each summer."
+          ],
+          "a": 3,
+          "ex": "התשובה הנכונה מתחילה מהחלק השני של המקור ומחליפה «While» ב-«in contrast to», ו-«rarely» ב-«Hardly anyone». «Both» הופך ניגוד להוספה, והאפשרות השנייה טוענת שתושבי האזור כן מבקרים, בניגוד למקור.",
+          "w": [
+            [
+              "while",
+              "בעוד ש... (ניגוד)"
+            ],
+            [
+              "rarely",
+              "לעיתים רחוקות"
+            ],
+            [
+              "hardly",
+              "כמעט לא"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "The study's conclusions should be treated with caution, since the number of participants was small and all of them came from the same neighborhood.",
+          "o": [
+            "Only a few people took part in the study, and they all lived in the same neighborhood; therefore, its conclusions must be treated carefully.",
+            "The researchers were very cautious about choosing participants, so they deliberately selected a small group of people who all came from a single neighborhood.",
+            "Although only a few people took part in the study, its conclusions are fully reliable, since all of the participants came from the same neighborhood.",
+            "The study included a large number of participants, but only some of them came from the same neighborhood, so its conclusions are uncertain."
+          ],
+          "a": 0,
+          "ex": "במקור «since» מציג את הסיבה (מעט משתתפים מאותה שכונה) אחרי המסקנה. בתשובה הנכונה הסיבה באה קודם והמסקנה מגיעה עם «therefore». האפשרות השלישית הופכת את המסקנה ל«אמינות», והרביעית משנה את הכמות («large number», «only some»).",
+          "w": [
+            [
+              "caution",
+              "זהירות"
+            ],
+            [
+              "since",
+              "מכיוון ש..."
+            ],
+            [
+              "therefore",
+              "לכן"
+            ]
+          ]
+        },
+        {
+          "q": "Unless farmers in the region find new sources of water within the next decade, many of them will have to stop growing crops that need heavy irrigation.",
+          "o": [
+            "Even if farmers in the region find new sources of water in the next decade, most of them will still stop growing crops that need a lot of irrigation.",
+            "Farmers in the region have already found new sources of water, so in the next decade they will be able to grow more crops that need heavy irrigation.",
+            "If farmers in the region do not find new water sources in the next ten years, many of them will have to stop growing crops that depend on heavy irrigation.",
+            "Unless farmers in the region stop growing crops that need heavy irrigation, they will have used up all of the region's available water within the next ten years."
+          ],
+          "a": 2,
+          "ex": "«Unless» = אלא אם כן, כלומר «if ... not». התשובה הנכונה מחליפה את «Unless» ב-«If ... do not» ושומרת על אותו תנאי ואותה תוצאה. «Even if» מבטל את התנאי, והאפשרות האחרונה הופכת את מה שתלוי במה.",
+          "w": [
+            [
+              "unless",
+              "אלא אם כן"
+            ],
+            [
+              "if",
+              "אם"
+            ],
+            [
+              "irrigation",
+              "השקיה"
+            ]
+          ]
+        },
+        {
+          "q": "The city planted thousands of trees along its main streets not only to provide shade for pedestrians but also to lower the temperature of the surrounding buildings.",
+          "o": [
+            "The city planted thousands of trees along its main streets to shade pedestrians from the sun, rather than to lower the temperature of the nearby buildings.",
+            "In addition to giving pedestrians shade, the thousands of trees that the city planted along its main streets were meant to cool the nearby buildings.",
+            "Since pedestrians had complained about the heat, the city planted a few trees on its main streets to cool the surrounding buildings.",
+            "The temperature of the buildings along the city's main streets dropped, so pedestrians began planting thousands of trees themselves to create more shade."
+          ],
+          "a": 1,
+          "ex": "במקור יש שתי מטרות יחד («not only... but also»). התשובה הנכונה שומרת על שתיהן עם «In addition to». «rather than» משאיר רק מטרה אחת, והאפשרות השלישית משנה את הכמות («a few») ומוסיפה סיבה שלא במקור.",
+          "w": [
+            [
+              "not only... but also",
+              "לא רק... אלא גם"
+            ],
+            [
+              "in addition to",
+              "בנוסף ל... (+שם עצם)"
+            ],
+            [
+              "pedestrian",
+              "הולך רגל"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The scientist's early findings were ___ at best; only later experiments produced clear and reliable results.",
+          "o": [
+            "conclusive",
+            "celebrated",
+            "fraudulent",
+            "tentative"
+          ],
+          "a": 3,
+          "ex": "«tentative» = זמני, לא סופי, לא בטוח. רק ניסויים מאוחרים יותר נתנו תוצאות ברורות, ולכן הממצאים הראשונים היו לא חד-משמעיים. «conclusive» (חד-משמעי, מכריע) הוא בדיוק ההפך.",
+          "w": [
+            [
+              "tentative",
+              "זמני, לא ודאי"
+            ],
+            [
+              "conclusive",
+              "חד-משמעי, מכריע"
+            ],
+            [
+              "reliable",
+              "אמין"
+            ]
+          ]
+        },
+        {
+          "q": "The medicine works quickly, but its effect lasts ___ two hours, which is why some patients must take it as often as ten times a day.",
+          "o": [
+            "at most",
+            "at least",
+            "far beyond",
+            "no less than"
+          ],
+          "a": 0,
+          "ex": "«at most» = לכל היותר. ההשפעה קצרה, ולכן צריך לקחת את התרופה הרבה פעמים ביום. «at least» (לפחות) ו-«no less than» מרמזים על השפעה ארוכה, וזה לא מסביר למה צריך עשר מנות ביום.",
+          "w": [
+            [
+              "at most",
+              "לכל היותר"
+            ],
+            [
+              "at least",
+              "לפחות"
+            ]
+          ]
+        },
+        {
+          "q": "Critics argued that the new law would ___ the rights of workers rather than protect them.",
+          "o": [
+            "safeguard",
+            "expand",
+            "clarify",
+            "erode"
+          ],
+          "a": 3,
+          "ex": "«erode» = לשחוק, לכרסם. «rather than protect» מראה שהמבקרים חששו מההפך מהגנה: פגיעה הדרגתית בזכויות. «safeguard» (לשמור על) הוא כמעט מילה נרדפת ל-«protect», ולכן לא יוצר ניגוד.",
+          "w": [
+            [
+              "erode",
+              "לשחוק, לכרסם"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "safeguard",
+              "לשמור על, להגן"
+            ]
+          ]
+        },
+        {
+          "q": "The novel was completed in 1920; ___, it remained unpublished until 1965, long after the author's death.",
+          "o": [
+            "accordingly",
+            "likewise",
+            "nonetheless",
+            "for instance"
+          ],
+          "a": 2,
+          "ex": "«nonetheless» = בכל זאת, למרות זאת. הרומן היה גמור, ולמרות זאת לא פורסם עשרות שנים: יש כאן ניגוד. «accordingly» (בהתאם לכך) לא מתאים, כי סיום הכתיבה לא גורם לכך שהספר לא יפורסם.",
+          "w": [
+            [
+              "nonetheless",
+              "בכל זאת, למרות זאת"
+            ],
+            [
+              "accordingly",
+              "בהתאם לכך, לכן"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

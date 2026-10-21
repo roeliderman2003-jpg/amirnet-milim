@@ -1,0 +1,254 @@
+{
+  "title": "סימולציה 10",
+  "level": 3,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The committee's report was deliberately ___, offering broad recommendations while avoiding any specific commitment that might later prove embarrassing.",
+          "o": ["meticulous", "candid", "vague", "lavish"],
+          "a": 2,
+          "ex": "«vague» = מעורפל, לא ברור. הדוח נמנע בכוונה מהתחייבות ספציפית ונתן רק המלצות כלליות, כלומר הוא מעורפל. «meticulous» (קפדני, מדוקדק) ו-«candid» (גלוי, כן) הם בדיוק ההפך מדוח שמתחמק מפרטים.",
+          "w": [["vague", "מעורפל, לא ברור"], ["deliberately", "בכוונה"], ["commitment", "התחייבות"]]
+        },
+        {
+          "q": "The theory was widely ridiculed when it was first proposed; ___, within two decades it had become the accepted explanation among geologists.",
+          "o": ["consequently", "nonetheless", "likewise", "namely"],
+          "a": 1,
+          "ex": "«nonetheless» = למרות זאת. בהתחלה לעגו לתיאוריה, ובכל זאת היא התקבלה: יש כאן ניגוד. «consequently» (כתוצאה מכך) לא מתאים, כי הלעג לא גרם לתיאוריה להתקבל.",
+          "w": [["nonetheless", "בכל זאת, למרות זאת"], ["ridicule", "ללעוג ל..."]]
+        },
+        {
+          "q": "Years of drought had so ___ the soil that even after heavy rains, the farmers' crops failed to recover.",
+          "o": ["depleted", "enriched", "replenished", "insulated"],
+          "a": 0,
+          "ex": "«deplete» = לרוקן, לדלדל. הבצורת דלדלה את האדמה, ולכן היבולים לא התאוששו גם אחרי גשם. «enriched» ו-«replenished» (העשיר, מילא מחדש) הם ההפך, ואז היבול היה אמור להצליח.",
+          "w": [["deplete", "לדלדל, לרוקן"], ["replenish", "למלא מחדש"]]
+        },
+        {
+          "q": "___ the museum receives additional funding, several of its galleries will have to close by the end of the year.",
+          "o": ["Provided that", "Since", "Whereas", "Unless"],
+          "a": 3,
+          "ex": "«Unless» = אלא אם כן. האולמות ייסגרו, אלא אם כן המוזיאון יקבל עוד כסף. «Provided that» (בתנאי ש...) היה אומר שהכסף הנוסף הוא מה שיגרום לסגירה, וזה לא הגיוני.",
+          "w": [["unless", "אלא אם כן"], ["provided that", "בתנאי ש..."]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The senator's remarks were widely condemned as ___, since they appeared to encourage hostility toward an entire community.",
+          "o": ["conciliatory", "tedious", "inconspicuous", "inflammatory"],
+          "a": 3,
+          "ex": "«inflammatory» = מסית, מלבה יצרים. דברים שמעודדים עוינות כלפי קהילה שלמה הם מסיתים. «conciliatory» (מפייס) הוא ההפך, ו-«tedious» (משעמם) לא קשור לעידוד עוינות.",
+          "w": [["inflammatory", "מסית, מלבה יצרים"], ["conciliatory", "מפייס"], ["hostility", "עוינות"]]
+        },
+        {
+          "q": "The novel received little attention from critics when it first appeared, ___ it went on to sell millions of copies and was translated into forty languages.",
+          "o": ["so", "for", "yet", "as"],
+          "a": 2,
+          "ex": "«yet» = ובכל זאת, אך. המבקרים כמעט התעלמו מהספר, ובכל זאת הוא נמכר במיליונים: ניגוד. «so» (לכן) היה אומר שההתעלמות גרמה להצלחה, וזה לא הגיוני.",
+          "w": [["yet", "ובכל זאת, אך"]]
+        },
+        {
+          "q": "Although the two scientists worked independently on different continents, they arrived at remarkably ___ conclusions about the origin of the disease.",
+          "o": ["divergent", "analogous", "obscure", "tentative"],
+          "a": 1,
+          "ex": "«analogous» = דומה, מקביל. המילה «Although» מראה שמשהו מפתיע: למרות שעבדו בנפרד, הם הגיעו למסקנות דומות. «divergent» (שונות זו מזו) לא היה מפתיע בכלל, ולכן לא מתאים ל-«Although».",
+          "w": [["analogous", "דומה, מקביל"], ["divergent", "שונה, מתפצל"], ["although", "למרות ש..."]]
+        },
+        {
+          "q": "The city has introduced strict water quotas ___ its reservoirs run dry before the rainy season arrives.",
+          "o": ["lest", "once", "so that", "whereas"],
+          "a": 0,
+          "ex": "«lest» = כדי שלא, פן. העירייה הגבילה את המים כדי שהמאגרים לא יתרוקנו. «so that» (כדי ש...) היה אומר שהמטרה היא לרוקן את המאגרים, וזה הפוך מההיגיון.",
+          "w": [["lest", "פן, כדי שלא"], ["quota", "מכסה"], ["reservoir", "מאגר מים"]]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "After the Bleaching: Why Some Reefs Return and Others Do Not",
+      "text": [
+        "Coral reefs owe their existence to a partnership. Inside the tissues of each coral live microscopic algae that, through photosynthesis, supply the coral with most of the energy it needs. This arrangement, however, is remarkably sensitive to heat. When the water stays only one or two degrees above its usual summer maximum for several weeks, the corals expel their algae and, stripped of their color, turn white. A bleached coral is not yet dead. If temperatures drop quickly, the algae can return within weeks; if the heat persists, the coral gradually starves, and its skeleton is soon covered by seaweed.",
+        "When large numbers of corals die, a reef's recovery depends largely on new arrivals. Surviving colonies release larvae, which drift with the currents until they settle on a hard surface. Reefs that are well connected to healthy reefs upstream therefore tend to recover faster than isolated ones. Yet larvae are demanding: they attach readily to clean, bare rock but struggle where seaweed has taken over. This is why plant-eating fish, which graze the seaweed down, play a surprisingly important role: reefs where catching them is restricted often recover faster.",
+        "Even under favorable conditions, recovery is slow and uneven. Fast-growing branching corals may restore much of a reef's cover within a decade, whereas massive, dome-shaped species, some of which are several centuries old, may need far longer to replace themselves. A return of coral cover can therefore be deceptive. A reef may appear healthy while its composition has shifted toward a few fast-growing species, and these happen to be among the most vulnerable to heat.",
+        "The greatest threat, scientists argue, is no longer the severity of individual bleaching events but their frequency. Until recently, severe episodes were separated by decades, which gave reefs time to rebuild. As the oceans warm, that interval has shrunk in some regions to only a few years. Local measures, such as protecting grazing fish and reducing pollution, can speed recovery, but they cannot on their own make up for gaps that are simply too short. Some researchers are now trying to breed corals that tolerate higher temperatures; others warn that such efforts can, at best, buy reefs time."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": [
+            "Why Corals Turn White in Warm Water",
+            "What Determines Whether Reefs Recover from Bleaching",
+            "How Overfishing Has Destroyed the World's Reefs",
+            "Heat-Tolerant Corals: A Solution Within Reach"
+          ],
+          "a": 1,
+          "ex": "הקטע עוסק כולו בשאלה מה קובע אם שונית מתאוששת אחרי הלבנה: זרמים, דגים, קצב גדילה ותדירות האירועים. «Why Corals Turn White» מתאים רק לפסקה הראשונה, ולכן הוא צר מדי.",
+          "w": [["recover", "להתאושש"], ["bleaching", "הלבנה (של אלמוגים)"]]
+        },
+        {
+          "q": "According to the second paragraph, plant-eating fish help reefs recover because they",
+          "o": [
+            "carry coral larvae from healthy reefs to damaged ones",
+            "feed on the algae that bleached corals expel",
+            "protect young corals from fish that eat them",
+            "keep the rock clear enough for larvae to attach to it"
+          ],
+          "a": 3,
+          "ex": "בפסקה 2 כתוב שהלרוות נאחזות בסלע נקי וחשוף ומתקשות במקום שהאצות השתלטו עליו, והדגים אוכלים את האצות. כלומר הם שומרים על הסלע נקי. את הלרוות מביאים הזרמים, לא הדגים.",
+          "w": [["graze", "ללחך, לאכול צמחייה"], ["larvae", "זחלים, לרוות"], ["attach", "להיצמד"]]
+        },
+        {
+          "q": "In the third paragraph, the word 'deceptive' could best be replaced by",
+          "o": ["misleading", "encouraging", "temporary", "accurate"],
+          "a": 0,
+          "ex": "«deceptive» = מטעה. המשפט שאחריו מסביר: השונית נראית בריאה, אבל בפועל היא השתנתה. «encouraging» (מעודד) מפתה, כי כיסוי אלמוגים שחוזר נראה חיובי, אבל הפסקה מדגישה שהמראה מטעה.",
+          "w": [["deceptive", "מטעה"], ["composition", "הרכב"]]
+        },
+        {
+          "q": "The third paragraph mainly serves to",
+          "o": [
+            "explain why branching corals withstand heat better than massive ones",
+            "show that all coral species need about a decade to recover",
+            "warn that a reef that looks recovered may have changed in important ways",
+            "describe how scientists determine the age of massive corals"
+          ],
+          "a": 2,
+          "ex": "עיקר הפסקה: שונית שנראית מבריאה יכולה להיות מורכבת ממינים אחרים, רגישים יותר לחום. התשובה הראשונה הפוכה: לפי הקטע, האלמוגים המהירים דווקא מהפגיעים ביותר לחום.",
+          "w": [["uneven", "לא אחיד"], ["vulnerable", "פגיע"]]
+        },
+        {
+          "q": "It can be inferred from the last paragraph that local measures such as protecting grazing fish",
+          "o": [
+            "have become unnecessary now that heat-tolerant corals can be bred",
+            "are the main reason that bleaching events now occur more often",
+            "work only in regions where bleaching occurs every few years",
+            "can help reefs recover but are not enough if bleaching becomes too frequent"
+          ],
+          "a": 3,
+          "ex": "כתוב שהצעדים המקומיים מאיצים התאוששות, אבל לא יכולים לבדם לפצות על מרווחים קצרים מדי. כלומר הם עוזרים אבל לא מספיקים. אין בקטע שום טענה שהגידול של אלמוגים עמידים כבר מצליח או שהוא מייתר אותם.",
+          "w": [["make up for", "לפצות על"], ["frequency", "תדירות"], ["at best", "במקרה הטוב"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Cities with more public parks tend to report lower rates of depression among their residents, although researchers have not established whether the parks themselves are responsible for this difference.",
+          "o": [
+            "Researchers have shown that public parks lower rates of depression, which explains why residents of cities with more parks report being less depressed than others.",
+            "Residents of cities with fewer public parks tend to report lower rates of depression, a pattern that researchers have so far been unable to fully explain.",
+            "Depression is generally less common in cities that have more public parks, but it remains unclear whether the parks actually cause residents to be less depressed.",
+            "Although cities with more public parks have lower rates of depression, researchers are convinced that the parks have nothing to do with their residents' mental health."
+          ],
+          "a": 2,
+          "ex": "במשפט המקורי יש קשר (יותר פארקים, פחות דיכאון) אבל לא הוכח שהפארקים הם הסיבה. התשובה הנכונה שומרת על זה: «it remains unclear whether the parks actually cause». התשובה הראשונה מציגה את הקשר כהוכחה של סיבה ותוצאה, וזה לא נאמר.",
+          "w": [["although", "למרות ש..."], ["establish", "לקבוע, להוכיח"], ["be responsible for", "להיות הגורם ל..."]]
+        },
+        {
+          "q": "Only a handful of the ancient city's original buildings survived the earthquake intact, yet archaeologists were able to reconstruct much of its layout from the foundations that remained beneath the rubble.",
+          "o": [
+            "Although very few of the ancient city's original buildings came through the earthquake undamaged, archaeologists managed to recreate a large part of its plan using the foundations left under the ruins.",
+            "Most of the ancient city's original buildings survived the earthquake undamaged, so archaeologists could easily reconstruct its layout without having to dig through the rubble to reach the foundations.",
+            "Because only a few of the ancient city's buildings survived the earthquake, archaeologists could reconstruct barely any of its layout, even though the foundations beneath the rubble remained.",
+            "Archaeologists reconstructed the entire layout of the ancient city from its foundations, and as a result, a handful of its original buildings were restored to their condition before the earthquake."
+          ],
+          "a": 0,
+          "ex": "«Only a handful» = רק מעט מאוד, ו-«much of its layout» = חלק גדול מהתוכנית. התשובה הנכונה שומרת על שתי הכמויות. «Most» הופך את «מעט» ל«רוב», ו-«barely any» הופך את «הרבה» ל«כמעט כלום».",
+          "w": [["a handful", "קומץ, מעט מאוד"], ["intact", "שלם, ללא פגע"], ["yet", "ובכל זאת, אך"]]
+        },
+        {
+          "q": "The new vaccine proved highly effective among adults under sixty, but the trial included too few elderly participants to determine whether it offers the same protection to older people.",
+          "o": [
+            "The trial showed that the new vaccine is highly effective among adults under sixty but offers considerably less protection to older people, who took part in smaller numbers.",
+            "The new vaccine proved highly effective among people of all ages, although the trial included fewer elderly participants than the researchers had originally planned to recruit.",
+            "Because too many elderly people took part in the trial, researchers were unable to determine how effective the new vaccine is among adults who are younger than sixty.",
+            "Although the new vaccine worked very well for adults younger than sixty, too few older participants took part in the trial to show whether it protects them equally well."
+          ],
+          "a": 3,
+          "ex": "המקור אומר שלגבי המבוגרים פשוט אין מספיק מידע. התשובה הראשונה טוענת שהחיסון מגן עליהם פחות, וזו טענה שלא נאמרה. התשובה השנייה מרחיבה את ההצלחה ל«all ages», וזו טעות בהיקף.",
+          "w": [["participant", "משתתף"], ["determine", "לקבוע"], ["elderly", "קשישים"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Owing to a sharp rise in the cost of imported grain, many small bakeries have been forced to raise their prices, while several others have closed altogether.",
+          "o": [
+            "Many small bakeries have raised their prices or closed altogether, and as a result, the cost of imported grain has risen sharply over the past several months.",
+            "Since imported grain has become much more expensive, a large number of small bakeries have had to charge more, and some have even shut down completely.",
+            "In spite of a sharp rise in the cost of imported grain, most small bakeries have managed to keep their prices low, and only a few have closed down.",
+            "A sharp rise in the cost of imported grain has forced all small bakeries to raise their prices, and many of them are now considering closing altogether."
+          ],
+          "a": 1,
+          "ex": "«Owing to» = בשל, עקב: התייקרות הדגן היא הסיבה, והעלאת המחירים והסגירה הן התוצאה. בתשובה הראשונה הסיבה והתוצאה התהפכו. בתשובה האחרונה «many» הפך ל«all», והמאפיות שנסגרו הפכו למאפיות ש«שוקלות» להיסגר.",
+          "w": [["owing to", "בשל, עקב"], ["as a result", "כתוצאה מכך"], ["in spite of", "למרות"]]
+        },
+        {
+          "q": "Far from discouraging further research, the failure of the first experiment led the team to question an assumption that had previously been accepted by almost everyone in the field.",
+          "o": [
+            "Rather than putting the team off further research, the unsuccessful first experiment caused the researchers to doubt an assumption that nearly all experts in the field had formerly taken for granted.",
+            "The failure of the first experiment discouraged the team from carrying out further research, since it showed that an assumption accepted by almost everyone in the field was in fact correct.",
+            "Although the first experiment failed, the team continued its research, largely because almost everyone in the field had warned them not to question an assumption that was widely accepted.",
+            "The team questioned an assumption accepted by only a few researchers in the field, and this eventually caused the first experiment to fail and all further research to come to a stop."
+          ],
+          "a": 0,
+          "ex": "«Far from discouraging» = לא רק שלא ריפה את ידיהם, אלא להפך. הכישלון גרם לצוות לפקפק בהנחה מקובלת. «Rather than» שומר על המשמעות הזו. התשובה השנייה הופכת את ההיגיון (הכישלון כן עצר את המחקר), והאחרונה הופכת את «almost everyone» ל«only a few».",
+          "w": [["rather than", "במקום, ולא"], ["far from", "רחוק מ..., להפך מ..."], ["take for granted", "לקבל כמובן מאליו"]]
+        },
+        {
+          "q": "The committee's findings, while by no means conclusive, lend considerable support to the view that the bridge collapsed because of design flaws rather than poor maintenance.",
+          "o": [
+            "The committee's findings prove beyond any doubt that the bridge collapsed because of design flaws, although poor maintenance may also have played some part in its collapse.",
+            "Although the committee's findings are not conclusive, they strongly suggest that the bridge collapsed mainly because it was poorly maintained over time rather than because it was badly designed.",
+            "Although they do not settle the matter, the committee's findings strongly back the claim that defects in the bridge's design, and not inadequate upkeep, caused it to collapse.",
+            "The committee's findings offer little support to the view that design flaws caused the bridge to collapse, since they are by no means conclusive about its maintenance."
+          ],
+          "a": 2,
+          "ex": "«by no means conclusive» = בשום אופן לא חד משמעיים, ובכל זאת הממצאים תומכים מאוד בכך שהסיבה היא תכנון לקוי ולא תחזוקה. התשובה הראשונה טוענת «prove beyond any doubt», וזה סותר את «not conclusive». התשובה השנייה הופכת את הסיבה.",
+          "w": [["by no means", "בשום אופן לא"], ["conclusive", "חד משמעי, מכריע"], ["rather than", "במקום, ולא"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Critics argued that the new regulations were merely ___, designed to reassure the public rather than to bring about any real change.",
+          "o": ["radical", "cosmetic", "rigorous", "retroactive"],
+          "a": 1,
+          "ex": "«cosmetic» = שטחי, למראית עין. תקנות שנועדו רק להרגיע את הציבור ולא לשנות באמת הן קוסמטיות. «radical» (קיצוני, יסודי) ו-«rigorous» (קפדני) הם ההפך משינוי שאינו אמיתי.",
+          "w": [["cosmetic", "שטחי, למראית עין"], ["merely", "רק, לא יותר מ..."], ["reassure", "להרגיע"]]
+        },
+        {
+          "q": "The region's economy relies ___ on tourism, so the sudden drop in foreign visitors has had devastating consequences.",
+          "o": ["seldom", "barely", "solely", "hardly"],
+          "a": 2,
+          "ex": "«solely» = אך ורק. אם הכלכלה נשענת רק על תיירות, ירידה בתיירים הרסנית, ולכן «so» הגיוני. «barely» ו-«hardly» (כמעט לא) היו אומרים שהתיירות כמעט לא חשובה, ואז הירידה לא הייתה הרסנית.",
+          "w": [["solely", "אך ורק, בלעדית"], ["barely", "בקושי, כמעט לא"], ["devastating", "הרסני"]]
+        },
+        {
+          "q": "The negotiations reached a ___ when neither side was willing to make any further concessions.",
+          "o": ["consensus", "milestone", "prerequisite", "deadlock"],
+          "a": 3,
+          "ex": "«deadlock» = מבוי סתום. כששני הצדדים מסרבים לוותר, המשא ומתן נתקע. «consensus» (הסכמה כללית) הוא ההפך: כשאף צד לא מוותר, אין הסכמה.",
+          "w": [["deadlock", "מבוי סתום, קיפאון"], ["concession", "ויתור"], ["consensus", "הסכמה רחבה"]]
+        },
+        {
+          "q": "___, the new method is more expensive than the traditional one, but the savings it produces over time more than justify the initial cost.",
+          "o": ["Admittedly", "Consequently", "Likewise", "Conversely"],
+          "a": 0,
+          "ex": "«Admittedly» = יש להודות ש... מודים בחיסרון (השיטה יקרה יותר), ואז ה-«but» מציג את היתרון שגובר עליו. «Consequently» (כתוצאה מכך) לא מתאים, כי אין כאן תוצאה של משהו שנאמר קודם.",
+          "w": [["admittedly", "יש להודות ש..."], ["justify", "להצדיק"]]
+        }
+      ]
+    }
+  ]
+}

@@ -7,31 +7,87 @@
       "qs": [
         {
           "q": "Many students drink coffee in the evening ___ they have to study late for their exams.",
-          "o": ["unless", "because", "although", "whereas"],
+          "o": [
+            "unless",
+            "because",
+            "although",
+            "whereas"
+          ],
           "a": 1,
           "ex": "«because» = כי, מפני ש. החלק השני (צריך ללמוד עד מאוחר) הוא הסיבה לחלק הראשון (שותים קפה בערב). «although» היה יוצר ניגוד, אבל אין כאן שום ניגוד.",
-          "w": [["because", "כי, מפני ש..."], ["although", "למרות ש..."]]
+          "w": [
+            [
+              "because",
+              "כי, מפני ש..."
+            ],
+            [
+              "although",
+              "למרות ש..."
+            ]
+          ]
         },
         {
           "q": "Doctors say that regular exercise can ___ your sleep, so people who walk every day often rest better at night.",
-          "o": ["improve", "avoid", "delay", "waste"],
+          "o": [
+            "improve",
+            "avoid",
+            "delay",
+            "waste"
+          ],
           "a": 0,
           "ex": "«improve» = לשפר. סוף המשפט אומר שמי שהולך כל יום ישן טוב יותר, ולכן הפעילות משפרת את השינה. «delay» (לדחות) או «waste» (לבזבז) היו אומרים שהשינה נפגעת.",
-          "w": [["improve", "לשפר"], ["regular", "קבוע, סדיר"]]
+          "w": [
+            [
+              "improve",
+              "לשפר"
+            ],
+            [
+              "regular",
+              "קבוע, סדיר"
+            ]
+          ]
         },
         {
           "q": "___ the museum is free on Sundays, very few people visit it during the winter.",
-          "o": ["Since", "Unless", "As soon as", "Although"],
+          "o": [
+            "Since",
+            "Unless",
+            "As soon as",
+            "Although"
+          ],
           "a": 3,
           "ex": "«Although» = למרות ש. היינו מצפים שכניסה חינם תביא הרבה מבקרים, אבל מגיעים מעט: זה ניגוד, ולכן צריך מילת ויתור. «Since» (מכיוון ש) היה אומר שהכניסה החינמית היא הסיבה לכך שמעטים מגיעים, וזה לא הגיוני.",
-          "w": [["although", "למרות ש..."], ["since", "מכיוון ש..."]]
+          "w": [
+            [
+              "although",
+              "למרות ש..."
+            ],
+            [
+              "since",
+              "מכיוון ש..."
+            ]
+          ]
         },
         {
           "q": "The number of small shops in the town center has ___ sharply in recent years, as more people now buy everything online.",
-          "o": ["appeared", "repaired", "declined", "celebrated"],
+          "o": [
+            "appeared",
+            "repaired",
+            "declined",
+            "celebrated"
+          ],
           "a": 2,
           "ex": "«decline» = לרדת, לפחות. אנשים קונים באינטרנט, ולכן מספר החנויות ירד. «sharply» (בחדות) מתאר שינוי בכמות, וזה מתאים רק ל-«declined».",
-          "w": [["decline", "לרדת, לפחות"], ["sharply", "בחדות"]]
+          "w": [
+            [
+              "decline",
+              "לרדת, לפחות"
+            ],
+            [
+              "sharply",
+              "בחדות"
+            ]
+          ]
         }
       ]
     },
@@ -40,31 +96,87 @@
       "qs": [
         {
           "q": "To save money, Dana decided to cook dinner at home ___ eating at an expensive restaurant every night.",
-          "o": ["because of", "in addition to", "instead of", "as a result of"],
+          "o": [
+            "because of",
+            "in addition to",
+            "instead of",
+            "as a result of"
+          ],
           "a": 2,
           "ex": "«instead of» = במקום. כדי לחסוך, דנה מבשלת בבית במקום לאכול במסעדה יקרה. «in addition to» (בנוסף ל) היה אומר שהיא גם אוכלת במסעדה כל ערב, וזה לא חוסך כסף.",
-          "w": [["instead of", "במקום (+שם עצם / ing)"], ["in addition to", "בנוסף ל... (+שם עצם)"]]
+          "w": [
+            [
+              "instead of",
+              "במקום (+שם עצם / ing)"
+            ],
+            [
+              "in addition to",
+              "בנוסף ל... (+שם עצם)"
+            ]
+          ]
         },
         {
           "q": "Because infections spread easily, most hospitals ___ visitors to wash their hands; anyone who refuses is not allowed to enter.",
-          "o": ["forbid", "require", "pay", "encourage"],
+          "o": [
+            "forbid",
+            "require",
+            "pay",
+            "encourage"
+          ],
           "a": 1,
           "ex": "«require» = לדרוש, לחייב. מי שמסרב לא נכנס, כלומר זו חובה ולא המלצה. «encourage» (לעודד) מפתה, אבל עידוד לא בא עם עונש למי שמסרב.",
-          "w": [["require", "לדרוש, לחייב"], ["refuse", "לסרב"]]
+          "w": [
+            [
+              "require",
+              "לדרוש, לחייב"
+            ],
+            [
+              "refuse",
+              "לסרב"
+            ]
+          ]
         },
         {
           "q": "You will not be able to join the trip ___ you return the signed form by Friday.",
-          "o": ["unless", "because", "so that", "although"],
+          "o": [
+            "unless",
+            "because",
+            "so that",
+            "although"
+          ],
           "a": 0,
           "ex": "«unless» = אלא אם כן. לא תוכל להצטרף לטיול אלא אם תחזיר את הטופס: זה תנאי. «because» היה אומר שהחזרת הטופס היא הסיבה שלא תצטרף, וזה הפוך מההיגיון.",
-          "w": [["unless", "אלא אם כן"], ["so that", "כדי ש... (+משפט)"]]
+          "w": [
+            [
+              "unless",
+              "אלא אם כן"
+            ],
+            [
+              "so that",
+              "כדי ש... (+משפט)"
+            ]
+          ]
         },
         {
           "q": "Archaeologists found ___ coins in the desert that were used by traders more than two thousand years ago.",
-          "o": ["modern", "plastic", "electronic", "ancient"],
+          "o": [
+            "modern",
+            "plastic",
+            "electronic",
+            "ancient"
+          ],
           "a": 3,
           "ex": "«ancient» = עתיק. מטבעות שהשתמשו בהם לפני יותר מאלפיים שנה הם עתיקים. «modern» (מודרני) הוא בדיוק ההפך.",
-          "w": [["ancient", "עתיק"], ["trader", "סוחר"]]
+          "w": [
+            [
+              "ancient",
+              "עתיק"
+            ],
+            [
+              "trader",
+              "סוחר"
+            ]
+          ]
         }
       ]
     },
@@ -88,7 +200,16 @@
           ],
           "a": 1,
           "ex": "הקטע כולו עוסק בשתי שאלות: למה ציפורים נודדות בלילה (פסקאות 2-3) ואיך הן מוצאות את הדרך בחושך (פסקה 4). הנצים מוזכרים רק במשפט אחד, ולכן זו לא התשובה הכללית.",
-          "w": [["migrate", "לנדוד"], ["mainly", "בעיקר"]]
+          "w": [
+            [
+              "migrate",
+              "לנדוד"
+            ],
+            [
+              "mainly",
+              "בעיקר"
+            ]
+          ]
         },
         {
           "q": "According to the second paragraph, one advantage of flying at night is that",
@@ -100,14 +221,37 @@
           ],
           "a": 3,
           "ex": "בפסקה 2 כתוב שבשמש חמה ציפורים קטנות מאבדות יותר מדי מים, ושאוויר הלילה הקריר עוזר להן להימנע מזה. לגבי הנצים כתוב ההפך: הם צדים בעיקר ביום.",
-          "w": [["advantage", "יתרון"], ["avoid", "להימנע מ..."]]
+          "w": [
+            [
+              "advantage",
+              "יתרון"
+            ],
+            [
+              "avoid",
+              "להימנע מ..."
+            ]
+          ]
         },
         {
           "q": "In the third paragraph, the word 'they' in 'so they replace the energy' refers to",
-          "o": ["the birds", "the fields and forests", "the days", "the hunters"],
+          "o": [
+            "the birds",
+            "the fields and forests",
+            "the days",
+            "the hunters"
+          ],
           "a": 0,
           "ex": "מי שנח ואוכל ביום וכך ממלא את האנרגיה שבזבז בלילה הן הציפורים. שדות ויערות הם רק המקום שבו הן נחות.",
-          "w": [["replace", "להחליף, למלא מחדש"], ["energy", "אנרגיה, כוח"]]
+          "w": [
+            [
+              "replace",
+              "להחליף, למלא מחדש"
+            ],
+            [
+              "energy",
+              "אנרגיה, כוח"
+            ]
+          ]
         },
         {
           "q": "The main purpose of the last sentence of the passage is to",
@@ -119,7 +263,16 @@
           ],
           "a": 2,
           "ex": "המשפט האחרון מתחיל ב-«For this reason» (מסיבה זו): בגלל שהאורות מבלבלים את הציפורים, ערים מבקשות לכבות אורות מיותרים. זה צעד שנועד להגן עליהן. הקטע לא אומר שציפורים מעדיפות ערים.",
-          "w": [["for this reason", "מסיבה זו"], ["unnecessary", "מיותר"]]
+          "w": [
+            [
+              "for this reason",
+              "מסיבה זו"
+            ],
+            [
+              "unnecessary",
+              "מיותר"
+            ]
+          ]
         },
         {
           "q": "It can be inferred from paragraph 3 that if birds could not stop during the day,",
@@ -131,7 +284,16 @@
           ],
           "a": 1,
           "ex": "בפסקה 3 כתוב שבלי העצירות היומיות מעט ציפורים (few birds) היו מצליחות להשלים את המסע. כלומר רובן לא היו מסיימות אותו. אין בקטע שום דבר על טיסה מהירה יותר.",
-          "w": [["infer", "להסיק"], ["few", "מעט (כמעט אין)"]]
+          "w": [
+            [
+              "infer",
+              "להסיק"
+            ],
+            [
+              "few",
+              "מעט (כמעט אין)"
+            ]
+          ]
         }
       ]
     },
@@ -141,38 +303,77 @@
         {
           "q": "Although the new bridge cost much more than planned, most residents believe it was worth the money because it cut their travel time in half.",
           "o": [
-            "Because the new bridge cost much more than planned, most residents believe it was not worth the money.",
-            "Most residents believe the new bridge was worth the money, since it cost less than planned and cut their travel time.",
+            "Because the new bridge cost much more than planned, most residents believe it was not worth the money, even though it cut their travel time.",
+            "Most residents believe the new bridge was worth the money, since it cost less than planned and cut their travel time in half.",
             "The new bridge was far more expensive than expected; nevertheless, most residents think it was a good investment, since it halved their travel time.",
-            "Only a few residents think the new bridge was worth the money, even though it cut their travel time in half."
+            "Only a few residents think the new bridge was a good investment, even though it cost more than planned and cut their travel time in half."
           ],
           "a": 2,
           "ex": "«Although» הוחלף ב-«nevertheless» (למרות זאת), ו-«cut in half» הוחלף ב-«halved». המשמעות זהה: הגשר יקר, ובכל זאת רוב התושבים חושבים שהוא שווה. בתשובה האחרונה «Only a few» (רק מעטים) הופך את «most» (רוב).",
-          "w": [["nevertheless", "למרות זאת, אף על פי כן"], ["worth", "שווה"], ["resident", "תושב"]]
+          "w": [
+            [
+              "nevertheless",
+              "למרות זאת, אף על פי כן"
+            ],
+            [
+              "worth",
+              "שווה"
+            ],
+            [
+              "resident",
+              "תושב"
+            ]
+          ]
         },
         {
           "q": "Unless farmers receive more rain this winter, they will have to plant fewer crops next year, which may raise food prices.",
           "o": [
-            "If there is not more rain this winter, farmers will need to reduce the crops they plant next year, and food may become more expensive.",
-            "Even if more rain falls this winter, farmers will plant fewer crops next year, so food prices will certainly go down.",
-            "Farmers will plant more crops next year only if food prices rise during this winter.",
-            "Because farmers received a lot of rain this winter, they will plant fewer crops, and food prices may fall."
+            "If it does not rain more this winter, farmers will have to grow fewer crops next year, and food may get more expensive.",
+            "Even if much more rain falls this winter, farmers will still plant fewer crops next year, so food prices will certainly go down.",
+            "Farmers will plant more crops next year only if food prices rise sharply during this winter, regardless of the rain.",
+            "Because farmers received a lot of rain this winter, they will plant fewer crops next year, and food prices may fall as a result."
           ],
           "a": 0,
           "ex": "«Unless» = אלא אם כן, ובמילים אחרות «If ... not». התשובה הנכונה שומרת את התנאי (בלי גשם), את התוצאה (פחות גידולים) ואת האפשרות שהמחירים יעלו. «Even if» (גם אם) מבטל את התנאי, ושם המחירים גם יורדים.",
-          "w": [["unless", "אלא אם כן"], ["even if", "גם אם, אפילו אם"], ["crop", "יבול, גידול חקלאי"]]
+          "w": [
+            [
+              "unless",
+              "אלא אם כן"
+            ],
+            [
+              "even if",
+              "גם אם, אפילו אם"
+            ],
+            [
+              "crop",
+              "יבול, גידול חקלאי"
+            ]
+          ]
         },
         {
           "q": "Children who read for pleasure every day tend to develop a richer vocabulary than children who read only for school assignments.",
           "o": [
-            "Children who read only for school assignments usually know more words than those who read for fun.",
+            "Children who read only for their school assignments usually know more words than children who read for fun every day.",
             "Reading every day for pleasure makes it harder for children to finish their school assignments.",
             "All children develop the same vocabulary, whether they read for fun or only for school.",
-            "Daily reading for enjoyment generally helps children learn more words than reading that is done just for school tasks."
+            "Children who read daily for enjoyment usually know more words than those who read just for school tasks."
           ],
           "a": 3,
-          "ex": "«for pleasure» = «for enjoyment», ו-«richer vocabulary» = יודעים יותר מילים. התשובה הראשונה הופכת את ההשוואה, כאילו מי שקורא רק לבית הספר יודע יותר מילים.",
-          "w": [["tend to", "נוטה ל..."], ["vocabulary", "אוצר מילים"], ["assignment", "מטלה"]]
+          "ex": "«for pleasure» = «for enjoyment», ו-«tend to develop a richer vocabulary» = בדרך כלל יודעים יותר מילים. התשובה הראשונה הופכת את ההשוואה, כאילו מי שקורא רק לבית הספר יודע יותר מילים.",
+          "w": [
+            [
+              "tend to",
+              "נוטה ל..."
+            ],
+            [
+              "vocabulary",
+              "אוצר מילים"
+            ],
+            [
+              "assignment",
+              "מטלה"
+            ]
+          ]
         }
       ]
     },
@@ -182,14 +383,27 @@
         {
           "q": "Many people avoid going to the dentist because they are afraid of pain, even though modern treatments are usually quick and almost painless.",
           "o": [
-            "Modern dental treatments are often painful, which is why many people refuse to visit the dentist.",
-            "Fear of pain keeps many people away from the dentist, although today's treatments are generally fast and cause very little pain.",
-            "Many people visit the dentist often because modern treatments are quick and almost painless.",
-            "Few people are afraid of the dentist today, since modern treatments have become quick and almost painless."
+            "Modern dental treatments are often slow and painful, which is why many people refuse to visit the dentist at all.",
+            "Fear of pain keeps many people away from the dentist, although today's treatments are usually fast and nearly painless.",
+            "Many people visit the dentist often and without fear, because modern treatments are quick and almost painless.",
+            "Few people are afraid of the dentist today, since modern treatments have become quick and almost painless for most patients."
           ],
           "a": 1,
           "ex": "«even though» הוחלף ב-«although» (שתיהן: למרות ש), ו-«avoid going» הוחלף ב-«keeps away». הפחד מרחיק אנשים למרות שהטיפולים כמעט לא כואבים. בתשובה הראשונה הטיפולים כואבים, וזה ההפך מהמקור.",
-          "w": [["even though", "אף על פי ש..."], ["although", "למרות ש..."], ["avoid", "להימנע מ..."]]
+          "w": [
+            [
+              "even though",
+              "אף על פי ש..."
+            ],
+            [
+              "although",
+              "למרות ש..."
+            ],
+            [
+              "avoid",
+              "להימנע מ..."
+            ]
+          ]
         },
         {
           "q": "The company decided to improve its training program after a survey showed that new workers did not understand many of their basic tasks.",
@@ -201,19 +415,45 @@
           ],
           "a": 3,
           "ex": "קודם הסקר הראה שהעובדים לא מבינים, ורק אחר כך החברה החליטה לשפר את ההדרכה. «improve» = «make better», ו-«did not understand» = «were confused». בתשובה השנייה הסדר הפוך: הסקר מופיע כתוצאה של השיפור.",
-          "w": [["improve", "לשפר"], ["after", "אחרי"], ["survey", "סקר"]]
+          "w": [
+            [
+              "improve",
+              "לשפר"
+            ],
+            [
+              "after",
+              "אחרי"
+            ],
+            [
+              "survey",
+              "סקר"
+            ]
+          ]
         },
         {
           "q": "Ancient sailors could cross wide seas without modern tools, since they learned to read the positions of the sun and the stars.",
           "o": [
-            "Because they knew how to use the sun and stars to guide them, sailors long ago were able to travel across large seas without modern equipment.",
-            "Sailors long ago could not cross wide seas, because they had no modern tools to guide them.",
-            "Ancient sailors used modern tools to study the sun and the stars before they crossed wide seas.",
-            "Although ancient sailors studied the sun and the stars, this knowledge rarely helped them cross wide seas."
+            "Because they knew how to navigate by the sun and stars, sailors long ago could cross large seas without modern equipment.",
+            "Sailors long ago could not cross wide seas, because without modern tools they had no reliable way to find their direction.",
+            "Ancient sailors used modern tools to study the positions of the sun and the stars before they crossed wide seas.",
+            "Although ancient sailors studied the sun and the stars carefully, this knowledge rarely helped them when they tried to cross wide seas."
           ],
           "a": 0,
           "ex": "«since» כאן = מכיוון ש, ובתשובה הנכונה הוא הוחלף ב-«Because». «Ancient» = «long ago», ו-«tools» = «equipment». התשובה האחרונה הופכת את הסיבה לניגוד ואומרת שהידע כמעט לא עזר.",
-          "w": [["since", "מכיוון ש..."], ["ancient", "עתיק, מימי קדם"], ["rarely", "לעיתים רחוקות"]]
+          "w": [
+            [
+              "since",
+              "מכיוון ש..."
+            ],
+            [
+              "ancient",
+              "עתיק, מימי קדם"
+            ],
+            [
+              "rarely",
+              "לעיתים רחוקות"
+            ]
+          ]
         }
       ]
     },
@@ -222,31 +462,95 @@
       "qs": [
         {
           "q": "The road to the village was blocked by snow; ___, the doctor had to reach the patient by helicopter.",
-          "o": ["however", "for example", "therefore", "in contrast"],
+          "o": [
+            "however",
+            "for example",
+            "therefore",
+            "in contrast"
+          ],
           "a": 2,
           "ex": "«therefore» = לכן. הכביש חסום, ולכן הרופא הגיע במסוק: זו תוצאה. «however» (עם זאת) היה יוצר ניגוד, אבל אין כאן ניגוד.",
-          "w": [["therefore", "לכן"], ["however", "עם זאת, אולם"], ["block", "לחסום"]]
+          "w": [
+            [
+              "therefore",
+              "לכן"
+            ],
+            [
+              "however",
+              "עם זאת, אולם"
+            ],
+            [
+              "block",
+              "לחסום"
+            ]
+          ]
         },
         {
           "q": "Many drivers leave home before 7 a.m. in order to ___ the heavy traffic that fills the roads later in the morning.",
-          "o": ["avoid", "enjoy", "create", "measure"],
+          "o": [
+            "avoid",
+            "enjoy",
+            "create",
+            "measure"
+          ],
           "a": 0,
           "ex": "«avoid» = להימנע מ. נהגים יוצאים מוקדם כדי לא להיתקע בפקקים. «create» (ליצור) או «enjoy» (ליהנות) לא מתאימים, כי אף אחד לא יוצא מוקדם כדי ליצור פקקים או ליהנות מהם.",
-          "w": [["avoid", "להימנע מ..."], ["in order to", "כדי ל... (+פועל)"]]
+          "w": [
+            [
+              "avoid",
+              "להימנע מ..."
+            ],
+            [
+              "in order to",
+              "כדי ל... (+פועל)"
+            ]
+          ]
         },
         {
           "q": "The new medicine must be tested on thousands of patients before doctors can ___ that it is safe.",
-          "o": ["forget", "hide", "doubt", "confirm"],
+          "o": [
+            "forget",
+            "hide",
+            "doubt",
+            "confirm"
+          ],
           "a": 3,
           "ex": "«confirm» = לאשר, לוודא. בודקים את התרופה על אלפי חולים כדי לדעת בוודאות שהיא בטוחה. «doubt» (לפקפק) הוא ההפך: לא עושים ניסויים ארוכים כדי להתחיל לפקפק.",
-          "w": [["confirm", "לאשר, לוודא"], ["doubt", "לפקפק"]]
+          "w": [
+            [
+              "confirm",
+              "לאשר, לוודא"
+            ],
+            [
+              "doubt",
+              "לפקפק"
+            ]
+          ]
         },
         {
           "q": "The old bus was so ___ that it broke down almost every week, and passengers often arrived late.",
-          "o": ["popular", "unreliable", "expensive", "comfortable"],
+          "o": [
+            "popular",
+            "unreliable",
+            "expensive",
+            "comfortable"
+          ],
           "a": 1,
           "ex": "«unreliable» = לא אמין. אוטובוס שמתקלקל כל שבוע ומאחר הוא לא אמין. «so ... that» (כל כך... ש) מחייב שהתכונה תסביר את התקלות, ו-«popular» או «comfortable» לא מסבירים אותן.",
-          "w": [["unreliable", "לא אמין"], ["so... that", "כל כך... ש..."], ["break down", "להתקלקל"]]
+          "w": [
+            [
+              "unreliable",
+              "לא אמין"
+            ],
+            [
+              "so... that",
+              "כל כך... ש..."
+            ],
+            [
+              "break down",
+              "להתקלקל"
+            ]
+          ]
         }
       ]
     }

@@ -1,0 +1,260 @@
+{
+  "title": "סימולציה 12",
+  "level": 3,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The new regulations were so ___ that judges in different courts reached opposite conclusions about what they actually required.",
+          "o": ["ambiguous", "stringent", "explicit", "redundant"],
+          "a": 0,
+          "ex": "«Ambiguous» = דו-משמעי, לא ברור. שופטים הגיעו למסקנות הפוכות לגבי מה התקנות דורשות, כלומר אפשר לפרש אותן ביותר מדרך אחת. «explicit» (מפורש) אומרת בדיוק את ההפך, ו-«stringent» (מחמיר) לא מסבירה למה הפרשנויות שונות.",
+          "w": [["ambiguous", "דו-משמעי, עמום"], ["explicit", "מפורש"], ["stringent", "מחמיר, נוקשה"]]
+        },
+        {
+          "q": "The museum agreed to lend the painting to the exhibition ___ it would be kept behind glass at a constant temperature.",
+          "o": ["even though", "on condition that", "whereas", "lest"],
+          "a": 1,
+          "ex": "«On condition that» = בתנאי ש.... המוזיאון הסכים להשאיל את הציור, ובתנאי שישמרו עליו מאחורי זכוכית. «lest» (כדי שלא) היה אומר שהמוזיאון רצה למנוע את השמירה מאחורי זכוכית, וזה לא הגיוני.",
+          "w": [["on condition that", "בתנאי ש..."], ["lest", "פן, שמא, כדי שלא"]]
+        },
+        {
+          "q": "Critics dismissed the minister's apology as ___, pointing out that he had repeated the very same remarks in a radio interview the following day.",
+          "o": ["heartfelt", "candid", "disingenuous", "belated"],
+          "a": 2,
+          "ex": "«Disingenuous» = לא כן, מתחסד. השר חזר על אותם דברים כבר למחרת, ולכן המבקרים טענו שההתנצלות לא הייתה אמיתית. «heartfelt» (מכל הלב) אומרת ההפך, ו-«belated» (מאוחר מדי) עוסקת בתזמון, והמשפט לא מדבר על איחור.",
+          "w": [["disingenuous", "לא כן, צבוע"], ["dismiss", "לבטל, לפטור כלא חשוב"], ["belated", "מאוחר, שבא באיחור"]]
+        },
+        {
+          "q": "The reforms did produce a rise in literacy, ___ a far more modest one than their architects had promised.",
+          "o": ["hence", "namely", "likewise", "albeit"],
+          "a": 3,
+          "ex": "«Albeit» = אם כי. הרפורמות אכן העלו את האוריינות, אבל העלייה הייתה קטנה בהרבה ממה שהובטח: זו הסתייגות. «namely» (כלומר) מפרטת ולא מסתייגת, ו-«hence» (לכן) יוצרת קשר של תוצאה שאין כאן.",
+          "w": [["albeit", "אם כי"], ["namely", "כלומר, דהיינו"], ["modest", "צנוע, מתון"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Years without rain had left the land so ___ that even the hardiest crops failed to take root.",
+          "o": ["fertile", "lush", "arid", "saturated"],
+          "a": 2,
+          "ex": "«Arid» = צחיח, יבש מאוד. שנים בלי גשם השאירו את האדמה יבשה, ולכן אפילו הגידולים העמידים לא נקלטו. «fertile» (פורה) ו-«lush» (שופע צמחייה) אומרות ההפך, ו-«saturated» (רווי במים) לא מתאימה לשנים בלי גשם.",
+          "w": [["arid", "צחיח, יבש"], ["fertile", "פורה"], ["saturated", "רווי"]]
+        },
+        {
+          "q": "___ the board's repeated assurances, many employees remained convinced that further layoffs were imminent.",
+          "o": ["Owing to", "In view of", "By virtue of", "Notwithstanding"],
+          "a": 3,
+          "ex": "«Notwithstanding» = על אף, למרות. ההנהלה הרגיעה שוב ושוב, ובכל זאת העובדים היו משוכנעים שיהיו פיטורים. שלוש האפשרויות האחרות מציינות סיבה (בגלל, לאור), וההבטחות לא יכולות להיות הסיבה לחשש מפיטורים.",
+          "w": [["notwithstanding", "על אף, למרות"], ["owing to", "בשל, עקב"], ["imminent", "קרוב, עומד לקרות"]]
+        },
+        {
+          "q": "The professor's lectures were notoriously ___: a single point could take her forty minutes to make, with countless digressions along the way.",
+          "o": ["verbose", "concise", "succinct", "coherent"],
+          "a": 0,
+          "ex": "«Verbose» = מילולי מדי, ארכני. נקודה אחת לקחה ארבעים דקות עם אינספור סטיות מהנושא. «concise» ו-«succinct» פירושן תמציתי, בדיוק ההפך, ו-«coherent» (קוהרנטי, מסודר) לא מתיישבת עם הסטיות הרבות.",
+          "w": [["verbose", "ארכני, מכביר מילים"], ["succinct", "תמציתי"], ["digression", "סטייה מהנושא"]]
+        },
+        {
+          "q": "Few historians accept the chronicle's account of the battle, ___ its author was born nearly a century after the events he describes.",
+          "o": ["whereas", "seeing that", "so that", "unless"],
+          "a": 1,
+          "ex": "«Seeing that» = מאחר ש..., הואיל ו.... המחבר נולד מאה שנה אחרי הקרב, וזו הסיבה שהיסטוריונים לא סומכים על התיאור. «whereas» מציינת ניגוד, ואין ניגוד בין שני החלקים.",
+          "w": [["seeing that", "מאחר ש..., הואיל ו..."], ["whereas", "בעוד ש..., ואילו"], ["account", "תיאור, דיווח"]]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "The Trouble with Sugar Pills",
+      "text": [
+        "When a patient feels better after swallowing a pill that contains nothing but sugar, the improvement is real in the sense that matters most: the pain has eased or the nausea has passed. This phenomenon, known as the placebo effect, has been documented for over a century, yet it remains one of the most puzzling features of modern medicine. For those who design clinical trials, it is also one of the most troublesome.",
+        "The effect appears to arise largely from expectation. A patient who believes that a treatment will work tends to notice signs of improvement and to describe symptoms as less severe. Brain-imaging studies suggest, however, that more than mere reporting is involved: in some patients, an inert pill triggers the release of the body's own pain-relieving chemicals. The details matter, too. Two pills often outperform one, injections tend to outperform pills, and a dummy capsule presented as expensive may relieve more pain than an identical one described as cheap.",
+        "It is precisely this power that complicates the testing of new drugs. To show that a medicine works, researchers cannot simply compare patients who take it with patients who receive nothing, since the first group would improve partly because they expect to. Instead, trials give one group the real drug and another an identical-looking placebo, and neither the patients nor their doctors are told who is receiving which. Only if the drug clearly outperforms the dummy can it be considered effective.",
+        "Yet even this careful design has weaknesses. Many genuine drugs cause noticeable side effects, which allow participants to guess that they belong to the treatment group; their heightened expectations may then inflate the apparent benefit of the drug. Moreover, placebo responses in certain fields, most notably pain and depression, have grown stronger over recent decades. As a result, several promising compounds have failed not because they were useless but because the placebo did almost as well.",
+        "Some researchers argue that the placebo effect should be viewed less as an obstacle than as a resource. If expectation alone can ease suffering, doctors might learn to harness it deliberately, for instance by describing treatments in ways that build confidence. Such proposals, however, raise ethical questions of their own, since deceiving patients, even with good intentions, could undermine the trust on which medicine depends."
+      ],
+      "qs": [
+        {
+          "q": "The passage is mainly concerned with",
+          "o": [
+            "the history of the placebo effect since it was first documented",
+            "how the placebo effect works and why it makes the testing of new drugs difficult",
+            "the ethical problems raised by giving patients pills that contain only sugar",
+            "why drugs for pain and depression have become less effective than they once were"
+          ],
+          "a": 1,
+          "ex": "הקטע מסביר מה גורם לאפקט הפלצבו (פסקה 2) ולמה הוא מסבך ניסויים קליניים (פסקאות 3-4). השאלות האתיות מופיעות רק בפסקה האחרונה, ולגבי כאב ודיכאון הקטע אומר שהפלצבו התחזק, לא שהתרופות נחלשו.",
+          "w": [["be concerned with", "לעסוק ב..."], ["clinical trial", "ניסוי קליני"]]
+        },
+        {
+          "q": "According to the second paragraph, which of the following is true?",
+          "o": [
+            "A placebo helps only patients who are told that the pill is inert.",
+            "Brain-imaging studies show that the effect exists only in what patients report.",
+            "A single pill usually relieves more pain than two pills do.",
+            "The form and the presented price of a dummy treatment can affect how well it works."
+          ],
+          "a": 3,
+          "ex": "בפסקה 2 כתוב ששתי גלולות עובדות טוב יותר מאחת, זריקה טוב יותר מגלולה, וגלולה «יקרה» מקלה יותר מגלולה זהה «זולה». התשובה על סריקות המוח הופכת את מה שנאמר: הן מראות שמדובר ביותר מדיווח בלבד.",
+          "w": [["inert", "לא פעיל, חסר השפעה"], ["outperform", "להצליח יותר מ..."]]
+        },
+        {
+          "q": "In the third paragraph, the word 'they' (in 'because they expect to') refers to",
+          "o": [
+            "patients who take the new medicine",
+            "patients who receive nothing",
+            "researchers",
+            "doctors"
+          ],
+          "a": 0,
+          "ex": "«The first group would improve partly because they expect to»: הקבוצה הראשונה היא המטופלים שלוקחים את התרופה, והם משתפרים בין היתר כי הם מצפים להשתפר. «patients who receive nothing» מפתה, אבל זו הקבוצה השנייה, שאין לה ציפייה כזו.",
+          "w": [["refer to", "להתייחס ל..."], ["since", "מכיוון ש..."]]
+        },
+        {
+          "q": "The main purpose of the fourth paragraph is to",
+          "o": [
+            "argue that placebo-controlled trials should be abandoned",
+            "describe how researchers prevent participants from guessing which group they are in",
+            "explain why even a carefully designed trial may fail to reveal a drug's true value",
+            "show that drugs with side effects are generally more effective than other drugs"
+          ],
+          "a": 2,
+          "ex": "הפסקה פותחת ב«Yet even this careful design has weaknesses» ומסבירה שתופעות לוואי והתחזקות הפלצבו גורמות לתרופות טובות להיכשל. היא לא מציעה לוותר על הניסויים, ולא מתארת איך מונעים מהמשתתפים לנחש, אלא להפך.",
+          "w": [["yet", "ובכל זאת, אך"], ["as a result", "כתוצאה מכך"], ["inflate", "לנפח, להגזים"]]
+        },
+        {
+          "q": "According to the last paragraph, proposals to make deliberate use of the placebo effect are problematic because",
+          "o": [
+            "the placebo effect is too weak to relieve real suffering",
+            "most doctors lack the training to describe treatments clearly",
+            "they would make it impossible to conduct clinical trials",
+            "they may involve misleading patients, which could damage trust in medicine"
+          ],
+          "a": 3,
+          "ex": "בפסקה האחרונה כתוב שהצעות כאלה מעלות שאלות אתיות, כי הטעיה של מטופלים, גם בכוונה טובה, עלולה לפגוע באמון שהרפואה נשענת עליו. האפשרות הראשונה סותרת את הקטע, שאומר שציפייה לבדה יכולה להקל על סבל.",
+          "w": [["harness", "לרתום, לנצל"], ["deceive", "להונות, להטעות"], ["undermine", "לערער, לחתור תחת"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Were it not for the generous grants it received from private foundations during its first decade, the orchestra would almost certainly have been forced to disband long before it gained international recognition.",
+          "o": [
+            "Although private foundations supported the orchestra generously throughout its first ten years, it was still forced to disband long before it could gain international recognition.",
+            "The orchestra gained international recognition during its first ten years, and this success persuaded private foundations to give it the generous grants it needed to survive.",
+            "The orchestra probably managed to survive long enough to gain international recognition only because private foundations supported it generously throughout its first ten years.",
+            "The orchestra probably managed to survive long enough to gain international recognition even though private foundations refused to support it during its first ten years."
+          ],
+          "a": 2,
+          "ex": "«Were it not for» = אלמלא. בלי המענקים התזמורת הייתה כמעט בוודאות מתפרקת, כלומר היא שרדה בזכותם. בתשובה הראשונה התזמורת התפרקה בכל זאת, ובשנייה סיבה ותוצאה מתהפכות (ההכרה הביאה את המענקים).",
+          "w": [["but for", "אלמלא, לולא"], ["were it not for", "אלמלא"], ["disband", "להתפרק, להתפזר"]]
+        },
+        {
+          "q": "No sooner had the archaeologists begun excavating the site than heavy rains flooded the trenches, delaying the project by several months and destroying a number of fragile artifacts that had not yet been recorded.",
+          "o": [
+            "Almost immediately after the archaeologists started digging at the site, heavy rains flooded the trenches, setting the project back by months and ruining several delicate finds that were still undocumented.",
+            "The archaeologists started digging at the site immediately after heavy rains had flooded the area, which set the project back by months and ruined several delicate finds that were still undocumented.",
+            "Almost immediately after the archaeologists started digging at the site, heavy rains flooded the trenches and set the project back by months, although every delicate find there had already been documented.",
+            "The archaeologists' careless digging at the site, rather than the heavy rains that followed it, set the project back by months and ruined several delicate finds that were still undocumented."
+          ],
+          "a": 0,
+          "ex": "«No sooner... than» = רק... וכבר, מיד אחרי ש.... החפירה התחילה, ומיד אחריה הגשמים הציפו, עיכבו והרסו ממצאים שלא תועדו. בתשובה השנייה סדר האירועים הפוך (הגשם קודם), בשלישית כל הממצאים כבר תועדו, וברביעית הנזק נגרם מהחפירה ולא מהגשם.",
+          "w": [["no sooner... than", "רק... וכבר, מיד אחרי ש..."], ["as soon as", "ברגע ש..., מיד כש..."], ["excavate", "לחפור (חפירה ארכיאולוגית)"]]
+        },
+        {
+          "q": "Much as the committee admired the originality of the proposal, it could not recommend funding a project whose costs had been so poorly estimated and whose benefits remained largely speculative.",
+          "o": [
+            "Because the committee was greatly impressed by how original the proposal was, it recommended funding the project, even though its costs were badly estimated and its benefits mostly uncertain.",
+            "Although the committee was greatly impressed by how original the proposal was, it refused to recommend funding the project, since its costs, though carefully estimated, were too high for its benefits.",
+            "Although the committee had serious doubts about how original the proposal was, it refused to recommend funding the project mainly because its costs were badly estimated and its benefits mostly uncertain.",
+            "Although the committee was greatly impressed by how original the proposal was, it refused to recommend funding the project, since its costs were badly estimated and its benefits mostly uncertain."
+          ],
+          "a": 3,
+          "ex": "«Much as» = עד כמה ש..., למרות ש.... הוועדה העריכה מאוד את המקוריות, ובכל זאת לא המליצה, כי העלויות הוערכו גרוע והתועלת ספקולטיבית. בראשונה הוועדה המליצה, בשנייה העלויות הוערכו בקפידה, ובשלישית הוועדה פקפקה במקוריות.",
+          "w": [["although", "למרות ש..."], ["much as", "עד כמה ש..., למרות ש..."], ["speculative", "ספקולטיבי, השערתי"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "It was not until the late nineteenth century, when improved microscopes revealed that many diseases were caused by microorganisms, that surgeons began routinely washing their hands and sterilizing their instruments before operating.",
+          "o": [
+            "Surgeons had been routinely washing their hands and sterilizing their instruments long before better microscopes showed, in the late nineteenth century, that microorganisms were responsible for many diseases.",
+            "Surgeons started to wash their hands and sterilize their instruments as a matter of routine only after better microscopes showed, in the late nineteenth century, that microorganisms caused many diseases.",
+            "In the late nineteenth century, surgeons who routinely washed their hands and sterilized their instruments helped to improve microscopes, which then showed that microorganisms caused many diseases.",
+            "Surgeons started to wash their hands and sterilize their instruments as a matter of routine only after better microscopes showed, in the late nineteenth century, that microorganisms caused all diseases."
+          ],
+          "a": 1,
+          "ex": "«It was not until X that Y» = רק ב-X התחיל Y. המנתחים התחילו לשטוף ידיים ולעקר רק אחרי שהמיקרוסקופים הראו שמיקרואורגניזמים גורמים למחלות רבות. הראשונה הופכת את הזמן (הרבה לפני), השלישית הופכת סיבה ותוצאה, והרביעית משנה «many» ל-«all».",
+          "w": [["until", "עד ש..."], ["after", "אחרי"], ["routinely", "באופן קבוע, כשגרה"]]
+        },
+        {
+          "q": "Such was the shortage of paper in the besieged city that its only remaining newspaper managed to keep appearing solely by printing each edition on the back of old wallpaper.",
+          "o": [
+            "Paper had become so scarce in the besieged city that the one newspaper still in operation stopped appearing altogether, even though old wallpaper could have been used instead.",
+            "Although paper was plentiful in the besieged city, the one newspaper still in operation chose to print each edition on the reverse side of old wallpaper in order to save money.",
+            "Paper had become so scarce in the besieged city that the one newspaper still in operation could go on being published only because it used the reverse side of old wallpaper.",
+            "Paper had become so scarce in the besieged city that several newspapers could go on being published only because they used the reverse side of old wallpaper."
+          ],
+          "a": 2,
+          "ex": "«Such was X that» = כזה היה X ש..., כלומר המחסור היה כל כך גדול ש.... העיתון היחיד שנשאר המשיך לצאת רק בזכות הדפסה על גב טפטים ישנים. בראשונה העיתון הפסיק לצאת, בשנייה לא היה מחסור בנייר, וברביעית מדובר בכמה עיתונים ולא בעיתון אחד.",
+          "w": [["such... that", "כזה... ש..."], ["so... that", "כל כך... ש..."], ["solely", "אך ורק, בלעדית"]]
+        },
+        {
+          "q": "Contrary to what its critics had predicted, the ban on single-use plastic bags did not drive shoppers away from local supermarkets; if anything, sales rose slightly in the months after it took effect.",
+          "o": [
+            "Critics had expected the ban on single-use plastic bags to drive shoppers away from local supermarkets, but in fact sales went up a little in the months following its introduction.",
+            "As its critics had predicted, the ban on single-use plastic bags drove shoppers away from local supermarkets, and sales fell a little in the months following its introduction.",
+            "Critics had expected the ban on single-use plastic bags to drive shoppers away from local supermarkets, and although they were wrong, sales did not change at all after its introduction.",
+            "Critics had expected the ban on single-use plastic bags to increase sales at local supermarkets, but in fact shoppers stayed away from them in the months following its introduction."
+          ],
+          "a": 0,
+          "ex": "«Contrary to» = בניגוד ל.... המבקרים חזו שהקונים יברחו, אבל זה לא קרה, ואם כבר, המכירות עלו מעט. «if anything» = אם כבר, דווקא. השנייה מאשרת את התחזית, השלישית אומרת שהמכירות לא השתנו בכלל, והרביעית מחליפה בין התחזית לתוצאה.",
+          "w": [["in fact", "למעשה, בעצם"], ["contrary to", "בניגוד ל..."], ["if anything", "אם כבר, דווקא"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The witness's account was ___ by security footage that showed her leaving the building at exactly the time she had stated.",
+          "o": ["contradicted", "fabricated", "undermined", "corroborated"],
+          "a": 3,
+          "ex": "«Corroborate» = לאשש, לחזק בראיה. המצלמה הראתה אותה יוצאת בדיוק בשעה שאמרה, ולכן הסרטון חיזק את העדות. «contradicted» ו-«undermined» (סתר, ערער) אומרות ההפך.",
+          "w": [["corroborate", "לאשש, לחזק"], ["undermine", "לערער"], ["fabricate", "לבדות, לזייף"]]
+        },
+        {
+          "q": "The two parties could not even agree on a date for their next meeting, ___ on the substance of the proposed reforms.",
+          "o": ["as well as", "rather than", "let alone", "apart from"],
+          "a": 2,
+          "ex": "«Let alone» = ובטח שלא, קל וחומר. אם הצדדים לא הצליחו להסכים אפילו על תאריך, בטח שלא יסכימו על תוכן הרפורמות. «as well as» (וגם) לא מתאימה למבנה השלילי של «could not even».",
+          "w": [["let alone", "ובטח שלא, קל וחומר"], ["substance", "מהות, תוכן"]]
+        },
+        {
+          "q": "Rather than resolving the dispute, the court's ruling only served to ___ it, prompting both sides to file new lawsuits within days.",
+          "o": ["settle", "exacerbate", "defuse", "mitigate"],
+          "a": 1,
+          "ex": "«Exacerbate» = להחריף, להחמיר. במקום לפתור את הסכסוך, פסק הדין גרם לתביעות חדשות, כלומר החריף אותו. «settle», «defuse» ו-«mitigate» פירושן ליישב, לנטרל ולהקל, כולן ההפך.",
+          "w": [["exacerbate", "להחריף, להחמיר"], ["mitigate", "להקל, למתן"], ["defuse", "לנטרל, להרגיע"]]
+        },
+        {
+          "q": "Doctors are urged to prescribe antibiotics sparingly; ___, bacteria will continue to develop resistance to them at an alarming rate.",
+          "o": ["otherwise", "accordingly", "similarly", "in particular"],
+          "a": 0,
+          "ex": "«Otherwise» = אחרת. אם הרופאים לא ירשמו אנטיביוטיקה בחסכנות, החיידקים ימשיכו לפתח עמידות. «accordingly» (בהתאם לכך) היה אומר שהעמידות נובעת מהרישום החסכוני, וזה הפוך מההיגיון.",
+          "w": [["otherwise", "אחרת"], ["accordingly", "בהתאם לכך, לכן"], ["sparingly", "בחסכנות, במשורה"]]
+        }
+      ]
+    }
+  ]
+}
