@@ -1,0 +1,218 @@
+{
+  "tier": 0,
+  "rc": [
+    {
+      "title": "Surviving the Antarctic Winter",
+      "text": [
+        "Winter in Antarctica is one of the hardest seasons on Earth. For months the sun hardly rises, the temperature can fall below minus 40 degrees Celsius, and strong winds blow across the ice. Most animals leave long before winter arrives. Emperor penguins, however, stay. In fact, this is when they raise their young.",
+        "Part of the answer lies in their bodies. A penguin has a thick layer of fat under its skin, which keeps heat inside. Its feathers are short and grow very close together, and they overlap like the tiles on a roof, so cold air and water cannot easily reach the skin. In the legs, warm blood that flows down to the feet heats the cold blood coming back up, so very little heat escapes through the feet.",
+        "Still, a good body alone is not enough in the worst storms. For this reason, emperor penguins depend on one another. In bad weather, thousands of birds stand close together in a group called a huddle. Inside the huddle, the temperature can rise above 20 degrees. The birds at the edge are much colder, but the group moves slowly all the time. As a result, each penguin gets turns both in the warm center and at the cold edge.",
+        "This teamwork is especially important for the fathers. After the female lays her single egg, she walks back to the sea to feed, and the male holds the egg on his feet under a warm fold of skin. For about two months he eats nothing. Without the shared heat of the huddle, few fathers would have enough energy to keep the egg safe until the chick hatches."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "why most animals leave Antarctica in winter",
+            "how penguin chicks are fed by their parents",
+            "how emperor penguins survive the Antarctic winter",
+            "the dangers of strong winds on the Antarctic ice"
+          ],
+          "a": 2,
+          "ex": "כל הקטע עוסק בדרכים שבהן פינגווין הקיסר שורד את החורף: הגוף שלו (פסקה 2), הקבוצה הצפופה (פסקה 3) והאב ששומר על הביצה (פסקה 4). זה שרוב בעלי החיים עוזבים מוזכר רק במשפט אחד בפסקה 1.",
+          "w": [["survive", "לשרוד"], ["mainly", "בעיקר"]]
+        },
+        {
+          "q": "According to the second paragraph, a penguin's feathers help it by",
+          "o": [
+            "keeping cold air and water away from its skin",
+            "storing extra fat for the long winter",
+            "warming the blood that flows down to its feet",
+            "helping it swim faster in the cold sea"
+          ],
+          "a": 0,
+          "ex": "בפסקה 2 כתוב שהנוצות צפופות ומונחות זו על זו כמו רעפים, ולכן אוויר קר ומים לא מגיעים בקלות לעור. השומן והדם ברגליים הם דרכים אחרות לשמור על חום, לא תפקיד של הנוצות.",
+          "w": [["feather", "נוצה"], ["reach", "להגיע ל..."]]
+        },
+        {
+          "q": "In the second paragraph, the word 'they' in 'they overlap like the tiles on a roof' refers to",
+          "o": [
+            "the tiles",
+            "the penguins",
+            "the layers of fat",
+            "the feathers"
+          ],
+          "a": 3,
+          "ex": "המשפט אומר שהנוצות קצרות וצפופות «and they overlap», כלומר הנוצות הן שמונחות זו על זו. הרעפים (tiles) הם רק הדימוי שבא אחרי «like», לא הנושא של המשפט.",
+          "w": [["overlap", "לחפוף, להיות מונח זה על זה"], ["like", "כמו"]]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": [
+            "describe how young chicks learn to swim",
+            "explain why the huddle matters so much to the fathers",
+            "show that females care less about the egg than males",
+            "compare emperor penguins with other kinds of penguins"
+          ],
+          "a": 1,
+          "ex": "הפסקה האחרונה פותחת ב«especially important for the fathers» ומסבירה שהאב לא אוכל חודשיים, ובלי החום של הקבוצה לא היה לו כוח לשמור על הביצה. הקטע לא אומר שהנקבה פחות אכפתית: היא פשוט הולכת לים כדי לאכול.",
+          "w": [["especially", "במיוחד"], ["purpose", "מטרה"]]
+        },
+        {
+          "q": "According to the third paragraph, the penguins at the edge of the huddle",
+          "o": [
+            "keep the center warm for the others all winter",
+            "are usually the strongest fathers",
+            "later get a turn in the warm center",
+            "leave the group to look for food"
+          ],
+          "a": 2,
+          "ex": "בפסקה 3 כתוב שהקבוצה זזה כל הזמן, ולכן «As a result» כל פינגווין מקבל תור במרכז החם ותור בקצה הקר. האפשרות הראשונה סותרת את זה, כי אף אחד לא נשאר בקצה כל החורף.",
+          "w": [["as a result", "כתוצאה מכך"], ["edge", "קצה, שוליים"], ["turn", "תור"]]
+        }
+      ]
+    },
+    {
+      "title": "Lungs of the City",
+      "text": [
+        "Today, almost every large city has public parks where anyone can walk, play or rest for free. For most of history, however, this was not the case. The large green spaces inside cities usually belonged to royal families and nobles, who used them for hunting or private walks. Ordinary people could enter them only on special days, if at all.",
+        "The situation began to change in the nineteenth century, when factories drew millions of people from villages into cities. Workers lived in small, crowded homes, and the air was thick with smoke. Diseases spread quickly, especially in the poorest areas. Some reformers began to call for open green spaces, which they described as the 'lungs' of the city. They believed that fresh air, trees and sunlight would make workers healthier and calmer.",
+        "One of the first parks built with public money for all citizens opened in 1847 in Birkenhead, near Liverpool, England. A few years later, a young American named Frederick Law Olmsted visited it. He was deeply impressed that rich and poor people walked along the same paths. Back home, he helped design Central Park in New York, which became a model for many other cities.",
+        "Not everyone, however, benefited equally. In New York, about 1,600 people, many of them poor, had to leave their homes to make room for Central Park. In addition, early parks had strict rules: visitors could not play ball on the grass or make noise. Over time, these rules became more relaxed, and parks added playgrounds and sports fields. Even so, the basic idea has stayed the same: a city needs places where nature is open to everyone."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": [
+            "How Public Parks Came to Cities",
+            "The Life of Frederick Law Olmsted",
+            "Why Factories Moved to the Countryside",
+            "The Strict Rules of Central Park"
+          ],
+          "a": 0,
+          "ex": "הקטע מספר איך פארקים ציבוריים נוצרו בערים: מגנים פרטיים של משפחות מלוכה, דרך הרפורמות במאה ה-19, ועד הפארקים הראשונים. אולמסטד והחוקים הנוקשים הם רק חלק מהסיפור, ובקטע אנשים עברו מהכפרים לערים, לא ההפך.",
+          "w": [["public", "ציבורי"], ["title", "כותרת"]]
+        },
+        {
+          "q": "According to the second paragraph, reformers wanted open green spaces because they believed that",
+          "o": [
+            "parks would bring new factories to the city",
+            "rich families should open their gardens on special days",
+            "doctors needed more room to treat sick workers",
+            "fresh air and sunlight would improve workers' health"
+          ],
+          "a": 3,
+          "ex": "בסוף פסקה 2 כתוב שהם האמינו שאוויר צח, עצים ואור שמש יהפכו את הפועלים לבריאים ורגועים יותר. הימים המיוחדים מוזכרים בפסקה 1, ושם מדובר במה שהיה לפני השינוי.",
+          "w": [["reformer", "מתקן חברתי, איש רפורמה"], ["believe", "להאמין"]]
+        },
+        {
+          "q": "According to the third paragraph, what impressed Olmsted in Birkenhead?",
+          "o": [
+            "The park was larger than any park in America.",
+            "Rich and poor people used the same paths.",
+            "The park had been designed by a famous American.",
+            "Workers were not allowed to enter the park."
+          ],
+          "a": 1,
+          "ex": "בפסקה 3 כתוב שהוא התרשם מאוד מכך שעשירים ועניים הלכו באותם שבילים. האפשרות האחרונה הפוכה: הפארק נבנה בשביל כל האזרחים.",
+          "w": [["impressed", "מתרשם, מלא הערכה"], ["design", "לתכנן, לעצב"]]
+        },
+        {
+          "q": "In the last paragraph, the phrase 'became more relaxed' means that the rules became",
+          "o": [
+            "more famous",
+            "more confusing",
+            "less strict",
+            "less popular"
+          ],
+          "a": 2,
+          "ex": "לפני כן כתוב שהחוקים היו נוקשים (strict): אסור לשחק בכדור ואסור לעשות רעש. «Over time» הם נעשו «relaxed», כלומר פחות נוקשים, ולכן אפשר היה להוסיף מגרשי משחקים וספורט.",
+          "w": [["relaxed", "רגוע; (חוק) מקל, פחות נוקשה"], ["strict", "קפדני, נוקשה"]]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": [
+            "point out some problems of the early parks and how they changed",
+            "explain why Olmsted moved back to England",
+            "prove that parks made workers healthier and calmer",
+            "describe how playgrounds and sports fields are built"
+          ],
+          "a": 0,
+          "ex": "הפסקה פותחת ב«Not everyone, however, benefited equally» ומביאה בעיות: אנשים שפונו מבתיהם וחוקים נוקשים, ואחר כך מתארת איך החוקים התרככו. היא לא מוכיחה שהפארקים שיפרו את הבריאות, זו רק האמונה של הרפורמים בפסקה 2.",
+          "w": [["however", "עם זאת, אולם"], ["in addition", "בנוסף"], ["even so", "למרות זאת, ובכל זאת"]]
+        }
+      ]
+    },
+    {
+      "title": "Why Do We Yawn?",
+      "text": [
+        "Almost everyone yawns several times a day, usually when they feel tired or bored. People are not the only ones who do it. Dogs, cats, monkeys, birds and even some fish open their mouths wide in a similar way. Although yawning is so common, scientists still do not fully understand why it happens.",
+        "For many years, the most popular explanation was that a yawn brings extra oxygen into the body. When we are tired, the idea went, we breathe slowly, so the body needs one deep breath to wake it up. However, experiments did not support this explanation. In one study, people breathed air with more oxygen than usual, yet they yawned just as often as before.",
+        "Today, many researchers believe that yawning helps to cool the brain. A deep yawn pulls cool air into the mouth and nose, which may lower the temperature of the blood flowing to the head. A slightly cooler brain may work better, which could explain why we often yawn when we are trying to stay awake. Supporting this idea, studies have found that people tend to yawn less when the air around them is very hot, since hot air cannot cool the brain.",
+        "Yawning has another strange feature: it spreads. Simply seeing or hearing someone yawn often makes us yawn too. People also catch yawns more easily from family and close friends than from strangers. Chimpanzees and dogs can catch yawns as well, but children under the age of four, who are still learning how others feel, rarely do. For this reason, some scientists think that catching a yawn may be connected to our ability to understand other people's feelings."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "the reasons people feel tired during the day",
+            "how dogs and chimpanzees learn from humans",
+            "an experiment that proved the oxygen explanation",
+            "different ideas about why people and animals yawn"
+          ],
+          "a": 3,
+          "ex": "הקטע מציג כמה הסברים לפיהוק: חמצן (פסקה 2), קירור המוח (פסקה 3) והקשר להבנת רגשות (פסקה 4). הניסוי בפסקה 2 דווקא לא תמך בהסבר של החמצן, כך שהאפשרות השלישית הפוכה.",
+          "w": [["yawn", "לפהק; פיהוק"], ["explanation", "הסבר"]]
+        },
+        {
+          "q": "According to the second paragraph, when people in one study breathed air with more oxygen, they",
+          "o": [
+            "stopped yawning completely",
+            "yawned just as often as before",
+            "felt much more tired than before",
+            "yawned more often than before"
+          ],
+          "a": 1,
+          "ex": "בסוף פסקה 2 כתוב «yet they yawned just as often as before», כלומר הם פיהקו באותה תדירות כמו קודם. לכן הניסוי לא תמך ברעיון שפיהוק נועד להכניס חמצן.",
+          "w": [["yet", "ובכל זאת, אך"], ["as... as", "...כמו (באותה מידה)"]]
+        },
+        {
+          "q": "In the second paragraph, the word 'it' in 'to wake it up' refers to",
+          "o": [
+            "the body",
+            "one deep breath",
+            "the idea",
+            "the oxygen"
+          ],
+          "a": 0,
+          "ex": "לפי ההסבר הישן, כשאנחנו עייפים הגוף צריך נשימה עמוקה אחת כדי «להעיר אותו», כלומר להעיר את הגוף. הנשימה העמוקה היא הדבר שמעיר, לא מה שמתעורר.",
+          "w": [["breath", "נשימה"], ["wake up", "להתעורר; להעיר"]]
+        },
+        {
+          "q": "It can be inferred from the third paragraph that a person sitting in a very hot room would probably",
+          "o": [
+            "need more oxygen than usual",
+            "yawn more often than usual",
+            "feel more awake than usual",
+            "yawn less often than usual"
+          ],
+          "a": 3,
+          "ex": "בפסקה 3 כתוב שאנשים נוטים לפהק פחות כשהאוויר סביבם חם מאוד, כי אוויר חם לא מקרר את המוח. «more often» הפוך ממה שכתוב.",
+          "w": [["infer", "להסיק"], ["tend to", "לנטות ל..."], ["since", "מכיוון ש..."]]
+        },
+        {
+          "q": "Why does the writer mention children under the age of four in the last paragraph?",
+          "o": [
+            "To show that young children yawn more often than adults do",
+            "To support a link between catching yawns and understanding others",
+            "To explain why young children need more sleep than adults",
+            "To prove that dogs understand feelings better than children"
+          ],
+          "a": 1,
+          "ex": "ילדים מתחת לגיל ארבע, שעוד לומדים להבין מה אחרים מרגישים, כמעט לא «נדבקים» בפיהוק. «For this reason» המדענים חושבים שהדבקות בפיהוק קשורה ליכולת להבין רגשות של אחרים. הקטע לא אומר שילדים מפהקים יותר.",
+          "w": [["rarely", "לעיתים רחוקות"], ["for this reason", "מסיבה זו"], ["ability", "יכולת"]]
+        }
+      ]
+    }
+  ]
+}

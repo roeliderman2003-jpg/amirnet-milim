@@ -1,0 +1,392 @@
+{
+  "tier": 3,
+  "rc": [
+    {
+      "title": "Results That Would Not Return",
+      "text": [
+        "For decades, a finding published in a respected psychology journal was treated as close to settled knowledge. That confidence was badly shaken in 2015, when a large collaboration of researchers attempted to repeat one hundred studies drawn from three leading journals. Although nearly all of the original studies had reported statistically significant results, fewer than half of the repetitions produced comparable outcomes. The ensuing debate, soon labelled the 'replication crisis', has since spread to fields as distant as cancer biology and economics.",
+        "Few observers attribute the problem chiefly to fraud. Far more corrosive, they argue, were ordinary practices that once seemed harmless. A researcher who measures many outcomes, tries several statistical analyses, or stops collecting data as soon as the results look favorable can, without any intent to deceive, arrive at a pattern that is merely a product of chance. Because journals traditionally preferred striking, positive results to reports that an effect had not been found, such flukes were disproportionately likely to be published, while contradictory studies remained unseen in researchers' files.",
+        "Small samples compounded the difficulty. A study involving a few dozen participants can reliably detect only very large effects; when it nonetheless reports a significant result, the size of the effect it estimates is likely to be inflated. Larger follow-up studies then find something considerably weaker, or nothing at all. Several widely publicized claims, among them the idea that briefly adopting a confident posture alters one's hormone levels, have faded in precisely this way.",
+        "The response has been notably constructive. Many journals now invite researchers to register their hypotheses and methods in advance, making it far harder to adjust an analysis once the results are known. Some have gone further, agreeing to publish a study on the strength of its design, whatever it eventually finds. Sharing raw data, which lets others check the calculations, has also become common.",
+        "Not everyone accepts the gloomiest reading of the replication figures. Critics point out that a failed repetition may reflect differences in the population studied or in how a procedure was carried out, rather than a flaw in the original work. Even so, few would now dispute the lesson of the episode: a single study, however elegant, is a weak foundation for confident conclusions, and a field's credibility rests less on the novelty of its findings than on its willingness to test them again."
+      ],
+      "qs": [
+        {
+          "q": "The passage is mainly concerned with",
+          "o": [
+            "the argument that most published psychology research is the product of deliberate fraud",
+            "a defense of well-known studies against researchers who failed to repeat them",
+            "why many psychology findings could not be reproduced and how the field has responded",
+            "the way in which the 2015 collaboration selected the studies it attempted to repeat"
+          ],
+          "a": 2,
+          "ex": "הקטע מסביר למה ממצאים רבים לא שוחזרו (פסקאות 1-3) ומה התחום עשה בתגובה (פסקה 4). ההונאה נדחית כבר בתחילת פסקה 2, והביקורת על נתוני השחזור מופיעה רק בפסקה האחרונה ולא כהגנה על מחקרים.",
+          "w": [
+            [
+              "reproduce",
+              "לשחזר, לחזור על"
+            ],
+            [
+              "be concerned with",
+              "לעסוק ב..."
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, which of the following contributed to the problem?",
+          "o": [
+            "Journals favored positive results over reports of no effect.",
+            "Researchers often continued collecting data long after their results had become clear.",
+            "Many researchers deliberately altered their data in order to obtain significant results.",
+            "Journals refused to publish studies that measured more than one outcome."
+          ],
+          "a": 0,
+          "ex": "בפסקה 2 כתוב שכתבי העת העדיפו תוצאות חיוביות ומרשימות על דיווחים שלא נמצא אפקט, ולכן תוצאות מקריות פורסמו יותר. האפשרות השנייה הופכת את מה שנאמר: הבעיה היא חוקר שמפסיק לאסוף נתונים מוקדם, ברגע שהתוצאות נראות טוב. הונאה מכוונת נדחית במפורש («without any intent to deceive»).",
+          "w": [
+            [
+              "attribute to",
+              "לייחס ל..."
+            ],
+            [
+              "fluke",
+              "מקרה, צירוף מקרים"
+            ],
+            [
+              "disproportionately",
+              "באופן לא פרופורציונלי"
+            ]
+          ]
+        },
+        {
+          "q": "In the second paragraph, the word 'corrosive' could best be replaced by",
+          "o": [
+            "widespread",
+            "damaging",
+            "deliberate",
+            "obvious"
+          ],
+          "a": 1,
+          "ex": "«Corrosive» = משחית, מכרסם, גורם נזק הדרגתי. הכותב אומר שההרגלים הרגילים הזיקו הרבה יותר מהונאה, ולכן «damaging». «widespread» (נפוץ) מפתה כי ההרגלים היו נפוצים, אבל המילה מתארת את הנזק ולא את התפוצה.",
+          "w": [
+            [
+              "corrosive",
+              "משחית, מכרסם"
+            ],
+            [
+              "chiefly",
+              "בעיקר"
+            ]
+          ]
+        },
+        {
+          "q": "The example of the confident posture in the third paragraph is mentioned in order to",
+          "o": [
+            "show that hormone levels are too unstable to be measured reliably",
+            "prove that body posture has a lasting effect on a person's confidence",
+            "suggest that the original researchers deliberately exaggerated their findings",
+            "illustrate how a small study's result can fade when larger studies follow"
+          ],
+          "a": 3,
+          "ex": "הפסקה מסבירה שמחקר עם מעט משתתפים מנפח את גודל האפקט, ושמחקרים גדולים יותר מוצאים אחר כך אפקט חלש יותר או כלום. התנוחה הבטוחה היא דוגמה לטענה שנעלמה «in precisely this way». הקטע לא טוען שהחוקרים הגזימו בכוונה.",
+          "w": [
+            [
+              "compound",
+              "להחריף, להוסיף על"
+            ],
+            [
+              "inflate",
+              "לנפח, להגזים"
+            ],
+            [
+              "nonetheless",
+              "בכל זאת, למרות זאת"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from the last paragraph that the author",
+          "o": [
+            "agrees with the critics that the replication figures are of little real importance",
+            "sees the retesting of findings as more vital to a field than their novelty",
+            "believes that a failed repetition always reveals a flaw in the original study",
+            "thinks that a single, carefully designed study is enough to settle a question"
+          ],
+          "a": 1,
+          "ex": "הכותב מציג את המבקרים, ואז אומר «Even so»: האמינות של תחום תלויה פחות בחידוש של הממצאים ויותר בנכונות לבדוק אותם שוב. האפשרות השלישית סותרת את דברי המבקרים שהכותב מביא, והרביעית סותרת את המשפט שמחקר יחיד הוא בסיס חלש.",
+          "w": [
+            [
+              "even so",
+              "למרות זאת, ובכל זאת"
+            ],
+            [
+              "credibility",
+              "אמינות"
+            ],
+            [
+              "novelty",
+              "חידוש, חדשנות"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Signs on Clay and Bone",
+      "text": [
+        "Writing is so central to modern life that it is easy to forget how recent an invention it is. Humans had been speaking for tens of thousands of years before anyone devised a way to record language; true writing appeared only about five thousand years ago. Where, how and how many times this happened are still disputed.",
+        "The oldest well-documented case comes from southern Mesopotamia, in what is now Iraq. There, according to one influential theory, writing grew out of bookkeeping. For millennia, officials had used small clay tokens of different shapes to stand for quantities of goods such as grain or sheep. Eventually, tokens were sealed inside hollow clay balls, whose surfaces were pressed with marks showing what lay within. Once it became clear that the marks alone conveyed the same information, the tokens grew redundant, and flat tablets bearing signs took their place. Only gradually were the signs adapted to represent sounds, and thus names and words, rather than merely objects and numbers.",
+        "For much of the twentieth century, many scholars assumed that this Mesopotamian invention was unique and that every other writing system descended from it, directly or through travelers who carried the idea. Egyptian hieroglyphs, which appeared at almost the same time, were often explained in this way. The assumption reflected a conviction that so complex an achievement could hardly have occurred twice.",
+        "That conviction has since weakened considerably. Early Egyptian inscriptions differ markedly from Mesopotamian ones in their signs and in how they represent language, and some appear nearly as old. More decisive are cases far removed in space and time. Chinese characters, first attested on bones used for divination around 1200 BCE, show no convincing link to any western script, while Mesoamerican writing arose among peoples entirely cut off from Asia and Africa. Most specialists therefore now accept that writing was invented independently at least three times, and perhaps four.",
+        "The debate is not merely about dates. If writing emerged on several occasions, the invention looks less like a stroke of individual genius than a predictable response to particular conditions: dense populations, centralized authority and the need to keep track of goods and obligations. Yet the parallel is not perfect. The earliest surviving Chinese texts served religious ritual rather than accounting, a reminder that similar inventions may answer quite different needs."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": [
+            "Clay Tokens and the Growth of Mesopotamian Trade",
+            "One Invention or Several? How Writing Began",
+            "How Writing Traveled from Mesopotamia to China",
+            "Why Ancient Writing Served Mainly Religious Purposes"
+          ],
+          "a": 1,
+          "ex": "הקטע כולו עוסק בשאלה אם הכתב הומצא פעם אחת או כמה פעמים: ההנחה הישנה (פסקה 3), הראיות נגדה (פסקה 4) והמשמעות (פסקה 5). האסימונים הם רק פסקה אחת, והקטע אומר שהכתב הסיני לא קשור לכתב מערבי, כך שהכותרת השלישית הפוכה לטענה.",
+          "w": [
+            [
+              "origin",
+              "מקור, מוצא"
+            ],
+            [
+              "scholar",
+              "חוקר, מלומד"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, the clay tokens were no longer needed once",
+          "o": [
+            "officials began using signs to represent the sounds of people's names and words",
+            "farmers stopped trading goods such as grain and sheep",
+            "the hollow clay balls proved too fragile to store the tokens safely",
+            "the marks on the clay balls were seen to carry the same information"
+          ],
+          "a": 3,
+          "ex": "בפסקה 2: כשהתברר שהסימנים על כדורי החמר מוסרים את אותו מידע, האסימונים נעשו מיותרים. הסימנים שמייצגים צלילים ושמות הגיעו רק אחר כך («Only gradually»), ולכן האפשרות הראשונה מפתה אבל שגויה בסדר הזמנים.",
+          "w": [
+            [
+              "redundant",
+              "מיותר"
+            ],
+            [
+              "convey",
+              "להעביר, למסור"
+            ],
+            [
+              "once",
+              "ברגע ש..., לאחר ש..."
+            ]
+          ]
+        },
+        {
+          "q": "In the third paragraph, the word 'it' (in 'descended from it') refers to",
+          "o": [
+            "the Mesopotamian invention",
+            "the twentieth century",
+            "every other writing system",
+            "Egyptian hieroglyphs"
+          ],
+          "a": 0,
+          "ex": "החוקרים הניחו שההמצאה המסופוטמית הייתה יחידה ושכל מערכת כתב אחרת התפתחה ממנה. «every other writing system» הוא מי שהתפתח, לא המקור שממנו התפתחו, ולכן הוא לא יכול להיות «it».",
+          "w": [
+            [
+              "descend from",
+              "להתפתח מ..., לצאת מ..."
+            ],
+            [
+              "refer to",
+              "להתייחס ל..."
+            ]
+          ]
+        },
+        {
+          "q": "The main purpose of the fourth paragraph is to",
+          "o": [
+            "show that Egyptian writing is in fact older than Mesopotamian writing",
+            "explain how the idea of writing reached Mesoamerica from Asia",
+            "present evidence that writing was invented more than once",
+            "describe the methods used to date inscriptions on bone and clay"
+          ],
+          "a": 2,
+          "ex": "הפסקה פותחת ב«That conviction has since weakened» ומביאה ראיות: הכתב המצרי שונה, הכתב הסיני לא קשור למערב, ובמסואמריקה לא היה מגע עם אסיה. המסקנה: הכתב הומצא לפחות שלוש פעמים. על מצרים נאמר רק «nearly as old», לא שהוא עתיק יותר.",
+          "w": [
+            [
+              "markedly",
+              "באופן ניכר"
+            ],
+            [
+              "attest",
+              "להעיד על, לתעד"
+            ],
+            [
+              "therefore",
+              "לכן"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from the last paragraph that the author",
+          "o": [
+            "believes that writing was most likely the work of a single gifted individual",
+            "considers the debate over the origins of writing to be mainly a question of dates",
+            "is convinced that writing always developed in order to meet economic needs",
+            "thinks that writing did not serve the same needs in every case"
+          ],
+          "a": 3,
+          "ex": "הכותב מציע שהכתב הוא תגובה לתנאים דומים, ואז מסייג ב«Yet the parallel is not perfect»: הכתב הסיני הראשון ששרד שימש לטקסים דתיים ולא לחשבונות. כלומר הצרכים לא היו זהים בכל מקום. האפשרות השלישית סותרת את הדוגמה הסינית.",
+          "w": [
+            [
+              "yet",
+              "ובכל זאת, אך"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "parallel",
+              "הקבלה, דמיון"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Life Without Sunlight",
+      "text": [
+        "In 1977, scientists in a small submarine descended more than two kilometers to the floor of the eastern Pacific and found something no one had predicted. Around cracks where seawater heated by the rock beneath gushed back into the ocean thrived dense communities of clams, crabs and tube worms longer than a human arm. In a place that sunlight never reaches, life was not merely surviving but flourishing.",
+        "Rather than capturing the energy of sunlight, as plants and algae do, the vent communities are built on microbes that extract energy from chemicals dissolved in the hot fluid, notably hydrogen sulfide. Many of the larger animals harbor such microbes within their bodies and depend on them entirely for nourishment. Life, it turned out, could run on energy that did not come from the sun.",
+        "Some researchers soon asked whether vents might also be where life began. The idea gained momentum after the discovery in 2000 of a different kind of vent, far cooler and less acidic than the 'black smokers' found earlier. At such sites, warm alkaline fluid meets seawater inside a maze of thin mineral walls, creating differences in acidity across those walls. Since every living cell powers itself by maintaining a comparable difference across its membrane, supporters propose that this natural arrangement could have driven the first steps of metabolism before cells existed.",
+        "The hypothesis has met with serious objections. The most persistent concerns water itself. Molecules that carry genetic information, such as RNA, are long chains assembled from smaller units, and in water such chains tend to break apart more readily than they form. Critics also note that several laboratory reactions that produce life's building blocks require ultraviolet light, which never penetrates the deep sea. A rival camp therefore favors shallow pools on land, perhaps near hot springs, where repeated drying and wetting could concentrate simple molecules and help them link together, a picture recalling Darwin's passing speculation about 'some warm little pond'.",
+        "Neither side has produced decisive evidence, and perhaps none ever will, since the chemistry that preceded the first cells left no physical trace. Some researchers have accordingly suggested that the two scenarios need not be mutually exclusive, with different stages unfolding in different settings. Regardless of how the debate is resolved, the vents have already shown that life can thrive under a far wider range of conditions than biologists once imagined."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "what vents reveal about life, and whether life began at such sites",
+            "the methods scientists have used to explore the floor of the deep ocean since 1977",
+            "evidence that the theory of life beginning in shallow pools on land has been disproved",
+            "the ways in which microbes living near vents produce chemicals such as hydrogen sulfide"
+          ],
+          "a": 0,
+          "ex": "הקטע מתאר מה גילו בארובות (פסקאות 1-2), ואז את הוויכוח אם החיים התחילו שם (פסקאות 3-5). הבריכות ביבשה הן חלופה שעדיין לא הוכרעה, לא תיאוריה שהופרכה, והחיידקים לא מייצרים מימן גופרתי אלא מפיקים ממנו אנרגיה.",
+          "w": [
+            [
+              "vent",
+              "פתח פליטה, ארובה"
+            ],
+            [
+              "reveal",
+              "לחשוף, לגלות"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, many of the larger animals living near the vents",
+          "o": [
+            "capture energy directly from the chemicals in the hot fluid",
+            "depend on the small amount of sunlight that reaches the seabed",
+            "obtain their food from microbes that live inside their bodies",
+            "feed mainly on smaller creatures such as clams and crabs"
+          ],
+          "a": 2,
+          "ex": "בפסקה 2 כתוב שבעלי חיים גדולים רבים מחזיקים חיידקים בתוך גופם ותלויים בהם לגמרי למזון. האפשרות הראשונה מפתה, אבל מי שמפיק אנרגיה מהכימיקלים הם החיידקים, לא בעלי החיים עצמם. אור שמש בכלל לא מגיע לשם.",
+          "w": [
+            [
+              "harbor",
+              "לאכסן, להחזיק בתוכו"
+            ],
+            [
+              "nourishment",
+              "הזנה, מזון"
+            ],
+            [
+              "notably",
+              "במיוחד; באופן בולט"
+            ]
+          ]
+        },
+        {
+          "q": "In the fourth paragraph, the word 'persistent' could best be replaced by",
+          "o": [
+            "forceful",
+            "unexpected",
+            "convincing",
+            "enduring"
+          ],
+          "a": 3,
+          "ex": "«The most persistent» = ההתנגדות שחוזרת ונשארת הכי הרבה זמן, כלומר «enduring». «convincing» מפתה כי ההתנגדות רצינית, אבל «persistent» מתאר משך והתמדה, לא כמה היא משכנעת.",
+          "w": [
+            [
+              "persistent",
+              "מתמשך, עיקש"
+            ],
+            [
+              "objection",
+              "התנגדות"
+            ]
+          ]
+        },
+        {
+          "q": "The main purpose of the fourth paragraph is to",
+          "o": [
+            "raise problems for the vent hypothesis and offer an alternative to it",
+            "explain how RNA was first produced by chemists in the laboratory",
+            "show that Darwin's view on the origin of life has finally been confirmed",
+            "describe how differences in acidity supply living cells with energy"
+          ],
+          "a": 0,
+          "ex": "הפסקה מביאה שתי בעיות בהשערת הארובות (מים מפרקים שרשראות, אין אור אולטרה סגול) ואז את החלופה של בריכות ביבשה. דרווין מוזכר רק כדמיון («recalling»), ולא נאמר שההשערה שלו אושרה. ההבדלים בחומציות שייכים לפסקה 3.",
+          "w": [
+            [
+              "hypothesis",
+              "השערה"
+            ],
+            [
+              "therefore",
+              "לכן"
+            ],
+            [
+              "penetrate",
+              "לחדור"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from the last paragraph that the author believes that",
+          "o": [
+            "life certainly began in shallow pools and only later spread to the deep sea",
+            "fossils of the earliest cells will eventually settle the debate",
+            "the study of vents has been valuable even if life did not begin there",
+            "the two scenarios described in the passage cannot both be partly correct"
+          ],
+          "a": 2,
+          "ex": "המשפט האחרון: «Regardless of how the debate is resolved», הארובות כבר הראו שהחיים יכולים לשגשג בתנאים רחבים בהרבה. כלומר המחקר שלהן חשוב בכל מקרה. הקטע אומר שהשלבים הראשונים לא השאירו עקבות, ושחוקרים מציעים ששני התרחישים יכולים להתקיים יחד.",
+          "w": [
+            [
+              "regardless of",
+              "בלי קשר ל..., בלי להתחשב ב..."
+            ],
+            [
+              "mutually exclusive",
+              "סותרים זה את זה, לא יכולים להתקיים יחד"
+            ],
+            [
+              "accordingly",
+              "בהתאם לכך, לכן"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

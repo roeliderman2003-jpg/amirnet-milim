@@ -1,0 +1,377 @@
+{
+  "tier": 1,
+  "rc": [
+    {
+      "title": "From Running Machine to Safety Bicycle",
+      "text": [
+        "In 1817, a German official named Karl Drais introduced a strange wooden vehicle that he called a \"running machine.\" It had two wheels in a line and a seat, but no pedals; riders pushed it forward with their feet. Drais may have hoped to replace horses, which had become costly to feed after several poor harvests. It was briefly fashionable, yet it was soon dismissed as a toy for wealthy young men.",
+        "The next major step came in France in the 1860s, when pedals were attached directly to the front wheel. This design, nicknamed the \"boneshaker,\" allowed riders to lift their feet off the ground, but its iron-rimmed wooden wheels made every bump painful. Because each turn of the pedals turned the front wheel only once, the only way to go faster was to make that wheel larger. By the 1870s, this logic had produced the \"high-wheeler,\" whose front wheel could be as tall as an adult. Fast but unstable, it could throw its rider over the handlebars after hitting a single stone.",
+        "The solution arrived in 1885 with the \"safety bicycle,\" designed in England. Its two wheels were roughly the same size, and the rider's pedals moved a chain that drove the rear wheel. Because the chain connected a large gear to a smaller one, a single turn of the pedals could turn the wheel several times, so speed no longer depended on wheel size. A few years later, air-filled rubber tires replaced solid ones, making the ride far smoother. The basic shape of the bicycle has hardly changed since then.",
+        "The safety bicycle did more than make cycling less dangerous. As mass production lowered prices, millions of ordinary workers could afford a cheap means of travel for the first time. Women in particular embraced it: the bicycle gave them a freedom of movement they had rarely enjoyed, and it even encouraged changes in fashion, since long, heavy skirts were difficult to ride in."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": [
+            "Karl Drais and the End of the Horse",
+            "Why Cycling Is Safer Than Riding a Horse",
+            "How the Bicycle Developed into Its Modern Form",
+            "The Bicycle's Influence on Women's Fashion"
+          ],
+          "a": 2,
+          "ex": "הקטע עובר שלב אחר שלב: מכונת הריצה בלי דוושות, ה-boneshaker, ה-high-wheeler, ולבסוף ה-safety bicycle שהצורה שלו כמעט לא השתנתה מאז. האופנה של נשים מוזכרת רק בסוף הפסקה האחרונה, ולכן היא לא כותרת לכל הקטע.",
+          "w": [
+            [
+              "develop",
+              "להתפתח, לפתח"
+            ],
+            [
+              "introduce",
+              "להציג, להכניס (המצאה)"
+            ]
+          ]
+        },
+        {
+          "q": "According to paragraph 2, bicycle makers in the 1870s built very large front wheels in order to",
+          "o": [
+            "make the bicycle go faster",
+            "make the ride more comfortable",
+            "prevent riders from falling off",
+            "lower the price of the bicycle"
+          ],
+          "a": 0,
+          "ex": "בפסקה 2 כתוב שכל סיבוב של הדוושות סובב את הגלגל הקדמי רק פעם אחת, ולכן «the only way to go faster» היה להגדיל את הגלגל. הגלגל הגדול דווקא הגביר את הסכנה ליפול, ולא מנע אותה.",
+          "w": [
+            [
+              "in order to",
+              "כדי ל... (+פועל)"
+            ],
+            [
+              "attach",
+              "לחבר, להצמיד"
+            ]
+          ]
+        },
+        {
+          "q": "In paragraph 4, the word \"embraced\" (in \"Women in particular embraced it\") is closest in meaning to",
+          "o": [
+            "strongly criticized",
+            "eagerly adopted",
+            "carefully repaired",
+            "hardly noticed"
+          ],
+          "a": 1,
+          "ex": "«embrace» כאן = לאמץ בהתלהבות. ההמשך מסביר שהאופניים נתנו לנשים חופש תנועה ואפילו שינו את האופנה, כלומר הן אהבו אותם והשתמשו בהם. «strongly criticized» הפוך לגמרי למה שמתואר.",
+          "w": [
+            [
+              "embrace",
+              "לאמץ (בהתלהבות); לחבק"
+            ],
+            [
+              "in particular",
+              "במיוחד, בפרט"
+            ]
+          ]
+        },
+        {
+          "q": "According to paragraph 3, the safety bicycle did not need a giant front wheel because",
+          "o": [
+            "its rubber tires made the whole bicycle lighter",
+            "its frame was built from a lighter metal",
+            "it was designed mainly for short city trips",
+            "its gears made the wheel turn faster than the pedals"
+          ],
+          "a": 3,
+          "ex": "בפסקה 3 כתוב שהשרשרת חיברה גלגל שיניים גדול לקטן, ולכן סיבוב אחד של הדוושות סובב את הגלגל כמה פעמים, «so speed no longer depended on wheel size». כלומר הגלגל מסתובב מהר יותר מהדוושות, ואין צורך בגלגל ענק. הצמיגים מוזכרים כשיפור בנוחות, לא כסיבה לגודל הגלגל.",
+          "w": [
+            [
+              "gear",
+              "גלגל שיניים"
+            ],
+            [
+              "depend on",
+              "להיות תלוי ב..."
+            ],
+            [
+              "no longer",
+              "כבר לא"
+            ]
+          ]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": [
+            "describe the effects of the safety bicycle on society",
+            "explain how bicycles were mass-produced in factories",
+            "show that cycling remained dangerous for women",
+            "compare the prices of different early bicycles"
+          ],
+          "a": 0,
+          "ex": "הפסקה נפתחת ב-«did more than make cycling less dangerous» ומתארת מה האופניים שינו בחברה: פועלים יכלו להרשות לעצמם תחבורה, ונשים קיבלו חופש תנועה. ייצור המוני מוזכר רק כסיבה לירידת המחירים, לא כנושא הפסקה.",
+          "w": [
+            [
+              "mass production",
+              "ייצור המוני"
+            ],
+            [
+              "afford",
+              "להרשות לעצמו (כספית)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Living on Almost Nothing",
+      "text": [
+        "In many deserts, rain falls only a few times a year, and the hot sun can dry the ground within hours. Even so, these regions are far from empty. Thousands of plant species have adapted to such harsh conditions, and they have done so in surprisingly different ways. Broadly speaking, desert plants follow one of three strategies: they store water, they reduce the amount of water they lose, or they avoid the dry season altogether.",
+        "The best-known water storers are cacti. Their thick stems contain spongy tissue that swells after a rainstorm and slowly shrinks as the stored water is used. Many cacti also have shallow roots that spread widely just beneath the surface, allowing them to collect rainwater quickly before it evaporates. Their spines, which are actually modified leaves, protect this precious supply from thirsty animals and also shade the stem from the sun.",
+        "Other plants concentrate on saving water. Ordinary leaves lose a great deal of moisture through tiny openings called stomata, which plants must open in order to take in carbon dioxide. Many desert species keep these openings closed during the heat of the day and open them only at night, when the air is cooler and more humid. They store the carbon dioxide they absorb in the dark and use it for photosynthesis once the sun rises. Some shrubs go even further, dropping their leaves completely during long dry periods and growing new ones after it rains.",
+        "The third group does not attempt to survive the drought at all. Certain desert flowers spend most of their lives as seeds buried in the soil, sometimes for several years. When enough rain finally falls, they sprout, bloom and produce new seeds within a few weeks, before the ground dries out again. To a visitor, a desert suddenly covered in flowers may seem like a rare miracle; in fact, it is the result of a carefully timed survival plan."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "why deserts receive so little rain",
+            "how desert animals find water to drink",
+            "the life cycle of the cactus",
+            "different ways in which plants survive in dry places"
+          ],
+          "a": 3,
+          "ex": "בפסקה 1 הקטע מציג שלוש אסטרטגיות (לאגור מים, לחסוך במים, להימנע מעונת היובש), וכל אחת מהפסקאות הבאות מסבירה אחת מהן. הקקטוס הוא רק הדוגמה של פסקה 2, ולכן «the life cycle of the cactus» צר מדי.",
+          "w": [
+            [
+              "survive",
+              "לשרוד"
+            ],
+            [
+              "adapt",
+              "להסתגל"
+            ]
+          ]
+        },
+        {
+          "q": "According to paragraph 2, the shallow roots of many cacti help them to",
+          "o": [
+            "reach water deep under the ground",
+            "collect rainwater before it disappears",
+            "protect the stem from thirsty animals",
+            "shade the plant from the sun"
+          ],
+          "a": 1,
+          "ex": "בפסקה 2 כתוב שהשורשים הרדודים מתפרשים ממש מתחת לפני הקרקע ואוספים את מי הגשם מהר, «before it evaporates». הגנה מבעלי חיים וצל הם התפקיד של הקוצים, לא של השורשים.",
+          "w": [
+            [
+              "shallow",
+              "רדוד"
+            ],
+            [
+              "evaporate",
+              "להתאדות"
+            ],
+            [
+              "beneath",
+              "מתחת ל..."
+            ]
+          ]
+        },
+        {
+          "q": "In paragraph 3, the word \"They\" (in \"They store the carbon dioxide they absorb in the dark\") refers to",
+          "o": [
+            "ordinary leaves",
+            "the tiny openings",
+            "many desert species",
+            "long dry periods"
+          ],
+          "a": 2,
+          "ex": "המשפט הקודם מדבר על «Many desert species» שסוגרות את הפתחים ביום ופותחות אותם בלילה, והן אלה שאוגרות את הפחמן הדו-חמצני ומשתמשות בו בבוקר. הפתחים (stomata) רק מכניסים את הגז, הם לא אוגרים אותו.",
+          "w": [
+            [
+              "absorb",
+              "לספוג, לקלוט"
+            ],
+            [
+              "store",
+              "לאגור, לאחסן"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from paragraph 3 that many desert plants open their stomata at night because",
+          "o": [
+            "less water is lost when the air is cool and humid",
+            "carbon dioxide can only be found in the air at night",
+            "photosynthesis can take place only in the dark",
+            "strong sunlight damages the openings"
+          ],
+          "a": 0,
+          "ex": "לפי פסקה 3, דרך הפתחים יוצאת הרבה לחות, והצמחים פותחים אותם רק בלילה, «when the air is cooler and more humid». מכאן שבלילה הם מאבדים פחות מים. «only in the dark» לא נכון, כי כתוב שהפוטוסינתזה מתבצעת «once the sun rises».",
+          "w": [
+            [
+              "humid",
+              "לח"
+            ],
+            [
+              "moisture",
+              "לחות"
+            ]
+          ]
+        },
+        {
+          "q": "Why does the author describe a desert covered in flowers as \"the result of a carefully timed survival plan\"?",
+          "o": [
+            "to suggest that tourists should visit deserts only after it rains",
+            "to explain why desert flowers live for many years as adult plants",
+            "to show that the sudden bloom is an adaptation rather than a lucky accident",
+            "to argue that desert flowers are less common than cacti"
+          ],
+          "a": 2,
+          "ex": "המחבר מנגיד בין מה שנראה למבקר («a rare miracle») לבין מה שקורה באמת («in fact»): הזרעים מחכים לגשם ומספיקים לפרוח לפני שהאדמה מתייבשת, כלומר זו הסתגלות. הצמחים האלה חיים שנים כזרעים, לא כצמחים בוגרים.",
+          "w": [
+            [
+              "in fact",
+              "למעשה, בעצם"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "sprout",
+              "לנבוט"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Larks, Owls and the Body Clock",
+      "text": [
+        "Some people wake up full of energy before sunrise, while others struggle to think clearly until late morning and feel most alert after dark. Scientists call these differences chronotypes. Most people fall somewhere in the middle, but a significant minority are clearly \"larks\" (early birds) or \"owls\" (night owls). For a long time, such preferences were treated as a matter of discipline; owls, in particular, were often seen as lazy. Research now suggests that the picture is far more complicated.",
+        "Every person has an internal clock, located in a small region of the brain, that runs on a cycle of roughly 24 hours. This clock controls when we feel sleepy, when body temperature rises and when certain hormones are released. Morning light resets it each day, keeping it in step with the world around us. However, the clock does not run at exactly the same speed in everyone. In people whose cycle is slightly longer than 24 hours, the clock tends to drift later, which pushes them toward an owl pattern.",
+        "Genes play an important part in these differences. Large studies have identified dozens of genetic variants that are linked to being a morning or an evening person. Age matters as well. Teenagers typically shift toward later sleep times, a change that reaches its peak at around the age of twenty and then gradually reverses. Many older adults, in contrast, find themselves waking up earlier than they would like.",
+        "These findings have practical implications. Because most schools and workplaces start early, owls are often forced to function at a time when their bodies are not ready, a mismatch sometimes described as \"social jet lag.\" Some researchers argue that later school start times could improve teenagers' learning and mood, and several school districts that tried this approach reported encouraging results. Understanding chronotypes, therefore, may help societies design schedules that suit more people."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": [
+            "How to Become a Morning Person",
+            "Why People Differ in Their Daily Rhythms",
+            "The Dangers of Jet Lag for Travelers",
+            "Why Teenagers Need Less Sleep"
+          ],
+          "a": 1,
+          "ex": "הקטע מסביר למה יש «ציפורי בוקר» ו«ינשופי לילה»: השעון הפנימי, גנים וגיל, ומה המשמעות לבתי ספר ולעבודה. «jet lag» מופיע רק כשם לחוסר ההתאמה בפסקה האחרונה, לא כנושא של טיסות.",
+          "w": [
+            [
+              "differ",
+              "להיות שונה"
+            ],
+            [
+              "alert",
+              "ערני"
+            ]
+          ]
+        },
+        {
+          "q": "According to paragraph 2, a person is more likely to be a night owl if",
+          "o": [
+            "he or she is exposed to a lot of morning light",
+            "his or her body temperature stays the same all day",
+            "his or her internal clock is located in a different part of the brain",
+            "his or her internal cycle is a little longer than 24 hours"
+          ],
+          "a": 3,
+          "ex": "בפסקה 2 כתוב שאצל מי שהמחזור שלו «slightly longer than 24 hours» השעון נוטה לזוז מאוחר יותר, וזה דוחף אותו לדפוס של ינשוף. אור בוקר דווקא מכוון את השעון כל יום, ולא הופך אדם לינשוף.",
+          "w": [
+            [
+              "slightly",
+              "מעט, במידה קטנה"
+            ],
+            [
+              "tend to",
+              "נוטה ל..."
+            ],
+            [
+              "drift",
+              "להיסחף, לזוז לאט"
+            ]
+          ]
+        },
+        {
+          "q": "In paragraph 2, the word \"it\" (in \"Morning light resets it each day\") refers to",
+          "o": [
+            "the internal clock",
+            "a small region of the brain",
+            "body temperature",
+            "the world around us"
+          ],
+          "a": 0,
+          "ex": "המשפט הקודם מתאר את השעון הפנימי ומה הוא שולט בו, ואור הבוקר «resets it», כלומר מכוון מחדש את השעון כדי שיתאים לעולם. «a small region of the brain» מפתה, אבל זה רק המקום שבו השעון נמצא, ואזור במוח לא «מכוונים מחדש».",
+          "w": [
+            [
+              "reset",
+              "לאפס, לכוון מחדש"
+            ],
+            [
+              "in step with",
+              "מתואם עם, בקצב אחד עם"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from paragraph 3 that, compared with a typical sixty-year-old, a typical twenty-year-old",
+          "o": [
+            "has fewer genetic variants linked to sleep",
+            "wakes up earlier in the morning",
+            "tends to prefer later sleep times",
+            "is less affected by morning light"
+          ],
+          "a": 2,
+          "ex": "לפי פסקה 3, המעבר לשעות שינה מאוחרות מגיע לשיא בערך בגיל עשרים, ואילו מבוגרים רבים מתעוררים מוקדם. לכן בן עשרים נוטה לשעות מאוחרות יותר. «wakes up earlier» מתאר דווקא את המבוגרים.",
+          "w": [
+            [
+              "in contrast",
+              "לעומת זאת"
+            ],
+            [
+              "peak",
+              "שיא"
+            ],
+            [
+              "gradually",
+              "בהדרגה"
+            ]
+          ]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": [
+            "prove that later school start times always improve grades",
+            "explain why research on chronotypes matters for how schedules are planned",
+            "describe the effects of long flights on sleep",
+            "argue that owls work less hard than larks"
+          ],
+          "a": 1,
+          "ex": "הפסקה פותחת ב-«practical implications» ומסבירה שלוח זמנים מוקדם פוגע בינשופים, ולכן הבנת הכרונוטיפים יכולה לעזור לתכנן שעות שמתאימות ליותר אנשים («therefore»). «always improve grades» קיצוני מדי: כתוב רק «encouraging results».",
+          "w": [
+            [
+              "therefore",
+              "לכן"
+            ],
+            [
+              "implication",
+              "השלכה, משמעות"
+            ],
+            [
+              "mismatch",
+              "חוסר התאמה"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

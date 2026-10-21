@@ -1,0 +1,1001 @@
+{
+ "tier": 0,
+ "sc": [
+  {
+   "qs": [
+    {
+     "q": "After the long walk in the hot sun, the children were ___ and asked for something cold to drink.",
+     "o": [
+      "noisy",
+      "brave",
+      "thirsty",
+      "lazy"
+     ],
+     "a": 2,
+     "ex": "«thirsty» = צמא. הילדים ביקשו משהו קר לשתות אחרי הליכה בשמש, ולכן הם צמאים. «lazy» (עצלן) אולי מתאים לעייפות, אבל לא מסביר למה ביקשו לשתות.",
+     "w": [
+      [
+       "thirsty",
+       "צמא"
+      ]
+     ]
+    },
+    {
+     "q": "Rina wanted to buy the blue jacket, ___ it was too expensive, so she chose a cheaper one.",
+     "o": [
+      "but",
+      "because",
+      "so",
+      "unless"
+     ],
+     "a": 0,
+     "ex": "«but» = אבל. היא רצתה את המעיל, אבל הוא היה יקר מדי: זה ניגוד בין הרצון למה שקרה. «because» (כי) היה אומר שהיא רצתה אותו בגלל שהוא יקר, וזה לא מתאים לכך שבחרה מעיל זול יותר.",
+     "w": [
+      [
+       "but",
+       "אבל"
+      ],
+      [
+       "expensive",
+       "יקר"
+      ]
+     ]
+    },
+    {
+     "q": "The fire spread quickly through the dry forest, and hundreds of families had to ___ their homes in the middle of the night.",
+     "o": [
+      "build",
+      "paint",
+      "clean",
+      "leave"
+     ],
+     "a": 3,
+     "ex": "«leave» = לעזוב. בגלל השריפה המשפחות נאלצו לעזוב את הבתים באמצע הלילה. «build» (לבנות) או «clean» (לנקות) לא הגיוניים בזמן שריפה בלילה.",
+     "w": [
+      [
+       "leave",
+       "לעזוב"
+      ],
+      [
+       "spread",
+       "להתפשט"
+      ]
+     ]
+    },
+    {
+     "q": "Please turn off your phones ___ the film, so that other people can enjoy it in silence.",
+     "o": [
+      "after",
+      "during",
+      "without",
+      "instead of"
+     ],
+     "a": 1,
+     "ex": "«during» = במהלך. מכבים את הטלפון בזמן הסרט כדי שאחרים יוכלו ליהנות בשקט. «after» (אחרי) לא הגיוני: אחרי הסרט כבר אין צורך בשקט.",
+     "w": [
+      [
+       "during",
+       "במהלך (+שם עצם)"
+      ],
+      [
+       "silence",
+       "שקט"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "The small bakery on our street is always busy in the morning, because its bread is fresh and its prices are ___.",
+     "o": [
+      "strange",
+      "low",
+      "high",
+      "empty"
+     ],
+     "a": 1,
+     "ex": "«low» = נמוך. המאפייה מלאה אנשים כי הלחם טרי והמחירים נמוכים: שתי סיבות טובות לקנות שם. «high» (גבוה) הוא ההפך, ומחירים גבוהים לא מסבירים למה תמיד יש בה קונים.",
+     "w": [
+      [
+       "low",
+       "נמוך"
+      ],
+      [
+       "busy",
+       "עמוס, עסוק"
+      ]
+     ]
+    },
+    {
+     "q": "Lior could not ___ the name of the singer, although he knew every word of her most famous song.",
+     "o": [
+      "forget",
+      "hear",
+      "sing",
+      "remember"
+     ],
+     "a": 3,
+     "ex": "«remember» = לזכור. הוא ידע את כל המילים של השיר, ובכל זאת לא זכר את שם הזמרת: זה הניגוד ש-«although» מבקש. «forget» (לשכוח) לא יוצר ניגוד: «לא יכול היה לשכוח את השם למרות שידע את השיר» לא הגיוני.",
+     "w": [
+      [
+       "remember",
+       "לזכור"
+      ],
+      [
+       "although",
+       "למרות ש... (+משפט)"
+      ]
+     ]
+    },
+    {
+     "q": "The streets were still wet this morning, ___ it had rained heavily during the night.",
+     "o": [
+      "since",
+      "although",
+      "unless",
+      "so that"
+     ],
+     "a": 0,
+     "ex": "«since» כאן = מכיוון ש. הרחובות רטובים כי ירד גשם בלילה: החלק השני הוא הסיבה. «although» (למרות ש) לא מתאים, כי אין ניגוד בין גשם לרחוב רטוב.",
+     "w": [
+      [
+       "since",
+       "מכיוון ש..."
+      ],
+      [
+       "heavily",
+       "בכבדות, בחוזקה"
+      ]
+     ]
+    },
+    {
+     "q": "Our cat is very ___; she hides under the bed whenever a stranger comes into the house.",
+     "o": [
+      "friendly",
+      "hungry",
+      "shy",
+      "loud"
+     ],
+     "a": 2,
+     "ex": "«shy» = ביישן. החתולה מתחבאת מתחת למיטה כשאדם זר נכנס, וזה מה שעושה חתול ביישן. «friendly» (ידידותי) הוא ההפך: חתול ידידותי היה ניגש לאורח.",
+     "w": [
+      [
+       "shy",
+       "ביישן"
+      ],
+      [
+       "stranger",
+       "אדם זר"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Gal finished all his homework; ___, he cleaned his room and helped his father in the garden.",
+     "o": [
+      "however",
+      "for example",
+      "instead",
+      "in addition"
+     ],
+     "a": 3,
+     "ex": "«in addition» = בנוסף. גל סיים שיעורי בית, וחוץ מזה גם ניקה וגם עזר: הוספה של עוד דברים. «however» (עם זאת) דורש ניגוד, ואין כאן ניגוד.",
+     "w": [
+      [
+       "in addition",
+       "בנוסף"
+      ],
+      [
+       "however",
+       "עם זאת, אולם"
+      ]
+     ]
+    },
+    {
+     "q": "The price of tomatoes went up this month, because the cold weather ___ much of the crop in the south.",
+     "o": [
+      "protected",
+      "grew",
+      "damaged",
+      "sold"
+     ],
+     "a": 2,
+     "ex": "«damaged» = הזיק, פגע. מזג האוויר הקר פגע בחלק גדול מהיבול, ולכן יש פחות עגבניות והמחיר עלה. «protected» (הגן) הפוך: אם היבול היה מוגן, המחיר לא היה עולה.",
+     "w": [
+      [
+       "damage",
+       "להזיק, לפגוע"
+      ],
+      [
+       "crop",
+       "יבול"
+      ]
+     ]
+    },
+    {
+     "q": "You can stay at the party ___ ten o'clock, but after that you must come home.",
+     "o": [
+      "since",
+      "until",
+      "during",
+      "unless"
+     ],
+     "a": 1,
+     "ex": "«until» = עד. מותר להישאר עד השעה עשר, ואחרי זה צריך לחזור. «since» (מאז) מתאר זמן שהתחיל בעבר, וזה לא מתאים למשפט על הערב הזה.",
+     "w": [
+      [
+       "until",
+       "עד ש..."
+      ]
+     ]
+    },
+    {
+     "q": "This bag is too ___ for me to carry alone; can you help me lift it?",
+     "o": [
+      "heavy",
+      "light",
+      "small",
+      "cheap"
+     ],
+     "a": 0,
+     "ex": "«heavy» = כבד. הוא מבקש עזרה להרים את התיק, ולכן התיק כבד מדי. «light» (קל) הוא ההפך: תיק קל לא צריך עזרה.",
+     "w": [
+      [
+       "heavy",
+       "כבד"
+      ],
+      [
+       "lift",
+       "להרים"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Before the exam, the teacher ___ the students to turn off their phones, because many of them had forgotten to do so the week before.",
+     "o": [
+      "reminded",
+      "allowed",
+      "forbade",
+      "invited"
+     ],
+     "a": 0,
+     "ex": "«remind» = להזכיר. בשבוע הקודם תלמידים רבים שכחו לכבות את הטלפון, ולכן המורה הזכירה להם. «forbade» (אסרה) אומר את ההפך, ו-«allowed» (הרשתה) לא מתאים, כי מי ששכח צריך תזכורת ולא רשות.",
+     "w": [
+      [
+       "remind",
+       "להזכיר"
+      ],
+      [
+       "allow",
+       "להרשות"
+      ],
+      [
+       "forbid",
+       "לאסור"
+      ]
+     ]
+    },
+    {
+     "q": "The beach was closed ___ the strong winds, so we spent the afternoon at the cinema.",
+     "o": [
+      "in spite of",
+      "because of",
+      "instead of",
+      "in addition to"
+     ],
+     "a": 1,
+     "ex": "«because of» = בגלל. החוף נסגר בגלל הרוחות החזקות, ולכן הלכו לקולנוע. «in spite of» (למרות) לא הגיוני: רוחות חזקות הן סיבה לסגור חוף, לא דבר שמנוגד לסגירה.",
+     "w": [
+      [
+       "because of",
+       "בגלל (+שם עצם)"
+      ],
+      [
+       "in spite of",
+       "למרות (+שם עצם)"
+      ]
+     ]
+    },
+    {
+     "q": "It is ___ to swim in this river, because the water is deep and moves very fast.",
+     "o": [
+      "safe",
+      "pleasant",
+      "dangerous",
+      "useful"
+     ],
+     "a": 2,
+     "ex": "«dangerous» = מסוכן. מים עמוקים וזרם מהיר הופכים את השחייה למסוכנת. «safe» (בטוח) הוא ההפך ממה שהסיבה במשפט מתארת.",
+     "w": [
+      [
+       "dangerous",
+       "מסוכן"
+      ],
+      [
+       "deep",
+       "עמוק"
+      ]
+     ]
+    },
+    {
+     "q": "Yael ___ a lot of money last year by riding her bike to work instead of taking a taxi.",
+     "o": [
+      "spent",
+      "lost",
+      "borrowed",
+      "saved"
+     ],
+     "a": 3,
+     "ex": "«save» = לחסוך. רכיבה על אופניים במקום מונית עולה פחות, ולכן היא חסכה כסף. «spent» (הוציאה) הפוך: אופניים לא גורמים להוציא הרבה כסף.",
+     "w": [
+      [
+       "save",
+       "לחסוך; להציל"
+      ],
+      [
+       "instead of",
+       "במקום (+שם עצם / ing)"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "___ his long day at work, Avi still went to watch his daughter's school play.",
+     "o": [
+      "Because of",
+      "Instead of",
+      "In spite of",
+      "In addition to"
+     ],
+     "a": 2,
+     "ex": "«In spite of» = למרות. אבי היה אחרי יום עבודה ארוך, ובכל זאת הלך להצגה, והמילה «still» (ובכל זאת) מראה שיש כאן ויתור. «Because of» (בגלל) לא הגיוני: יום ארוך הוא לא סיבה ללכת להצגה.",
+     "w": [
+      [
+       "in spite of",
+       "למרות (+שם עצם)"
+      ],
+      [
+       "still",
+       "ובכל זאת; עדיין"
+      ]
+     ]
+    },
+    {
+     "q": "The instructions in the box were so ___ that we built the new table in only twenty minutes.",
+     "o": [
+      "confusing",
+      "long",
+      "boring",
+      "clear"
+     ],
+     "a": 3,
+     "ex": "«clear» = ברור. ההוראות היו כל כך ברורות שבנו את השולחן מהר. «confusing» (מבלבל) הפוך: הוראות מבלבלות היו גורמות לעבודה איטית.",
+     "w": [
+      [
+       "clear",
+       "ברור"
+      ],
+      [
+       "so... that",
+       "כל כך... ש..."
+      ]
+     ]
+    },
+    {
+     "q": "Many animals sleep through most of the cold winter; bears, ___, may not eat anything for several months.",
+     "o": [
+      "for instance",
+      "however",
+      "instead",
+      "otherwise"
+     ],
+     "a": 0,
+     "ex": "«for instance» = למשל. הדובים הם דוגמה לבעלי חיים שישנים בחורף. «however» (עם זאת) היה מציג ניגוד, אבל הדובים לא שונים משאר בעלי החיים כאן, הם דוגמה להם.",
+     "w": [
+      [
+       "for instance",
+       "למשל"
+      ],
+      [
+       "several",
+       "כמה, מספר"
+      ]
+     ]
+    },
+    {
+     "q": "The train was ___ by an hour because of a problem on the tracks, so many passengers were late for work.",
+     "o": [
+      "repaired",
+      "delayed",
+      "filled",
+      "painted"
+     ],
+     "a": 1,
+     "ex": "«delayed» = התעכב. בגלל בעיה במסילה הרכבת איחרה בשעה, ולכן נוסעים איחרו לעבודה. «repaired» (תוקן) לא מסביר למה הנוסעים איחרו.",
+     "w": [
+      [
+       "delay",
+       "לעכב, עיכוב"
+      ],
+      [
+       "passenger",
+       "נוסע"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Shira studied hard all year, ___ she received the highest grade in her class.",
+     "o": [
+      "but",
+      "so",
+      "or",
+      "unless"
+     ],
+     "a": 1,
+     "ex": "«so» = לכן. שירה למדה קשה, ולכן קיבלה את הציון הכי גבוה: החלק השני הוא תוצאה של הראשון. «but» (אבל) מציג ניגוד, ואין ניגוד בין למידה קשה לציון גבוה.",
+     "w": [
+      [
+       "so",
+       "לכן, אז"
+      ],
+      [
+       "grade",
+       "ציון"
+      ]
+     ]
+    },
+    {
+     "q": "The doctor asked Ron to ___ eating sweets for a month to see whether his stomach pains would go away.",
+     "o": [
+      "stop",
+      "start",
+      "enjoy",
+      "continue"
+     ],
+     "a": 0,
+     "ex": "«stop» = להפסיק. הרופא רוצה לבדוק אם הכאבים יעברו בלי ממתקים, ולכן ביקש להפסיק לאכול אותם. «continue» (להמשיך) לא יעזור לבדוק את זה.",
+     "w": [
+      [
+       "stop",
+       "להפסיק"
+      ],
+      [
+       "whether",
+       "האם; בין אם"
+      ]
+     ]
+    },
+    {
+     "q": "Call me ___ you arrive at the station, and I will come to pick you up right away.",
+     "o": [
+      "until",
+      "although",
+      "unless",
+      "as soon as"
+     ],
+     "a": 3,
+     "ex": "«as soon as» = ברגע ש. כשתגיע לתחנה תתקשר, ואני אבוא מיד. «unless» (אלא אם כן) הופך את המשמעות: «תתקשר אלא אם תגיע» לא הגיוני.",
+     "w": [
+      [
+       "as soon as",
+       "ברגע ש..., מיד כש..."
+      ],
+      [
+       "pick up",
+       "לאסוף"
+      ]
+     ]
+    },
+    {
+     "q": "Plastic bags are a serious problem for the ___, because they can stay in the sea for hundreds of years.",
+     "o": [
+      "economy",
+      "weather",
+      "environment",
+      "traffic"
+     ],
+     "a": 2,
+     "ex": "«environment» = הסביבה. שקיות שנשארות בים מאות שנים פוגעות בטבע ובסביבה. «economy» (כלכלה) או «weather» (מזג האוויר) לא קשורים לזיהום בים.",
+     "w": [
+      [
+       "environment",
+       "סביבה"
+      ],
+      [
+       "serious",
+       "רציני, חמור"
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "rs": [
+  {
+   "qs": [
+    {
+     "q": "Because the city added more buses to the morning schedule, fewer people now drive their cars to work in the center.",
+     "o": [
+      "Because fewer people drive their cars to work in the center, the city added more buses to the morning schedule.",
+      "The city put more buses on the morning schedule; as a result, fewer people drive to work downtown now.",
+      "Although the city added more buses in the morning, more people now drive their cars to work in the center.",
+      "The city added more buses to the morning schedule, but almost nobody uses them to get to work."
+     ],
+     "a": 1,
+     "ex": "«Because» הוחלף ב-«as a result» (כתוצאה מכך), והסיבה והתוצאה נשארו באותו כיוון: יותר אוטובוסים, ולכן פחות נהגים. התשובה שמתחילה ב-«Because fewer people drive» הופכת את הסיבה והתוצאה.",
+     "w": [
+      [
+       "as a result",
+       "כתוצאה מכך"
+      ],
+      [
+       "because",
+       "כי, מפני ש... (+משפט)"
+      ],
+      [
+       "schedule",
+       "לוח זמנים"
+      ]
+     ]
+    },
+    {
+     "q": "Many older people find it hard to use new phones, so some shops now offer free lessons on Sunday mornings.",
+     "o": [
+      "Many older people find new phones hard to use, although all shops now offer free lessons on Sunday mornings.",
+      "Some shops offer free lessons on Sunday mornings, so many older people now find it easy to use new phones.",
+      "Many older people teach shop workers how to use new phones during free lessons on Sunday mornings.",
+      "Since a lot of older people have difficulty using new phones, several shops now give free classes on Sunday mornings."
+     ],
+     "a": 3,
+     "ex": "«so» (לכן) הפך ל-«Since» (מכיוון ש) בתחילת המשפט, ו-«find it hard» הפך ל-«have difficulty». הקושי של המבוגרים הוא עדיין הסיבה לשיעורים. התשובה עם «all shops» משנה «some» (חלק) ל«כל», ומוסיפה ניגוד שאין במקור.",
+     "w": [
+      [
+       "since",
+       "מכיוון ש..."
+      ],
+      [
+       "so",
+       "לכן, אז"
+      ],
+      [
+       "difficulty",
+       "קושי"
+      ]
+     ]
+    },
+    {
+     "q": "Unlike most birds, penguins cannot fly, but they are excellent swimmers and can stay underwater for several minutes while hunting for fish.",
+     "o": [
+      "Most birds can fly, but penguins cannot; still, they swim extremely well and can spend several minutes underwater hunting fish.",
+      "Like most other birds, penguins are not able to fly, so they have to stay underwater for several minutes while hunting fish.",
+      "Penguins can fly as well as most other birds, and they can also stay underwater for several minutes while they hunt for fish.",
+      "Penguins cannot fly, and since they are poor swimmers, they rarely stay underwater for more than a few seconds when hunting fish."
+     ],
+     "a": 0,
+     "ex": "«Unlike most birds» הפך ל-«Most birds can fly, but penguins cannot», «but» הפך ל-«still», ו-«excellent swimmers» ל-«swim extremely well». «Like most other birds» אומר שגם רוב הציפורים לא עפות, וזה הפוך מהמקור.",
+     "w": [
+      [
+       "unlike",
+       "בניגוד ל... (+שם עצם)"
+      ],
+      [
+       "still",
+       "ובכל זאת; עדיין"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "People who live near a park tend to walk more each day than people who live far from green areas.",
+     "o": [
+      "Living near a park makes people walk more each day, because green areas give them more energy.",
+      "People who live far from green areas tend to walk more each day than those who live near a park.",
+      "Those living close to a park usually walk more every day than those whose homes are far from green spaces.",
+      "All people who live near a park walk more each day than anyone who lives far from green areas."
+     ],
+     "a": 2,
+     "ex": "«tend to» (נוטים) הפך ל-«usually» (בדרך כלל): זו נטייה, לא חוק. התשובה עם «makes people walk» מוסיפה שהפארק הוא הסיבה, ו-«All people» הופך נטייה לחוק שתקף לכולם.",
+     "w": [
+      [
+       "tend to",
+       "נוטה ל..."
+      ],
+      [
+       "usually",
+       "בדרך כלל"
+      ],
+      [
+       "close to",
+       "קרוב ל..."
+      ]
+     ]
+    },
+    {
+     "q": "If you water this plant only once a week, it will grow well even in a small apartment with little sunlight.",
+     "o": [
+      "Watering this plant once a week is enough for it to grow well, even in a small apartment that gets little sun.",
+      "This plant will grow well in a small apartment only if it gets a lot of sunlight and water every day.",
+      "This plant grows well in a small apartment, but it must be watered several times a week because there is little sunlight.",
+      "Even if you water this plant once a week, it will not grow well in a small apartment with little sunlight."
+     ],
+     "a": 0,
+     "ex": "המקור אומר שמספיק להשקות פעם בשבוע, והצמח יגדל טוב גם עם מעט שמש. «is enough» (מספיק) מבטא את «only once a week». התשובה עם «only if it gets a lot of sunlight» סותרת את «little sunlight» שבמקור.",
+     "w": [
+      [
+       "even",
+       "אפילו"
+      ],
+      [
+       "only if",
+       "רק אם"
+      ],
+      [
+       "enough",
+       "מספיק"
+      ]
+     ]
+    },
+    {
+     "q": "Before the new law was passed, drivers could park on this street for free, but now they must pay for every hour.",
+     "o": [
+      "Because drivers had to pay for every hour of parking on this street, a new law now lets them park for free.",
+      "Drivers have always had to pay for every hour they park on this street, both before and after the new law.",
+      "Before the new law was passed, drivers paid for parking on this street, and now they can park for only one hour.",
+      "Drivers used to park on this street at no cost; the new law, however, now requires them to pay for each hour."
+     ],
+     "a": 3,
+     "ex": "«used to» = נהגו בעבר, ו-«at no cost» = «for free». לפני החוק החניה הייתה חינם, ועכשיו משלמים על כל שעה. התשובה «Drivers have always had to pay» אומרת שתמיד שילמו, וזה סותר את המקור.",
+     "w": [
+      [
+       "before",
+       "לפני"
+      ],
+      [
+       "used to",
+       "נהג ל... (בעבר)"
+      ],
+      [
+       "require",
+       "לדרוש, לחייב"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Although the zoo's new elephant house opened only last week, more than ten thousand people have already come to see it.",
+     "o": [
+      "Because the zoo's new elephant house opened last week, fewer than ten thousand people have come to see it so far.",
+      "Although more than ten thousand people wanted to see the zoo's new elephant house, it has not opened yet.",
+      "The zoo's new elephant house has been open for many years, and ten thousand people visit it every week.",
+      "Over ten thousand visitors have already seen the zoo's new elephant house, even though it has been open for just one week."
+     ],
+     "a": 3,
+     "ex": "«Although» הפך ל-«even though» וסדר החלקים התהפך, «more than» הפך ל-«over», ו-«only last week» ל-«just one week». התשובה עם «fewer than» (פחות מ) הופכת את הכמות.",
+     "w": [
+      [
+       "although",
+       "למרות ש... (+משפט)"
+      ],
+      [
+       "even though",
+       "אף על פי ש..."
+      ],
+      [
+       "already",
+       "כבר"
+      ]
+     ]
+    },
+    {
+     "q": "Our neighbor rarely leaves his house in the winter, but in the summer he spends almost every evening sitting in the garden.",
+     "o": [
+      "Our neighbor often leaves his house in the winter, and in the summer he also sits in the garden every evening.",
+      "In the winter our neighbor seldom goes outside, whereas during the summer he sits in the garden nearly every evening.",
+      "Our neighbor rarely sits in the garden in the summer, but in the winter he goes out almost every evening.",
+      "Our neighbor rarely leaves his house in the winter because he is ill, but in the summer he feels better."
+     ],
+     "a": 1,
+     "ex": "«rarely» = «seldom» (לעיתים רחוקות), «almost» = «nearly» (כמעט), ו-«but» הפך ל-«whereas». «often» (לעיתים קרובות) הופך את «rarely», והתשובה עם «because he is ill» מוסיפה סיבה שאין במקור.",
+     "w": [
+      [
+       "rarely",
+       "לעיתים רחוקות"
+      ],
+      [
+       "seldom",
+       "לעיתים רחוקות"
+      ],
+      [
+       "whereas",
+       "בעוד ש..., ואילו"
+      ]
+     ]
+    },
+    {
+     "q": "To protect the rare birds that nest near the lake, the city has decided to close the lake path next spring.",
+     "o": [
+      "The city has decided to open a new path by the lake next spring so that visitors can see the rare birds.",
+      "Because the rare birds no longer nest near the lake, the city has decided to close the lake path next spring.",
+      "Next spring, the path by the lake will be closed by the city so that the rare birds nesting there stay safe.",
+      "Bird lovers have asked the city to close the lake path next spring, but the city has decided to keep it open."
+     ],
+     "a": 2,
+     "ex": "המשפט הפך לסביל («will be closed by the city»), ו-«To protect» הפך ל-«so that ... stay safe» (כדי שיהיו מוגנות). המטרה נשארה: להגן על הציפורים. התשובה עם «no longer nest» אומרת שהציפורים כבר לא שם, וזה משנה את הסיבה.",
+     "w": [
+      [
+       "so that",
+       "כדי ש... (+משפט)"
+      ],
+      [
+       "protect",
+       "להגן"
+      ],
+      [
+       "nest",
+       "לקנן"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Fresh fish should be kept in the fridge and eaten within two days; otherwise, it can make people feel sick.",
+     "o": [
+      "Unless fresh fish is stored in a fridge and eaten in two days or less, it may make people ill.",
+      "Fresh fish can still make people feel sick, even if it is kept in the fridge and eaten within two days.",
+      "Fresh fish should be eaten within two days, so people who keep it in the fridge often get sick.",
+      "Fresh fish can be kept in the fridge for several weeks and still be eaten without making anyone sick."
+     ],
+     "a": 0,
+     "ex": "«otherwise» (אחרת) הפך ל-«Unless» (אלא אם כן): אם לא שומרים במקרר ואוכלים תוך יומיים, הדג עלול להזיק. «within two days» = «in two days or less». התשובה עם «even if» אומרת שהדג מזיק גם כשעושים הכול נכון, וזה הפוך.",
+     "w": [
+      [
+       "otherwise",
+       "אחרת"
+      ],
+      [
+       "unless",
+       "אלא אם כן"
+      ],
+      [
+       "within",
+       "בתוך, תוך"
+      ]
+     ]
+    },
+    {
+     "q": "The new hotel by the beach brought hundreds of jobs to the town; however, it also made the beach much more crowded in summer.",
+     "o": [
+      "Because the beach was too crowded in summer, the town built a new hotel that brought hundreds of jobs.",
+      "The new hotel by the beach brought only a few jobs to the town, and the beach is now almost empty in summer.",
+      "Although the new beach hotel provided the town with hundreds of jobs, it also led to far bigger summer crowds on the beach.",
+      "The new hotel by the beach brought hundreds of jobs to the town, so local people now have more time to enjoy the beach."
+     ],
+     "a": 2,
+     "ex": "«however» הפך ל-«Although» בתחילת המשפט, «brought jobs» ל-«provided ... with jobs», ו-«more crowded» ל-«bigger crowds». גם היתרון וגם החיסרון נשארו. התשובה עם «only a few jobs» משנה את הכמות והופכת את הצפיפות.",
+     "w": [
+      [
+       "however",
+       "עם זאת, אולם"
+      ],
+      [
+       "although",
+       "למרות ש... (+משפט)"
+      ],
+      [
+       "crowded",
+       "צפוף, מלא אנשים"
+      ]
+     ]
+    },
+    {
+     "q": "Children usually learn a second language more easily than adults, especially when they start before the age of ten.",
+     "o": [
+      "Adults usually learn a second language more easily than children, especially if they start before the age of ten.",
+      "Learning a second language is generally easier for children than for adults, particularly if they begin before age ten.",
+      "All children learn a second language easily, but only if they start studying it before the age of ten.",
+      "Children usually learn a second language more easily than adults, because children's teachers are especially patient with them."
+     ],
+     "a": 1,
+     "ex": "«usually» הפך ל-«generally», «especially» ל-«particularly», והמבנה השתנה: «Learning ... is easier for children». התשובה שמתחילה ב-«Adults» הופכת מי לומד בקלות, והאחרונה מוסיפה סיבה (מורים סבלניים) שלא נאמרה.",
+     "w": [
+      [
+       "especially",
+       "במיוחד"
+      ],
+      [
+       "generally",
+       "בדרך כלל, באופן כללי"
+      ],
+      [
+       "easily",
+       "בקלות"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "After the flower shop began selling online, the number of its customers doubled, so it now plans to hire more workers.",
+     "o": [
+      "The flower shop began selling online because it had hired more workers and needed twice as many customers.",
+      "The flower shop intends to employ additional staff, as it has had twice as many customers since it started selling online.",
+      "After the flower shop began selling online, it lost half of its customers, so it plans to let some workers go.",
+      "The flower shop has twice as many workers as customers since it started selling its flowers online."
+     ],
+     "a": 1,
+     "ex": "«so» (לכן) הפך ל-«as» (מכיוון ש), «doubled» ל-«twice as many», ו-«hire more workers» ל-«employ additional staff». הסיבה (יותר לקוחות) והתוצאה (עוד עובדים) נשארו. «lost half of its customers» הופך את הנתון.",
+     "w": [
+      [
+       "as",
+       "מכיוון ש...; כפי ש...; בזמן ש..."
+      ],
+      [
+       "double",
+       "להכפיל"
+      ],
+      [
+       "hire",
+       "להעסיק, לשכור"
+      ]
+     ]
+    },
+    {
+     "q": "Many people believe that cats do not like water, but some kinds of cats actually enjoy swimming and playing in it.",
+     "o": [
+      "It is widely believed that cats dislike water; in fact, certain types of cats like to swim and play in it.",
+      "Many people believe that cats enjoy swimming, but in fact most kinds of cats do not like water at all.",
+      "All kinds of cats actually enjoy swimming and playing in water, even though many people do not like cats.",
+      "Since some kinds of cats enjoy swimming, many people believe that cats should play in water every day."
+     ],
+     "a": 0,
+     "ex": "«Many people believe» הפך לסביל «It is widely believed», «actually» ל-«in fact», ו-«some kinds» ל-«certain types». התשובה עם «All kinds of cats» הופכת «some» (חלק) ל«כל», ומשנה גם את מה שאנשים לא אוהבים.",
+     "w": [
+      [
+       "actually",
+       "בעצם, למעשה"
+      ],
+      [
+       "in fact",
+       "למעשה, בעצם"
+      ],
+      [
+       "dislike",
+       "לא לאהוב"
+      ]
+     ]
+    },
+    {
+     "q": "The company let its workers work from home on Fridays, and since then, fewer of them have been late on other weekdays.",
+     "o": [
+      "Because the workers can stay home on Fridays, they are now never late during the rest of the week.",
+      "The company let its workers work from home on Fridays because many of them had been late during the week.",
+      "Since the company let its workers work from home on Fridays, more of them have been late on other days.",
+      "Ever since working from home on Fridays was allowed, fewer employees have come in late on the other weekdays."
+     ],
+     "a": 3,
+     "ex": "המקור מתאר רק מה קרה מאז («since then»): פחות איחורים. «Ever since» (מאז ש) שומר על אותו קשר של זמן, בלי לטעון שזו הסיבה. התשובה עם «Because ... never late» מוסיפה סיבה ומשנה «fewer» (פחות) ל-«never» (אף פעם).",
+     "w": [
+      [
+       "since",
+       "מאז"
+      ],
+      [
+       "fewer",
+       "פחות (בספירה)"
+      ],
+      [
+       "allow",
+       "להרשות, לאפשר"
+      ]
+     ]
+    }
+   ]
+  },
+  {
+   "qs": [
+    {
+     "q": "Even though the test was short, very few students finished it on time, because the questions were much harder than usual.",
+     "o": [
+      "Because the test was short, most students finished it on time, although the questions were harder than usual.",
+      "Very few students finished the test on time, since it was much longer and easier than usual tests.",
+      "The questions were far more difficult than normal, so hardly any students completed the test in time, despite its short length.",
+      "The test was short and the questions were easier than usual, so very few students needed the whole time to finish it."
+     ],
+     "a": 2,
+     "ex": "«very few» = «hardly any» (כמעט אף אחד), «Even though» הפך ל-«despite» בסוף, ו-«because» הפך ל-«so» עם סדר הפוך. התשובה עם «most students» הופכת את הכמות, והשנייה אומרת שהמבחן ארוך, וזה סותר את המקור.",
+     "w": [
+      [
+       "even though",
+       "אף על פי ש..."
+      ],
+      [
+       "despite",
+       "למרות (+שם עצם)"
+      ],
+      [
+       "hardly",
+       "כמעט לא"
+      ]
+     ]
+    },
+    {
+     "q": "Instead of throwing away old clothes, many families now give them to charity or exchange them with friends and neighbors.",
+     "o": [
+      "Many families now throw away old clothes instead of giving them to charity or to friends and neighbors.",
+      "Many families now buy old clothes from charity, and they also sell them to friends and neighbors.",
+      "Few families give old clothes to charity, because their friends and neighbors usually throw them away.",
+      "Today, many families donate old clothes or swap them with friends and neighbors rather than throw them out."
+     ],
+     "a": 3,
+     "ex": "«Instead of» הפך ל-«rather than» בסוף המשפט, «give to charity» ל-«donate», ו-«exchange» ל-«swap». התשובה הראשונה הופכת את מה שהמשפחות עושות: זורקות במקום לתרום.",
+     "w": [
+      [
+       "instead of",
+       "במקום (+שם עצם / ing)"
+      ],
+      [
+       "rather than",
+       "במקום, ולא"
+      ],
+      [
+       "exchange",
+       "להחליף"
+      ]
+     ]
+    },
+    {
+     "q": "The village was almost empty during the week, as most of its young people worked in the city and came home only on weekends.",
+     "o": [
+      "Most of the village's young people worked in the city and returned only for weekends, so on weekdays few people were there.",
+      "The village was almost empty on weekends, because most of its young people came home from the city only during the week.",
+      "Most of the village's young people left the city and moved back home, so the village is no longer empty during the week.",
+      "The young people of the village went to work in the city because the village was almost empty during the week."
+     ],
+     "a": 0,
+     "ex": "«as» (מכיוון ש) הפך ל-«so» (לכן) והסדר התהפך: הצעירים עבדו בעיר, ולכן באמצע השבוע כמעט אין אנשים בכפר. התשובה הראשונה מחליפה בין סוף השבוע לימי החול, והאחרונה הופכת את הסיבה והתוצאה.",
+     "w": [
+      [
+       "as",
+       "מכיוון ש...; כפי ש...; בזמן ש..."
+      ],
+      [
+       "so",
+       "לכן, אז"
+      ],
+      [
+       "empty",
+       "ריק"
+      ]
+     ]
+    }
+   ]
+  }
+ ]
+}

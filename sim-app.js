@@ -3,7 +3,8 @@
 // המבנה לפי מצגת מאל"ו (12/2024): 6 פרקים, לכל פרק זמן קבוע, אפשר לנוע בין שאלות הפרק ולשנות תשובה עד שהזמן נגמר.
 // אדפטיבי כמו אמירנט: כולם מתחילים מאותה רמה, ואחרי כל פרק נבחר הקושי של הפרק הבא לפי ההצלחה בו.
 // הציון מחושב מכל התשובות ומהקושי של כל שאלה (מודל IRT), ומומר לסולם 50-150.
-// מאגר השאלות ב-sims.js (SIMS): 12 סט-פרקים ב-4 רמות קושי (sim.tier 0-3). התוצאות נשמרות ב-S.sims ונשמרות בענן.
+// מאגר הפרקים ב-sims.js: SIM_SETS (כל פרק עם רמת קושי tier 0-3) ו-SIM_FORMS (נוסחים: פרק פתיחה בינוני, ובכל פרק אחריו גרסה קלה וקשה).
+// אין פרק שמופיע בשני נוסחים. התוצאות נשמרות ב-S.sims ונשמרות בענן.
 // משתמש בפונקציות הגלובליות של app.js: S, ITEMS/ALL, save, push, render, esc, shuffle, toast, startLesson, topBar, navBar.
 
 const SIM_TYPE = {
@@ -17,8 +18,8 @@ const SIM_N = SIM_ORDER.reduce((a, t) => a + SIM_TYPE[t].n, 0), SIM_MIN = SIM_OR
 const SIM_BANDS = [[134, 'פטור'], [120, 'מתקדמים ב׳'], [100, 'מתקדמים א׳'], [85, 'בסיסי'], [70, 'טרום בסיסי ב׳'], [50, 'טרום בסיסי א׳']];
 // הנחות המודל (מאל"ו לא מפרסם אותן): 4 רמות קושי, קושי b לכל רמה, הבחנה A, סיכוי ניחוש C (4 תשובות), ציון = 100 + 25θ
 const SIM_TIER_HE = ['קל', 'בינוני', 'קשה', 'קשה מאוד'];
-const SIM_B = [-1.2, -0.2, 0.8, 1.8], SIM_A = 1.5, SIM_C = 0.25, SIM_START = 1;
-const SIM_FORMS = [{ id: 'f1', he: 'מבחן 1', k: 0 }, { id: 'f2', he: 'מבחן 2', k: 1 }, { id: 'f3', he: 'מבחן 3', k: 2 }, { id: 'mix', he: 'מבחן מעורב', k: -1 }];
+const SIM_B = [-1.2, -0.2, 0.8, 1.8], SIM_A = 1.5, SIM_C = 0.25;
+const SIM_V = 2; // גרסת התוצאות: נוסחים קבועים (תוצאות מגרסאות קודמות לא נספרות כנוסח שנעשה)
 const SIM_KEEP = 3; // כמה ניסיונות אחרונים נשמרים לכל מבחן
 let SM = null, simTick = null, simOpen = {};
 
@@ -32,23 +33,15 @@ const simForm = id => SIM_FORMS.find(f => f.id === id);
 const simBand = est => SIM_BANDS.find(b => est >= b[0])[1];
 const simClock = ms => { const s = Math.max(0, Math.ceil(ms / 1000)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
 const simBlank = s => esc(s).replace(/___/g, '<span class="blank">______</span>');
-const simTierSims = t => SIMS.filter(s => s.tier === t);
 
-// ----- בחירת פרקים (אדפטיבי) -----
-function simChapter(simId, slot, tier) {
-  const s = SIMS.find(x => x.id === simId);
-  return Object.assign({}, s.chapters[slot], { tier, ref: [simId, slot] });
+// ----- בחירת פרקים (אדפטיבי, רב-שלבי) -----
+function simChapter(id, key) {
+  if (Array.isArray(id)) id = id[0] + 'c' + id[1]; // תוצאות ישנות שמרו [סימולציה, פרק]
+  return Object.assign({}, SIM_SETS[id], { ref: id, key });
 }
-// מבחן 1-3: אותו סט בכל רמה (בלי חפיפה בין המבחנים). מעורב: פרק שעוד לא הופיע בניסיונות הקודמים, אם יש
-function simPickChapter(form, slot, tier) {
-  const pool = simTierSims(tier);
-  if (form.k >= 0) return simChapter(pool[form.k % pool.length].id, slot, tier);
-  const seen = new Set(Object.values(simStore().r).flat().flatMap(r => (r.refs || []).map(x => x.join(':'))));
-  const fresh = pool.filter(s => !seen.has(s.id + ':' + slot));
-  return simChapter(pick(fresh.length ? fresh : pool).id, slot, tier);
-}
-// אחרי כל פרק: 75%+ נכונות → קשה יותר, עד שליש → קל יותר, אחרת אותה רמה
-function simNextTier(tier, ok, n) { const r = ok / n; return r >= 0.75 ? Math.min(3, tier + 1) : r <= 0.34 ? Math.max(0, tier - 1) : tier; }
+// אחרי כל פרק: מהפתיחה או מהמסלול הקל עוברים לקשה ב-75%+ נכונות; במסלול הקשה נשארים מ-50% ומעלה
+function simNextKey(key, ok, n) { const r = ok / n; return key === 'hi' ? (r >= 0.5 ? 'hi' : 'lo') : (r >= 0.75 ? 'hi' : 'lo'); }
+const simRecs = id => (simStore().r[id] || []).filter(r => r.v === SIM_V);
 
 // ----- ציון -----
 // הסתברות לתשובה נכונה ביכולת θ על שאלה בקושי b (מודל 3PL), ואומדן EAP של θ מכל התשובות
@@ -84,8 +77,9 @@ function simNextGoal(rec, chs) {
 // ----- התחלה וניווט -----
 function simStart(id) {
   const form = simForm(id);
+  if (!form) return;
   const notimer = !!(document.getElementById('simnotimer') || {}).checked;
-  const first = simPickChapter(form, 0, SIM_START);
+  const first = simChapter(form.slots[0].mid, 'mid');
   SM = { form, chs: [first], ch: 0, qi: 0, intro: true, ans: [first.qs.map(() => -1)], pins: {}, notimer, end: 0, done: false, showText: true };
   view = 'sims';
   render(); window.scrollTo(0, 0);
@@ -120,7 +114,7 @@ function simNextChapter() {
   clearInterval(simTick);
   const c = SM.chs[SM.ch], ok = c.qs.filter((q, i) => SM.ans[SM.ch][i] === q.a).length;
   if (SM.ch < SIM_ORDER.length - 1) {
-    const nx = simPickChapter(SM.form, SM.ch + 1, simNextTier(c.tier, ok, c.qs.length));
+    const key = simNextKey(c.key, ok, c.qs.length), nx = simChapter(SM.form.slots[SM.ch + 1][key], key);
     SM.chs.push(nx); SM.ans.push(nx.qs.map(() => -1));
     SM.ch++; SM.intro = true; render(); window.scrollTo(0, 0); return;
   }
@@ -158,7 +152,7 @@ function simFinish() {
     const it = simAppItem(x.en);
     if (it && S.w[it.id]) { S.w[it.id].due = Date.now(); queued++; }
   });
-  const rec = { at: Date.now(), form: form.id, ok, n, est, band: simBand(est), theta: Math.round(theta * 100) / 100, tiers: chs.map(c => c.tier), refs: chs.map(c => c.ref), by, ans, notimer: SM.notimer };
+  const rec = { v: SIM_V, at: Date.now(), form: form.id, ok, n, est, band: simBand(est), theta: Math.round(theta * 100) / 100, tiers: chs.map(c => c.tier), refs: chs.map(c => c.ref), by, ans, notimer: SM.notimer };
   st.r[form.id] = [rec, ...(st.r[form.id] || [])].slice(0, SIM_KEEP);
   save(); push();
   SM.done = true; SM.rec = rec; SM.weak = weak; SM.queued = queued;
@@ -166,9 +160,9 @@ function simFinish() {
   render(); window.scrollTo(0, 0);
 }
 function simShowLast(id) {
-  const rec = (simStore().r[id] || [])[0];
+  const rec = simRecs(id)[0];
   if (!rec || !rec.refs) return;
-  const chs = rec.refs.map(([sid, slot], i) => simChapter(sid, slot, rec.tiers[i]));
+  const chs = rec.refs.map(r => simChapter(r));
   SM = { form: simForm(id), chs, ans: rec.ans, done: true, rec, weak: simWeakWords(chs, rec.ans), queued: 0, pins: {} };
   simOpen = {};
   render(); window.scrollTo(0, 0);
@@ -200,13 +194,20 @@ function renderSimList() {
     <div class="card"><p>מבחן אחד לכולם, כמו אמירנט: 6 פרקים (3 השלמת משפטים, קטע קריאה ו-2 ניסוח מחדש), ${SIM_N} שאלות ו-${SIM_MIN} דקות. הפרק הראשון ברמה בינונית, ולפי ההצלחה בכל פרק הפרק הבא קשה או קל יותר. בסוף מקבלים ציון אחד בסולם 50-150 ואת הרמה.</p>
     <p>בתוך פרק אפשר לעבור בין השאלות ולשנות תשובה עד שהזמן נגמר. שאלה בלי תשובה נחשבת טעות, אז תמיד כדאי לנחש.</p>
     <label class="sw"><input type="checkbox" id="simnotimer"> בלי טיימר (תרגול רגוע)</label></div>`;
+  // המבחן הבא שעוד לא נעשה, וסיכום של מה שנעשה
+  const done = SIM_FORMS.filter(f => simRecs(f.id).length), next = SIM_FORMS.find(f => !simRecs(f.id).length);
+  const lastAll = SIM_FORMS.flatMap(f => simRecs(f.id)).sort((a, b) => b.at - a.at)[0];
+  h += `<div class="card"><div class="plan-h"><b>${done.length} מתוך ${SIM_FORMS.length} מבחנים נעשו</b><span>${lastAll ? `ציון אחרון: ${lastAll.est}` : ''}</span></div>
+    <div class="bar"><i style="width:${done.length / SIM_FORMS.length * 100}%"></i></div>
+    ${next ? `<button class="btn big" style="margin-top:14px" onclick="simStart('${next.id}')">להתחיל את ${next.he}</button>` : '<p>עשית את כל המבחנים! אפשר לחזור על כל אחד מהם.</p>'}</div>
+    <div class="simgrid">`;
   SIM_FORMS.forEach(f => {
-    const rs = st.r[f.id] || [], last = rs[0], best = rs.reduce((m, r) => Math.max(m, r.est), 0);
-    h += `<div class="card simc"><div class="plan-h"><b>${f.he}</b><span>${SIM_N} שאלות · ${SIM_MIN} דק׳</span></div>
-      ${f.k < 0 ? '<div class="lbl"><span>פרקים מכל המבחנים, קודם כאלה שעוד לא ראית</span></div>' : ''}
-      ${last ? `<div class="lbl"><span>אחרון: ציון ${last.est} (${last.band || simBand(last.est)})</span><span>הגבוה: ${best}</span></div>` : '<div class="lbl"><span>עוד לא נעשה</span></div>'}
-      <div class="row"><button class="btn" onclick="simStart('${f.id}')">${last ? 'עוד פעם' : 'להתחיל'}</button>${last && last.refs ? `<button class="btn ghost" onclick="simShowLast('${f.id}')">תוצאות והסברים</button>` : ''}</div></div>`;
+    const rs = simRecs(f.id), last = rs[0], best = rs.reduce((m, r) => Math.max(m, r.est), 0);
+    h += `<div class="simtile ${last ? 'did' : ''}"><button class="simtb" onclick="simStart('${f.id}')"><b>${last ? '✓ ' : ''}${f.he}</b>
+      <span>${last ? `${last.est} · ${last.band || simBand(last.est)}` : 'עוד לא נעשה'}</span>${rs.length > 1 ? `<span class="simbest">הגבוה: ${best}</span>` : ''}</button>
+      ${last ? `<button class="simtr" onclick="simShowLast('${f.id}')">תוצאות והסברים</button>` : ''}</div>`;
   });
+  h += `</div>`;
   const words = Object.values(st.words).sort((a, b) => b.at - a.at);
   if (words.length) {
     h += `<h2 class="sec">💪 מילים לחיזוק מהסימולציות (${words.length})</h2><div class="card">
@@ -254,7 +255,7 @@ function renderSimResult() {
   const { form, chs, rec, weak } = SM, ans = rec.ans;
   const pct = Math.round(rec.ok / rec.n * 100);
   const inApp = weak.filter(x => simAppItem(x.en)).length;
-  const best = (simStore().r[form.id] || []).reduce((m, r) => Math.max(m, r.est), 0);
+  const best = simRecs(form.id).reduce((m, r) => Math.max(m, r.est), 0);
   let h = topBar() + `<main><div class="done simres"><div class="trophy">${pct >= 80 ? '🏆' : pct >= 55 ? '💪' : '📚'}</div>
     <div class="un">${form.he}${rec.notimer ? ' · בלי טיימר' : ''}</div>
     <div class="simscore">${rec.est}</div><div class="simband">ציון אמירנט · ${simBand(rec.est)}</div>
@@ -312,6 +313,14 @@ function simTip(by) {
 (function () {
   const css = `
 .simc .row{margin-top:10px}
+.simgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px}
+.simtile{border:2px solid var(--line);border-radius:16px;box-shadow:0 3px 0 var(--line);display:flex;flex-direction:column;overflow:hidden}
+.simtile.did{border-color:var(--g);box-shadow:0 3px 0 var(--g)}
+.simtb{background:none;border:0;padding:12px 10px;text-align:right;display:flex;flex-direction:column;gap:3px;color:var(--ink);font-size:13px}
+.simtb b{font-size:16px}
+.simtile.did .simtb b{color:var(--gd)}
+.simbest{color:var(--mut);font-size:12px}
+.simtr{background:var(--soft);border:0;border-top:2px solid var(--line);padding:8px;font-weight:700;color:var(--bd);font-size:13px}
 .simpath{font-size:14px;color:var(--mut);font-weight:700;margin-top:4px}
 .simrec{font-size:12px;background:var(--g);color:#fff;border-radius:99px;padding:2px 10px;vertical-align:middle;margin-right:6px}
 .simhead{gap:10px;border-bottom:2px solid var(--line)}

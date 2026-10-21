@@ -1,0 +1,397 @@
+{
+  "tier": 2,
+  "rc": [
+    {
+      "title": "The Last Keepers: What Automation Changed at the Lighthouse",
+      "text": [
+        "For centuries, a lighthouse depended on the people who lived inside it. Keepers climbed the tower each evening to light the lamp, trimmed wicks and polished lenses so that the beam would remain visible far out at sea, and kept watch through storms that might last for days. The work was lonely and demanding, and the families who shared it often lived on rocky islands that could be cut off from the mainland for weeks. Yet for generations few people imagined that the light could be kept burning in any other way.",
+        "That assumption began to change in the twentieth century. Electric lamps that switched on automatically at dusk, together with backup generators and, later, sensors that reported faults by radio, made a permanent human presence increasingly unnecessary. Maritime authorities, which had long struggled with the expense of staffing remote stations, seized the opportunity. One by one, lighthouses were converted, and by the end of the century the profession of keeper had virtually disappeared in most countries.",
+        "The gains were considerable. Automated lights proved at least as reliable as their predecessors, and the money saved could be spent on other aids to navigation. Moreover, satellite positioning soon allowed ships to determine their location with an accuracy that no beam of light could match. Critics nevertheless argued that something had been lost. Keepers had done far more than tend a lamp: they recorded the weather, spotted vessels in distress and sometimes rowed out to rescue survivors. A machine could keep the light burning, but it could not notice that a fishing boat had failed to return.",
+        "Today, many towers stand empty, and their future is uncertain. Since they are no longer essential to navigation, governments are often reluctant to pay for their upkeep, and some have been sold to private owners or local trusts. Several have been turned into museums or guesthouses, where visitors can glimpse the isolated life that keepers once led. Such projects preserve the buildings, but they also raise a question: whether a lighthouse that guides no one is still a lighthouse, or merely a monument to one."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": [
+            "The Lonely Life of Island Families",
+            "How Satellite Navigation Replaced the Lighthouse",
+            "Lighthouses Without Keepers: Gains and Losses",
+            "Why Automated Lights Proved Unreliable at Sea"
+          ],
+          "a": 2,
+          "ex": "הקטע מתאר את המעבר למגדלורים אוטומטיים (פסקה 2), את הרווחים ואת מה שאבד (פסקה 3) ואת מה שקרה למגדלים אחר כך (פסקה 4). חיי המשפחות הם רק פסקה 1, ולפי הקטע האורות האוטומטיים דווקא אמינים לפחות כמו הקודמים.",
+          "w": [
+            [
+              "keeper",
+              "שומר (מגדלור)"
+            ],
+            [
+              "automated",
+              "אוטומטי"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, maritime authorities were quick to adopt automation because",
+          "o": [
+            "staffing distant lighthouses had long been expensive",
+            "keepers had begun to refuse work on remote islands",
+            "electric lamps gave a brighter beam than older ones",
+            "satellite positioning had made lighthouses less important"
+          ],
+          "a": 0,
+          "ex": "בפסקה 2 כתוב שהרשויות «had long struggled with the expense of staffing remote stations», כלומר החזקת אנשים בתחנות מרוחקות עלתה הרבה כסף, ולכן הן ניצלו את ההזדמנות. הלוויינים מוזכרים רק בפסקה 3, ואין בקטע טענה שהשומרים סירבו לעבוד.",
+          "w": [
+            [
+              "expense",
+              "הוצאה, עלות"
+            ],
+            [
+              "seize",
+              "לתפוס, לנצל (הזדמנות)"
+            ],
+            [
+              "remote",
+              "מרוחק"
+            ]
+          ]
+        },
+        {
+          "q": "In the third paragraph, the word 'tend' could best be replaced by",
+          "o": [
+            "switch off",
+            "design",
+            "replace",
+            "look after"
+          ],
+          "a": 3,
+          "ex": "«tend a lamp» = לטפל במנורה ולדאוג לה. המשפט אומר שהשומרים עשו הרבה יותר מטיפול במנורה. «replace» (להחליף) מפתה, אבל הקטע מתאר תחזוקה יומיומית ולא החלפה של המנורה.",
+          "w": [
+            [
+              "tend",
+              "לטפל ב..., לדאוג ל..."
+            ],
+            [
+              "look after",
+              "לטפל, להשגיח"
+            ]
+          ]
+        },
+        {
+          "q": "The third paragraph mainly serves to",
+          "o": [
+            "prove that automated lights were less reliable than keepers",
+            "weigh the benefits of automation against the keepers' other duties",
+            "explain how ships use satellites to determine their position",
+            "show that keepers themselves opposed the automation of lighthouses"
+          ],
+          "a": 1,
+          "ex": "הפסקה פותחת ברווחים (אמינות, חיסכון, לוויינים) ואז עוברת ב-«nevertheless» למה שאבד: השומרים גם תיעדו מזג אוויר והצילו ניצולים, ומכונה לא יכולה לעשות את זה. את הביקורת השמיעו «critics», לא השומרים עצמם, והאורות האוטומטיים אמינים לפחות כמו הקודמים.",
+          "w": [
+            [
+              "nevertheless",
+              "למרות זאת, אף על פי כן"
+            ],
+            [
+              "predecessor",
+              "קודם (מי שהיה לפני)"
+            ],
+            [
+              "in distress",
+              "במצוקה"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from the last paragraph that converting lighthouses into museums or guesthouses",
+          "o": [
+            "has made them essential to navigation once again",
+            "is opposed by most of the local trusts that own them",
+            "preserves the towers but not the role they were built for",
+            "costs governments more than employing keepers once did"
+          ],
+          "a": 2,
+          "ex": "כתוב שהפרויקטים האלה «preserve the buildings», אבל מעלים שאלה אם מגדלור «that guides no one» הוא עדיין מגדלור. כלומר המבנה נשמר, אבל הוא כבר לא מנחה ספינות. הקטע אומר שהמגדלים כבר לא חיוניים לניווט, ולא שהם חזרו להיות חיוניים.",
+          "w": [
+            [
+              "preserve",
+              "לשמר"
+            ],
+            [
+              "reluctant",
+              "מסרב, לא ששׂ"
+            ],
+            [
+              "merely",
+              "רק, לא יותר מ..."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Singing Over the Traffic",
+      "text": [
+        "For a songbird, a song is far more than decoration. Males use it to defend a territory and to attract a mate, and females often judge a potential partner by the quality of his performance. A song works, however, only if it is heard. In cities, where traffic, construction and air conditioners produce a constant low-frequency roar, that simple requirement has become surprisingly difficult to meet, and researchers have spent the past two decades examining how birds respond.",
+        "The most widely documented change concerns pitch. In a number of species, including great tits and blackbirds, urban populations sing at higher frequencies than their relatives in nearby forests. Because most city noise is concentrated at low frequencies, higher notes are less likely to be masked by it. Some birds also sing louder, a tendency known as the Lombard effect, which humans display as well when they raise their voices in a crowded room. Others shift their timing, beginning their dawn chorus earlier, before the morning traffic builds up, or even singing at night.",
+        "Whether these adjustments are learned or inherited remains a matter of debate. Young songbirds acquire their songs by listening to adults, so a preference for higher notes could spread through a population without any genetic change. On the other hand, birds whose voices happen to carry better may raise more chicks, and over many generations such an advantage could alter the population itself. Evidence for both processes has been found, and they are not mutually exclusive.",
+        "The adjustments are not without cost. Higher notes may not travel as far as lower ones, and in some species females appear to prefer deeper songs, which are often produced by larger, healthier males. A bird that sings high in order to be heard may thus be heard as a less attractive partner. Moreover, singing louder or longer demands energy that could otherwise be spent searching for food. For these reasons, some ecologists warn that the birds' remarkable flexibility should not be taken as proof that noise is harmless, and that quieter roads and vehicles may still be needed."
+      ],
+      "qs": [
+        {
+          "q": "The main purpose of the passage is to",
+          "o": [
+            "argue that birds living in cities are healthier than those in forests",
+            "describe how city noise is changing birdsong, and at what cost",
+            "explain how young songbirds learn their songs from adult birds",
+            "show that only humans and birds raise their voices in noisy places"
+          ],
+          "a": 1,
+          "ex": "הקטע מתאר איך ציפורים בעיר משנות את השירה בגלל הרעש (פסקה 2), מתלבט מאיפה השינוי מגיע (פסקה 3) ומסביר מה הוא עולה להן (פסקה 4). הלמידה מהמבוגרים היא רק פרט מפסקה 3, והקטע לא משווה את הבריאות של ציפורי עיר וציפורי יער.",
+          "w": [
+            [
+              "alter",
+              "לשנות"
+            ],
+            [
+              "urban",
+              "עירוני"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, singing at a higher pitch helps city birds because",
+          "o": [
+            "high notes travel further through city streets than low ones",
+            "females in cities prefer high-pitched songs",
+            "traffic noise is quieter early in the morning",
+            "low-frequency city noise is less likely to cover their songs"
+          ],
+          "a": 3,
+          "ex": "בפסקה 2 כתוב שרוב הרעש בעיר נמצא בתדרים נמוכים, ולכן צלילים גבוהים «less likely to be masked», כלומר פחות מוסתרים על ידו. התשובה הראשונה הפוכה: לפי פסקה 4, צלילים גבוהים אולי דווקא לא מגיעים רחוק כמו נמוכים. הבוקר המוקדם קשור לתזמון, לא לגובה הצליל.",
+          "w": [
+            [
+              "pitch",
+              "גובה צליל"
+            ],
+            [
+              "mask",
+              "להסתיר, לכסות"
+            ],
+            [
+              "frequency",
+              "תדר; תדירות"
+            ]
+          ]
+        },
+        {
+          "q": "In the third paragraph, 'they' in 'they are not mutually exclusive' refers to",
+          "o": [
+            "learning from adults and change through inheritance",
+            "young songbirds and the adults they learn from",
+            "birds whose voices carry better in the city",
+            "the higher notes preferred by city populations"
+          ],
+          "a": 0,
+          "ex": "«they» מתייחס ל-«both processes» שבאותו משפט: למידה מהמבוגרים ושינוי תורשתי לאורך דורות. «not mutually exclusive» = אחד לא מבטל את השני, שניהם יכולים לקרות יחד. הציפורים עם הקול שנשמע טוב הן רק חלק מהסבר אחד.",
+          "w": [
+            [
+              "mutually exclusive",
+              "סותרים זה את זה, לא יכולים להתקיים יחד"
+            ],
+            [
+              "inherit",
+              "לרשת (בתורשה)"
+            ],
+            [
+              "on the other hand",
+              "מצד שני"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from the fourth paragraph that a city bird that sings at a higher pitch",
+          "o": [
+            "is probably smaller and weaker than birds that sing lower",
+            "spends less energy than a bird that sings louder",
+            "may be heard more easily but find it harder to attract a mate",
+            "learned its song from birds living in nearby forests"
+          ],
+          "a": 2,
+          "ex": "כתוב שציפור ששרה גבוה כדי שישמעו אותה «may thus be heard as a less attractive partner», כי אצל חלק מהמינים הנקבות מעדיפות שירה עמוקה. התשובה הראשונה מלכודת: הקטע אומר שהשירה העמוקה באה לרוב מזכרים גדולים, אבל לא שמי ששר גבוה בעיר הוא באמת קטן או חלש, אלא רק שהוא נשמע פחות מושך.",
+          "w": [
+            [
+              "thus",
+              "לפיכך, כך"
+            ],
+            [
+              "attractive",
+              "מושך"
+            ],
+            [
+              "infer",
+              "להסיק"
+            ]
+          ]
+        },
+        {
+          "q": "The last sentence of the passage suggests that some ecologists",
+          "o": [
+            "believe that reducing noise may still be necessary",
+            "believe that urban birds will soon stop singing altogether",
+            "fear that quieter road surfaces would harm city wildlife",
+            "regard the birds' flexibility as proof that city noise does no harm"
+          ],
+          "a": 0,
+          "ex": "האקולוגים מזהירים שאסור לראות בגמישות של הציפורים הוכחה שהרעש לא מזיק, ושייתכן שעדיין צריך כבישים ורכבים שקטים יותר. כלומר ייתכן שעדיין צריך להפחית את הרעש. התשובה האחרונה היא בדיוק ההפך ממה שהם אומרים.",
+          "w": [
+            [
+              "flexibility",
+              "גמישות"
+            ],
+            [
+              "remarkable",
+              "יוצא דופן, מרשים"
+            ],
+            [
+              "adapt",
+              "להסתגל"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Reading a Restless Mountain",
+      "text": [
+        "Hundreds of millions of people live within reach of a potentially active volcano, and for them the question of when it will next erupt is far from academic. Unlike earthquakes, which strike with almost no warning, eruptions are usually preceded by signs of unrest, sometimes for weeks or months. The challenge for volcanologists is therefore not detecting these signals, which modern instruments do remarkably well, but interpreting them.",
+        "Scientists rely on several kinds of evidence. Networks of seismometers record the small earthquakes produced as magma forces its way through rock beneath the surface. Satellites and GPS stations measure ground deformation: a volcano may swell by a few centimeters as magma accumulates in a chamber below it. Instruments that sample the gases escaping from vents provide a further clue, since a rise in sulfur dioxide, for example, can indicate that fresh magma is approaching the surface. Each method has its limitations, but taken together they allow observers to build a picture of what is happening underground.",
+        "Even so, that picture is often ambiguous. Magma that rises toward the surface may simply stall and cool, so a volcano can show every sign of unrest and then fall quiet again. Conversely, some eruptions have begun after only brief or faint warnings. Moreover, each volcano behaves differently, and many have not erupted since instruments were installed near them, so researchers have no record of how they behaved before their last eruption. A pattern that preceded an eruption at one mountain may therefore mean little at another.",
+        "For these reasons, volcanologists rarely issue precise predictions. Instead, they speak in terms of probabilities and alert levels, which help authorities decide when to restrict access or order evacuations. Such decisions are difficult: an evacuation that turns out to be unnecessary costs money and may make residents less willing to leave the next time, whereas a delayed one can cost lives. Improved computer models and longer records may narrow the uncertainty, but few experts expect it to disappear entirely."
+      ],
+      "qs": [
+        {
+          "q": "The main idea of the passage is that",
+          "o": [
+            "modern instruments now allow scientists to predict eruptions precisely",
+            "people who live near volcanoes are usually unwilling to evacuate",
+            "eruptions, unlike earthquakes, almost never give any warning",
+            "volcanoes give warning signs, but these are hard to interpret reliably"
+          ],
+          "a": 3,
+          "ex": "כבר בפסקה 1 כתוב שהקושי הוא לא לגלות את הסימנים אלא לפרש אותם, ושאר הקטע מסביר למה. התשובה השלישית הפוכה: דווקא רעידות אדמה מגיעות כמעט בלי אזהרה, והתפרצויות בדרך כלל כן מקדימות סימנים. גם התשובה הראשונה הפוכה: המדענים כמעט לא נותנים תחזיות מדויקות.",
+          "w": [
+            [
+              "interpret",
+              "לפרש"
+            ],
+            [
+              "unlike",
+              "בניגוד ל..."
+            ],
+            [
+              "precede",
+              "להקדים, לבוא לפני"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, the ground around a volcano may rise slightly when",
+          "o": [
+            "gases escape from vents near its summit",
+            "magma builds up in a chamber beneath it",
+            "small earthquakes break the rock below it",
+            "the surface cools after a period of unrest"
+          ],
+          "a": 1,
+          "ex": "בפסקה 2: הר געש עשוי «swell» (להתנפח) בכמה סנטימטרים «as magma accumulates in a chamber below it», כלומר כשמאגמה מצטברת מתחתיו. הגזים ורעידות האדמה הקטנות הם סימנים אחרים שמוזכרים באותה פסקה, אבל לא הם הסיבה להתנפחות.",
+          "w": [
+            [
+              "accumulate",
+              "להצטבר"
+            ],
+            [
+              "deformation",
+              "עיוות, שינוי צורה"
+            ],
+            [
+              "swell",
+              "להתנפח"
+            ]
+          ]
+        },
+        {
+          "q": "In the third paragraph, the word 'stall' could best be replaced by",
+          "o": [
+            "speed up",
+            "stop moving",
+            "break out",
+            "grow hotter"
+          ],
+          "a": 1,
+          "ex": "מאגמה שעולה עלולה «stall and cool», כלומר להיעצר ולהתקרר, ולכן ההר נרגע בלי להתפרץ. «break out» (לפרוץ) הוא כמעט ההפך: אם המאגמה הייתה פורצת, הייתה התפרצות.",
+          "w": [
+            [
+              "stall",
+              "להיתקע, להיעצר"
+            ],
+            [
+              "ambiguous",
+              "דו-משמעי, לא ברור"
+            ]
+          ]
+        },
+        {
+          "q": "The third paragraph mainly serves to",
+          "o": [
+            "explain why signs of unrest are an unreliable guide to eruptions",
+            "describe the instruments used to detect rising magma",
+            "argue that most eruptions begin without any warning signs at all",
+            "show that all volcanoes behave alike before they erupt"
+          ],
+          "a": 0,
+          "ex": "הפסקה נותנת שלוש סיבות לכך שהתמונה לא חד-משמעית: מאגמה יכולה להיעצר, יש התפרצויות עם אזהרה חלשה, ולכל הר געש התנהגות משלו. היא אומרת «some eruptions», לא רוב ההתפרצויות, ואומרת שכל הר מתנהג אחרת, לא שכולם דומים.",
+          "w": [
+            [
+              "conversely",
+              "ובאופן הפוך, מנגד"
+            ],
+            [
+              "even so",
+              "למרות זאת, ובכל זאת"
+            ],
+            [
+              "unrest",
+              "אי-שקט, פעילות"
+            ]
+          ]
+        },
+        {
+          "q": "It can be inferred from the last paragraph that an evacuation which proves unnecessary",
+          "o": [
+            "shows that the alert level had been set correctly",
+            "is usually the result of faulty instruments",
+            "is seldom ordered by the authorities",
+            "may make a later evacuation harder to carry out"
+          ],
+          "a": 3,
+          "ex": "כתוב שפינוי מיותר עלול לגרום לתושבים «less willing to leave the next time», כלומר בפעם הבאה יהיה קשה יותר לפנות אותם. הקטע לא תולה פינויים מיותרים במכשירים תקולים, אלא בכך שהסימנים עצמם לא ברורים.",
+          "w": [
+            [
+              "evacuation",
+              "פינוי"
+            ],
+            [
+              "whereas",
+              "בעוד ש..., ואילו"
+            ],
+            [
+              "willing",
+              "מוכן, מסכים"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

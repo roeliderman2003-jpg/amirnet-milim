@@ -1,0 +1,1033 @@
+{
+  "tier": 2,
+  "sc": [
+    {
+      "qs": [
+        {
+          "q": "The witness's account of the accident was so ___ with the footage from the security cameras that the police soon began to doubt her entire statement.",
+          "o": [
+            "compatible",
+            "inconsistent",
+            "equivalent",
+            "familiar"
+          ],
+          "a": 1,
+          "ex": "«inconsistent with» = סותר, לא מתיישב עם. המשטרה התחילה לפקפק בעדות, ולכן העדות כנראה סתרה את הצילומים. «compatible» (תואם) היה אומר שהעדות מתאימה לראיות, ואז לא הייתה סיבה לפקפק בה.",
+          "w": [
+            [
+              "inconsistent",
+              "לא עקבי, סותר"
+            ],
+            [
+              "compatible",
+              "תואם, מתיישב עם"
+            ]
+          ]
+        },
+        {
+          "q": "The health reform has been widely criticized as slow and costly; ___, it has achieved its main goal of shortening waiting times in public hospitals.",
+          "o": [
+            "even so",
+            "accordingly",
+            "likewise",
+            "namely"
+          ],
+          "a": 0,
+          "ex": "«even so» = למרות זאת. קודם באה ביקורת (איטית ויקרה), ואחר כך הישג, כלומר ויתור. «accordingly» (בהתאם לכך) היה אומר שההישג נובע מהביקורת, וזה לא הגיוני.",
+          "w": [
+            [
+              "even so",
+              "למרות זאת, ובכל זאת"
+            ],
+            [
+              "accordingly",
+              "בהתאם לכך, לכן"
+            ]
+          ]
+        },
+        {
+          "q": "Because the virus mutates so rapidly, a vaccine designed against this year's strain may be rendered ___ by next winter.",
+          "o": [
+            "contagious",
+            "indispensable",
+            "dormant",
+            "obsolete"
+          ],
+          "a": 3,
+          "ex": "«obsolete» = מיושן, שכבר לא מועיל. הנגיף משתנה מהר, ולכן חיסון של השנה עלול להפוך ללא רלוונטי בחורף הבא. «indispensable» (הכרחי) אומר את ההפך הגמור.",
+          "w": [
+            [
+              "obsolete",
+              "מיושן, שאבד עליו הכלח"
+            ],
+            [
+              "indispensable",
+              "הכרחי, שאין לוותר עליו"
+            ],
+            [
+              "mutate",
+              "לעבור מוטציה"
+            ]
+          ]
+        },
+        {
+          "q": "___ the growing number of cyberattacks on hospitals, the ministry has ordered all medical centers to upgrade their computer security by the end of the year.",
+          "o": [
+            "Regardless of",
+            "In contrast to",
+            "In view of",
+            "Prior to"
+          ],
+          "a": 2,
+          "ex": "«in view of» = לאור. ריבוי מתקפות הסייבר הוא הסיבה להוראה לשדרג את האבטחה. «regardless of» (בלי קשר ל...) היה אומר שההוראה לא קשורה למתקפות, וזה לא הגיוני.",
+          "w": [
+            [
+              "in view of",
+              "לאור, בהתחשב ב..."
+            ],
+            [
+              "regardless of",
+              "בלי קשר ל..., בלי להתחשב ב..."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "The restorers worked with ___ care, cleaning each square centimeter of the ancient fresco with tiny brushes over a period of four years.",
+          "o": [
+            "casual",
+            "superficial",
+            "meticulous",
+            "negligent"
+          ],
+          "a": 2,
+          "ex": "«meticulous» = קפדני מאוד. ניקוי של כל סנטימטר במברשות זעירות במשך ארבע שנים מעיד על קפדנות. «superficial» (שטחי) ו-«negligent» (רשלני) אומרים את ההפך.",
+          "w": [
+            [
+              "meticulous",
+              "קפדני, מדוקדק"
+            ],
+            [
+              "superficial",
+              "שטחי"
+            ]
+          ]
+        },
+        {
+          "q": "The study is especially valuable ___ it is the first to have followed the same group of patients for more than twenty years.",
+          "o": [
+            "lest",
+            "unless",
+            "even though",
+            "inasmuch as"
+          ],
+          "a": 3,
+          "ex": "«inasmuch as» = מאחר ש... החלק השני (המחקר הראשון שעקב אחרי אותם מטופלים 20 שנה) הוא הסיבה לכך שהמחקר חשוב. «even though» (אף על פי ש) היה יוצר ניגוד, אבל להיות הראשון זה יתרון ולא חיסרון.",
+          "w": [
+            [
+              "inasmuch as",
+              "מאחר ש..., במידה ש..."
+            ],
+            [
+              "even though",
+              "אף על פי ש..."
+            ]
+          ]
+        },
+        {
+          "q": "Despite the disappointing figures, the minister refused to ___ that the policy had failed, insisting instead that it simply needed more time.",
+          "o": [
+            "concede",
+            "conceal",
+            "forget",
+            "predict"
+          ],
+          "a": 0,
+          "ex": "«concede» = להודות בדבר לא נעים. השר התעקש שהמדיניות רק צריכה עוד זמן, כלומר סירב להודות בכישלון. «conceal» (להסתיר) לא מתאים: «סירב להסתיר» היה אומר שהוא דיבר בגלוי על הכישלון.",
+          "w": [
+            [
+              "concede",
+              "להודות (בדבר לא נעים), להכיר ב..."
+            ],
+            [
+              "conceal",
+              "להסתיר"
+            ]
+          ]
+        },
+        {
+          "q": "___ most of the members had already left for the holidays, the chairwoman decided to postpone the vote until January.",
+          "o": [
+            "Even if",
+            "Seeing that",
+            "As long as",
+            "Whereas"
+          ],
+          "a": 1,
+          "ex": "«seeing that» = מאחר ש... רוב החברים כבר יצאו לחופשה, ולכן היו״ר דחתה את ההצבעה. «even if» (גם אם) ו-«as long as» (כל עוד) הן מילות תנאי, ואין כאן תנאי אלא סיבה.",
+          "w": [
+            [
+              "seeing that",
+              "מאחר ש..., הואיל ו..."
+            ],
+            [
+              "as long as",
+              "כל עוד, בתנאי ש..."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "Although the job offered little prestige, it proved highly ___, allowing her to pay off all of her student loans within two years.",
+          "o": [
+            "tedious",
+            "hazardous",
+            "obscure",
+            "lucrative"
+          ],
+          "a": 3,
+          "ex": "«lucrative» = רווחי. «although» יוצר ניגוד: לעבודה לא הייתה יוקרה, אבל היא הכניסה הרבה כסף, ולכן היא סגרה את ההלוואות. «obscure» (לא מוכר) רק חוזר על חוסר היוקרה ואין בו ניגוד.",
+          "w": [
+            [
+              "lucrative",
+              "רווחי, מכניס"
+            ],
+            [
+              "prestige",
+              "יוקרה"
+            ],
+            [
+              "tedious",
+              "מייגע"
+            ]
+          ]
+        },
+        {
+          "q": "The newly opened archive contains dozens of letters that shed light on a ___ unknown period of the poet's life.",
+          "o": [
+            "subsequently",
+            "hitherto",
+            "simultaneously",
+            "henceforth"
+          ],
+          "a": 1,
+          "ex": "«hitherto» = עד כה. התקופה הייתה לא ידועה עד עכשיו, והמכתבים שופכים עליה אור. «henceforth» (מעתה והלאה) לא מתאים: המכתבים דווקא חושפים את התקופה, כך שהיא לא תישאר לא ידועה.",
+          "w": [
+            [
+              "hitherto",
+              "עד כה, עד עתה"
+            ],
+            [
+              "henceforth",
+              "מעתה והלאה"
+            ],
+            [
+              "shed light on",
+              "לשפוך אור על"
+            ]
+          ]
+        },
+        {
+          "q": "Many voters remain ___ about the proposed merger: they welcome the promised savings but fear the loss of local jobs.",
+          "o": [
+            "indifferent",
+            "adamant",
+            "ambivalent",
+            "unanimous"
+          ],
+          "a": 2,
+          "ex": "«ambivalent» = בעל רגשות מעורבים. אחרי הנקודתיים מוסבר שהבוחרים גם שמחים (חיסכון) וגם חוששים (אובדן משרות). «indifferent» (אדיש) לא מתאים, כי יש להם רגשות לשני הכיוונים.",
+          "w": [
+            [
+              "ambivalent",
+              "בעל רגשות מעורבים, מתלבט"
+            ],
+            [
+              "indifferent",
+              "אדיש"
+            ]
+          ]
+        },
+        {
+          "q": "The landlord agreed to lower the rent ___ the tenants paid for the repairs to the roof themselves.",
+          "o": [
+            "on condition that",
+            "unless",
+            "in case",
+            "as though"
+          ],
+          "a": 0,
+          "ex": "«on condition that» = בתנאי ש... בעל הבית הסכים להוריד את שכר הדירה רק אם הדיירים ישלמו בעצמם על תיקון הגג. «unless» (אלא אם כן) הופך את התנאי ויוצר משפט לא הגיוני.",
+          "w": [
+            [
+              "on condition that",
+              "בתנאי ש..."
+            ],
+            [
+              "unless",
+              "אלא אם כן"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "Critics warn that closing the rural clinics will only ___ the overcrowding in city hospitals, since patients from the villages will have nowhere else to go.",
+          "o": [
+            "exacerbate",
+            "alleviate",
+            "investigate",
+            "postpone"
+          ],
+          "a": 0,
+          "ex": "«exacerbate» = להחמיר. אם המרפאות בכפרים ייסגרו, המטופלים יגיעו לבתי החולים בעיר והצפיפות תגדל. «alleviate» (להקל) אומר את ההפך.",
+          "w": [
+            [
+              "exacerbate",
+              "להחמיר"
+            ],
+            [
+              "alleviate",
+              "להקל, לשכך"
+            ]
+          ]
+        },
+        {
+          "q": "___ the quick thinking of a passing nurse, the injured cyclist would almost certainly have died at the scene.",
+          "o": [
+            "Owing to",
+            "Apart from",
+            "But for",
+            "Along with"
+          ],
+          "a": 2,
+          "ex": "«but for» = אלמלא. האחות הצילה את רוכב האופניים: בלעדיה הוא כנראה היה מת. «owing to» (בגלל) היה אומר שהמחשבה המהירה שלה הייתה גורמת למותו.",
+          "w": [
+            [
+              "but for",
+              "אלמלא, לולא"
+            ],
+            [
+              "owing to",
+              "בשל, עקב"
+            ]
+          ]
+        },
+        {
+          "q": "The flood was ___: no one in the valley, not even the oldest residents, could remember the river ever rising so high.",
+          "o": [
+            "moderate",
+            "unprecedented",
+            "negligible",
+            "routine"
+          ],
+          "a": 1,
+          "ex": "«unprecedented» = חסר תקדים. אחרי הנקודתיים מוסבר שאף אחד לא זוכר שהנהר עלה אי פעם כל כך גבוה. «routine» (שגרתי) ו-«negligible» (זניח) אומרים את ההפך.",
+          "w": [
+            [
+              "unprecedented",
+              "חסר תקדים"
+            ],
+            [
+              "negligible",
+              "זניח"
+            ]
+          ]
+        },
+        {
+          "q": "The professor's lectures were notoriously ___, wandering from one topic to another without ever reaching a clear conclusion.",
+          "o": [
+            "concise",
+            "rigorous",
+            "focused",
+            "incoherent"
+          ],
+          "a": 3,
+          "ex": "«incoherent» = בלי קשר הגיוני, מבולבל. ההרצאות קפצו מנושא לנושא ולא הגיעו למסקנה. «concise» (תמציתי) ו-«focused» (ממוקד) אומרים את ההפך.",
+          "w": [
+            [
+              "incoherent",
+              "לא קוהרנטי, מבולבל"
+            ],
+            [
+              "concise",
+              "תמציתי"
+            ],
+            [
+              "notoriously",
+              "ידוע לשמצה"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "As young people moved to the cities in search of work, the village's population continued to ___, until only a few elderly residents remained.",
+          "o": [
+            "flourish",
+            "dwindle",
+            "fluctuate",
+            "stabilize"
+          ],
+          "a": 1,
+          "ex": "«dwindle» = להתמעט בהדרגה. הצעירים עזבו עד שנשארו רק כמה זקנים, כלומר האוכלוסייה הלכה וקטנה. «flourish» (לשגשג) הפוך, ו-«fluctuate» (לעלות ולרדת) לא מתאים לירידה רצופה.",
+          "w": [
+            [
+              "dwindle",
+              "להצטמצם, להתמעט"
+            ],
+            [
+              "flourish",
+              "לשגשג"
+            ],
+            [
+              "fluctuate",
+              "להשתנות, לעלות ולרדת"
+            ]
+          ]
+        },
+        {
+          "q": "Several European countries, ___ Denmark and the Netherlands, now produce more than half of their electricity from wind.",
+          "o": [
+            "conversely",
+            "formerly",
+            "merely",
+            "notably"
+          ],
+          "a": 3,
+          "ex": "«notably» = במיוחד, באופן בולט. דנמרק והולנד הן דוגמאות בולטות למדינות שמייצרות יותר מחצי מהחשמל מרוח. «merely» (רק) סותר את «Several», «formerly» (בעבר) לא מתאים ל-«now», ו-«conversely» (מנגד) מציג ניגוד שאין כאן.",
+          "w": [
+            [
+              "notably",
+              "במיוחד; באופן בולט"
+            ],
+            [
+              "merely",
+              "רק, לא יותר מ..."
+            ],
+            [
+              "formerly",
+              "לשעבר, בעבר"
+            ]
+          ]
+        },
+        {
+          "q": "The two sides have reached a ___ agreement, but it will not become final until both parliaments approve it.",
+          "o": [
+            "tentative",
+            "binding",
+            "permanent",
+            "definitive"
+          ],
+          "a": 0,
+          "ex": "«tentative» = זמני, לא סופי. ההסכם לא יהיה סופי עד ששני הפרלמנטים יאשרו אותו. «binding» (מחייב) ו-«definitive» (סופי) סותרים את «it will not become final».",
+          "w": [
+            [
+              "tentative",
+              "זמני, לא סופי"
+            ],
+            [
+              "binding",
+              "מחייב"
+            ]
+          ]
+        },
+        {
+          "q": "The bacteria can survive for weeks on dry surfaces; ___, hospital beds must be disinfected thoroughly between patients.",
+          "o": [
+            "conversely",
+            "otherwise",
+            "hence",
+            "nevertheless"
+          ],
+          "a": 2,
+          "ex": "«hence» = ולכן. החיידקים שורדים שבועות על משטחים, וזו הסיבה שצריך לחטא את המיטות. «nevertheless» (למרות זאת) ו-«conversely» (מנגד) יוצרים ניגוד שלא קיים כאן.",
+          "w": [
+            [
+              "hence",
+              "מכאן, ולכן"
+            ],
+            [
+              "conversely",
+              "ובאופן הפוך, מנגד"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "In an unusually ___ interview, the director admitted that two of her films had been commercial failures and that she still regretted making them.",
+          "o": [
+            "evasive",
+            "guarded",
+            "candid",
+            "secretive"
+          ],
+          "a": 2,
+          "ex": "«candid» = גלוי לב. הבמאית הודתה בכישלונות ובחרטה, וזה מראה כנות. «evasive» (מתחמק) ו-«guarded» (זהיר, מסתיר) אומרים את ההפך.",
+          "w": [
+            [
+              "candid",
+              "גלוי לב, כן"
+            ],
+            [
+              "evasive",
+              "מתחמק"
+            ]
+          ]
+        },
+        {
+          "q": "The two companies decided to ___ their research departments, hoping that a single larger team would develop new products faster.",
+          "o": [
+            "merge",
+            "dismantle",
+            "divide",
+            "outsource"
+          ],
+          "a": 0,
+          "ex": "«merge» = למזג, לאחד. החברות קיוו שצוות אחד גדול יעבוד מהר יותר, ולכן איחדו את מחלקות המחקר. «divide» (לחלק) ו-«dismantle» (לפרק) הפוכים לרעיון של צוות אחד גדול.",
+          "w": [
+            [
+              "merge",
+              "למזג, להתמזג"
+            ],
+            [
+              "dismantle",
+              "לפרק"
+            ]
+          ]
+        },
+        {
+          "q": "Before the drug can be sold, every stage of the clinical trials will be ___ by an independent panel of experts to make sure that no data were hidden.",
+          "o": [
+            "fabricated",
+            "neglected",
+            "abandoned",
+            "scrutinized"
+          ],
+          "a": 3,
+          "ex": "«scrutinize» = לבחון בקפדנות. הפאנל בודק כל שלב כדי לוודא שלא הוסתרו נתונים. «neglected» (הוזנח) סותר את המטרה, ו-«fabricated» (פוברק) לא הגיוני: מומחים בלתי תלויים לא אמורים לבדות ניסויים.",
+          "w": [
+            [
+              "scrutinize",
+              "לבחון בקפדנות"
+            ],
+            [
+              "fabricate",
+              "לפברק, לבדות"
+            ]
+          ]
+        },
+        {
+          "q": "Residents received detailed instructions on what to do ___ an earthquake, including where to find the nearest shelter.",
+          "o": [
+            "instead of",
+            "in the event of",
+            "in spite of",
+            "in favor of"
+          ],
+          "a": 1,
+          "ex": "«in the event of» = במקרה של. התושבים קיבלו הוראות מה לעשות אם תהיה רעידת אדמה, כולל איפה המקלט הקרוב. «in spite of» (למרות) ו-«instead of» (במקום) לא נותנים משמעות הגיונית כאן.",
+          "w": [
+            [
+              "in the event of",
+              "במקרה של"
+            ],
+            [
+              "in spite of",
+              "למרות (+שם עצם)"
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "rs": [
+    {
+      "qs": [
+        {
+          "q": "Although remote work has allowed many companies to cut their office expenses considerably, a number of managers report that it has made it harder to train newly hired employees.",
+          "o": [
+            "Because remote work has made it harder to train newly hired employees, many companies have been forced to spend considerably more on their offices than they did before.",
+            "Most managers report that remote work has reduced their companies' office expenses and that it has also made it easier to train employees who have just been hired.",
+            "Working from home has enabled numerous firms to reduce office costs significantly; some managers, however, say that it has complicated the training of new staff.",
+            "A number of managers report that remote work has allowed companies to cut office expenses only because they have stopped training newly hired employees altogether."
+          ],
+          "a": 2,
+          "ex": "המקור: עבודה מרחוק חסכה לחברות הרבה בהוצאות משרד, אבל לפי חלק מהמנהלים היא הקשתה על הכשרת עובדים חדשים. התשובה הנכונה אומרת אותו דבר במילים אחרות («however» במקום «although»). אחת השגויות הופכת «harder» ל-«easier» ו-«a number of» ל-«most», ואחרות ממציאות קשר של סיבה ותוצאה שלא נאמר.",
+          "w": [
+            [
+              "although",
+              "למרות ש... (+משפט)"
+            ],
+            [
+              "however",
+              "עם זאת, אולם"
+            ],
+            [
+              "considerably",
+              "במידה ניכרת"
+            ]
+          ]
+        },
+        {
+          "q": "The drought, which lasted for nearly three years, did not so much destroy the region's agriculture as force farmers to switch to crops that require far less water.",
+          "o": [
+            "Rather than ruining the region's farming, the nearly three-year drought mainly pushed farmers to grow crops that need much less water.",
+            "The drought, which lasted almost three years, destroyed most of the region's agriculture, even though many farmers switched to crops that require far less water.",
+            "Farmers in the region switched to crops that need much less water several years before the drought began, and as a result their agriculture was hardly damaged.",
+            "The nearly three-year drought both destroyed the region's agriculture and forced farmers to grow crops that require much less water than they had grown before."
+          ],
+          "a": 0,
+          "ex": "«did not so much X as Y» = לא עד כדי כך X, אלא בעיקר Y. הבצורת לא הרסה את החקלאות, אלא בעיקר אילצה את החקלאים לעבור לגידולים שצריכים פחות מים. התשובה עם «both destroyed... and forced» שגויה, כי המקור דוחה את ההרס. גם התשובה שהבצורת הרסה את רוב החקלאות סותרת את המקור.",
+          "w": [
+            [
+              "not so much... as",
+              "לא כל כך... אלא בעיקר"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "nearly",
+              "כמעט"
+            ]
+          ]
+        },
+        {
+          "q": "People who regularly play a musical instrument tend to score higher on memory tests in old age, though it is unclear whether music training or other lifestyle factors account for the difference.",
+          "o": [
+            "Playing a musical instrument regularly improves memory in old age, which explains why older musicians score higher on memory tests than people with other lifestyles.",
+            "Older people who score higher on memory tests tend to take up a musical instrument, although researchers are unsure which lifestyle factors encourage them to do so.",
+            "It is unclear whether people who regularly play a musical instrument score any higher on memory tests in old age than those who have never played one at all.",
+            "Why older adults who often play an instrument usually do better on memory tests is unclear: it may be the music or another part of their lifestyle."
+          ],
+          "a": 3,
+          "ex": "המקור מתאר רק קשר (מתאם): מי שמנגן נוטה לקבל ציונים גבוהים יותר במבחני זיכרון בזקנה, ולא ידוע אם הסיבה היא הנגינה או גורמים אחרים. התשובה הנכונה מתחילה מהשאלה הפתוחה («Why... is unclear») ושומרת גם את הקשר («usually do better») וגם את הספק לגבי הסיבה. התשובה עם «improves memory» הופכת את המתאם לסיבה, וזו המלכודת. התשובה שאומרת שלא ידוע אם בכלל יש הבדל משנה את מה שלא ידוע.",
+          "w": [
+            [
+              "tend to",
+              "נוטה ל..."
+            ],
+            [
+              "though",
+              "אף על פי ש...; (בסוף משפט) אבל"
+            ],
+            [
+              "account for",
+              "להסביר, להיות הסיבה ל..."
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "Only after the company had received hundreds of complaints from customers did it admit that the software update was responsible for the battery problems affecting its newest phones.",
+          "o": [
+            "The company admitted that the software update was responsible for the battery problems in its newest phones before any of its customers had complained about them.",
+            "The company acknowledged that its software update had caused the battery faults in its latest phones, but not until hundreds of customers had complained.",
+            "Hundreds of customers complained that the company's software update was responsible for the battery problems, but the company has refused to admit that this is the case.",
+            "After receiving hundreds of complaints, the company admitted that its newest phones had battery problems, though it denied that the software update was in any way responsible."
+          ],
+          "a": 1,
+          "ex": "«Only after X did Y» = רק אחרי X קרה Y. החברה הודתה שהעדכון גרם לבעיות הסוללה רק אחרי מאות תלונות, ו-«not until» בתשובה הנכונה אומר בדיוק את זה. אחת השגויות אומרת שהחברה הודתה לפני התלונות, ואחרות אומרות שהחברה סירבה להודות או הכחישה שהעדכון אשם.",
+          "w": [
+            [
+              "only after",
+              "רק אחרי"
+            ],
+            [
+              "not until",
+              "רק כאשר, לא לפני ש..."
+            ],
+            [
+              "acknowledge",
+              "להודות, להכיר ב..."
+            ]
+          ]
+        },
+        {
+          "q": "While the new metro line has shortened travel times for commuters from the eastern suburbs, residents of the city center complain that construction noise will continue for at least two more years.",
+          "o": [
+            "Because construction noise in the city center will continue for at least two more years, commuters from the eastern suburbs complain that the new metro line has not shortened their journeys.",
+            "Commuters from the eastern suburbs now travel faster thanks to the new metro line, whereas downtown residents object that the building noise will go on for at least another two years.",
+            "The new metro line has shortened travel times for residents of the city center, while commuters from the eastern suburbs complain about construction noise that will last at most two more years.",
+            "Although residents of the city center complain about the noise, construction of the new metro line will be finished within two years, which will shorten travel times for eastern commuters."
+          ],
+          "a": 1,
+          "ex": "«While» כאן = בעוד ש (ניגוד): לנוסעים מהפרברים המזרחיים הנסיעה התקצרה, ואילו תושבי מרכז העיר מתלוננים שהרעש יימשך לפחות עוד שנתיים. אחת השגויות מחליפה בין שתי הקבוצות והופכת «at least» ל-«at most». אחרת מוסיפה שהבנייה תסתיים תוך שנתיים, בניגוד למקור.",
+          "w": [
+            [
+              "while",
+              "בעוד ש... (ניגוד)"
+            ],
+            [
+              "whereas",
+              "בעוד ש..., ואילו"
+            ],
+            [
+              "at least",
+              "לפחות"
+            ]
+          ]
+        },
+        {
+          "q": "Contrary to the widely held belief that bats are blind, most species can see quite well, and some even rely more on their eyesight than on echolocation when hunting.",
+          "o": [
+            "As is widely believed, most species of bats are blind, so they rely on echolocation rather than on their eyesight when hunting, although a few species can see quite well.",
+            "Most species of bats can see quite well; consequently, they no longer need echolocation when they hunt, contrary to what is widely believed about how they find their prey.",
+            "Some species of bats can see quite well, but most of them rely more on echolocation than on their eyesight when hunting, as is widely believed by many people today.",
+            "Although many people assume that bats cannot see, the majority of species actually have good vision, and certain species depend on sight more than on echolocation to catch prey."
+          ],
+          "a": 3,
+          "ex": "«Contrary to» = בניגוד ל... למרות האמונה שעטלפים עיוורים, רוב המינים רואים היטב, ויש מינים שאפילו סומכים על הראייה יותר מאשר על ההד. התשובה שמחליפה בין «most» ל-«some» שגויה. התשובה עם «consequently» מוסיפה שהם כבר לא צריכים הד, וזה לא נאמר.",
+          "w": [
+            [
+              "contrary to",
+              "בניגוד ל..."
+            ],
+            [
+              "even",
+              "אפילו"
+            ],
+            [
+              "rely on",
+              "לסמוך על, להסתמך על"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "The festival's organizers insist that ticket prices were raised solely to cover the rising cost of security, not to increase profits, as some critics have suggested.",
+          "o": [
+            "The festival's organizers maintain that the higher ticket prices are meant only to pay for growing security costs and not, as some critics claim, to boost profits.",
+            "Some critics have suggested that ticket prices were raised solely to cover the rising cost of security, but the festival's organizers insist that the goal was to increase profits.",
+            "The festival's organizers admit that ticket prices were raised partly to increase profits, although they insist that the rising cost of security was the main reason for the change.",
+            "Because some critics suggested that the festival was making too much profit, its organizers decided to raise ticket prices in order to cover the rising cost of security instead."
+          ],
+          "a": 0,
+          "ex": "המארגנים טוענים שהמחירים עלו אך ורק («solely») כדי לממן את האבטחה, ולא כדי להגדיל רווחים כפי שטוענים מבקרים. אחת השגויות מחליפה מי אומר מה. אחרת הופכת «solely» ל-«partly». השלישית מוסיפה קשר של סיבה ותוצאה שלא קיים במקור.",
+          "w": [
+            [
+              "solely",
+              "אך ורק, בלעדית"
+            ],
+            [
+              "insist",
+              "להתעקש, לטעון בתוקף"
+            ],
+            [
+              "suggest",
+              "לרמוז, להציע"
+            ]
+          ]
+        },
+        {
+          "q": "Had the engineers not detected the crack in the dam during a routine inspection, the reservoir might have flooded several villages downstream within a matter of days.",
+          "o": [
+            "Although the engineers detected the crack in the dam during a routine inspection, the reservoir still flooded several villages downstream within a matter of days.",
+            "The engineers detected the crack in the dam only after the reservoir had flooded several villages downstream, even though they had carried out a routine inspection earlier.",
+            "But for the discovery of the crack in the dam by engineers carrying out a regular inspection, a number of villages downstream could have been flooded within days.",
+            "If the engineers detect a crack in the dam during their next routine inspection, they may decide to flood several villages downstream in order to protect the reservoir."
+          ],
+          "a": 2,
+          "ex": "«Had the engineers not detected» = אילו המהנדסים לא היו מגלים. כלומר הם גילו את הסדק, והשיטפון לא קרה. «but for» = אלמלא, ולכן התשובה הנכונה שומרת על המשמעות. התשובה עם «although» אומרת שהשיטפון באמת קרה, וזה ההפך מהמקור.",
+          "w": [
+            [
+              "but for",
+              "אלמלא, לולא"
+            ],
+            [
+              "detect",
+              "לגלות, לזהות"
+            ],
+            [
+              "routine",
+              "שגרתי"
+            ]
+          ]
+        },
+        {
+          "q": "Few historians today accept the traditional account of the city's founding, which is based almost entirely on a single chronicle written more than three centuries after the events it describes.",
+          "o": [
+            "Most historians today accept the traditional account of the city's founding, even though it is based on a single chronicle written more than three centuries after the events.",
+            "Few historians today accept the traditional account of the city's founding, because the only chronicle that describes those events was lost more than three centuries ago.",
+            "Historians who accept the traditional account of the city's founding rely on several chronicles, all of which were written within a few years of the events they describe.",
+            "The conventional story of how the city was founded, which relies nearly exclusively on one chronicle composed over three hundred years later, is now rejected by most historians."
+          ],
+          "a": 3,
+          "ex": "«Few historians accept» = מעט היסטוריונים מקבלים, כלומר רובם דוחים את הסיפור המסורתי. התשובה הנכונה אומרת שרוב ההיסטוריונים דוחים אותו, ושהוא מבוסס כמעט רק על כרוניקה אחת שנכתבה מאות שנים אחר כך. התשובה עם «Most historians today accept» הופכת את «few» ל-«most».",
+          "w": [
+            [
+              "few",
+              "מעט (כמעט אין)"
+            ],
+            [
+              "almost",
+              "כמעט"
+            ],
+            [
+              "chronicle",
+              "כרוניקה, דברי הימים"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "The proposal to extend the school day was dropped not because parents opposed it, but because the ministry could not find enough qualified teachers to staff the additional hours.",
+          "o": [
+            "Parents opposed the proposal to extend the school day because they believed that the ministry would not be able to find enough qualified teachers for the additional hours.",
+            "The ministry dropped the proposal to extend the school day after parents objected to it, even though it had already found enough qualified teachers to staff the extra hours.",
+            "It was a shortage of qualified teachers for the extra hours, rather than objections from parents, that caused the plan for a longer school day to be abandoned.",
+            "Although the ministry found enough qualified teachers to staff the additional hours, the proposal to extend the school day was dropped because many parents strongly opposed it."
+          ],
+          "a": 2,
+          "ex": "המקור: ההצעה בוטלה לא בגלל התנגדות ההורים, אלא בגלל שלא היו מספיק מורים. התשובה הנכונה משתמשת ב-«rather than» ובמבנה «It was... that» כדי להדגיש את הסיבה האמיתית. שתי שגויות הופכות את התנגדות ההורים לסיבה, וזה בדיוק מה שהמקור שולל.",
+          "w": [
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "qualified",
+              "מוסמך, בעל הכשרה"
+            ],
+            [
+              "staff",
+              "לאייש (בכוח אדם)"
+            ]
+          ]
+        },
+        {
+          "q": "Unlike most migratory birds, which travel in large flocks, young cuckoos make their first journey to Africa alone, guided only by an inherited sense of direction.",
+          "o": [
+            "Like most migratory birds, young cuckoos travel to Africa in large flocks on their first journey, guided by older birds that have already made the trip many times before.",
+            "Whereas the majority of migrating birds fly in big groups, young cuckoos fly to Africa for the first time on their own, relying solely on an instinctive sense of direction.",
+            "Young cuckoos make their first journey to Africa alone because, unlike most migratory birds, they have not inherited any sense of direction that would allow them to join a flock.",
+            "Most migratory birds travel alone and are guided only by an inherited sense of direction, whereas young cuckoos make their first journey to Africa in large flocks with other birds."
+          ],
+          "a": 1,
+          "ex": "«Unlike» = בניגוד ל... רוב הציפורים הנודדות טסות בלהקות, אבל קוקיות צעירות טסות לבד בפעם הראשונה ומונחות רק על ידי חוש כיוון מולד. «whereas» בתשובה הנכונה שומר על הניגוד. אחת השגויות הופכת את הצדדים, ואחרת מוסיפה סיבה («because») שסותרת את המקור.",
+          "w": [
+            [
+              "unlike",
+              "בניגוד ל... (+שם עצם)"
+            ],
+            [
+              "whereas",
+              "בעוד ש..., ואילו"
+            ],
+            [
+              "inherited",
+              "תורשתי, מולד"
+            ]
+          ]
+        },
+        {
+          "q": "The study found that employees who were allowed to choose their own working hours took fewer sick days, although their overall productivity remained roughly the same as before.",
+          "o": [
+            "According to the study, workers permitted to set their own schedules were absent due to illness less often, but their total output stayed about the same.",
+            "The study found that employees who were allowed to choose their own working hours became much more productive, although they took roughly the same number of sick days as before.",
+            "Employees who took fewer sick days were then allowed to choose their own working hours, and as a result their overall productivity rose considerably, according to the study.",
+            "Although employees who chose their own working hours took fewer sick days, the study found that their productivity fell, since they worked fewer hours than they had before."
+          ],
+          "a": 0,
+          "ex": "המחקר מצא שעובדים שבחרו את שעות העבודה שלהם לקחו פחות ימי מחלה, אבל התפוקה שלהם נשארה בערך אותו דבר. אחת השגויות מחליפה בין שני הממצאים. אחרת הופכת את הסדר (קודם פחות ימי מחלה ואז בחירת שעות) ומוסיפה עלייה בתפוקה. האחרונה אומרת שהתפוקה ירדה.",
+          "w": [
+            [
+              "although",
+              "למרות ש... (+משפט)"
+            ],
+            [
+              "productivity",
+              "תפוקה, פריון"
+            ],
+            [
+              "roughly",
+              "בערך, בקירוב"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "So rapidly did the fire spread through the dry forest that firefighters were unable to save the old wooden cabins, despite having arrived within minutes of the first alarm.",
+          "o": [
+            "Because the firefighters arrived late, long after the first alarm, the fire was able to spread rapidly through the dry forest and destroy the old wooden cabins.",
+            "The fire spread so rapidly through the dry forest that firefighters arrived within minutes of the first alarm and still managed to save most of the old wooden cabins in the area.",
+            "Although the fire spread rapidly through the dry forest, the firefighters, who arrived within minutes of the first alarm, were able to save all of the old wooden cabins.",
+            "Even though firefighters reached the scene just minutes after the first alarm, the blaze moved through the parched forest so fast that they could not rescue the old wooden cabins."
+          ],
+          "a": 3,
+          "ex": "«So rapidly... that» = כל כך מהר ש... האש התפשטה כל כך מהר שהכבאים לא הצליחו להציל את הבקתות, למרות שהגיעו תוך דקות. «despite having arrived» הופך בתשובה הנכונה ל-«even though... reached». אחת השגויות אומרת שהכבאים איחרו, וזה סותר את «within minutes». שתיים אחרות אומרות שהבקתות ניצלו.",
+          "w": [
+            [
+              "so... that",
+              "כל כך... ש..."
+            ],
+            [
+              "despite",
+              "למרות (+שם עצם)"
+            ],
+            [
+              "even though",
+              "אף על פי ש..."
+            ]
+          ]
+        },
+        {
+          "q": "Opponents of the new law claim that it will not protect consumers at all; on the contrary, it will allow large banks to charge hidden fees on ordinary savings accounts.",
+          "o": [
+            "Opponents of the new law claim that it will protect consumers by preventing large banks from charging hidden fees on ordinary savings accounts, contrary to what its supporters say.",
+            "According to its opponents, rather than safeguarding consumers, the new law will enable big banks to impose concealed charges on regular savings accounts.",
+            "Opponents of the new law admit that it will protect consumers to some extent, although they fear that large banks may still find ways to charge hidden fees on savings accounts.",
+            "Opponents of the new law claim that it will protect only the large banks, which will no longer be allowed to charge hidden fees on ordinary savings accounts."
+          ],
+          "a": 1,
+          "ex": "המתנגדים טוענים שהחוק לא יגן על הצרכנים, ולהפך («on the contrary»): הוא יאפשר לבנקים לגבות עמלות נסתרות. «rather than safeguarding» = במקום להגן. אחת השגויות אומרת שהחוק ימנע עמלות, וזה ההפך. אחרת אומרת שהמתנגדים מודים שהחוק יגן קצת, בניגוד ל-«not... at all».",
+          "w": [
+            [
+              "on the contrary",
+              "להפך (דוחה את מה שנאמר)"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "hidden",
+              "נסתר, חבוי"
+            ]
+          ]
+        },
+        {
+          "q": "The stone terraces on the island's hillsides, many of which are still farmed today, were built by local villagers rather than by a central authority, as scholars once assumed.",
+          "o": [
+            "As scholars once assumed, the stone terraces on the island's hillsides were built by local villagers, although most of them are no longer farmed today because the villagers have left.",
+            "The stone terraces on the island's hillsides were built by a central authority rather than by local villagers, and scholars now believe that only a few of them are still farmed.",
+            "Scholars used to believe that a central authority had constructed the island's hillside stone terraces, a large number of which are still cultivated, but in fact local villagers built them.",
+            "Scholars once assumed that local villagers had built the stone terraces on the island's hillsides, but it has since been shown that they were planned by a central authority."
+          ],
+          "a": 2,
+          "ex": "המקור: את הטרסות בנו תושבי הכפרים, ולא שלטון מרכזי כפי שחשבו פעם החוקרים. «as scholars once assumed» מתייחס לשלטון המרכזי. התשובה הנכונה אומרת שהחוקרים חשבו שבנה אותן שלטון מרכזי, אבל בפועל בנו אותן הכפריים. התשובה שמתחילה ב-«As scholars once assumed» מצמידה את ההנחה לחלק הלא נכון.",
+          "w": [
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "assume",
+              "להניח"
+            ],
+            [
+              "in fact",
+              "למעשה, בעצם"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "qs": [
+        {
+          "q": "Even when they are offered a larger reward later, young children usually choose a small reward immediately, a tendency that becomes less pronounced as they grow older.",
+          "o": [
+            "Young children generally prefer to get a small prize at once rather than wait for a bigger one, although this preference weakens with age.",
+            "As they grow older, children increasingly choose a small reward immediately, even when they are offered a larger reward if they are willing to wait for it.",
+            "Young children usually wait for a larger reward rather than choosing a small one immediately, and this tendency becomes even stronger as they grow older.",
+            "Because young children are rarely offered a larger reward later, they usually choose a small reward immediately, a habit they lose only when they are much older."
+          ],
+          "a": 0,
+          "ex": "ילדים צעירים בדרך כלל בוחרים פרס קטן מיד, גם כשמציעים להם פרס גדול יותר אחר כך, והנטייה הזו נחלשת («becomes less pronounced») כשהם גדלים. אחת השגויות אומרת שהנטייה מתחזקת עם הגיל, ואחרת הופכת את הבחירה עצמה (הילדים מחכים). האחרונה מוסיפה סיבה שלא נאמרה.",
+          "w": [
+            [
+              "tendency",
+              "נטייה"
+            ],
+            [
+              "pronounced",
+              "בולט, מובהק"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ]
+          ]
+        },
+        {
+          "q": "The museum will extend its opening hours on weekends only if the city agrees to cover the cost of the additional security guards that the longer schedule would require.",
+          "o": [
+            "The museum will extend its opening hours on weekends even if the city refuses to pay for the additional security guards that the longer schedule would require.",
+            "The city has agreed to cover the cost of additional security guards, so the museum will extend its opening hours on weekends as soon as the new guards are hired.",
+            "Unless the city consents to pay for the extra guards needed for a longer schedule, the museum will not stay open later on weekends.",
+            "If the museum extends its opening hours on weekends, the city will have to hire additional security guards, since the longer schedule would require more staff at night."
+          ],
+          "a": 2,
+          "ex": "«only if» = רק אם. המוזיאון יאריך את השעות רק אם העירייה תממן את המאבטחים. «Unless... not» = אם לא... אז לא, וזו אותה משמעות. התשובה עם «even if» אומרת את ההפך: השעות יוארכו גם בלי מימון. אחרת מוסיפה שהעירייה כבר הסכימה, וזה לא נאמר.",
+          "w": [
+            [
+              "only if",
+              "רק אם"
+            ],
+            [
+              "unless",
+              "אלא אם כן"
+            ],
+            [
+              "even if",
+              "גם אם, אפילו אם"
+            ]
+          ]
+        },
+        {
+          "q": "The company's profits rose sharply last year, but this was largely due to the sale of one of its factories rather than to any improvement in the performance of its core business.",
+          "o": [
+            "The company's profits rose sharply last year because the performance of its core business improved so much that it was able to sell one of its factories.",
+            "Last year's steep increase in the company's earnings came mainly from selling a factory, not from better results in its main line of business.",
+            "Although the company sold one of its factories last year, its profits fell sharply, since its core business performed considerably worse than in previous years.",
+            "The company's profits rose sharply last year, partly because of the sale of a factory and partly because its core business performed much better than expected."
+          ],
+          "a": 1,
+          "ex": "הרווחים עלו, אבל בעיקר («largely») בגלל מכירת מפעל, ולא בגלל שיפור בעסק המרכזי. התשובה עם «partly... partly» מוסיפה שיפור בעסק המרכזי, וזה בדיוק מה שהמקור שולל. אחרת אומרת שהרווחים ירדו.",
+          "w": [
+            [
+              "due to",
+              "עקב, בגלל (+שם עצם)"
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ],
+            [
+              "core",
+              "מרכזי, עיקרי"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}
