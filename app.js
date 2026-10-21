@@ -394,6 +394,13 @@ function prepare() {
 function dropFromLesson(w) {
   L.q = [L.q[0], ...L.q.slice(1).filter(x => x.w !== w).map(x => x.ws ? Object.assign({}, x, { ws: x.ws.filter(y => y !== w) }) : x).filter(x => !x.ws || x.ws.length >= 3)];
 }
+// מכיר אבל רוצה לתרגל: מדלגים על שאלות הפירוש הקלות, ומתחילים מהשלמת משפט
+function knowSome() {
+  const it = L.q[0], s = S.w[it.w.id];
+  s.b = Math.max(s.b, 3); s.due = now(); save();
+  L.q = [it, { k: 'q', w: it.w, type: 'sentence' }, ...L.q.slice(1).filter(x => x.w !== it.w)];
+  next();
+}
 function knowIt() {
   const w = L.q[0].w;
   markKnown(w); dropFromLesson(w);
@@ -564,7 +571,11 @@ function renderLesson() {
       <div class="ex"><div class="en">${fillSentence(w.s, w.en)}</div><div class="exhe">${esc(w.sh)}</div></div>
       ${w.note ? `<div class="note">💡 ${esc(w.note)}</div>` : ''}
       <div class="tip">${CATS[w.cat].icon} <b>${CATS[w.cat].he}:</b> ${CATS[w.cat].tip}</div>`;
-    foot = `<div class="lfoot row2"><button class="btn ghost" onclick="knowIt()">מכיר, לא לתרגל ✓</button><button class="btn" onclick="next()">הבנתי, ממשיכים</button></div>`;
+    // שלוש אפשרויות למילה חדשה (רועי 21/10): מכיר טוב = לא מתרגלים בכלל, מכיר = מתחילים משלב המשפטים, לא מכיר = מההתחלה
+    foot = `<div class="lfoot col3"><div class="q3">כמה אתה מכיר את המילה?</div>
+      <button class="btn ghost" onclick="knowIt()">✅ מכיר טוב, לא רוצה לתרגל</button>
+      <button class="btn blue" onclick="knowSome()">👍 מכיר, רוצה לתרגל</button>
+      <button class="btn" onclick="next()">🆕 לא מכיר בכלל</button></div>`;
   } else if (c.k === 'match') {
     h += `<div class="prompt">התאם כל מילה לפירוש שלה</div><div class="match"><div class="col">`;
     c.right.forEach((w, i) => { h += matchBtn(c, w, 'r', i, esc(w.he), ''); });
