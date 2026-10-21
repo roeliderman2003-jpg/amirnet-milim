@@ -38,11 +38,12 @@ async function runLesson(P, T, wrongRate, given) {
       chk(c.opts.every(o => (c.type === 'category' ? TOPICS[w.topic].keys.includes(o) : true)), 'קבוצה מנושא אחר ' + w.en, P);
       chk(c.type !== 'meaning' || c.opts.every(o => TOPICS[w.topic].items.some(x => x.he === o)), 'פירוש מנושא אחר ' + w.en, P);
       // מסיחים ממילים שכבר נחשפו: כשיש מספיק כאלה, אף מסיח לא אמור להיות מילה שעוד לא ראית
+      // (חוץ ממילה בשני חלקים כמו either... or, שבה עדיף מסיח בשני חלקים גם אם הוא חדש)
       if (['meaning', 'reverse', 'sentence'].includes(c.type) && !(c.type === 'sentence' && w.d)) {
         const seen = o => ITEMS.some(x => (c.type === 'meaning' ? x.he : x.en) === o && S.w[x.id]);
         const ds = c.opts.filter(o => o !== c.correct);
         T.dist = (T.dist || 0) + ds.length; T.distSeen = (T.distSeen || 0) + ds.filter(seen).length;
-        if (c.type !== 'sentence' && farPool(w).filter(x => S.w[x.id]).length >= 10) chk(ds.every(seen), `${c.type} ${w.en}: מסיח ממילה שעוד לא נחשפה`, P);
+        if (c.type !== 'sentence' && !w.en.includes('...') && farPool(w).filter(x => S.w[x.id]).length >= 10) chk(ds.every(seen), `${c.type} ${w.en}: מסיח ממילה שעוד לא נחשפה`, P);
       }
       const i = wrong ? c.opts.findIndex(o => o !== c.correct) : c.opts.indexOf(c.correct);
       answerOpt(i);
@@ -55,6 +56,13 @@ async function runLesson(P, T, wrongRate, given) {
       if (idk) { const b0 = box(w); typeDontKnow(); chk(c.ans && c.ans.idk && !c.ans.ok && box(w) <= b0, `לא יודע ${w.en}: לא נחשב כטעות`, P); T.idk = (T.idk || 0) + 1; }
       else { inp.value = wrong ? 'qqqq' : w.en; checkType(); }
       chk(c.ans && c.ans.ok === !wrong, `כתיבה ${w.en}: הבדיקה הפוכה`, P);
+      // «התכוונתי לזה»: מבטל את הטעות ונחשב כתשובה נכונה, בלי ספירה כפולה
+      if (wrong && !idk && Math.random() < 0.5) {
+        const b0 = c.undo.st.b, d0 = c.undo.day.ans, bad0 = c.undo.st.bad, lb = c.undo.L.bad;
+        chk(document.body.innerHTML.includes('typeMeant()'), 'אין כפתור «התכוונתי לזה»', P);
+        typeMeant(); T.meant = (T.meant || 0) + 1;
+        chk(c.ans.ok && ws(w).bad === bad0 && today().ans === d0 + 1 && L.bad === lb && box(w) >= b0, `התכוונתי לזה ${w.en}: לא חושב נכון`, P);
+      }
     }
     htmlOk(P, 'משוב');
     next();

@@ -449,6 +449,7 @@ function checkType() {
   const w = L.q[0].w, r = checkTyped(w, inp.value);
   if (!r) { inp.focus(); return; }
   c.ans = Object.assign({ typed: inp.value }, r);
+  if (!r.ok) c.undo = { st: Object.assign({}, S.w[w.id]), day: Object.assign({}, today()), xp: S.xp, L: { ok: L.ok, bad: L.bad, xp: L.xp } };
   grade(w, c.type, r.ok);
   beep(r.ok);
   if (r.ok) speak(w.en);
@@ -462,6 +463,17 @@ function typeDontKnow() {
   c.ans = { typed: '', ok: false, idk: true };
   grade(w, c.type, false);
   speak(w.en);
+  render();
+}
+// «התכוונתי לזה»: באמירנט לא בודקים איות (כל המילים כתובות), אז טעות כתיב שלא זוהתה לבד נחשבת נכונה (רועי 21/10)
+function typeMeant() {
+  const c = L.cur;
+  if (!c || !c.ans || c.ans.ok || !c.undo) return;
+  const w = L.q[0].w, u = c.undo;
+  S.w[w.id] = u.st; S.days[dayKey()] = u.day; S.xp = u.xp; Object.assign(L, u.L);
+  grade(w, c.type, true);
+  c.ans = { typed: c.ans.typed, ok: true, typo: true, meant: true }; c.undo = null;
+  beep(true); speak(w.en);
   render();
 }
 function next() {
@@ -678,6 +690,7 @@ function sheet(w, c) {
   let h = `<div class="sheet ${ok ? 'ok' : 'bad'}"><div class="sh-t">${ok ? '✅ ' + praise : a.idk ? '💡 זו המילה, היא תחזור בקרוב' : '❌ לא בדיוק'}</div>`;
   if (!ok && !a.idk) h += `<div class="sh-c">התשובה הנכונה: ${c.type === 'category' ? `<b>${CATS[w.cat].icon} ${CATS[w.cat].he}</b>` : `<b class="en">${esc(disp(w.en))}</b>`}${c.type === 'meaning' ? ` = ${esc(w.he)}` : ''}</div>`;
   if (!ok && c.opts && a.i !== undefined) h += whyNot(w, c);
+  if (!ok && c.undo) h += `<button class="linkbtn" onclick="typeMeant()">✓ התכוונתי לזה, רק טעות כתיב</button>`;
   if (a.typo) h += `<div class="sh-c">שים לב לאיות: <b class="en">${esc(w.en)}</b></div>`;
   if (a.alt) h += `<div class="sh-c">גם נכון! המילה שתרגלנו כאן: <b class="en">${esc(disp(w.en))}</b></div>`;
   h += `<div class="sh-i"><b class="en">${esc(disp(w.en))}</b> = ${esc(w.he)} ${chip(w.cat)}</div>`;
