@@ -10,7 +10,7 @@ const SIM_TYPE = {
   rc: { he: 'הבנת הנקרא', n: 5, min: 15, how: 'קראו את הקטע וענו על 5 השאלות. אפשר לעבור בין השאלות ולחזור לקטע בכל רגע.' },
 };
 // טווחי הציון באמירנט (50-150) ורמות המיון
-const SIM_BANDS = [[134, 'פטור'], [120, 'מתקדמים ב'], [100, 'מתקדמים א'], [85, 'בסיסי'], [70, 'טרום בסיסי ב'], [50, 'טרום בסיסי א']];
+const SIM_BANDS = [[134, 'פטור'], [120, 'מתקדמים ב׳'], [100, 'מתקדמים א׳'], [85, 'בסיסי'], [70, 'טרום בסיסי ב׳'], [50, 'טרום בסיסי א׳']];
 const SIM_KEEP = 3; // כמה ניסיונות אחרונים נשמרים לכל סימולציה
 let SM = null, simTick = null, simOpen = {};
 
@@ -27,10 +27,25 @@ const simBand = est => SIM_BANDS.find(b => est >= b[0])[1];
 const simClock = ms => { const s = Math.max(0, Math.ceil(ms / 1000)); return Math.floor(s / 60) + ':' + String(s % 60).padStart(2, '0'); };
 const simBlank = s => esc(s).replace(/___/g, '<span class="blank">______</span>');
 
-// ציון משוער: ניכוי ניחוש (25%) ומתיחה לטווח של הסימולציה. סימולציה קלה לא יכולה להראות פטור.
+// ציון בסולם אמירנט (50-150). למאל"ו אין טבלת המרה פתוחה (המבחן אדפטיבי), ולכן לפי ההיגיון הרשמי:
+// כל השאלות במשקל שווה, ניכוי ניחוש (25% עם 4 תשובות), והמרה לסולם לפי קושי הרמה (sim.hi). רמה קלה לא יכולה להראות פטור.
 function simEstimate(sim, ok, n) {
   const p = Math.max(0, (ok / n - 0.25) / 0.75);
   return Math.round(50 + p * (sim.hi - 50));
+}
+function simScoreHow(sim, rec) {
+  return `כל ${rec.n} השאלות במשקל שווה. ${rec.ok} תשובות נכונות, אחרי ניכוי של ניחוש (25%), מומרות לסולם 50-150 לפי הקושי של רמת ${sim.tierHe || ''}, שמגיעה עד ${sim.hi}. מאל"ו לא מפרסם טבלת המרה לאמירנט, כי המבחן אדפטיבי.`;
+}
+// מה חסר לרמה הבאה: כמה תשובות נכונות נוספות בסימולציה הזו, או מעבר לרמה קשה יותר כשהתקרה שלה נמוכה מהיעד
+function simNextGoal(sim, rec) {
+  const next = SIM_BANDS.slice().reverse().find(b => b[0] > rec.est);
+  if (!next) return 'הגעת לרמת פטור, הרמה הגבוהה ביותר. 🏆';
+  const gap = next[0] - rec.est;
+  for (let k = rec.ok + 1; k <= rec.n; k++) {
+    if (simEstimate(sim, k, rec.n) >= next[0]) return `עד ${next[1]} (${next[0]}) חסרות ${gap} נקודות: עוד ${k - rec.ok} תשובות נכונות בסימולציה הזו.`;
+  }
+  const harder = SIMS.find(s => s.hi > sim.hi && simEstimate(s, rec.n, rec.n) >= next[0]);
+  return `עד ${next[1]} (${next[0]}) חסרות ${gap} נקודות. ברמת ${sim.tierHe || 'הזו'} התקרה היא ${sim.hi}, אז כדי להגיע לשם צריך לעבור לסימולציות ברמת ${harder ? harder.tierHe : 'גבוהה יותר'}.`;
 }
 
 // ----- התחלה וניווט -----
@@ -104,7 +119,7 @@ function simFinish() {
     const it = simAppItem(x.en);
     if (it && S.w[it.id]) { S.w[it.id].due = Date.now(); queued++; }
   });
-  const rec = { at: Date.now(), ok, n, est, by, ans, notimer: SM.notimer };
+  const rec = { at: Date.now(), ok, n, est, band: simBand(est), by, ans, notimer: SM.notimer };
   st.r[sim.id] = [rec, ...(st.r[sim.id] || [])].slice(0, SIM_KEEP);
   save(); push();
   SM.done = true; SM.rec = rec; SM.weak = weak; SM.queued = queued;
@@ -152,7 +167,7 @@ function renderSimList() {
     const rs = st.r[sim.id] || [], last = rs[0], best = rs.reduce((m, r) => Math.max(m, r.est), 0);
     if (sim.tier !== tier) { tier = sim.tier; h += `<h2 class="sec">רמה: ${esc(sim.tierHe)}${tier === rec ? ' <span class="simrec">מומלץ לך</span>' : ''}</h2>`; }
     h += `<div class="card simc"><div class="plan-h"><b>${esc(sim.title)}</b><span>${simQCount(sim)} שאלות · ${simMinutes(sim)} דק׳</span></div>
-      ${last ? `<div class="lbl"><span>ניסיון אחרון: ${last.ok}/${last.n} נכונות · ציון משוער ${last.est}</span><span>שיא ${best}</span></div>` : '<div class="lbl"><span>עוד לא נעשתה</span></div>'}
+      ${last ? `<div class="lbl"><span>ניסיון אחרון: ${last.ok}/${last.n} נכונות · ציון ${last.est} (${simBand(last.est)})</span><span>הגבוה: ${best}</span></div>` : '<div class="lbl"><span>עוד לא נעשתה</span></div>'}
       <div class="row"><button class="btn" onclick="simStart('${sim.id}')">${last ? 'עוד פעם' : 'להתחיל'}</button>${last ? `<button class="btn ghost" onclick="simShowLast('${sim.id}')">תוצאות והסברים</button>` : ''}</div></div>`;
   });
   const words = Object.values(st.words).sort((a, b) => b.at - a.at);
@@ -203,14 +218,17 @@ function renderSimResult() {
   const { sim, rec, weak } = SM, ans = rec.ans;
   const pct = Math.round(rec.ok / rec.n * 100);
   const inApp = weak.filter(x => simAppItem(x.en)).length;
+  const best = (simStore().r[sim.id] || []).reduce((m, r) => Math.max(m, r.est), 0);
   let h = topBar() + `<main><div class="done simres"><div class="trophy">${pct >= 80 ? '🏆' : pct >= 55 ? '💪' : '📚'}</div>
     <div class="un">${esc(sim.title)}${rec.notimer ? ' · בלי טיימר' : ''}</div>
-    <h2>ציון משוער: ${rec.est}</h2><div class="simband">רמה: ${simBand(rec.est)}</div>
+    <div class="simscore">${rec.est}</div><div class="simband">ציון אמירנט · ${simBand(rec.est)}</div>
+    <div class="simgoal">${simNextGoal(sim, rec)}</div>
     <div class="kpis"><div class="kpi g"><b>${rec.ok}/${rec.n}</b><span>נכונות</span></div>
       <div class="kpi b"><b>${rec.by.sc[0]}/${rec.by.sc[1]}</b><span>השלמת משפטים</span></div>
       <div class="kpi y"><b>${rec.by.rs[0]}/${rec.by.rs[1]}</b><span>ניסוח מחדש</span></div>
       <div class="kpi b"><b>${rec.by.rc[0]}/${rec.by.rc[1]}</b><span>הבנת הנקרא</span></div></div></div>
-    <p class="foot">הערכה גסה: הסימולציה הזו מגיעה עד ציון ${sim.hi}, והמבחן האמיתי אדפטיבי. ${simTip(rec.by)}</p>`;
+    <p class="foot">איך חושב הציון: ${simScoreHow(sim, rec)}${best > rec.est ? ` השיא שלך בסימולציה הזו: ${best}.` : ''}</p>
+    <p class="foot">${simTip(rec.by)}</p>`;
   if (weak.length) {
     h += `<h2 class="sec">💪 מילים לחזק (${weak.length})</h2><div class="card">
       ${weak.map(x => `<div class="dw"><b class="en">${esc(x.en)}</b><span class="dhe">${esc(x.he)}</span>${simAppItem(x.en) ? '<span class="simin" title="קיימת בתרגול">✓</span>' : ''}</div>`).join('')}
@@ -287,7 +305,9 @@ function simTip(by) {
 .simintro h2{color:var(--b);text-shadow:none}
 .simhow{color:#4b4b4b;line-height:1.55;max-width:420px}
 .simres h2{color:var(--gd);text-shadow:none}
+.simscore{font-size:64px;font-weight:800;color:var(--gd);line-height:1}
 .simband{font-weight:800;color:var(--bd);font-size:18px}
+.simgoal{font-size:15px;line-height:1.5;color:#4b4b4b;max-width:420px}
 .simres .kpis{flex-wrap:wrap}
 .simres .kpi{min-width:44%}
 .simch{font-weight:800;color:#4b4b4b;margin:18px 4px 8px}
