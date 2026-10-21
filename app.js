@@ -25,7 +25,8 @@ for (const lvl of [1, 2, 3]) {
     const size = Math.ceil(its.length / n);
     for (let i = 0; i < its.length; i += size) chunks.push(its.slice(i, i + size));
     for (const ch of chunks) {
-      if (cur && cur.items.length >= 3 && cur.items.length + ch.length > 10) { UNITS.push(cur); cur = null; }
+      // קבוצה חדשה פותחת יחידה חדשה, חוץ משארית קטנה (1-2 מילים) של הקבוצה הקודמת
+      if (cur && cur.items.length >= 3) { UNITS.push(cur); cur = null; }
       if (!cur) cur = { lvl, cats: [], items: [] };
       if (!cur.cats.includes(c)) cur.cats.push(c);
       cur.items.push(...ch);
@@ -40,11 +41,56 @@ for (const lvl of [1, 2, 3]) {
 }
 const LEVEL_NAMES = { 1: 'שלב 1 · בסיס', 2: 'שלב 2 · בינוני', 3: 'שלב 3 · מתקדם' };
 
-// ===== שמירה =====
-function blank() { return { start: dayKey(), xp: 0, streak: 0, lastDay: null, days: {}, w: {}, sound: true }; }
-function load() { try { const s = JSON.parse(localStorage.getItem(KEY)); if (s && s.w) return Object.assign(blank(), s); } catch (e) {} return blank(); }
-function save() { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
-let S = load();
+// ===== שמירה וחשבון =====
+// ההתקדמות נשמרת בדפדפן (עותק מהיר) ובענן תחת שם המשתמש. הגרסה עם savedAt החדש יותר מנצחת.
+const SESSION_KEY = 'amirnet-session';
+const BYID = Object.fromEntries(ITEMS.map(w => [w.id, w]));
+let ME = null;
+try { ME = JSON.parse(localStorage.getItem(SESSION_KEY)); } catch (e) {}
+const userKey = () => KEY + ':' + ME.name.toLowerCase();
+function blank() { return { start: dayKey(), xp: 0, streak: 0, lastDay: null, days: {}, w: {}, sound: true, savedAt: 0 }; }
+// מזהה מילה = מילה|קבוצה. כשמילה עוברת קבוצה (למשל ויתור שנפרד מניגוד), ההתקדמות עוברת איתה
+function migrate(s) {
+  for (const id of Object.keys(s.w)) {
+    if (BYID[id]) continue;
+    const en = id.split('|')[0];
+    const it = ITEMS.find(x => x.en === en && !s.w[x.id] && (x.cat === 'con' || x.cat === 'cnc'));
+    if (it) s.w[it.id] = s.w[id];
+    delete s.w[id];
+  }
+  return s;
+}
+function parse(s) { return s && s.w ? migrate(Object.assign(blank(), s)) : null; }
+function readLocal() {
+  try { const s = parse(JSON.parse(localStorage.getItem(userKey())) || JSON.parse(localStorage.getItem(KEY))); if (s) return s; } catch (e) {}
+  return blank();
+}
+function save() {
+  S.savedAt = Date.now();
+  if (!ME) return;
+  try { localStorage.setItem(userKey(), JSON.stringify(S)); } catch (e) {}
+  pushSoon();
+}
+async function rpc(fn, body) {
+  const r = await fetch(CLOUD.url + '/rest/v1/rpc/' + fn, { method: 'POST', headers: { apikey: CLOUD.key, 'Content-Type': 'application/json' }, body: JSON.stringify(body), keepalive: true });
+  if (!r.ok) throw new Error('http ' + r.status);
+  return r.json();
+}
+let pushT = null, sync = 'ok';
+function setSync(v) { sync = v; const el = document.getElementById('sync'); if (el) el.textContent = syncIcon(); }
+function syncIcon() { return sync === 'ok' ? '☁️' : sync === 'wait' ? '⏳' : '⚠️'; }
+function pushSoon(ms = 4000) { clearTimeout(pushT); setSync('wait'); pushT = setTimeout(push, ms); }
+async function push() {
+  if (!ME) return;
+  clearTimeout(pushT);
+  try {
+    const r = await rpc('amirnet_save', { p_name: ME.name, p_code: ME.code, p_data: S });
+    if (r.error === 'bad_code' || r.error === 'no_user') return logout(true);
+    setSync(r.ok ? 'ok' : 'err');
+  } catch (e) { setSync('err'); }
+}
+document.addEventListener('visibilitychange', () => { if (document.hidden && sync !== 'ok') push(); });
+let S = ME ? readLocal() : blank();
 
 // ===== עזרים =====
 function dayKey(d = new Date()) { return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
@@ -309,6 +355,7 @@ function finish() {
   const k = dayKey();
   if (S.lastDay !== k) { S.streak = (S.lastDay && daysBetween(S.lastDay, k) === 1) ? S.streak + 1 : 1; S.lastDay = k; }
   save();
+  push();
   L.finished = true;
   beep(true);
   render();
@@ -321,7 +368,7 @@ function quitLesson() {
 // ===== מסכים =====
 function topBar() {
   const mastered = ITEMS.filter(w => box(w) >= MASTER).length;
-  return `<header class="top"><span class="stat" title="ימים ברצף">🔥 ${streakNow()}</span><span class="stat" title="נקודות">⭐ ${S.xp}</span><span class="stat" title="מילים שאתה שולט בהן">👑 ${mastered}/${ITEMS.length}</span></header>`;
+  return `<header class="top"><span class="stat" title="ימים ברצף">🔥 ${streakNow()}</span><span class="stat" title="נקודות">⭐ ${S.xp}</span><span class="stat" title="מילים שאתה שולט בהן">👑 ${mastered}/${ITEMS.length}</span><span id="sync" class="stat" title="שמירה בחשבון" onclick="go('settings')">${syncIcon()}</span></header>`;
 }
 function navBar() {
   const b = (v, ic, t) => `<button class="${view === v ? 'on' : ''}" onclick="go('${v}')"><span class="ic">${ic}</span>${t}</button>`;
@@ -481,20 +528,76 @@ function renderSettings() {
       <p>${ITEMS.length} מילות קישור ב-${UNITS.length} יחידות ו-3 שלבים, מהקל לקשה. כל מילה עוברת 4 פורמטים: פירוש ← קבוצה ← השלמת משפט ← כתיבה לבד. היא נחשבת «שולט» 👑 רק אחרי שכתבת אותה נכון.</p>
       <p>טעית? המילה יורדת שלב וחוזרת עוד באותו שיעור ובשיעור הבא. צדקת? היא חוזרת אחרי 10 דקות, שעה, 4 שעות, 10 שעות, יום ויומיים.</p>
       <p>יעד: 3 ימים. כל יום כתוב בכרטיס הראשי כמה מילים חדשות צריך כדי לעמוד ביעד. מומלץ לפתוח «חזרה» כמה פעמים ביום, גם ל-5 דקות.</p></div>
-    <div class="card"><b>גיבוי ההתקדמות</b><p>ההתקדמות נשמרת בדפדפן הזה. כדי להעביר למכשיר אחר: «העתק גיבוי» כאן, ו«שחזר» שם.</p>
-      <div class="row"><button class="btn ghost" onclick="exportData()">העתק גיבוי</button><button class="btn ghost" onclick="importData()">שחזר מגיבוי</button></div></div>
+    <div class="card"><b>👤 ${esc(ME.name)}</b><p>ההתקדמות נשמרת בחשבון ${syncIcon()} ${sync === 'ok' ? 'הכול מגובה' : sync === 'wait' ? 'שומר...' : 'לא נשמר כרגע (אין אינטרנט?), ייקלט כשיחזור החיבור'}. אפשר להיכנס עם אותו שם וקוד מכל טלפון או מחשב.</p>
+      <button class="btn ghost" onclick="logout()">התנתק</button></div>
     <div class="card"><div class="row"><button class="btn ghost" onclick="restartPlan()">התחל את 3 הימים מהיום</button><button class="btn red" onclick="resetAll()">איפוס מלא</button></div></div>
   </main>` + navBar();
 }
-function exportData() {
-  const code = btoa(unescape(encodeURIComponent(JSON.stringify(S))));
-  (navigator.clipboard ? navigator.clipboard.writeText(code) : Promise.reject()).then(() => toast('הגיבוי הועתק. שמור אותו בהודעה לעצמך')).catch(() => prompt('העתק את הקוד:', code));
+
+// ===== כניסה =====
+const LOGIN_ERR = {
+  name_taken: 'השם הזה כבר תפוס. אם זה אתה, לחץ «כניסה». אחרת בחר שם אחר',
+  no_user: 'אין משתמש בשם הזה. משתמש חדש? לחץ «משתמש חדש»',
+  bad_code: 'הקוד לא נכון',
+  locked: 'יותר מדי ניסיונות. נסה שוב בעוד 10 דקות',
+  bad_name: 'שם משתמש צריך להיות 2 עד 30 תווים',
+  short_code: 'הקוד צריך להיות לפחות 4 ספרות',
+};
+function renderLogin() {
+  return `<main class="login">
+    <img src="icon.svg" alt="" class="logo">
+    <h1>מילות קישור לאמירנט</h1>
+    <p class="sub">${ITEMS.length} מילים · 3 ימים · כמו דואלינגו</p>
+    <input id="ln" class="search" placeholder="שם משתמש" autocomplete="username" autocapitalize="off" maxlength="30">
+    <input id="lc" class="search" placeholder="קוד סודי (לפחות 4 ספרות)" type="password" inputmode="numeric" autocomplete="current-password" maxlength="40" onkeydown="if(event.key==='Enter')doLogin(false)">
+    <div id="lmsg" class="lmsg"></div>
+    <button class="btn" onclick="doLogin(false)">כניסה</button>
+    <button class="btn ghost" onclick="doLogin(true)">משתמש חדש</button>
+    <p class="foot">ההתקדמות נשמרת בחשבון שלך, ואפשר להמשיך מכל טלפון או מחשב. זכור את השם ואת הקוד.</p>
+  </main>`;
 }
-function importData() {
-  const code = prompt('הדבק כאן את קוד הגיבוי:');
-  if (!code) return;
-  try { const s = JSON.parse(decodeURIComponent(escape(atob(code.trim())))); if (!s.w) throw 0; S = Object.assign(blank(), s); save(); toast('ההתקדמות שוחזרה'); go('home'); }
-  catch (e) { toast('הקוד לא תקין'); }
+async function doLogin(isNew) {
+  const name = document.getElementById('ln').value.trim(), code = document.getElementById('lc').value.trim();
+  const msg = t => { document.getElementById('lmsg').textContent = t; };
+  if (name.length < 2) return msg(LOGIN_ERR.bad_name);
+  if (code.length < 4) return msg(LOGIN_ERR.short_code);
+  msg('רגע...');
+  ME = { name, code };
+  const local = readLocal();
+  try {
+    const r = isNew ? await rpc('amirnet_register', { p_name: name, p_code: code, p_data: local }) : await rpc('amirnet_login', { p_name: name, p_code: code });
+    if (r.error) { ME = null; return msg(LOGIN_ERR[r.error] || 'משהו השתבש, נסה שוב'); }
+    ME.name = r.name;
+    const server = parse(r.data);
+    S = server && server.savedAt >= local.savedAt ? server : local;
+    localStorage.setItem(SESSION_KEY, JSON.stringify(ME));
+    localStorage.removeItem(KEY);
+    try { localStorage.setItem(userKey(), JSON.stringify(S)); } catch (e) {}
+    if (S !== server) push();
+    view = 'home'; render();
+    toast('שלום ' + r.name + '! 👋');
+  } catch (e) { ME = null; msg('אין חיבור לאינטרנט. נסה שוב'); }
+}
+async function logout(forced) {
+  if (!forced) { if (!confirm('להתנתק? ההתקדמות שמורה בחשבון.')) return; await push(); }
+  localStorage.removeItem(SESSION_KEY);
+  ME = null; S = blank(); L = null; view = 'home';
+  render();
+  if (forced) toast('צריך להיכנס שוב');
+}
+// בפתיחה: אם בענן יש גרסה חדשה יותר (נלמד ממכשיר אחר), לוקחים אותה
+async function refreshFromCloud() {
+  if (!ME) return;
+  try {
+    const r = await rpc('amirnet_login', { p_name: ME.name, p_code: ME.code });
+    if (r.error === 'bad_code' || r.error === 'no_user') return logout(true);
+    const server = parse(r.data);
+    if (server && server.savedAt > S.savedAt) {
+      S = server;
+      try { localStorage.setItem(userKey(), JSON.stringify(S)); } catch (e) {}
+      if (view !== 'lesson') render();
+    } else if (server && server.savedAt < S.savedAt) push();
+  } catch (e) { setSync('err'); }
 }
 function restartPlan() { S.start = dayKey(); save(); toast('ספירת 3 הימים מתחילה מהיום'); go('home'); }
 function resetAll() { if (!confirm('למחוק את כל ההתקדמות ולהתחיל מאפס?')) return; S = blank(); save(); go('home'); }
@@ -509,8 +612,9 @@ function toast(t) {
 function render() {
   const app = document.getElementById('app');
   app.className = view;
-  app.innerHTML = view === 'lesson' && L ? renderLesson() : view === 'dict' ? renderDict() : view === 'settings' ? renderSettings() : renderHome();
+  app.innerHTML = !ME ? renderLogin() : view === 'lesson' && L ? renderLesson() : view === 'dict' ? renderDict() : view === 'settings' ? renderSettings() : renderHome();
   const ty = document.getElementById('ty');
   if (ty && !ty.disabled) setTimeout(() => ty.focus(), 50);
 }
 render();
+refreshFromCloud();

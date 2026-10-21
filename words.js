@@ -2,7 +2,8 @@
 // [מילה, פירוש, קבוצה, סוג דקדוקי, רמה, משפט עם ___, תרגום המשפט, הערה, מסיחים קבועים]
 // סוג: c = מילת חיבור (+משפט), a = מקשר בין משפטים (בתחילת משפט + פסיק), p = מילת יחס (+שם עצם / ing), i = (+פועל), r = מילת זיקה, d = מילת מידה / תדירות
 const CATS = {
-  con: { he: "ניגוד וויתור", en: "Contrast", icon: "⚔️", color: "#ff4b4b", tip: "המשפט השני הולך נגד מה שציפית מהראשון" },
+  con: { he: "ניגוד (אבל)", en: "Contrast", icon: "⚔️", color: "#ff4b4b", tip: "שני דברים שונים או הפוכים זה מזה: זה ככה, וההוא אחרת (אבל, בעוד ש, מצד שני)" },
+  cnc: { he: "ויתור (למרות)", en: "Concession", icon: "🛡️", color: "#f06543", tip: "משהו קרה למרות שהיית מצפה שלא יקרה (למרות, אף על פי ש, ובכל זאת)" },
   add: { he: "הוספה", en: "Addition", icon: "➕", color: "#1cb0f6", tip: "עוד מידע באותו כיוון" },
   cau: { he: "סיבה", en: "Cause", icon: "❓", color: "#ff9600", tip: "אחרי המילה באה הסיבה (למה זה קרה)" },
   res: { he: "תוצאה ומסקנה", en: "Result", icon: "➡️", color: "#58cc02", tip: "אחרי המילה באה התוצאה (מה קרה בגלל זה)" },
@@ -22,35 +23,35 @@ const CATS = {
 const NEAR = {
   add: ["cmp", "emp", "res"], cmp: ["add", "emp"], emp: ["add", "cmp", "exm", "res"],
   cau: ["tim"], tim: ["cau", "cnd", "res"], res: ["pur", "emp", "tim", "add"], pur: ["res"], cnd: ["tim"],
-  con: ["alt"], alt: ["con"], exm: ["emp"], ref: ["cau", "alt"],
+  con: ["alt", "cnc"], cnc: ["con", "alt"], alt: ["con", "cnc"], exm: ["emp"], ref: ["cau", "alt"],
 };
 
 const RAW = [
-  // ===== ניגוד וויתור =====
-  ["but", "אבל", "con", "c", 1, "I wanted to go out, ___ it was raining.", "רציתי לצאת, אבל ירד גשם."],
-  ["however", "עם זאת, אולם", "con", "a", 1, "The test was very hard. ___, most students passed.", "המבחן היה קשה מאוד. עם זאת, רוב התלמידים עברו.", "בא בדרך כלל בתחילת משפט ואחריו פסיק"],
-  ["although", "למרות ש... (+משפט)", "con", "c", 1, "___ he was tired, he kept working.", "למרות שהיה עייף, הוא המשיך לעבוד.", "אחריו בא משפט שלם (נושא + פועל). despite בא עם שם עצם"],
-  ["despite", "למרות (+שם עצם)", "con", "p", 1, "___ the rain, the game continued.", "למרות הגשם, המשחק נמשך.", "אחריו שם עצם או ing, ובלי of. אין despite of"],
-  ["yet", "ובכל זאת, אך", "con", "c", 1, "The plan was simple, ___ it worked perfectly.", "התוכנית הייתה פשוטה, ובכל זאת עבדה מצוין.", "במשפט שלילה זה 'עוד': not yet = עוד לא"],
+  // ===== ניגוד (אבל) וויתור (למרות) =====
+  ["but", "אבל", "con", "c", 1, "I wanted to go out, ___ it was raining.", "רציתי לצאת, אבל ירד גשם.", "ניגוד פשוט בין שני חלקים. «למרות» (although, despite) שייך לקבוצת הוויתור"],
+  ["however", "עם זאת, אולם", "con", "a", 1, "The test was very hard. ___, most students passed.", "המבחן היה קשה מאוד. עם זאת, רוב התלמידים עברו.", "בא בתחילת משפט ואחריו פסיק. כמו but, רק בין שני משפטים נפרדים"],
+  ["although", "למרות ש... (+משפט)", "cnc", "c", 1, "___ he was tired, he kept working.", "למרות שהיה עייף, הוא המשיך לעבוד.", "אחריו בא משפט שלם (נושא + פועל). despite בא עם שם עצם"],
+  ["despite", "למרות (+שם עצם)", "cnc", "p", 1, "___ the rain, the game continued.", "למרות הגשם, המשחק נמשך.", "אחריו שם עצם או ing, ובלי of. אין despite of"],
+  ["yet", "ובכל זאת, אך", "cnc", "c", 1, "The plan was simple, ___ it worked perfectly.", "התוכנית הייתה פשוטה, ובכל זאת עבדה מצוין.", "במשפט שלילה זה 'עוד': not yet = עוד לא"],
   ["while", "בעוד ש... (ניגוד)", "con", "c", 1, "Tom loves coffee, ___ his wife prefers tea.", "טום אוהב קפה, בעוד שאשתו מעדיפה תה.", "ל-while יש גם משמעות של זמן: 'בזמן ש'. ההקשר מחליט"],
-  ["even though", "אף על פי ש...", "con", "c", 1, "She failed the exam ___ she studied very hard.", "היא נכשלה במבחן אף על פי שלמדה קשה מאוד."],
+  ["even though", "אף על פי ש...", "cnc", "c", 1, "She failed the exam ___ she studied very hard.", "היא נכשלה במבחן אף על פי שלמדה קשה מאוד."],
   ["on the other hand", "מצד שני", "con", "a", 1, "The city is exciting. ___, it is very expensive.", "העיר מרגשת. מצד שני, היא יקרה מאוד."],
   ["whereas", "בעוד ש..., ואילו", "con", "c", 2, "Some birds fly south in winter, ___ others stay all year.", "חלק מהציפורים עפות דרומה בחורף, ואילו אחרות נשארות כל השנה."],
-  ["in spite of", "למרות (+שם עצם)", "con", "p", 2, "___ his injury, he finished the race.", "למרות הפציעה שלו, הוא סיים את המרוץ.", "אותו דבר כמו despite, אבל עם of"],
-  ["nevertheless", "למרות זאת, אף על פי כן", "con", "a", 2, "The film was very long. ___, the audience loved it.", "הסרט היה ארוך מאוד. למרות זאת, הקהל אהב אותו."],
-  ["nonetheless", "בכל זאת, למרות זאת", "con", "a", 2, "The evidence was weak; ___, the jury found him guilty.", "הראיות היו חלשות; בכל זאת, חבר המושבעים הרשיע אותו."],
-  ["though", "אף על פי ש...; (בסוף משפט) אבל", "con", "c", 2, "___ the room was small, it was comfortable.", "אף על פי שהחדר היה קטן, הוא היה נוח."],
+  ["in spite of", "למרות (+שם עצם)", "cnc", "p", 2, "___ his injury, he finished the race.", "למרות הפציעה שלו, הוא סיים את המרוץ.", "אותו דבר כמו despite, אבל עם of"],
+  ["nevertheless", "למרות זאת, אף על פי כן", "cnc", "a", 2, "The film was very long. ___, the audience loved it.", "הסרט היה ארוך מאוד. למרות זאת, הקהל אהב אותו."],
+  ["nonetheless", "בכל זאת, למרות זאת", "cnc", "a", 2, "The evidence was weak; ___, the jury found him guilty.", "הראיות היו חלשות; בכל זאת, חבר המושבעים הרשיע אותו."],
+  ["though", "אף על פי ש...; (בסוף משפט) אבל", "cnc", "c", 2, "___ the room was small, it was comfortable.", "אף על פי שהחדר היה קטן, הוא היה נוח."],
   ["in contrast", "לעומת זאת", "con", "a", 2, "Summers here are very hot. ___, winters are mild and wet.", "הקיצים כאן חמים מאוד. לעומת זאת, החורפים מתונים וגשומים."],
   ["unlike", "בניגוד ל... (+שם עצם)", "con", "p", 2, "___ his brother, Dan is very quiet.", "בניגוד לאחיו, דן שקט מאוד."],
-  ["still", "ובכל זאת; עדיין", "con", "a", 2, "The car is twenty years old. ___, it runs well.", "המכונית בת עשרים. ובכל זאת, היא נוסעת טוב."],
-  ["even so", "אפילו כך, ובכל זאת", "con", "a", 2, "The hotel was expensive. ___, we enjoyed every minute.", "המלון היה יקר. ובכל זאת, נהנינו מכל רגע."],
+  ["still", "ובכל זאת; עדיין", "cnc", "a", 2, "The car is twenty years old. ___, it runs well.", "המכונית בת עשרים. ובכל זאת, היא נוסעת טוב."],
+  ["even so", "אפילו כך, ובכל זאת", "cnc", "a", 2, "The hotel was expensive. ___, we enjoyed every minute.", "המלון היה יקר. ובכל זאת, נהנינו מכל רגע."],
   ["conversely", "להפך, באופן הפוך", "con", "a", 3, "Higher prices reduce demand; ___, lower prices increase it.", "מחירים גבוהים מורידים את הביקוש; להפך, מחירים נמוכים מעלים אותו."],
   ["on the contrary", "להפך (דוחה את מה שנאמר)", "con", "a", 3, "The test wasn't easy. ___, it was the hardest one this year.", "המבחן לא היה קל. להפך, הוא היה הקשה ביותר השנה.", "לא סתם 'מצד שני': הוא אומר שהטענה הקודמת לא נכונה"],
-  ["notwithstanding", "על אף, למרות", "con", "p", 3, "___ the high cost, the project was approved.", "על אף העלות הגבוהה, הפרויקט אושר."],
-  ["albeit", "אם כי", "con", "c", 3, "He accepted the offer, ___ unwillingly.", "הוא קיבל את ההצעה, אם כי בחוסר רצון.", "בא לפני תואר או ביטוי קצר, לא לפני משפט שלם"],
-  ["regardless of", "בלי קשר ל..., בלי להתחשב ב...", "con", "p", 3, "The law applies to everyone, ___ age.", "החוק חל על כולם, בלי קשר לגיל."],
-  ["all the same", "בכל זאת", "con", "a", 3, "I know it's risky. ___, I want to try.", "אני יודע שזה מסוכן. בכל זאת, אני רוצה לנסות."],
-  ["admittedly", "יש להודות ש...", "con", "a", 3, "___, the plan has some weak points, but it is still the best option.", "יש להודות שלתוכנית יש כמה נקודות חלשות, אבל היא עדיין האפשרות הטובה ביותר."],
+  ["notwithstanding", "על אף, למרות", "cnc", "p", 3, "___ the high cost, the project was approved.", "על אף העלות הגבוהה, הפרויקט אושר."],
+  ["albeit", "אם כי", "cnc", "c", 3, "He accepted the offer, ___ unwillingly.", "הוא קיבל את ההצעה, אם כי בחוסר רצון.", "בא לפני תואר או ביטוי קצר, לא לפני משפט שלם"],
+  ["regardless of", "בלי קשר ל..., בלי להתחשב ב...", "cnc", "p", 3, "The law applies to everyone, ___ age.", "החוק חל על כולם, בלי קשר לגיל."],
+  ["all the same", "בכל זאת", "cnc", "a", 3, "I know it's risky. ___, I want to try.", "אני יודע שזה מסוכן. בכל זאת, אני רוצה לנסות."],
+  ["admittedly", "יש להודות ש...", "cnc", "a", 3, "___, the plan has some weak points, but it is still the best option.", "יש להודות שלתוכנית יש כמה נקודות חלשות, אבל היא עדיין האפשרות הטובה ביותר."],
 
   // ===== הוספה =====
   ["also", "גם", "add", "a", 1, "She is a doctor. She is ___ a talented writer.", "היא רופאה. היא גם סופרת מוכשרת."],
