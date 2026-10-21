@@ -97,6 +97,13 @@ let ME = null, booting = true;
 const userKey = () => KEY + ':' + ME.id;
 function blank() { return { start: dayKey(), starts: {}, plan: {}, topic: 'link', xp: 0, streak: 0, lastDay: null, days: {}, w: {}, sound: true, savedAt: 0 }; }
 // מזהה מילה = מילה|קבוצה. כשמילה עוברת קבוצה (למשל ויתור שנפרד מניגוד), ההתקדמות עוברת איתה
+// מילה שנמצאת בשני הנושאים (however, despite...): התקדמות אחת לשתיהן. מה שלמדת בנושא אחד נחשב גם בשני (רועי 21/10)
+const TWIN = {};
+{ const k = x => x.toLowerCase().trim(), link = TOPICS.link.items;
+  for (const v of TOPICS.vocab.items) { const ls = link.filter(l => k(l.en) === k(v.en)); if (ls.length === 1) { TWIN[v.id] = ls[0]; TWIN[ls[0].id] = v; } } }
+// מעתיקים את המצב לתאומה, חוץ מהמשפט האחרון שנשאל (לכל נושא משפטים משלו)
+function syncTwin(w, s = S) { const t = TWIN[w.id], st = s.w[w.id]; if (t && st) s.w[t.id] = Object.assign({}, st, { ls: s.w[t.id] && s.w[t.id].ls }); }
+const twinRank = x => x ? (x.known ? 99 : x.b) * 1e6 + (x.ok || 0) : -1;
 function migrate(s) {
   for (const id of Object.keys(s.w)) {
     if (BYID[id]) continue;
@@ -105,6 +112,8 @@ function migrate(s) {
     if (it) s.w[it.id] = s.w[id];
     delete s.w[id];
   }
+  // התקדמות מלפני החיבור בין הנושאים: לוקחים את הצד המתקדם יותר
+  for (const id in TWIN) if (twinRank(s.w[id]) > twinRank(s.w[TWIN[id].id])) syncTwin(BYID[id], s);
   return s;
 }
 function parse(s) { return s && s.w ? migrate(Object.assign(blank(), s)) : null; }
@@ -161,9 +170,9 @@ const isKnown = w => !!(S.w[w.id] && S.w[w.id].known);
 function practiced() { return introduced().filter(w => !isKnown(w)); }
 function markKnown(w) {
   S.w[w.id] = Object.assign(S.w[w.id] || { ok: 0, bad: 0, intro: now() }, { known: true, b: MASTER, due: now() + 3650 * 864e5 });
-  save();
+  syncTwin(w); save();
 }
-function unmarkKnown(w) { const s = S.w[w.id]; if (!s) return; s.known = false; s.b = 3; s.due = now(); save(); }
+function unmarkKnown(w) { const s = S.w[w.id]; if (!s) return; s.known = false; s.b = 3; s.due = now(); syncTwin(w); save(); }
 function toggleKnown(i) { const w = ALL[i]; isKnown(w) ? unmarkKnown(w) : markKnown(w); document.getElementById('dl').innerHTML = dictList(); }
 function near(a, b) { return (NEAR[a] || []).includes(b) || (NEAR[b] || []).includes(a); }
 // יעד יומי לכל נושא: יום ההתחלה, מספר הימים ומונה המילים החדשות של היום נפרדים
@@ -207,7 +216,7 @@ function speak(t, force) {
 function say(i) { speak(ALL[i].en, true); }
 
 // ===== חזרה מרווחת =====
-function introduce(w) { S.w[w.id] = { b: 0, due: now(), ok: 0, bad: 0, intro: now() }; const d = today(), k = freshKey(w.topic); d[k] = (d[k] || 0) + 1; save(); }
+function introduce(w) { S.w[w.id] = { b: 0, due: now(), ok: 0, bad: 0, intro: now() }; syncTwin(w); const d = today(), k = freshKey(w.topic); d[k] = (d[k] || 0) + 1; save(); }
 // במילות קישור אין כתיבה: כמעט תמיד יש כמה מילים שמתאימות (רועי 21/10). השלמת משפט מחליפה אותה ומעלה עד «שולט»
 const noTyping = w => w.topic === 'link';
 const capOf = (w, type) => noTyping(w) && type === 'sentence' ? CAP.typeSentence : CAP[type];
@@ -236,6 +245,7 @@ function grade(w, type, ok) {
     if (L) L.bad++;
   }
   s.last = t;
+  syncTwin(w);
   save();
 }
 
@@ -405,7 +415,7 @@ function dropFromLesson(w) {
 // מכיר אבל רוצה לתרגל: מדלגים על שאלות הפירוש הקלות, ומתחילים מהשלמת משפט
 function knowSome() {
   const it = L.q[0], s = S.w[it.w.id];
-  s.b = Math.max(s.b, 3); s.due = now(); save();
+  s.b = Math.max(s.b, 3); s.due = now(); syncTwin(it.w); save();
   L.q = [it, { k: 'q', w: it.w, type: 'sentence' }, ...L.q.slice(1).filter(x => x.w !== it.w)];
   next();
 }

@@ -72,7 +72,7 @@ async function runAll(n = 60, wrongRate = 0.15) {
   for (const k of Object.keys(TOPICS)) {
     pickTopic(k);
     const P = [], T = {};
-    const otherBefore = Object.keys(S.w).filter(id => !BYID[id] || BYID[id].topic !== k).length;
+    const otherBefore = Object.keys(S.w).filter(id => (!BYID[id] || BYID[id].topic !== k) && !TWIN[id]).length;
     // מסכים
     for (const v of ['home', 'dict', 'settings']) { go(v); htmlOk(P, v); }
     go('home');
@@ -80,7 +80,7 @@ async function runAll(n = 60, wrongRate = 0.15) {
     chk(new Set(UNITS.flatMap(u => u.items.map(w => w.id))).size === ITEMS.length, 'לא כל המילים ביחידות', P);
     let lessons = 0;
     for (let i = 0; i < n; i++) { if (await runLesson(P, T, wrongRate)) lessons++; }
-    const otherAfter = Object.keys(S.w).filter(id => !BYID[id] || BYID[id].topic !== k).length;
+    const otherAfter = Object.keys(S.w).filter(id => (!BYID[id] || BYID[id].topic !== k) && !TWIN[id]).length;
     chk(otherBefore === otherAfter, 'שיעור בנושא אחד שינה התקדמות בנושא השני', P);
     chk(Object.keys(S.w).every(id => BYID[id]), 'מזהה התקדמות לא מוכר', P);
     go('home'); htmlOk(P, 'בית אחרי');
@@ -92,6 +92,13 @@ async function runAll(n = 60, wrongRate = 0.15) {
     await runLesson(P, T, 0.2, mix);
     chk(topic === 'link', 'הנושא לא חזר אחרי שיעור מעורב', P);
     out.mixed = { types: T, problems: [...new Set(P)] }; }
+  // מילים בשני הנושאים: התקדמות זהה בשניהם, וגם התקדמות ישנה בצד אחד עוברת לשני בטעינה
+  { const P = [], pairs = Object.keys(TWIN);
+    for (const id of pairs) { const a = S.w[id], b = S.w[TWIN[id].id]; if (!!a !== !!b || (a && (a.b !== b.b || !!a.known !== !!b.known || a.due !== b.due))) P.push('לא מסונכרן ' + id); }
+    const old = parse({ w: { 'however|con': { b: 4, due: 1, ok: 5, bad: 0, intro: 1 }, 'v:despite': { b: 0, due: 1, ok: 0, bad: 1, intro: 1, known: true } }, savedAt: 1 });
+    chk(old.w['v:however'] && old.w['v:however'].b === 4, 'התקדמות ישנה לא עברה לתאומה', P);
+    chk(old.w['despite|cnc'] && old.w['despite|cnc'].known, '«מכיר» לא עבר לתאומה', P);
+    out.twins = { pairs: pairs.length / 2, introducedPairs: pairs.filter(id => S.w[id]).length / 2, problems: P }; }
   out.simItem = typeof simAppItem === 'function' ? [!!simAppItem('although'), !!simAppItem('abundant')] : 'no sims';
   out.errors = window.__errors.slice(0, 20);
   out.savedTopic = window.__saved && window.__saved.topic;
