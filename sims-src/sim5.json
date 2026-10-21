@@ -1,0 +1,255 @@
+{
+  "title": "סימולציה 5 · רמת פטור",
+  "level": 3,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The evidence linking the drug to the side effect remains ___ at best: a handful of small studies, none of which took the patients' age into account.",
+          "o": ["compelling", "abundant", "tenuous", "conclusive"],
+          "a": 2,
+          "ex": "«Tenuous» = קלוש, חלש. אחרי הנקודתיים מתוארות ראיות דלות (כמה מחקרים קטנים ולא מבוקרים), ולכן הראיות חלשות. «compelling» ו-«conclusive» אומרות ההפך: ראיות משכנעות וחד-משמעיות.",
+          "w": [["tenuous", "קלוש, רופף"], ["at best", "במקרה הטוב"], ["conclusive", "חד-משמעי, מכריע"]]
+        },
+        {
+          "q": "Researchers stored a second copy of the data on a separate server ___ the original be lost in a power failure.",
+          "o": ["lest", "unless", "provided that", "so that"],
+          "a": 0,
+          "ex": "«Lest» = כדי שלא, פן. שמרו עותק נוסף כדי שהמקור לא יאבד. «so that» היה אומר שהמטרה היא שהמקור יאבד, וזה לא הגיוני.",
+          "w": [["lest", "פן, שמא, כדי שלא"], ["so that", "כדי ש..."]]
+        },
+        {
+          "q": "Far from being ___, the senator's position on the issue has shifted at least three times in the past year.",
+          "o": ["erratic", "fickle", "controversial", "steadfast"],
+          "a": 3,
+          "ex": "«Far from being» = רחוק מלהיות. העמדה השתנתה שלוש פעמים, כלומר היא רחוקה מלהיות יציבה: «steadfast» = יציב, נחוש. «erratic» ו-«fickle» (הפכפך) מתארות בדיוק את מה שקרה, ולכן לא מתאימות אחרי «far from».",
+          "w": [["steadfast", "יציב, איתן, נחוש"], ["fickle", "הפכפך"], ["erratic", "לא יציב, הפכפך"]]
+        },
+        {
+          "q": "The committee's report was ___ a full endorsement of the plan; it praised the plan's goals but rejected nearly every one of its proposed methods.",
+          "o": ["undoubtedly", "by no means", "above all", "in particular"],
+          "a": 1,
+          "ex": "«By no means» = בשום אופן לא. הדוח דחה כמעט את כל השיטות, ולכן הוא בשום אופן לא תמיכה מלאה. «undoubtedly» היה אומר שזו ללא ספק תמיכה מלאה, וזה סותר את החלק השני.",
+          "w": [["by no means", "בשום אופן לא"], ["endorsement", "תמיכה, אישור"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Although the virus was first detected in a single village, it managed to ___ across the region within weeks, overwhelming local clinics.",
+          "o": ["proliferate", "dwindle", "subside", "stagnate"],
+          "a": 0,
+          "ex": "«Proliferate» = להתרבות, להתפשט במהירות. המרפאות הוצפו, כלומר הנגיף התפשט. «dwindle» ו-«subside» פירושן להצטמצם ולשכוך, ההפך ממה שמתואר.",
+          "w": [["proliferate", "להתרבות, להתפשט במהירות"], ["dwindle", "להצטמצם, לפחות"], ["subside", "לשכוך, לרדת"]]
+        },
+        {
+          "q": "The study's findings are relevant to our school ___ they were based on students of the same age and background as ours.",
+          "o": ["lest", "whereas", "inasmuch as", "albeit"],
+          "a": 2,
+          "ex": "«Inasmuch as» = מאחר ש..., במידה ש.... החלק השני הוא הסיבה לכך שהממצאים רלוונטיים. «whereas» מציין ניגוד, ואין כאן ניגוד בין שני החלקים.",
+          "w": [["inasmuch as", "מאחר ש..., במידה ש..."], ["whereas", "בעוד ש..., ואילו"]]
+        },
+        {
+          "q": "Auditors found a striking ___ between the figures the company reported to investors and those it submitted to the tax authorities: the first showed a large profit, the second a loss.",
+          "o": ["resemblance", "consensus", "correlation", "discrepancy"],
+          "a": 3,
+          "ex": "«Discrepancy» = פער, אי-התאמה. סט אחד הראה רווח והשני הפסד, כלומר המספרים לא מתאימים זה לזה. «resemblance» (דמיון) אומרת ההפך.",
+          "w": [["discrepancy", "פער, אי-התאמה"], ["resemblance", "דמיון"]]
+        },
+        {
+          "q": "The plan had several obvious flaws; the board, ___, approved it unanimously, hoping to fix the details at a later stage.",
+          "o": ["accordingly", "nonetheless", "likewise", "namely"],
+          "a": 1,
+          "ex": "«Nonetheless» = למרות זאת. לתוכנית היו פגמים ברורים, ובכל זאת הדירקטוריון אישר אותה. «accordingly» (בהתאם לכך) היה אומר שהאישור נבע מהפגמים, וזה לא הגיוני.",
+          "w": [["nonetheless", "בכל זאת, למרות זאת"], ["accordingly", "בהתאם לכך, לכן"], ["flaw", "פגם"]]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "The Long Road from Invention to Adoption",
+      "text": [
+        "It is tempting to assume that a superior technology wins as soon as it appears. History suggests otherwise. The gap between an invention and its widespread use is often measured not in months but in decades, and economists have long tried to explain why tools that seem obviously beneficial in hindsight were, at the time, adopted with remarkable reluctance.",
+        "One reason is that a new technology rarely arrives in finished form. Early versions tend to be expensive, unreliable and difficult to repair, and their advantages over existing methods may be modest at first. A farmer who already owns horses and knows how to care for them has little reason to buy an early tractor that breaks down frequently and requires fuel he cannot easily obtain. Only after years of gradual improvement, much of it carried out by people other than the original inventor, does the new tool become clearly worth its price.",
+        "A second obstacle lies in what economists call complementary investments. A technology is seldom useful on its own; it depends on other things being in place. Electric motors, for example, offered factories little benefit as long as buildings were designed around a single steam engine that drove every machine through long belts and shafts. The real gains appeared only when owners redesigned entire factories, a costly process that many postponed until their old buildings wore out. In such cases, the delay reflects not ignorance but a reasonable calculation.",
+        "Finally, adoption is a social process. People learn about new methods mainly from neighbors, colleagues and competitors, and they tend to trust what they can observe directly. When the benefits of an innovation are hard to see, or appear only after many years, even well-informed individuals may hesitate. Institutions can slow matters further: regulations written for an older technology, or workers whose skills would lose their value, may resist a change that threatens established interests.",
+        "None of this means that slow adoption is simply wasteful. Waiting allows a technology to mature and its problems to surface before large sums are committed. Nonetheless, understanding the sources of delay can help governments and firms decide when intervention, such as training programs or shared infrastructure, might shorten a wait that serves no one."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "why inventors often fail to profit from their own inventions",
+            "the reasons that beneficial technologies may take a long time to be widely used",
+            "how electricity transformed the design of factories",
+            "the ways in which governments can speed up the adoption of new technologies"
+          ],
+          "a": 1,
+          "ex": "כל הקטע מסביר למה טכנולוגיות מועילות מתפשטות לאט: מוצר לא מוגמר, השקעות משלימות ותהליך חברתי. המנועים החשמליים הם רק דוגמה בפסקה 3, והממשלות מוזכרות רק בסוף.",
+          "w": [["adoption", "אימוץ"], ["widespread", "נפוץ, רחב היקף"]]
+        },
+        {
+          "q": "According to the second paragraph, the farmer in the example would probably not buy an early tractor because",
+          "o": [
+            "he did not trust the people who sold it",
+            "the government had restricted its use",
+            "it could not do the work of a horse",
+            "it often broke down and its fuel was hard to get"
+          ],
+          "a": 3,
+          "ex": "בפסקה 2 כתוב שהטרקטור המוקדם «breaks down frequently» ודורש דלק שקשה להשיג. אמון במוכרים ותקנות של הממשלה לא מוזכרים בפסקה הזו.",
+          "w": [["unreliable", "לא אמין"], ["obtain", "להשיג"]]
+        },
+        {
+          "q": "In the fourth paragraph, the word 'established' could best be replaced by",
+          "o": ["proven", "founded", "existing", "confirmed"],
+          "a": 2,
+          "ex": "«Established interests» = האינטרסים הקיימים והמבוססים, של מי שנהנה מהמצב הנוכחי. לכן «existing». «proven» (מוכח) מפתה, אבל לא מדובר באינטרסים שהוכחו אלא באינטרסים שכבר קיימים.",
+          "w": [["established", "מבוסס, קיים, מושרש"], ["threaten", "לאיים על"]]
+        },
+        {
+          "q": "The example of electric motors in the third paragraph is used to show that",
+          "o": [
+            "the benefit of a new technology may depend on other costly changes being made",
+            "factory owners were generally unaware of new technologies",
+            "steam engines were more efficient than electric motors",
+            "electric motors were adopted more quickly than tractors"
+          ],
+          "a": 0,
+          "ex": "הפסקה עוסקת ב«complementary investments»: המנוע החשמלי הועיל רק אחרי שתכננו מחדש את כל המפעל, תהליך יקר. הקטע אומר במפורש שהעיכוב «not ignorance», ולכן התשובה על חוסר מודעות שגויה.",
+          "w": [["complementary", "משלים"], ["postpone", "לדחות"]]
+        },
+        {
+          "q": "It can be inferred from the last paragraph that the author believes that",
+          "o": [
+            "some delays in adoption serve a useful purpose, while others might reasonably be shortened",
+            "governments should avoid any involvement in the spread of new technologies",
+            "every delay in adopting a useful technology is a waste of resources",
+            "most new technologies are adopted too quickly to be properly tested"
+          ],
+          "a": 0,
+          "ex": "הכותב אומר שהמתנה מאפשרת לטכנולוגיה להבשיל (כלומר יש בה תועלת), ובכל זאת אפשר לקצר המתנה «that serves no one». «every delay is a waste» סותרת את המשפט «None of this means that slow adoption is simply wasteful».",
+          "w": [["nonetheless", "בכל זאת, למרות זאת"], ["mature", "להבשיל"], ["intervention", "התערבות"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Granted that the new vaccine is more expensive than the old one, its far greater effectiveness makes it the better choice for the national health service.",
+          "o": [
+            "Because the new vaccine is more expensive than the old one, the national health service should prefer the old one, despite its lower effectiveness.",
+            "Although the new vaccine costs more than the old one, the national health service would do better to choose it, since it is considerably more effective.",
+            "The new vaccine is both cheaper and more effective than the old one, so the national health service should choose it.",
+            "Although the new vaccine is more effective than the old one, its higher price makes it the less sensible choice for the national health service."
+          ],
+          "a": 1,
+          "ex": "«Granted that» = נכון ש..., גם אם נודה ש.... המשפט מודה שהחיסון החדש יקר יותר, ובכל זאת קובע שהוא עדיף כי הוא יעיל בהרבה. התשובה הנכונה שומרת על שני החלקים עם «Although» ו-«since». התשובה האחרונה הופכת את המסקנה (המחיר מכריע).",
+          "w": [["granted that", "נכון ש..., גם אם נודה ש..."], ["although", "למרות ש..."], ["effectiveness", "יעילות"]]
+        },
+        {
+          "q": "The town's economic decline was caused not so much by the closure of the mine as by the failure of local leaders to develop any alternative source of employment in the years that followed.",
+          "o": [
+            "The closure of the mine was the main reason for the town's economic decline, although local leaders also failed to create new jobs afterwards.",
+            "The closure of the mine and the local leaders' failure to create new jobs contributed equally to the town's economic decline.",
+            "Local leaders failed to develop new sources of employment because the closure of the mine had already ruined the town's economy.",
+            "It was chiefly the local leaders' failure to create other jobs after the mine closed, rather than the closure itself, that brought about the town's economic decline."
+          ],
+          "a": 3,
+          "ex": "«Not so much X as Y» = לא כל כך X אלא בעיקר Y. הסיבה העיקרית היא כישלון המנהיגים, לא סגירת המכרה. התשובה הראשונה הופכת את הדגש, והשנייה אומרת שהשתיים תרמו באותה מידה.",
+          "w": [["not so much X as Y", "לא כל כך X אלא Y"], ["chiefly", "בעיקר"], ["rather than", "במקום, ולא"]]
+        },
+        {
+          "q": "Officials delayed announcing the results of the inquiry, lest premature disclosure should provoke public panic before the full extent of the water contamination had been established.",
+          "o": [
+            "Officials held back the results of the inquiry for fear that releasing them too early might cause public panic, since the extent of the water contamination was not yet fully known.",
+            "Because the public had already panicked, officials decided to delay announcing the results of the inquiry into the water contamination.",
+            "Officials released the results of the inquiry early in order to prevent public panic over the extent of the water contamination.",
+            "Officials delayed announcing the results of the inquiry until they had confirmed that the water contamination was too limited to cause public panic."
+          ],
+          "a": 0,
+          "ex": "«Lest» = מחשש ש..., כדי שלא. הפקידים עיכבו את הפרסום כדי שלא תפרוץ בהלה לפני שהיקף הזיהום ידוע. בתשובה השנייה הבהלה כבר קרתה, והאחרונה מוסיפה טענה שלא נאמרה (שהזיהום מוגבל).",
+          "w": [["lest", "פן, שמא, כדי שלא"], ["premature", "מוקדם מדי"], ["extent", "היקף"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Hardly had the company launched its new smartphone when reports of overheating batteries began to appear, forcing it to recall nearly a quarter of a million devices within a month.",
+          "o": [
+            "The company recalled nearly a quarter of a million of its new smartphones before any reports of overheating batteries had appeared.",
+            "Several years after the company launched its new smartphone, reports of overheating batteries forced it to recall nearly a quarter of a million devices.",
+            "Almost as soon as the company's new smartphone went on sale, reports of overheating batteries emerged, and within a month the company had to recall almost 250,000 devices.",
+            "Almost as soon as the company's new smartphone went on sale, reports of overheating batteries emerged, but the company refused to recall any of the devices."
+          ],
+          "a": 2,
+          "ex": "«Hardly had... when» = אך ורק... וכבר, מיד אחרי ש.... הדיווחים הופיעו מיד אחרי ההשקה והובילו לריקול. התשובה השנייה משנה את הזמן (כמה שנים אחרי), והאחרונה הופכת את התוצאה (סירבה לריקול).",
+          "w": [["hardly", "כמעט לא"], ["recall", "להחזיר מוצר מהשוק, ריקול"], ["as soon as", "ברגע ש..., מיד כש..."]]
+        },
+        {
+          "q": "Inasmuch as the survey relied solely on volunteers, who tend to be more health-conscious than the general population, its conclusions about national eating habits should be treated with considerable caution.",
+          "o": [
+            "The survey's conclusions about national eating habits are reliable, since its volunteers were more health-conscious than the general population.",
+            "Since the survey was based only on volunteers, who are generally more health-conscious than most people, its findings about the nation's eating habits may not be fully trustworthy.",
+            "Since the survey was based only on volunteers, who are generally less health-conscious than most people, its findings about the nation's eating habits may not be fully trustworthy.",
+            "Since the survey's findings about the nation's eating habits may not be trustworthy, researchers decided to rely only on volunteers."
+          ],
+          "a": 1,
+          "ex": "«Inasmuch as» = מאחר ש.... מכיוון שהסקר נשען רק על מתנדבים שמקפידים יותר על בריאות, צריך להיזהר במסקנות. התשובה השלישית הופכת את ההשוואה (פחות מקפידים), והרביעית הופכת סיבה ותוצאה.",
+          "w": [["inasmuch as", "מאחר ש..., במידה ש..."], ["solely", "אך ורק, בלעדית"], ["caution", "זהירות"]]
+        },
+        {
+          "q": "The treaty was by no means the first attempt to limit the arms race; it was, nonetheless, the first to include a system for verifying that both sides were actually keeping their commitments.",
+          "o": [
+            "The treaty was the first attempt ever made to limit the arms race, and it included a system for checking that both sides kept their commitments.",
+            "Several earlier agreements had tried to limit the arms race, and, like the treaty, they included a system for checking that both sides kept their commitments.",
+            "Other agreements had tried to limit the arms race before this treaty, but it was the first one that provided a means of checking whether both sides honored their commitments.",
+            "Since earlier agreements had failed to limit the arms race, the treaty abandoned the idea of checking whether both sides kept their commitments."
+          ],
+          "a": 2,
+          "ex": "«By no means the first» = בשום אופן לא הראשון, כלומר היו ניסיונות קודמים. «nonetheless» = ובכל זאת, הוא הראשון עם מנגנון פיקוח. התשובה הראשונה אומרת שזה הניסיון הראשון, והשנייה אומרת שגם להסכמים הקודמים היה פיקוח.",
+          "w": [["by no means", "בשום אופן לא"], ["nonetheless", "בכל זאת, למרות זאת"], ["verify", "לאמת, לוודא"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The government introduced strict measures to ___ water use during the drought, including fines for watering gardens during the day.",
+          "o": ["boost", "subsidize", "curtail", "justify"],
+          "a": 2,
+          "ex": "«Curtail» = לצמצם, לקצץ. קנסות על השקיה בשעות היום נועדו להפחית צריכת מים בזמן בצורת. «boost» ו-«subsidize» היו מעודדות צריכה, ההפך מהמטרה.",
+          "w": [["curtail", "לצמצם, לקצץ"], ["drought", "בצורת"], ["subsidize", "לסבסד"]]
+        },
+        {
+          "q": "The new rules had ___ taken effect when several companies announced they would challenge them in court, so swift was the opposition.",
+          "o": ["eventually", "gradually", "long since", "hardly"],
+          "a": 3,
+          "ex": "«Hardly... when» = רק... וכבר, מיד אחרי ש.... סוף המשפט אומר שההתנגדות הייתה מהירה מאוד, ולכן החברות הודיעו כמעט מיד. «long since» (מזמן) סותרת את המהירות.",
+          "w": [["hardly", "כמעט לא"], ["swift", "מהיר"], ["take effect", "להיכנס לתוקף"]]
+        },
+        {
+          "q": "The scale of the flooding was ___: in more than two centuries of record-keeping, the river had never risen so high.",
+          "o": ["unprecedented", "predictable", "negligible", "routine"],
+          "a": 0,
+          "ex": "«Unprecedented» = חסר תקדים. הנהר מעולם לא עלה כל כך גבוה ב-200 שנות תיעוד, כלומר לא היה כדבר הזה. «routine» ו-«predictable» אומרות שזה רגיל וצפוי, ההפך.",
+          "w": [["unprecedented", "חסר תקדים"], ["negligible", "זניח"]]
+        },
+        {
+          "q": "For decades, a reliable treatment for the disease remained ___: each drug that looked promising in early tests failed in later trials.",
+          "o": ["accessible", "elusive", "affordable", "obsolete"],
+          "a": 1,
+          "ex": "«Elusive» = חמקמק, קשה להשגה. כל תרופה נכשלה, כך שטיפול אמין לא נמצא. «accessible» (נגיש) אומרת ההפך, ו-«affordable» עוסקת במחיר, שלא מוזכר כאן.",
+          "w": [["elusive", "חמקמק, קשה להשגה"], ["obsolete", "מיושן, שאבד עליו הכלח"]]
+        }
+      ]
+    }
+  ]
+}

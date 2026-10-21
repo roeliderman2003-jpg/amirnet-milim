@@ -1,0 +1,550 @@
+{
+  "title": "סימולציה 3 · בינוני",
+  "level": 2,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Scientists warn that, unless action is taken soon, the loss of several coral reefs will become ___.",
+          "o": [
+            "reversible",
+            "voluntary",
+            "inevitable",
+            "temporary"
+          ],
+          "a": 2,
+          "ex": "«inevitable» = בלתי נמנע. המדענים מזהירים שאם לא יפעלו מהר, האובדן של השוניות כמעט בטוח יקרה. «reversible» (הפיך) הפוך מהכוונה של האזהרה.",
+          "w": [
+            [
+              "inevitable",
+              "בלתי נמנע"
+            ],
+            [
+              "unless",
+              "אלא אם כן"
+            ]
+          ]
+        },
+        {
+          "q": "The museum's new exhibition received poor reviews from critics; ___, it attracted a record number of visitors.",
+          "o": [
+            "nevertheless",
+            "consequently",
+            "similarly",
+            "for instance"
+          ],
+          "a": 0,
+          "ex": "«nevertheless» = למרות זאת. הביקורות היו רעות, ובכל זאת הגיע מספר שיא של מבקרים: יש כאן ניגוד. «consequently» (כתוצאה מכך) לא מתאים, כי ביקורות רעות לא גורמות לשיא מבקרים.",
+          "w": [
+            [
+              "nevertheless",
+              "למרות זאת, אף על פי כן"
+            ],
+            [
+              "record",
+              "שיא"
+            ]
+          ]
+        },
+        {
+          "q": "Rising rents have forced many young families to leave the city center, a trend that threatens to ___ the area's sense of community.",
+          "o": [
+            "strengthen",
+            "celebrate",
+            "imitate",
+            "undermine"
+          ],
+          "a": 3,
+          "ex": "«undermine» = לערער, להחליש. עזיבת המשפחות הצעירות פוגעת בתחושת הקהילה, ולכן המגמה «מאיימת לערער» אותה. «strengthen» (לחזק) הפוך: מגמה מאיימת לא מחזקת.",
+          "w": [
+            [
+              "undermine",
+              "לערער, להחליש"
+            ],
+            [
+              "threaten",
+              "לאיים"
+            ]
+          ]
+        },
+        {
+          "q": "Few of the volunteers could afford a car, ___ a house of their own.",
+          "o": [
+            "rather than",
+            "let alone",
+            "in order to",
+            "as well as"
+          ],
+          "a": 1,
+          "ex": "«let alone» = ובטח שלא, קל וחומר. רובם לא יכלו להרשות לעצמם אפילו מכונית, ובטח שלא בית, שהוא יקר הרבה יותר. «as well as» (וגם) לא מוסיף את הרעיון של «ובטח שלא», שהוא כל הטעם של המשפט.",
+          "w": [
+            [
+              "let alone",
+              "ובטח שלא, קל וחומר"
+            ],
+            [
+              "afford",
+              "להרשות לעצמו (כלכלית)"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The professor's theory was once rejected by most of her colleagues, but today it enjoys ___ support across the field.",
+          "o": [
+            "reluctant",
+            "widespread",
+            "scarce",
+            "hidden"
+          ],
+          "a": 1,
+          "ex": "«widespread» = נפוץ, רחב. פעם רוב העמיתים דחו את התיאוריה, «but» היום היא נהנית מתמיכה רחבה: זה הניגוד ש-«but» דורש. «scarce» (מועט) לא יוצר ניגוד לעבר.",
+          "w": [
+            [
+              "widespread",
+              "נפוץ, רחב היקף"
+            ],
+            [
+              "reject",
+              "לדחות"
+            ]
+          ]
+        },
+        {
+          "q": "The northern region receives heavy rainfall throughout the year, ___ the south remains dry for most months.",
+          "o": [
+            "so that",
+            "because",
+            "unless",
+            "whereas"
+          ],
+          "a": 3,
+          "ex": "«whereas» = ואילו, בעוד ש. משווים בין הצפון הגשום לדרום היבש, כלומר ניגוד בין שני צדדים. «because» היה אומר שהגשם בצפון גורם ליובש בדרום, וזה לא הגיוני.",
+          "w": [
+            [
+              "whereas",
+              "בעוד ש..., ואילו"
+            ],
+            [
+              "throughout",
+              "לאורך, במשך כל"
+            ]
+          ]
+        },
+        {
+          "q": "Children who grow up speaking two languages often ___ a third one more easily than those who speak only one.",
+          "o": [
+            "acquire",
+            "abandon",
+            "ignore",
+            "conceal"
+          ],
+          "a": 0,
+          "ex": "«acquire» = לרכוש (ידע, שפה). ילדים דו-לשוניים לומדים שפה שלישית בקלות רבה יותר. «abandon» (לנטוש) לא מתאים ל-«more easily» ולהקשר של יתרון.",
+          "w": [
+            [
+              "acquire",
+              "לרכוש"
+            ],
+            [
+              "abandon",
+              "לנטוש, לזנוח"
+            ]
+          ]
+        },
+        {
+          "q": "The bridge had not been inspected for over a decade; ___, nobody was surprised when engineers declared it unsafe.",
+          "o": [
+            "in contrast",
+            "even so",
+            "consequently",
+            "otherwise"
+          ],
+          "a": 2,
+          "ex": "«consequently» = כתוצאה מכך. הגשר לא נבדק יותר מעשר שנים, ולכן אף אחד לא הופתע שהוכרז מסוכן: סיבה ותוצאה. «even so» (למרות זאת) היה רומז שהיה צפוי שיופתעו, וזה הפוך.",
+          "w": [
+            [
+              "consequently",
+              "כתוצאה מכך, לפיכך"
+            ],
+            [
+              "inspect",
+              "לבדוק, לפקח"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "The Story That Changes Each Time",
+      "text": [
+        "Most people assume that a memory works like a recording: once an event is stored, it can be played back whenever it is needed. Psychologists who study memory, however, have found that this common belief is largely mistaken. Rather than retrieving a fixed copy, the brain rebuilds an experience each time we recall it, using fragments of the original event together with our current knowledge, feelings and expectations. As a result, a story that we have told many times may differ substantially from what actually happened.",
+        "One explanation for this effect is a process known as reconsolidation. When a memory is brought to mind, it becomes unstable for a short period before it is stored again. During this window, new information can be added and old details can be lost. If, for example, a listener reacts with surprise to a particular part of a story, the speaker may emphasize that part the next time and gradually drop details that seemed less interesting. Each retelling, in other words, becomes the new \"original.\"",
+        "Experiments support this idea. In one type of study, volunteers watch a short film and are later asked to describe it to different listeners. Those who describe it to a listener who is believed to dislike the main character tend to present that character more negatively. Weeks later, even when asked to recall the film itself rather than their own description, they still remember the character in the less favorable way. Their memory has apparently been shaped by the version they chose to tell.",
+        "These findings have important consequences. In courts, witnesses who have repeated their account many times may feel highly confident even though their memories have shifted. Nevertheless, researchers stress that the flexibility of memory is not simply a flaw. A system that constantly updates itself allows people to connect past experiences to new situations and to learn from them. The price of this flexibility is that our most cherished stories are, to some degree, always being rewritten."
+      ],
+      "qs": [
+        {
+          "q": "Which of the following is the best title for the passage?",
+          "o": [
+            "Why Children Forget Their Early Years",
+            "How Retelling a Story Reshapes Our Memories",
+            "The Role of Witnesses in Modern Courts",
+            "A Simple Method for Improving Memory"
+          ],
+          "a": 1,
+          "ex": "הקטע כולו עוסק בכך שכל פעם שמספרים סיפור, הזיכרון נבנה מחדש ומשתנה. עדים בבית משפט מוזכרים רק בפסקה האחרונה כדוגמה, ולכן זו לא כותרת לכל הקטע.",
+          "w": [
+            [
+              "retell",
+              "לספר מחדש"
+            ],
+            [
+              "reshape",
+              "לעצב מחדש"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, while a memory is being recalled, it",
+          "o": [
+            "is permanently erased from the brain",
+            "becomes more accurate than before",
+            "is passed on unchanged to the listener",
+            "can be altered before it is stored again"
+          ],
+          "a": 3,
+          "ex": "בפסקה 2 כתוב שכשנזכרים, הזיכרון «becomes unstable» לזמן קצר לפני שהוא נשמר שוב, ובחלון הזה אפשר להוסיף פרטים ולאבד אחרים. אין שם טענה שהוא נמחק לגמרי או נעשה מדויק יותר.",
+          "w": [
+            [
+              "unstable",
+              "לא יציב"
+            ],
+            [
+              "alter",
+              "לשנות"
+            ]
+          ]
+        },
+        {
+          "q": "In paragraph 3, the word \"Their\" (in \"Their memory has apparently been shaped\") refers to",
+          "o": [
+            "the listeners",
+            "the main characters",
+            "the volunteers",
+            "the films"
+          ],
+          "a": 2,
+          "ex": "המשפט מתאר את המתנדבים שתיארו את הסרט, ושאחרי שבועות זכרו את הדמות באופן שלילי יותר. «Their memory» = הזיכרון של המתנדבים. המאזינים לא זוכרים את הסרט, כי הם לא ראו אותו.",
+          "w": [
+            [
+              "volunteer",
+              "מתנדב"
+            ],
+            [
+              "apparently",
+              "ככל הנראה"
+            ]
+          ]
+        },
+        {
+          "q": "What does the experiment described in paragraph 3 suggest?",
+          "o": [
+            "The way people describe an event can later change how they remember it.",
+            "People remember films more accurately than real-life events.",
+            "Listeners usually adopt the speaker's opinion of a character.",
+            "Volunteers deliberately lied in order to please their listeners."
+          ],
+          "a": 0,
+          "ex": "המתנדבים שתיארו את הדמות באופן שלילי זכרו אותה כך גם שבועות אחר כך, «even when asked to recall the film itself». כלומר הגרסה שסיפרו שינתה את הזיכרון. לא נאמר שהם שיקרו בכוונה.",
+          "w": [
+            [
+              "favorable",
+              "חיובי, אוהד"
+            ],
+            [
+              "deliberately",
+              "בכוונה"
+            ]
+          ]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": [
+            "describe a new experiment carried out on witnesses",
+            "prove that human memory should never be trusted",
+            "point out both a practical risk and an advantage of memory's flexibility",
+            "argue that courts should stop relying on witnesses"
+          ],
+          "a": 2,
+          "ex": "הפסקה האחרונה מציגה סיכון (עדים בטוחים בעצמם למרות שהזיכרון שלהם השתנה), ואז «Nevertheless» מביאה יתרון: גמישות שמאפשרת ללמוד. «should never be trusted» קיצוני מדי, כי נאמר במפורש שזה «not simply a flaw».",
+          "w": [
+            [
+              "nevertheless",
+              "למרות זאת, אף על פי כן"
+            ],
+            [
+              "flaw",
+              "פגם"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Although the new medication reduced symptoms in most patients, doctors remain cautious because its long-term effects have not yet been studied in sufficient depth.",
+          "o": [
+            "Because the new medication reduced symptoms in most patients, doctors are confident that its long-term effects will be safe.",
+            "The new medication helped only a few patients, so doctors will remain cautious until its long-term effects are studied in depth.",
+            "Doctors have stopped prescribing the new medication, since studies have shown that its long-term effects are harmful.",
+            "Doctors are still careful about the new medication, even though it helped most patients, since not enough research has been done on its long-term effects."
+          ],
+          "a": 3,
+          "ex": "במקור: התרופה עזרה לרוב החולים, אבל הרופאים זהירים כי ההשפעות ארוכות הטווח לא נחקרו מספיק. התשובה הנכונה מחליפה «Although» ב-«even though» ומשנה את סדר החלקים. «only a few patients» משנה את הכמות (במקור «most»).",
+          "w": [
+            [
+              "cautious",
+              "זהיר"
+            ],
+            [
+              "even though",
+              "אף על פי ש..."
+            ],
+            [
+              "sufficient",
+              "מספיק"
+            ]
+          ]
+        },
+        {
+          "q": "The ancient city was eventually abandoned, not because of a sudden invasion, as was once widely believed, but as a result of a slow decline in its water supply.",
+          "o": [
+            "Contrary to a once common view, it was a gradual shortage of water, rather than an unexpected attack, that finally led people to leave the ancient city.",
+            "The ancient city was abandoned after a sudden invasion, which also damaged its water supply.",
+            "Many people once believed that the ancient city had a serious water problem, but it was actually destroyed by invaders.",
+            "Although its water supply was declining slowly, the ancient city was never abandoned by its people."
+          ],
+          "a": 0,
+          "ex": "במקור: העיר ננטשה לא בגלל פלישה, כפי שחשבו פעם, אלא בגלל ירידה איטית באספקת המים. התשובה הנכונה אומרת את זה עם «rather than» ועם «Contrary to a once common view». האפשרויות על הפולשים הופכות את הסיבה.",
+          "w": [
+            [
+              "abandon",
+              "לנטוש"
+            ],
+            [
+              "as a result of",
+              "כתוצאה מ..."
+            ],
+            [
+              "rather than",
+              "במקום, ולא"
+            ]
+          ]
+        },
+        {
+          "q": "Few employees took advantage of the flexible working hours, since most of them feared that their managers would regard it as a lack of commitment.",
+          "o": [
+            "Many employees used the flexible working hours, although they feared that their managers would view it as a lack of commitment.",
+            "Worried that their managers might see it as a sign of low commitment, only a small number of employees made use of the flexible working hours.",
+            "Most managers feared that employees who used the flexible hours would show a lack of commitment, so they cancelled the option.",
+            "Because their managers considered them uncommitted, few employees were offered flexible working hours."
+          ],
+          "a": 1,
+          "ex": "«Few» = מעט מאוד עובדים השתמשו בשעות הגמישות, כי פחדו שהמנהלים יראו בזה חוסר מחויבות. התשובה הנכונה מעבירה את הסיבה לתחילת המשפט ואומרת «only a small number». «Many employees» הופך את הכמות.",
+          "w": [
+            [
+              "few",
+              "מעט (כמעט אין)"
+            ],
+            [
+              "take advantage of",
+              "לנצל, להשתמש ב..."
+            ],
+            [
+              "commitment",
+              "מחויבות"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Even though online courses are cheaper and more convenient, many students still prefer traditional classes, in which they can interact directly with teachers and classmates.",
+          "o": [
+            "Because online courses are cheaper and more convenient, most students have stopped attending traditional classes.",
+            "Many students prefer online courses, since these allow them to interact directly with teachers and classmates.",
+            "Many students continue to choose traditional classes, where face-to-face contact with teachers and other students is possible, despite the lower cost and greater convenience of online courses.",
+            "Traditional classes are cheaper than online courses, so many students still prefer them in order to meet their teachers."
+          ],
+          "a": 2,
+          "ex": "במקור: למרות שקורסים מקוונים זולים ונוחים יותר, הרבה סטודנטים עדיין מעדיפים כיתות רגילות, שבהן יש קשר ישיר עם המרצים. התשובה הנכונה מחליפה «Even though» ב-«despite» ומעבירה אותו לסוף. האפשרות הראשונה הופכת את הוויתור לסיבה.",
+          "w": [
+            [
+              "even though",
+              "אף על פי ש..."
+            ],
+            [
+              "despite",
+              "למרות (+שם עצם)"
+            ],
+            [
+              "still",
+              "ובכל זאת; עדיין"
+            ]
+          ]
+        },
+        {
+          "q": "The government introduced a tax on sugary drinks so as to reduce their consumption, and within two years, sales of such drinks had fallen considerably.",
+          "o": [
+            "The government introduced a tax on sugary drinks because their sales had fallen considerably over the previous two years.",
+            "In order to cut the consumption of sugary drinks, a tax was placed on them by the government; within two years, their sales had dropped significantly.",
+            "Although the government taxed sugary drinks in order to reduce their consumption, sales of these drinks hardly changed within two years.",
+            "Drink companies raised the price of sugary drinks so as to reduce their consumption, and sales fell considerably within two years."
+          ],
+          "a": 1,
+          "ex": "במקור: הממשלה הטילה מס על משקאות ממותקים כדי להפחית את הצריכה, ותוך שנתיים המכירות ירדו מאוד. התשובה הנכונה עוברת לסביל («a tax was placed on them by the government») ו-«so as to» הופך ל-«In order to». באפשרות הראשונה הירידה במכירות היא הסיבה למס, וזה הפוך.",
+          "w": [
+            [
+              "so as to",
+              "כדי ל..."
+            ],
+            [
+              "in order to",
+              "כדי ל... (+פועל)"
+            ],
+            [
+              "considerably",
+              "במידה ניכרת"
+            ]
+          ]
+        },
+        {
+          "q": "Whereas earlier researchers relied mainly on questionnaires, today's scientists can observe brain activity directly, which allows them to test theories that were once impossible to examine.",
+          "o": [
+            "Both earlier and modern researchers have relied mainly on questionnaires, which is why some theories still cannot be tested.",
+            "Today's scientists rely mainly on questionnaires, since observing brain activity directly has turned out to be impossible.",
+            "Earlier researchers observed brain activity directly, whereas today's scientists prefer questionnaires in order to test new theories.",
+            "Unlike researchers in the past, who depended mostly on questionnaires, modern scientists are able to watch the brain at work, and this lets them check theories that could not be tested before."
+          ],
+          "a": 3,
+          "ex": "במקור: חוקרים בעבר הסתמכו בעיקר על שאלונים, ואילו היום אפשר לצפות במוח ישירות ולבדוק תיאוריות שלא היה אפשר לבדוק קודם. התשובה הנכונה מחליפה «Whereas» ב-«Unlike». האפשרות השלישית מחליפה בין העבר להווה.",
+          "w": [
+            [
+              "whereas",
+              "בעוד ש..., ואילו"
+            ],
+            [
+              "unlike",
+              "בניגוד ל... (+שם עצם)"
+            ],
+            [
+              "rely",
+              "להסתמך"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The two reports differ ___ in their conclusions: one predicts steady growth, while the other predicts a deep recession.",
+          "o": [
+            "substantially",
+            "slightly",
+            "barely",
+            "equally"
+          ],
+          "a": 0,
+          "ex": "«substantially» = באופן משמעותי. דוח אחד צופה צמיחה והשני מיתון עמוק, כלומר הבדל גדול. «slightly» (מעט) ו-«barely» (בקושי) סותרים את ההבדל החד שמתואר אחרי הנקודתיים.",
+          "w": [
+            [
+              "substantially",
+              "באופן משמעותי, ניכר"
+            ],
+            [
+              "recession",
+              "מיתון"
+            ]
+          ]
+        },
+        {
+          "q": "The athlete continued to train every morning ___ she had been told by her doctor to rest.",
+          "o": [
+            "so that",
+            "as long as",
+            "even though",
+            "in case"
+          ],
+          "a": 2,
+          "ex": "«even though» = אף על פי ש. הרופא אמר לה לנוח, ובכל זאת היא המשיכה להתאמן: ויתור. «as long as» (כל עוד) היה הופך את הוראת הרופא לתנאי לאימון, וזה לא הגיוני.",
+          "w": [
+            [
+              "even though",
+              "אף על פי ש..."
+            ],
+            [
+              "as long as",
+              "כל עוד, בתנאי ש..."
+            ]
+          ]
+        },
+        {
+          "q": "Since the original documents were destroyed in a fire, historians are forced to ___ later copies whose accuracy cannot be fully confirmed.",
+          "o": [
+            "do without",
+            "dispose of",
+            "apply for",
+            "rely on"
+          ],
+          "a": 3,
+          "ex": "«rely on» = להסתמך על. המסמכים המקוריים נשרפו, ולכן ההיסטוריונים נאלצים להסתמך על העותקים המאוחרים. «do without» (להסתדר בלי) הפוך: אין להם ברירה אלא להשתמש בעותקים.",
+          "w": [
+            [
+              "rely on",
+              "להסתמך על"
+            ],
+            [
+              "accuracy",
+              "דיוק"
+            ]
+          ]
+        },
+        {
+          "q": "Many students record their lectures ___ review the material later at their own pace.",
+          "o": [
+            "let alone",
+            "so as to",
+            "rather than",
+            "so as not to"
+          ],
+          "a": 1,
+          "ex": "«so as to» = כדי ל. מקליטים את ההרצאה כדי לחזור על החומר אחר כך: מטרה. «so as not to» אומר «כדי לא לחזור על החומר», וזה הפוך מהסיבה שמקליטים. «rather than» (במקום) ו-«let alone» (ועל אחת כמה וכמה לא) לא מתאימים למשמעות.",
+          "w": [
+            [
+              "so as to",
+              "כדי ל..."
+            ],
+            [
+              "at one's own pace",
+              "בקצב של עצמו"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

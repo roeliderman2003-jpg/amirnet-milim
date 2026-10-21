@@ -421,7 +421,7 @@ function topBar() {
 }
 function navBar() {
   const b = (v, ic, t) => `<button class="${view === v ? 'on' : ''}" onclick="go('${v}')"><span class="ic">${ic}</span>${t}</button>`;
-  return `<nav class="nav">${b('home', '🏠', 'לימוד')}${b('dict', '📖', 'מילון')}${b('settings', '⚙️', 'הגדרות')}</nav>`;
+  return `<nav class="nav">${b('home', '🏠', 'לימוד')}${b('sims', '📝', 'מבחנים')}${b('dict', '📖', 'מילון')}${b('settings', '⚙️', 'הגדרות')}</nav>`;
 }
 function go(v) { view = v; render(); window.scrollTo(0, 0); }
 
@@ -663,7 +663,7 @@ function toast(t) {
 function render() {
   const app = document.getElementById('app');
   app.className = view;
-  app.innerHTML = !ME ? renderLogin() : view === 'lesson' && L ? renderLesson() : view === 'dict' ? renderDict() : view === 'settings' ? renderSettings() : renderHome();
+  app.innerHTML = !ME ? renderLogin() : view === 'lesson' && L ? renderLesson() : view === 'sims' && window.renderSims ? renderSims() : view === 'dict' ? renderDict() : view === 'settings' ? renderSettings() : renderHome();
   const ty = document.getElementById('ty');
   if (ty && !ty.disabled) setTimeout(() => ty.focus(), 50);
 }

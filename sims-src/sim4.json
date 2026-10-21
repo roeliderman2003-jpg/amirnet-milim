@@ -1,0 +1,598 @@
+{
+  "title": "סימולציה 4 · מתקדם",
+  "level": 3,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Because fresh water had become ___ in the region after three dry winters, farmers were forced to ration it among their crops.",
+          "o": [
+            "abundant",
+            "transparent",
+            "scarce",
+            "fragile"
+          ],
+          "a": 2,
+          "ex": "«scarce» = נדיר, מועט. אחרי שלושה חורפים יבשים יש מעט מים, ולכן החקלאים נאלצו לחלק אותם במנות. «abundant» (בשפע) הוא ההפך: אם היו מים בשפע לא היה צורך לקצוב אותם.",
+          "w": [
+            [
+              "scarce",
+              "נדיר, מועט"
+            ],
+            [
+              "ration",
+              "לחלק במנות קצובות"
+            ],
+            [
+              "abundant",
+              "שופע, בשפע"
+            ]
+          ]
+        },
+        {
+          "q": "___ the strong objections of local residents, the city council voted to build the new highway along the river.",
+          "o": [
+            "Notwithstanding",
+            "Owing to",
+            "In view of",
+            "By virtue of"
+          ],
+          "a": 0,
+          "ex": "«notwithstanding» = על אף, למרות. התושבים התנגדו, ובכל זאת המועצה הצביעה בעד הכביש: זה ניגוד, ולכן צריך מילת ויתור. «owing to» ו-«in view of» נותנים סיבה, וזה לא הגיוני שההתנגדות היא הסיבה לבנות.",
+          "w": [
+            [
+              "notwithstanding",
+              "על אף, למרות"
+            ],
+            [
+              "owing to",
+              "בשל, עקב"
+            ],
+            [
+              "objection",
+              "התנגדות"
+            ]
+          ]
+        },
+        {
+          "q": "Without regular maintenance, the old wooden bridge continued to ___ until engineers finally declared it unsafe for traffic.",
+          "o": [
+            "flourish",
+            "accelerate",
+            "comply",
+            "deteriorate"
+          ],
+          "a": 3,
+          "ex": "«deteriorate» = להידרדר, להתבלות. גשר בלי תחזוקה הולך ומתקלקל עד שהוא לא בטוח. «flourish» (לשגשג) הוא ההפך הגמור.",
+          "w": [
+            [
+              "deteriorate",
+              "להידרדר, להתבלות"
+            ],
+            [
+              "maintenance",
+              "תחזוקה"
+            ],
+            [
+              "flourish",
+              "לשגשג, לפרוח"
+            ]
+          ]
+        },
+        {
+          "q": "The new drug lowered blood pressure in most of the patients who took it, ___ reducing their risk of suffering a heart attack.",
+          "o": [
+            "despite",
+            "thereby",
+            "instead of",
+            "unlike"
+          ],
+          "a": 1,
+          "ex": "«thereby» = ובכך, על ידי כך. הורדת לחץ הדם היא הדרך שבה ירד הסיכון להתקף לב, כלומר זו תוצאה. «despite» (למרות) יוצר ניגוד שאין כאן, ו-«instead of» אומר שהסיכון לא ירד.",
+          "w": [
+            [
+              "thereby",
+              "ובכך, על ידי כך"
+            ],
+            [
+              "instead of",
+              "במקום"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The lawyer's argument was so ___ that even the judge, who had seemed doubtful at first, was eventually persuaded.",
+          "o": [
+            "tedious",
+            "compelling",
+            "ambiguous",
+            "reluctant"
+          ],
+          "a": 1,
+          "ex": "«compelling» = משכנע, חזק. הטיעון שכנע אפילו שופט שהיה בספק. «ambiguous» (דו-משמעי) הוא תכונה שמחלישה טיעון, לא כזו שמשכנעת.",
+          "w": [
+            [
+              "compelling",
+              "משכנע, חזק"
+            ],
+            [
+              "persuade",
+              "לשכנע"
+            ],
+            [
+              "ambiguous",
+              "דו-משמעי"
+            ]
+          ]
+        },
+        {
+          "q": "The museum agreed to lend the famous painting to the exhibition, ___ only for a limited period of three weeks.",
+          "o": [
+            "hence",
+            "whereby",
+            "lest",
+            "albeit"
+          ],
+          "a": 3,
+          "ex": "«albeit» = אם כי. המוזיאון הסכים להשאיל, אבל עם הגבלה (רק לשלושה שבועות): זה ויתור חלקי. «hence» (ולכן) היה הופך את ההגבלה לתוצאה של ההסכמה, וזה לא הגיוני.",
+          "w": [
+            [
+              "albeit",
+              "אם כי"
+            ],
+            [
+              "hence",
+              "מכאן, ולכן"
+            ]
+          ]
+        },
+        {
+          "q": "Planting trees along the river banks can ___ the damage caused by floods, although it cannot prevent flooding altogether.",
+          "o": [
+            "mitigate",
+            "intensify",
+            "precede",
+            "conceal"
+          ],
+          "a": 0,
+          "ex": "«mitigate» = למתן, להקל. העצים מקטינים את הנזק, אבל (although) לא מונעים את השיטפון לגמרי. «intensify» (להגביר) הוא ההפך, ואז החלק השני עם «although» לא מתחבר.",
+          "w": [
+            [
+              "mitigate",
+              "למתן, להקל"
+            ],
+            [
+              "intensify",
+              "להגביר, להחריף"
+            ],
+            [
+              "altogether",
+              "לגמרי"
+            ]
+          ]
+        },
+        {
+          "q": "Unlike the old system, ___ every student was given exactly the same exam, the new program allows teachers to adapt tests to individual needs.",
+          "o": [
+            "whereas",
+            "thereby",
+            "whereby",
+            "hence"
+          ],
+          "a": 2,
+          "ex": "«whereby» = שבאמצעותו, שלפיו. הוא מתאר את השיטה הישנה: שיטה שלפיה כל תלמיד קיבל אותו מבחן. «whereas» (בעוד ש) מוסיף ניגוד שני, אבל הניגוד כבר נאמר במילה «Unlike».",
+          "w": [
+            [
+              "whereby",
+              "שבאמצעותו, שלפיו"
+            ],
+            [
+              "whereas",
+              "בעוד ש..., ואילו"
+            ],
+            [
+              "adapt",
+              "להתאים"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "Counting the Invisible: Microplastics in the Deep Sea",
+      "text": [
+        "For decades, public concern about plastic in the ocean focused on what could be seen: bottles floating on the surface and bags washed up on beaches. In recent years, however, researchers have turned their attention to the deep sea. Microplastics, fragments smaller than five millimeters, have been found in sediments thousands of meters below the surface, and even at the bottom of the deepest trenches. Many scientists now suspect that the ocean floor holds far more plastic than the surface does, although no one can yet say how much.",
+        "One reason for this uncertainty is that the deep sea is vast and expensive to reach. Collecting a single core of sediment may require a research ship, a trained crew and specialized equipment for several weeks. Hence, samples are scarce, and most come from a handful of locations that may not represent the ocean floor as a whole. Moreover, the particles themselves are tiny. The smallest cannot be seen even under an ordinary microscope, and all of them must first be separated from sand, shells and organic matter. This is a slow process whereby a sample is treated with chemicals, some of which can damage certain types of plastic and make them harder to identify.",
+        "A further difficulty is contamination. Researchers' clothing, their equipment and even the air in the laboratory constantly shed tiny plastic fibers. Unless strict precautions are taken, a sample may end up containing fibers from the laboratory, as opposed to the seabed. Several early studies were later found to have overestimated the amount of plastic for exactly this reason. Consequently, many laboratories now process 'blank' samples, containers of clean water handled in exactly the same way as the real ones, in order to estimate how much contamination occurs.",
+        "Notwithstanding these obstacles, accurate measurements matter. Microplastics on the seafloor may be swallowed by the creatures that live there and passed up the food chain. Some researchers argue that efforts to reduce plastic waste should not wait for precise figures; others caution that without reliable data it will be impossible to judge whether such efforts are working. Both groups agree, however, that standardized methods are needed so that results from different laboratories can be compared."
+      ],
+      "qs": [
+        {
+          "q": "The main purpose of the passage is to",
+          "o": [
+            "argue that microplastics are more harmful in the deep sea than at the surface",
+            "describe a new technology for removing plastic from the ocean floor",
+            "show that all studies of deep-sea microplastics are unreliable",
+            "explain why the amount of microplastics in the deep sea is hard to determine"
+          ],
+          "a": 3,
+          "ex": "כל הקטע עוסק בקשיים במדידה: המקום רחוק ויקר (פסקה 2), החלקיקים זעירים (פסקה 2), זיהום במעבדה (פסקה 3). הקטע לא משווה כמה הפלסטיק מזיק בכל מקום, ולא אומר שכל המחקרים לא אמינים, רק כמה מחקרים מוקדמים.",
+          "w": [
+            [
+              "determine",
+              "לקבוע, לברר"
+            ],
+            [
+              "unreliable",
+              "לא אמין"
+            ]
+          ]
+        },
+        {
+          "q": "According to the second paragraph, one reason deep-sea samples may give a misleading picture is that",
+          "o": [
+            "they are collected from only a small number of places",
+            "the chemicals used to treat them add plastic particles",
+            "the particles in them are too large to separate from sand",
+            "research ships often lose them during long journeys"
+          ],
+          "a": 0,
+          "ex": "בפסקה 2 כתוב שרוב הדגימות מגיעות מ-«a handful of locations» (מעט מקומות) שאולי לא מייצגים את כל קרקעית האוקיינוס. הכימיקלים לא מוסיפים פלסטיק, הם עלולים לפגוע בו, והחלקיקים זעירים ולא גדולים.",
+          "w": [
+            [
+              "a handful of",
+              "קומץ, מעט"
+            ],
+            [
+              "represent",
+              "לייצג"
+            ],
+            [
+              "misleading",
+              "מטעה"
+            ]
+          ]
+        },
+        {
+          "q": "In the third paragraph, the word 'shed' could best be replaced by",
+          "o": [
+            "store",
+            "hide",
+            "release",
+            "collect"
+          ],
+          "a": 2,
+          "ex": "בגדים, ציוד ואוויר המעבדה «shed» סיבי פלסטיק, כלומר משחררים ומפזרים אותם, וכך הסיבים נכנסים לדגימות. «collect» (לאסוף) הוא כמעט ההפך: אם הם היו אוספים סיבים, לא היה זיהום.",
+          "w": [
+            [
+              "shed",
+              "להשיר, לשחרר"
+            ],
+            [
+              "release",
+              "לשחרר"
+            ],
+            [
+              "contamination",
+              "זיהום"
+            ]
+          ]
+        },
+        {
+          "q": "The third paragraph mainly serves to",
+          "o": [
+            "suggest that laboratory research on microplastics should be abandoned",
+            "point out a source of error in measurement and how scientists deal with it",
+            "compare the amount of plastic in clothing with the amount in the ocean",
+            "prove that early estimates of deep-sea plastic were too low"
+          ],
+          "a": 1,
+          "ex": "פסקה 3 מציגה בעיה (זיהום מהמעבדה שמגדיל את הכמות שנמדדת) ואת הפתרון (דגימות «blank»). המחקרים המוקדמים העריכו יותר מדי (overestimated) ולא פחות מדי, ולכן התשובה האחרונה הפוכה.",
+          "w": [
+            [
+              "overestimate",
+              "להעריך יותר מדי"
+            ],
+            [
+              "consequently",
+              "כתוצאה מכך, לפיכך"
+            ],
+            [
+              "as opposed to",
+              "בניגוד ל..."
+            ]
+          ]
+        },
+        {
+          "q": "According to the last paragraph, researchers who disagree about when to act",
+          "o": [
+            "share the view that laboratories need common methods of measurement",
+            "agree that the current figures are accurate enough",
+            "believe that creatures on the seafloor do not swallow microplastics",
+            "argue that plastic waste cannot be reduced"
+          ],
+          "a": 0,
+          "ex": "בסוף הפסקה: «Both groups agree» שצריך שיטות אחידות (standardized) כדי להשוות בין מעבדות. הם לא מסכימים שהנתונים מדויקים מספיק: קבוצה אחת אומרת במפורש שאין עדיין נתונים אמינים.",
+          "w": [
+            [
+              "standardized",
+              "אחיד, תקני"
+            ],
+            [
+              "caution",
+              "להזהיר"
+            ],
+            [
+              "notwithstanding",
+              "על אף, למרות"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Although the new irrigation method reduced water use on most of the farms that adopted it, researchers caution that it has not yet been tested in regions where rainfall is extremely scarce.",
+          "o": [
+            "Because the new irrigation method has been tested in very dry regions, researchers believe that it will reduce water use on all farms.",
+            "The new irrigation method cut water use on most farms using it; nevertheless, researchers warn that it has yet to be tried in areas with very little rain.",
+            "Researchers warn that the new irrigation method reduced water use on only a few farms, since it was mainly used in regions with very little rainfall.",
+            "Although researchers have tested the new irrigation method in extremely dry regions, it failed to reduce water use on most of the farms that adopted it."
+          ],
+          "a": 1,
+          "ex": "התשובה הנכונה שומרת על שני החלקים: חיסכון ברוב החוות (most = the majority), ואזהרה שהשיטה עוד לא נבדקה באזורים יבשים (not yet = has yet to). התשובה השלישית משנה «most» ל-«only a few» ומוסיפה סיבה שלא הייתה במקור.",
+          "w": [
+            [
+              "not yet",
+              "עוד לא"
+            ],
+            [
+              "caution",
+              "להזהיר"
+            ],
+            [
+              "scarce",
+              "נדיר, מועט"
+            ]
+          ]
+        },
+        {
+          "q": "Children who eat breakfast regularly tend to perform better at school, but this does not necessarily mean that eating breakfast is what causes their higher grades, as other factors may be involved.",
+          "o": [
+            "Since eating breakfast improves children's grades, schools should make sure that every student eats breakfast regularly.",
+            "Children who eat breakfast regularly do not perform better at school than other children, because other factors determine their grades.",
+            "Other factors, rather than breakfast, are what cause some children both to eat breakfast regularly and to get higher grades at school.",
+            "A link exists between regularly eating breakfast and doing well at school; however, it is possible that something other than breakfast accounts for the better results."
+          ],
+          "a": 3,
+          "ex": "המשפט אומר שיש קשר (מתאם) בין ארוחת בוקר לציונים, אבל לא בהכרח שהיא הסיבה. התשובה הנכונה אומרת בדיוק את זה (it is possible). התשובה השלישית מלכודת: היא קובעת בוודאות שגורמים אחרים הם הסיבה, בעוד שבמקור כתוב רק «may».",
+          "w": [
+            [
+              "tend to",
+              "נוטה ל..."
+            ],
+            [
+              "necessarily",
+              "בהכרח"
+            ],
+            [
+              "account for",
+              "להסביר, להיות הגורם ל..."
+            ]
+          ]
+        },
+        {
+          "q": "The museum's ancient manuscripts are extremely fragile and deteriorate quickly when exposed to light; hence, only a small number of them are displayed to the public at any given time.",
+          "o": [
+            "Because only a few of the museum's ancient manuscripts are displayed at once, they deteriorate quickly when exposed to light.",
+            "Although the museum's ancient manuscripts are very fragile, most of them are displayed to the public, since light hardly affects them.",
+            "Since light causes the museum's very delicate ancient manuscripts to decay rapidly, just a few of them are shown to visitors at once.",
+            "The museum displays all of its ancient manuscripts to the public, even though light causes a small number of them to deteriorate."
+          ],
+          "a": 2,
+          "ex": "«hence» = ולכן: הסיבה היא שהאור הורס את כתבי היד, והתוצאה היא שמציגים מעט מהם. התשובה הנכונה שומרת על הכיוון הזה עם «Since». התשובה הראשונה הופכת סיבה ותוצאה.",
+          "w": [
+            [
+              "hence",
+              "מכאן, ולכן"
+            ],
+            [
+              "deteriorate",
+              "להידרדר, להתבלות"
+            ],
+            [
+              "fragile",
+              "שביר, עדין"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "The new tax is likely to reduce pollution only insofar as companies find it cheaper to adopt cleaner technologies than to keep paying the tax on their emissions.",
+          "o": [
+            "The new tax will probably lower pollution only to the extent that switching to cleaner technologies costs companies less than continuing to pay the tax on their emissions.",
+            "The new tax will certainly reduce pollution, because companies will always prefer cleaner technologies to paying any tax.",
+            "Companies will adopt cleaner technologies only if the new tax fails to reduce pollution from their emissions.",
+            "Since cleaner technologies are cheaper than the new tax, companies have already stopped paying the tax on their emissions."
+          ],
+          "a": 0,
+          "ex": "«insofar as» = במידה ש..., ככל ש... = «to the extent that». המס יוריד זיהום רק בתנאי שטכנולוגיה נקייה זולה יותר מהמס. התשובה השנייה הופכת «likely» (סביר) ל-«certainly» (בוודאות) ומבטלת את התנאי.",
+          "w": [
+            [
+              "insofar as",
+              "במידה ש..., ככל ש..."
+            ],
+            [
+              "emissions",
+              "פליטות"
+            ],
+            [
+              "adopt",
+              "לאמץ"
+            ]
+          ]
+        },
+        {
+          "q": "The treaty, albeit signed by nearly every country in the region, has had little effect so far, since few of the signatories have passed the laws needed to enforce it.",
+          "o": [
+            "Because almost every country in the region signed the treaty, it has already had a considerable effect, although a few countries have not yet passed laws to enforce it.",
+            "Few countries in the region agreed to sign the treaty, and as a result it has had hardly any effect so far, even though the laws needed to enforce it were passed.",
+            "Although almost all the region's countries signed the treaty, it has achieved very little so far, as only a small number of them have enacted the laws required to enforce it.",
+            "The treaty has had little effect so far, since nearly every country in the region refused to sign it until the necessary laws were passed."
+          ],
+          "a": 2,
+          "ex": "«albeit» = אם כי, «little» ו-«few» = מעט, כמעט אין. כמעט כולן חתמו, ובכל זאת להסכם כמעט אין השפעה כי רק מעט מדינות חוקקו חוקים. התשובה הראשונה מלכודת: «a few» (כמה) רומז שרוב המדינות כבר חוקקו, והיא גם הופכת «little effect» להשפעה ניכרת.",
+          "w": [
+            [
+              "albeit",
+              "אם כי"
+            ],
+            [
+              "few",
+              "מעט (כמעט אין)"
+            ],
+            [
+              "enforce",
+              "לאכוף"
+            ]
+          ]
+        },
+        {
+          "q": "As opposed to earlier surveys, which relied on what people reported about their own diets, the new study used blood tests, thereby providing a more objective measure of what participants actually ate.",
+          "o": [
+            "Like earlier surveys, the new study relied on participants' own reports of their diets, and therefore its measure of what they ate was more objective.",
+            "The new study combined blood tests with what people reported about their own diets, so as to confirm the results that earlier surveys had obtained.",
+            "Earlier surveys used blood tests to measure what people actually ate, whereas the new study relied on participants' reports, which are less objective.",
+            "Unlike previous surveys, which depended on people's self-reports, the new study used blood tests and in this way measured more objectively what participants really ate."
+          ],
+          "a": 3,
+          "ex": "«as opposed to» = «unlike» (בניגוד ל...), ו-«thereby» = «in this way» (ובכך). הסקרים הקודמים נשענו על דיווח עצמי, והמחקר החדש על בדיקות דם. התשובה השלישית מחליפה בין הסקרים הישנים למחקר החדש.",
+          "w": [
+            [
+              "as opposed to",
+              "בניגוד ל..."
+            ],
+            [
+              "thereby",
+              "ובכך, על ידי כך"
+            ],
+            [
+              "objective",
+              "אובייקטיבי, לא מוטה"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Since the instructions were ___, half of the participants understood the task one way and the other half understood it in a completely different way.",
+          "o": [
+            "concise",
+            "ambiguous",
+            "accurate",
+            "compelling"
+          ],
+          "a": 1,
+          "ex": "«ambiguous» = דו-משמעי. הוראות שאפשר להבין בשתי דרכים גרמו לכל קבוצה להבין אחרת. «accurate» (מדויק) היה מוביל להבנה אחידה, ההפך ממה שקרה.",
+          "w": [
+            [
+              "ambiguous",
+              "דו-משמעי"
+            ],
+            [
+              "concise",
+              "תמציתי"
+            ]
+          ]
+        },
+        {
+          "q": "The professor's explanation was so ___ that even students with no background in the field could follow it with ease.",
+          "o": [
+            "lucid",
+            "obscure",
+            "redundant",
+            "hostile"
+          ],
+          "a": 0,
+          "ex": "«lucid» = ברור, צלול. גם תלמידים בלי רקע הבינו בקלות, ולכן ההסבר היה ברור מאוד. «obscure» (מעורפל, לא ברור) הוא ההפך.",
+          "w": [
+            [
+              "lucid",
+              "ברור, צלול"
+            ],
+            [
+              "obscure",
+              "מעורפל, לא ברור"
+            ],
+            [
+              "background",
+              "רקע"
+            ]
+          ]
+        },
+        {
+          "q": "During a storm, the flash of lightning always ___ the sound of thunder, because light travels much faster than sound.",
+          "o": [
+            "follows",
+            "imitates",
+            "outlasts",
+            "precedes"
+          ],
+          "a": 3,
+          "ex": "«precede» = לבוא לפני. האור מהיר מהקול, ולכן רואים את הברק לפני ששומעים את הרעם. «follows» (בא אחרי) הופך את הסדר ומתנגש עם הסיבה שבסוף המשפט.",
+          "w": [
+            [
+              "precede",
+              "לבוא לפני, להקדים"
+            ],
+            [
+              "outlast",
+              "להחזיק מעמד יותר מ..."
+            ]
+          ]
+        },
+        {
+          "q": "The plan will succeed ___ the residents are willing to cooperate; without their support, it is likely to fail.",
+          "o": [
+            "although",
+            "unless",
+            "insofar as",
+            "whereas"
+          ],
+          "a": 2,
+          "ex": "«insofar as» = במידה ש..., ככל ש... ההצלחה תלויה בשיתוף הפעולה של התושבים, וזה מה שהחלק השני אומר (בלי תמיכה זה ייכשל). «unless» (אלא אם כן) הופך את התנאי: התוכנית תצליח רק אם התושבים לא ישתפו פעולה.",
+          "w": [
+            [
+              "insofar as",
+              "במידה ש..., ככל ש..."
+            ],
+            [
+              "unless",
+              "אלא אם כן"
+            ],
+            [
+              "cooperate",
+              "לשתף פעולה"
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

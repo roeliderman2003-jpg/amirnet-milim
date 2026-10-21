@@ -1,0 +1,254 @@
+{
+  "title": "סימולציה 2 · בסיס+",
+  "level": 1,
+  "chapters": [
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Many students are ___ to ask questions in class because they are afraid of looking foolish.",
+          "o": ["reluctant", "eager", "proud", "certain"],
+          "a": 0,
+          "ex": "«Reluctant» = לא ששׂ, מהסס. הסיבה (הם מפחדים להיראות טיפשים) מסבירה למה הם לא רוצים לשאול. «Eager» (להוט) הוא ההפך ולא מתאים לפחד.",
+          "w": [["reluctant", "מסרב, לא ששׂ"], ["eager", "להוט"], ["because", "כי, מפני ש..."]]
+        },
+        {
+          "q": "Tom prefers quiet mornings, ___ his sister enjoys loud music as soon as she wakes up.",
+          "o": ["so that", "whereas", "as a result", "because"],
+          "a": 1,
+          "ex": "«Whereas» = ואילו. משווים בין שני אנשים שונים: טום אוהב שקט, ואילו אחותו אוהבת מוזיקה רועשת. «Because» היה אומר שהמוזיקה שלה היא הסיבה שהוא אוהב שקט, וזה לא מה שהמשפט אומר.",
+          "w": [["whereas", "בעוד ש..., ואילו"], ["as soon as", "ברגע ש..., מיד כש..."]]
+        },
+        {
+          "q": "The number of people who smoke has ___ steadily over the last twenty years, thanks to strong public health campaigns.",
+          "o": ["increased", "doubled", "declined", "appeared"],
+          "a": 2,
+          "ex": "«Declined» = ירד. קמפיינים לבריאות הציבור אמורים להוריד את מספר המעשנים, ו«thanks to» (בזכות) מראה שזו תוצאה טובה. «Increased» ו«doubled» (עלה, הכפיל את עצמו) הם תוצאה רעה, ולא מתאימים ל«בזכות».",
+          "w": [["decline", "לרדת, לפחות"], ["thanks to", "הודות ל..., בזכות"], ["steadily", "בהתמדה, בהדרגה"]]
+        },
+        {
+          "q": "You should save your work every few minutes; ___, you may lose everything if the computer crashes.",
+          "o": ["moreover", "similarly", "for instance", "otherwise"],
+          "a": 3,
+          "ex": "«Otherwise» = אחרת. אם לא תשמור, תאבד הכול. החלק השני מתאר מה יקרה אם לא נעשה את מה שבחלק הראשון. «Moreover» (יתרה מזאת) רק מוסיף מידע ולא מתאים לאזהרה.",
+          "w": [["otherwise", "אחרת"], ["moreover", "יתרה מזאת"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "The museum staff check the temperature in each room every day to ___ that the old paintings are not damaged.",
+          "o": ["doubt", "ensure", "forget", "deny"],
+          "a": 1,
+          "ex": "«Ensure» = לוודא, להבטיח. הצוות בודק את הטמפרטורה כדי לוודא שהציורים לא ייפגעו. «Doubt» (לפקפק) ו«deny» (להכחיש) לא מסבירים למה בודקים כל יום.",
+          "w": [["ensure", "לוודא, להבטיח"], ["damage", "לגרום נזק"]]
+        },
+        {
+          "q": "___ the long delay at the airport, the passengers remained calm and polite.",
+          "o": ["Despite", "Because of", "Instead of", "In addition to"],
+          "a": 0,
+          "ex": "«Despite» = למרות. עיכוב ארוך בדרך כלל מעצבן, ובכל זאת הנוסעים נשארו רגועים: זה ניגוד. «Because of» היה אומר שהעיכוב גרם להם להיות רגועים, וזה לא הגיוני.",
+          "w": [["despite", "למרות (+שם עצם)"], ["because of", "בגלל (+שם עצם)"], ["remain", "להישאר"]]
+        },
+        {
+          "q": "Snow is ___ in this part of the country; most people who live here have seen it only once or twice in their lives.",
+          "o": ["common", "heavy", "welcome", "rare"],
+          "a": 3,
+          "ex": "«Rare» = נדיר. אם רוב התושבים ראו שלג רק פעם או פעמיים, השלג נדיר שם. «Common» (נפוץ) ו«heavy» (כבד) סותרים את החלק השני של המשפט.",
+          "w": [["rare", "נדיר"], ["common", "נפוץ"]]
+        },
+        {
+          "q": "You may borrow my car this weekend, ___ you return it with a full tank of gas.",
+          "o": ["even though", "whereas", "provided that", "so that"],
+          "a": 2,
+          "ex": "«Provided that» = בתנאי ש. מותר לקחת את הרכב בתנאי שתחזיר אותו עם מיכל מלא. «Even though» (אף על פי ש) מראה ניגוד, ואין כאן ניגוד אלא תנאי.",
+          "w": [["provided that", "בתנאי ש..."], ["even though", "אף על פי ש..."]]
+        }
+      ]
+    },
+    {
+      "type": "rc",
+      "title": "From Private Shelves to Public Spaces",
+      "text": [
+        "For most of history, books were rare and expensive. Before the invention of the printing press, each copy had to be written by hand, a process that could take months. As a result, collections of books belonged mainly to kings, religious institutions and wealthy families. Ordinary people were seldom allowed to enter these collections, and many of them could not read in any case.",
+        "This situation began to change in the nineteenth century. As cities grew and more children attended school, reformers argued that knowledge should not be limited to the rich. They believed that a free library would help workers improve themselves and become better citizens. In the middle of the century, Britain passed a law that allowed towns to use public money to open libraries, and the United States soon followed. Some officials were reluctant to spend tax money on books, but the idea gradually spread.",
+        "For about a hundred years, the main role of the public library was simple: to lend books and to provide a quiet place to read. In the late twentieth century, however, this role was challenged. Television, and later the internet, gave people new ways to find information and entertainment. Many experts predicted that the number of visitors would decline and that libraries would eventually disappear.",
+        "That prediction has not come true. Instead, libraries have changed their role. Today, many of them offer free internet access, classes in computer skills and help for people who are looking for work. In addition, they serve as meeting places for local groups and as safe spaces for children after school. Whereas the early library was mainly a storehouse of books, the modern library is closer to a community center. Its goal, however, remains the same: to ensure that everyone, whatever their income, has access to knowledge."
+      ],
+      "qs": [
+        {
+          "q": "The passage mainly discusses",
+          "o": [
+            "why the printing press made books cheaper",
+            "why the internet will soon replace public libraries",
+            "how public libraries began and how their role has changed over time",
+            "the differences between libraries in Britain and the United States"
+          ],
+          "a": 2,
+          "ex": "הקטע עובר מההיסטוריה (ספרים נדירים, ספריות ציבוריות במאה ה-19) אל השינוי בתפקיד הספרייה היום. האפשרות על האינטרנט סותרת את הפסקה האחרונה, שאומרת שהתחזית לא התגשמה.",
+          "w": [["role", "תפקיד"], ["mainly", "בעיקר"]]
+        },
+        {
+          "q": "According to the first paragraph, collections of books belonged mainly to the rich because",
+          "o": [
+            "books were copied slowly by hand and were therefore expensive",
+            "the law did not allow ordinary people to buy books",
+            "religious institutions refused to share their books",
+            "most ordinary people preferred to listen to stories"
+          ],
+          "a": 0,
+          "ex": "בפסקה 1: כל עותק נכתב ביד ולקח חודשים, ולכן «As a result» הספרים היו של מלכים ועשירים. אין בפסקה שום חוק שאסר לקנות ספרים.",
+          "w": [["as a result", "כתוצאה מכך"], ["wealthy", "עשיר"], ["seldom", "לעיתים רחוקות"]]
+        },
+        {
+          "q": "In the second paragraph, the word 'They' (in 'They believed that...') refers to",
+          "o": ["cities", "children", "workers", "reformers"],
+          "a": 3,
+          "ex": "המשפט הקודם אומר ש«reformers» (אנשי רפורמה) טענו שידע לא צריך להיות רק לעשירים, והם אלה ש«האמינו» שספרייה חינמית תעזור לפועלים. «Workers» מופיעים באותו משפט, אבל הם מי שעוזרים לו, לא מי שמאמין.",
+          "w": [["reformer", "מתקן חברתי, איש רפורמה"], ["argue", "לטעון"]]
+        },
+        {
+          "q": "According to the third paragraph, many experts expected that",
+          "o": [
+            "television would make people read more books",
+            "libraries would lose visitors and finally close",
+            "libraries would start to lend computers",
+            "the number of public libraries would grow quickly"
+          ],
+          "a": 1,
+          "ex": "בפסקה 3 כתוב שהמומחים חזו שמספר המבקרים «would decline» (ירד) ושהספריות «would eventually disappear» (ייעלמו בסוף). «Grow quickly» הוא ההפך.",
+          "w": [["predict", "לחזות"], ["eventually", "בסופו של דבר"], ["decline", "לרדת, לפחות"]]
+        },
+        {
+          "q": "The main purpose of the last paragraph is to",
+          "o": [
+            "explain why the experts' prediction was correct",
+            "describe how libraries have adapted to people's new needs",
+            "argue that libraries should stop lending books",
+            "compare libraries in poor and rich neighborhoods"
+          ],
+          "a": 1,
+          "ex": "הפסקה האחרונה מתארת מה הספריות מציעות היום (אינטרנט, קורסים, מקום מפגש) כלומר איך הן השתנו. היא פותחת במילים «That prediction has not come true», ולכן היא לא מסבירה שהתחזית הייתה נכונה.",
+          "w": [["instead", "במקום זאת"], ["in addition", "בנוסף"], ["whereas", "בעוד ש..., ואילו"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Although the new highway shortened the trip to the city, many local residents were unhappy with it because it brought noise and pollution to their neighborhood.",
+          "o": [
+            "Because the new highway made the trip to the city shorter, local residents were pleased with it in spite of the noise and pollution.",
+            "Many local residents opposed the new highway because it made the trip to the city longer and their area noisier.",
+            "The new highway made the trip to the city shorter; nevertheless, many people living nearby disliked it, since it caused noise and pollution in their area.",
+            "The noise and pollution in the neighborhood were caused by local residents who used the new highway to travel to the city."
+          ],
+          "a": 2,
+          "ex": "במקור: הכביש קיצר את הדרך, ובכל זאת התושבים לא מרוצים בגלל רעש וזיהום. «nevertheless» שומר על אותו ניגוד כמו «Although». התשובה הראשונה הופכת את המשמעות (התושבים מרוצים), והשנייה אומרת שהדרך התארכה.",
+          "w": [["although", "למרות ש... (+משפט)"], ["nevertheless", "למרות זאת, אף על פי כן"], ["resident", "תושב"]]
+        },
+        {
+          "q": "Scientists rarely agree on the exact causes of climate change in a particular region, since local weather is influenced by many factors at the same time.",
+          "o": [
+            "Because many factors affect local weather simultaneously, scientists seldom reach agreement about what exactly causes climate change in a specific region.",
+            "Scientists usually agree on the exact causes of climate change in a region, even though local weather is affected by many factors.",
+            "Since scientists rarely agree with each other, local weather in a particular region is influenced by many different factors.",
+            "Scientists rarely study local weather, because climate change in a particular region has only one main cause."
+          ],
+          "a": 0,
+          "ex": "«rarely» = «seldom» (לעיתים רחוקות), ו«since» = «because» (מכיוון ש). התשובה השנייה משנה את «rarely» ל«usually», והשלישית הופכת סיבה ותוצאה: כאילו חוסר ההסכמה גורם למזג האוויר.",
+          "w": [["rarely", "לעיתים רחוקות"], ["seldom", "לעיתים רחוקות"], ["simultaneously", "בו זמנית"]]
+        },
+        {
+          "q": "Unless the city council finds additional funding by the end of the year, the plan to build a new public swimming pool will be canceled.",
+          "o": [
+            "The city council will find additional funding by the end of the year, so the new public swimming pool will be built.",
+            "Even if the city council finds more money by the end of the year, the plan for the new swimming pool will be canceled.",
+            "The plan to build a new swimming pool was canceled because the city council spent its money before the end of the year.",
+            "The plan for a new public swimming pool will be canceled if the city council does not find more money before the year ends."
+          ],
+          "a": 3,
+          "ex": "«Unless» = אלא אם כן, כלומר «if ... not». התוכנית תבוטל אם לא יימצא כסף. «Even if» (גם אם) אומר שהיא תבוטל בכל מקרה, וזו משמעות אחרת. התשובה הראשונה טוענת בוודאות שהכסף יימצא, וזה לא כתוב במקור.",
+          "w": [["unless", "אלא אם כן"], ["even if", "גם אם, אפילו אם"], ["funding", "מימון"]]
+        }
+      ]
+    },
+    {
+      "type": "rs",
+      "qs": [
+        {
+          "q": "Unlike earlier studies, the new research found that children who read for pleasure every day also tend to perform better in mathematics.",
+          "o": [
+            "Like earlier studies, the new research found that children who are good at mathematics usually enjoy reading every day.",
+            "Unlike earlier studies, the new research found that children who read every day for pleasure tend to do worse in mathematics.",
+            "Earlier studies found that daily reading improves mathematics, but the new research found no connection between the two.",
+            "The new research, unlike previous studies, showed that children who read for enjoyment every day generally do better in math as well."
+          ],
+          "a": 3,
+          "ex": "«Unlike» = בניגוד ל. רק המחקר החדש מצא שילדים שקוראים להנאה כל יום מצליחים יותר במתמטיקה. התשובה השנייה משנה «better» ל«worse», והשלישית מחליפה בין המחקר החדש למחקרים הקודמים.",
+          "w": [["unlike", "בניגוד ל... (+שם עצם)"], ["tend to", "נוטה ל..."], ["perform", "לבצע, להצליח (במשימה)"]]
+        },
+        {
+          "q": "Demand for the company's products grew rapidly in the north; as a result, the company decided to open a second factory in that region.",
+          "o": [
+            "The company decided to open another factory in the north because demand for its products in that area had increased quickly.",
+            "Because the company opened a second factory in the north, demand for its products in that region grew rapidly.",
+            "Although demand for its products grew in the north, the company decided not to open a second factory there.",
+            "The company closed its factory in the north and opened a second one elsewhere, since demand in the north was falling."
+          ],
+          "a": 0,
+          "ex": "במקור: הביקוש עלה (סיבה), ולכן נפתח מפעל שני (תוצאה). «because» בתשובה הנכונה שומר על אותו סדר הגיוני. התשובה השנייה הופכת סיבה ותוצאה: כאילו המפעל גרם לביקוש.",
+          "w": [["as a result", "כתוצאה מכך"], ["demand", "ביקוש"], ["rapidly", "במהירות"]]
+        },
+        {
+          "q": "Despite being one of the oldest buildings in town, the library is visited by hundreds of young people every week, many of whom come to study for exams.",
+          "o": [
+            "Because the library is one of the oldest buildings in town, very few young people visit it, except to study for exams.",
+            "Hundreds of young people visit the library every week in order to see one of the oldest buildings in town.",
+            "Although the library is among the oldest buildings in town, hundreds of young people go there each week, and many of them study for their exams there.",
+            "The library, which was built only recently, is visited every week by hundreds of young people who study for exams."
+          ],
+          "a": 2,
+          "ex": "«Despite» = «Although» (למרות). הבניין ישן, ובכל זאת מאות צעירים מגיעים, ורבים מהם לומדים למבחנים. התשובה הראשונה אומרת שמעט מבקרים, והרביעית אומרת שהבניין חדש.",
+          "w": [["despite", "למרות (+שם עצם)"], ["although", "למרות ש... (+משפט)"], ["in order to", "כדי ל... (+פועל)"]]
+        }
+      ]
+    },
+    {
+      "type": "sc",
+      "qs": [
+        {
+          "q": "Driving while very tired can have serious ___, such as accidents that hurt both the driver and other people on the road.",
+          "o": ["benefits", "consequences", "habits", "reasons"],
+          "a": 1,
+          "ex": "«Consequences» = השלכות, תוצאות. תאונות הן תוצאה של נהיגה בעייפות. «Benefits» (יתרונות) הוא ההפך, ו«reasons» (סיבות) לא מתאים כי התאונה באה אחרי הנהיגה ולא לפניה.",
+          "w": [["consequence", "תוצאה, השלכה"], ["such as", "כגון, כמו"], ["benefit", "יתרון, תועלת"]]
+        },
+        {
+          "q": "The old bridge was in such poor ___ that the city closed it to traffic until the repairs were finished.",
+          "o": ["condition", "position", "attention", "opinion"],
+          "a": 0,
+          "ex": "«Condition» = מצב. הגשר היה במצב כל כך גרוע שסגרו אותו עד סוף התיקונים. «Position» (מיקום) לא מסביר למה צריך תיקונים.",
+          "w": [["condition", "מצב"], ["so... that", "כל כך... ש..."], ["until", "עד ש..."]]
+        },
+        {
+          "q": "Because the road was icy, the driver tried to ___ sudden stops, which could cause the car to slide.",
+          "o": ["practice", "enjoy", "require", "avoid"],
+          "a": 3,
+          "ex": "«Avoid» = להימנע מ. עצירות פתאומיות על כביש קפוא מסוכנות, ולכן הנהג ניסה להימנע מהן. «Practice» (להתאמן) או «enjoy» (ליהנות) לא הגיוניים כשמדובר בסכנה.",
+          "w": [["avoid", "להימנע מ..."], ["because", "כי, מפני ש... (+משפט)"]]
+        },
+        {
+          "q": "The team trained hard for months; ___, they won the national championship for the first time.",
+          "o": ["nevertheless", "for instance", "as a result", "in contrast"],
+          "a": 2,
+          "ex": "«As a result» = כתוצאה מכך. האימונים הקשים (סיבה) הובילו לזכייה (תוצאה). «Nevertheless» (למרות זאת) מתאים רק כשיש ניגוד, ואין ניגוד בין אימון קשה לניצחון.",
+          "w": [["as a result", "כתוצאה מכך"], ["nevertheless", "למרות זאת, אף על פי כן"]]
+        }
+      ]
+    }
+  ]
+}
