@@ -1,0 +1,562 @@
+{
+"but|con": [
+["The army base offered free meals to all soldiers, ___ the food was rarely hot.", "בסיס הצבא הציע ארוחות חינם לכל החיילים, אבל האוכל כמעט אף פעם לא היה חם."],
+["Our math teacher explains everything clearly, ___ she gives far too much homework.", "המורה שלנו למתמטיקה מסבירה הכול בבירור, אבל היא נותנת הרבה יותר מדי שיעורי בית."],
+["The scientists searched the cave for weeks, ___ they found no sign of the rare bat.", "המדענים חיפשו במערה במשך שבועות, אבל הם לא מצאו שום סימן לעטלף הנדיר."]
+],
+"however|con": [
+["Solar panels produce clean energy during the day. ___, they generate nothing at night without batteries.", "פאנלים סולאריים מייצרים אנרגיה נקייה במהלך היום. עם זאת, בלי סוללות הם לא מייצרים דבר בלילה."],
+["Most soldiers in the unit were exhausted after the march. ___, the commander ordered another hour of training.", "רוב החיילים ביחידה היו מותשים אחרי המסע. עם זאת, המפקד הורה על עוד שעה של אימון."],
+["My grandfather never finished high school. ___, he built one of the largest furniture companies in the country.", "סבא שלי מעולם לא סיים תיכון. עם זאת, הוא בנה את אחת מחברות הרהיטים הגדולות בארץ."]
+],
+"although|cnc": [
+["___ the bus was nearly empty, the man insisted on standing near the door.", "למרות שהאוטובוס היה כמעט ריק, האיש התעקש לעמוד ליד הדלת."],
+["___ my sister lives only two streets away, we hardly ever see each other.", "למרות שאחותי גרה רק שני רחובות מכאן, אנחנו כמעט אף פעם לא נפגשות."],
+["___ the athlete had a broken finger, she won the gold medal.", "למרות שלספורטאית הייתה אצבע שבורה, היא זכתה במדליית הזהב."]
+],
+"despite|cnc": [
+["___ years of research, scientists do not fully understand how dreams work.", "למרות שנים של מחקר, מדענים לא מבינים עד הסוף איך חלומות עובדים."],
+["The small grocery stayed open ___ the huge supermarket that opened next door.", "המכולת הקטנה נשארה פתוחה למרות הסופרמרקט הענק שנפתח בסמוך."],
+["___ being the youngest player on the team, Yael scored the winning goal.", "למרות שהייתה השחקנית הצעירה ביותר בקבוצה, יעל הבקיעה את שער הניצחון."]
+],
+"yet|cnc": [
+["The tiny island has no fresh water, ___ thousands of tourists visit it every summer.", "לאי הקטנטן אין מים מתוקים, ובכל זאת אלפי תיירים מבקרים בו בכל קיץ."],
+["The program looked simple on paper, ___ it took the engineers two years to build.", "התוכנה נראתה פשוטה על הנייר, ובכל זאת לקח למהנדסים שנתיים לבנות אותה."],
+["Dolphins spend their whole lives in the sea, ___ they must come up to the surface to breathe.", "דולפינים מבלים את כל חייהם בים, אך הם חייבים לעלות אל פני המים כדי לנשום."]
+],
+"while|con": [
+["In Israel the weekend starts on Friday, ___ in most European countries it starts on Saturday.", "בישראל סוף השבוע מתחיל ביום שישי, בעוד שברוב מדינות אירופה הוא מתחיל בשבת."],
+["Cats are usually happy to be alone, ___ dogs need company most of the day.", "חתולים בדרך כלל מרוצים להיות לבד, בעוד שכלבים צריכים חברה רוב היום."],
+["The northern team attacks fast and often, ___ the southern team prefers careful defense.", "הקבוצה הצפונית תוקפת מהר ולעתים קרובות, בעוד שהקבוצה הדרומית מעדיפה הגנה זהירה."]
+],
+"even though|cnc": [
+["The soldiers kept marching ___ their boots were full of water.", "החיילים המשיכו לצעוד אף על פי שהנעליים שלהם היו מלאות מים."],
+["Many people buy lottery tickets every week ___ the chance of winning is almost zero.", "אנשים רבים קונים כרטיסי לוטו כל שבוע אף על פי שהסיכוי לזכות הוא כמעט אפס."],
+["He refused to see a doctor ___ the pain in his back was getting worse every day.", "הוא סירב ללכת לרופא אף על פי שהכאב בגב שלו החמיר מיום ליום."]
+],
+"on the other hand|con": [
+["Working from home saves time on travel. ___, it can feel lonely without colleagues around.", "עבודה מהבית חוסכת זמן נסיעה. מצד שני, היא יכולה להרגיש בודדה בלי עמיתים בסביבה."],
+["A big dog can protect your house. ___, it needs a lot of space and food.", "כלב גדול יכול לשמור על הבית שלך. מצד שני, הוא צריך הרבה מקום ואוכל."],
+["Studying abroad gives you a new language and new friends. ___, you are far from your family.", "לימודים בחו״ל נותנים לך שפה חדשה וחברים חדשים. מצד שני, אתה רחוק מהמשפחה שלך."]
+],
+"whereas|con": [
+["Hebrew is written from right to left, ___ English is written from left to right.", "עברית נכתבת מימין לשמאל, ואילו אנגלית נכתבת משמאל לימין."],
+["Some employees care most about a high salary, ___ others care more about having free time.", "חלק מהעובדים מתעניינים בעיקר במשכורת גבוהה, ואילו אחרים מתעניינים יותר בזמן פנוי."],
+["Bees live in large organized colonies, ___ most spiders spend their lives alone.", "דבורים חיות במושבות גדולות ומאורגנות, ואילו רוב העכבישים חיים את חייהם לבד."]
+],
+"in spite of|cnc": [
+["___ the noise from the building site, the students managed to finish the exam.", "למרות הרעש מאתר הבנייה, התלמידים הצליחו לסיים את המבחן."],
+["The startup kept growing ___ the economic crisis that hit the whole country.", "חברת הסטארט-אפ המשיכה לצמוח למרות המשבר הכלכלי שפגע בכל המדינה."],
+["___ feeling nervous before the interview, Noam answered every question calmly.", "למרות שהרגיש לחוץ לפני הראיון, נועם ענה על כל שאלה ברוגע."]
+],
+"despite the fact that|cnc": [
+["___ the soldiers were far from home, they celebrated the holiday with great joy.", "למרות העובדה שהחיילים היו רחוקים מהבית, הם חגגו את החג בשמחה גדולה."],
+["Many teenagers stay up late ___ they have to wake up early for school.", "בני נוער רבים נשארים ערים עד מאוחר למרות העובדה שהם צריכים לקום מוקדם לבית הספר."],
+["___ the river looks clean, its water is not safe to drink.", "למרות העובדה שהנהר נראה נקי, המים שלו אינם בטוחים לשתייה."]
+],
+"nevertheless|cnc": [
+["The village had no hospital and very few roads. ___, its people lived long and healthy lives.", "בכפר לא היה בית חולים והיו בו מעט מאוד כבישים. למרות זאת, תושביו חיו חיים ארוכים ובריאים."],
+["The team's budget was the smallest in the league. ___, they reached the semi-final.", "התקציב של הקבוצה היה הקטן ביותר בליגה. למרות זאת, היא הגיעה לחצי הגמר."],
+["The professor's lectures are difficult to follow. ___, her course is always full of students.", "קשה לעקוב אחרי ההרצאות של הפרופסורית. למרות זאת, הקורס שלה תמיד מלא בסטודנטים."]
+],
+"nonetheless|cnc": [
+["The old map contained several mistakes. ___, it helped the explorers find the hidden valley.", "המפה הישנה הכילה כמה טעויות. בכל זאת, היא עזרה לחוקרים למצוא את העמק הנסתר."],
+["Online classes cannot replace a real teacher; ___, they help millions of people learn new skills.", "שיעורים מקוונים לא יכולים להחליף מורה אמיתי; בכל זאת, הם עוזרים למיליוני אנשים ללמוד מיומנויות חדשות."],
+["The storm destroyed part of the stage. ___, the festival opened on time the next morning.", "הסערה הרסה חלק מהבמה. בכל זאת, הפסטיבל נפתח בזמן למחרת בבוקר."]
+],
+"though|cnc": [
+["___ the bakery is tiny, people wait in line for an hour to buy its bread.", "אף על פי שהמאפייה קטנטנה, אנשים מחכים בתור שעה כדי לקנות את הלחם שלה."],
+["The pilot landed the plane safely, ___ one of its engines had stopped working.", "הטייס הנחית את המטוס בשלום, אף על פי שאחד המנועים שלו הפסיק לעבוד."],
+["___ she had never studied law, Maya won the court case on her own.", "אף על פי שמעולם לא למדה משפטים, מאיה ניצחה במשפט בכוחות עצמה."]
+],
+"in contrast|con": [
+["Young children learn mostly through play. ___, university students learn mostly from books and lectures.", "ילדים קטנים לומדים בעיקר דרך משחק. לעומת זאת, סטודנטים באוניברסיטה לומדים בעיקר מספרים והרצאות."],
+["The old factory employed three thousand workers. ___, the new automated plant needs only fifty.", "המפעל הישן העסיק שלושת אלפים עובדים. לעומת זאת, המפעל האוטומטי החדש צריך רק חמישים."],
+["Sharks have skeletons made of soft cartilage. ___, most other fish have skeletons made of bone.", "לכרישים יש שלד עשוי סחוס רך. לעומת זאת, לרוב הדגים האחרים יש שלד עשוי עצם."]
+],
+"by contrast|con": [
+["My grandparents wrote long letters to each other. ___, my friends send short messages with emojis.", "סבא וסבתא שלי כתבו זה לזה מכתבים ארוכים. לעומת זאת, החברים שלי שולחים הודעות קצרות עם אימוג׳ים."],
+["Traditional medicine treats the whole person. ___, modern medicine often focuses on a single organ.", "הרפואה המסורתית מטפלת באדם כולו. לעומת זאת, הרפואה המודרנית מתמקדת לעתים קרובות באיבר אחד."],
+["The army's old tanks were slow and heavy. ___, the new models are fast and light.", "הטנקים הישנים של הצבא היו איטיים וכבדים. לעומת זאת, הדגמים החדשים מהירים וקלים."]
+],
+"unlike|con": [
+["___ the moon, the sun produces its own light.", "בניגוד לירח, השמש מפיקה אור משלה."],
+["___ older computers, modern laptops can run for hours without being plugged in.", "בניגוד למחשבים ישנים, מחשבים ניידים מודרניים יכולים לעבוד שעות בלי להיות מחוברים לחשמל."],
+["___ most soldiers in his unit, Eyal had never held a weapon before basic training.", "בניגוד לרוב החיילים ביחידה שלו, אייל מעולם לא החזיק נשק לפני הטירונות."]
+],
+"still|cnc": [
+["The doctor warned him that the operation was risky. ___, he decided to go ahead with it.", "הרופא הזהיר אותו שהניתוח מסוכן. ובכל זאת, הוא החליט לעבור אותו."],
+["The hiking trail was closed because of falling rocks. ___, a few tourists tried to walk it.", "שביל ההליכה היה סגור בגלל סלעים נופלים. ובכל זאת, כמה תיירים ניסו ללכת בו."],
+["This laptop is heavy and slow compared to new models. ___, it does everything I need for school.", "המחשב הנייד הזה כבד ואיטי בהשוואה לדגמים חדשים. ובכל זאת, הוא עושה כל מה שאני צריך לבית הספר."]
+],
+"even so|cnc": [
+["The job offer came with a very high salary. ___, Dana turned it down to stay near her family.", "הצעת העבודה הגיעה עם משכורת גבוהה מאוד. ובכל זאת, דנה דחתה אותה כדי להישאר קרובה למשפחתה."],
+["The ancient coins in the museum are small and dull. ___, they are worth millions of dollars.", "המטבעות העתיקים במוזיאון קטנים ודהויים. ובכל זאת, הם שווים מיליוני דולרים."],
+["The army prepared for months for the operation. ___, many things went wrong on the day.", "הצבא התכונן במשך חודשים למבצע. למרות זאת, דברים רבים השתבשו ביום עצמו."]
+],
+"conversely|con": [
+["When interest rates go up, people save more money; ___, when rates go down, they spend more.", "כשהריבית עולה, אנשים חוסכים יותר כסף; ובאופן הפוך, כשהריבית יורדת, הם מוציאים יותר."],
+["Plants take in carbon dioxide and release oxygen; ___, animals take in oxygen and release carbon dioxide.", "צמחים קולטים פחמן דו-חמצני ומשחררים חמצן; ובאופן הפוך, בעלי חיים קולטים חמצן ומשחררים פחמן דו-חמצני."],
+["Regular exercise tends to lift a person's mood; ___, long periods of inactivity often lead to sadness.", "פעילות גופנית סדירה נוטה לשפר את מצב הרוח; ובאופן הפוך, תקופות ארוכות של חוסר פעילות מובילות לעתים קרובות לעצב."]
+],
+"as opposed to|con": [
+["The soldiers practiced shooting at night, ___ during the day, to prepare for real missions.", "החיילים התאמנו בירי בלילה, בניגוד לשעות היום, כדי להתכונן למשימות אמיתיות."],
+["Fresh vegetables, ___ canned ones, keep most of their vitamins.", "ירקות טריים, בניגוד לירקות משימורים, שומרים על רוב הוויטמינים שלהם."],
+["In this course, grades depend on group projects, ___ a single final exam.", "בקורס הזה, הציונים תלויים בפרויקטים קבוצתיים, בניגוד למבחן סופי אחד."]
+],
+"on the contrary|con": [
+["The army did not make him weaker. ___, it made him stronger and more confident.", "הצבא לא החליש אותו. להפך, הוא הפך אותו לחזק ובטוח יותר בעצמו."],
+["Learning a second language does not confuse young children. ___, it improves their thinking skills.", "לימוד שפה שנייה לא מבלבל ילדים צעירים. להפך, הוא משפר את כישורי החשיבה שלהם."],
+["The new tax did not reduce pollution in the city. ___, the air got even dirtier.", "המס החדש לא הפחית את הזיהום בעיר. להפך, האוויר נעשה מלוכלך עוד יותר."]
+],
+"notwithstanding|cnc": [
+["___ the bad weather forecast, thousands of runners gathered for the race.", "על אף תחזית מזג האוויר הגרועה, אלפי רצים התאספו למרוץ."],
+["___ its small size, the country has become a world leader in technology.", "על אף גודלה הקטן, המדינה הפכה למובילה עולמית בטכנולוגיה."],
+["___ two failed attempts, the company launched its satellite successfully on the third try.", "על אף שני ניסיונות כושלים, החברה שיגרה את הלוויין שלה בהצלחה בניסיון השלישי."]
+],
+"albeit|cnc": [
+["The soldier's injury healed, ___ slowly, and he returned to his unit after three months.", "הפציעה של החייל החלימה, אם כי לאט, והוא חזר ליחידה שלו אחרי שלושה חודשים."],
+["Our team won the match, ___ by only a single point.", "הקבוצה שלנו ניצחה במשחק, אם כי בנקודה אחת בלבד."],
+["The museum finally reopened, ___ with fewer rooms than before the fire.", "המוזיאון נפתח סוף סוף מחדש, אם כי עם פחות חדרים מאשר לפני השריפה."]
+],
+"regardless of|cnc": [
+["Every soldier receives the same basic training, ___ his or her future role.", "כל חייל מקבל את אותה טירונות בסיסית, בלי קשר לתפקיד העתידי שלו."],
+["The public library lends books to anyone, ___ where they live.", "הספרייה הציבורית משאילה ספרים לכל אחד, בלי קשר למקום שבו הוא גר."],
+["___ what the critics say, I plan to watch that film myself.", "בלי להתחשב במה שהמבקרים אומרים, אני מתכנן לצפות בסרט הזה בעצמי."]
+],
+"all the same|cnc": [
+["The test drive showed that the car had a few small problems. ___, we decided to buy it.", "נסיעת המבחן הראתה שיש לרכב כמה בעיות קטנות. בכל זאת, החלטנו לקנות אותו."],
+["The tickets to the cup final were very expensive. ___, my father bought two for us.", "הכרטיסים לגמר הגביע היו יקרים מאוד. בכל זאת, אבא שלי קנה לנו שניים."],
+["I knew the novel had a sad ending. ___, I cried when the hero died.", "ידעתי שלרומן יש סוף עצוב. בכל זאת, בכיתי כשהגיבור מת."]
+],
+"admittedly|cnc": [
+["___, army food is not very tasty, but there is always plenty of it.", "יש להודות שאוכל בצבא לא טעים במיוחד, אבל תמיד יש ממנו הרבה."],
+["___, my brother is not the best student in his class, but he works harder than anyone.", "יש להודות שאחי אינו התלמיד הטוב ביותר בכיתה, אבל הוא עובד קשה יותר מכולם."],
+["___, the study included only a few people, but its results were surprising.", "יש להודות שהמחקר כלל רק מעט אנשים, אבל התוצאות שלו היו מפתיעות."]
+],
+"also|add": [
+["The museum displays ancient coins. It ___ holds a large collection of old maps.", "המוזיאון מציג מטבעות עתיקים. הוא גם מחזיק אוסף גדול של מפות ישנות."],
+["Dana works as a nurse at night. She ___ studies law at the university during the day.", "דנה עובדת כאחות בלילה. היא גם לומדת משפטים באוניברסיטה במהלך היום."],
+["Bees make honey. They ___ help farmers by carrying pollen between flowers.", "דבורים מייצרות דבש. הן גם עוזרות לחקלאים בכך שהן מעבירות אבקה בין פרחים."]
+],
+"too|add": [
+["The soldiers were tired after the long march, and their officers were tired ___.", "החיילים היו עייפים אחרי המסע הארוך, והקצינים שלהם היו עייפים גם."],
+["Lions usually hunt in groups, and wolves hunt in groups ___.", "אריות צדים בדרך כלל בקבוצות, וגם זאבים צדים בקבוצות."],
+["My laptop broke last week, and my phone stopped working ___.", "המחשב הנייד שלי התקלקל בשבוע שעבר, וגם הטלפון שלי הפסיק לעבוד."]
+],
+"as well as|add": [
+["The course teaches English grammar ___ academic writing skills.", "הקורס מלמד דקדוק אנגלי וגם מיומנויות כתיבה אקדמית."],
+["Soldiers in this unit learn first aid ___ navigation in the desert.", "חיילים ביחידה הזו לומדים עזרה ראשונה וגם ניווט במדבר."],
+["Ripe bananas contain potassium ___ several important vitamins and fiber.", "בננות בשלות מכילות אשלגן וגם כמה ויטמינים חשובים וסיבים תזונתיים."]
+],
+"in addition|add": [
+["The army pays for soldiers' driving lessons. ___, it helps them pay for university later.", "הצבא משלם על שיעורי נהיגה לחיילים. בנוסף, הוא עוזר להם לשלם על האוניברסיטה בהמשך."],
+["Trees provide shade on hot days. ___, they clean the air in busy cities.", "עצים מספקים צל בימים חמים. בנוסף, הם מנקים את האוויר בערים עמוסות."],
+["The museum offers guided tours in five languages. ___, it runs workshops for children.", "המוזיאון מציע סיורים מודרכים בחמש שפות. בנוסף, הוא מפעיל סדנאות לילדים."]
+],
+"besides|add": [
+["We should take the train to Haifa. It's faster than driving; ___, parking there is a nightmare.", "כדאי לנו לנסוע ברכבת לחיפה. זה מהיר יותר מנסיעה ברכב; חוץ מזה, החניה שם היא סיוט."],
+["Walking to school is healthy for children. ___, it saves parents a lot of time in the morning.", "הליכה לבית הספר בריאה לילדים. חוץ מזה, היא חוסכת להורים הרבה זמן בבוקר."],
+["Mia decided not to apply for the job. The salary was low. ___, the office was very far from home.", "מיה החליטה לא להגיש מועמדות למשרה. המשכורת הייתה נמוכה. חוץ מזה, המשרד היה רחוק מאוד מהבית."]
+],
+"moreover|add": [
+["The new medicine works faster than the old one. ___, it has almost no side effects.", "התרופה החדשה פועלת מהר יותר מהישנה. יתרה מזאת, אין לה כמעט תופעות לוואי."],
+["The soldier showed great courage in battle. ___, he saved the lives of two wounded friends.", "החייל הפגין אומץ רב בקרב. יתרה מזאת, הוא הציל את חייהם של שני חברים פצועים."],
+["Reading to young children builds their vocabulary. ___, it strengthens the bond between parent and child.", "הקראה לילדים צעירים מרחיבה את אוצר המילים שלהם. יתרה מזאת, היא מחזקת את הקשר בין ההורה לילד."]
+],
+"furthermore|add": [
+["The research was poorly planned. ___, its results have never been repeated by other scientists.", "המחקר תוכנן בצורה גרועה. יתר על כן, התוצאות שלו מעולם לא שוחזרו על ידי מדענים אחרים."],
+["Public transport reduces traffic jams. ___, it lowers air pollution in big cities.", "תחבורה ציבורית מפחיתה פקקים. יתר על כן, היא מורידה את זיהום האוויר בערים גדולות."],
+["The applicant has ten years of experience. ___, she speaks three languages fluently.", "למועמדת יש עשר שנות ניסיון. יתר על כן, היא מדברת שלוש שפות באופן שוטף."]
+],
+"in addition to|add": [
+["___ basic training, new soldiers take a short course in first aid.", "בנוסף לטירונות, חיילים חדשים עוברים קורס קצר בעזרה ראשונה."],
+["The city library lends e-books ___ thousands of printed ones.", "ספריית העיר משאילה ספרים אלקטרוניים בנוסף לאלפי ספרים מודפסים."],
+["___ being an excellent doctor, my aunt is a talented painter.", "בנוסף להיותה רופאה מצוינת, דודה שלי היא ציירת מוכשרת."]
+],
+"additionally|add": [
+["The museum has a large collection of ancient pottery. ___, it displays several rare manuscripts.", "למוזיאון יש אוסף גדול של כלי חרס עתיקים. בנוסף לכך, הוא מציג כמה כתבי יד נדירים."],
+["Regular sleep improves memory. ___, it helps the body fight infections.", "שינה סדירה משפרת את הזיכרון. בנוסף לכך, היא עוזרת לגוף להילחם בזיהומים."],
+["Applicants must send a full CV. ___, they need to provide two letters of recommendation.", "המועמדים חייבים לשלוח קורות חיים מלאים. בנוסף לכך, עליהם לצרף שני מכתבי המלצה."]
+],
+"as well|add": [
+["Our neighbors adopted a puppy last month, and they took in a kitten ___.", "השכנים שלנו אימצו גור כלבים בחודש שעבר, והם גם לקחו חתלתול."],
+["The volcano destroyed the town, and it damaged several nearby villages ___.", "הר הגעש הרס את העיירה, והוא גם פגע בכמה כפרים סמוכים."],
+["The history course covers the modern period, and it deals with ancient civilizations ___.", "הקורס בהיסטוריה עוסק בתקופה המודרנית, והוא עוסק גם בתרבויות עתיקות."]
+],
+"what's more|add": [
+["The hotel room had a beautiful view of the sea. ___, breakfast was included in the price.", "לחדר במלון היה נוף יפהפה לים. ויותר מזה, ארוחת הבוקר הייתה כלולה במחיר."],
+["The new vaccine protects against the flu. ___, its effect lasts for two full years.", "החיסון החדש מגן מפני שפעת. ויותר מזה, ההשפעה שלו נמשכת שנתיים שלמות."],
+["Learning to code is fun for kids. ___, it teaches them to solve problems logically.", "לימוד תכנות הוא כיף לילדים. ויותר מזה, הוא מלמד אותם לפתור בעיות באופן הגיוני."]
+],
+"along with|add": [
+["The principal, ___ three teachers, met the parents to discuss the new rules.", "המנהלת, יחד עם שלושה מורים, נפגשה עם ההורים כדי לדון בכללים החדשים."],
+["The commander arrived at the base ___ a team of medics.", "המפקד הגיע לבסיס יחד עם צוות חובשים."],
+["The storm destroyed many houses, ___ the town's only bridge.", "הסערה הרסה בתים רבים, יחד עם הגשר היחיד של העיירה."]
+],
+"not only... but also|add": [
+["The soldiers were ___ cold ___ hungry after three days in the field.", "החיילים היו לא רק קרים אלא גם רעבים אחרי שלושה ימים בשטח."],
+["This museum ___ shows ancient art ___ offers free workshops for children.", "המוזיאון הזה לא רק מציג אמנות עתיקה אלא גם מציע סדנאות חינם לילדים."],
+["The volunteers ___ cleaned the beach ___ planted trees along the coast.", "המתנדבים לא רק ניקו את החוף אלא גם שתלו עצים לאורך קו החוף."]
+],
+"coupled with|add": [
+["Low salaries, ___ long working hours, caused many nurses to leave the profession.", "משכורות נמוכות, בצירוף שעות עבודה ארוכות, גרמו לאחיות רבות לעזוב את המקצוע."],
+["A strong economy ___ low unemployment helped the government win the election.", "כלכלה חזקה יחד עם אבטלה נמוכה עזרו לממשלה לנצח בבחירות."],
+["High temperatures, ___ a lack of rain, led to huge forest fires.", "טמפרטורות גבוהות, בצירוף מחסור בגשם, הובילו לשריפות יער ענקיות."]
+],
+"not to mention|add": [
+["The army base was far from any city, ___ the terrible food in the dining hall.", "בסיס הצבא היה רחוק מכל עיר, שלא לדבר על האוכל הנורא בחדר האוכל."],
+["Raising a child costs a lot of money, ___ the endless sleepless nights.", "גידול ילד עולה הרבה כסף, שלא לדבר על אינספור הלילות בלי שינה."],
+["Learning to fly a plane is very expensive, ___ the hundreds of hours of practice it requires.", "ללמוד להטיס מטוס זה יקר מאוד, שלא לדבר על מאות שעות האימון שזה דורש."]
+],
+"because|cau": [
+["The soldier got a weekend off ___ he had excelled in the training exercise.", "החייל קיבל סוף שבוע חופשי כי הוא הצטיין בתרגיל האימון."],
+["Penguins can survive the Antarctic cold ___ they have a thick layer of fat.", "פינגווינים יכולים לשרוד את הקור של אנטארקטיקה מפני שיש להם שכבת שומן עבה."],
+["Many families moved out of the city center ___ rents there had become too high.", "משפחות רבות עזבו את מרכז העיר כי שכר הדירה שם נעשה גבוה מדי."]
+],
+"because of|cau": [
+["The museum closed early yesterday ___ a power failure.", "המוזיאון נסגר מוקדם אתמול בגלל הפסקת חשמל."],
+["Many coral reefs are dying ___ rising ocean temperatures.", "שוניות אלמוגים רבות מתות בגלל הטמפרטורות העולות של האוקיינוס."],
+["He missed the job interview ___ a traffic jam on the highway.", "הוא החמיץ את ראיון העבודה בגלל פקק בכביש המהיר."]
+],
+"since|cau": [
+["___ nobody volunteered to clean the classroom, the teacher chose two students herself.", "מכיוון שאף אחד לא התנדב לנקות את הכיתה, המורה בחרה שני תלמידים בעצמה."],
+["___ the commander was sick, his deputy led the training that morning.", "מכיוון שהמפקד היה חולה, הסגן שלו העביר את האימון באותו בוקר."],
+["___ we have a long drive ahead of us, let's fill up the tank now.", "מכיוון שיש לנו נסיעה ארוכה לפנינו, בואו נמלא את המיכל עכשיו."]
+],
+"due to|cau": [
+["The football final was postponed ___ security concerns.", "גמר הכדורגל נדחה עקב חששות ביטחוניים."],
+["Many crops failed this year ___ a long drought.", "יבולים רבים נכשלו השנה עקב בצורת ארוכה."],
+["The soldier was released from service early ___ a serious knee injury.", "החייל שוחרר מהשירות מוקדם עקב פציעה קשה בברך."]
+],
+"as|cau": [
+["___ the elevator was broken, we had to carry the sofa up five floors.", "מכיוון שהמעלית הייתה מקולקלת, נאלצנו לסחוב את הספה חמש קומות למעלה."],
+["___ the commander had already left, the soldiers waited for new orders.", "מכיוון שהמפקד כבר עזב, החיילים חיכו לפקודות חדשות."],
+["___ I had no cash, I paid for the coffee with my phone.", "מכיוון שלא היה לי מזומן, שילמתי על הקפה בטלפון."]
+],
+"owing to|cau": [
+["The ferry did not sail that day ___ rough seas.", "המעבורת לא הפליגה באותו יום עקב ים סוער."],
+["___ poor sales, the company closed three of its stores.", "בשל מכירות חלשות, החברה סגרה שלוש מהחנויות שלה."],
+["Many students struggled with the exam ___ the unclear instructions.", "תלמידים רבים התקשו במבחן בשל ההוראות הלא ברורות."]
+],
+"thanks to|cau": [
+["___ GPS, drivers rarely get lost these days.", "הודות ל-GPS, נהגים כמעט לא הולכים לאיבוד בימינו."],
+["The team won the championship ___ its brilliant young coach.", "הקבוצה זכתה באליפות בזכות המאמן הצעיר והמבריק שלה."],
+["Many lives were saved ___ the quick work of the firefighters.", "חיים רבים ניצלו הודות לעבודה המהירה של הכבאים."]
+],
+"on account of|cau": [
+["The soldier received a medal ___ his bravery in battle.", "החייל קיבל מדליה בשל האומץ שלו בקרב."],
+["Flights to the island were canceled ___ the volcanic ash in the air.", "הטיסות לאי בוטלו בגלל האפר הוולקני באוויר."],
+["The old theater is protected by law ___ its historical importance.", "התיאטרון הישן מוגן בחוק בשל החשיבות ההיסטורית שלו."]
+],
+"given that|cau": [
+["___ the bridge is very old, engineers inspect it every single month.", "בהתחשב בכך שהגשר ישן מאוד, מהנדסים בודקים אותו בכל חודש."],
+["___ the soldiers had slept only two hours, their performance was impressive.", "בהתחשב בכך שהחיילים ישנו רק שעתיים, הביצועים שלהם היו מרשימים."],
+["___ most customers now pay by phone, the shop stopped accepting cash.", "בהתחשב בכך שרוב הלקוחות משלמים היום בטלפון, החנות הפסיקה לקבל מזומן."]
+],
+"as a result of|cau": [
+["___ global warming, glaciers are melting faster than ever.", "כתוצאה מההתחממות הגלובלית, קרחונים נמסים מהר יותר מאי פעם."],
+["Many workers lost their jobs ___ the factory's closure.", "עובדים רבים איבדו את מקום עבודתם כתוצאה מסגירת המפעל."],
+["___ his hard training, the young swimmer broke the national record.", "כתוצאה מהאימונים הקשים שלו, השחיין הצעיר שבר את השיא הלאומי."]
+],
+"for|cau": [
+["The soldiers moved quietly through the forest, ___ the enemy was close.", "החיילים נעו בשקט ביער, כי האויב היה קרוב."],
+["The old woman smiled at the letter, ___ it came from her long-lost brother.", "האישה הזקנה חייכה אל המכתב, כי הוא הגיע מאחיה שאבד לפני שנים רבות."],
+["The scientist checked her results again, ___ she could hardly believe them.", "המדענית בדקה שוב את התוצאות שלה, כי היא בקושי האמינה להן."]
+],
+"in view of|cau": [
+["___ the heavy losses, the company decided to close the branch.", "לאור ההפסדים הכבדים, החברה החליטה לסגור את הסניף."],
+["___ her excellent grades, the university offered Noa a full scholarship.", "לאור הציונים המצוינים שלה, האוניברסיטה הציעה לנועה מלגה מלאה."],
+["___ the coming storm, all fishing boats were ordered back to port.", "לאור הסערה המתקרבת, כל סירות הדיג קיבלו הוראה לחזור לנמל."]
+],
+"seeing that|cau": [
+["___ the bus is late again, let's just walk to the station.", "מאחר שהאוטובוס שוב מאחר, בואו פשוט נלך ברגל לתחנה."],
+["___ you know the city so well, you should be our guide today.", "מאחר שאתה מכיר את העיר כל כך טוב, כדאי שתהיה המדריך שלנו היום."],
+["___ the soldiers had finished their mission early, the commander let them rest.", "מאחר שהחיילים סיימו את המשימה שלהם מוקדם, המפקד נתן להם לנוח."]
+],
+"inasmuch as|cau": [
+["The research is important ___ it could lead to a cure for the disease.", "המחקר חשוב מאחר שהוא עשוי להוביל לתרופה למחלה."],
+["The company is responsible for the damage, ___ it ignored the safety rules.", "החברה אחראית לנזק, מאחר שהיא התעלמה מכללי הבטיחות."],
+["The soldier was praised ___ he had risked his life to save others.", "החייל זכה לשבחים מאחר שסיכן את חייו כדי להציל אחרים."]
+],
+"by virtue of|cau": [
+["The museum attracts visitors ___ its unique collection of ancient glass.", "המוזיאון מושך מבקרים בזכות האוסף הייחודי שלו של זכוכית עתיקה."],
+["___ his position as commander, he had the final word.", "מתוקף תפקידו כמפקד, המילה האחרונה הייתה שלו."],
+["Some animals survive in the desert ___ their ability to store water.", "חלק מבעלי החיים שורדים במדבר בזכות היכולת שלהם לאגור מים."]
+],
+"out of|cau": [
+["He kept the secret ___ loyalty to his best friend.", "הוא שמר את הסוד מתוך נאמנות לחבר הכי טוב שלו."],
+["Many people donate blood ___ a sense of duty.", "אנשים רבים תורמים דם מתוך תחושת חובה."],
+["She refused to fly ___ fear, so she took the train instead.", "היא סירבה לטוס מתוך פחד, ולכן נסעה ברכבת במקום."]
+],
+"so|res": [
+["The museum was closed for repairs, ___ we went to the zoo instead.", "המוזיאון היה סגור לשיפוצים, אז הלכנו לגן החיות במקום."],
+["The soldier forgot his ID card, ___ the guards did not let him enter the base.", "החייל שכח את החוגר שלו, לכן השומרים לא נתנו לו להיכנס לבסיס."],
+["The river had dried up, ___ the farmers dug new wells.", "הנהר התייבש, לכן החקלאים חפרו בארות חדשות."]
+],
+"therefore|res": [
+["Light travels faster than sound. ___, we see lightning before we hear thunder.", "האור נע מהר יותר מהקול. לכן, אנחנו רואים ברק לפני שאנחנו שומעים רעם."],
+["The company's profits fell sharply. ___, it cancelled all bonuses this year.", "הרווחים של החברה ירדו בחדות. לכן, היא ביטלה את כל הבונוסים השנה."],
+["The soldier was injured during training. ___, he could not take part in the march.", "החייל נפצע במהלך האימון. לכן, הוא לא יכול היה להשתתף במסע."]
+],
+"as a result|res": [
+["The factory installed new filters. ___, the air around the town became much cleaner.", "המפעל התקין מסננים חדשים. כתוצאה מכך, האוויר סביב העיירה נעשה נקי הרבה יותר."],
+["Maya practiced the piano every day for a year. ___, she was accepted to the music academy.", "מאיה התאמנה בפסנתר כל יום במשך שנה. כתוצאה מכך, היא התקבלה לאקדמיה למוזיקה."],
+["The army bought new night-vision equipment. ___, soldiers could operate safely in the dark.", "הצבא קנה ציוד ראיית לילה חדש. כתוצאה מכך, החיילים יכלו לפעול בבטחה בחושך."]
+],
+"thus|res": [
+["The new vaccine prevents infection and ___ saves thousands of lives every year.", "החיסון החדש מונע הדבקה וכך מציל אלפי חיים בכל שנה."],
+["The bank raised interest rates, ___ making loans more expensive.", "הבנק העלה את הריבית, וכך ייקר את ההלוואות."],
+["Heat makes metal expand; ___, bridges are built with small gaps between their parts.", "חום גורם למתכת להתרחב; לפיכך, גשרים נבנים עם רווחים קטנים בין החלקים שלהם."]
+],
+"consequently|res": [
+["The soldier ignored a direct order. ___, he was sent to military prison for a week.", "החייל התעלם מפקודה ישירה. כתוצאה מכך, הוא נשלח לכלא צבאי לשבוע."],
+["Fewer people are buying printed newspapers. ___, many papers have moved online.", "פחות אנשים קונים עיתונים מודפסים. כתוצאה מכך, עיתונים רבים עברו לאינטרנט."],
+["The patient did not finish his antibiotics; ___, the infection came back.", "המטופל לא סיים את האנטיביוטיקה שלו; כתוצאה מכך, הזיהום חזר."]
+],
+"hence|res": [
+["Sugar causes tooth decay; ___ the dentist's advice to avoid sweets.", "סוכר גורם לעששת; מכאן העצה של רופא השיניים להימנע ממתוקים."],
+["The town sits on a high hill, ___ its name, which means 'high place'.", "העיירה יושבת על גבעה גבוהה, ומכאן שמה, שפירושו ״מקום גבוה״."],
+["The soldiers trained in the desert for months; ___ their excellent performance in the heat.", "החיילים התאמנו במדבר במשך חודשים; מכאן הביצועים המצוינים שלהם בחום."]
+],
+"for this reason|res": [
+["The museum's paintings are sensitive to light. ___, the rooms are kept dim.", "הציורים במוזיאון רגישים לאור. מסיבה זו, החדרים נשמרים חשוכים למחצה."],
+["The soldier speaks three languages. ___, he was sent to work in intelligence.", "החייל מדבר שלוש שפות. מסיבה זו, הוא נשלח לעבוד במודיעין."],
+["The local river is heavily polluted. ___, swimming in it is strictly forbidden.", "הנהר המקומי מזוהם מאוד. מסיבה זו, הרחצה בו אסורה בהחלט."]
+],
+"so... that|res": [
+["The soldiers were ___ tired ___ they fell asleep in their boots.", "החיילים היו כל כך עייפים שהם נרדמו עם הנעליים."],
+["The exam questions were ___ confusing ___ even the best students made mistakes.", "שאלות המבחן היו כל כך מבלבלות שאפילו התלמידים הטובים ביותר טעו."],
+["The fog was ___ thick ___ the pilots could not see the runway.", "הערפל היה כל כך סמיך שהטייסים לא יכלו לראות את המסלול."]
+],
+"such... that|res": [
+["The general was ___ a strict officer ___ his soldiers feared him.", "הגנרל היה קצין כזה קפדן שהחיילים שלו פחדו ממנו."],
+["The museum has ___ a huge collection ___ you need a week to see everything.", "למוזיאון יש אוסף כזה ענק שצריך שבוע כדי לראות הכול."],
+["Noa gave ___ an inspiring speech ___ the whole audience stood up and clapped.", "נועה נשאה נאום כזה מעורר השראה שכל הקהל קם ומחא כפיים."]
+],
+"accordingly|res": [
+["The weather forecast warned of heavy snow. ___, the school canceled all classes.", "תחזית מזג האוויר הזהירה משלג כבד. בהתאם לכך, בית הספר ביטל את כל השיעורים."],
+["Soldiers are told the mission plan in advance and must prepare ___.", "החיילים מקבלים את תוכנית המשימה מראש וחייבים להתכונן בהתאם לכך."],
+["Customers asked for more vegetarian dishes. ___, the restaurant changed its menu.", "לקוחות ביקשו יותר מנות צמחוניות. בהתאם לכך, המסעדה שינתה את התפריט שלה."]
+],
+"thereby|res": [
+["The government lowered taxes on electric cars, ___ encouraging more people to buy them.", "הממשלה הורידה את המסים על מכוניות חשמליות, ובכך עודדה יותר אנשים לקנות אותן."],
+["The army opened its bases to the public, ___ helping citizens understand military life.", "הצבא פתח את הבסיסים שלו לציבור, ובכך עזר לאזרחים להבין את החיים הצבאיים."],
+["Students who read daily expand their vocabulary, ___ improving their test scores.", "תלמידים שקוראים כל יום מרחיבים את אוצר המילים שלהם, ובכך משפרים את הציונים שלהם במבחנים."]
+],
+"it follows that|res": [
+["All metals conduct electricity, and copper is a metal; ___ copper conducts electricity.", "כל המתכות מוליכות חשמל, ונחושת היא מתכת; מכאן נובע שנחושת מוליכה חשמל."],
+["The meeting starts at nine and lasts two hours; ___ it will end at eleven.", "הפגישה מתחילה בתשע ונמשכת שעתיים; מכאן נובע שהיא תסתיים באחת עשרה."],
+["Every soldier in the unit received the order; ___ Amit knew about it.", "כל חייל ביחידה קיבל את הפקודה; מכאן נובע שעמית ידע עליה."]
+],
+"in order to|pur": [
+["The soldiers dug deep trenches ___ protect themselves from enemy fire.", "החיילים חפרו תעלות עמוקות כדי להגן על עצמם מאש האויב."],
+["Scientists froze the samples ___ keep them fresh for future tests.", "המדענים הקפיאו את הדגימות כדי לשמור עליהן טריות לבדיקות עתידיות."],
+["The city built a new bridge ___ reduce traffic on the old one.", "העירייה בנתה גשר חדש כדי להפחית את התנועה על הגשר הישן."]
+],
+"so that|pur": [
+["The commander repeated the orders twice ___ every soldier would understand them.", "המפקד חזר על הפקודות פעמיים כדי שכל חייל יבין אותן."],
+["Farmers cover their crops at night ___ the frost won't damage them.", "חקלאים מכסים את היבולים שלהם בלילה כדי שהכפור לא יפגע בהם."],
+["My mother left the light on in the hallway ___ my little brother wouldn't be scared.", "אמא שלי השאירה את האור דולק במסדרון כדי שאחי הקטן לא יפחד."]
+],
+"so as to|pur": [
+["The soldiers moved at night ___ avoid being seen.", "החיילים נעו בלילה כדי להימנע מלהיראות."],
+["The museum limits the number of daily visitors ___ protect the ancient paintings.", "המוזיאון מגביל את מספר המבקרים היומי כדי להגן על הציורים העתיקים."],
+["Doctors wash their hands carefully ___ prevent the spread of infection.", "רופאים שוטפים ידיים בקפידה כדי למנוע את התפשטות הזיהום."]
+],
+"for the purpose of|pur": [
+["The army set up a special unit ___ rescuing people after earthquakes.", "הצבא הקים יחידה מיוחדת למטרת חילוץ אנשים אחרי רעידות אדמה."],
+["The satellite was launched ___ studying climate change.", "הלוויין שוגר לשם חקר שינויי האקלים."],
+["The survey was carried out ___ understanding why young people leave the village.", "הסקר נערך לשם הבנת הסיבות שבגללן צעירים עוזבים את הכפר."]
+],
+"in order that|pur": [
+["The soldiers were given maps ___ they could find their way in the dark.", "החיילים קיבלו מפות כדי שיוכלו למצוא את דרכם בחושך."],
+["The library extended its hours ___ students could study before their exams.", "הספרייה האריכה את שעות הפתיחה שלה כדי שסטודנטים יוכלו ללמוד לפני המבחנים."],
+["Scientists shared their data openly ___ other teams could check their results.", "המדענים שיתפו את הנתונים שלהם בגלוי כדי שצוותים אחרים יוכלו לבדוק את התוצאות שלהם."]
+],
+"with the aim of|pur": [
+["The army launched a new program ___ recruiting more women into combat units.", "הצבא השיק תוכנית חדשה במטרה לגייס יותר נשים ליחידות קרביות."],
+["Scientists are studying shark skin ___ developing better swimsuits.", "מדענים חוקרים את עור הכריש במטרה לפתח בגדי ים טובים יותר."],
+["The government built new schools in the south ___ reducing social gaps.", "הממשלה בנתה בתי ספר חדשים בדרום במטרה לצמצם פערים חברתיים."]
+],
+"lest|pur": [
+["The guard stayed awake all night ___ thieves enter the camp.", "השומר נשאר ער כל הלילה פן ייכנסו גנבים למחנה."],
+["Hikers must carry plenty of water ___ they suffer from dehydration in the desert.", "מטיילים חייבים לשאת הרבה מים כדי שלא יסבלו מהתייבשות במדבר."],
+["The teacher spoke slowly ___ the new students miss any of the instructions.", "המורה דיברה לאט כדי שהתלמידים החדשים לא יחמיצו אף אחת מההוראות."]
+],
+"if|cnd": [
+["___ you heat ice, it turns into water.", "אם מחממים קרח, הוא הופך למים."],
+["The soldier will get a weekend off ___ he passes the shooting test.", "החייל יקבל סוף שבוע חופשי אם הוא יעבור את מבחן הירי."],
+["___ the company does not cut costs, it will go bankrupt by next year.", "אם החברה לא תקצץ בהוצאות, היא תפשוט רגל עד השנה הבאה."]
+],
+"unless|cnd": [
+["The commander will not approve your leave ___ you get a doctor's note.", "המפקד לא יאשר את החופשה שלך אלא אם כן תביא אישור מרופא."],
+["Ice on the roads won't melt ___ the temperature rises above zero.", "הקרח בכבישים לא יימס אלא אם כן הטמפרטורה תעלה מעל אפס."],
+["Don't open the door ___ you know who is outside.", "אל תפתח את הדלת אלא אם כן אתה יודע מי נמצא בחוץ."]
+],
+"otherwise|cnd": [
+["Wear sunscreen at the beach; ___, you will get burned.", "תמרח קרם הגנה בחוף; אחרת, תקבל כוויות."],
+["The soldiers must stay quiet; ___, the enemy will discover their position.", "החיילים חייבים לשמור על שקט; אחרת, האויב יגלה את המיקום שלהם."],
+["You need to book tickets in advance; ___, there may be no seats left.", "צריך להזמין כרטיסים מראש; אחרת, ייתכן שלא יישארו מקומות."]
+],
+"as long as|cnd": [
+["Soldiers may use their phones on the base ___ they keep them away from secret areas.", "חיילים רשאים להשתמש בטלפונים בבסיס כל עוד הם מרחיקים אותם מאזורים סודיים."],
+["I don't mind which restaurant we choose ___ it has vegetarian options.", "לא אכפת לי איזו מסעדה נבחר, בתנאי שיש בה אפשרויות צמחוניות."],
+["Bread stays fresh for days ___ you keep it in a closed bag.", "לחם נשאר טרי במשך ימים כל עוד שומרים אותו בשקית סגורה."]
+],
+"provided that|cnd": [
+["Students may retake the exam ___ they attended at least eighty percent of the lessons.", "תלמידים רשאים לגשת שוב למבחן בתנאי שנכחו לפחות בשמונים אחוז מהשיעורים."],
+["The soldier will receive a scholarship ___ he completes his full service.", "החייל יקבל מלגה בתנאי שהוא ישלים את השירות המלא שלו."],
+["Tourists can enter the temple ___ they cover their shoulders.", "תיירים יכולים להיכנס למקדש בתנאי שהם מכסים את הכתפיים."]
+],
+"in case|cnd": [
+["The soldiers carried extra batteries ___ the radio stopped working.", "החיילים נשאו סוללות נוספות למקרה שהקשר יפסיק לעבוד."],
+["Save a copy of your thesis on a USB drive ___ your laptop crashes.", "שמור עותק של עבודת הגמר שלך על דיסק און קי למקרה שהמחשב הנייד יקרוס."],
+["My mother always keeps candles in the kitchen drawer ___ there is a power cut.", "אמא שלי תמיד שומרת נרות במגירה במטבח למקרה שתהיה הפסקת חשמל."]
+],
+"even if|cnd": [
+["I'll finish this marathon ___ I have to walk the last ten kilometers.", "אני אסיים את המרתון הזה גם אם אצטרך ללכת את עשרת הקילומטרים האחרונים."],
+["Some people will not change their opinion ___ you show them clear evidence.", "יש אנשים שלא ישנו את דעתם גם אם תראה להם הוכחות ברורות."],
+["Always wear a helmet when cycling, ___ the ride is short.", "תמיד תחבוש קסדה כשאתה רוכב על אופניים, אפילו אם הנסיעה קצרה."]
+],
+"whether|cnd": [
+["The commander must decide ___ to continue the mission or return to base.", "המפקד חייב להחליט האם להמשיך במשימה או לחזור לבסיס."],
+["Doctors still debate ___ coffee is good or bad for your heart.", "רופאים עדיין מתווכחים האם קפה טוב או רע ללב."],
+["Please let me know ___ you can come to the meeting tomorrow.", "בבקשה תודיע לי האם אתה יכול להגיע לפגישה מחר."]
+],
+"only if|cnd": [
+["Soldiers may leave the base ___ they have written permission.", "חיילים רשאים לצאת מהבסיס רק אם יש להם אישור בכתב."],
+["The bridge opens ___ a large ship needs to pass beneath it.", "הגשר נפתח רק אם ספינה גדולה צריכה לעבור מתחתיו."],
+["You will see the northern lights ___ the sky is completely clear.", "תראה את הזוהר הצפוני רק אם השמיים בהירים לגמרי."]
+],
+"on condition that|cnd": [
+["The bank lent him money ___ he paid it back within a year.", "הבנק הלווה לו כסף בתנאי שיחזיר אותו בתוך שנה."],
+["The army allowed the journalist to join the unit ___ she did not reveal any names.", "הצבא הרשה לעיתונאית להצטרף ליחידה בתנאי שלא תחשוף שמות."],
+["My parents let me go to the party ___ I was home by midnight.", "ההורים שלי הרשו לי ללכת למסיבה בתנאי שאהיה בבית עד חצות."]
+],
+"assuming that|cnd": [
+["___ the soldiers leave at dawn, they will reach the border by noon.", "בהנחה שהחיילים ייצאו עם שחר, הם יגיעו לגבול עד הצהריים."],
+["___ the experiment works, we can publish the results next year.", "בהנחה שהניסוי יצליח, נוכל לפרסם את התוצאות בשנה הבאה."],
+["___ interest rates stay low, more young couples will buy apartments.", "בהנחה שהריבית תישאר נמוכה, יותר זוגות צעירים יקנו דירות."]
+],
+"providing|cnd": [
+["You may borrow my notes ___ you return them before the exam.", "אתה יכול לשאול את הסיכומים שלי בתנאי שתחזיר אותם לפני המבחן."],
+["Soldiers can wear civilian clothes at home ___ they are not on duty.", "חיילים יכולים ללבוש בגדים אזרחיים בבית בתנאי שהם לא בתפקיד."],
+["Tomatoes grow quickly ___ they get plenty of sun and water.", "עגבניות גדלות מהר בתנאי שהן מקבלות הרבה שמש ומים."]
+],
+"in the event of|cnd": [
+["___ a power failure, the hospital's generators start automatically.", "במקרה של הפסקת חשמל, הגנרטורים של בית החולים מופעלים אוטומטית."],
+["Soldiers learn exactly what to do ___ a chemical attack.", "חיילים לומדים בדיוק מה לעשות במקרה של מתקפה כימית."],
+["___ a tie, the two teams will play an extra thirty minutes.", "במקרה של תיקו, שתי הקבוצות ישחקו עוד שלושים דקות."]
+],
+"but for|cnd": [
+["___ the quick action of the lifeguard, the boy would have drowned.", "אלמלא הפעולה המהירה של המציל, הילד היה טובע."],
+["___ the support of his parents, he would never have finished university.", "אלמלא התמיכה של ההורים שלו, הוא לעולם לא היה מסיים את האוניברסיטה."],
+["___ the rain, our picnic in the park would have been perfect.", "אלמלא הגשם, הפיקניק שלנו בפארק היה מושלם."]
+],
+"when|tim": [
+["The soldiers cheered ___ they heard that the war had ended.", "החיילים הריעו כששמעו שהמלחמה הסתיימה."],
+["Many flowers close their petals ___ the sun goes down.", "פרחים רבים סוגרים את עלי הכותרת שלהם כשהשמש שוקעת."],
+["I was living in Berlin ___ I met my future wife.", "גרתי בברלין כשפגשתי את אשתי לעתיד."]
+],
+"while|tim": [
+["The soldier wrote letters home ___ he was waiting for orders.", "החייל כתב מכתבים הביתה בזמן שחיכה לפקודות."],
+["Please don't talk to the driver ___ the bus is moving.", "בבקשה אל תדברו עם הנהג בזמן שהאוטובוס נוסע."],
+["My phone rang ___ I was giving a presentation at work.", "הטלפון שלי צלצל בזמן שהצגתי מצגת בעבודה."]
+],
+"before|tim": [
+["The soldiers checked their equipment ___ they left the base.", "החיילים בדקו את הציוד שלהם לפני שיצאו מהבסיס."],
+["Read the instructions carefully ___ you start the exam.", "קרא את ההוראות בעיון לפני שאתה מתחיל את המבחן."],
+["Dinosaurs lived on Earth millions of years ___ the first humans appeared.", "דינוזאורים חיו על כדור הארץ מיליוני שנים לפני שהופיעו בני האדם הראשונים."]
+],
+"after|tim": [
+["___ the war ended, many soldiers returned to their studies.", "אחרי שהמלחמה הסתיימה, חיילים רבים חזרו ללימודים שלהם."],
+["___ the loaf comes out of the oven, let it cool for ten minutes.", "אחרי שהכיכר יוצאת מהתנור, תנו לה להתקרר עשר דקות."],
+["My uncle opened his own restaurant ___ he had worked as a chef for twenty years.", "דוד שלי פתח מסעדה משלו אחרי שעבד כשף במשך עשרים שנה."]
+],
+"until|tim": [
+["The soldiers stayed in the shelter ___ the sirens stopped.", "החיילים נשארו במקלט עד שהאזעקות הפסיקו."],
+["Do not open the oven door ___ the cake has risen.", "אל תפתחו את דלת התנור עד שהעוגה תתפח."],
+["My grandmother worked at the post office ___ she retired at sixty-five.", "סבתא שלי עבדה בדואר עד שיצאה לפנסיה בגיל שישים וחמש."]
+],
+"since|tim": [
+["The museum has displayed this painting ___ 1950.", "המוזיאון מציג את הציור הזה מאז 1950."],
+["My brother has wanted to be a pilot ___ early childhood.", "אחי רוצה להיות טייס מאז הילדות המוקדמת."],
+["___ the end of the war, the two countries have traded peacefully.", "מאז סוף המלחמה, שתי המדינות סוחרות זו עם זו בשלום."]
+],
+"during|tim": [
+["Many soldiers lost their lives ___ the battle.", "חיילים רבים איבדו את חייהם במהלך הקרב."],
+["Bears sleep for several months ___ the cold winter.", "דובים ישנים במשך כמה חודשים במהלך החורף הקר."],
+["The power went out ___ the final scene of the play.", "החשמל נפל במהלך הסצנה האחרונה של ההצגה."]
+],
+"as soon as|tim": [
+["The soldiers moved forward ___ they received the order.", "החיילים התקדמו ברגע שקיבלו את הפקודה."],
+["Send me the report ___ it is ready.", "שלח לי את הדוח ברגע שהוא מוכן."],
+["The baby fell asleep ___ the car started moving.", "התינוק נרדם מיד כשהמכונית התחילה לנסוע."]
+],
+"meanwhile|tim": [
+["The soldiers waited at the border. ___, the leaders were trying to reach a peace agreement.", "החיילים חיכו בגבול. בינתיים, המנהיגים ניסו להגיע להסכם שלום."],
+["Water was boiling in the pot. ___, Yael chopped the vegetables for the soup.", "המים רתחו בסיר. באותו זמן, יעל קצצה את הירקות למרק."],
+["The company is building a new office. ___, its employees are working from home.", "החברה בונה משרד חדש. בינתיים, העובדים שלה עובדים מהבית."]
+],
+"once|tim": [
+["___ the soldiers crossed the river, they were safe.", "ברגע שהחיילים חצו את הנהר, הם היו מוגנים."],
+["___ you learn to ride a bicycle, you never forget how.", "ברגע שלומדים לרכוב על אופניים, אף פעם לא שוכחים איך."],
+["___ the contract is signed, work on the bridge will begin.", "לאחר שהחוזה ייחתם, העבודה על הגשר תתחיל."]
+],
+"by the time|tim": [
+["___ the soldiers reached the village, the enemy had already left.", "עד שהחיילים הגיעו לכפר, האויב כבר עזב."],
+["___ I finished my degree, the technology I had studied was out of date.", "עד שסיימתי את התואר שלי, הטכנולוגיה שלמדתי כבר הייתה מיושנת."],
+["___ my grandfather retired, he had taught three generations of students.", "עד שסבא שלי יצא לפנסיה, הוא לימד שלושה דורות של תלמידים."]
+],
+"whenever|tim": [
+["The commander gets angry ___ soldiers arrive late.", "המפקד כועס בכל פעם שחיילים מאחרים."],
+["___ I visit my grandmother, she cooks my favorite dish.", "בכל פעם שאני מבקר את סבתא שלי, היא מבשלת את המנה האהובה עליי."],
+["The volcano releases smoke ___ there is a small earthquake nearby.", "הר הגעש פולט עשן בכל פעם שיש רעידת אדמה קטנה בסביבה."]
+],
+"prior to|tim": [
+["Soldiers receive a full medical check ___ their enlistment.", "חיילים עוברים בדיקה רפואית מלאה לפני הגיוס שלהם."],
+["___ the invention of the telephone, people communicated mainly by letters.", "לפני המצאת הטלפון, אנשים תקשרו בעיקר באמצעות מכתבים."],
+["Please turn off your phones ___ the start of the performance.", "נא לכבות את הטלפונים לפני תחילת ההופעה."]
+],
+"eventually|tim": [
+["The lost hikers ___ found their way back to the camp.", "המטיילים שאבדו מצאו בסופו של דבר את דרכם חזרה למחנה."],
+["The soldier was badly wounded, but he ___ recovered and returned to his unit.", "החייל נפצע קשה, אבל בסופו של דבר החלים וחזר ליחידה שלו."],
+["Stars burn for billions of years, but they ___ run out of fuel.", "כוכבים בוערים מיליארדי שנים, אבל בסופו של דבר נגמר להם הדלק."]
+],
+"previously|tim": [
+["The base now trains pilots; ___, it served as a storage center.", "הבסיס מאמן היום טייסים; קודם לכן, הוא שימש כמרכז אחסון."],
+["This disease can now be cured, but ___ it killed millions of people.", "את המחלה הזו אפשר היום לרפא, אבל בעבר היא הרגה מיליוני אנשים."],
+["The museum, which was ___ a royal palace, attracts millions of visitors.", "המוזיאון, שהיה בעבר ארמון מלכותי, מושך מיליוני מבקרים."]
+],
+"afterwards|tim": [
+["The soldiers completed the march, and ___ they had a big barbecue.", "החיילים סיימו את המסע, ואחר כך עשו על האש גדול."],
+["The surgery went well, but ___ the patient needed weeks of rest.", "הניתוח עבר בהצלחה, אבל לאחר מכן המטופל היה צריך שבועות של מנוחה."],
+["We explored the old city in the morning; ___, we relaxed at the hotel pool.", "סיירנו בעיר העתיקה בבוקר; אחר כך, נחנו בבריכה של המלון."]
+],
+"in the meantime|tim": [
+["The commander will return tomorrow. ___, his deputy is in charge of the base.", "המפקד יחזור מחר. בינתיים, הסגן שלו אחראי על הבסיס."],
+["Your test results will arrive next week. ___, try to rest and drink plenty of water.", "תוצאות הבדיקות שלך יגיעו בשבוע הבא. בינתיים, נסה לנוח ולשתות הרבה מים."],
+["The new library won't open until spring. ___, students can borrow books from the community center.", "הספרייה החדשה לא תיפתח עד האביב. בינתיים, תלמידים יכולים לשאול ספרים מהמתנ״ס."]
+],
+"throughout|tim": [
+["The soldiers stayed alert ___ the long mission.", "החיילים נשארו ערניים לאורך כל המשימה הארוכה."],
+["___ history, people have looked at the stars and wondered.", "לאורך ההיסטוריה, בני אדם הביטו בכוכבים ותהו."],
+["My grandmother kept a diary ___ her adult life.", "סבתא שלי כתבה יומן במשך כל חייה הבוגרים."]
+],
+"within|tim": [
+["The soldiers must return to base ___ forty-eight hours.", "החיילים חייבים לחזור לבסיס תוך ארבעים ושמונה שעות."],
+["Most of the snow on the hills melted ___ a few days.", "רוב השלג על הגבעות נמס בתוך כמה ימים."],
+["Scientists expect to find a cure ___ the next decade.", "מדענים מצפים למצוא תרופה בתוך העשור הקרוב."]
+],
+"subsequently|tim": [
+["The soldier was wounded in battle and ___ received a medal for bravery.", "החייל נפצע בקרב ולאחר מכן קיבל מדליה על אומץ."],
+["The company was founded in a garage and ___ grew into a global giant.", "החברה נוסדה במוסך ובהמשך גדלה לענקית עולמית."],
+["The bridge was damaged in the storm; it was ___ rebuilt with stronger steel.", "הגשר ניזוק בסערה; לאחר מכן הוא נבנה מחדש מפלדה חזקה יותר."]
+],
+"simultaneously|tim": [
+["The soldiers attacked the enemy from three directions ___.", "החיילים תקפו את האויב משלושה כיוונים בו זמנית."],
+["The baby laughed and cried ___, which confused her parents.", "התינוקת צחקה ובכתה בו זמנית, מה שבלבל את ההורים שלה."],
+["Some people can listen to music and study ___ without losing focus.", "יש אנשים שיכולים להאזין למוזיקה וללמוד בו זמנית בלי לאבד ריכוז."]
+]
+}
