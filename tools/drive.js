@@ -27,7 +27,7 @@ async function runLesson(P, T, wrongRate, given) {
     }
     const w = it.w;
     T[c.type] = (T[c.type] || 0) + 1;
-    chk(!(w.topic === 'link' && (c.type === 'type' || c.type === 'typeSentence')), 'שאלת כתיבה במילות קישור ' + w.en, P);
+    chk(!(w.topic === 'link' && (c.type === 'type' || c.type === 'typeSentence' || c.type === 'typeHe')), 'שאלת כתיבה במילות קישור ' + w.en, P);
     // משפטים בסבב: אותו משפט לא חוזר בשאלות המשפט האחרונות של המילה
     if (c.sent) {
       const h = (window.__sents = window.__sents || {})[w.id] = (window.__sents[w.id] || []), n = sentencesOf(w).length;
