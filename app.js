@@ -631,7 +631,7 @@ function renderLesson() {
   }
   const total = L.done + L.q.length, pct = Math.round(L.done / total * 100);
   const it = L.q[0], c = L.cur;
-  let h = `<header class="lhead"><button class="x" onclick="quitLesson()" aria-label="יציאה">✕</button><div class="bar"><i style="width:${pct}%"></i></div><button class="flag" onclick="openReport()" aria-label="דיווח על טעות" title="מצאת טעות? דווח">🚩</button></header><main class="lbody">`;
+  let h = `<header class="lhead"><button class="x" onclick="quitLesson()" aria-label="יציאה">✕</button><div class="bar"><i style="width:${pct}%"></i></div><button class="flag" onclick="openReport()" aria-label="דיווח על טעות" title="מצאת טעות? דווח">🚩</button></header><main class="lbody${L.cur && L.cur.ans ? ' answered' : ''}">`;
   let foot = '';
   if (c.k === 'intro') {
     const w = it.w;
@@ -669,7 +669,7 @@ function renderLesson() {
         let label = c.type === 'category' ? `${CATS[o].icon} ${CATS[o].he}` : c.type === 'meaning' ? esc(o) : esc(startCap ? cap(disp(o)) : disp(o));
         let cls = '';
         if (c.ans) { if (o === c.correct) cls = 'right'; else if (i === c.ans.i) cls = 'wrong'; else cls = 'dim'; }
-        h += `<button class="opt ${cls} ${c.type === 'meaning' || c.type === 'category' ? '' : 'en'}" onclick="answerOpt(${i})" ${c.ans ? 'disabled' : ''}>${label}</button>`;
+        h += `<button class="opt ${cls} ${c.type === 'meaning' || c.type === 'category' ? '' : 'en'}" onclick="answerOpt(${i})" ${c.ans ? 'disabled' : ''}>${label}${c.ans ? optTr(c, o) : ''}</button>`;
       });
       h += `</div>`;
     } else {
@@ -680,6 +680,14 @@ function renderLesson() {
     if (c.ans) foot = sheet(w, c);
   }
   return h + '</main>' + foot;
+}
+// אחרי התשובה: התרגום של כל אחת מ-4 האפשרויות, כדי ללמוד גם מהמסיחים (רועי 22/10)
+function optTr(c, o) {
+  if (c.type === 'category') return '';
+  const find = f => ITEMS.find(f) || ALL.find(f);
+  const x = c.type === 'meaning' ? find(y => y.he === o) : find(y => y.en === o);
+  if (!x) return '';
+  return c.type === 'meaning' ? `<span class="otr en">${esc(disp(x.en))}</span>` : `<span class="otr">${esc(x.he)}</span>`;
 }
 function pairHint(w) { return w.en.includes('...') ? '<div class="exhe">כתוב את שני החלקים ברצף, למשל: <span class="en">not only but also</span></div>' : ''; }
 function matchBtn(c, w, side, i, label, cls) {
