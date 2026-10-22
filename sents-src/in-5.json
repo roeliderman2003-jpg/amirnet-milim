@@ -1,0 +1,1073 @@
+[
+{
+"id": "v:displace",
+"en": "displace",
+"he": "לעקור, לדחוק ממקום",
+"pos": "v",
+"existing": [
+"The floods will ___ thousands of families from their homes."
+]
+},
+{
+"id": "v:dispose",
+"en": "dispose",
+"he": "להיפטר (dispose of)",
+"pos": "v",
+"existing": [
+"Please ___ of the old batteries in the special recycling bin."
+]
+},
+{
+"id": "v:disqualify",
+"en": "disqualify",
+"he": "לפסול",
+"pos": "v",
+"existing": [
+"The judges had to ___ the runner for starting before the signal."
+]
+},
+{
+"id": "v:disregard",
+"en": "disregard",
+"he": "להתעלם",
+"pos": "v",
+"existing": [
+"Drivers who ___ the red light put everyone on the road in danger."
+]
+},
+{
+"id": "v:distinct",
+"en": "distinct",
+"he": "ברור, נבדל",
+"pos": "j",
+"existing": [
+"The twins have ___ personalities, even though they look exactly the same."
+]
+},
+{
+"id": "v:distinction",
+"en": "distinction",
+"he": "הבחנה, הצטיינות",
+"pos": "n",
+"existing": [
+"There is an important ___ between being alone and feeling lonely."
+]
+},
+{
+"id": "v:distinguish",
+"en": "distinguish",
+"he": "להבחין בין",
+"pos": "v",
+"existing": [
+"Young children cannot always ___ between real life and fantasy."
+]
+},
+{
+"id": "v:distort",
+"en": "distort",
+"he": "לעוות, לסלף",
+"pos": "v",
+"existing": [
+"Some news reports ___ the facts to make the story more exciting."
+]
+},
+{
+"id": "v:distortion",
+"en": "distortion",
+"he": "עיוות, סילוף",
+"pos": "n",
+"existing": [
+"The curved mirror caused a strange ___ of his reflection."
+]
+},
+{
+"id": "v:divergence",
+"en": "divergence",
+"he": "סטייה, פער (בדעות)",
+"pos": "n",
+"existing": [
+"There is a wide ___ between the two scientists' opinions on the topic."
+]
+},
+{
+"id": "v:diversify",
+"en": "diversify",
+"he": "לגוון",
+"pos": "v",
+"existing": [
+"The company decided to ___ its products to reach new customers."
+]
+},
+{
+"id": "v:diversion",
+"en": "diversion",
+"he": "הסחה, הטיה",
+"pos": "n",
+"existing": [
+"The soldiers created a ___ to draw the enemy away from the bridge."
+]
+},
+{
+"id": "v:docile",
+"en": "docile",
+"he": "צייתן, נוח לשליטה",
+"pos": "j",
+"existing": [
+"The horse was calm and ___, so even children could ride it."
+]
+},
+{
+"id": "v:docility",
+"en": "docility",
+"he": "צייתנות",
+"pos": "n",
+"existing": [
+"The dog's ___ made it very easy to train."
+]
+},
+{
+"id": "v:domestic",
+"en": "domestic",
+"he": "ביתי, פנימי (במדינה)",
+"pos": "j",
+"existing": [
+"Flights inside the same country are called ___ flights."
+]
+},
+{
+"id": "v:doom",
+"en": "doom",
+"he": "אבדון, גורל רע",
+"pos": "n",
+"existing": [
+"A sense of ___ filled the room as the storm came closer."
+]
+},
+{
+"id": "v:dote",
+"en": "dote",
+"he": "להתמסר באהבה יתרה",
+"pos": "v",
+"existing": [
+"Grandparents often ___ on their grandchildren and give them everything."
+]
+},
+{
+"id": "v:drab",
+"en": "drab",
+"he": "משעמם, אפור וחסר חיים",
+"pos": "j",
+"existing": [
+"The soldiers lived in a ___ gray building with no decorations."
+]
+},
+{
+"id": "v:dread",
+"en": "dread",
+"he": "לפחד מאוד מ-",
+"pos": "v",
+"existing": [
+"I ___ going to the dentist, even for a simple check-up."
+]
+},
+{
+"id": "v:drift",
+"en": "drift",
+"he": "להיסחף",
+"pos": "v",
+"existing": [
+"Without an engine, the boat began to ___ slowly down the river."
+]
+},
+{
+"id": "v:dubious",
+"en": "dubious",
+"he": "מפוקפק, חשוד",
+"pos": "j",
+"existing": [
+"The salesman made a ___ promise that nobody believed."
+]
+},
+{
+"id": "v:due",
+"en": "due",
+"he": "צפוי, אמור להגיע",
+"pos": "j",
+"existing": [
+"The library book is ___ back on Monday."
+]
+},
+{
+"id": "v:duplicate",
+"en": "duplicate",
+"he": "לשכפל (גם: עותק)",
+"pos": "v",
+"existing": [
+"It is illegal to ___ the software without permission."
+]
+},
+{
+"id": "v:durable",
+"en": "durable",
+"he": "עמיד, בר קיימא",
+"pos": "j",
+"existing": [
+"These boots are ___ enough to last for many years of hiking."
+]
+},
+{
+"id": "v:dwindle",
+"en": "dwindle",
+"he": "להצטמצם, להידלדל",
+"pos": "v",
+"existing": [
+"The village's population began to ___ as young people moved to the city."
+]
+},
+{
+"id": "v:eager",
+"en": "eager",
+"he": "להוט, משתוקק",
+"pos": "j",
+"existing": [
+"The children were ___ to open their presents."
+]
+},
+{
+"id": "v:ease",
+"en": "ease",
+"he": "קלות, נוחות (גם: להקל)",
+"pos": "n",
+"existing": [
+"She solved the difficult puzzle with great ___."
+]
+},
+{
+"id": "v:eavesdrop",
+"en": "eavesdrop",
+"he": "להאזין בסתר",
+"pos": "v",
+"existing": [
+"It is rude to ___ on other people's private conversations."
+]
+},
+{
+"id": "v:eclectic",
+"en": "eclectic",
+"he": "אקלקטי, מגוון ממקורות שונים",
+"pos": "j",
+"existing": [
+"Her taste in music is ___, from jazz and rock to classical."
+]
+},
+{
+"id": "v:eclipse",
+"en": "eclipse",
+"he": "ליקוי (חמה או לבנה)",
+"pos": "n",
+"existing": [
+"We watched the solar ___ through special glasses."
+]
+},
+{
+"id": "v:elaborate",
+"en": "elaborate",
+"he": "מורכב ומפורט (גם: לפרט)",
+"pos": "j",
+"existing": [
+"The king wore an ___ costume decorated with gold and jewels."
+]
+},
+{
+"id": "v:embrace",
+"en": "embrace",
+"he": "לחבק, לאמץ (רעיון)",
+"pos": "v",
+"existing": [
+"The two friends ran to ___ each other after many years apart."
+]
+},
+{
+"id": "v:emerge",
+"en": "emerge",
+"he": "לצוץ, לצאת החוצה",
+"pos": "v",
+"existing": [
+"The sun began to ___ from behind the clouds."
+]
+},
+{
+"id": "v:emergence",
+"en": "emergence",
+"he": "הופעה, התהוות",
+"pos": "n",
+"existing": [
+"The ___ of the internet changed the way people communicate."
+]
+},
+{
+"id": "v:emergent",
+"en": "emergent",
+"he": "מתהווה, מתפתח",
+"pos": "j",
+"existing": [
+"Investors are looking for ___ markets with fast economic growth."
+]
+},
+{
+"id": "v:emigrate",
+"en": "emigrate",
+"he": "להגר (לצאת מהארץ)",
+"pos": "v",
+"existing": [
+"Many families decided to ___ from Europe to America."
+]
+},
+{
+"id": "v:emigration",
+"en": "emigration",
+"he": "הגירה (יציאה מהארץ)",
+"pos": "n",
+"existing": [
+"Mass ___ left the small country with fewer young workers."
+]
+},
+{
+"id": "v:eminence",
+"en": "eminence",
+"he": "מעמד נכבד, חשיבות רבה",
+"pos": "n",
+"existing": [
+"The professor reached great ___ in the field of medicine."
+]
+},
+{
+"id": "v:eminent",
+"en": "eminent",
+"he": "בולט, נכבד",
+"pos": "j",
+"existing": [
+"An ___ scientist will give the opening lecture at the university."
+]
+},
+{
+"id": "v:encompass",
+"en": "encompass",
+"he": "להקיף, לכלול",
+"pos": "v",
+"existing": [
+"The course will ___ history, geography and politics."
+]
+},
+{
+"id": "v:encounter",
+"en": "encounter",
+"he": "להיתקל ב- (גם: מפגש)",
+"pos": "v",
+"existing": [
+"Hikers may ___ wild animals in this part of the forest."
+]
+},
+{
+"id": "v:endeavor",
+"en": "endeavor",
+"he": "מאמץ, ניסיון",
+"pos": "n",
+"existing": [
+"Climbing the mountain was a difficult ___ that required months of training."
+]
+},
+{
+"id": "v:enfeeble",
+"en": "enfeeble",
+"he": "להחליש",
+"pos": "v",
+"existing": [
+"A long illness can ___ even the strongest athlete."
+]
+},
+{
+"id": "v:engage",
+"en": "engage",
+"he": "לעסוק, לערב, לרתק",
+"pos": "v",
+"existing": [
+"Teachers try to ___ students in the lesson with games and questions."
+]
+},
+{
+"id": "v:engagement",
+"en": "engagement",
+"he": "אירוסין, מעורבות",
+"pos": "n",
+"existing": [
+"They announced their ___ at a family dinner."
+]
+},
+{
+"id": "v:enhance",
+"en": "enhance",
+"he": "לשפר, לשדרג",
+"pos": "v",
+"existing": [
+"Good lighting can ___ the beauty of any room."
+]
+},
+{
+"id": "v:enlist",
+"en": "enlist",
+"he": "להתגייס, לגייס",
+"pos": "v",
+"existing": [
+"Many young people ___ in the army at the age of eighteen."
+]
+},
+{
+"id": "v:entwine",
+"en": "entwine",
+"he": "לשזור, לשלב יחד",
+"pos": "v",
+"existing": [
+"The vines ___ around the old fence every summer."
+]
+},
+{
+"id": "v:epilogue",
+"en": "epilogue",
+"he": "אחרית דבר",
+"pos": "n",
+"existing": [
+"The ___ at the end of the novel describes what happened years later."
+]
+},
+{
+"id": "v:equivalent",
+"en": "equivalent",
+"he": "שווה ערך, מקביל",
+"pos": "j",
+"existing": [
+"One kilogram is ___ to about two point two pounds."
+]
+},
+{
+"id": "v:equivocal",
+"en": "equivocal",
+"he": "דו-משמעי, מעורפל",
+"pos": "j",
+"existing": [
+"The politician gave an ___ answer that could be understood in two ways."
+]
+},
+{
+"id": "v:erroneous",
+"en": "erroneous",
+"he": "שגוי",
+"pos": "j",
+"existing": [
+"The newspaper printed an ___ report that was corrected the next day."
+]
+},
+{
+"id": "v:erudition",
+"en": "erudition",
+"he": "בקיאות, ידע רחב",
+"pos": "n",
+"existing": [
+"Her ___ amazed the professors, because she seemed to know every subject."
+]
+},
+{
+"id": "v:erupt",
+"en": "erupt",
+"he": "להתפרץ",
+"pos": "v",
+"existing": [
+"Scientists fear the volcano may ___ again soon."
+]
+},
+{
+"id": "v:eruption",
+"en": "eruption",
+"he": "התפרצות",
+"pos": "n",
+"existing": [
+"The ___ of the volcano covered the town with ash."
+]
+},
+{
+"id": "v:essence",
+"en": "essence",
+"he": "מהות, תמצית",
+"pos": "n",
+"existing": [
+"The ___ of the story is that honesty is always rewarded."
+]
+},
+{
+"id": "v:establishment",
+"en": "establishment",
+"he": "הקמה, מוסד",
+"pos": "n",
+"existing": [
+"The ___ of the state changed the history of the whole region."
+]
+},
+{
+"id": "v:eulogize",
+"en": "eulogize",
+"he": "לשאת הספד, לשבח מאוד",
+"pos": "v",
+"existing": [
+"He was asked to ___ his grandfather at the funeral."
+]
+},
+{
+"id": "v:eulogy",
+"en": "eulogy",
+"he": "הספד",
+"pos": "n",
+"existing": [
+"She gave a moving ___ at her teacher's funeral."
+]
+},
+{
+"id": "v:evenly",
+"en": "evenly",
+"he": "באופן שווה",
+"pos": "r",
+"existing": [
+"Spread the butter ___ across the bread."
+]
+},
+{
+"id": "v:eventual",
+"en": "eventual",
+"he": "סופי, שבא בסוף",
+"pos": "j",
+"existing": [
+"The ___ winner of the race was a young runner from Kenya."
+]
+},
+{
+"id": "v:excavate",
+"en": "excavate",
+"he": "לחפור (לחשוף ממצאים)",
+"pos": "v",
+"existing": [
+"Archaeologists will ___ the ancient city next summer."
+]
+},
+{
+"id": "v:excavation",
+"en": "excavation",
+"he": "חפירה (ארכיאולוגית)",
+"pos": "n",
+"existing": [
+"The ___ revealed the walls of a Roman house."
+]
+},
+{
+"id": "v:exhaust",
+"en": "exhaust",
+"he": "לתשש, לדלדל",
+"pos": "v",
+"existing": [
+"Long hours of work can ___ even the strongest person."
+]
+},
+{
+"id": "v:exhibit",
+"en": "exhibit",
+"he": "להציג (גם: תערוכה)",
+"pos": "v",
+"existing": [
+"The museum will ___ paintings by local artists this month."
+]
+},
+{
+"id": "v:expanse",
+"en": "expanse",
+"he": "מרחב, שטח רחב",
+"pos": "n",
+"existing": [
+"A vast ___ of sand stretched in front of the travelers."
+]
+},
+{
+"id": "v:expedition",
+"en": "expedition",
+"he": "משלחת, מסע",
+"pos": "n",
+"existing": [
+"The ___ to the North Pole took six months."
+]
+},
+{
+"id": "v:expend",
+"en": "expend",
+"he": "להוציא (כסף או אנרגיה)",
+"pos": "v",
+"existing": [
+"Marathon runners ___ huge amounts of energy during a race."
+]
+},
+{
+"id": "v:expenditure",
+"en": "expenditure",
+"he": "הוצאה (כספית)",
+"pos": "n",
+"existing": [
+"Government ___ on education increased this year."
+]
+},
+{
+"id": "v:explicit",
+"en": "explicit",
+"he": "מפורש, ברור",
+"pos": "j",
+"existing": [
+"The teacher gave ___ instructions: no phones during the exam."
+]
+},
+{
+"id": "v:exploit",
+"en": "exploit",
+"he": "לנצל (לרעה)",
+"pos": "v",
+"existing": [
+"Some companies ___ workers by paying them very little."
+]
+},
+{
+"id": "v:extensive",
+"en": "extensive",
+"he": "נרחב, רחב היקף",
+"pos": "j",
+"existing": [
+"The storm caused ___ damage to roads and houses."
+]
+},
+{
+"id": "v:extent",
+"en": "extent",
+"he": "מידה, היקף",
+"pos": "n",
+"existing": [
+"No one knew the full ___ of the damage."
+]
+},
+{
+"id": "v:external",
+"en": "external",
+"he": "חיצוני",
+"pos": "j",
+"existing": [
+"An ___ hard drive can store extra files."
+]
+},
+{
+"id": "v:extinct",
+"en": "extinct",
+"he": "נכחד",
+"pos": "j",
+"existing": [
+"Dinosaurs became ___ millions of years ago."
+]
+},
+{
+"id": "v:facilitate",
+"en": "facilitate",
+"he": "להקל, לאפשר",
+"pos": "v",
+"existing": [
+"A good map will ___ the search for the hidden cave."
+]
+},
+{
+"id": "v:facility",
+"en": "facility",
+"he": "מתקן",
+"pos": "n",
+"existing": [
+"The new sports ___ includes a pool and two gyms."
+]
+},
+{
+"id": "v:fallacious",
+"en": "fallacious",
+"he": "מוטעה, שגוי (בהיגיון)",
+"pos": "j",
+"existing": [
+"His ___ argument sounded convincing but was based on false logic."
+]
+},
+{
+"id": "v:fallacy",
+"en": "fallacy",
+"he": "כשל לוגי, אמונה מוטעית",
+"pos": "n",
+"existing": [
+"It is a common ___ that we use only ten percent of our brain."
+]
+},
+{
+"id": "v:falsehood",
+"en": "falsehood",
+"he": "שקר",
+"pos": "n",
+"existing": [
+"The newspaper apologized for printing a ___ about the mayor."
+]
+},
+{
+"id": "v:fastidious",
+"en": "fastidious",
+"he": "קפדן, בררן",
+"pos": "j",
+"existing": [
+"He is so ___ that he washes his hands five times before cooking."
+]
+},
+{
+"id": "v:fauna",
+"en": "fauna",
+"he": "בעלי החיים של אזור",
+"pos": "n",
+"existing": [
+"The island is home to unique flora and ___."
+]
+},
+{
+"id": "v:feast",
+"en": "feast",
+"he": "סעודה, משתה",
+"pos": "n",
+"existing": [
+"The family prepared a big ___ for the holiday."
+]
+},
+{
+"id": "v:fetus",
+"en": "fetus",
+"he": "עובר",
+"pos": "n",
+"existing": [
+"The doctor used ultrasound to check the health of the ___."
+]
+},
+{
+"id": "v:fiasco",
+"en": "fiasco",
+"he": "כישלון חרוץ",
+"pos": "n",
+"existing": [
+"The school play turned into a ___ when the lights suddenly went out."
+]
+},
+{
+"id": "v:figurative",
+"en": "figurative",
+"he": "מטפורי, לא מילולי",
+"pos": "j",
+"existing": [
+"A heart of stone is not literal; it is a ___ expression."
+]
+},
+{
+"id": "v:figure",
+"en": "figure",
+"he": "דמות, מספר, ספרה",
+"pos": "n",
+"existing": [
+"A tall ___ appeared at the end of the dark street."
+]
+},
+{
+"id": "v:firm",
+"en": "firm",
+"he": "תקיף, יציב, מוצק",
+"pos": "j",
+"existing": [
+"The teacher was kind but ___ about the rules."
+]
+},
+{
+"id": "v:flagrant",
+"en": "flagrant",
+"he": "בוטה, זועק לשמיים",
+"pos": "j",
+"existing": [
+"Driving through a red light is a ___ violation of the traffic law."
+]
+},
+{
+"id": "v:flex",
+"en": "flex",
+"he": "לכופף, לכווץ (שריר)",
+"pos": "v",
+"existing": [
+"The weightlifter began to ___ his muscles in front of the mirror."
+]
+},
+{
+"id": "v:flourish",
+"en": "flourish",
+"he": "לשגשג, לפרוח",
+"pos": "v",
+"existing": [
+"Small businesses can ___ when the economy is strong."
+]
+},
+{
+"id": "v:foe",
+"en": "foe",
+"he": "אויב",
+"pos": "n",
+"existing": [
+"In the story, the hero must face his old ___ in a final battle."
+]
+},
+{
+"id": "v:fond",
+"en": "fond",
+"he": "אוהב, מחבב",
+"pos": "j",
+"existing": [
+"She is very ___ of her grandmother's cooking."
+]
+},
+{
+"id": "v:foresee",
+"en": "foresee",
+"he": "לחזות מראש",
+"pos": "v",
+"existing": [
+"No one could ___ how quickly the city would grow."
+]
+},
+{
+"id": "v:foreseeable",
+"en": "foreseeable",
+"he": "צפוי, שאפשר לחזות",
+"pos": "j",
+"existing": [
+"In the ___ future, prices are not expected to change."
+]
+},
+{
+"id": "v:forge",
+"en": "forge",
+"he": "לחשל, לזייף, ליצור (קשר)",
+"pos": "v",
+"existing": [
+"The blacksmith heated the iron and began to ___ a new sword."
+]
+},
+{
+"id": "v:formation",
+"en": "formation",
+"he": "היווצרות, מערך",
+"pos": "n",
+"existing": [
+"Scientists study the ___ of mountains over millions of years."
+]
+},
+{
+"id": "v:former",
+"en": "former",
+"he": "לשעבר, הראשון מבין שניים",
+"pos": "j",
+"existing": [
+"My ___ teacher still writes to me every year."
+]
+},
+{
+"id": "v:formidable",
+"en": "formidable",
+"he": "אדיר, מרתיע",
+"pos": "j",
+"existing": [
+"The team faced a ___ opponent that had not lost all season."
+]
+},
+{
+"id": "v:fortnight",
+"en": "fortnight",
+"he": "שבועיים",
+"pos": "n",
+"existing": [
+"We spent a ___ in Italy and returned home after fourteen days."
+]
+},
+{
+"id": "v:found",
+"en": "found",
+"he": "להקים, לייסד",
+"pos": "v",
+"existing": [
+"Her grandfather helped ___ the company in 1950."
+]
+},
+{
+"id": "v:foundation",
+"en": "foundation",
+"he": "יסוד, קרן",
+"pos": "n",
+"existing": [
+"A good education is the ___ of a successful career."
+]
+},
+{
+"id": "v:foundations",
+"en": "foundations",
+"he": "יסודות (של בניין)",
+"pos": "n",
+"existing": [
+"Cracks in the ___ of the old building made it unsafe."
+]
+},
+{
+"id": "v:fraction",
+"en": "fraction",
+"he": "שבר, חלק קטן",
+"pos": "n",
+"existing": [
+"Only a small ___ of the students failed the test."
+]
+},
+{
+"id": "v:fracture",
+"en": "fracture",
+"he": "שבר (בעצם)",
+"pos": "n",
+"existing": [
+"The doctor found a ___ in his left arm after the fall."
+]
+},
+{
+"id": "v:frequency",
+"en": "frequency",
+"he": "תדירות, תדר",
+"pos": "n",
+"existing": [
+"The ___ of earthquakes in this region has increased."
+]
+},
+{
+"id": "v:fringe",
+"en": "fringe",
+"he": "שוליים, פרנזים",
+"pos": "n",
+"existing": [
+"Artists on the ___ of society often create the most original work."
+]
+},
+{
+"id": "v:frivolous",
+"en": "frivolous",
+"he": "קל דעת, שטותי",
+"pos": "j",
+"existing": [
+"He wasted his salary on ___ things like expensive socks."
+]
+},
+{
+"id": "v:fruitful",
+"en": "fruitful",
+"he": "פורה, מועיל",
+"pos": "j",
+"existing": [
+"After a ___ meeting, the two companies agreed on a plan."
+]
+},
+{
+"id": "v:fugitive",
+"en": "fugitive",
+"he": "נמלט, בורח מהחוק",
+"pos": "n",
+"existing": [
+"The police searched the forest for the ___ who escaped from prison."
+]
+},
+{
+"id": "v:fulfill",
+"en": "fulfill",
+"he": "למלא, להגשים",
+"pos": "v",
+"existing": [
+"She worked hard to ___ her dream of becoming a doctor."
+]
+},
+{
+"id": "v:furnish",
+"en": "furnish",
+"he": "לרהט, לספק",
+"pos": "v",
+"existing": [
+"They plan to ___ the new apartment with a sofa and a table."
+]
+},
+{
+"id": "v:futile",
+"en": "futile",
+"he": "חסר תועלת, לשווא",
+"pos": "j",
+"existing": [
+"Their efforts to stop the flood with sandbags were ___ against such a powerful river."
+]
+},
+{
+"id": "v:garment",
+"en": "garment",
+"he": "בגד, פריט לבוש",
+"pos": "n",
+"existing": [
+"The tailor sewed a beautiful ___ from soft silk."
+]
+},
+{
+"id": "v:genesis",
+"en": "genesis",
+"he": "מקור, התהוות",
+"pos": "n",
+"existing": [
+"The ___ of the idea came during a walk by the sea."
+]
+},
+{
+"id": "v:genuine",
+"en": "genuine",
+"he": "אמיתי, כן",
+"pos": "j",
+"existing": [
+"Is this a ___ diamond or only a piece of glass?"
+]
+},
+{
+"id": "v:gesture",
+"en": "gesture",
+"he": "מחווה, תנועת יד",
+"pos": "n",
+"existing": [
+"She made a kind ___ by bringing soup to her sick neighbor."
+]
+},
+{
+"id": "v:give rise to",
+"en": "give rise to",
+"he": "לגרום ל, להוליד",
+"pos": "v",
+"existing": [
+"Poor sleep can ___ many serious health problems."
+]
+},
+{
+"id": "v:glimpse",
+"en": "glimpse",
+"he": "הצצה, להבחין לרגע",
+"pos": "n",
+"existing": [
+"I caught a ___ of the famous singer through the window."
+]
+}
+]

@@ -1,0 +1,1379 @@
+[
+{
+"id": "but|con",
+"en": "but",
+"he": "אבל",
+"group": "ניגוד (אבל)",
+"pos": "c",
+"note": "ניגוד פשוט בין שני חלקים. «למרות» (although, despite) שייך לקבוצת הוויתור",
+"existing": [
+"I wanted to go out, ___ it was raining.",
+"The new apartment is close to my office, ___ it is quite small and dark.",
+"The soup smelled wonderful, ___ it was far too salty to eat."
+]
+},
+{
+"id": "however|con",
+"en": "however",
+"he": "עם זאת, אולם",
+"group": "ניגוד (אבל)",
+"pos": "a",
+"note": "מקשר בין שני משפטים: בדרך כלל נקודה או נקודה-פסיק לפניו, ופסיק אחריו",
+"existing": [
+"The test was very hard. ___, most students passed.",
+"Online shopping saves a lot of time. ___, you cannot try the clothes on before buying.",
+"The museum is usually crowded on weekends. ___, it was almost empty when we visited on Saturday."
+]
+},
+{
+"id": "although|cnc",
+"en": "although",
+"he": "למרות ש... (+משפט)",
+"group": "ויתור (למרות)",
+"pos": "c",
+"note": "אחריו בא משפט שלם (נושא + פועל). despite בא עם שם עצם",
+"existing": [
+"___ he was tired, he kept working.",
+"___ the restaurant had excellent reviews, the food we got was cold and tasteless.",
+"___ the phone was brand new, its screen cracked the first time it fell."
+]
+},
+{
+"id": "despite|cnc",
+"en": "despite",
+"he": "למרות (+שם עצם)",
+"group": "ויתור (למרות)",
+"pos": "p",
+"note": "אחריו שם עצם או ing, ובלי of. אין despite of",
+"existing": [
+"___ the rain, the game continued.",
+"___ his fear of heights, Daniel climbed all the way to the top of the tower.",
+"___ the high price of the tickets, the concert hall was completely full."
+]
+},
+{
+"id": "yet|cnc",
+"en": "yet",
+"he": "ובכל זאת, אך",
+"group": "ויתור (למרות)",
+"pos": "c",
+"note": "במשפט שלילה זה 'עוד': not yet = עוד לא",
+"existing": [
+"He studied very hard, ___ he failed the test.",
+"The scientist repeated the experiment ten times, ___ she still could not explain the results.",
+"My grandmother is eighty-five years old, ___ she still swims a kilometer every morning."
+]
+},
+{
+"id": "while|con",
+"en": "while",
+"he": "בעוד ש... (ניגוד)",
+"group": "ניגוד (אבל)",
+"pos": "c",
+"note": "ל-while יש גם משמעות של זמן: 'בזמן ש'. ההקשר מחליט",
+"existing": [
+"Tom loves coffee, ___ his wife prefers tea.",
+"My older sister studies medicine, ___ my younger brother wants to become an actor.",
+"Football players in Europe earn millions, ___ most players in local leagues earn very little."
+]
+},
+{
+"id": "even though|cnc",
+"en": "even though",
+"he": "אף על פי ש...",
+"group": "ויתור (למרות)",
+"pos": "c",
+"existing": [
+"She failed the exam ___ she studied very hard.",
+"The team lost the final ___ it had won every game earlier in the season.",
+"The old bridge is still standing ___ it was built more than two thousand years ago."
+]
+},
+{
+"id": "on the other hand|con",
+"en": "on the other hand",
+"he": "מצד שני",
+"group": "ניגוד (אבל)",
+"pos": "a",
+"existing": [
+"The city is exciting. ___, it is very expensive.",
+"Living in a village is calm and quiet. ___, there are very few jobs nearby.",
+"Electric cars are cheap to charge. ___, they cost a lot more to buy."
+]
+},
+{
+"id": "whereas|con",
+"en": "whereas",
+"he": "בעוד ש..., ואילו",
+"group": "ניגוד (אבל)",
+"pos": "c",
+"existing": [
+"Some birds fly south in winter, ___ others stay all year.",
+"Children usually pick up new languages quickly, ___ adults often need much more time.",
+"Coffee keeps most people awake at night, ___ warm milk usually helps them fall asleep."
+]
+},
+{
+"id": "in spite of|cnc",
+"en": "in spite of",
+"he": "למרות (+שם עצם)",
+"group": "ויתור (למרות)",
+"pos": "p",
+"note": "אותו דבר כמו despite, אבל עם of",
+"existing": [
+"___ his injury, he finished the race.",
+"___ the long delay at the airport, the passengers remained calm and polite.",
+"___ the heavy snow, the farmers managed to save most of their animals."
+]
+},
+{
+"id": "despite the fact that|cnc",
+"en": "despite the fact that",
+"he": "למרות העובדה ש... (+משפט)",
+"group": "ויתור (למרות)",
+"pos": "c",
+"note": "אותו דבר כמו although. despite לבד בא עם שם עצם",
+"existing": [
+"___ it was late, the shops were still open.",
+"___ she had a cold, she ran the whole marathon.",
+"___ the app is completely free, very few people have downloaded it."
+]
+},
+{
+"id": "nevertheless|cnc",
+"en": "nevertheless",
+"he": "למרות זאת, אף על פי כן",
+"group": "ויתור (למרות)",
+"pos": "a",
+"existing": [
+"The film was very long. ___, the audience loved it.",
+"The doctors gave him little chance of walking again. ___, he was running within a year.",
+"The recipe looked very complicated. ___, my ten-year-old son cooked it perfectly."
+]
+},
+{
+"id": "nonetheless|cnc",
+"en": "nonetheless",
+"he": "בכל זאת, למרות זאת",
+"group": "ויתור (למרות)",
+"pos": "a",
+"existing": [
+"The evidence was weak; ___, the jury found him guilty.",
+"The new law was unpopular with many citizens; ___, the parliament passed it by a large majority.",
+"The hiking trail was steep and rocky; ___, hundreds of families walked it during the holiday."
+]
+},
+{
+"id": "though|cnc",
+"en": "though",
+"he": "אף על פי ש...; (בסוף משפט) אבל",
+"group": "ויתור (למרות)",
+"pos": "c",
+"existing": [
+"___ the room was small, it was comfortable.",
+"___ entrance to the museum was free that day, very few visitors came.",
+"___ the company lost money last year, it gave every worker a bonus."
+]
+},
+{
+"id": "in contrast|con",
+"en": "in contrast",
+"he": "לעומת זאת",
+"group": "ניגוד (אבל)",
+"pos": "a",
+"existing": [
+"Summers here are very hot. ___, winters are mild and wet.",
+"The northern part of the country gets a lot of rain. ___, the south is mostly desert.",
+"Today's phones have huge memories. ___, early computers could store only a few pages of text."
+]
+},
+{
+"id": "by contrast|con",
+"en": "by contrast",
+"he": "לעומת זאת",
+"group": "ניגוד (אבל)",
+"pos": "a",
+"existing": [
+"Tel Aviv is busy and loud. ___, the village is calm and quiet.",
+"My first job paid very little. ___, my new job pays twice as much.",
+"Lions sleep for most of the day. ___, hummingbirds hardly ever stop moving."
+]
+},
+{
+"id": "unlike|con",
+"en": "unlike",
+"he": "בניגוד ל... (+שם עצם)",
+"group": "ניגוד (אבל)",
+"pos": "p",
+"existing": [
+"___ his brother, Dan is very quiet.",
+"___ most of her classmates, who spend hours on video games, Maya prefers reading books.",
+"___ most fast food, the dishes at this café are cooked fresh every morning."
+]
+},
+{
+"id": "still|cnc",
+"en": "still",
+"he": "ובכל זאת; עדיין",
+"group": "ויתור (למרות)",
+"pos": "a",
+"existing": [
+"The car is twenty years old. ___, it runs well.",
+"Our team was losing by twenty points at half time. ___, the fans kept singing until the end.",
+"The concert tickets cost a lot of money. ___, it was the best night of our lives."
+]
+},
+{
+"id": "even so|cnc",
+"en": "even so",
+"he": "למרות זאת, ובכל זאת",
+"group": "ויתור (למרות)",
+"pos": "a",
+"existing": [
+"The hotel was expensive. ___, we enjoyed every minute.",
+"The new medicine has several unpleasant side effects. ___, most doctors recommend it to their patients.",
+"My father has worked at the same bank for thirty years. ___, he still gets nervous before meetings."
+]
+},
+{
+"id": "conversely|con",
+"en": "conversely",
+"he": "ובאופן הפוך, מנגד",
+"group": "ניגוד (אבל)",
+"pos": "a",
+"existing": [
+"Higher prices reduce demand; ___, lower prices increase it.",
+"When the temperature rises, the metal expands; ___, when the temperature falls, the metal shrinks.",
+"People who sleep well usually learn faster; ___, people who sleep badly often forget what they learned."
+]
+},
+{
+"id": "as opposed to|con",
+"en": "as opposed to",
+"he": "בניגוד ל...",
+"group": "ניגוד (אבל)",
+"pos": "p",
+"existing": [
+"Students who read every day, ___ those who don't, have a richer vocabulary.",
+"The new phone uses a fast charger, ___ the slow one in the old model.",
+"Many young travelers now stay in cheap hostels, ___ expensive hotels in the city center."
+]
+},
+{
+"id": "on the contrary|con",
+"en": "on the contrary",
+"he": "להפך (דוחה את מה שנאמר)",
+"group": "ניגוד (אבל)",
+"pos": "a",
+"note": "בא אחרי משפט שלילי ואומר שהמצב הוא בדיוק ההפך. לא סתם 'מצד שני'",
+"existing": [
+"I'm not tired at all. ___, I feel full of energy.",
+"The new manager is not strict at all. ___, she lets the workers choose their own hours.",
+"The vegetable soup was not boring at all. ___, it was full of rich and surprising flavors."
+]
+},
+{
+"id": "notwithstanding|cnc",
+"en": "notwithstanding",
+"he": "על אף, למרות",
+"group": "ויתור (למרות)",
+"pos": "p",
+"existing": [
+"___ the high cost, the project was approved.",
+"___ the strong opposition from local residents, the city built the new highway.",
+"___ his lack of experience, the young pianist won first prize in the competition."
+]
+},
+{
+"id": "albeit|cnc",
+"en": "albeit",
+"he": "אם כי",
+"group": "ויתור (למרות)",
+"pos": "c",
+"note": "בא לפני תואר או ביטוי קצר, לא לפני משפט שלם",
+"existing": [
+"He accepted the offer, ___ unwillingly.",
+"The economy is growing again, ___ more slowly than the experts had hoped.",
+"The old computer in our office still works, ___ very slowly."
+]
+},
+{
+"id": "regardless of|cnc",
+"en": "regardless of",
+"he": "בלי קשר ל..., בלי להתחשב ב...",
+"group": "ויתור (למרות)",
+"pos": "p",
+"existing": [
+"The law applies to everyone, ___ age.",
+"___ the weather, the marathon will start at six in the morning as planned.",
+"The hospital treats every patient, ___ their ability to pay."
+]
+},
+{
+"id": "all the same|cnc",
+"en": "all the same",
+"he": "בכל זאת",
+"group": "ויתור (למרות)",
+"pos": "a",
+"existing": [
+"I know it's risky. ___, I want to try.",
+"Everyone told me the exam would be very easy. ___, I studied for it every night.",
+"The mountain hut had no electricity or hot water. ___, we had a wonderful week there."
+]
+},
+{
+"id": "admittedly|cnc",
+"en": "admittedly",
+"he": "יש להודות ש...",
+"group": "ויתור (למרות)",
+"pos": "a",
+"existing": [
+"___, the plan has some weak points, but it is still the best option.",
+"___, the new stadium cost a fortune, but it has brought thousands of tourists to the city.",
+"___, electric bikes are expensive, but they save a lot of money on fuel and parking."
+]
+},
+{
+"id": "also|add",
+"en": "also",
+"he": "גם",
+"group": "הוספה",
+"pos": "a",
+"existing": [
+"She is a doctor. She is ___ a talented writer, so she has two careers.",
+"Regular exercise strengthens your heart. It ___ improves your mood and your sleep.",
+"The hotel has an indoor pool. It ___ has an outdoor one, so guests have two pools."
+]
+},
+{
+"id": "too|add",
+"en": "too",
+"he": "גם (בסוף המשפט)",
+"group": "הוספה",
+"pos": "a",
+"note": "בא בסוף המשפט. too + תואר = יותר מדי (too hot)",
+"existing": [
+"I like pizza, and my sister likes it ___.",
+"My father speaks French fluently, and my mother speaks it ___.",
+"My brother plays the drums, and his best friend plays them ___."
+]
+},
+{
+"id": "as well as|add",
+"en": "as well as",
+"he": "וגם, בנוסף ל...",
+"group": "הוספה",
+"pos": "p",
+"existing": [
+"He plays the guitar ___ the piano.",
+"The new hospital has two separate wards, so it treats adults ___ children.",
+"The new smartwatch measures your heart rate ___ the number of steps you take each day."
+]
+},
+{
+"id": "in addition|add",
+"en": "in addition",
+"he": "בנוסף",
+"group": "הוספה",
+"pos": "a",
+"existing": [
+"The job pays well. ___, it offers free lunch.",
+"The new phone has a bigger screen. ___, its battery lasts two full days.",
+"Swimming strengthens the muscles of the whole body. ___, it is gentle on the knees and back."
+]
+},
+{
+"id": "besides|add",
+"en": "besides",
+"he": "חוץ מזה, מלבד",
+"group": "הוספה",
+"pos": "a",
+"existing": [
+"I don't want to go out tonight; ___, it's already too late.",
+"I don't want to buy that car; it's too expensive. ___, it uses a lot of fuel.",
+"I don't want to cook dinner tonight; I'm too tired. ___, there's no food in the fridge."
+]
+},
+{
+"id": "moreover|add",
+"en": "moreover",
+"he": "יתרה מזאת",
+"group": "הוספה",
+"pos": "a",
+"existing": [
+"The plan is cheap. ___, it is easy to carry out.",
+"The new train line is faster than the bus. ___, it is cheaper and more comfortable.",
+"Olive oil adds a rich taste to salads. ___, it is good for your heart."
+]
+},
+{
+"id": "furthermore|add",
+"en": "furthermore",
+"he": "יתר על כן",
+"group": "הוספה",
+"pos": "a",
+"existing": [
+"The house is too small. ___, it needs many repairs.",
+"Smoking damages the lungs. ___, it increases the risk of heart disease.",
+"The ancient city had a clever water system. ___, its streets were paved with stone."
+]
+},
+{
+"id": "in addition to|add",
+"en": "in addition to",
+"he": "בנוסף ל... (+שם עצם)",
+"group": "הוספה",
+"pos": "p",
+"existing": [
+"___ English, she speaks Arabic and Russian.",
+"___ working full time at the bank, Avi also volunteers at a hospital twice a week.",
+"___ the main course, every guest received a free dessert and coffee."
+]
+},
+{
+"id": "additionally|add",
+"en": "additionally",
+"he": "בנוסף לכך",
+"group": "הוספה",
+"pos": "a",
+"existing": [
+"The course is free. ___, every student gets a laptop.",
+"The hotel offers free breakfast every morning. ___, guests can use the swimming pool at no cost.",
+"The new park has a large playground. ___, it has a running track around the lake."
+]
+},
+{
+"id": "as well|add",
+"en": "as well",
+"he": "גם (בסוף המשפט)",
+"group": "הוספה",
+"pos": "a",
+"existing": [
+"She bought a dress and a pair of shoes ___.",
+"The new teacher speaks Hebrew and English, and she knows some Arabic ___.",
+"My son is on the school football team, and he plays basketball ___, so he is always busy."
+]
+},
+{
+"id": "what's more|add",
+"en": "what's more",
+"he": "ויותר מזה",
+"group": "הוספה",
+"pos": "a",
+"existing": [
+"The food was delicious. ___, it was really cheap.",
+"The apartment is on a quiet street near the park. ___, the rent is very low.",
+"The new phone takes amazing photos at night. ___, it is fully waterproof."
+]
+},
+{
+"id": "along with|add",
+"en": "along with",
+"he": "יחד עם",
+"group": "הוספה",
+"pos": "p",
+"existing": [
+"The teacher, ___ her students, visited the museum.",
+"The famous singer walked onto the stage ___ her two young daughters, holding their hands.",
+"The farmer, ___ his two dogs, walks across the fields every morning."
+]
+},
+{
+"id": "not only... but also|add",
+"en": "not only... but also",
+"he": "לא רק... אלא גם",
+"group": "הוספה",
+"pos": "c",
+"existing": [
+"The new phone is ___ cheaper ___ faster, so everyone wants it.",
+"Regular reading ___ improves your vocabulary ___ helps you write better, so teachers recommend it.",
+"Cycling to work is ___ good for your health ___ cheaper than driving, so many people choose it."
+]
+},
+{
+"id": "coupled with|add",
+"en": "coupled with",
+"he": "בצירוף, יחד עם",
+"group": "הוספה",
+"pos": "p",
+"existing": [
+"Hard work, ___ a bit of luck, led to his success.",
+"Heavy rain ___ strong winds caused serious damage; together they knocked down hundreds of trees.",
+"A poor diet, ___ a lack of exercise, greatly increases the risk of heart disease."
+]
+},
+{
+"id": "not to mention|add",
+"en": "not to mention",
+"he": "שלא לדבר על",
+"group": "הוספה",
+"pos": "p",
+"existing": [
+"He speaks five languages, ___ his amazing skills in math.",
+"The trip to Eilat was too expensive for us, ___ the long drive in the summer heat.",
+"Running a restaurant takes long hours, ___ the stress of dealing with difficult customers."
+]
+},
+{
+"id": "because|cau",
+"en": "because",
+"he": "כי, מפני ש... (+משפט)",
+"group": "סיבה",
+"pos": "c",
+"note": "because + משפט; because of + שם עצם",
+"existing": [
+"We stayed home ___ it was raining.",
+"The doctor told him to rest at home ___ he had a high fever.",
+"The company hired more programmers ___ its new app became popular very quickly."
+]
+},
+{
+"id": "because of|cau",
+"en": "because of",
+"he": "בגלל (+שם עצם)",
+"group": "סיבה",
+"pos": "p",
+"existing": [
+"The flight was delayed ___ the storm.",
+"Many people stopped eating at the restaurant ___ its terrible service.",
+"Thousands of fish died in the lake ___ the pollution from the nearby factory."
+]
+},
+{
+"id": "since|cau",
+"en": "since",
+"he": "מכיוון ש...",
+"group": "סיבה",
+"pos": "c",
+"note": "יש לו גם משמעות של זמן: 'מאז'. ההקשר מחליט",
+"existing": [
+"___ you are already here, let's start the meeting.",
+"___ the shop is always closed on Saturdays, we bought the gift on Friday.",
+"___ the museum is free on Tuesdays, we decided to visit it that day."
+]
+},
+{
+"id": "due to|cau",
+"en": "due to",
+"he": "עקב, בגלל (+שם עצם)",
+"group": "סיבה",
+"pos": "p",
+"existing": [
+"The game was canceled ___ heavy rain.",
+"Hundreds of trains were canceled ___ a strike by the railway workers.",
+"The patient's recovery was slow ___ a serious infection after the operation."
+]
+},
+{
+"id": "as|cau",
+"en": "as",
+"he": "מכיוון ש...; כפי ש...; בזמן ש...",
+"group": "סיבה",
+"pos": "c",
+"note": "מילה עם כמה משמעויות. כשהיא בתחילת משפט ומסבירה, היא 'מכיוון ש'",
+"existing": [
+"___ it was getting dark, we decided to go home.",
+"___ the tickets were sold out, we watched the concert on TV at home.",
+"___ my laptop battery was empty, I wrote the report by hand."
+]
+},
+{
+"id": "owing to|cau",
+"en": "owing to",
+"he": "בשל, עקב",
+"group": "סיבה",
+"pos": "p",
+"existing": [
+"___ a lack of money, the project was stopped.",
+"The bridge was closed for repairs ___ serious cracks in its pillars.",
+"The concert was moved indoors ___ the strong winds that evening."
+]
+},
+{
+"id": "thanks to|cau",
+"en": "thanks to",
+"he": "הודות ל..., בזכות",
+"group": "סיבה",
+"pos": "p",
+"note": "סיבה חיובית",
+"existing": [
+"___ her help, I passed the exam.",
+"___ the new vaccine, the disease has almost disappeared from the country.",
+"___ a new irrigation system, farmers in the desert can now grow fresh vegetables."
+]
+},
+{
+"id": "on account of|cau",
+"en": "on account of",
+"he": "בגלל, בשל",
+"group": "סיבה",
+"pos": "p",
+"existing": [
+"The school was closed ___ the snow.",
+"The football match was postponed ___ the poor condition of the field.",
+"The shop raised its prices ___ the higher cost of electricity."
+]
+},
+{
+"id": "given that|cau",
+"en": "given that",
+"he": "בהתחשב בכך ש...",
+"group": "סיבה",
+"pos": "c",
+"existing": [
+"___ the roads are icy, we should drive slowly.",
+"___ Dana speaks four languages, the company chose her to meet the foreign guests.",
+"___ the tickets cost only ten shekels, it's no surprise the show sold out."
+]
+},
+{
+"id": "as a result of|cau",
+"en": "as a result of",
+"he": "כתוצאה מ... (+הסיבה)",
+"group": "סיבה",
+"pos": "p",
+"note": "מלכודת! as a result of + סיבה. as a result (בלי of) = תוצאה",
+"existing": [
+"___ the accident, the road was closed for hours.",
+"___ years of heavy smoking, he developed serious lung problems.",
+"___ the new train line, the trip to Jerusalem now takes only thirty minutes."
+]
+},
+{
+"id": "for|cau",
+"en": "for",
+"he": "כי (בספרות, אחרי פסיק)",
+"group": "סיבה",
+"pos": "c",
+"note": "באמצע משפט אחרי פסיק, for = כי. בדרך כלל for = בשביל, או במשך (for two hours)",
+"existing": [
+"He left the party early, ___ he was feeling sick.",
+"We put on our warmest coats, ___ the wind outside was freezing.",
+"The farmers prayed for rain, ___ their fields had been dry for months."
+]
+},
+{
+"id": "in view of|cau",
+"en": "in view of",
+"he": "לאור, בהתחשב ב...",
+"group": "סיבה",
+"pos": "p",
+"existing": [
+"___ the recent events, the meeting was postponed.",
+"___ the rising number of accidents, the city lowered the speed limit.",
+"___ the doctor's warning, my father stopped eating sugar completely."
+]
+},
+{
+"id": "seeing that|cau",
+"en": "seeing that",
+"he": "מאחר ש..., הואיל ו...",
+"group": "סיבה",
+"pos": "c",
+"existing": [
+"___ you've finished your work, you can go home.",
+"___ it's already midnight, we should stop studying and go to sleep.",
+"___ the weather is so nice today, let's have lunch in the park."
+]
+},
+{
+"id": "inasmuch as|cau",
+"en": "inasmuch as",
+"he": "מאחר ש..., במידה ש...",
+"group": "סיבה",
+"pos": "c",
+"existing": [
+"The plan failed ___ no one was willing to support it.",
+"The test results are not reliable, ___ half of the students saw the questions in advance.",
+"The ancient map is extremely valuable, ___ only two copies of it still exist."
+]
+},
+{
+"id": "by virtue of|cau",
+"en": "by virtue of",
+"he": "מתוקף, בזכות",
+"group": "סיבה",
+"pos": "p",
+"existing": [
+"He got the job ___ his long experience.",
+"She was allowed to vote in the election ___ her Israeli citizenship.",
+"The small country became very rich ___ its huge reserves of oil."
+]
+},
+{
+"id": "out of|cau",
+"en": "out of",
+"he": "מתוך (סיבה רגשית)",
+"group": "סיבה",
+"pos": "p",
+"note": "out of fear = מתוך פחד, out of curiosity = מתוך סקרנות",
+"existing": [
+"She helped him ___ kindness, not for money.",
+"The child opened the box ___ curiosity, even though he was told not to.",
+"The old man fed the stray cats every day ___ love for animals."
+]
+},
+{
+"id": "so|res",
+"en": "so",
+"he": "לכן, אז",
+"group": "תוצאה ומסקנה",
+"pos": "c",
+"existing": [
+"It was cold, ___ I put on a coat.",
+"The library was very noisy, ___ I went home to study.",
+"The battery in my phone was almost empty, ___ I turned off the music."
+]
+},
+{
+"id": "therefore|res",
+"en": "therefore",
+"he": "לכן",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"existing": [
+"He didn't study at all. ___, he failed the test.",
+"The factory polluted the river for years. ___, the government ordered it to close.",
+"The ice on the lake was very thin. ___, nobody was allowed to skate on it."
+]
+},
+{
+"id": "as a result|res",
+"en": "as a result",
+"he": "כתוצאה מכך",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"note": "בא אחרי הסיבה. as a result of = לפני הסיבה",
+"existing": [
+"It rained for days. ___, the river flooded.",
+"The company lost its biggest customer. ___, two hundred workers were fired.",
+"Ticket prices dropped by half. ___, the stadium was full for every game."
+]
+},
+{
+"id": "thus|res",
+"en": "thus",
+"he": "לפיכך, כך",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"existing": [
+"The company cut its costs and ___ increased its profits.",
+"Regular practice improves memory and ___ helps students learn faster.",
+"The farmers planted trees along the river and ___ protected the soil from floods."
+]
+},
+{
+"id": "consequently|res",
+"en": "consequently",
+"he": "כתוצאה מכך, לפיכך",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"existing": [
+"He missed the bus and ___ arrived late to work.",
+"The heating was broken all winter, and ___ the children often caught colds.",
+"The chef forgot to add salt, and ___ the soup tasted very bland."
+]
+},
+{
+"id": "hence|res",
+"en": "hence",
+"he": "מכאן, ולכן",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"existing": [
+"The road was blocked; ___ the long delay.",
+"The new road is much shorter; ___ the big drop in travel time to the city.",
+"The city had no rain for six months; ___ the strict rules on water use."
+]
+},
+{
+"id": "for this reason|res",
+"en": "for this reason",
+"he": "מסיבה זו",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"existing": [
+"The bridge is old and weak. ___, trucks are not allowed on it.",
+"Many children are allergic to peanuts. ___, the school does not allow peanut snacks.",
+"Our team's best player broke his leg last week. ___, he will miss the final."
+]
+},
+{
+"id": "so... that|res",
+"en": "so... that",
+"he": "כל כך... ש...",
+"group": "תוצאה ומסקנה",
+"pos": "c",
+"note": "so + תואר + that",
+"existing": [
+"The box was ___ heavy ___ nobody could lift it.",
+"The lecture was ___ boring ___ half of the students fell asleep.",
+"The music at the wedding was ___ loud ___ we could not hear each other talk."
+]
+},
+{
+"id": "such... that|res",
+"en": "such... that",
+"he": "כזה... ש...",
+"group": "תוצאה ומסקנה",
+"pos": "c",
+"note": "such + (a) + שם עצם + that",
+"existing": [
+"It was ___ a good movie ___ we watched it twice.",
+"It was ___ a hot day ___ the beaches were full by eight in the morning.",
+"It was ___ an easy recipe ___ my seven-year-old son made it by himself."
+]
+},
+{
+"id": "accordingly|res",
+"en": "accordingly",
+"he": "בהתאם לכך, לכן",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"existing": [
+"The rules have changed, and we must act ___.",
+"The customers complained about the high prices. ___, the store lowered them the next week.",
+"The doctor found that my blood pressure was high. ___, she changed my medicine."
+]
+},
+{
+"id": "thereby|res",
+"en": "thereby",
+"he": "ובכך, על ידי כך",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"existing": [
+"She saved money every month, ___ avoiding debt.",
+"The city planted thousands of trees, ___ lowering summer temperatures in the streets.",
+"The museum put its whole collection online, ___ allowing people all over the world to see it."
+]
+},
+{
+"id": "it follows that|res",
+"en": "it follows that",
+"he": "מכאן נובע ש...",
+"group": "תוצאה ומסקנה",
+"pos": "a",
+"existing": [
+"All humans need water; ___ no human can live without it.",
+"Every student in the class passed the exam; ___ Noa, who is in the class, passed too.",
+"A train ticket costs ten shekels, and I have only eight; ___ I cannot buy one."
+]
+},
+{
+"id": "in order to|pur",
+"en": "in order to",
+"he": "כדי ל... (+פועל)",
+"group": "מטרה",
+"pos": "i",
+"note": "אחריו פועל בצורת המקור: in order to go",
+"existing": [
+"She woke up early ___ catch the first train.",
+"Many students work during the summer ___ save money for university.",
+"My father joined a gym ___ lower his blood pressure."
+]
+},
+{
+"id": "so that|pur",
+"en": "so that",
+"he": "כדי ש... (+משפט)",
+"group": "מטרה",
+"pos": "c",
+"note": "so that = מטרה. so... that (עם תואר באמצע) = תוצאה",
+"existing": [
+"Speak louder ___ everyone can hear you.",
+"The teacher wrote the instructions on the board ___ nobody would forget them.",
+"We planted tall trees around the garden ___ the house would stay cool in summer."
+]
+},
+{
+"id": "so as to|pur",
+"en": "so as to",
+"he": "כדי ל...",
+"group": "מטרה",
+"pos": "i",
+"existing": [
+"He walked quietly ___ not wake the baby.",
+"We left home at six ___ avoid the morning traffic.",
+"The athletes go to bed early before a race ___ be fully rested."
+]
+},
+{
+"id": "for the purpose of|pur",
+"en": "for the purpose of",
+"he": "לשם, למטרת",
+"group": "מטרה",
+"pos": "p",
+"existing": [
+"The money was raised ___ building a new school.",
+"The laboratory was built ___ testing new medicines on human cells.",
+"The old train station was turned into a hall ___ hosting concerts and festivals."
+]
+},
+{
+"id": "in order that|pur",
+"en": "in order that",
+"he": "כדי ש...",
+"group": "מטרה",
+"pos": "c",
+"existing": [
+"The meeting was moved ___ more people could attend.",
+"The government lowered taxes ___ more families could afford their own homes.",
+"The museum stays open late on Thursdays ___ working people can visit it after work."
+]
+},
+{
+"id": "with the aim of|pur",
+"en": "with the aim of",
+"he": "במטרה ל...",
+"group": "מטרה",
+"pos": "p",
+"existing": [
+"They started the club ___ helping lonely people.",
+"The city opened a new bike path ___ reducing traffic in the center.",
+"The school started a cooking class ___ teaching children to eat healthy food."
+]
+},
+{
+"id": "lest|pur",
+"en": "lest",
+"he": "פן, שמא, כדי שלא",
+"group": "מטרה",
+"pos": "c",
+"note": "פירושו 'כדי שלא'. השלילה כבר בתוך המילה",
+"existing": [
+"He wrote the number down ___ he forget it.",
+"The soldiers spoke in whispers ___ the enemy hear them.",
+"She checked the oven twice before leaving ___ the cake burn while she was away."
+]
+},
+{
+"id": "if|cnd",
+"en": "if",
+"he": "אם",
+"group": "תנאי",
+"pos": "c",
+"existing": [
+"___ it rains tomorrow, we will stay home.",
+"___ you mix blue and yellow paint, you get green.",
+"___ you charge your phone all night, the battery will wear out faster."
+]
+},
+{
+"id": "unless|cnd",
+"en": "unless",
+"he": "אלא אם כן",
+"group": "תנאי",
+"pos": "c",
+"note": "unless = if not. מלכודת נפוצה מאוד",
+"existing": [
+"You will fail the test ___ you study.",
+"The plants will die ___ someone waters them while we are away.",
+"The museum will not let you in ___ you buy a ticket online first."
+]
+},
+{
+"id": "otherwise|cnd",
+"en": "otherwise",
+"he": "אחרת",
+"group": "תנאי",
+"pos": "a",
+"existing": [
+"Hurry up; ___, we'll miss the bus.",
+"Save your work every few minutes; ___, you might lose everything if the computer crashes.",
+"Put the milk back in the fridge; ___, it will go bad by tomorrow."
+]
+},
+{
+"id": "as long as|cnd",
+"en": "as long as",
+"he": "כל עוד, בתנאי ש...",
+"group": "תנאי",
+"pos": "c",
+"existing": [
+"You can borrow my car ___ you drive carefully.",
+"The children can play outside ___ they stay inside the garden.",
+"Running every day is healthy ___ you rest when your body hurts."
+]
+},
+{
+"id": "provided that|cnd",
+"en": "provided that",
+"he": "בתנאי ש...",
+"group": "תנאי",
+"pos": "c",
+"existing": [
+"You may leave early ___ you finish all your tasks.",
+"You can bring your dog to the hotel ___ it stays on a leash at all times.",
+"The bank will give you the loan ___ you have a steady job."
+]
+},
+{
+"id": "in case|cnd",
+"en": "in case",
+"he": "למקרה ש...",
+"group": "תנאי",
+"pos": "c",
+"note": "הכנה מראש לאפשרות: לוקחים מטרייה עכשיו, למקרה שירד גשם. זה לא כמו if",
+"existing": [
+"Take an umbrella ___ it rains later.",
+"Keep some cash in your wallet ___ the card machine at the shop doesn't work.",
+"Write down the hotel's phone number ___ your phone battery dies during the trip."
+]
+},
+{
+"id": "even if|cnd",
+"en": "even if",
+"he": "גם אם, אפילו אם",
+"group": "תנאי",
+"pos": "c",
+"existing": [
+"___ it rains tomorrow, the game will go on as planned.",
+"The concert will take place ___ it rains, so bring a raincoat.",
+"My grandfather will never sell his old piano, ___ someone offers him a lot of money."
+]
+},
+{
+"id": "whether|cnd",
+"en": "whether",
+"he": "האם; בין אם",
+"group": "תנאי",
+"pos": "c",
+"note": "כאן = האם. whether... or not = בין אם... ובין אם לא: Whether it rains or not, we'll play",
+"existing": [
+"I don't know ___ he will come or not.",
+"The coach hasn't decided yet ___ Omer will play in the final or not.",
+"Scientists are still not sure ___ there is life on Mars or not."
+]
+},
+{
+"id": "only if|cnd",
+"en": "only if",
+"he": "רק אם",
+"group": "תנאי",
+"pos": "c",
+"existing": [
+"You will get your money back ___ you keep the receipt.",
+"The medicine works ___ you take it every day at the same time.",
+"The plant will flower ___ it gets at least six hours of sunlight a day."
+]
+},
+{
+"id": "on condition that|cnd",
+"en": "on condition that",
+"he": "בתנאי ש...",
+"group": "תנאי",
+"pos": "c",
+"existing": [
+"He agreed to help ___ his name was kept secret.",
+"The landlord agreed to lower the rent ___ we would pay a whole year in advance.",
+"The coach let him play in the final ___ he trained every day that week."
+]
+},
+{
+"id": "assuming that|cnd",
+"en": "assuming that",
+"he": "בהנחה ש...",
+"group": "תנאי",
+"pos": "c",
+"existing": [
+"___ the train is on time, we'll arrive at noon.",
+"___ prices stay the same, the trip will cost about 3,000 shekels.",
+"___ the weather stays dry, the farmers will start the harvest next week."
+]
+},
+{
+"id": "providing|cnd",
+"en": "providing",
+"he": "בתנאי ש...",
+"group": "תנאי",
+"pos": "c",
+"existing": [
+"You can join us ___ you bring your own food.",
+"Students may use a calculator in the exam ___ it cannot connect to the internet.",
+"The band agreed to play a free concert ___ the city paid for the stage and lights."
+]
+},
+{
+"id": "in the event of|cnd",
+"en": "in the event of",
+"he": "במקרה של",
+"group": "תנאי",
+"pos": "p",
+"existing": [
+"___ fire, use the stairs, not the elevator.",
+"___ an earthquake, stay away from windows and get under a strong table.",
+"___ a delay of more than three hours, the airline must pay each passenger."
+]
+},
+{
+"id": "but for|cnd",
+"en": "but for",
+"he": "אלמלא, לולא",
+"group": "תנאי",
+"pos": "p",
+"note": "מלכודת! but for = אלמלא, לא 'אבל בשביל'",
+"existing": [
+"___ your help, I would have failed.",
+"___ the seat belt, the driver would have been badly injured in the crash.",
+"___ the invention of the printing press, books would still be very rare today."
+]
+},
+{
+"id": "when|tim",
+"en": "when",
+"he": "כאשר, כש...",
+"group": "זמן ורצף",
+"pos": "c",
+"existing": [
+"Call me ___ you arrive at the airport.",
+"My grandmother was only sixteen ___ she moved to Israel from Morocco.",
+"The crowd stood up and cheered ___ the singer walked onto the stage."
+]
+},
+{
+"id": "while|tim",
+"en": "while",
+"he": "בזמן ש...",
+"group": "זמן ורצף",
+"pos": "c",
+"note": "ל-while יש גם משמעות של ניגוד: 'בעוד ש'",
+"existing": [
+"She fell asleep ___ she was watching TV.",
+"Someone stole my bike ___ I was shopping in the supermarket.",
+"I usually listen to history podcasts ___ I am cooking dinner."
+]
+},
+{
+"id": "before|tim",
+"en": "before",
+"he": "לפני",
+"group": "זמן ורצף",
+"pos": "c",
+"existing": [
+"Wash your hands ___ you eat.",
+"Please turn off all the lights ___ you leave the office.",
+"Always check the weather forecast ___ you go hiking in the mountains."
+]
+},
+{
+"id": "after|tim",
+"en": "after",
+"he": "אחרי",
+"group": "זמן ורצף",
+"pos": "c",
+"existing": [
+"___ the movie ended, we went out for dinner.",
+"___ the doctor examined the boy, she sent him for an X-ray.",
+"___ the volcano erupted, the whole village was covered in grey ash."
+]
+},
+{
+"id": "until|tim",
+"en": "until",
+"he": "עד ש...",
+"group": "זמן ורצף",
+"pos": "c",
+"existing": [
+"Please wait here ___ I come back.",
+"The baby cried ___ his mother picked him up.",
+"Keep stirring the sauce ___ it becomes thick and smooth."
+]
+},
+{
+"id": "since|tim",
+"en": "since",
+"he": "מאז",
+"group": "זמן ורצף",
+"pos": "p",
+"note": "יש לו גם משמעות של סיבה: 'מכיוון ש'",
+"existing": [
+"I have lived in this city ___ 2015.",
+"The restaurant has been closed ___ the fire last summer.",
+"My grandfather has played the violin ___ his sixth birthday."
+]
+},
+{
+"id": "during|tim",
+"en": "during",
+"he": "במהלך (+שם עצם)",
+"group": "זמן ורצף",
+"pos": "p",
+"note": "during + שם עצם; while + משפט",
+"existing": [
+"The phone rang twice ___ dinner.",
+"Please keep your phones switched off ___ the lecture.",
+"Many birds fly thousands of kilometers ___ the autumn migration."
+]
+},
+{
+"id": "as soon as|tim",
+"en": "as soon as",
+"he": "ברגע ש..., מיד כש...",
+"group": "זמן ורצף",
+"pos": "c",
+"existing": [
+"I'll call you ___ I get home.",
+"The fans ran onto the field ___ the final whistle blew.",
+"The app sends you a message ___ your package arrives at the post office."
+]
+},
+{
+"id": "meanwhile|tim",
+"en": "meanwhile",
+"he": "בינתיים, באותו זמן",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"Mom cooked dinner. ___, Dad set the table.",
+"The workers are repairing the main road. ___, drivers must use the side streets.",
+"The scientists waited for the test results. ___, they started planning the next experiment."
+]
+},
+{
+"id": "once|tim",
+"en": "once",
+"he": "ברגע ש..., לאחר ש...",
+"group": "זמן ורצף",
+"pos": "c",
+"note": "גם 'פעם אחת' או 'פעם (בעבר)'. ההקשר מחליט",
+"existing": [
+"___ you finish the test, you can leave.",
+"___ the paint is completely dry, you can hang the pictures on the wall.",
+"___ the snow melts in spring, the rivers fill with fresh water."
+]
+},
+{
+"id": "by the time|tim",
+"en": "by the time",
+"he": "עד ש..., עד לרגע ש...",
+"group": "זמן ורצף",
+"pos": "c",
+"existing": [
+"___ we arrived, the show had already ended.",
+"___ the ambulance arrived, the neighbors had already put out the fire.",
+"___ we got to the restaurant, the kitchen had already closed."
+]
+},
+{
+"id": "whenever|tim",
+"en": "whenever",
+"he": "בכל פעם ש...",
+"group": "זמן ורצף",
+"pos": "c",
+"existing": [
+"She smiles ___ she sees him.",
+"My little brother gets a headache ___ he spends too long in front of a screen.",
+"Our dog runs to the door ___ he hears the sound of a car."
+]
+},
+{
+"id": "prior to|tim",
+"en": "prior to",
+"he": "לפני (רשמי)",
+"group": "זמן ורצף",
+"pos": "p",
+"existing": [
+"Please arrive twenty minutes ___ the exam.",
+"All passengers must show their passports ___ boarding the plane.",
+"Patients must not eat anything for eight hours ___ the operation."
+]
+},
+{
+"id": "eventually|tim",
+"en": "eventually",
+"he": "בסופו של דבר",
+"group": "זמן ורצף",
+"pos": "a",
+"note": "מלכודת! eventually ≠ 'אולי'. פירושו 'בסוף'",
+"existing": [
+"After many failed attempts, he ___ succeeded.",
+"The negotiations lasted for many months, but the two sides ___ signed an agreement.",
+"The young band played in small bars for years, but they ___ became famous worldwide."
+]
+},
+{
+"id": "previously|tim",
+"en": "previously",
+"he": "קודם לכן, בעבר",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"She now lives in Haifa; ___, she lived in Eilat.",
+"Ron is a math teacher now; ___, he worked as an engineer for ten years.",
+"The factory now makes electric cars; ___, it made washing machines for forty years."
+]
+},
+{
+"id": "afterwards|tim",
+"en": "afterwards",
+"he": "אחר כך, לאחר מכן",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"We had lunch, and ___ we went for a walk.",
+"First the students took the exam, and ___ they went on a trip to the beach.",
+"The players trained for two hours, and ___ they all jumped into the pool."
+]
+},
+{
+"id": "in the meantime|tim",
+"en": "in the meantime",
+"he": "בינתיים",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"The doctor will see you soon. ___, please fill in this form.",
+"Your new passport will be ready next month. ___, you can travel with your old one.",
+"The new kitchen will be ready in two weeks. ___, we are cooking on a small gas stove."
+]
+},
+{
+"id": "throughout|tim",
+"en": "throughout",
+"he": "לאורך, במשך כל",
+"group": "זמן ורצף",
+"pos": "p",
+"existing": [
+"It rained heavily ___ the night.",
+"The museum is open every day ___ the year, even on holidays.",
+"The fans sang loudly ___ the match, even when their team was losing."
+]
+},
+{
+"id": "within|tim",
+"en": "within",
+"he": "בתוך, תוך",
+"group": "זמן ורצף",
+"pos": "p",
+"existing": [
+"You must reply ___ three days.",
+"The pizza will be delivered ___ thirty minutes, or you get it for free.",
+"Most people with a cold feel better ___ a week, even without medicine."
+]
+},
+{
+"id": "subsequently|tim",
+"en": "subsequently",
+"he": "לאחר מכן, בהמשך",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"He was arrested and ___ sent to prison.",
+"The singer's first album failed; she ___ changed her style and became a star.",
+"The scientist published her first study in 2010 and ___ won several important prizes."
+]
+},
+{
+"id": "simultaneously|tim",
+"en": "simultaneously",
+"he": "בו זמנית",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"The two runners crossed the finish line ___, so the race was a tie.",
+"The new app translates your speech and displays the text ___, without any delay.",
+"The concert was shown on TV and online ___, so fans everywhere could watch it live."
+]
+}
+]

@@ -1,0 +1,1073 @@
+[
+{
+"id": "v:abbreviate",
+"en": "abbreviate",
+"he": "לקצר (מילה או ביטוי)",
+"pos": "v",
+"existing": [
+"Doctors often ___ long medical terms to save time when writing notes."
+]
+},
+{
+"id": "v:abdomen",
+"en": "abdomen",
+"he": "בטן (אזור הבטן)",
+"pos": "n",
+"existing": [
+"The patient felt a sharp pain in his lower ___ after lunch."
+]
+},
+{
+"id": "v:abolish",
+"en": "abolish",
+"he": "לבטל (חוק, מוסד)",
+"pos": "v",
+"existing": [
+"Many countries chose to ___ slavery during the nineteenth century."
+]
+},
+{
+"id": "v:absorb",
+"en": "absorb",
+"he": "לספוג",
+"pos": "v",
+"existing": [
+"A sponge can ___ a lot of water very quickly."
+]
+},
+{
+"id": "v:absorbent",
+"en": "absorbent",
+"he": "סופג",
+"pos": "j",
+"existing": [
+"Paper towels are very ___, so they clean up spills quickly."
+]
+},
+{
+"id": "v:absorption",
+"en": "absorption",
+"he": "ספיגה",
+"pos": "n",
+"existing": [
+"The ___ of nutrients takes place mainly in the small intestine."
+]
+},
+{
+"id": "v:abundant",
+"en": "abundant",
+"he": "שופע, בשפע",
+"pos": "j",
+"existing": [
+"Fish are ___ in this lake, so the fishermen go home with full nets."
+]
+},
+{
+"id": "v:accelerate",
+"en": "accelerate",
+"he": "להאיץ",
+"pos": "v",
+"existing": [
+"The driver pressed the pedal to ___ on the empty highway."
+]
+},
+{
+"id": "v:accompany",
+"en": "accompany",
+"he": "ללוות",
+"pos": "v",
+"existing": [
+"Parents must ___ young children on the school trip."
+]
+},
+{
+"id": "v:accomplish",
+"en": "accomplish",
+"he": "להשיג, להשלים",
+"pos": "v",
+"existing": [
+"With hard work, you can ___ almost any goal."
+]
+},
+{
+"id": "v:accomplished",
+"en": "accomplished",
+"he": "מוכשר, מיומן",
+"pos": "j",
+"existing": [
+"She is an ___ pianist who has played in many famous concert halls."
+]
+},
+{
+"id": "v:accomplishment",
+"en": "accomplishment",
+"he": "הישג",
+"pos": "n",
+"existing": [
+"Finishing the marathon was a great ___ for him."
+]
+},
+{
+"id": "v:accordingly",
+"en": "accordingly",
+"he": "בהתאם, לפי זה",
+"pos": "r",
+"existing": [
+"The rules have changed, so we must plan ___."
+]
+},
+{
+"id": "v:account",
+"en": "account",
+"he": "חשבון (בנק), דין וחשבון",
+"pos": "n",
+"existing": [
+"He opened a savings ___ at the bank when he turned sixteen."
+]
+},
+{
+"id": "v:account for",
+"en": "account for",
+"he": "להסביר, להוות (חלק מ-)",
+"pos": "v",
+"existing": [
+"Can you ___ the missing money in the company's budget?"
+]
+},
+{
+"id": "v:accountable",
+"en": "accountable",
+"he": "אחראי, חייב לתת דין וחשבון",
+"pos": "j",
+"existing": [
+"Politicians should be held ___ for the promises they make."
+]
+},
+{
+"id": "v:accumulate",
+"en": "accumulate",
+"he": "לצבור, להצטבר",
+"pos": "v",
+"existing": [
+"Dust will ___ on the shelves if nobody cleans them."
+]
+},
+{
+"id": "v:accumulation",
+"en": "accumulation",
+"he": "הצטברות",
+"pos": "n",
+"existing": [
+"The slow ___ of snow on the roof caused it to collapse."
+]
+},
+{
+"id": "v:accumulative",
+"en": "accumulative",
+"he": "מצטבר",
+"pos": "j",
+"existing": [
+"The ___ effect of small daily savings can become a large sum."
+]
+},
+{
+"id": "v:acquire",
+"en": "acquire",
+"he": "לרכוש, לקבל לידיים",
+"pos": "v",
+"existing": [
+"Children ___ language skills quickly when they hear it every day."
+]
+},
+{
+"id": "v:acute",
+"en": "acute",
+"he": "חריף, חד",
+"pos": "j",
+"existing": [
+"He was taken to the hospital with ___ pain in his chest."
+]
+},
+{
+"id": "v:adaptation",
+"en": "adaptation",
+"he": "עיבוד, הסתגלות",
+"pos": "n",
+"existing": [
+"The film is an ___ of a famous novel."
+]
+},
+{
+"id": "v:adhere to",
+"en": "adhere to",
+"he": "להיצמד ל-, לציית ל-",
+"pos": "v",
+"existing": [
+"All workers must ___ the safety rules at the factory."
+]
+},
+{
+"id": "v:adherence",
+"en": "adherence",
+"he": "היצמדות, ציות",
+"pos": "n",
+"existing": [
+"Strict ___ to the schedule helped the team finish early."
+]
+},
+{
+"id": "v:administer",
+"en": "administer",
+"he": "לתת (תרופה), לנהל",
+"pos": "v",
+"existing": [
+"The nurse will ___ the medicine twice a day."
+]
+},
+{
+"id": "v:admit",
+"en": "admit",
+"he": "להודות, לקבל (למוסד)",
+"pos": "v",
+"existing": [
+"After a long silence, the boy had to ___ that he broke the window."
+]
+},
+{
+"id": "v:admit into",
+"en": "admit into",
+"he": "לקבל ל-, להכניס אל",
+"pos": "v",
+"existing": [
+"The guard will ___ the concert hall only people holding tickets."
+]
+},
+{
+"id": "v:admittance",
+"en": "admittance",
+"he": "רשות כניסה, כניסה",
+"pos": "n",
+"existing": [
+"The sign on the door said: No ___ without permission."
+]
+},
+{
+"id": "v:admittedly",
+"en": "admittedly",
+"he": "יש להודות, אמנם",
+"pos": "r",
+"existing": [
+"The test was, ___, harder than I expected, but I still passed."
+]
+},
+{
+"id": "v:adolescence",
+"en": "adolescence",
+"he": "גיל ההתבגרות",
+"pos": "n",
+"existing": [
+"Many young people feel confused about who they are during ___."
+]
+},
+{
+"id": "v:advantageous",
+"en": "advantageous",
+"he": "יתרון, מועיל",
+"pos": "j",
+"existing": [
+"Moving to a bigger city proved ___ for his career."
+]
+},
+{
+"id": "v:adversary",
+"en": "adversary",
+"he": "יריב, אויב",
+"pos": "n",
+"existing": [
+"The chess champion defeated his old ___ after a long game."
+]
+},
+{
+"id": "v:advocate",
+"en": "advocate",
+"he": "לדגול ב-, לתמוך בפומבי",
+"pos": "v",
+"existing": [
+"Doctors ___ eating more vegetables and exercising every day."
+]
+},
+{
+"id": "v:affection",
+"en": "affection",
+"he": "חיבה",
+"pos": "n",
+"existing": [
+"She showed her ___ for the dog by hugging it every day."
+]
+},
+{
+"id": "v:afflict",
+"en": "afflict",
+"he": "לייסר, להכות (במחלה)",
+"pos": "v",
+"existing": [
+"A rare disease began to ___ the children of the village."
+]
+},
+{
+"id": "v:allegedly",
+"en": "allegedly",
+"he": "לכאורה, כביכול",
+"pos": "r",
+"existing": [
+"The man ___ stole the painting, but the police have no proof yet."
+]
+},
+{
+"id": "v:allow for",
+"en": "allow for",
+"he": "להביא בחשבון, לאפשר מקום ל-",
+"pos": "v",
+"existing": [
+"You should ___ possible delays when you plan your trip."
+]
+},
+{
+"id": "v:allowance",
+"en": "allowance",
+"he": "דמי כיס, קצבה",
+"pos": "n",
+"existing": [
+"He saves his weekly ___ to buy a new bicycle."
+]
+},
+{
+"id": "v:ally",
+"en": "ally",
+"he": "בעל ברית",
+"pos": "n",
+"existing": [
+"During the war, Britain was a close ___ of the United States."
+]
+},
+{
+"id": "v:alternate",
+"en": "alternate",
+"he": "להתחלף לסירוגין",
+"pos": "v",
+"existing": [
+"The two brothers ___ between washing and drying the dishes."
+]
+},
+{
+"id": "v:ambiguity",
+"en": "ambiguity",
+"he": "עמימות, דו-משמעות",
+"pos": "n",
+"existing": [
+"The ___ of the question made it hard to answer."
+]
+},
+{
+"id": "v:ambiguous",
+"en": "ambiguous",
+"he": "דו-משמעי, עמום",
+"pos": "j",
+"existing": [
+"His answer was ___, so nobody knew if he meant yes or no."
+]
+},
+{
+"id": "v:ambition",
+"en": "ambition",
+"he": "שאיפה, שאפתנות",
+"pos": "n",
+"existing": [
+"Her ___ is to become the first woman to lead the company."
+]
+},
+{
+"id": "v:ambitious",
+"en": "ambitious",
+"he": "שאפתן",
+"pos": "j",
+"existing": [
+"He is an ___ student who wants to study medicine abroad."
+]
+},
+{
+"id": "v:ambivalence",
+"en": "ambivalence",
+"he": "אמביוולנטיות, רגשות מעורבים",
+"pos": "n",
+"existing": [
+"She felt ___ about moving abroad, both excited and afraid."
+]
+},
+{
+"id": "v:ambivalent",
+"en": "ambivalent",
+"he": "אמביוולנטי, בעל רגשות מעורבים",
+"pos": "j",
+"existing": [
+"He felt ___ about the new job, wanting it and fearing it at once."
+]
+},
+{
+"id": "v:amiss",
+"en": "amiss",
+"he": "לא כשורה",
+"pos": "j",
+"existing": [
+"The teacher sensed that something was ___ when nobody answered."
+]
+},
+{
+"id": "v:ammunition",
+"en": "ammunition",
+"he": "תחמושת",
+"pos": "n",
+"existing": [
+"The soldiers ran out of ___ and had to retreat."
+]
+},
+{
+"id": "v:ancestor",
+"en": "ancestor",
+"he": "אב קדמון",
+"pos": "n",
+"existing": [
+"His ___ came to this country more than two hundred years ago."
+]
+},
+{
+"id": "v:annex",
+"en": "annex",
+"he": "לספח",
+"pos": "v",
+"existing": [
+"The king wanted to ___ the neighboring land and add it to his empire."
+]
+},
+{
+"id": "v:applaud",
+"en": "applaud",
+"he": "למחוא כפיים, לשבח",
+"pos": "v",
+"existing": [
+"The audience stood up to ___ the actors at the end of the play."
+]
+},
+{
+"id": "v:apposite",
+"en": "apposite",
+"he": "הולם, מתאים לעניין",
+"pos": "j",
+"existing": [
+"Her story was an ___ example of how teamwork leads to success."
+]
+},
+{
+"id": "v:arise",
+"en": "arise",
+"he": "להתעורר, לעלות (בעיה)",
+"pos": "v",
+"existing": [
+"Problems may ___ if we do not plan the project carefully."
+]
+},
+{
+"id": "v:arouse",
+"en": "arouse",
+"he": "לעורר",
+"pos": "v",
+"existing": [
+"The strange noise began to ___ the curiosity of the children."
+]
+},
+{
+"id": "v:ascertain",
+"en": "ascertain",
+"he": "לברר, לוודא",
+"pos": "v",
+"existing": [
+"The police are trying to ___ exactly what happened that night."
+]
+},
+{
+"id": "v:ascribe",
+"en": "ascribe",
+"he": "ליחס, לייחס",
+"pos": "v",
+"existing": [
+"Many people ___ their success to luck, but it was really hard work."
+]
+},
+{
+"id": "v:assault",
+"en": "assault",
+"he": "תקיפה",
+"pos": "n",
+"existing": [
+"The man was arrested for ___ after the fight outside the club."
+]
+},
+{
+"id": "v:assembly",
+"en": "assembly",
+"he": "אסיפה, הרכבה",
+"pos": "n",
+"existing": [
+"The whole school gathered in the hall for the morning ___."
+]
+},
+{
+"id": "v:assert",
+"en": "assert",
+"he": "לטעון בתוקף, לקבוע",
+"pos": "v",
+"existing": [
+"The lawyer will ___ that his client was far from the city that night."
+]
+},
+{
+"id": "v:assertion",
+"en": "assertion",
+"he": "טענה, קביעה",
+"pos": "n",
+"existing": [
+"There is no proof for his ___ that the water was clean."
+]
+},
+{
+"id": "v:assertive",
+"en": "assertive",
+"he": "תקיף, החלטי",
+"pos": "j",
+"existing": [
+"She learned to be more ___ and say what she really wanted."
+]
+},
+{
+"id": "v:assertively",
+"en": "assertively",
+"he": "בתקיפות",
+"pos": "r",
+"existing": [
+"He spoke ___ at the meeting and everyone listened."
+]
+},
+{
+"id": "v:asset",
+"en": "asset",
+"he": "נכס, יתרון",
+"pos": "n",
+"existing": [
+"Her fluent English is a great ___ for the company."
+]
+},
+{
+"id": "v:assign",
+"en": "assign",
+"he": "להקצות, למנות",
+"pos": "v",
+"existing": [
+"The teacher will ___ a different topic to each group."
+]
+},
+{
+"id": "v:assimilate",
+"en": "assimilate",
+"he": "להטמיע, להתערות",
+"pos": "v",
+"existing": [
+"Immigrants often need years to ___ into a new culture."
+]
+},
+{
+"id": "v:associated",
+"en": "associated",
+"he": "קשור, מקושר",
+"pos": "j",
+"existing": [
+"Heart disease is ___ with a poor diet."
+]
+},
+{
+"id": "v:astonish",
+"en": "astonish",
+"he": "להדהים",
+"pos": "v",
+"existing": [
+"The magician's last trick will ___ the entire audience."
+]
+},
+{
+"id": "v:attain",
+"en": "attain",
+"he": "להשיג, להגיע ל-",
+"pos": "v",
+"existing": [
+"It took her years of study to ___ the rank of professor."
+]
+},
+{
+"id": "v:attribute",
+"en": "attribute",
+"he": "ליחס, לייחס",
+"pos": "v",
+"existing": [
+"Scientists ___ the extinction of the dinosaurs to a giant asteroid."
+]
+},
+{
+"id": "v:audacious",
+"en": "audacious",
+"he": "נועז, חצוף",
+"pos": "j",
+"existing": [
+"It was an ___ plan to cross the desert on bicycles."
+]
+},
+{
+"id": "v:authoritative",
+"en": "authoritative",
+"he": "סמכותי, מוסמך",
+"pos": "j",
+"existing": [
+"This is the most ___ guide to the birds of Israel."
+]
+},
+{
+"id": "v:avarice",
+"en": "avarice",
+"he": "חמדנות, בצע כסף",
+"pos": "n",
+"existing": [
+"His ___ was so great that he never gave a coin to charity."
+]
+},
+{
+"id": "v:avaricious",
+"en": "avaricious",
+"he": "חמדן, אוהב בצע",
+"pos": "j",
+"existing": [
+"The ___ merchant raised prices every time there was a shortage."
+]
+},
+{
+"id": "v:awe",
+"en": "awe",
+"he": "יראה, השתאות",
+"pos": "n",
+"existing": [
+"The children stared in ___ at the giant whale."
+]
+},
+{
+"id": "v:awe-inspiring",
+"en": "awe-inspiring",
+"he": "מעורר יראה והערצה",
+"pos": "j",
+"existing": [
+"The view from the top of the mountain was ___."
+]
+},
+{
+"id": "v:axis",
+"en": "axis",
+"he": "ציר",
+"pos": "n",
+"existing": [
+"The Earth turns once a day around its ___."
+]
+},
+{
+"id": "v:azure",
+"en": "azure",
+"he": "תכלת, כחול שמיים",
+"pos": "j",
+"existing": [
+"We swam in the clear ___ water of the Mediterranean."
+]
+},
+{
+"id": "v:bamboozle",
+"en": "bamboozle",
+"he": "להטעות, לבלבל בתחבולה",
+"pos": "v",
+"existing": [
+"The salesman tried to ___ us into buying a very expensive vacuum cleaner."
+]
+},
+{
+"id": "v:barefoot",
+"en": "barefoot",
+"he": "יחף",
+"pos": "r",
+"existing": [
+"The children ran ___ on the warm sand."
+]
+},
+{
+"id": "v:barely",
+"en": "barely",
+"he": "בקושי",
+"pos": "r",
+"existing": [
+"I was so tired that I could ___ keep my eyes open."
+]
+},
+{
+"id": "v:barrack",
+"en": "barrack",
+"he": "לצעוק קריאות בוז, לבוז",
+"pos": "v",
+"existing": [
+"Some fans started to ___ the referee, shouting angry insults at him."
+]
+},
+{
+"id": "v:barracks",
+"en": "barracks",
+"he": "מגורי חיילים, קסרקטין",
+"pos": "n",
+"existing": [
+"The new recruits slept in the ___ near the training field."
+]
+},
+{
+"id": "v:basin",
+"en": "basin",
+"he": "אגן, כיור (גם: אגן נהר)",
+"pos": "n",
+"existing": [
+"The river flows through a wide ___ surrounded by mountains."
+]
+},
+{
+"id": "v:beforehand",
+"en": "beforehand",
+"he": "מראש, לפני כן",
+"pos": "r",
+"existing": [
+"If you want to join the trip, please tell us ___ ."
+]
+},
+{
+"id": "v:beneath",
+"en": "beneath",
+"he": "מתחת ל-",
+"pos": "x",
+"existing": [
+"The old coins were buried ___ the floor of the barn."
+]
+},
+{
+"id": "v:betray",
+"en": "betray",
+"he": "לבגוד ב-",
+"pos": "v",
+"existing": [
+"He would never ___ a friend who trusted him with a secret."
+]
+},
+{
+"id": "v:betrayal",
+"en": "betrayal",
+"he": "בגידה",
+"pos": "n",
+"existing": [
+"She felt deep ___ when she learned her best friend had lied to her."
+]
+},
+{
+"id": "v:birch",
+"en": "birch",
+"he": "ליבנה (עץ)",
+"pos": "n",
+"existing": [
+"The forest was full of tall ___ trees with white bark."
+]
+},
+{
+"id": "v:blaspheme",
+"en": "blaspheme",
+"he": "לחלל את השם, לגדף",
+"pos": "v",
+"existing": [
+"In the old village, anyone who dared to ___ against God was punished."
+]
+},
+{
+"id": "v:blasphemy",
+"en": "blasphemy",
+"he": "חילול הקודש, גידוף",
+"pos": "n",
+"existing": [
+"The priest called the cartoon an act of ___ ."
+]
+},
+{
+"id": "v:bloom",
+"en": "bloom",
+"he": "לפרוח",
+"pos": "v",
+"existing": [
+"The roses in our garden ___ every spring."
+]
+},
+{
+"id": "v:bottomless",
+"en": "bottomless",
+"he": "חסר תחתית, אין סופי",
+"pos": "j",
+"existing": [
+"The cave seemed to have a ___ pit that no light could reach."
+]
+},
+{
+"id": "v:breadth",
+"en": "breadth",
+"he": "רוחב, היקף",
+"pos": "n",
+"existing": [
+"I was amazed by the ___ of her knowledge about history."
+]
+},
+{
+"id": "v:breakdown",
+"en": "breakdown",
+"he": "תקלה, התמוטטות, פירוט",
+"pos": "n",
+"existing": [
+"The ___ of the bus made us late for school."
+]
+},
+{
+"id": "v:bridle",
+"en": "bridle",
+"he": "רסן (גם: לרסן)",
+"pos": "n",
+"existing": [
+"The rider pulled gently on the ___ to slow the horse."
+]
+},
+{
+"id": "v:brutality",
+"en": "brutality",
+"he": "אכזריות, אלימות",
+"pos": "n",
+"existing": [
+"The film shows the ___ of life in a prison camp."
+]
+},
+{
+"id": "v:brute",
+"en": "brute",
+"he": "חיה, אדם אכזרי וגס",
+"pos": "n",
+"existing": [
+"Everyone feared him, a cruel ___ who solved every problem with his fists."
+]
+},
+{
+"id": "v:brutish",
+"en": "brutish",
+"he": "גס ואכזרי, חייתי",
+"pos": "j",
+"existing": [
+"His ___ manners made everyone at the dinner table uncomfortable."
+]
+},
+{
+"id": "v:brutishly",
+"en": "brutishly",
+"he": "בגסות ובאכזריות",
+"pos": "r",
+"existing": [
+"The guard shoved the prisoners ___ toward the gate."
+]
+},
+{
+"id": "v:buffoon",
+"en": "buffoon",
+"he": "ליצן, שוטה",
+"pos": "n",
+"existing": [
+"The mayor acted like a ___ and made everyone laugh at the ceremony."
+]
+},
+{
+"id": "v:burden",
+"en": "burden",
+"he": "נטל, עול",
+"pos": "n",
+"existing": [
+"Taking care of three sick relatives was a heavy ___ for her."
+]
+},
+{
+"id": "v:buttress",
+"en": "buttress",
+"he": "תומך (קיר), חיזוק",
+"pos": "n",
+"existing": [
+"The old cathedral wall is held up by a stone ___ ."
+]
+},
+{
+"id": "v:by all means",
+"en": "by all means",
+"he": "בהחלט, בבקשה (הסכמה)",
+"pos": "x",
+"existing": [
+"If you want to try my new bike, ___ !"
+]
+},
+{
+"id": "v:by no means",
+"en": "by no means",
+"he": "בשום אופן לא",
+"pos": "x",
+"existing": [
+"The test was ___ easy, and many students failed it."
+]
+},
+{
+"id": "v:bypass",
+"en": "bypass",
+"he": "לעקוף",
+"pos": "v",
+"existing": [
+"Drivers can ___ the busy city center by taking the new highway."
+]
+},
+{
+"id": "v:camouflage",
+"en": "camouflage",
+"he": "הסוואה",
+"pos": "n",
+"existing": [
+"The soldier's green uniform served as ___ in the forest."
+]
+},
+{
+"id": "v:candid",
+"en": "candid",
+"he": "גלוי לב, כן",
+"pos": "j",
+"existing": [
+"I appreciate your ___ opinion, even though it is not what I hoped to hear."
+]
+},
+{
+"id": "v:candidly",
+"en": "candidly",
+"he": "בגלוי, בכנות",
+"pos": "r",
+"existing": [
+"She spoke ___ about her mistakes and did not try to hide anything."
+]
+},
+{
+"id": "v:carcass",
+"en": "carcass",
+"he": "פגר",
+"pos": "n",
+"existing": [
+"Vultures gathered around the ___ of a zebra on the savanna."
+]
+},
+{
+"id": "v:cease",
+"en": "cease",
+"he": "להפסיק, לחדול",
+"pos": "v",
+"existing": [
+"The shooting did not ___ until the early hours of the morning."
+]
+},
+{
+"id": "v:ceaseless",
+"en": "ceaseless",
+"he": "בלתי פוסק",
+"pos": "j",
+"existing": [
+"The ___ noise of traffic made it hard to concentrate."
+]
+},
+{
+"id": "v:cede",
+"en": "cede",
+"he": "לוותר על, למסור (שטח)",
+"pos": "v",
+"existing": [
+"After losing the war, the country had to ___ a large part of its territory."
+]
+},
+{
+"id": "v:certify",
+"en": "certify",
+"he": "לאשר רשמית, להסמיך",
+"pos": "v",
+"existing": [
+"An official document will ___ that you completed the course."
+]
+},
+{
+"id": "v:chauffeur",
+"en": "chauffeur",
+"he": "נהג צמוד",
+"pos": "n",
+"existing": [
+"The president's ___ drove him to the airport every morning."
+]
+},
+{
+"id": "v:cherish",
+"en": "cherish",
+"he": "להוקיר, לשמור קרוב ללב",
+"pos": "v",
+"existing": [
+"I will always ___ the memories of summers at my grandmother's house."
+]
+},
+{
+"id": "v:chiefly",
+"en": "chiefly",
+"he": "בעיקר",
+"pos": "r",
+"existing": [
+"The museum is visited ___ by tourists, not by local residents."
+]
+},
+{
+"id": "v:cite",
+"en": "cite",
+"he": "לצטט, להזכיר כדוגמה",
+"pos": "v",
+"existing": [
+"In your essay, you must ___ the sources you used."
+]
+},
+{
+"id": "v:civilize",
+"en": "civilize",
+"he": "לתרבת",
+"pos": "v",
+"existing": [
+"Education and law helped to ___ the rough frontier town."
+]
+},
+{
+"id": "v:commence",
+"en": "commence",
+"he": "להתחיל (רשמי)",
+"pos": "v",
+"existing": [
+"The ceremony will ___ at noon with a speech by the principal."
+]
+}
+]

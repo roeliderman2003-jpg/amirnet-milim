@@ -1,0 +1,1073 @@
+[
+{
+"id": "v:modest",
+"en": "modest",
+"he": "צנוע",
+"pos": "j",
+"existing": [
+"Despite winning the prize, he stayed ___ and thanked his team."
+]
+},
+{
+"id": "v:modification",
+"en": "modification",
+"he": "שינוי, התאמה",
+"pos": "n",
+"existing": [
+"The engineers made a small ___ to the design."
+]
+},
+{
+"id": "v:modify",
+"en": "modify",
+"he": "לשנות, להתאים",
+"pos": "v",
+"existing": [
+"We had to ___ the plan when it began to rain."
+]
+},
+{
+"id": "v:momentary",
+"en": "momentary",
+"he": "רגעי, חולף",
+"pos": "j",
+"existing": [
+"There was a ___ pause before she answered the question."
+]
+},
+{
+"id": "v:municipal",
+"en": "municipal",
+"he": "עירוני",
+"pos": "j",
+"existing": [
+"The ___ government repairs roads and collects the city's trash."
+]
+},
+{
+"id": "v:mutual",
+"en": "mutual",
+"he": "הדדי, משותף",
+"pos": "j",
+"existing": [
+"Their friendship is based on ___ respect and trust."
+]
+},
+{
+"id": "v:necessity",
+"en": "necessity",
+"he": "צורך, הכרח",
+"pos": "n",
+"existing": [
+"Water is a basic ___, not a luxury."
+]
+},
+{
+"id": "v:neglect",
+"en": "neglect",
+"he": "להזניח",
+"pos": "v",
+"existing": [
+"Do not ___ your health just because you are busy at work."
+]
+},
+{
+"id": "v:negligence",
+"en": "negligence",
+"he": "רשלנות",
+"pos": "n",
+"existing": [
+"The driver was sued for ___ after the accident."
+]
+},
+{
+"id": "v:nobility",
+"en": "nobility",
+"he": "אצולה",
+"pos": "n",
+"existing": [
+"Only members of the ___ were allowed to attend the king's ball."
+]
+},
+{
+"id": "v:noble",
+"en": "noble",
+"he": "אציל, אצילי",
+"pos": "j",
+"existing": [
+"It was a ___ act to give his coat to a stranger in the cold."
+]
+},
+{
+"id": "v:nocturnal",
+"en": "nocturnal",
+"he": "לילי, פעיל בלילה",
+"pos": "j",
+"existing": [
+"Owls are ___ animals that hunt at night."
+]
+},
+{
+"id": "v:nominal",
+"en": "nominal",
+"he": "סמלי, נומינלי",
+"pos": "j",
+"existing": [
+"He paid only a ___ fee to join the club."
+]
+},
+{
+"id": "v:notable",
+"en": "notable",
+"he": "ראוי לציון, בולט",
+"pos": "j",
+"existing": [
+"The city is ___ for its beautiful old churches."
+]
+},
+{
+"id": "v:notion",
+"en": "notion",
+"he": "רעיון, תפיסה",
+"pos": "n",
+"existing": [
+"She had no ___ of how much the trip would cost."
+]
+},
+{
+"id": "v:novel",
+"en": "novel",
+"he": "רומן; חדשני",
+"pos": "n",
+"existing": [
+"I read a long ___ about a family during the war."
+]
+},
+{
+"id": "v:nun",
+"en": "nun",
+"he": "נזירה",
+"pos": "n",
+"existing": [
+"The ___ lived in a quiet convent and prayed every day."
+]
+},
+{
+"id": "v:obedience",
+"en": "obedience",
+"he": "ציות, צייתנות",
+"pos": "n",
+"existing": [
+"The soldiers were trained to show complete ___ to their commanders."
+]
+},
+{
+"id": "v:obey",
+"en": "obey",
+"he": "לציית",
+"pos": "v",
+"existing": [
+"Drivers must ___ the traffic laws, or they will receive a fine."
+]
+},
+{
+"id": "v:objection",
+"en": "objection",
+"he": "התנגדות, הסתייגות",
+"pos": "n",
+"existing": [
+"Does anyone have an ___ to moving the meeting to Monday?"
+]
+},
+{
+"id": "v:objective",
+"en": "objective",
+"he": "מטרה, יעד",
+"pos": "n",
+"existing": [
+"Our main ___ this year is to reduce waste in the school."
+]
+},
+{
+"id": "v:obscure",
+"en": "obscure",
+"he": "לא מוכר, עלום",
+"pos": "j",
+"existing": [
+"He is an ___ poet whom almost nobody has ever read."
+]
+},
+{
+"id": "v:obtain",
+"en": "obtain",
+"he": "להשיג, לקבל",
+"pos": "v",
+"existing": [
+"Students must ___ a signed form from their parents before the trip."
+]
+},
+{
+"id": "v:occasion",
+"en": "occasion",
+"he": "אירוע, הזדמנות",
+"pos": "n",
+"existing": [
+"Her graduation was a special ___ for the whole family."
+]
+},
+{
+"id": "v:occupation",
+"en": "occupation",
+"he": "עיסוק, מקצוע",
+"pos": "n",
+"existing": [
+"Please write your name, age, and ___ on the form."
+]
+},
+{
+"id": "v:occupy",
+"en": "occupy",
+"he": "לתפוס (מקום או זמן), לאכלס",
+"pos": "v",
+"existing": [
+"Toys ___ half of the space in the children's room."
+]
+},
+{
+"id": "v:occurrence",
+"en": "occurrence",
+"he": "מקרה, התרחשות",
+"pos": "n",
+"existing": [
+"Snow in this desert town is a very rare ___."
+]
+},
+{
+"id": "v:odor",
+"en": "odor",
+"he": "ריח (לרוב לא נעים)",
+"pos": "n",
+"existing": [
+"A strong ___ of garbage came from the alley."
+]
+},
+{
+"id": "v:on account of",
+"en": "on account of",
+"he": "בגלל, עקב",
+"pos": "x",
+"existing": [
+"The match was postponed ___ the heavy rain."
+]
+},
+{
+"id": "v:opportune",
+"en": "opportune",
+"he": "מתאים, בעיתו",
+"pos": "j",
+"existing": [
+"She waited for an ___ moment to ask her boss for a raise."
+]
+},
+{
+"id": "v:opportunism",
+"en": "opportunism",
+"he": "אופורטוניזם, ניצול הזדמנויות",
+"pos": "n",
+"existing": [
+"Critics called the politician's change of party pure ___, not principle."
+]
+},
+{
+"id": "v:oppress",
+"en": "oppress",
+"he": "לדכא, לרדוף",
+"pos": "v",
+"existing": [
+"The dictator used the army to ___ anyone who spoke against him."
+]
+},
+{
+"id": "v:oppression",
+"en": "oppression",
+"he": "דיכוי, עריצות",
+"pos": "n",
+"existing": [
+"Thousands fled the country to escape political ___."
+]
+},
+{
+"id": "v:oscillate",
+"en": "oscillate",
+"he": "להתנדנד, להתנודד (בין דעות)",
+"pos": "v",
+"existing": [
+"The pendulum began to ___ back and forth."
+]
+},
+{
+"id": "v:ostentatious",
+"en": "ostentatious",
+"he": "מפגין, מתהדר",
+"pos": "j",
+"existing": [
+"He drove an ___ gold car just to impress his neighbors."
+]
+},
+{
+"id": "v:outcome",
+"en": "outcome",
+"he": "תוצאה",
+"pos": "n",
+"existing": [
+"Nobody could predict the ___ of the election."
+]
+},
+{
+"id": "v:outdo",
+"en": "outdo",
+"he": "לעלות על, להתעלות על",
+"pos": "v",
+"existing": [
+"The twins always try to ___ each other in every game they play."
+]
+},
+{
+"id": "v:outgrowth",
+"en": "outgrowth",
+"he": "התפתחות טבעית, תוצר",
+"pos": "n",
+"existing": [
+"The festival is an ___ of a small village celebration."
+]
+},
+{
+"id": "v:outline",
+"en": "outline",
+"he": "תוכנית כללית, קווי מתאר",
+"pos": "n",
+"existing": [
+"Write an ___ of your essay before you start writing."
+]
+},
+{
+"id": "v:outrage",
+"en": "outrage",
+"he": "זעם, חרון",
+"pos": "n",
+"existing": [
+"The decision to close the library caused public ___."
+]
+},
+{
+"id": "v:outspread",
+"en": "outspread",
+"he": "פרוש לרווחה",
+"pos": "j",
+"existing": [
+"The eagle flew over the valley with ___ wings."
+]
+},
+{
+"id": "v:pardon",
+"en": "pardon",
+"he": "לסלוח, לחון",
+"pos": "v",
+"existing": [
+"The president decided to ___ the prisoner after ten years."
+]
+},
+{
+"id": "v:pedestrian",
+"en": "pedestrian",
+"he": "הולך רגל",
+"pos": "n",
+"existing": [
+"A ___ must wait for the green light before crossing the street."
+]
+},
+{
+"id": "v:perception",
+"en": "perception",
+"he": "תפיסה, הבנה",
+"pos": "n",
+"existing": [
+"Our ___ of time changes when we are bored."
+]
+},
+{
+"id": "v:perish",
+"en": "perish",
+"he": "לגווע, לאבד חיים",
+"pos": "v",
+"existing": [
+"Without water, the young plants will ___ within a few days."
+]
+},
+{
+"id": "v:permeate",
+"en": "permeate",
+"he": "לחלחל, לחדור לכל מקום",
+"pos": "v",
+"existing": [
+"The smell of fresh bread began to ___ the whole house."
+]
+},
+{
+"id": "v:perplexed",
+"en": "perplexed",
+"he": "מבולבל, נבוך",
+"pos": "j",
+"existing": [
+"She looked ___ when she read the strange instructions for the machine."
+]
+},
+{
+"id": "v:persevere",
+"en": "persevere",
+"he": "להתמיד",
+"pos": "v",
+"existing": [
+"If you ___ despite the difficulties, you will finally succeed."
+]
+},
+{
+"id": "v:persuade",
+"en": "persuade",
+"he": "לשכנע",
+"pos": "v",
+"existing": [
+"I tried to ___ my parents to let me go to the concert."
+]
+},
+{
+"id": "v:pertinent",
+"en": "pertinent",
+"he": "רלוונטי, ענייני",
+"pos": "j",
+"existing": [
+"The lawyer asked only ___ questions that related directly to the case."
+]
+},
+{
+"id": "v:pest",
+"en": "pest",
+"he": "מזיק, מטרד",
+"pos": "n",
+"existing": [
+"The locust is a serious ___ that can destroy a whole harvest."
+]
+},
+{
+"id": "v:petulant",
+"en": "petulant",
+"he": "רגזן, קפריזי",
+"pos": "j",
+"existing": [
+"The ___ child threw his toys on the floor when he did not get candy."
+]
+},
+{
+"id": "v:pioneer",
+"en": "pioneer",
+"he": "חלוץ",
+"pos": "n",
+"existing": [
+"Marie Curie was a ___ in the field of radioactivity research."
+]
+},
+{
+"id": "v:portion",
+"en": "portion",
+"he": "מנה, חלק",
+"pos": "n",
+"existing": [
+"The restaurant serves a very large ___ of rice with every meal."
+]
+},
+{
+"id": "v:possess",
+"en": "possess",
+"he": "להחזיק, להיות בעלים של",
+"pos": "v",
+"existing": [
+"Few families in the village ___ a car in those days."
+]
+},
+{
+"id": "v:possession",
+"en": "possession",
+"he": "רכוש, החזקה",
+"pos": "n",
+"existing": [
+"His most valuable ___ was an old watch from his grandfather."
+]
+},
+{
+"id": "v:postpone",
+"en": "postpone",
+"he": "לדחות",
+"pos": "v",
+"existing": [
+"We had to ___ the picnic because of the rain."
+]
+},
+{
+"id": "v:posture",
+"en": "posture",
+"he": "יציבה, תנוחת גוף",
+"pos": "n",
+"existing": [
+"Sitting with good ___ can prevent back problems."
+]
+},
+{
+"id": "v:praise",
+"en": "praise",
+"he": "לשבח, שבח",
+"pos": "v",
+"existing": [
+"Teachers should ___ students when they work hard."
+]
+},
+{
+"id": "v:preach",
+"en": "preach",
+"he": "להטיף",
+"pos": "v",
+"existing": [
+"It is easy to ___ about honesty but harder to live by it."
+]
+},
+{
+"id": "v:preacher",
+"en": "preacher",
+"he": "מטיף, כומר",
+"pos": "n",
+"existing": [
+"The ___ spoke to the crowd about kindness and forgiveness."
+]
+},
+{
+"id": "v:precede",
+"en": "precede",
+"he": "להקדים, לבוא לפני",
+"pos": "v",
+"existing": [
+"A short speech will ___ the main performance tonight."
+]
+},
+{
+"id": "v:preclude",
+"en": "preclude",
+"he": "למנוע מראש, לשלול",
+"pos": "v",
+"existing": [
+"Her busy schedule seems to ___ any chance of a vacation."
+]
+},
+{
+"id": "v:prejudice",
+"en": "prejudice",
+"he": "דעה קדומה, הטיה",
+"pos": "n",
+"existing": [
+"Racial ___ is still a serious problem in many societies."
+]
+},
+{
+"id": "v:prejudicial",
+"en": "prejudicial",
+"he": "פוגע, מוטה לרעה",
+"pos": "j",
+"existing": [
+"The judge removed the evidence because it was ___ to the defendant."
+]
+},
+{
+"id": "v:prescription",
+"en": "prescription",
+"he": "מרשם",
+"pos": "n",
+"existing": [
+"The doctor wrote a ___ for antibiotics and told him to rest."
+]
+},
+{
+"id": "v:preventive",
+"en": "preventive",
+"he": "מונע, מניעתי",
+"pos": "j",
+"existing": [
+"Doctors recommend ___ care, such as vaccinations, to stop illness before it starts."
+]
+},
+{
+"id": "v:prey",
+"en": "prey",
+"he": "טרף",
+"pos": "n",
+"existing": [
+"The eagle spotted its ___ moving in the grass far below."
+]
+},
+{
+"id": "v:principal",
+"en": "principal",
+"he": "מנהל בית ספר, עיקרי",
+"pos": "n",
+"existing": [
+"The ___ announced that school would end early on Friday."
+]
+},
+{
+"id": "v:procure",
+"en": "procure",
+"he": "להשיג, לרכוש",
+"pos": "v",
+"existing": [
+"The company needs to ___ new equipment before the factory opens."
+]
+},
+{
+"id": "v:profound",
+"en": "profound",
+"he": "עמוק, מעמיק",
+"pos": "j",
+"existing": [
+"The book had a ___ effect on the way he saw the world."
+]
+},
+{
+"id": "v:prompt",
+"en": "prompt",
+"he": "מיידי, מהיר",
+"pos": "j",
+"existing": [
+"Thank you for your ___ reply to my message."
+]
+},
+{
+"id": "v:propagate",
+"en": "propagate",
+"he": "להפיץ, להרבות",
+"pos": "v",
+"existing": [
+"Gardeners ___ roses by planting small cuttings in the soil."
+]
+},
+{
+"id": "v:prospect",
+"en": "prospect",
+"he": "סיכוי, ציפייה",
+"pos": "n",
+"existing": [
+"The ___ of meeting her favorite singer made her very excited."
+]
+},
+{
+"id": "v:prosperous",
+"en": "prosperous",
+"he": "משגשג, אמיד",
+"pos": "j",
+"existing": [
+"The town became ___ after a large factory opened nearby."
+]
+},
+{
+"id": "v:provisional",
+"en": "provisional",
+"he": "זמני, ארעי",
+"pos": "j",
+"existing": [
+"A ___ government ran the country until new elections could be held."
+]
+},
+{
+"id": "v:provisions",
+"en": "provisions",
+"he": "אספקה, מזון וציוד",
+"pos": "n",
+"existing": [
+"The hikers packed enough ___ to last them a whole week."
+]
+},
+{
+"id": "v:pursue",
+"en": "pursue",
+"he": "לרדוף אחרי, לשאוף ל-",
+"pos": "v",
+"existing": [
+"She decided to ___ a career in medicine after finishing her army service."
+]
+},
+{
+"id": "v:pursuit",
+"en": "pursuit",
+"he": "רדיפה, שאיפה, עיסוק",
+"pos": "n",
+"existing": [
+"The police car was in hot ___ of the stolen truck."
+]
+},
+{
+"id": "v:puzzled",
+"en": "puzzled",
+"he": "מבולבל, תוהה",
+"pos": "j",
+"existing": [
+"He was ___ by the strange noise coming from the basement."
+]
+},
+{
+"id": "v:qualifications",
+"en": "qualifications",
+"he": "כישורים, הכשרה",
+"pos": "n",
+"existing": [
+"She has all the ___ needed for the job, including a university degree."
+]
+},
+{
+"id": "v:qualify",
+"en": "qualify",
+"he": "להעפיל, להיות זכאי",
+"pos": "v",
+"existing": [
+"Our team needs to win one more game to ___ for the final."
+]
+},
+{
+"id": "v:quarrel",
+"en": "quarrel",
+"he": "ריב, להתקוטט",
+"pos": "n",
+"existing": [
+"The two brothers had a loud ___ over who would use the computer."
+]
+},
+{
+"id": "v:quest",
+"en": "quest",
+"he": "מסע חיפוש, מאמץ",
+"pos": "n",
+"existing": [
+"The knights set out on a ___ to find the lost treasure."
+]
+},
+{
+"id": "v:rank",
+"en": "rank",
+"he": "דרגה, מעמד",
+"pos": "n",
+"existing": [
+"In the army, he rose to the ___ of captain in just five years."
+]
+},
+{
+"id": "v:rate",
+"en": "rate",
+"he": "שיעור, קצב",
+"pos": "n",
+"existing": [
+"The unemployment ___ fell to five percent last year."
+]
+},
+{
+"id": "v:rather",
+"en": "rather",
+"he": "די, דווקא",
+"pos": "r",
+"existing": [
+"I would ___ stay home tonight than go out in the rain."
+]
+},
+{
+"id": "v:reciprocal",
+"en": "reciprocal",
+"he": "הדדי",
+"pos": "j",
+"existing": [
+"Friendship is a ___ bond in which both people give and receive."
+]
+},
+{
+"id": "v:reconcile",
+"en": "reconcile",
+"he": "להתפייס, ליישב",
+"pos": "v",
+"existing": [
+"The two friends were glad to ___ after years of silence."
+]
+},
+{
+"id": "v:reconciliation",
+"en": "reconciliation",
+"he": "פיוס, התפייסות",
+"pos": "n",
+"existing": [
+"After years of conflict, the two families finally achieved ___."
+]
+},
+{
+"id": "v:recuperate",
+"en": "recuperate",
+"he": "להחלים, לאסוף כוחות",
+"pos": "v",
+"existing": [
+"It took him three weeks to ___ after the operation."
+]
+},
+{
+"id": "v:redundant",
+"en": "redundant",
+"he": "מיותר, עודף",
+"pos": "j",
+"existing": [
+"Cut the ___ words from your essay to make it shorter."
+]
+},
+{
+"id": "v:refer",
+"en": "refer",
+"he": "להפנות, להתייחס",
+"pos": "v",
+"existing": [
+"Please ___ to the map on page ten when you answer."
+]
+},
+{
+"id": "v:refrain",
+"en": "refrain",
+"he": "להימנע, לחדול",
+"pos": "v",
+"existing": [
+"Please ___ from using your phone during the exam."
+]
+},
+{
+"id": "v:rehabilitation",
+"en": "rehabilitation",
+"he": "שיקום",
+"pos": "n",
+"existing": [
+"After the accident, he needed months of ___ to walk again."
+]
+},
+{
+"id": "v:relate",
+"en": "relate",
+"he": "לקשר, לספר",
+"pos": "v",
+"existing": [
+"Scientists try to ___ the rise in allergies to changes in the environment."
+]
+},
+{
+"id": "v:relate to",
+"en": "relate to",
+"he": "להזדהות עם, להתייחס ל-",
+"pos": "v",
+"existing": [
+"Many teenagers can ___ the main character in this novel."
+]
+},
+{
+"id": "v:relation",
+"en": "relation",
+"he": "קשר, יחס, קרוב משפחה",
+"pos": "n",
+"existing": [
+"There is no clear ___ between the two events."
+]
+},
+{
+"id": "v:relative",
+"en": "relative",
+"he": "קרוב משפחה",
+"pos": "n",
+"existing": [
+"A distant ___ from Canada came to visit us last summer."
+]
+},
+{
+"id": "v:relieve",
+"en": "relieve",
+"he": "להקל, לשכך",
+"pos": "v",
+"existing": [
+"This cream will ___ the itching almost immediately."
+]
+},
+{
+"id": "v:reluctant",
+"en": "reluctant",
+"he": "לא מוכן, מהסס",
+"pos": "j",
+"existing": [
+"He was ___ to speak in front of the whole class."
+]
+},
+{
+"id": "v:remainder",
+"en": "remainder",
+"he": "שארית, יתרה",
+"pos": "n",
+"existing": [
+"He spent the ___ of the afternoon doing homework."
+]
+},
+{
+"id": "v:remark",
+"en": "remark",
+"he": "הערה, לציין",
+"pos": "n",
+"existing": [
+"She made a funny ___ that made everyone laugh."
+]
+},
+{
+"id": "v:remnant",
+"en": "remnant",
+"he": "שריד, שארית",
+"pos": "n",
+"existing": [
+"Only a small ___ of the ancient wall still stands in the old city."
+]
+},
+{
+"id": "v:renovate",
+"en": "renovate",
+"he": "לשפץ",
+"pos": "v",
+"existing": [
+"The family decided to ___ the old kitchen before the holidays."
+]
+},
+{
+"id": "v:reprimand",
+"en": "reprimand",
+"he": "לנזוף",
+"pos": "v",
+"existing": [
+"The commander decided to ___ the soldier for arriving late to the drill."
+]
+},
+{
+"id": "v:reproduce",
+"en": "reproduce",
+"he": "להתרבות, לשחזר",
+"pos": "v",
+"existing": [
+"Rabbits ___ very quickly, so their population can grow fast."
+]
+},
+{
+"id": "v:reprove",
+"en": "reprove",
+"he": "לגעור",
+"pos": "v",
+"existing": [
+"My grandfather would gently ___ us whenever we spoke rudely to guests."
+]
+},
+{
+"id": "v:repudiate",
+"en": "repudiate",
+"he": "לדחות, להתכחש",
+"pos": "v",
+"existing": [
+"The minister rushed to ___ the false claims published in the newspaper."
+]
+},
+{
+"id": "v:repugnant",
+"en": "repugnant",
+"he": "מגעיל, דוחה",
+"pos": "j",
+"existing": [
+"The idea of cheating on the exam was ___ to her."
+]
+},
+{
+"id": "v:residue",
+"en": "residue",
+"he": "שארית, משקע",
+"pos": "n",
+"existing": [
+"After the water evaporated, a white ___ was left at the bottom of the pot."
+]
+},
+{
+"id": "v:resolution",
+"en": "resolution",
+"he": "החלטה, פתרון",
+"pos": "n",
+"existing": [
+"The council passed a ___ to build a new playground in the park."
+]
+},
+{
+"id": "v:resolve",
+"en": "resolve",
+"he": "לפתור, להחליט",
+"pos": "v",
+"existing": [
+"The two neighbors met to ___ their long argument about the fence."
+]
+},
+{
+"id": "v:respectively",
+"en": "respectively",
+"he": "בהתאמה",
+"pos": "r",
+"existing": [
+"Dana and Ben scored 90 and 85 on the test, ___."
+]
+},
+{
+"id": "v:restatement",
+"en": "restatement",
+"he": "ניסוח מחדש, חזרה על הדברים",
+"pos": "n",
+"existing": [
+"His long answer was just a ___ of what the teacher had already said."
+]
+},
+{
+"id": "v:restore",
+"en": "restore",
+"he": "לשחזר, להחזיר לקדמותו",
+"pos": "v",
+"existing": [
+"Workers spent years trying to ___ the old church to its original look."
+]
+},
+{
+"id": "v:restrain",
+"en": "restrain",
+"he": "לרסן, לרתום",
+"pos": "v",
+"existing": [
+"It took two guards to ___ the angry man until the police arrived."
+]
+},
+{
+"id": "v:restraint",
+"en": "restraint",
+"he": "איפוק, ריסון",
+"pos": "n",
+"existing": [
+"The soldiers showed great ___ and did not respond to the provocation."
+]
+},
+{
+"id": "v:restrict",
+"en": "restrict",
+"he": "להגביל",
+"pos": "v",
+"existing": [
+"The city decided to ___ car traffic in the center during the weekend."
+]
+}
+]

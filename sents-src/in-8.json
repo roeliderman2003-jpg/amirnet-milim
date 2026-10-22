@@ -1,0 +1,1064 @@
+[
+{
+"id": "v:restriction",
+"en": "restriction",
+"he": "הגבלה",
+"pos": "n",
+"existing": [
+"There is a strict ___ on the number of guests allowed in the hall."
+]
+},
+{
+"id": "v:revert",
+"en": "revert",
+"he": "לחזור (למצב קודם)",
+"pos": "v",
+"existing": [
+"After a week of dieting, he began to ___ to his old eating habits."
+]
+},
+{
+"id": "v:ridicule",
+"en": "ridicule",
+"he": "ללעוג",
+"pos": "v",
+"existing": [
+"Some classmates used to ___ him because of his strange accent."
+]
+},
+{
+"id": "v:roam",
+"en": "roam",
+"he": "לשוטט",
+"pos": "v",
+"existing": [
+"Wild horses ___ freely across the open fields of the valley."
+]
+},
+{
+"id": "v:rout",
+"en": "rout",
+"he": "תבוסה מוחצת",
+"pos": "n",
+"existing": [
+"The battle ended in a complete ___ of the enemy army."
+]
+},
+{
+"id": "v:ruthless",
+"en": "ruthless",
+"he": "חסר רחמים",
+"pos": "j",
+"existing": [
+"The ___ dictator punished anyone who dared to disagree with him."
+]
+},
+{
+"id": "v:satisfactory",
+"en": "satisfactory",
+"he": "מספק, משביע רצון",
+"pos": "j",
+"existing": [
+"The teacher said my essay was ___ but not excellent."
+]
+},
+{
+"id": "v:saturnine",
+"en": "saturnine",
+"he": "קודר, זעף",
+"pos": "j",
+"existing": [
+"The ___ old man rarely smiled and never joined the conversation."
+]
+},
+{
+"id": "v:scent",
+"en": "scent",
+"he": "ריח (נעים)",
+"pos": "n",
+"existing": [
+"The sweet ___ of fresh flowers filled the entire room."
+]
+},
+{
+"id": "v:scheme",
+"en": "scheme",
+"he": "תוכנית, מזימה",
+"pos": "n",
+"existing": [
+"Police uncovered a clever ___ to cheat the bank out of millions."
+]
+},
+{
+"id": "v:scholar",
+"en": "scholar",
+"he": "חוקר, מלומד",
+"pos": "n",
+"existing": [
+"The old ___ spent his whole life studying ancient languages."
+]
+},
+{
+"id": "v:scorch",
+"en": "scorch",
+"he": "לחרוך",
+"pos": "v",
+"existing": [
+"The hot iron can ___ the shirt if you leave it there too long."
+]
+},
+{
+"id": "v:scrutinize",
+"en": "scrutinize",
+"he": "לבחון בקפידה",
+"pos": "v",
+"existing": [
+"The accountant will ___ every receipt to find the mistake."
+]
+},
+{
+"id": "v:sensible",
+"en": "sensible",
+"he": "הגיוני, נבון",
+"pos": "j",
+"existing": [
+"It is ___ to wear a helmet when you ride a bike."
+]
+},
+{
+"id": "v:serene",
+"en": "serene",
+"he": "שליו, רגוע",
+"pos": "j",
+"existing": [
+"The ___ garden, with its quiet pond and soft music, helped her relax."
+]
+},
+{
+"id": "v:shrewd",
+"en": "shrewd",
+"he": "ממולח, פיקח",
+"pos": "j",
+"existing": [
+"The ___ businessman always knew when to buy and when to sell."
+]
+},
+{
+"id": "v:shrewdly",
+"en": "shrewdly",
+"he": "בפיקחות, בתחכום",
+"pos": "r",
+"existing": [
+"She ___ waited until the price dropped before buying the car."
+]
+},
+{
+"id": "v:shrewdness",
+"en": "shrewdness",
+"he": "פיקחות, ממולחות",
+"pos": "n",
+"existing": [
+"His ___ in business helped him turn a small shop into a big company."
+]
+},
+{
+"id": "v:signify",
+"en": "signify",
+"he": "לציין, לסמל",
+"pos": "v",
+"existing": [
+"In many countries, a white dress is worn to ___ purity at weddings."
+]
+},
+{
+"id": "v:simultaneous",
+"en": "simultaneous",
+"he": "בו-זמני",
+"pos": "j",
+"existing": [
+"The ___ translation allowed the audience to follow the speech live."
+]
+},
+{
+"id": "v:sincere",
+"en": "sincere",
+"he": "כן, אמיתי",
+"pos": "j",
+"existing": [
+"Please accept my ___ thanks for all your help."
+]
+},
+{
+"id": "v:sincerity",
+"en": "sincerity",
+"he": "כנות",
+"pos": "n",
+"existing": [
+"I could hear the ___ in his voice when he apologized."
+]
+},
+{
+"id": "v:sinister",
+"en": "sinister",
+"he": "מאיים, מרושע",
+"pos": "j",
+"existing": [
+"A ___ shadow moved slowly across the wall of the empty house."
+]
+},
+{
+"id": "v:situate",
+"en": "situate",
+"he": "למקם",
+"pos": "v",
+"existing": [
+"The architects chose to ___ the new school close to the main road."
+]
+},
+{
+"id": "v:skimp",
+"en": "skimp",
+"he": "לקמץ",
+"pos": "v",
+"existing": [
+"Do not ___ on sleep during exam week, because you need your energy."
+]
+},
+{
+"id": "v:slight",
+"en": "slight",
+"he": "קל, זעום",
+"pos": "j",
+"existing": [
+"Do not worry, there is only a ___ chance of rain today."
+]
+},
+{
+"id": "v:smother",
+"en": "smother",
+"he": "לחנוק, לכסות",
+"pos": "v",
+"existing": [
+"She tried to ___ the small fire with a wet blanket."
+]
+},
+{
+"id": "v:snout",
+"en": "snout",
+"he": "חוטם, חרטום",
+"pos": "n",
+"existing": [
+"The pig pushed its ___ into the mud, looking for food."
+]
+},
+{
+"id": "v:stagger",
+"en": "stagger",
+"he": "להתנודד",
+"pos": "v",
+"existing": [
+"The tired runner began to ___ as he neared the finish line."
+]
+},
+{
+"id": "v:standpoint",
+"en": "standpoint",
+"he": "נקודת מבט",
+"pos": "n",
+"existing": [
+"From a legal ___, the contract is not valid."
+]
+},
+{
+"id": "v:stem",
+"en": "stem",
+"he": "גבעול",
+"pos": "n",
+"existing": [
+"The flower has a long, thin green ___."
+]
+},
+{
+"id": "v:stench",
+"en": "stench",
+"he": "סירחון",
+"pos": "n",
+"existing": [
+"A terrible ___ came from the garbage left in the sun."
+]
+},
+{
+"id": "v:stenographer",
+"en": "stenographer",
+"he": "קצרנית, סטנוגרף",
+"pos": "n",
+"existing": [
+"The court ___ typed every word the witness said."
+]
+},
+{
+"id": "v:stimulus",
+"en": "stimulus",
+"he": "גירוי, תמריץ",
+"pos": "n",
+"existing": [
+"Light is a ___ that makes the plant grow toward the window."
+]
+},
+{
+"id": "v:stratum",
+"en": "stratum",
+"he": "שכבה",
+"pos": "n",
+"existing": [
+"Archaeologists found coins in the oldest ___ of the earth."
+]
+},
+{
+"id": "v:strenuous",
+"en": "strenuous",
+"he": "מאומץ, מפרך",
+"pos": "j",
+"existing": [
+"After a ___ hike up the mountain, we were too tired to talk."
+]
+},
+{
+"id": "v:strive",
+"en": "strive",
+"he": "לשאוף, להתאמץ",
+"pos": "v",
+"existing": [
+"Good athletes ___ to improve themselves every single day."
+]
+},
+{
+"id": "v:stunt",
+"en": "stunt",
+"he": "פעלול",
+"pos": "n",
+"existing": [
+"The actor was hurt while performing a dangerous ___ in the film."
+]
+},
+{
+"id": "v:stuntman",
+"en": "stuntman",
+"he": "פעלולן",
+"pos": "n",
+"existing": [
+"The ___ jumped from the moving train instead of the famous actor."
+]
+},
+{
+"id": "v:subconscious",
+"en": "subconscious",
+"he": "תת-מודע",
+"pos": "n",
+"existing": [
+"Some dreams show fears hidden deep in the ___."
+]
+},
+{
+"id": "v:sue",
+"en": "sue",
+"he": "לתבוע",
+"pos": "v",
+"existing": [
+"She decided to ___ the company for firing her unfairly."
+]
+},
+{
+"id": "v:sufficient",
+"en": "sufficient",
+"he": "מספיק",
+"pos": "j",
+"existing": [
+"Do we have ___ food for twenty guests?"
+]
+},
+{
+"id": "v:sufficiently",
+"en": "sufficiently",
+"he": "במידה מספקת",
+"pos": "r",
+"existing": [
+"The water was not ___ hot to make good tea."
+]
+},
+{
+"id": "v:suffocate",
+"en": "suffocate",
+"he": "להיחנק",
+"pos": "v",
+"existing": [
+"Without fresh air, the workers in the tunnel could ___."
+]
+},
+{
+"id": "v:suffocation",
+"en": "suffocation",
+"he": "חנק",
+"pos": "n",
+"existing": [
+"Many victims of the fire died from ___ rather than from burns."
+]
+},
+{
+"id": "v:superfluous",
+"en": "superfluous",
+"he": "מיותר",
+"pos": "j",
+"existing": [
+"Cut out any ___ words so your essay is short and clear."
+]
+},
+{
+"id": "v:supposedly",
+"en": "supposedly",
+"he": "כביכול, לפי מה שאומרים",
+"pos": "r",
+"existing": [
+"The museum is ___ closed on Mondays, but the door was open today."
+]
+},
+{
+"id": "v:supposition",
+"en": "supposition",
+"he": "הנחה, השערה",
+"pos": "n",
+"existing": [
+"The theory rests on a ___ that has never been proven."
+]
+},
+{
+"id": "v:surreptitiously",
+"en": "surreptitiously",
+"he": "בחשאי, בסתר",
+"pos": "r",
+"existing": [
+"The student ___ passed a note to his friend during the lesson."
+]
+},
+{
+"id": "v:susceptible",
+"en": "susceptible",
+"he": "פגיע, רגיש (למחלה)",
+"pos": "j",
+"existing": [
+"Young children are more ___ to infections than adults are."
+]
+},
+{
+"id": "v:suspend",
+"en": "suspend",
+"he": "להשעות, לתלות",
+"pos": "v",
+"existing": [
+"The school decided to ___ the student for a week after the fight."
+]
+},
+{
+"id": "v:suspension",
+"en": "suspension",
+"he": "השעיה, מתלים",
+"pos": "n",
+"existing": [
+"The player received a two-game ___ for his dangerous tackle."
+]
+},
+{
+"id": "v:sustain",
+"en": "sustain",
+"he": "לקיים, לשאת, לספוג",
+"pos": "v",
+"existing": [
+"The old bridge cannot ___ the weight of heavy trucks."
+]
+},
+{
+"id": "v:suture",
+"en": "suture",
+"he": "תפר (ניתוחי)",
+"pos": "n",
+"existing": [
+"The doctor closed the wound with a single ___."
+]
+},
+{
+"id": "v:sweep",
+"en": "sweep",
+"he": "לטאטא, לסחוף",
+"pos": "v",
+"existing": [
+"Every morning she uses a broom to ___ the kitchen floor."
+]
+},
+{
+"id": "v:temper",
+"en": "temper",
+"he": "מזג, כעס",
+"pos": "n",
+"existing": [
+"He has a quick ___ and often shouts when he is annoyed."
+]
+},
+{
+"id": "v:temperament",
+"en": "temperament",
+"he": "טבע, מזג",
+"pos": "n",
+"existing": [
+"The dog has a calm ___ and is good with small children."
+]
+},
+{
+"id": "v:tempt",
+"en": "tempt",
+"he": "לפתות",
+"pos": "v",
+"existing": [
+"The smell of fresh bread can ___ even people who are on a diet."
+]
+},
+{
+"id": "v:temptation",
+"en": "temptation",
+"he": "פיתוי",
+"pos": "n",
+"existing": [
+"It was hard to resist the ___ to eat the whole cake."
+]
+},
+{
+"id": "v:tend",
+"en": "tend",
+"he": "לטפל ב-, לדאוג ל-",
+"pos": "v",
+"existing": [
+"The shepherd must ___ his sheep every day, even in winter."
+]
+},
+{
+"id": "v:tender",
+"en": "tender",
+"he": "רך, עדין",
+"pos": "j",
+"existing": [
+"The steak was so ___ that you could cut it with a fork."
+]
+},
+{
+"id": "v:thorax",
+"en": "thorax",
+"he": "בית החזה",
+"pos": "n",
+"existing": [
+"The ribs protect the heart and lungs inside the ___."
+]
+},
+{
+"id": "v:thorough",
+"en": "thorough",
+"he": "יסודי, מקיף",
+"pos": "j",
+"existing": [
+"The police carried out a ___ search of the house."
+]
+},
+{
+"id": "v:thrive",
+"en": "thrive",
+"he": "לשגשג, לפרוח",
+"pos": "v",
+"existing": [
+"Many plants ___ in warm and humid places."
+]
+},
+{
+"id": "v:thrust",
+"en": "thrust",
+"he": "לדחוף בכוח, דחיפה",
+"pos": "v",
+"existing": [
+"She ___ the letter into his hand and walked away without a word."
+]
+},
+{
+"id": "v:tiresome",
+"en": "tiresome",
+"he": "מייגע, מעצבן",
+"pos": "j",
+"existing": [
+"Waiting in a long line every morning is a ___ routine."
+]
+},
+{
+"id": "v:tolerate",
+"en": "tolerate",
+"he": "לסבול, להשלים עם",
+"pos": "v",
+"existing": [
+"I cannot ___ rude behavior in my classroom."
+]
+},
+{
+"id": "v:torch",
+"en": "torch",
+"he": "לפיד, פנס",
+"pos": "n",
+"existing": [
+"He lit a ___ to see inside the dark cave."
+]
+},
+{
+"id": "v:torment",
+"en": "torment",
+"he": "לענות, לייסר, ייסורים",
+"pos": "v",
+"existing": [
+"The loud noise from the street seemed to ___ him all night."
+]
+},
+{
+"id": "v:tortoise",
+"en": "tortoise",
+"he": "צב יבשה",
+"pos": "n",
+"existing": [
+"The ___ pulled its head into its hard shell."
+]
+},
+{
+"id": "v:trace",
+"en": "trace",
+"he": "עקבה, סימן",
+"pos": "n",
+"existing": [
+"The police found no ___ of the missing child."
+]
+},
+{
+"id": "v:trait",
+"en": "trait",
+"he": "תכונה",
+"pos": "n",
+"existing": [
+"Honesty is the most important ___ in a good friend."
+]
+},
+{
+"id": "v:tranquil",
+"en": "tranquil",
+"he": "שליו, שקט",
+"pos": "j",
+"existing": [
+"We sat by the ___ lake and listened to the birds."
+]
+},
+{
+"id": "v:transitory",
+"en": "transitory",
+"he": "חולף, זמני",
+"pos": "j",
+"existing": [
+"Fame is often ___, lasting only a few years."
+]
+},
+{
+"id": "v:treat",
+"en": "treat",
+"he": "להתייחס ל-, לטפל ב-",
+"pos": "v",
+"existing": [
+"Teachers should ___ every student with respect."
+]
+},
+{
+"id": "v:trigger",
+"en": "trigger",
+"he": "לגרום, להפעיל, הדק",
+"pos": "v",
+"existing": [
+"Dust can ___ an allergy attack in some people."
+]
+},
+{
+"id": "v:troupe",
+"en": "troupe",
+"he": "להקה (של שחקנים)",
+"pos": "n",
+"existing": [
+"A ___ of actors traveled from town to town performing plays."
+]
+},
+{
+"id": "v:tyranny",
+"en": "tyranny",
+"he": "עריצות",
+"pos": "n",
+"existing": [
+"The people rose up against the ___ of the cruel king."
+]
+},
+{
+"id": "v:tyrant",
+"en": "tyrant",
+"he": "עריץ",
+"pos": "n",
+"existing": [
+"The ___ ruled the country by fear and never allowed free speech."
+]
+},
+{
+"id": "v:unanimous",
+"en": "unanimous",
+"he": "פה אחד, תמים דעים",
+"pos": "j",
+"existing": [
+"The jury reached a ___ decision after only two hours."
+]
+},
+{
+"id": "v:undermine",
+"en": "undermine",
+"he": "לערער, לחתור תחת",
+"pos": "v",
+"existing": [
+"Constant criticism can ___ a child's confidence."
+]
+},
+{
+"id": "v:undertake",
+"en": "undertake",
+"he": "לקחת על עצמו",
+"pos": "v",
+"existing": [
+"The team agreed to ___ a large research project this year."
+]
+},
+{
+"id": "v:undertaker",
+"en": "undertaker",
+"he": "קברן, מנהל לוויות",
+"pos": "n",
+"existing": [
+"The ___ arranged the funeral and the flowers for the family."
+]
+},
+{
+"id": "v:unison",
+"en": "unison",
+"he": "אחדות, תיאום (in unison)",
+"pos": "n",
+"existing": [
+"The students answered in ___, all saying the same word together."
+]
+},
+{
+"id": "v:utterly",
+"en": "utterly",
+"he": "לחלוטין",
+"pos": "r",
+"existing": [
+"The movie was ___ boring, and half the audience left early."
+]
+},
+{
+"id": "v:vague",
+"en": "vague",
+"he": "מעורפל, לא ברור",
+"pos": "j",
+"existing": [
+"His answer was so ___ that nobody understood what he meant."
+]
+},
+{
+"id": "v:vain",
+"en": "vain",
+"he": "יהיר, לשווא",
+"pos": "j",
+"existing": [
+"She was too ___ to leave the house without checking her hair."
+]
+},
+{
+"id": "v:valuate",
+"en": "valuate",
+"he": "להעריך שווי",
+"pos": "v",
+"existing": [
+"A specialist will ___ the old painting before it is sold."
+]
+},
+{
+"id": "v:vapor",
+"en": "vapor",
+"he": "אדים, קיטור",
+"pos": "n",
+"existing": [
+"Water ___ rose from the hot cup of tea."
+]
+},
+{
+"id": "v:vary",
+"en": "vary",
+"he": "להשתנות, להיות שונה",
+"pos": "v",
+"existing": [
+"Prices ___ from shop to shop, so compare before you buy."
+]
+},
+{
+"id": "v:vast",
+"en": "vast",
+"he": "עצום, נרחב",
+"pos": "j",
+"existing": [
+"A ___ desert stretched in every direction."
+]
+},
+{
+"id": "v:velocity",
+"en": "velocity",
+"he": "מהירות (בכיוון מסוים)",
+"pos": "n",
+"existing": [
+"The scientists measured the ___ of the falling object."
+]
+},
+{
+"id": "v:vengeance",
+"en": "vengeance",
+"he": "נקמה",
+"pos": "n",
+"existing": [
+"He swore to take ___ on those who had destroyed his village."
+]
+},
+{
+"id": "v:verdict",
+"en": "verdict",
+"he": "פסק דין, הכרעה",
+"pos": "n",
+"existing": [
+"The jury returned a ___ of not guilty after two days."
+]
+},
+{
+"id": "v:verifiable",
+"en": "verifiable",
+"he": "ניתן לאימות",
+"pos": "j",
+"existing": [
+"Journalists should publish only ___ facts, not rumors."
+]
+},
+{
+"id": "v:vertebrae",
+"en": "vertebrae",
+"he": "חוליות (עמוד השדרה)",
+"pos": "n",
+"existing": [
+"The injury damaged two ___ in his lower back."
+]
+},
+{
+"id": "v:virtue",
+"en": "virtue",
+"he": "מעלה, סגולה",
+"pos": "n",
+"existing": [
+"Patience is a ___ that every teacher needs."
+]
+},
+{
+"id": "v:visibility",
+"en": "visibility",
+"he": "ראות, נראות",
+"pos": "n",
+"existing": [
+"Fog reduced ___ on the road to less than fifty meters."
+]
+},
+{
+"id": "v:volume",
+"en": "volume",
+"he": "נפח, עוצמת קול, כרך",
+"pos": "n",
+"existing": [
+"Please turn down the ___, the baby is sleeping."
+]
+},
+{
+"id": "v:vulnerable",
+"en": "vulnerable",
+"he": "פגיע",
+"pos": "j",
+"existing": [
+"Small animals are ___ when they leave their nests."
+]
+},
+{
+"id": "v:wage",
+"en": "wage",
+"he": "שכר, משכורת",
+"pos": "n",
+"existing": [
+"He earns a low ___ working in a restaurant."
+]
+},
+{
+"id": "v:wail",
+"en": "wail",
+"he": "ליילל, יללה",
+"pos": "v",
+"existing": [
+"At the funeral, the women began to ___ in grief."
+]
+},
+{
+"id": "v:wander",
+"en": "wander",
+"he": "לשוטט, לנדוד",
+"pos": "v",
+"existing": [
+"We like to ___ through the streets of the old city without a map."
+]
+},
+{
+"id": "v:wharf",
+"en": "wharf",
+"he": "רציף",
+"pos": "n",
+"existing": [
+"The fishermen unloaded their catch at the ___ early in the morning."
+]
+},
+{
+"id": "v:whereas",
+"en": "whereas",
+"he": "ואילו",
+"pos": "x",
+"existing": [
+"My brother loves loud music, ___ I prefer silence."
+]
+},
+{
+"id": "v:whereby",
+"en": "whereby",
+"he": "שבאמצעותו",
+"pos": "x",
+"existing": [
+"The government introduced a system ___ citizens can vote online."
+]
+},
+{
+"id": "v:wholesale",
+"en": "wholesale",
+"he": "סיטונאי, בסיטונות",
+"pos": "j",
+"existing": [
+"The shop buys goods at ___ prices and sells them at a profit."
+]
+},
+{
+"id": "v:wicked",
+"en": "wicked",
+"he": "רשע, מרושע",
+"pos": "j",
+"existing": [
+"In the story, the ___ witch locked the princess in a tower."
+]
+},
+{
+"id": "v:wickedness",
+"en": "wickedness",
+"he": "רשעות",
+"pos": "n",
+"existing": [
+"The villagers were shocked by the ___ of his crime."
+]
+},
+{
+"id": "v:widespread",
+"en": "widespread",
+"he": "נפוץ, נרחב",
+"pos": "j",
+"existing": [
+"There was ___ panic after the news of the earthquake."
+]
+},
+{
+"id": "v:wink",
+"en": "wink",
+"he": "לקרוץ",
+"pos": "v",
+"existing": [
+"He tried to ___ at his sister to tell her to keep quiet."
+]
+},
+{
+"id": "v:withstand",
+"en": "withstand",
+"he": "לעמוד בפני, לשרוד",
+"pos": "v",
+"existing": [
+"The bridge was built to ___ strong winds and earthquakes."
+]
+},
+{
+"id": "v:wring",
+"en": "wring",
+"he": "לסחוט",
+"pos": "v",
+"existing": [
+"She had to ___ the wet towel before hanging it to dry."
+]
+},
+{
+"id": "v:yearn",
+"en": "yearn",
+"he": "להשתוקק, להתגעגע",
+"pos": "v",
+"existing": [
+"Living abroad, she began to ___ for the taste of her mother's cooking."
+]
+},
+{
+"id": "v:yield",
+"en": "yield",
+"he": "להניב, להיכנע",
+"pos": "v",
+"existing": [
+"The apple trees ___ more fruit when the weather is warm."
+]
+},
+{
+"id": "v:zeal",
+"en": "zeal",
+"he": "להט, התלהבות",
+"pos": "n",
+"existing": [
+"She worked on the project with great ___."
+]
+},
+{
+"id": "v:zealot",
+"en": "zealot",
+"he": "קנאי",
+"pos": "n",
+"existing": [
+"The religious ___ refused to listen to any other opinion."
+]
+},
+{
+"id": "v:zest",
+"en": "zest",
+"he": "להט, חדוות חיים",
+"pos": "n",
+"existing": [
+"He approached every new challenge with ___ and energy."
+]
+}
+]

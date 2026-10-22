@@ -1,0 +1,1073 @@
+[
+{
+"id": "v:commensurate",
+"en": "commensurate",
+"he": "מתאים בגודלו, שווה ערך",
+"pos": "j",
+"existing": [
+"The salary should be ___ with the person's experience and responsibilities."
+]
+},
+{
+"id": "v:commerce",
+"en": "commerce",
+"he": "מסחר",
+"pos": "n",
+"existing": [
+"Ports were once the center of trade and ___ in the ancient world."
+]
+},
+{
+"id": "v:commiserate",
+"en": "commiserate",
+"he": "להזדהות עם צער, לנחם",
+"pos": "v",
+"existing": [
+"Her friends came to ___ with her after she lost the final."
+]
+},
+{
+"id": "v:communicative",
+"en": "communicative",
+"he": "תקשורתי, פתוח לשיחה",
+"pos": "j",
+"existing": [
+"The new teacher is very ___ and always talks openly with her students."
+]
+},
+{
+"id": "v:commute",
+"en": "commute",
+"he": "לנסוע לעבודה, לנסוע יום-יום",
+"pos": "v",
+"existing": [
+"Many people ___ to work by train every morning."
+]
+},
+{
+"id": "v:comparable",
+"en": "comparable",
+"he": "דומה, ניתן להשוואה",
+"pos": "j",
+"existing": [
+"The two phones have ___ prices, so choose the one you like more."
+]
+},
+{
+"id": "v:comparative",
+"en": "comparative",
+"he": "יחסי, השוואתי",
+"pos": "j",
+"existing": [
+"A ___ study of two school systems showed some surprising results."
+]
+},
+{
+"id": "v:compatible",
+"en": "compatible",
+"he": "תואם, מתאים",
+"pos": "j",
+"existing": [
+"This charger is not ___ with my new phone, so it doesn't work."
+]
+},
+{
+"id": "v:complaisance",
+"en": "complaisance",
+"he": "נכונות לרצות, ותרנות",
+"pos": "n",
+"existing": [
+"Out of ___, he agreed to every request his boss made."
+]
+},
+{
+"id": "v:compose",
+"en": "compose",
+"he": "לחבר (יצירה), להרכיב",
+"pos": "v",
+"existing": [
+"Mozart began to ___ music when he was only five years old."
+]
+},
+{
+"id": "v:composite",
+"en": "composite",
+"he": "מורכב (מכמה חלקים)",
+"pos": "j",
+"existing": [
+"The bike frame is made of a light ___ material."
+]
+},
+{
+"id": "v:composition",
+"en": "composition",
+"he": "חיבור (יצירה), הרכב",
+"pos": "n",
+"existing": [
+"The teacher asked us to write a short ___ about our summer."
+]
+},
+{
+"id": "v:compulsion",
+"en": "compulsion",
+"he": "כפייה, דחף שאין לעמוד בו",
+"pos": "n",
+"existing": [
+"He felt a strong ___ to check his phone every few minutes."
+]
+},
+{
+"id": "v:compulsive",
+"en": "compulsive",
+"he": "כפייתי",
+"pos": "j",
+"existing": [
+"She is a ___ cleaner who washes the floor three times a day."
+]
+},
+{
+"id": "v:compulsory",
+"en": "compulsory",
+"he": "חובה, מחייב",
+"pos": "j",
+"existing": [
+"In Israel, military service is ___ for most eighteen-year-olds."
+]
+},
+{
+"id": "v:conceive",
+"en": "conceive",
+"he": "להגות, לדמיין",
+"pos": "v",
+"existing": [
+"It is hard to ___ of a world without electricity."
+]
+},
+{
+"id": "v:conclusive",
+"en": "conclusive",
+"he": "חד-משמעי, מכריע",
+"pos": "j",
+"existing": [
+"The DNA test gave ___ proof that he was the father."
+]
+},
+{
+"id": "v:concur with",
+"en": "concur with",
+"he": "להסכים עם",
+"pos": "v",
+"existing": [
+"The other judges ___ the decision of the head judge."
+]
+},
+{
+"id": "v:condemn",
+"en": "condemn",
+"he": "לגנות, לגזור דין",
+"pos": "v",
+"existing": [
+"World leaders were quick to ___ the attack on innocent people."
+]
+},
+{
+"id": "v:conduct",
+"en": "conduct",
+"he": "לנהל, לערוך; התנהגות",
+"pos": "v",
+"existing": [
+"The students will ___ an experiment to test the theory."
+]
+},
+{
+"id": "v:confess",
+"en": "confess",
+"he": "להודות, להתוודות",
+"pos": "v",
+"existing": [
+"After hours of questions, the suspect decided to ___ to the crime."
+]
+},
+{
+"id": "v:confidential",
+"en": "confidential",
+"he": "סודי, חסוי",
+"pos": "j",
+"existing": [
+"Medical files are ___ and only your doctor may read them."
+]
+},
+{
+"id": "v:confine",
+"en": "confine",
+"he": "להגביל, לכלוא",
+"pos": "v",
+"existing": [
+"Please ___ your answer to one page; longer essays will not be read."
+]
+},
+{
+"id": "v:confines",
+"en": "confines",
+"he": "גבולות, תחום",
+"pos": "n",
+"existing": [
+"The prisoners never left the ___ of the camp."
+]
+},
+{
+"id": "v:confront",
+"en": "confront",
+"he": "להתעמת, להתמודד עם",
+"pos": "v",
+"existing": [
+"She decided to ___ her friend about the lies he had told."
+]
+},
+{
+"id": "v:confrontation",
+"en": "confrontation",
+"he": "עימות",
+"pos": "n",
+"existing": [
+"The police tried to avoid a violent ___ with the angry crowd."
+]
+},
+{
+"id": "v:conquer",
+"en": "conquer",
+"he": "לכבוש, להתגבר על",
+"pos": "v",
+"existing": [
+"Alexander the Great managed to ___ much of the ancient world."
+]
+},
+{
+"id": "v:conquest",
+"en": "conquest",
+"he": "כיבוש",
+"pos": "n",
+"existing": [
+"The Roman ___ of Judea changed the history of the region."
+]
+},
+{
+"id": "v:conscience",
+"en": "conscience",
+"he": "מצפון",
+"pos": "n",
+"existing": [
+"His ___ would not let him keep the wallet he found."
+]
+},
+{
+"id": "v:conscientious",
+"en": "conscientious",
+"he": "מצפוני, חרוץ ויסודי",
+"pos": "j",
+"existing": [
+"She is a ___ worker who always checks every detail twice."
+]
+},
+{
+"id": "v:conscious",
+"en": "conscious",
+"he": "מודע, בהכרה",
+"pos": "j",
+"existing": [
+"The patient was ___ and able to talk after the operation."
+]
+},
+{
+"id": "v:consciously",
+"en": "consciously",
+"he": "במודע",
+"pos": "r",
+"existing": [
+"I ___ decided to eat less sugar this year."
+]
+},
+{
+"id": "v:consciousness",
+"en": "consciousness",
+"he": "הכרה, תודעה",
+"pos": "n",
+"existing": [
+"After the accident, he lost ___ for a few minutes."
+]
+},
+{
+"id": "v:consequence",
+"en": "consequence",
+"he": "תוצאה, השלכה",
+"pos": "n",
+"existing": [
+"One ___ of the storm was that schools stayed closed for a week."
+]
+},
+{
+"id": "v:consequent",
+"en": "consequent",
+"he": "שנובע מ-, שבא בעקבות",
+"pos": "j",
+"existing": [
+"The storm and the ___ flooding closed the roads for days."
+]
+},
+{
+"id": "v:consequential",
+"en": "consequential",
+"he": "משמעותי, בעל השלכות",
+"pos": "j",
+"existing": [
+"Choosing a university is one of the most ___ decisions of your life."
+]
+},
+{
+"id": "v:considerable",
+"en": "considerable",
+"he": "ניכר, רב",
+"pos": "j",
+"existing": [
+"A ___ amount of money was spent on repairing the school roof."
+]
+},
+{
+"id": "v:considerate",
+"en": "considerate",
+"he": "מתחשב, אדיב",
+"pos": "j",
+"existing": [
+"It was ___ of him to turn down the music after midnight."
+]
+},
+{
+"id": "v:consideration",
+"en": "consideration",
+"he": "התחשבות, שיקול",
+"pos": "n",
+"existing": [
+"After careful ___, the committee decided to postpone the trip."
+]
+},
+{
+"id": "v:consist",
+"en": "consist",
+"he": "להיות מורכב מ-",
+"pos": "v",
+"existing": [
+"A standard soccer team must ___ of eleven players on the field."
+]
+},
+{
+"id": "v:consistency",
+"en": "consistency",
+"he": "עקביות, סמיכות",
+"pos": "n",
+"existing": [
+"Her ___ in practicing every day helped her win the piano competition."
+]
+},
+{
+"id": "v:consistent",
+"en": "consistent",
+"he": "עקבי, תואם",
+"pos": "j",
+"existing": [
+"The results of the second experiment were ___ with those of the first."
+]
+},
+{
+"id": "v:conspicuous",
+"en": "conspicuous",
+"he": "בולט לעין",
+"pos": "j",
+"existing": [
+"The bright red car was ___ among the gray vehicles in the parking lot."
+]
+},
+{
+"id": "v:consternation",
+"en": "consternation",
+"he": "בהלה, תדהמה",
+"pos": "n",
+"existing": [
+"The sudden announcement filled the whole staff with ___ ."
+]
+},
+{
+"id": "v:constituent",
+"en": "constituent",
+"he": "מרכיב, רכיב",
+"pos": "n",
+"existing": [
+"Water is the main ___ of the human body."
+]
+},
+{
+"id": "v:constitute",
+"en": "constitute",
+"he": "להוות, להיות",
+"pos": "v",
+"existing": [
+"Young people under twenty ___ about a third of the country's population."
+]
+},
+{
+"id": "v:constitution",
+"en": "constitution",
+"he": "חוקה, מבנה גוף",
+"pos": "n",
+"existing": [
+"The country's ___ guarantees freedom of speech to every citizen."
+]
+},
+{
+"id": "v:consult",
+"en": "consult",
+"he": "להתייעץ עם",
+"pos": "v",
+"existing": [
+"You should ___ a doctor before starting a new exercise program."
+]
+},
+{
+"id": "v:consume",
+"en": "consume",
+"he": "לצרוך, לאכול",
+"pos": "v",
+"existing": [
+"Modern cars ___ much less fuel than cars built fifty years ago."
+]
+},
+{
+"id": "v:contemporary",
+"en": "contemporary",
+"he": "עכשווי, בן זמננו",
+"pos": "j",
+"existing": [
+"The museum displays both ancient pottery and ___ art by young painters."
+]
+},
+{
+"id": "v:contention",
+"en": "contention",
+"he": "מחלוקת, טענה",
+"pos": "n",
+"existing": [
+"The main point of ___ between the two countries is the border."
+]
+},
+{
+"id": "v:contentious",
+"en": "contentious",
+"he": "שנוי במחלוקת",
+"pos": "j",
+"existing": [
+"Taxes are a ___ issue that divides voters in almost every election."
+]
+},
+{
+"id": "v:contradict",
+"en": "contradict",
+"he": "לסתור, להכחיש",
+"pos": "v",
+"existing": [
+"His story seems to ___ what the witness told the police."
+]
+},
+{
+"id": "v:contradiction",
+"en": "contradiction",
+"he": "סתירה",
+"pos": "n",
+"existing": [
+"There is a clear ___ between what he says and what he does."
+]
+},
+{
+"id": "v:contrary",
+"en": "contrary",
+"he": "הפוך, מנוגד",
+"pos": "j",
+"existing": [
+"___ to popular belief, bats are not blind."
+]
+},
+{
+"id": "v:contrast",
+"en": "contrast",
+"he": "ניגוד, הבדל חד",
+"pos": "n",
+"existing": [
+"There is a sharp ___ between the quiet village and the noisy city."
+]
+},
+{
+"id": "v:contributory",
+"en": "contributory",
+"he": "תורם, מסייע",
+"pos": "j",
+"existing": [
+"Lack of sleep was a ___ factor in the driver's accident."
+]
+},
+{
+"id": "v:convalesce",
+"en": "convalesce",
+"he": "להחלים, להתאושש",
+"pos": "v",
+"existing": [
+"After the surgery, she went to the countryside to ___ for a few weeks."
+]
+},
+{
+"id": "v:convalescence",
+"en": "convalescence",
+"he": "החלמה, תקופת התאוששות",
+"pos": "n",
+"existing": [
+"His ___ after the operation lasted almost two months."
+]
+},
+{
+"id": "v:converse",
+"en": "converse",
+"he": "לשוחח",
+"pos": "v",
+"existing": [
+"The tourists tried to ___ with the locals in simple English."
+]
+},
+{
+"id": "v:conversion",
+"en": "conversion",
+"he": "המרה, הסבה",
+"pos": "n",
+"existing": [
+"The ___ of the old factory into apartments took two years."
+]
+},
+{
+"id": "v:convict",
+"en": "convict",
+"he": "להרשיע",
+"pos": "v",
+"existing": [
+"The jury did not ___ him because there was no clear evidence."
+]
+},
+{
+"id": "v:conviction",
+"en": "conviction",
+"he": "הרשעה, אמונה חזקה",
+"pos": "n",
+"existing": [
+"He has a previous ___ for theft, so the judge was strict."
+]
+},
+{
+"id": "v:corollary",
+"en": "corollary",
+"he": "תוצאה טבעית, מסקנה נלווית",
+"pos": "n",
+"existing": [
+"Rising prices are a natural ___ of growing demand for housing."
+]
+},
+{
+"id": "v:correspond",
+"en": "correspond",
+"he": "להתאים, להתכתב",
+"pos": "v",
+"existing": [
+"The names on the list do not ___ to the names on the tickets."
+]
+},
+{
+"id": "v:correspondence",
+"en": "correspondence",
+"he": "התכתבות, התאמה",
+"pos": "n",
+"existing": [
+"She keeps all the ___ she exchanged with her pen pal abroad."
+]
+},
+{
+"id": "v:corresponding",
+"en": "corresponding",
+"he": "מקביל, תואם",
+"pos": "j",
+"existing": [
+"Match each word in the first column with its ___ meaning in the second."
+]
+},
+{
+"id": "v:creed",
+"en": "creed",
+"he": "אמונה, אמונה דתית",
+"pos": "n",
+"existing": [
+"People of every race and ___ live together in the city."
+]
+},
+{
+"id": "v:creep",
+"en": "creep",
+"he": "לזחול, להתגנב",
+"pos": "v",
+"existing": [
+"The cat began to ___ slowly toward the bird."
+]
+},
+{
+"id": "v:critique",
+"en": "critique",
+"he": "ביקורת מנומקת",
+"pos": "n",
+"existing": [
+"The professor wrote a detailed ___ of the student's essay."
+]
+},
+{
+"id": "v:crop",
+"en": "crop",
+"he": "יבול",
+"pos": "n",
+"existing": [
+"This year's ___ of wheat was the largest the farmers had ever seen."
+]
+},
+{
+"id": "v:culminate",
+"en": "culminate",
+"he": "להגיע לשיאו",
+"pos": "v",
+"existing": [
+"The long negotiations will ___ in a peace agreement next month."
+]
+},
+{
+"id": "v:cumulative",
+"en": "cumulative",
+"he": "מצטבר",
+"pos": "j",
+"existing": [
+"The ___ effect of small daily savings can become a large sum."
+]
+},
+{
+"id": "v:curriculum",
+"en": "curriculum",
+"he": "תוכנית לימודים",
+"pos": "n",
+"existing": [
+"The new ___ includes more lessons in science and technology."
+]
+},
+{
+"id": "v:dawdle",
+"en": "dawdle",
+"he": "להתמהמה, לבזבז זמן",
+"pos": "v",
+"existing": [
+"Don't ___ on your way home, because dinner is almost ready."
+]
+},
+{
+"id": "v:dawn",
+"en": "dawn",
+"he": "שחר, עלות השחר",
+"pos": "n",
+"existing": [
+"The soldiers woke up at ___ and began their long march."
+]
+},
+{
+"id": "v:de facto",
+"en": "de facto",
+"he": "בפועל, למעשה",
+"pos": "j",
+"existing": [
+"Although he has no official title, he is the ___ leader of the team."
+]
+},
+{
+"id": "v:deceit",
+"en": "deceit",
+"he": "הונאה, תרמית",
+"pos": "n",
+"existing": [
+"The merchant lied about the price, and his ___ was soon discovered."
+]
+},
+{
+"id": "v:decline",
+"en": "decline",
+"he": "לרדת, לדעוך, לסרב בנימוס",
+"pos": "v",
+"existing": [
+"Sales began to ___ after a new competitor opened across the street."
+]
+},
+{
+"id": "v:deduce",
+"en": "deduce",
+"he": "להסיק",
+"pos": "v",
+"existing": [
+"From the footprints, the detective could ___ that the thief was tall."
+]
+},
+{
+"id": "v:deducible",
+"en": "deducible",
+"he": "ניתן להסקה",
+"pos": "j",
+"existing": [
+"The answer is ___ from the information given in the first paragraph."
+]
+},
+{
+"id": "v:deduction",
+"en": "deduction",
+"he": "הסקה, ניכוי",
+"pos": "n",
+"existing": [
+"The detective's ___ led him straight to the guilty man."
+]
+},
+{
+"id": "v:deed",
+"en": "deed",
+"he": "מעשה",
+"pos": "n",
+"existing": [
+"A kind ___ can change someone's whole day."
+]
+},
+{
+"id": "v:defamation",
+"en": "defamation",
+"he": "הוצאת דיבה",
+"pos": "n",
+"existing": [
+"The singer sued the magazine for ___ after it printed false rumors."
+]
+},
+{
+"id": "v:defect",
+"en": "defect",
+"he": "פגם, ליקוי",
+"pos": "n",
+"existing": [
+"A small ___ in the engine caused the plane to return to the airport."
+]
+},
+{
+"id": "v:defection",
+"en": "defection",
+"he": "עריקה, מעבר לצד השני",
+"pos": "n",
+"existing": [
+"The soldier's ___ to the enemy shocked his whole unit."
+]
+},
+{
+"id": "v:defective",
+"en": "defective",
+"he": "פגום, לקוי",
+"pos": "j",
+"existing": [
+"I returned the ___ phone to the store and received a new one."
+]
+},
+{
+"id": "v:defiance",
+"en": "defiance",
+"he": "התרסה, מרי",
+"pos": "n",
+"existing": [
+"The students stood in ___ of the order to leave the building."
+]
+},
+{
+"id": "v:defiant",
+"en": "defiant",
+"he": "מתריס, מורד",
+"pos": "j",
+"existing": [
+"The ___ child crossed his arms and refused to put on his coat."
+]
+},
+{
+"id": "v:deficiency",
+"en": "deficiency",
+"he": "מחסור, ליקוי",
+"pos": "n",
+"existing": [
+"A ___ of vitamin D can cause weak bones."
+]
+},
+{
+"id": "v:deficient",
+"en": "deficient",
+"he": "חסר, לקוי",
+"pos": "j",
+"existing": [
+"Her diet was ___ in iron, so the doctor gave her pills."
+]
+},
+{
+"id": "v:definitive",
+"en": "definitive",
+"he": "סופי, מכריע, מוסמך",
+"pos": "j",
+"existing": [
+"Scientists are waiting for ___ proof before announcing the discovery."
+]
+},
+{
+"id": "v:defy",
+"en": "defy",
+"he": "להתריס נגד, לא לציית",
+"pos": "v",
+"existing": [
+"Teenagers sometimes ___ their parents just to prove they are independent."
+]
+},
+{
+"id": "v:deliberate",
+"en": "deliberate",
+"he": "מכוון, מחושב",
+"pos": "j",
+"existing": [
+"The fire was not an accident but a ___ act by someone."
+]
+},
+{
+"id": "v:deliberately",
+"en": "deliberately",
+"he": "בכוונה",
+"pos": "r",
+"existing": [
+"He ___ left the door open so the cat could go outside."
+]
+},
+{
+"id": "v:deliberation",
+"en": "deliberation",
+"he": "שקילה, דיון מעמיק",
+"pos": "n",
+"existing": [
+"After a long ___, the jury announced its decision."
+]
+},
+{
+"id": "v:deliberative",
+"en": "deliberative",
+"he": "מתדיין, שוקל",
+"pos": "j",
+"existing": [
+"The senate is a ___ body that studies every law before voting."
+]
+},
+{
+"id": "v:demented",
+"en": "demented",
+"he": "מטורף, מעורער",
+"pos": "j",
+"existing": [
+"The ___ laughter of the villain made the audience shiver."
+]
+},
+{
+"id": "v:dense",
+"en": "dense",
+"he": "צפוף, סמיך",
+"pos": "j",
+"existing": [
+"A ___ fog covered the road, so we drove very slowly."
+]
+},
+{
+"id": "v:depart",
+"en": "depart",
+"he": "לצאת, לעזוב",
+"pos": "v",
+"existing": [
+"The train will ___ from platform three at noon."
+]
+},
+{
+"id": "v:depict",
+"en": "depict",
+"he": "לתאר, לצייר",
+"pos": "v",
+"existing": [
+"The painting seems to ___ a quiet village at sunset."
+]
+},
+{
+"id": "v:derivation",
+"en": "derivation",
+"he": "גזירה, מקור",
+"pos": "n",
+"existing": [
+"The ___ of the word salary goes back to the Latin word for salt."
+]
+},
+{
+"id": "v:derive",
+"en": "derive",
+"he": "להפיק, להיגזר",
+"pos": "v",
+"existing": [
+"Many English words ___ from Latin and French."
+]
+},
+{
+"id": "v:detain",
+"en": "detain",
+"he": "לעכב, לעצור",
+"pos": "v",
+"existing": [
+"Police officers can ___ a suspect for a short time for questioning."
+]
+},
+{
+"id": "v:deter",
+"en": "deter",
+"he": "להרתיע",
+"pos": "v",
+"existing": [
+"High fines are meant to ___ drivers from parking illegally."
+]
+},
+{
+"id": "v:deteriorate",
+"en": "deteriorate",
+"he": "להידרדר",
+"pos": "v",
+"existing": [
+"His health began to ___ rapidly after the long winter."
+]
+},
+{
+"id": "v:deterioration",
+"en": "deterioration",
+"he": "הידרדרות",
+"pos": "n",
+"existing": [
+"Doctors noticed a sharp ___ in the patient's condition overnight."
+]
+},
+{
+"id": "v:deterrent",
+"en": "deterrent",
+"he": "גורם מרתיע",
+"pos": "n",
+"existing": [
+"The security cameras act as a ___ against thieves."
+]
+},
+{
+"id": "v:devastate",
+"en": "devastate",
+"he": "להחריב, לשבור",
+"pos": "v",
+"existing": [
+"A powerful earthquake can ___ a whole city in seconds."
+]
+},
+{
+"id": "v:devise",
+"en": "devise",
+"he": "להמציא, לתכנן",
+"pos": "v",
+"existing": [
+"The students had to ___ a plan to raise money for the trip."
+]
+},
+{
+"id": "v:devote",
+"en": "devote",
+"he": "להקדיש",
+"pos": "v",
+"existing": [
+"She decided to ___ her weekends to helping elderly neighbors."
+]
+},
+{
+"id": "v:devotion",
+"en": "devotion",
+"he": "מסירות, אדיקות",
+"pos": "n",
+"existing": [
+"The nurse's ___ to her patients was admired by everyone."
+]
+},
+{
+"id": "v:diffuse",
+"en": "diffuse",
+"he": "להתפזר, לפזר",
+"pos": "v",
+"existing": [
+"Light can ___ through thin paper and fill the room softly."
+]
+},
+{
+"id": "v:diffusion",
+"en": "diffusion",
+"he": "פיזור, התפשטות",
+"pos": "n",
+"existing": [
+"The ___ of new ideas across Europe was helped by the printing press."
+]
+},
+{
+"id": "v:diminish",
+"en": "diminish",
+"he": "להפחית, לקטון",
+"pos": "v",
+"existing": [
+"The pain should ___ slowly over the next few days."
+]
+},
+{
+"id": "v:discrepancy",
+"en": "discrepancy",
+"he": "אי-התאמה, פער",
+"pos": "n",
+"existing": [
+"There was a ___ between the two reports about the number of victims."
+]
+},
+{
+"id": "v:discriminate",
+"en": "discriminate",
+"he": "להפלות, להבחין",
+"pos": "v",
+"existing": [
+"It is illegal for an employer to ___ against workers because of their age."
+]
+},
+{
+"id": "v:disinfect",
+"en": "disinfect",
+"he": "לחטא",
+"pos": "v",
+"existing": [
+"Nurses ___ their hands carefully before touching any patient."
+]
+},
+{
+"id": "v:dispensable",
+"en": "dispensable",
+"he": "ניתן לוותר עליו",
+"pos": "j",
+"existing": [
+"When money is tight, small luxuries become ___ compared with food and rent."
+]
+}
+]

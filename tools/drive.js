@@ -28,6 +28,13 @@ async function runLesson(P, T, wrongRate, given) {
     const w = it.w;
     T[c.type] = (T[c.type] || 0) + 1;
     chk(!(w.topic === 'link' && (c.type === 'type' || c.type === 'typeSentence')), 'שאלת כתיבה במילות קישור ' + w.en, P);
+    // משפטים בסבב: אותו משפט לא חוזר בשאלות המשפט האחרונות של המילה
+    if (c.sent) {
+      const h = (window.__sents = window.__sents || {})[w.id] = (window.__sents[w.id] || []), n = sentencesOf(w).length;
+      const keep = Math.min(n - 1, 4);
+      chk(!keep || !h.slice(-keep).includes(c.sent.s), `משפט חוזר מוקדם מדי ${w.en}`, P);
+      h.push(c.sent.s); T.sentVariety = Math.max(T.sentVariety || 0, new Set(h).size);
+    }
     const wrong = Math.random() < wrongRate;
     if (c.opts) {
       chk(c.opts.length === 4, `${c.type} ${w.en}: ${c.opts.length} אפשרויות`, P);

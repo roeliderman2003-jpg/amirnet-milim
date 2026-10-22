@@ -14,7 +14,8 @@ for (const [k, t] of Object.entries(TOPICS)) {
 if (typeof S2 !== 'undefined') TOPICS.link.items.forEach(w => { if (S2[w.id]) w.s2 = { s: S2[w.id][0], sh: S2[w.id][1] }; });
 if (typeof S3 !== 'undefined') TOPICS.link.items.forEach(w => { if (S3[w.id]) w.s3 = { s: S3[w.id][0], sh: S3[w.id][1] }; });
 // כל המשפטים של מילה: מהכרטיס, ומשפטים נוספים בהקשרים אחרים
-const sentencesOf = w => [w, w.s2, w.s3].filter(Boolean);
+// SMORE (sentences-more.js): עוד 3-4 משפטים לכל מילה בהקשרים אחרים, כדי שלא יזכרו את התשובה מהמשפט (רועי 22/10)
+const sentencesOf = w => [w, w.s2, w.s3, ...((typeof SMORE !== 'undefined' && SMORE[w.id]) || []).map(([s, sh]) => ({ s, sh }))].filter(Boolean);
 Object.assign(CATS, VCATS);
 Object.assign(NEAR, VNEAR);
 let topic = 'link', ITEMS, CAT_KEYS, UNITS;
@@ -105,7 +106,7 @@ const TWIN = {};
 { const k = x => x.toLowerCase().trim(), link = TOPICS.link.items;
   for (const v of TOPICS.vocab.items) { const ls = link.filter(l => k(l.en) === k(v.en)); if (ls.length === 1) { TWIN[v.id] = ls[0]; TWIN[ls[0].id] = v; } } }
 // מעתיקים את המצב לתאומה, חוץ מהמשפט האחרון שנשאל (לכל נושא משפטים משלו)
-function syncTwin(w, s = S) { const t = TWIN[w.id], st = s.w[w.id]; if (t && st) s.w[t.id] = Object.assign({}, st, { ls: s.w[t.id] && s.w[t.id].ls }); }
+function syncTwin(w, s = S) { const t = TWIN[w.id], st = s.w[w.id], o = s.w[t && t.id] || {}; if (t && st) s.w[t.id] = Object.assign({}, st, { ls: o.ls, lh: o.lh }); }
 const twinRank = x => x ? (x.known ? 99 : x.b) * 1e6 + (x.ok || 0) : -1;
 function migrate(s) {
   for (const id of Object.keys(s.w)) {
@@ -341,18 +342,26 @@ function buildLearn(u, only) {
   const unit = UNITS[u], t = now();
   const fresh = unit.items.filter(w => !S.w[w.id]).slice(0, 5);
   const used = new Set(fresh.map(w => w.id));
-  const pool = only ? unit.items.filter(w => S.w[w.id] && !isKnown(w)) : practiced();
-  const rev = shuffle(pool.filter(w => ws(w).due <= t).sort(byNeed).slice(0, fresh.length ? 6 : 10));
+  // חזרות בשיעור עם מילים חדשות: מעט, כדי להזכיר בלי לחפור (רועי 22/10). עד 3 מהיחידה עצמה, עד 2 מיחידות קודמות
+  // ומילה אחת מהנושא השני (מילות קישור / אוצר מילים מתערבבים). שאר החזרות מחכות ל«חזרה»
+  const isDue = w => S.w[w.id] && !isKnown(w) && ws(w).due <= t;
+  const cap = fresh.length ? { same: 3, old: 2, other: 1 } : { same: 10, old: 6, other: 2 };
+  const same = unit.items.filter(isDue).sort(byNeed).slice(0, cap.same);
+  const old = only ? [] : practiced().filter(w => !unit.items.includes(w) && isDue(w)).sort(byNeed).slice(0, cap.old);
+  const otherK = Object.keys(TOPICS).find(k => k !== topic);
+  const other = only ? [] : TOPICS[otherK].items.filter(w => isDue(w) && !TWIN[w.id]).sort(byNeed).slice(0, cap.other);
+  const rev = shuffle([...same, ...old, ...other]);
   rev.forEach(w => used.add(w.id));
   const want = fresh.length ? 5 : 10;
-  const extra = [...unit.items, ...(only ? [] : shuffle(practiced()))].filter(w => S.w[w.id] && !isKnown(w) && !used.has(w.id)).sort((a, b) => box(a) - box(b));
+  // אין מספיק חזרות שהגיע זמנן: משלימים ממילים של היחידה עצמה (ובשיעור חזרה בלי מילים חדשות, מכל הנושא)
+  const extra = [...unit.items, ...(only || fresh.length ? [] : shuffle(practiced()))].filter(w => S.w[w.id] && !isKnown(w) && !used.has(w.id)).sort((a, b) => box(a) - box(b));
   for (const w of extra) { if (rev.length >= want) break; if (!used.has(w.id)) { rev.push(w); used.add(w.id); } }
   const revQ = rev.map(w => ({ k: 'q', w }));
   const q = [];
   fresh.forEach(w => { q.push({ k: 'intro', w }); q.push({ k: 'q', w, type: 'meaning' }); if (revQ.length) q.push(revQ.shift()); });
   q.push(...revQ);
   shuffle(fresh).forEach(w => q.push({ k: 'q', w, type: pick(['reverse', 'category']) }));
-  const ms = matchSet(shuffle([...fresh, ...rev]));
+  const ms = matchSet(shuffle([...fresh, ...rev.filter(w => w.topic === topic)]));
   if (ms.length >= 4) q.push({ k: 'match', ws: ms });
   return q;
 }
@@ -407,11 +416,16 @@ function prepare() {
   else if (type === 'reverse') { c.opts = shuffle([w.en, ...reverseDistractors(w)]); c.correct = w.en; }
   else if (type === 'category') { const own = new Set(ITEMS.filter(x => x.en === w.en).map(x => x.cat)); c.opts = shuffle([w.cat, ...shuffle(CAT_KEYS.filter(k => !own.has(k))).slice(0, 3)]); c.correct = w.cat; }
   else if (type === 'sentence') { c.opts = sentenceOptions(w); c.correct = w.en; }
-  // משפט בסבב: לא אותו משפט כמו בפעם הקודמת שהמילה נשאלה
+  // משפט בסבב: לא אחד מהמשפטים האחרונים שהמילה נשאלה בהם, קודם משפטים שעוד לא הופיעו,
+  // והמשפט מכרטיס ההכרות (0) רק אחרי כל השאר
   if (type === 'sentence' || type === 'typeSentence') {
-    const all = sentencesOf(w), st = S.w[w.id];
-    const pickI = pick(all.map((_, i) => i).filter(i => all.length < 2 || i !== st.ls));
-    st.ls = pickI; c.sent = all[pickI];
+    const all = sentencesOf(w), st = S.w[w.id], used = st.lh || (st.ls !== undefined ? [st.ls] : []);
+    const keep = Math.min(all.length - 1, 4), recent = keep > 0 ? used.slice(-keep) : [];
+    let cand = all.map((_, i) => i).filter(i => !recent.includes(i));
+    const unseen = cand.filter(i => i !== 0 && !used.includes(i));
+    if (unseen.length) cand = unseen;
+    const pickI = pick(cand);
+    st.ls = pickI; st.lh = [...used, pickI].slice(-8); c.sent = all[pickI];
   }
   L.cur = c;
 }

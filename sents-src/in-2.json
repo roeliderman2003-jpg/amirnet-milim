@@ -1,0 +1,1356 @@
+[
+{
+"id": "formerly|tim",
+"en": "formerly",
+"he": "לשעבר, בעבר",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"The building, ___ a school, is now a museum.",
+"Our school library, ___ a small storage room, now holds over five thousand books.",
+"The hotel, ___ a royal palace, still has its original gold ceilings."
+]
+},
+{
+"id": "thereafter|tim",
+"en": "thereafter",
+"he": "לאחר מכן, מאז ואילך",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"He moved to Paris in 2010 and lived there for many years ___.",
+"She broke her leg in March and walked with crutches for several weeks ___.",
+"The company opened its first shop in 1990 and grew very quickly ___."
+]
+},
+{
+"id": "hitherto|tim",
+"en": "hitherto",
+"he": "עד כה, עד עתה",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"Scientists found a ___ unknown species of frog.",
+"The new telescope revealed stars that had ___ been invisible to scientists.",
+"The old letters revealed a ___ secret chapter in the king's life."
+]
+},
+{
+"id": "henceforth|tim",
+"en": "henceforth",
+"he": "מעתה והלאה",
+"group": "זמן ורצף",
+"pos": "a",
+"existing": [
+"The old system caused many problems. ___, all meetings will be held online.",
+"The principal announced a new rule today: ___, phones will not be allowed anywhere in the school.",
+"The bank announced a new policy this morning. ___, customers will pay no fees for online transfers."
+]
+},
+{
+"id": "upon|tim",
+"en": "upon",
+"he": "עם, ברגע ש... (+ing)",
+"group": "זמן ורצף",
+"pos": "p",
+"existing": [
+"___ arriving home, he called his mother.",
+"___ hearing the good news, the whole family started dancing in the kitchen.",
+"___ entering the temple, visitors must take off their shoes."
+]
+},
+{
+"id": "for example|exm",
+"en": "for example",
+"he": "לדוגמה",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"existing": [
+"Some fruits, ___ oranges and lemons, are rich in vitamin C.",
+"Some animals can live without water for a long time. ___, camels can go two weeks without drinking.",
+"Some sports need very little equipment. ___, for running you only need good shoes."
+]
+},
+{
+"id": "for instance|exm",
+"en": "for instance",
+"he": "למשל",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"existing": [
+"Many animals sleep in winter; bears, ___, sleep for months.",
+"Exercise doesn't have to be expensive; walking, ___, costs nothing at all.",
+"Many jobs can now be done from home; programmers, ___, rarely need to visit the office."
+]
+},
+{
+"id": "such as|exm",
+"en": "such as",
+"he": "כגון, כמו",
+"group": "דוגמה והבהרה",
+"pos": "p",
+"existing": [
+"She enjoys sports ___ tennis and swimming.",
+"The store sells kitchen tools ___ knives, pans and cutting boards.",
+"Musical instruments ___ the violin and the cello take years to learn."
+]
+},
+{
+"id": "namely|exm",
+"en": "namely",
+"he": "כלומר, דהיינו (בפירוט)",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"note": "בא לפני פירוט מדויק של מה שהוזכר",
+"existing": [
+"Two students, ___ Dan and Noa, got perfect scores.",
+"The doctor gave me two pieces of advice, ___ to drink more water and to sleep longer.",
+"The city has two famous landmarks, ___ the old port and the clock tower."
+]
+},
+{
+"id": "that is|exm",
+"en": "that is",
+"he": "כלומר",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"existing": [
+"He is a vegan; ___, he doesn't eat any animal products.",
+"My cousin is bilingual, ___, he speaks two languages equally well.",
+"This plant is a perennial; ___, it lives for more than two years."
+]
+},
+{
+"id": "in other words|exm",
+"en": "in other words",
+"he": "במילים אחרות",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"existing": [
+"The service is free. ___, you don't have to pay anything.",
+"Our team scored no goals and let in five. ___, we were completely beaten.",
+"The new car uses no fuel at all. ___, it runs only on electricity."
+]
+},
+{
+"id": "in particular|exm",
+"en": "in particular",
+"he": "במיוחד, בפרט",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"existing": [
+"I love Italian food, pasta ___.",
+"The whole class enjoyed the trip, and the visit to the zoo ___.",
+"My grandmother loves classical music, and the works of Mozart ___."
+]
+},
+{
+"id": "including|exm",
+"en": "including",
+"he": "כולל",
+"group": "דוגמה והבהרה",
+"pos": "p",
+"existing": [
+"Ten people were hurt, ___ two children.",
+"The museum has many famous paintings, ___ three by Van Gogh.",
+"The farm grows many kinds of fruit, ___ apples, pears and cherries."
+]
+},
+{
+"id": "i.e.|exm",
+"en": "i.e.",
+"he": "כלומר (קיצור)",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"note": "קיצור לטיני של that is: מסביר בדיוק מה הכוונה. e.g. = נותן רק דוגמה",
+"existing": [
+"He works part-time, ___ only three days a week.",
+"The course is for adults only, ___ people over the age of eighteen.",
+"The baby is still a newborn, ___ less than four weeks old."
+]
+},
+{
+"id": "e.g.|exm",
+"en": "e.g.",
+"he": "לדוגמה (קיצור)",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"note": "קיצור לטיני של for example",
+"existing": [
+"Eat more green vegetables, ___ broccoli and spinach.",
+"Try to avoid sugary drinks, ___ cola and energy drinks.",
+"Bring something warm for the night hike, ___ a jacket, gloves or a hat."
+]
+},
+{
+"id": "specifically|exm",
+"en": "specifically",
+"he": "ספציפית, באופן מדויק",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"existing": [
+"The book is for young readers, ___ children aged 8 to 10.",
+"The research focused on older people, ___ those living alone in small towns.",
+"The new law protects wild animals, ___ birds that nest near the coast."
+]
+},
+{
+"id": "to illustrate|exm",
+"en": "to illustrate",
+"he": "כדי להמחיש",
+"group": "דוגמה והבהרה",
+"pos": "a",
+"existing": [
+"Prices have risen sharply. ___, bread now costs twice as much.",
+"The city has grown very fast. ___, its population doubled in just ten years.",
+"Technology has changed very fast. ___, a cheap phone today is stronger than an old supercomputer."
+]
+},
+{
+"id": "like|cmp",
+"en": "like",
+"he": "כמו",
+"group": "השוואה ודמיון",
+"pos": "p",
+"existing": [
+"She sings ___ a professional singer.",
+"The new robot moves ___ a real person, so it's hard to tell the difference.",
+"From the top of the mountain, the cars below looked ___ tiny toys."
+]
+},
+{
+"id": "similarly|cmp",
+"en": "similarly",
+"he": "באופן דומה",
+"group": "השוואה ודמיון",
+"pos": "a",
+"existing": [
+"Cats need care and love. ___, dogs need daily attention.",
+"Regular exercise helps people stay healthy. ___, a balanced diet protects the body from disease.",
+"Pianists must practice every day. ___, athletes must train daily to stay in shape."
+]
+},
+{
+"id": "as... as|cmp",
+"en": "as... as",
+"he": "...כמו (באותה מידה)",
+"group": "השוואה ודמיון",
+"pos": "c",
+"note": "as + תואר + as = באותה מידה. not as... as = פחות מ",
+"existing": [
+"He is ___ tall ___ his father.",
+"My new laptop is ___ light ___ a notebook, so I carry it everywhere.",
+"This little restaurant is ___ good ___ the expensive ones in the city center."
+]
+},
+{
+"id": "likewise|cmp",
+"en": "likewise",
+"he": "כמו כן, באותו אופן",
+"group": "השוואה ודמיון",
+"pos": "a",
+"existing": [
+"The father was a doctor; ___, his son chose medicine.",
+"Smoking is not allowed inside the building; ___, it is forbidden near the entrance.",
+"The mother bird feeds the chicks; ___, the father brings them food all day."
+]
+},
+{
+"id": "in the same way|cmp",
+"en": "in the same way",
+"he": "באותה דרך",
+"group": "השוואה ודמיון",
+"pos": "a",
+"existing": [
+"Plants need sunlight to grow. ___, children need love.",
+"Muscles become stronger with exercise. ___, the brain improves when we keep learning.",
+"A good map helps travelers find their way. ___, a clear plan helps workers reach their goals."
+]
+},
+{
+"id": "just as|cmp",
+"en": "just as",
+"he": "בדיוק כפי ש...",
+"group": "השוואה ודמיון",
+"pos": "c",
+"existing": [
+"___ a car needs fuel, the body needs food.",
+"___ we brush our teeth every day, we should move our bodies every day.",
+"___ a song needs a good melody, a story needs an interesting plot."
+]
+},
+{
+"id": "as if|cmp",
+"en": "as if",
+"he": "כאילו",
+"group": "השוואה ודמיון",
+"pos": "c",
+"note": "גם as though = כאילו",
+"existing": [
+"He talks ___ he knows everything, but he knows very little.",
+"She looked at me ___ she had seen a ghost.",
+"The old car sounded ___ it was going to fall apart at any moment."
+]
+},
+{
+"id": "compared to|cmp",
+"en": "compared to",
+"he": "בהשוואה ל...",
+"group": "השוואה ודמיון",
+"pos": "p",
+"existing": [
+"___ last year, sales are much higher.",
+"___ ten years ago, people today spend far more time on their phones.",
+"___ the city, the air in the mountains is much cleaner."
+]
+},
+{
+"id": "alike|cmp",
+"en": "alike",
+"he": "דומים, באותו אופן",
+"group": "השוואה ודמיון",
+"pos": "d",
+"note": "students and teachers alike = גם תלמידים וגם מורים",
+"existing": [
+"The two sisters look very much ___.",
+"Parents and teachers ___ were happy with the new school schedule.",
+"Tourists and local people ___ love the fresh fish at this little harbor restaurant."
+]
+},
+{
+"id": "similar to|cmp",
+"en": "similar to",
+"he": "דומה ל...",
+"group": "השוואה ודמיון",
+"pos": "p",
+"existing": [
+"Your phone is very ___ mine.",
+"The taste of this fruit is ___ that of a mango, but the fruit is smaller.",
+"The climate in Tel Aviv is very ___ that of southern Spain."
+]
+},
+{
+"id": "equally|cmp",
+"en": "equally",
+"he": "באותה מידה",
+"group": "השוואה ודמיון",
+"pos": "a",
+"existing": [
+"Both candidates are ___ qualified for the job.",
+"Both medicines are ___ effective, so choose the one that is cheaper.",
+"Both teams played ___ well, so the match ended in a draw."
+]
+},
+{
+"id": "correspondingly|cmp",
+"en": "correspondingly",
+"he": "בהתאמה, באופן תואם",
+"group": "השוואה ודמיון",
+"pos": "a",
+"existing": [
+"The work got harder, and his salary rose ___.",
+"The new hall is twice as big as the old one, and the ticket prices are ___ higher.",
+"As the population of the city grew, the number of schools increased ___."
+]
+},
+{
+"id": "in fact|emp",
+"en": "in fact",
+"he": "למעשה, בעצם",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"He isn't lazy. ___, he works harder than anyone.",
+"The new restaurant is very popular. ___, you need to book a table a week in advance.",
+"Bats are not blind at all. ___, some of them see better than humans."
+]
+},
+{
+"id": "actually|emp",
+"en": "actually",
+"he": "בעצם, למעשה",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"note": "מלכודת! actually ≠ 'אקטואלי'. פירושו 'בפועל, בעצם'",
+"existing": [
+"I thought he was French, but he's ___ Spanish.",
+"Everyone thinks Noa is shy, but she is ___ very talkative with her friends.",
+"Many people think tomatoes are vegetables, but they are ___ fruits."
+]
+},
+{
+"id": "in conclusion|emp",
+"en": "in conclusion",
+"he": "לסיכום",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"Exercise improves sleep, mood and health. ___, it is good for both body and mind.",
+"Electric cars are quiet, cheap to run and clean. ___, they are the best choice for the city.",
+"Music lessons improve memory, patience and teamwork. ___, every child should learn an instrument."
+]
+},
+{
+"id": "especially|emp",
+"en": "especially",
+"he": "במיוחד",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"I love fruit, ___ apples.",
+"Drink plenty of water every day, ___ on hot summer days.",
+"The roads here are dangerous, ___ at night when it rains."
+]
+},
+{
+"id": "indeed|emp",
+"en": "indeed",
+"he": "אכן, ואכן",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"The test was hard. ___, only five students passed.",
+"Experts said the winter would be very cold. ___, it snowed in Jerusalem three times.",
+"Everyone expected the new phone to sell well. ___, a million were sold in the first week."
+]
+},
+{
+"id": "to sum up|emp",
+"en": "to sum up",
+"he": "לסיכום",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"Our plan is cheap. It is also fast and safe. ___, it is the best option we have.",
+"The hotel was clean, the staff were kind and the food was great. ___, it was perfect.",
+"The new laptop is light, fast and has a great battery. ___, it is worth every shekel."
+]
+},
+{
+"id": "in short|emp",
+"en": "in short",
+"he": "בקיצור",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"The food was cold and the waiter was rude. ___, it was a bad evening.",
+"He lost his keys, missed the bus and failed his test. ___, it was a terrible day.",
+"The players trained hard, worked as a team and never gave up. ___, they deserved to win."
+]
+},
+{
+"id": "overall|emp",
+"en": "overall",
+"he": "בסך הכול, באופן כללי",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"There were a few problems, but ___ the trip was a success.",
+"The movie had a weak ending, but ___ it was enjoyable and well acted.",
+"The restaurant was a little noisy, but ___ the food and service were excellent."
+]
+},
+{
+"id": "above all|emp",
+"en": "above all",
+"he": "מעל הכול, בעיקר",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"A good teacher must be patient and, ___, fair.",
+"When choosing a school, parents look at the teachers, the location and, ___, the safety of their children.",
+"A good doctor needs knowledge, experience and, ___, the ability to listen to patients."
+]
+},
+{
+"id": "mainly|emp",
+"en": "mainly",
+"he": "בעיקר",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"The audience was made up ___ of young people.",
+"The new park is used ___ by families with young children.",
+"Pandas eat ___ bamboo, although they sometimes eat small animals too."
+]
+},
+{
+"id": "after all|emp",
+"en": "after all",
+"he": "הרי, אחרי הכול",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"note": "בדרך כלל = 'הרי', כשנותנים סיבה שכולם יודעים",
+"existing": [
+"Don't be angry with him; ___, he's only a child.",
+"You should trust her advice; ___, she has been a nurse for thirty years.",
+"Don't be surprised that he plays the piano so well; ___, his mother is a famous pianist."
+]
+},
+{
+"id": "ultimately|emp",
+"en": "ultimately",
+"he": "בסופו של דבר, בסופו של חשבון",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"We can give advice, but ___ the decision is yours.",
+"Coaches and parents can help, but ___ success depends on the player's own effort.",
+"Banks can offer good advice, but ___ you are responsible for your own money."
+]
+},
+{
+"id": "essentially|emp",
+"en": "essentially",
+"he": "ביסודו, בעיקרו",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"The two plans are ___ the same; only the names are different.",
+"The new phone is ___ the same as the old model, with only a better camera.",
+"The two recipes are ___ the same; one just uses more sugar."
+]
+},
+{
+"id": "primarily|emp",
+"en": "primarily",
+"he": "בעיקר, בראש ובראשונה",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"The course is ___ for beginners, but some advanced students join too.",
+"The disease affects ___ older people, although young people can get it too.",
+"This app is used ___ by students, but many teachers use it too."
+]
+},
+{
+"id": "chiefly|emp",
+"en": "chiefly",
+"he": "בעיקר",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"The island's economy depends ___ on tourism.",
+"The fire was caused ___ by old electrical wires inside the walls.",
+"The museum is visited ___ by school groups during the week."
+]
+},
+{
+"id": "notably|emp",
+"en": "notably",
+"he": "במיוחד; באופן בולט",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"Many artists, ___ Picasso, lived in Paris.",
+"Several players were injured this season, ___ the team's captain and top scorer.",
+"Several ancient cities, ___ Rome and Athens, still have ruins in their centers."
+]
+},
+{
+"id": "undoubtedly|emp",
+"en": "undoubtedly",
+"he": "ללא ספק",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"She scored in every game this season; she is ___ the best player on the team.",
+"With three Olympic gold medals, she is ___ the greatest swimmer in the country's history.",
+"The book has sold fifty million copies; it is ___ one of the most popular novels ever."
+]
+},
+{
+"id": "in brief|emp",
+"en": "in brief",
+"he": "בקצרה",
+"group": "הדגשה וסיכום",
+"pos": "a",
+"existing": [
+"The talks lasted hours and nothing was decided. ___, the meeting was a waste of time.",
+"The report is two hundred pages long. ___, it says the factory must close.",
+"The car broke down twice and the hotel was dirty. ___, the trip was a disaster."
+]
+},
+{
+"id": "let alone|emp",
+"en": "let alone",
+"he": "ובטח שלא, קל וחומר",
+"group": "הדגשה וסיכום",
+"pos": "c",
+"note": "בא אחרי משפט שלילי: אם אפילו הקטן לא, אז בטח לא הגדול",
+"existing": [
+"He can't afford a bike, ___ a car.",
+"My grandfather can't use a simple phone, ___ a laptop.",
+"My little sister can't swim across the pool, ___ across the lake."
+]
+},
+{
+"id": "instead of|alt",
+"en": "instead of",
+"he": "במקום (+שם עצם / ing)",
+"group": "חלופה והוצאה",
+"pos": "p",
+"existing": [
+"Let's walk ___ taking the bus.",
+"The school now sends reports by email ___ printing them on paper.",
+"Try drinking water ___ sweet juice when you are thirsty."
+]
+},
+{
+"id": "instead|alt",
+"en": "instead",
+"he": "במקום זאת",
+"group": "חלופה והוצאה",
+"pos": "a",
+"existing": [
+"He didn't call me. ___, he sent a text message.",
+"We didn't watch TV last night. ___, we played board games with the kids.",
+"We didn't fly to Eilat this year. ___, we drove north and camped by the lake."
+]
+},
+{
+"id": "except|alt",
+"en": "except",
+"he": "חוץ מ..., למעט",
+"group": "חלופה והוצאה",
+"pos": "p",
+"existing": [
+"Everyone came to the party ___ Dan.",
+"All the students passed the exam ___ Yoni, who has to take it again.",
+"The museum is open every day ___ Monday, when the staff clean the halls."
+]
+},
+{
+"id": "either... or|alt",
+"en": "either... or",
+"he": "או... או",
+"group": "חלופה והוצאה",
+"pos": "c",
+"existing": [
+"You can ___ stay here ___ come with us.",
+"To get to Haifa, you can ___ take the train ___ drive along the coast.",
+"For dessert you can have ___ chocolate cake ___ fresh fruit, but not both."
+]
+},
+{
+"id": "rather than|alt",
+"en": "rather than",
+"he": "במקום, ולא",
+"group": "חלופה והוצאה",
+"pos": "p",
+"existing": [
+"I'd prefer to walk ___ drive.",
+"Many doctors now prefer to treat back pain with exercise ___ pills.",
+"More and more people now read the news on their phones ___ in printed newspapers."
+]
+},
+{
+"id": "neither... nor|alt",
+"en": "neither... nor",
+"he": "לא... וגם לא",
+"group": "חלופה והוצאה",
+"pos": "c",
+"existing": [
+"He ___ called ___ wrote to me for a year, so I was hurt.",
+"The hotel room had ___ hot water ___ air conditioning, so we left after one night.",
+"The old phone could ___ take photos ___ connect to the internet, so we bought a new one."
+]
+},
+{
+"id": "apart from|alt",
+"en": "apart from",
+"he": "חוץ מ...; מלבד",
+"group": "חלופה והוצאה",
+"pos": "p",
+"note": "יכול להיות גם 'בנוסף ל'. ההקשר מחליט",
+"existing": [
+"___ the ending, I liked the movie.",
+"___ a short rain in the morning, the weather was perfect all day.",
+"___ my brother, everyone in my family loves spicy food."
+]
+},
+{
+"id": "except for|alt",
+"en": "except for",
+"he": "חוץ מ...",
+"group": "חלופה והוצאה",
+"pos": "p",
+"existing": [
+"The room was empty ___ an old chair.",
+"The streets were completely quiet ___ the sound of a single dog barking.",
+"The new album is excellent ___ one song, which sounds too much like the others."
+]
+},
+{
+"id": "other than|alt",
+"en": "other than",
+"he": "מלבד, חוץ מ...",
+"group": "חלופה והוצאה",
+"pos": "p",
+"existing": [
+"I have no friends here ___ you.",
+"There is no way to reach the island ___ a small boat.",
+"The doctor said there is nothing wrong with me ___ a mild cold."
+]
+},
+{
+"id": "alternatively|alt",
+"en": "alternatively",
+"he": "לחלופין",
+"group": "חלופה והוצאה",
+"pos": "a",
+"existing": [
+"You can pay in cash. ___, you can use a credit card.",
+"You can collect your order from the store. ___, we can deliver it to your home.",
+"You can take the cable car up the mountain. ___, you can hike up in two hours."
+]
+},
+{
+"id": "aside from|alt",
+"en": "aside from",
+"he": "מלבד",
+"group": "חלופה והוצאה",
+"pos": "p",
+"existing": [
+"___ a few small mistakes, the essay was excellent.",
+"___ the high price, there is nothing wrong with this apartment.",
+"___ one bad game in March, our team has played brilliantly all season."
+]
+},
+{
+"id": "who|rel",
+"en": "who",
+"he": "ש... (לבני אדם)",
+"group": "מילות זיקה",
+"pos": "r",
+"note": "מתייחס לאנשים",
+"existing": [
+"The man ___ called you is my uncle.",
+"Students ___ finish the test early may leave the room quietly.",
+"The farmer ___ sells us eggs lives in a small village nearby."
+]
+},
+{
+"id": "which|rel",
+"en": "which",
+"he": "ש... (לדברים)",
+"group": "מילות זיקה",
+"pos": "r",
+"note": "מתייחס לדברים ולבעלי חיים",
+"existing": [
+"The book ___ I bought yesterday is great.",
+"The medicine ___ the doctor gave me made me very sleepy.",
+"The song ___ won the competition was written by a sixteen-year-old girl."
+]
+},
+{
+"id": "that|rel",
+"en": "that",
+"he": "ש... (לאנשים או לדברים)",
+"group": "מילות זיקה",
+"pos": "r",
+"note": "יכול להחליף את who ואת which",
+"existing": [
+"It was the best movie ___ I have ever seen.",
+"This is the only shop in town ___ sells fresh fish.",
+"Penguins are birds ___ cannot fly but can swim very fast."
+]
+},
+{
+"id": "whose|rel",
+"en": "whose",
+"he": "ש...שלו / שלה / שלהם",
+"group": "מילות זיקה",
+"pos": "r",
+"note": "מראה שייכות: whose bag = שהתיק שלו",
+"existing": [
+"The girl ___ bag was stolen called the police.",
+"The scientist ___ research won the prize will speak at our school.",
+"The company ___ app was hacked has apologized to all its users."
+]
+},
+{
+"id": "where|rel",
+"en": "where",
+"he": "שבו, איפה ש...",
+"group": "מילות זיקה",
+"pos": "r",
+"existing": [
+"This is the house ___ I grew up.",
+"We visited the hospital ___ my mother was born.",
+"We had lunch at the small market ___ the locals buy their fish."
+]
+},
+{
+"id": "what|rel",
+"en": "what",
+"he": "מה ש...",
+"group": "מילות זיקה",
+"pos": "r",
+"existing": [
+"I didn't understand ___ he said.",
+"The teacher repeated ___ she had explained in the last lesson.",
+"Scientists still do not fully understand ___ causes this rare disease."
+]
+},
+{
+"id": "whom|rel",
+"en": "whom",
+"he": "שאותו, את מי (רשמי)",
+"group": "מילות זיקה",
+"pos": "r",
+"note": "צורת המושא של who. בא גם אחרי מילת יחס: to whom",
+"existing": [
+"The woman ___ I met yesterday is a doctor.",
+"The player ___ the coach chose as captain is only seventeen.",
+"The pianist ___ we heard last night is only twelve years old."
+]
+},
+{
+"id": "whoever|rel",
+"en": "whoever",
+"he": "כל מי ש..., מי שלא יהיה",
+"group": "מילות זיקה",
+"pos": "r",
+"existing": [
+"___ wins the race gets a prize.",
+"___ breaks a window will have to pay for a new one.",
+"___ finds the lost dog will receive a reward from its owners."
+]
+},
+{
+"id": "whatever|rel",
+"en": "whatever",
+"he": "כל מה ש..., מה שלא יהיה",
+"group": "מילות זיקה",
+"pos": "r",
+"existing": [
+"You can order ___ you want from the menu.",
+"My grandmother cooks ___ we ask for when we visit her.",
+"The new app can translate ___ you say into twenty languages."
+]
+},
+{
+"id": "wherever|rel",
+"en": "wherever",
+"he": "לכל מקום ש..., איפה שלא יהיה",
+"group": "מילות זיקה",
+"pos": "r",
+"existing": [
+"My dog follows me ___ I go.",
+"This phone works ___ you are, even in the middle of the desert.",
+"The famous actor is followed by photographers ___ he travels."
+]
+},
+{
+"id": "whichever|rel",
+"en": "whichever",
+"he": "כל אחד ש..., איזה שלא יהיה",
+"group": "מילות זיקה",
+"pos": "r",
+"existing": [
+"Take ___ seat you like.",
+"You may choose ___ book you prefer from these three for your report.",
+"You can pay with ___ card you prefer; we accept them all."
+]
+},
+{
+"id": "in which|rel",
+"en": "in which",
+"he": "שבו (רשמי)",
+"group": "מילות זיקה",
+"pos": "r",
+"existing": [
+"The room ___ we met was very small.",
+"This is the small village ___ the famous writer spent his last years.",
+"The castle ___ the king lived is now a popular hotel."
+]
+},
+{
+"id": "of which|rel",
+"en": "of which",
+"he": "ש...מהם / ממנו",
+"group": "מילות זיקה",
+"pos": "r",
+"note": "לדברים. לאנשים: of whom",
+"existing": [
+"He owns three cars, two ___ are red.",
+"The school has forty computers, ten ___ are broken.",
+"The farmer planted a hundred trees, most ___ produce sweet oranges."
+]
+},
+{
+"id": "whereby|rel",
+"en": "whereby",
+"he": "שבאמצעותו, שלפיו",
+"group": "מילות זיקה",
+"pos": "r",
+"existing": [
+"They created a system ___ students can choose their own courses.",
+"The city started a program ___ residents get money back for recycling bottles.",
+"The hospital uses a method ___ patients book appointments through a simple text message."
+]
+},
+{
+"id": "hardly|deg",
+"en": "hardly",
+"he": "כמעט לא",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"note": "מלכודת! hard = קשה, אבל hardly = כמעט לא",
+"existing": [
+"It was so dark that I could ___ see anything.",
+"My grandfather is ninety and can ___ walk without help anymore.",
+"The music was so loud that we could ___ hear each other."
+]
+},
+{
+"id": "rarely|deg",
+"en": "rarely",
+"he": "לעיתים רחוקות",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"He ___ eats meat; maybe once a year.",
+"My uncle lives abroad, so we ___ see him; maybe once every two years.",
+"The old piano is ___ played; maybe once or twice a year at family parties."
+]
+},
+{
+"id": "almost|deg",
+"en": "almost",
+"he": "כמעט",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"I ___ missed the bus, but I caught it at the last second.",
+"The cake is ___ ready; it needs only two more minutes in the oven.",
+"The runner ___ fell at the last turn, but she kept her balance and won."
+]
+},
+{
+"id": "no longer|deg",
+"en": "no longer",
+"he": "כבר לא",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"He ___ lives here; he moved away last year.",
+"This bus ___ stops on our street; the route was changed last month.",
+"My grandmother ___ drives; she sold her car when she turned eighty-five."
+]
+},
+{
+"id": "not yet|deg",
+"en": "not yet",
+"he": "עוד לא",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"The results have ___ been published; we are still waiting.",
+"The doctor has ___ seen the test results, so she can't tell us anything.",
+"The new bridge has ___ been opened to traffic; work will finish next month."
+]
+},
+{
+"id": "even|deg",
+"en": "even",
+"he": "אפילו",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"Everyone laughed at the joke, ___ the serious teacher.",
+"The exam was so easy that ___ the weakest students got high grades.",
+"The new phone is very easy to use; ___ my eighty-year-old grandfather learned it in a day."
+]
+},
+{
+"id": "at least|deg",
+"en": "at least",
+"he": "לפחות",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"You should sleep ___ eight hours a night.",
+"Adults should drink ___ two liters of water a day, and more in summer.",
+"To play the violin well, you need to practice ___ an hour every day."
+]
+},
+{
+"id": "barely|deg",
+"en": "barely",
+"he": "בקושי, כמעט לא",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"He ___ passed the test; he got 56.",
+"The tunnel was so low that the truck ___ fit through it.",
+"We ___ caught the last train home; the doors closed right behind us."
+]
+},
+{
+"id": "seldom|deg",
+"en": "seldom",
+"he": "לעיתים רחוקות",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"We ___ see snow here; it happens once every few years.",
+"It ___ rains in Eilat; most years there are only a few rainy days.",
+"My father ___ watches TV, maybe once a month; he prefers reading history books."
+]
+},
+{
+"id": "merely|deg",
+"en": "merely",
+"he": "רק, לא יותר מ...",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"It was ___ a joke; don't take it seriously.",
+"Don't worry about the noise; it's ___ the wind, nothing dangerous.",
+"Don't panic about the red light on the screen; it's ___ a reminder to update the software."
+]
+},
+{
+"id": "nearly|deg",
+"en": "nearly",
+"he": "כמעט",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"The glass is ___ full; add just a little more.",
+"My phone battery is ___ dead, but I can still make one short call.",
+"The concert hall was ___ full; only a few seats in the back were empty."
+]
+},
+{
+"id": "few|deg",
+"en": "few",
+"he": "מעט (כמעט אין)",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"note": "few = מעט מאוד (שלילי). a few = כמה (חיובי)",
+"existing": [
+"___ people came to the party, so it was quiet and boring.",
+"___ tourists visit the village in winter, so most of the hotels close.",
+"___ students signed up for the new chess club, so it closed after a month."
+]
+},
+{
+"id": "a few|deg",
+"en": "a few",
+"he": "כמה, מספר",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"note": "a few = כמה (חיובי). few = כמעט אין",
+"existing": [
+"I have ___ good friends here, so I'm not lonely.",
+"We still have ___ minutes before the train leaves, so let's buy some coffee.",
+"There are still ___ cookies in the box, so each child can have one."
+]
+},
+{
+"id": "a little|deg",
+"en": "a little",
+"he": "קצת",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"note": "a little = קצת (חיובי). little = כמעט אין",
+"existing": [
+"Don't worry, I have ___ money left, enough for a coffee.",
+"Add ___ salt to the soup; it needs just a bit more taste.",
+"I still have ___ time before the meeting, so I can answer your email now."
+]
+},
+{
+"id": "approximately|deg",
+"en": "approximately",
+"he": "בערך, בקירוב",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"The trip takes ___ three hours, maybe a little more.",
+"The new bridge is ___ two kilometers long, give or take a few meters.",
+"The ancient city had ___ ten thousand residents, but nobody knows the exact number."
+]
+},
+{
+"id": "at most|deg",
+"en": "at most",
+"he": "לכל היותר",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"The repair will cost ___ $50, probably less.",
+"Each student may bring ___ two guests to the ceremony, or come alone.",
+"The soup should cook for ten minutes ___, or the vegetables will become too soft."
+]
+},
+{
+"id": "relatively|deg",
+"en": "relatively",
+"he": "יחסית",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"The test was ___ easy compared to last year's.",
+"Compared to London, Tel Aviv is ___ small; you can cross it by bike in an hour.",
+"Electric scooters are ___ cheap compared to cars, so many students use them."
+]
+},
+{
+"id": "scarcely|deg",
+"en": "scarcely",
+"he": "כמעט לא, בקושי",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"There was ___ any food left, so everyone was still hungry.",
+"The old man could ___ remember his own name, so his daughter answered for him.",
+"There was ___ any water left in the bottles, so the hikers had to turn back early."
+]
+},
+{
+"id": "little|deg",
+"en": "little",
+"he": "מעט (כמעט אין)",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"note": "little = כמעט אין (שלילי). a little = קצת (חיובי)",
+"existing": [
+"There is ___ hope left; the situation is very bad.",
+"The patient has eaten ___ food since the operation, so he is very weak.",
+"This desert plant needs very ___ water, so you only have to water it once a month."
+]
+},
+{
+"id": "solely|deg",
+"en": "solely",
+"he": "אך ורק, בלעדית",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"The decision was based ___ on his test scores; nothing else counted.",
+"The prize is given ___ for creativity; grades and attendance are not considered.",
+"The museum is run ___ by volunteers; not one person there gets a salary."
+]
+},
+{
+"id": "somewhat|deg",
+"en": "somewhat",
+"he": "במידה מסוימת, קצת",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"The movie was ___ boring: not terrible, but not great either.",
+"I was ___ disappointed with the hotel, although the view from the room was lovely.",
+"The new phone is ___ heavier than the old model, but the difference is small."
+]
+},
+{
+"id": "virtually|deg",
+"en": "virtually",
+"he": "כמעט לגמרי, למעשה",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"note": "מלכודת! virtually ≠ 'וירטואלי'. פירושו 'כמעט לגמרי'",
+"existing": [
+"The town was ___ empty; only a few people remained.",
+"Thanks to the new vaccine, the disease has ___ disappeared; only a handful of cases remain.",
+"Smartphones are now used by ___ everyone in the country, from teenagers to grandparents."
+]
+},
+{
+"id": "by no means|deg",
+"en": "by no means",
+"he": "בשום אופן לא",
+"group": "מילים שהופכות משמעות",
+"pos": "d",
+"existing": [
+"The problem is ___ simple; it will take years to solve.",
+"Learning a new language is ___ easy; it takes years of hard work.",
+"Running a marathon is ___ easy; most people need months of training."
+]
+},
+{
+"id": "against|ref",
+"en": "against",
+"he": "נגד",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"Most people voted ___ the plan, so it was rejected.",
+"Thousands of people marched through the city ___ the new tax on bread.",
+"Washing your hands often is the best protection ___ the flu."
+]
+},
+{
+"id": "according to|ref",
+"en": "according to",
+"he": "לפי, על פי",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"___ the weather report, it will rain tomorrow.",
+"___ a new study, teenagers today sleep two hours less than teenagers in 1990.",
+"___ the old legend, a dragon once lived in the cave above the village."
+]
+},
+{
+"id": "regarding|ref",
+"en": "regarding",
+"he": "בנוגע ל...",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"I have a question ___ the homework.",
+"The principal sent parents a letter ___ the changes in the school calendar.",
+"The bank sent me a message ___ a strange payment on my credit card."
+]
+},
+{
+"id": "concerning|ref",
+"en": "concerning",
+"he": "בנוגע ל..., בעניין",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"There are new rules ___ phone use in class.",
+"The police have received new information ___ the missing child.",
+"Scientists have published new findings ___ the health benefits of green tea."
+]
+},
+{
+"id": "as for|ref",
+"en": "as for",
+"he": "לגבי, ואשר ל...",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"I love the city. ___ the weather, it's terrible.",
+"The kids loved the summer camp. ___ me, I was happy to have a quiet week.",
+"The hotel room was clean and quiet. ___ breakfast, it was simple but fresh."
+]
+},
+{
+"id": "in terms of|ref",
+"en": "in terms of",
+"he": "מבחינת",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"___ price, this phone is the best choice.",
+"___ size, Russia is the largest country in the world.",
+"___ speed, the cheetah is the fastest animal on land."
+]
+},
+{
+"id": "through|ref",
+"en": "through",
+"he": "דרך; באמצעות",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"He found his job ___ a friend.",
+"Many people hear about new jobs ___ social media.",
+"Most plants take in water from the soil ___ their roots."
+]
+},
+{
+"id": "among|ref",
+"en": "among",
+"he": "בין (יותר משניים), בקרב",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"The song is popular ___ teenagers.",
+"The flu spread quickly ___ the children in the kindergarten.",
+"The small village was hidden ___ tall trees, so we almost missed it."
+]
+},
+{
+"id": "towards|ref",
+"en": "towards",
+"he": "כלפי; לעבר",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"Her attitude ___ her students is very warm.",
+"The public's attitude ___ electric cars has changed a lot in recent years.",
+"My grandfather's attitude ___ money is simple: never spend more than you earn."
+]
+},
+{
+"id": "with regard to|ref",
+"en": "with regard to",
+"he": "בהתייחס ל...",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"___ your request, we will answer by Monday.",
+"___ parking, visitors may use the lot behind the building.",
+"___ the new vaccine, doctors say it is safe for children over five."
+]
+},
+{
+"id": "by means of|ref",
+"en": "by means of",
+"he": "באמצעות",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"The message was sent ___ a secret code.",
+"The patient breathes ___ a special machine until his lungs recover.",
+"The ancient Egyptians moved huge stones ___ wooden sledges and ropes."
+]
+},
+{
+"id": "via|ref",
+"en": "via",
+"he": "דרך, באמצעות",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"We flew to London ___ Paris.",
+"You can send us your questions ___ email or WhatsApp.",
+"The concert was broadcast live ___ satellite to millions of homes."
+]
+},
+{
+"id": "beyond|ref",
+"en": "beyond",
+"he": "מעבר ל...",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"The meaning of the poem is ___ my understanding.",
+"The damage to the old car was ___ repair, so we sold it for parts.",
+"The price of the house was far ___ what we could afford."
+]
+},
+{
+"id": "in favor of|ref",
+"en": "in favor of",
+"he": "בעד",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"Most workers are ___ the new schedule; they like it.",
+"Most parents are ___ a longer school day, but the teachers oppose it.",
+"Most scientists are ___ building the new telescope in the desert, where the sky is clear."
+]
+},
+{
+"id": "on behalf of|ref",
+"en": "on behalf of",
+"he": "בשם, מטעם",
+"group": "יחס ונושא",
+"pos": "p",
+"existing": [
+"I'm writing ___ the whole class to thank you.",
+"The captain accepted the trophy ___ the whole team.",
+"My mother gave a short speech at the ceremony ___ our whole family."
+]
+}
+]
