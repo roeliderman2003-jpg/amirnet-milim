@@ -250,7 +250,7 @@ function grade(w, type, ok) {
     s.due = t + 60000;
     if (L) L.bad++;
   }
-  s.last = t;
+  s.last = t; s.hb = Math.max(s.hb || 0, s.b);
   syncTwin(w);
   save();
 }
@@ -315,14 +315,20 @@ function unitInfo(u) {
   const its = UNITS[u].items;
   const intro = its.filter(w => S.w[w.id]).length;
   const score = its.reduce((a, w) => a + Math.min(MASTER, box(w)), 0) / (its.length * MASTER);
-  return { intro, total: its.length, score, done: its.every(w => box(w) >= MASTER) };
+  const passedN = its.filter(w => S.w[w.id] && reached(w)).length;
+  return { intro, total: its.length, score, done: its.every(w => box(w) >= MASTER), passedN, passed: passedN === its.length };
 }
 // דילוג: מי שמרגיש ברמה גבוהה יותר קופץ ליחידה מסוימת. כל היחידות עד אליה נפתחות, ו«המשך ללמוד» ממשיך משם
+// כמו בדואלינגו: יחידה עוברת כשכל המילים שלה הגיעו ל«מכיר» (תיבה 3, שלב המשפטים) לפחות פעם אחת, ורק אז נפתחת הבאה.
+// עד אז «המשך ללמוד» נותן שיעורי חיזוק של אותה יחידה (רועי 22/10). טעות מאוחרת לא נועלת שוב יחידה שכבר עברה
+const PASS = 3;
+const reached = w => isKnown(w) || Math.max(box(w), (S.w[w.id] && S.w[w.id].hb) || 0) >= PASS;
+const unitPassed = u => UNITS[u].items.every(w => S.w[w.id] && reached(w));
 const jumpOf = () => Math.min((S.jump && S.jump[topic]) || 0, UNITS.length - 1);
-function unlocked(u) { return u === 0 || u <= jumpOf() || UNITS[u - 1].items.every(w => S.w[w.id]); }
+function unlocked(u) { return u === 0 || u <= jumpOf() || unitPassed(u - 1); }
 function currentUnit() {
-  for (let u = jumpOf(); u < UNITS.length; u++) if (UNITS[u].items.some(w => !S.w[w.id])) return u;
-  for (let u = 0; u < jumpOf(); u++) if (UNITS[u].items.some(w => !S.w[w.id])) return u;
+  for (let u = jumpOf(); u < UNITS.length; u++) if (!unitPassed(u)) return u;
+  for (let u = 0; u < jumpOf(); u++) if (!unitPassed(u)) return u;
   return -1;
 }
 function jumpTo(u, start) {
@@ -345,8 +351,10 @@ function buildLearn(u, only) {
   // חזרות בשיעור עם מילים חדשות: מעט, כדי להזכיר בלי לחפור (רועי 22/10). עד 3 מהיחידה עצמה, עד 2 מיחידות קודמות
   // ומילה אחת מהנושא השני (מילות קישור / אוצר מילים מתערבבים). שאר החזרות מחכות ל«חזרה»
   const isDue = w => S.w[w.id] && !isKnown(w) && ws(w).due <= t;
-  const cap = fresh.length ? { same: 3, old: 2, other: 1 } : { same: 10, old: 6, other: 2 };
-  const same = unit.items.filter(isDue).sort(byNeed).slice(0, cap.same);
+  // שיעור חיזוק: היחידה כבר הוצגה אבל לא עברה. המילים שעוד לא הגיעו ל«מכיר» נכנסות גם אם לא הגיע זמנן, ופעמיים
+  const weakUnit = fresh.length ? [] : unit.items.filter(w => S.w[w.id] && !isKnown(w) && !reached(w));
+  const cap = fresh.length ? { same: 3, old: 2, other: 1 } : weakUnit.length ? { same: 8, old: 2, other: 1 } : { same: 10, old: 6, other: 2 };
+  const same = [...new Set([...weakUnit, ...unit.items.filter(isDue)])].sort(byNeed).slice(0, cap.same);
   const old = only ? [] : practiced().filter(w => !unit.items.includes(w) && isDue(w)).sort(byNeed).slice(0, cap.old);
   const otherK = Object.keys(TOPICS).find(k => k !== topic);
   const other = only ? [] : TOPICS[otherK].items.filter(w => isDue(w) && !TWIN[w.id]).sort(byNeed).slice(0, cap.other);
@@ -356,7 +364,7 @@ function buildLearn(u, only) {
   // אין מספיק חזרות שהגיע זמנן: משלימים ממילים של היחידה עצמה (ובשיעור חזרה בלי מילים חדשות, מכל הנושא)
   const extra = [...unit.items, ...(only || fresh.length ? [] : shuffle(practiced()))].filter(w => S.w[w.id] && !isKnown(w) && !used.has(w.id)).sort((a, b) => box(a) - box(b));
   for (const w of extra) { if (rev.length >= want) break; if (!used.has(w.id)) { rev.push(w); used.add(w.id); } }
-  const revQ = rev.map(w => ({ k: 'q', w }));
+  const revQ = [...rev, ...shuffle(weakUnit.filter(w => used.has(w.id)))].map(w => ({ k: 'q', w }));
   const q = [];
   fresh.forEach(w => { q.push({ k: 'intro', w }); q.push({ k: 'q', w, type: 'meaning' }); if (revQ.length) q.push(revQ.shift()); });
   q.push(...revQ);
@@ -589,8 +597,9 @@ function renderHome() {
     <div class="lbl"><span>שולט (כותב לבד) 👑</span><span>${mastered}/${total}</span></div>
     <div class="bar"><i style="width:${mastered / total * 100}%;background:var(--y)"></i></div>
   </section>`;
+  const cuLeft = cu >= 0 ? UNITS[cu].items.filter(w => !S.w[w.id] || !reached(w)).length : 0, cuNew = cu >= 0 && UNITS[cu].items.some(w => !S.w[w.id]);
   h += cu >= 0
-    ? `<button class="btn big" onclick="startLesson(buildLearn(${cu}),'יחידה ${cu + 1}')">המשך ללמוד · יחידה ${cu + 1}</button>`
+    ? `<button class="btn big" onclick="startLesson(buildLearn(${cu}),'יחידה ${cu + 1}')">${cuNew ? `המשך ללמוד · יחידה ${cu + 1}` : `חיזוק יחידה ${cu + 1} · עוד ${cuLeft} מילים עד המעבר`}</button>`
     : `<button class="btn big" onclick="startLesson(buildReview(),'חזרה')">הכרת את כל המילים! עכשיו חזרה עד שליטה</button>`;
   h += `<div class="row"><button class="btn blue" onclick="startLesson(buildReview(),'חזרה')">🔁 חזרה${dueN ? ` (${dueN})` : ''}</button><button class="btn ghost" onclick="startLesson(buildWeak(),'נקודות חלשות')">🎯 חלשות${weakN ? ` (${weakN})` : ''}</button></div>`;
   let lvl = 0;
@@ -602,9 +611,9 @@ function renderHome() {
       <span class="uic" style="background:${lock ? '#e5e5e5' : k.color}">${lock ? '🔒' : inf.done ? '👑' : un.cats.map(c => CATS[c].icon).join('')}</span>
       <span class="ut"><span class="un">יחידה ${u + 1}${u === cu ? ' · אתה כאן' : ''}</span><span class="uh">${names}</span>
       <span class="bar sm"><i style="width:${Math.round(inf.score * 100)}%;background:${inf.done ? 'var(--y)' : 'var(--g)'}"></i></span>
-      <span class="us">${inf.intro}/${inf.total} מילים · ${Math.round(inf.score * 100)}% שליטה</span></span></button>`;
+      <span class="us">${inf.intro < inf.total ? `${inf.intro}/${inf.total} מילים` : `${inf.passedN}/${inf.total} מוכרות${inf.passed ? ' ✓' : ''}`} · ${Math.round(inf.score * 100)}% שליטה</span></span></button>`;
   });
-  h += `<p class="foot">טעית? המילה תחזור בקרוב. צדקת? היא תחזור בעוד יותר זמן. ${topic === 'link' ? 'כל מילה עוברת מפירוש, לקבוצה ובסוף להשלמת משפטים.' : 'כל מילה עוברת מפירוש, לתרגום לאנגלית, למשפט ובסוף לכתיבה.'}</p>`;
+  h += `<p class="foot">יחידה נפתחת רק כשכל המילים ביחידה הקודמת «מוכרות» (עברו את שלב ${topic === 'link' ? 'הקבוצה' : 'התרגום לאנגלית'}). עד אז «המשך ללמוד» מחזק את היחידה הנוכחית. טעית? המילה תחזור בקרוב. צדקת? היא תחזור בעוד יותר זמן. ${topic === 'link' ? 'כל מילה עוברת מפירוש, לקבוצה ובסוף להשלמת משפטים.' : 'כל מילה עוברת מפירוש, לתרגום לאנגלית, למשפט ובסוף לכתיבה.'}</p>`;
   return h + '</main>' + navBar();
 }
 function openUnit(u) {
