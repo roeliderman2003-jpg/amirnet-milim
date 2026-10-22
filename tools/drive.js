@@ -61,7 +61,7 @@ async function runLesson(P, T, wrongRate, given) {
       const idk = wrong && Math.random() < 0.5;
       chk(document.body.innerHTML.includes('typeDontKnow()'), 'אין כפתור «לא יודע» בכתיבה', P);
       if (idk) { const b0 = box(w); typeDontKnow(); chk(c.ans && c.ans.idk && !c.ans.ok && box(w) <= b0, `לא יודע ${w.en}: לא נחשב כטעות`, P); T.idk = (T.idk || 0) + 1; }
-      else { inp.value = wrong ? 'qqqq' : w.en; checkType(); }
+      else { inp.value = wrong ? (c.type === 'typeHe' ? 'קקקק' : 'qqqq') : c.type === 'typeHe' ? heAnswers(w)[0] : w.en; checkType(); }
       chk(c.ans && c.ans.ok === !wrong, `כתיבה ${w.en}: הבדיקה הפוכה`, P);
       // «התכוונתי לזה»: מבטל את הטעות ונחשב כתשובה נכונה, בלי ספירה כפולה
       if (wrong && !idk && Math.random() < 0.5) {

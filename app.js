@@ -21,8 +21,8 @@ Object.assign(NEAR, VNEAR);
 let topic = 'link', ITEMS, CAT_KEYS, UNITS;
 function setTopic(k) { topic = TOPICS[k] ? k : 'link'; ({ items: ITEMS, keys: CAT_KEYS, units: UNITS } = TOPICS[topic]); }
 const INT = [1, 10, 60, 240, 600, 1440, 2880, 4320]; // דקות עד החזרה הבאה, לפי תיבה
-const CAP = { meaning: 2, match: 2, category: 3, reverse: 3, sentence: 4, type: 7, typeSentence: 7 }; // תרגיל קל לא מעלה מעבר לתיבה הזו
-const DROP = { type: 1, typeSentence: 1, match: 1 }; // כמה תיבות יורדות בטעות (ברירת מחדל 2)
+const CAP = { meaning: 2, match: 2, category: 3, reverse: 3, sentence: 4, typeHe: 5, type: 7, typeSentence: 7 }; // תרגיל קל לא מעלה מעבר לתיבה הזו
+const DROP = { type: 1, typeSentence: 1, typeHe: 1, match: 1 }; // כמה תיבות יורדות בטעות (ברירת מחדל 2)
 const MASTER = 5;
 const KEY = 'amirnet-milim-v1';
 // מילים עם כמה משמעויות לא משמשות כמסיחים, כי הן יכולות להתאים לכמה משפטים
@@ -227,13 +227,14 @@ const capOf = (w, type) => noTyping(w) && type === 'sentence' ? CAP.typeSentence
 function typeFor(w) {
   const b = box(w);
   let opts = b <= 0 ? ['meaning'] : b === 1 ? ['meaning', 'reverse', 'category'] : b === 2 ? ['reverse', 'category', 'sentence']
-    : b === 3 ? ['sentence', 'sentence', 'typeSentence'] : b === 4 ? ['type', 'typeSentence', 'sentence'] : ['type', 'typeSentence', 'typeSentence', 'sentence'];
+    : b === 3 ? ['sentence'] : b === 4 ? ['typeHe'] : ['type', 'typeSentence', 'typeSentence', 'sentence', 'typeHe'];
+  // סדר: השלמת משפט (3) ← כתיבת התרגום בעברית (4) ← כתיבה באנגלית (5 ומעלה) (רועי 22/10)
   if (noTyping(w)) opts = opts.map(t => t === 'type' || t === 'typeSentence' ? 'sentence' : t);
   // תרגיל שהתקרה שלו כבר הושגה לא מקדם את המילה, אז בוחרים קשה ממנו
   const up = opts.filter(t => capOf(w, t) > b);
   return pick(up.length ? up : opts);
 }
-function easier(t) { return { type: 'sentence', typeSentence: 'sentence', sentence: 'reverse', reverse: 'meaning', category: 'meaning' }[t] || 'meaning'; }
+function easier(t) { return { typeHe: 'meaning', type: 'sentence', typeSentence: 'sentence', sentence: 'reverse', reverse: 'meaning', category: 'meaning' }[t] || 'meaning'; }
 function grade(w, type, ok) {
   const s = ws(w), t = now(), d = today();
   d.ans++;
@@ -293,6 +294,27 @@ function lev(a, b) {
   return d[m][n];
 }
 const DIRECTION = { con: 'against', cnc: 'against', add: 'add', cau: 'cause', res: 'result', pur: 'purpose', exm: 'example', cmp: 'same', emp: 'stress' };
+// כתיבת התרגום בעברית: נכון אם זה אחד הפירושים של המילה (בלי ניקוד, סוגריים, סימנים ואותיות סופיות), או טעות כתיב קטנה
+const heNorm = s => s.replace(/[\u0591-\u05C7]/g, '').replace(/\(.*?\)/g, ' ').replace(/[^\u05D0-\u05EA ]+/g, ' ')
+  .replace(/[ךםןףץ]/g, c => ({ ך: 'כ', ם: 'מ', ן: 'נ', ף: 'פ', ץ: 'צ' }[c])).replace(/\s+/g, ' ').trim();
+function heAnswers(w) {
+  const out = new Set();
+  for (const part of w.he.replace(/\(.*?\)/g, ' ').split(/[,;\/]/)) {
+    const a = heNorm(part); if (!a) continue;
+    out.add(a); out.add(a.split(' ').filter(x => x.length > 1).join(' '));
+  }
+  out.delete('');
+  return [...out];
+}
+function checkHe(w, input) {
+  if (!input.trim()) return null;
+  const a = heNorm(input);
+  if (!a) return { ok: false };
+  const all = heAnswers(w);
+  if (all.includes(a)) return { ok: true };
+  if (all.some(t => t.length >= 4 && lev(a, t) <= (t.length >= 8 ? 2 : 1))) return { ok: true, typoHe: true };
+  return { ok: false };
+}
 function checkTyped(w, input) {
   const a = norm(input), t = norm(w.en);
   if (!a) return null;
@@ -435,6 +457,7 @@ function prepare() {
     const pickI = pick(cand);
     st.ls = pickI; st.lh = [...used, pickI].slice(-8); c.sent = all[pickI];
   }
+  if (type === 'typeHe') setTimeout(() => speak(w.en), 250);
   L.cur = c;
 }
 // מילה שכבר מכירים: עוברת ל«מילים שאני מכיר» ויוצאת מהשיעור
@@ -475,7 +498,7 @@ function answerOpt(i) {
 function checkType() {
   const c = L.cur, inp = document.getElementById('ty');
   if (!c || c.ans || !inp) return;
-  const w = L.q[0].w, r = checkTyped(w, inp.value);
+  const w = L.q[0].w, r = c.type === 'typeHe' ? checkHe(w, inp.value) : checkTyped(w, inp.value);
   if (!r) { inp.focus(); return; }
   c.ans = Object.assign({ typed: inp.value }, r);
   if (!r.ok) c.undo = { st: Object.assign({}, S.w[w.id]), day: Object.assign({}, today()), xp: S.xp, L: { ok: L.ok, bad: L.bad, xp: L.xp } };
@@ -613,7 +636,7 @@ function renderHome() {
       <span class="bar sm"><i style="width:${Math.round(inf.score * 100)}%;background:${inf.done ? 'var(--y)' : 'var(--g)'}"></i></span>
       <span class="us">${inf.intro < inf.total ? `${inf.intro}/${inf.total} מילים` : `${inf.passedN}/${inf.total} מוכרות${inf.passed ? ' ✓' : ''}`} · ${Math.round(inf.score * 100)}% שליטה</span></span></button>`;
   });
-  h += `<p class="foot">יחידה נפתחת רק כשכל המילים ביחידה הקודמת «מוכרות» (עברו את שלב ${topic === 'link' ? 'הקבוצה' : 'התרגום לאנגלית'}). עד אז «המשך ללמוד» מחזק את היחידה הנוכחית. טעית? המילה תחזור בקרוב. צדקת? היא תחזור בעוד יותר זמן. ${topic === 'link' ? 'כל מילה עוברת מפירוש, לקבוצה ובסוף להשלמת משפטים.' : 'כל מילה עוברת מפירוש, לתרגום לאנגלית, למשפט ובסוף לכתיבה.'}</p>`;
+  h += `<p class="foot">יחידה נפתחת רק כשכל המילים ביחידה הקודמת «מוכרות» (עברו את שלב ${topic === 'link' ? 'הקבוצה' : 'התרגום לאנגלית'}). עד אז «המשך ללמוד» מחזק את היחידה הנוכחית. טעית? המילה תחזור בקרוב. צדקת? היא תחזור בעוד יותר זמן. ${topic === 'link' ? 'כל מילה עוברת מפירוש, לקבוצה, להשלמת משפטים ובסוף לכתיבת התרגום בעברית.' : 'כל מילה עוברת מפירוש, לתרגום לאנגלית, למשפט, לכתיבת התרגום בעברית ובסוף לכתיבה באנגלית.'}</p>`;
   return h + '</main>' + navBar();
 }
 function openUnit(u) {
@@ -660,6 +683,7 @@ function renderLesson() {
     if (c.type === 'reverse') h += `<div class="prompt">איך אומרים באנגלית?</div><div class="big he">${esc(w.he)}</div>`;
     if (c.type === 'category') h += `<div class="prompt">לאיזו קבוצה המילה שייכת?</div><div class="big"><span class="en">${esc(disp(w.en))}</span> <button class="spk" onclick="say(${w.i})">🔊</button></div>`;
     if (c.type === 'sentence') h += `<div class="prompt">איזו מילה משלימה את המשפט?</div><div class="sent en">${blankSentence(c.sent.s)}</div>`;
+    if (c.type === 'typeHe') h += `<div class="prompt">מה התרגום לעברית? כתוב אותו</div><div class="big"><span class="en">${esc(disp(w.en))}</span> <button class="spk" onclick="say(${w.i})">🔊</button></div>`;
     if (c.type === 'type') h += `<div class="prompt">כתוב את המילה באנגלית</div><div class="big he">${esc(w.he)}</div>${chip(w.cat)}${pairHint(w)}`;
     if (c.type === 'typeSentence') h += `<div class="prompt">השלם את המשפט במילה הנכונה</div><div class="sent en">${blankSentence(c.sent.s)}</div><div class="exhe">המילה החסרה: <b>${esc(w.he)}</b></div>${pairHint(w)}`;
     if (c.opts) {
@@ -673,8 +697,8 @@ function renderLesson() {
       });
       h += `</div>`;
     } else {
-      const v = c.ans ? esc(c.ans.idk ? disp(w.en) : c.ans.typed) : '';
-      h += `<input id="ty" class="ty en ${c.ans && !c.ans.idk ? (c.ans.ok ? 'right' : 'wrong') : ''}" dir="ltr" lang="en" placeholder="Type in English" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="${v}" ${c.ans ? 'disabled' : ''} onkeydown="if(event.key==='Enter')checkType()">`;
+      const he = c.type === 'typeHe', v = c.ans ? esc(c.ans.idk ? (he ? w.he : disp(w.en)) : c.ans.typed) : '';
+      h += `<input id="ty" class="ty ${he ? 'he' : 'en'} ${c.ans && !c.ans.idk ? (c.ans.ok ? 'right' : 'wrong') : ''}" dir="${he ? 'rtl' : 'ltr'}" lang="${he ? 'he' : 'en'}" placeholder="${he ? 'כתוב בעברית' : 'Type in English'}" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" value="${v}" ${c.ans ? 'disabled' : ''} onkeydown="if(event.key==='Enter')checkType()">`;
       if (!c.ans) foot = `<div class="lfoot row2"><button class="btn ghost" onclick="typeDontKnow()">לא יודע</button><button class="btn" onclick="checkType()">בדוק</button></div>`;
     }
     if (c.ans) foot = sheet(w, c);
@@ -728,8 +752,9 @@ function sheet(w, c) {
   let h = `<div class="sheet ${ok ? 'ok' : 'bad'}"><div class="sh-t">${ok ? '✅ ' + praise : a.idk ? '💡 זו המילה, היא תחזור בקרוב' : '❌ לא בדיוק'}</div>`;
   if (!ok && !a.idk) h += `<div class="sh-c">התשובה הנכונה: ${c.type === 'category' ? `<b>${CATS[w.cat].icon} ${CATS[w.cat].he}</b>` : `<b class="en">${esc(disp(w.en))}</b>`}${c.type === 'meaning' ? ` = ${esc(w.he)}` : ''}</div>`;
   if (!ok && c.opts && a.i !== undefined) h += whyNot(w, c);
-  if (!ok && c.undo) h += `<button class="linkbtn" onclick="typeMeant()">✓ התכוונתי לזה, רק טעות כתיב</button>`;
-  if (a.typo) h += `<div class="sh-c">שים לב לאיות: <b class="en">${esc(w.en)}</b></div>`;
+  if (!ok && c.undo) h += `<button class="linkbtn" onclick="typeMeant()">${c.type === 'typeHe' ? '✓ התרגום שלי נכון, לחשב אותו' : '✓ התכוונתי לזה, רק טעות כתיב'}</button>`;
+  if (!ok && c.type === 'typeHe' && !a.idk) h += `<div class="sh-c">התרגום: <b>${esc(w.he)}</b></div>`;
+  if (a.typo && c.type !== 'typeHe') h += `<div class="sh-c">שים לב לאיות: <b class="en">${esc(w.en)}</b></div>`;
   if (a.alt) h += `<div class="sh-c">גם נכון! המילה שתרגלנו כאן: <b class="en">${esc(disp(w.en))}</b></div>`;
   h += `<div class="sh-i"><b class="en">${esc(disp(w.en))}</b> = ${esc(w.he)} ${chip(w.cat)}</div>`;
   if (c.type === 'category') h += `<div class="sh-s">${CATS[w.cat].icon} ${CATS[w.cat].tip}</div>`;
@@ -771,7 +796,7 @@ function renderSettings() {
   return topBar() + `<main><h2 class="sec">⚙️ הגדרות</h2>
     <div class="card"><label class="sw"><input type="checkbox" ${S.sound ? 'checked' : ''} onchange="S.sound=this.checked;save()"> צלילים והקראה של המילים</label></div>
     <div class="card"><b>איך זה עובד</b>
-      <p>${TOPICS[topic].icon} ${TOPICS[topic].he}: ${ITEMS.length} מילים ב-${UNITS.length} יחידות ו-${levelsOf().length} שלבים, מהקל לקשה. ${topic === 'link' ? 'כל מילה עוברת 3 פורמטים: פירוש ← קבוצה ← השלמת משפט. היא נחשבת «שולט» 👑 אחרי כמה השלמות משפט נכונות ברצף, במשפטים שונים.' : 'כל מילה עוברת 4 פורמטים: פירוש ← תרגום לאנגלית ← השלמת משפט ← כתיבה לבד. היא נחשבת «שולט» 👑 רק אחרי שכתבת אותה נכון.'}</p>
+      <p>${TOPICS[topic].icon} ${TOPICS[topic].he}: ${ITEMS.length} מילים ב-${UNITS.length} יחידות ו-${levelsOf().length} שלבים, מהקל לקשה. ${topic === 'link' ? 'כל מילה עוברת 4 פורמטים: פירוש ← קבוצה ← השלמת משפט ← כתיבת התרגום בעברית. היא נחשבת «שולט» 👑 אחרי כמה תשובות נכונות ברצף בשלבים האחרונים.' : 'כל מילה עוברת 5 פורמטים: פירוש ← תרגום לאנגלית ← השלמת משפט ← כתיבת התרגום בעברית ← כתיבה באנגלית. היא נחשבת «שולט» 👑 אחרי שכתבת נכון את התרגום, ובהמשך היא חוזרת גם בכתיבה באנגלית.'}</p>
       <p>טעית? המילה יורדת שלב וחוזרת עוד באותו שיעור ובשיעור הבא. צדקת? היא חוזרת אחרי 10 דקות, שעה, 4 שעות, 10 שעות, יום ויומיים.</p>
       <p>יעד: ${planDays()} ימים (לכל נושא יעד משלו). כל יום כתוב בכרטיס הראשי כמה מילים חדשות צריך כדי לעמוד ביעד. מומלץ לפתוח «חזרה» כמה פעמים ביום, גם ל-5 דקות.</p></div>
     <div class="card"><b>👤 ${esc(ME.name)}</b><p><span class="en">${esc(ME.email || '')}</span><br>ההתקדמות נשמרת בחשבון ${syncIcon()} ${sync === 'ok' ? 'הכול מגובה' : sync === 'wait' ? 'שומר...' : 'לא נשמר כרגע (אין אינטרנט?), ייקלט כשיחזור החיבור'}. אפשר להיכנס עם אותו חשבון Google מכל טלפון או מחשב.</p>
