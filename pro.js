@@ -6,8 +6,7 @@
 const BRAND = 'פטורנט', CONTACT = 'roe.liderman2003@gmail.com';
 // להצגה בלבד. המחיר שנגבה בפועל נקבע בשרת (supabase/functions/_shared/grow.ts), וחייב להיות זהה
 const PRICES = [
-  { id: 'm2', months: 2, sum: 149, he: 'חודשיים' },
-  { id: 'm4', months: 4, sum: 199, he: '4 חודשים', best: true },
+  { id: 'life', sum: 99, he: 'לכל החיים', best: true },
 ];
 
 // ----- לוג אירועים ושגיאות (לטבלה amirnet.events, עד 300 ביום למשתמש) -----
@@ -36,13 +35,13 @@ function renderLanding(booting) {
       <div><span>🧭</span><b>אבחון ותוכנית אישית</b><p>מבחן קצר בהתחלה קובע את הרמה שלך, ויעד יומי שמתאים לתאריך המבחן.</p></div>
     </section>
     <section class="price"><h2>כמה זה עולה</h2>
-      <div class="pgrid"><div class="pc"><b>חינם</b><span class="pp">0 ₪</span><p>5 יחידות בכל נושא, סימולציה מלאה אחת, אבחון ופרקי תרגול לדוגמה</p></div>
-      ${PRICES.map(p => `<div class="pc ${p.best ? 'best' : ''}">${p.best ? '<i>הכי משתלם</i>' : ''}<b>גישה מלאה ל${p.he}</b><span class="pp">${p.sum} ₪</span><p>תשלום אחד, בלי חיוב מתחדש. כל המילים, הסימולציות והתרגולים</p></div>`).join('')}</div>
+      <div class="pgrid"><div class="pc"><b>חינם</b><span class="pp">0 ₪</span><p>5 יחידות בכל נושא, סימולציה מלאה אחת ואבחון התחלתי</p></div>
+      ${PRICES.map(p => `<div class="pc best"><b>גישה מלאה ${p.he}</b><span class="pp">${p.sum} ₪</span><p>תשלום אחד בלבד, בלי מנוי ובלי חיוב מתחדש. כל המילים, הסימולציות והתרגול לפי חלק</p></div>`).join('')}</div>
       <p class="fine">אפשר לבטל תוך 14 יום לפי חוק הגנת הצרכן. פרטים ב<a href="terms.html">תנאי השימוש</a>.</p></section>
     <section class="faq"><h2>שאלות נפוצות</h2>
       <details><summary>הציון בסימולציה הוא הציון שאקבל?</summary><p>לא בהכרח. זו הערכה לפי התשובות וקושי השאלות, ולא תחזית או התחייבות. היא טובה כדי לראות התקדמות ואיזה חלק לחזק.</p></details>
       <details><summary>זה קשור למאל"ו או לאמירנט הרשמי?</summary><p>לא. ${BRAND} הוא מוצר עצמאי להכנה לבחינה, ואין לו קשר למרכז הארצי לבחינות ולהערכה. כל השאלות נכתבו במיוחד.</p></details>
-      <details><summary>מה ההבדל בין חינם לגישה מלאה?</summary><p>בחינם אפשר להכיר את השיטה: 5 יחידות בכל נושא, סימולציה מלאה אחת ופרקי תרגול לדוגמה. הגישה המלאה פותחת הכול עד סוף התקופה שבחרת.</p></details>
+      <details><summary>מה ההבדל בין חינם לגישה מלאה?</summary><p>בחינם אפשר להכיר את השיטה: 5 יחידות בכל נושא, סימולציה מלאה אחת ואבחון. הגישה המלאה פותחת הכול, בתשלום אחד של ${PRICES[0].sum} ₪, לכל החיים.</p></details>
       <details><summary>איך משלמים?</summary><p>בכרטיס אשראי או ביט, בעמוד התשלום המאובטח של Grow. חשבונית נשלחת למייל.</p></details>
       <details><summary>אפשר בטלפון?</summary><p>כן. אפשר גם להתקין למסך הבית ולתרגל בלי אינטרנט.</p></details>
     </section>
@@ -58,7 +57,7 @@ function legalFoot() {
 function lockCard(what) {
   if (window.FULL) return '';
   return `<div class="card lockc"><b>🔒 ${what}</b><p>בגרסה המלאה: כל ${TIER_META.words.link + TIER_META.words.vocab} המילים, ${TIER_META.sims} סימולציות ו-${TIER_META.practice} פרקי תרגול.</p>
-    <button class="btn" onclick="openBuy('${what.replace(/'/g, '')}')">פתיחת הגישה המלאה · מ-${PRICES[0].sum} ₪</button></div>`;
+    <button class="btn" onclick="openBuy('${what.replace(/'/g, '')}')">פתיחת הגישה המלאה · ${PRICES[0].sum} ₪ לכל החיים</button></div>`;
 }
 function lockedUnits() {
   const n = TIER_META.units[topic] - UNITS.length, w = TIER_META.words[topic] - ITEMS.length;
@@ -71,9 +70,9 @@ function openBuy(from) {
   const el = document.createElement('div');
   el.className = 'modal';
   el.innerHTML = `<div class="mbox buy"><b class="mt1">פתיחת הגישה המלאה</b>
-    <div class="plans">${PRICES.map((p, i) => `<label class="bplan ${p.best ? 'best' : ''}"><input type="radio" name="plan" value="${p.id}" ${p.best ? 'checked' : i === 0 && !PRICES.some(x => x.best) ? 'checked' : ''}>
-      <span><b>${p.he}</b> · ${p.sum} ₪${p.best ? ' <i>הכי משתלם</i>' : ''}</span></label>`).join('')}</div>
-    <p class="fine">תשלום אחד, בלי חיוב מתחדש. הגישה נפתחת מיד אחרי התשלום.</p>
+    <div class="plans">${PRICES.map(p => `<label class="bplan best"><input type="radio" name="plan" value="${p.id}" checked>
+      <span><b>גישה מלאה ${p.he}</b> · ${p.sum} ₪</span></label>`).join('')}</div>
+    <p class="fine">תשלום אחד, בלי מנוי ובלי חיוב מתחדש. הגישה נפתחת מיד אחרי התשלום.</p>
     <label class="fld">שם מלא (לחשבונית)<input id="bname" autocomplete="name" value="${esc(ME.name || '')}"></label>
     <label class="fld">טלפון נייד (Grow דורשים)<input id="bphone" type="tel" inputmode="tel" autocomplete="tel" placeholder="05X-XXXXXXX"></label>
     <label class="sw"><input type="checkbox" id="bterms"> קראתי ואני מסכים ל<a href="terms.html" target="_blank">תנאי השימוש</a> ול<a href="privacy.html" target="_blank">מדיניות הפרטיות</a></label>
@@ -179,7 +178,7 @@ function renderDiagResult() {
     <p class="foot">האבחון קצר (${rec.n} שאלות) ולכן הציון הוא הערכה גסה בלבד, בטווח של כ-15 נקודות לכל כיוון. סימולציה מלאה תיתן הערכה טובה יותר.
       רמת התרגול הומלצה לפי התוצאה: ${SIM_TIER_HE[simStore().pt]}.</p>
     <button class="btn big" onclick="SM=null;go('home')">להתחיל ללמוד</button>
-    ${window.FULL ? '' : `<button class="btn blue" onclick="openBuy('diag')">פתיחת התוכנית המלאה · מ-${PRICES[0].sum} ₪</button>`}`;
+    ${window.FULL ? '' : `<button class="btn blue" onclick="openBuy('diag')">פתיחת הגישה המלאה · ${PRICES[0].sum} ₪ לכל החיים</button>`}`;
   h += simWeakBlock(weak) + simReview(chs, rec.ans);
   return h + '</main>' + navBar();
 }
@@ -192,10 +191,10 @@ function diagCard() {
 function proSettings() {
   const until = PLAN.valid_until ? new Date(PLAN.valid_until).toLocaleDateString('he-IL') : '';
   return `<div class="card"><b>💳 הגישה שלך</b>
-      ${window.FULL ? `<p>✅ גישה מלאה עד ${until}.</p>`
+      ${window.FULL ? `<p>✅ גישה מלאה${PLAN.valid_until && new Date(PLAN.valid_until).getFullYear() > 2100 ? ' לכל החיים' : ` עד ${until}`}.</p>`
         : PLAN.active ? `<p>יש לך גישה מלאה עד ${until}, אבל התוכן המלא לא נטען${window.PAID_ERROR ? ' (שגיאה בטעינה)' : ''}. כדאי לרענן את הדף.</p><button class="btn" onclick="location.reload()">לרענן</button>`
-        : `<p>גרסה חינמית.</p><button class="btn" onclick="openBuy('settings')">פתיחת הגישה המלאה · מ-${PRICES[0].sum} ₪</button>`}
-      ${window.FULL && PLAN.active ? `<button class="btn ghost" style="margin-top:8px" onclick="openBuy('extend')">הארכת הגישה</button>` : ''}</div>
+        : `<p>גרסה חינמית.</p><button class="btn" onclick="openBuy('settings')">פתיחת הגישה המלאה · ${PRICES[0].sum} ₪ לכל החיים</button>`}
+      </div>
     <div class="card"><b>📮 כבר נבחנת באמירנט?</b><p>ספר לנו מה קיבלת. זה עוזר לנו לדייק את הציון המשוער לכולם.</p>
       <div class="row"><input id="rscore" class="search" type="number" min="50" max="150" inputmode="numeric" placeholder="הציון (50-150)"><input id="rdate" class="search" type="date" max="${dayKey()}"></div>
       <button class="btn ghost" onclick="sendRealScore(this)">שליחה</button></div>

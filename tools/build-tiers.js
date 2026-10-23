@@ -1,6 +1,6 @@
 // בונה את free.js (ציבורי) ואת paid/paid.js (מעלים ל-Supabase Storage, ל-bucket הפרטי paid, בשם paid.js).
 // הרצה אחרי כל שינוי בתוכן: node tools/build-tiers.js
-// חינם: 5 היחידות הראשונות בכל נושא, סימולציה אחת מלאה (f1), והפרקים של האבחון + פרק ראשון מכל סוג בכל רמה בתרגול.
+// חינם: 5 היחידות הראשונות בכל נושא, סימולציה אחת מלאה (f1), והפרקים של האבחון (לא מוצעים כתרגול; התרגול לפי חלק כולו בתשלום).
 // בתשלום: הכול. האפליקציה טוענת את free.js, ואם יש גישה פעילה מורידה את paid.js ומחליפה בו את הנתונים.
 const fs = require('fs'), path = require('path'), vm = require('vm'), crypto = require('crypto');
 const root = path.join(__dirname, '..');
@@ -28,7 +28,7 @@ for (const [k, raw, cats, id] of [['link', ctx.RAW, ctx.CATS, r => r[0] + '|' + 
 }
 const pickObj = (o, keep) => Object.fromEntries(Object.entries(o).filter(([k]) => keep(k)));
 const f1 = ctx.SIM_FORMS[0], f1Sets = new Set(f1.slots.flatMap(s => Object.values(s)));
-const prFree = id => DIAG_SETS.includes(id) || /^x\d(sc|rs|rc)1$/.test(id);
+const prFree = id => DIAG_SETS.includes(id);
 DIAG_SETS.forEach(id => { if (!ctx.PRACTICE_SETS[id]) throw new Error('diagnostic set missing: ' + id); });
 meta.sims = ctx.SIM_FORMS.length; meta.practice = Object.keys(ctx.PRACTICE_SETS).length;
 

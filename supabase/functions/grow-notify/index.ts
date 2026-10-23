@@ -15,8 +15,7 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.45.4';
 
 // מחיר וזמן גישה נקבעים כאן בשרת בלבד (לא מהדפדפן)
 const PLANS: Record<string, { months: number; sum: number; title: string }> = {
-  m2: { months: 2, sum: 149, title: 'פטורנט: גישה מלאה לחודשיים' },
-  m4: { months: 4, sum: 199, title: 'פטורנט: גישה מלאה ל-4 חודשים' },
+  life: { months: 1200, sum: 99, title: 'פטורנט: גישה מלאה לכל החיים' },
 };
 
 const env = (k: string) => Deno.env.get(k) || '';

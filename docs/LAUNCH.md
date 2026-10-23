@@ -35,7 +35,7 @@
    - `GROW_ENV` = `sandbox` לבדיקה, ואחרי שהכול עובד `production` (ולהחליף ל-userId ו-pageCode של ייצור).
    - `SITE_URL` = כתובת האתר, למשל `https://roeliderman2003-jpg.github.io/amirnet-milim/`
 3. בדיקה: להתחבר עם חשבון אחר (לא שלך), «פתיחת הגישה המלאה», לשלם בכרטיס בדיקה של Grow, ולוודא שהגישה נפתחת. ב-Table Editor → amirnet.payments רואים את התשלום (status = paid).
-4. המחיר: ב-`grow-create`/`grow-notify` (PLANS) ובתצוגה ב-`pro.js` (PRICES). חייבים להיות זהים.
+4. המחיר (99 ₪ חד-פעמי, לכל החיים): ב-`grow-create`/`grow-notify` (PLANS) ובתצוגה ב-`pro.js` (PRICES). חייבים להיות זהים.
 
 ## 5. GitHub: שהתוכן המלא לא יהיה גלוי באתר
 1. Settings → **Pages** → Source: **GitHub Actions**. מעכשיו עולים לאתר רק הקבצים הציבוריים (`.github/workflows/pages.yml`).

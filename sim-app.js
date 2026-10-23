@@ -225,6 +225,8 @@ function prFinish() {
 }
 function prCard() {
   if (typeof PRACTICE_SETS === 'undefined') return '';
+  // בגרסה החינמית אין תרגול לפי חלק (רק בתשלום). הפרקים של האבחון נטענים, אבל לא מוצעים כאן
+  if (!FULL) return `<h2 class="sec">🎯 תרגול לפי חלק</h2>` + (typeof lockCard === 'function' ? lockCard(`תרגול לפי חלק: השלמת משפטים, ניסוח מחדש והבנת הנקרא, ${TIER_META.practice} פרקים ב-4 רמות`) : '');
   const tier = prTier(), auto = prTierAuto(), done = prStore();
   let h = `<h2 class="sec">🎯 תרגול לפי חלק</h2><div class="card"><p>כל פעם פרק אחד מהמבחן, בזמן של אמירנט, ובסוף התשובות עם הסברים. השאלות כאן נפרדות מהסימולציות, כך שהציון בסימולציה נשאר אמין.</p>
     <div class="prtiers">${SIM_TIER_HE.map((t, i) => `<button class="${i === tier ? 'on' : ''}" onclick="prSetTier(${i})">${t}${i === auto ? ' ⭐' : ''}</button>`).join('')}</div>
