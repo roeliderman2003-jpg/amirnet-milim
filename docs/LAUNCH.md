@@ -22,7 +22,12 @@
 2. Upload → הקובץ `paid.js` (נשלח אליך בצ'אט; אפשר לבנות מחדש עם `node tools/build-tiers.js`, והוא נוצר ב-`paid/paid.js`).
 3. בכל פעם שמשנים תוכן (מילים, משפטים, שאלות): מריצים שוב את tools/build-tiers.js, מעלים את paid.js החדש (להחליף את הקיים), ודוחפים את free.js.
 
-## 3. Grow: פרטי API (תלוי בהם, לפעמים יום-יומיים)
+## 3. Grow: קישור תשלום + webhook (הדרך שכבר עובדת אצלך ב-lidercontent). API עם userId/pageCode הוא אפשרות לגיבוי
+- ליצור קישור תשלום ב-Grow: 99 ₪, תיאור «פטורנט · גישה לכל החיים», כתובת חזרה: האתר עם ?paid=1. להדביק אותו ב-PAY_LINK ב-pro.js
+- להריץ את sql/005_paylink.sql
+- secrets ל-grow-notify: GROW_WEBHOOK_KEY (המפתח של ה-webhooks בחשבון) ו/או GROW_WEBHOOK_SECRET, ולבקש מ-Grow להוסיף webhook לכתובת https://jezxhibenekurxymwxrb.supabase.co/functions/v1/grow-notify?k=<GROW_WEBHOOK_SECRET>
+
+### אפשרות API (אם Grow נותנים userId ו-pageCode)
 1. לכתוב ל-apisupport@grow.business: "אני רוצה לחבר את עמוד התשלום שלי ב-API (createPaymentProcess עם notifyUrl ו-approveTransaction). אשמח ל-userId ו-pageCode לסביבת בדיקות ולייצור, עמוד שמאפשר אשראי וביט, והפקת חשבונית/קבלה אוטומטית."
 2. Grow בודקים את האתר לפני ייצור: צריך תנאי שימוש (יש: terms.html), מדיניות פרטיות (יש), ופרטי העסק.
 

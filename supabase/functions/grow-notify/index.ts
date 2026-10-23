@@ -10,6 +10,8 @@ import { createClient } from 'https://esm.sh/@supabase/supabase-js@2.45.4';
 //   GROW_USER_ID, GROW_PAGE_CODE  — מקבלים מתמיכת ה-API של Grow (apisupport@grow.business)
 //   GROW_API_KEY                  — רק אם Grow נתנו (חשבון רב-עסקי). אחרת להשאיר ריק
 //   GROW_ENV                      — sandbox או production
+//   GROW_WEBHOOK_KEY / GROW_WEBHOOK_SECRET — לתשלום דרך קישור תשלום (webhook של החשבון). מספיק אחד מהם
+//   GROW_LINK_DESC / GROW_LINK_ID — איך מזהים שהתשלום שלנו (ברירת מחדל: התיאור כולל «פטורנט»)
 //   SITE_URL                      — כתובת האתר, למשל https://roeliderman2003-jpg.github.io/amirnet-milim/
 // SUPABASE_URL ו-SUPABASE_SERVICE_ROLE_KEY ו-SUPABASE_ANON_KEY קיימים אוטומטית.
 
@@ -41,6 +43,35 @@ async function grow(method: string, fields: Record<string, string>) {
   try { return JSON.parse(text); } catch { return { status: 0, err: { message: 'bad json', text: text.slice(0, 500) } }; }
 }
 
+// ----- קישור תשלום -----
+// Grow לא חותמים את ה-webhook. מאמתים כמו ב-liderman-dashboard: סוד בכתובת (?k=GROW_WEBHOOK_SECRET, שנותנים לתמיכה של Grow)
+// או webhookKey ששווה ל-GROW_WEBHOOK_KEY (המפתח ש-Grow מצמידים לכל ה-webhooks של החשבון).
+// בחשבון Grow יש גם עסקים אחרים, ולכן מקבלים רק תשלום שהתיאור שלו כולל GROW_LINK_DESC (ברירת מחדל: פטורנט),
+// או שמזהה הקישור שלו הוא GROW_LINK_ID. הגישה נפתחת לפי המייל שהמשלם הזין בעמוד התשלום
+const LIFE_MONTHS = 1200, LIFE_SUM = 99;
+async function linkPayment(req: Request, d: (k: string) => string, f: Record<string, string>, db: ReturnType<typeof admin>) {
+  const k = new URL(req.url).searchParams.get('k') || '';
+  const okSecret = (env('GROW_WEBHOOK_SECRET') && k === env('GROW_WEBHOOK_SECRET')) || (env('GROW_WEBHOOK_KEY') && d('webhookKey') === env('GROW_WEBHOOK_KEY'));
+  if (!okSecret) return new Response('unauthorized', { status: 401 });
+  const desc = (d('paymentDesc') || d('description') || d('productName') || '').toLowerCase();
+  const linkId = d('paymentLinkProcessId') || d('paymentLinkId');
+  const want = (env('GROW_LINK_DESC') || 'פטורנט').toLowerCase();
+  const ours = (env('GROW_LINK_ID') && linkId === env('GROW_LINK_ID')) || desc.includes(want) || desc.includes('patornet');
+  if (!ours) return new Response('ok'); // תשלום של עסק אחר באותו חשבון
+  const code = d('statusCode');
+  if (code && code !== '2') return new Response('ok'); // לא שולם
+  const tx = d('transactionCode') || d('transactionId') || d('asmachta');
+  const sum = parseFloat((d('paymentSum') || d('sum') || '0').replace(/,/g, ''));
+  const email = d('payerEmail') || d('email');
+  if (!tx || !email || !(sum >= LIFE_SUM - 0.5)) {
+    console.error('grow link payment rejected', { tx, email: !!email, sum });
+    return new Response('ok');
+  }
+  const { data, error } = await db.rpc('amirnet_pay_link', { p_tx: tx, p_email: email, p_amount: sum, p_months: LIFE_MONTHS, p_raw: f });
+  if (error) { console.error('pay_link failed', error); return new Response('error', { status: 500 }); } // Grow ינסו שוב
+  return new Response(JSON.stringify(data || { ok: true }), { headers: { 'Content-Type': 'application/json' } });
+}
+
 Deno.serve(async (req) => {
   if (req.method !== 'POST') return new Response('ok');
   const db = admin();
@@ -55,12 +86,12 @@ Deno.serve(async (req) => {
       for (const [k, v] of (await req.formData()).entries()) f[k] = String(v);
     }
   } catch { return new Response('bad request', { status: 400 }); }
-  const d = (k: string) => f[`data[${k}]`] ?? f[k] ?? '';
+  const d = (k: string) => f[`data[${k}]`] ?? f[k] ?? f[`data[customFields][${k}]`] ?? '';
   const processId = d('processId');
-  if (!processId) return new Response('no process', { status: 400 });
+  // תשלום דרך קישור תשלום (pay.grow.link): webhook של החשבון, בלי processId שלנו
+  if (!processId || !(await db.rpc('amirnet_pay_get', { p_process_id: processId })).data) return await linkPayment(req, d, f, db);
 
   const { data: pay } = await db.rpc('amirnet_pay_get', { p_process_id: processId });
-  if (!pay) return new Response('unknown process', { status: 404 });
   const plan = PLANS[pay.plan];
 
   // אימות מול Grow (לא מול מה שהגיע בהודעה)

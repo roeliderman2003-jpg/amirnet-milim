@@ -65,8 +65,13 @@ function lockedUnits() {
 }
 
 // ----- תשלום ב-Grow -----
+// PAY_LINK: קישור תשלום שיוצרים בממשק של Grow (99 ₪, תיאור שכולל «פטורנט», כתובת חזרה: האתר עם ?paid=1).
+// כשיש קישור, הרכישה עוברת דרכו והגישה נפתחת לפי המייל שהוזן בעמוד התשלום (webhook → grow-notify).
+// בלי קישור: דרך ה-API (grow-create), שדורש userId ו-pageCode מ-Grow
+const PAY_LINK = '';
 function openBuy(from) {
   logEv('buy_open', { from: from || '' });
+  if (PAY_LINK) return openBuyLink();
   const el = document.createElement('div');
   el.className = 'modal';
   el.innerHTML = `<div class="mbox buy"><b class="mt1">פתיחת הגישה המלאה</b>
@@ -79,6 +84,26 @@ function openBuy(from) {
     <div id="bmsg" class="lmsg"></div>
     <div class="row"><button class="btn ghost" onclick="this.closest('.modal').remove()">ביטול</button><button class="btn" id="bgo" onclick="buy(this)">לתשלום מאובטח</button></div></div>`;
   document.body.appendChild(el);
+}
+function openBuyLink() {
+  const el = document.createElement('div');
+  el.className = 'modal';
+  el.innerHTML = `<div class="mbox buy"><b class="mt1">פתיחת הגישה המלאה · ${PRICES[0].sum} ₪ לכל החיים</b>
+    <p class="fine">תשלום אחד, בלי מנוי ובלי חיוב מתחדש. אשראי או ביט, בעמוד המאובטח של Grow.</p>
+    <div class="card" style="margin:0"><b>חשוב: בעמוד התשלום כתוב את המייל הזה</b>
+      <div class="row" style="align-items:center;margin-top:6px"><span class="en" style="flex:1;font-weight:700">${esc(ME.email || '')}</span><button class="skip" onclick="navigator.clipboard&&navigator.clipboard.writeText('${esc(ME.email || '')}').then(()=>toast('הועתק'))">העתקה</button></div>
+      <p class="fine">לפי המייל אנחנו מזהים את התשלום ופותחים לך את הגישה. כתבת מייל אחר? הגישה תיפתח כשתיכנס עם חשבון Google של המייל ההוא, או כתוב לנו.</p></div>
+    <label class="sw"><input type="checkbox" id="bterms"> קראתי ואני מסכים ל<a href="terms.html" target="_blank">תנאי השימוש</a> ול<a href="privacy.html" target="_blank">מדיניות הפרטיות</a></label>
+    <div id="bmsg" class="lmsg"></div>
+    <div class="row"><button class="btn ghost" onclick="this.closest('.modal').remove()">ביטול</button><button class="btn" onclick="buyLink(this)">לתשלום מאובטח</button></div></div>`;
+  document.body.appendChild(el);
+}
+function buyLink(btn) {
+  const box = btn.closest('.mbox');
+  if (!box.querySelector('#bterms').checked) { box.querySelector('#bmsg').textContent = 'צריך לאשר את תנאי השימוש'; return; }
+  logEv('buy_click', { plan: 'life', via: 'link' });
+  try { localStorage.setItem('patornet-paying', String(Date.now())); } catch (e) {}
+  location.href = PAY_LINK;
 }
 async function buy(btn) {
   const box = btn.closest('.mbox'), msg = t => { box.querySelector('#bmsg').textContent = t; };
