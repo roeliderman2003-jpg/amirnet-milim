@@ -82,7 +82,7 @@
         {
           "q": "The passage is mainly concerned with",
           "o": [
-            "the history of the placebo effect since it was first documented",
+            "the history of the placebo effect from the time it was first documented over a century ago",
             "how the placebo effect works and why it makes the testing of new drugs difficult",
             "the ethical problems raised by giving patients pills that contain only sugar",
             "why drugs for pain and depression have become less effective than they once were"
@@ -94,7 +94,7 @@
         {
           "q": "According to the second paragraph, which of the following is true?",
           "o": [
-            "A placebo helps only patients who are told that the pill is inert.",
+            "A placebo helps only those patients who have been told in advance that the pill is inert.",
             "Brain-imaging studies show that the effect exists only in what patients report.",
             "A single pill usually relieves more pain than two pills do.",
             "The form and the presented price of a dummy treatment can affect how well it works."
@@ -109,7 +109,7 @@
             "patients who take the new medicine",
             "patients who receive nothing",
             "researchers",
-            "doctors"
+            "the doctors who treat these patients"
           ],
           "a": 0,
           "ex": "«The first group would improve partly because they expect to»: הקבוצה הראשונה היא המטופלים שלוקחים את התרופה, והם משתפרים בין היתר כי הם מצפים להשתפר. «patients who receive nothing» מפתה, אבל זו הקבוצה השנייה, שאין לה ציפייה כזו.",
@@ -119,7 +119,7 @@
           "q": "The main purpose of the fourth paragraph is to",
           "o": [
             "argue that placebo-controlled trials should be abandoned",
-            "describe how researchers prevent participants from guessing which group they are in",
+            "describe the methods that researchers use to prevent participants from guessing which group they are in",
             "explain why even a carefully designed trial may fail to reveal a drug's true value",
             "show that drugs with side effects are generally more effective than other drugs"
           ],

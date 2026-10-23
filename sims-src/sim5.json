@@ -85,7 +85,7 @@
             "why inventors often fail to profit from their own inventions",
             "the reasons that beneficial technologies may take a long time to be widely used",
             "how electricity transformed the design of factories",
-            "the ways in which governments can speed up the adoption of new technologies"
+            "the ways in which governments and firms can speed up the adoption of new technologies"
           ],
           "a": 1,
           "ex": "כל הקטע מסביר למה טכנולוגיות מועילות מתפשטות לאט: מוצר לא מוגמר, השקעות משלימות ותהליך חברתי. המנועים החשמליים הם רק דוגמה בפסקה 3, והממשלות מוזכרות רק בסוף.",
@@ -113,9 +113,9 @@
         {
           "q": "The example of electric motors in the third paragraph is used to show that",
           "o": [
-            "the benefit of a new technology may depend on other costly changes being made",
-            "factory owners were generally unaware of new technologies",
-            "steam engines were more efficient than electric motors",
+            "the benefit of a new technology may depend on other costly changes",
+            "factory owners were generally unaware of the new technologies that could improve their production",
+            "steam engines were more efficient than electric motors in most factories of the time",
             "electric motors were adopted more quickly than tractors"
           ],
           "a": 0,
@@ -127,7 +127,7 @@
           "o": [
             "some delays in adoption serve a useful purpose, while others might reasonably be shortened",
             "governments should avoid any involvement in the spread of new technologies",
-            "every delay in adopting a useful technology is a waste of resources",
+            "every delay in adopting a useful technology is a waste of resources that could have been avoided",
             "most new technologies are adopted too quickly to be properly tested"
           ],
           "a": 0,

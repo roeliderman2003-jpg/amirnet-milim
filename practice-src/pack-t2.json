@@ -1326,7 +1326,7 @@
     {
      "q": "The author mentions the cake mixes in the last paragraph in order to",
      "o": [
-      "prove that food companies were the first to discover the effect",
+      "prove that food companies were the first businesses to discover and use the effect",
       "show that customers prefer products that are quick to prepare",
       "give an example of how a business may have made use of the effect",
       "argue that most popular stories about business are untrue"
@@ -1353,7 +1353,7 @@
      "o": [
       "usually abandon it sooner than an outsider would",
       "may judge it more favorably than someone who did not work on it",
-      "are less affected by the IKEA effect than amateurs are",
+      "are less affected by the IKEA effect than the amateurs who fold paper animals",
       "rarely invest much of their own time in it"
      ],
      "a": 1,
@@ -1387,7 +1387,7 @@
     {
      "q": "Which of the following best expresses the main idea of the passage?",
      "o": [
-      "Dolphins need more sleep than other mammals because they spend their whole lives in water.",
+      "Dolphins need more sleep than other mammals because they spend their whole lives swimming in the open ocean.",
       "Birds sleep more deeply when they are in groups than when they are alone.",
       "Several animals, and perhaps humans too, can let part of the brain rest while another part stays alert.",
       "Sleeping with one eye open is harmful to an animal's health in the long run."

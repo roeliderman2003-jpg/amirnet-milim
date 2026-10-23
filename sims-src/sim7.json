@@ -108,7 +108,7 @@
         },
         {
           "q": "The main purpose of the last paragraph is to",
-          "o": ["explain why bees are attracted to the smell of flowers", "describe how robots are used to protect beehives", "present a challenge to von Frisch's findings and show how it was answered", "argue that von Frisch did not deserve the Nobel Prize"],
+          "o": ["explain why bees are attracted to the smell of flowers", "describe how robots are used to protect beehives", "present a challenge to von Frisch's findings and show how it was answered", "argue that von Frisch did not deserve to share the Nobel Prize"],
           "a": 2,
           "ex": "הפסקה האחרונה מציגה חוקרים שפקפקו בממצאים (טענו שהדבורים מוצאות אוכל לפי ריח), ואז מספרת איך ניסוי הרובוט הכריע את הוויכוח. «explain why bees are attracted to the smell» מפתה, אבל הריח מוזכר רק כטענה של המתנגדים.",
           "w": [["challenge", "ערעור, אתגר"], ["proof", "הוכחה"], ["merely", "רק, לא יותר מ..."]]

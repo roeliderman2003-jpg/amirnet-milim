@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="110" fill="#58cc02"/><text x="256" y="330" font-family="Arial,sans-serif" font-size="230" font-weight="900" fill="#fff" text-anchor="middle">A+</text><circle cx="140" cy="400" r="26" fill="#ffc800"/><circle cx="256" cy="420" r="26" fill="#1cb0f6"/><circle cx="372" cy="400" r="26" fill="#ff4b4b"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="112" fill="#46a302"/>
+<rect width="512" height="492" rx="112" fill="#58cc02"/>
+<g transform="translate(6 4)">
+<g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="58">
+<g stroke="#3f9a00" transform="translate(0 12)"><path d="M222 238H182Q158 238 158 214V166Q158 142 182 142H302Q334 142 334 174V310Q334 342 302 342H150"/></g>
+<g stroke="#ffffff"><path d="M222 238H182Q158 238 158 214V166Q158 142 182 142H302Q334 142 334 174V310Q334 342 302 342H150"/></g>
+</g>
+<circle cx="398" cy="398" r="52" fill="#ffc800" stroke="#58cc02" stroke-width="16"/><path d="M374 399l17 17 32-34" fill="none" stroke="#fff" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</svg>

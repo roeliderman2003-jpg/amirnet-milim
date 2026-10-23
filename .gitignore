@@ -1,1 +1,3 @@
 .qa_pw
+# התוכן המלא לתשלום: נבנה ע"י tools/build-tiers.js ומועלה ל-Supabase Storage בלבד
+paid/

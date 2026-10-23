@@ -26,7 +26,7 @@
 "v:distinct": [
 ["Each region of Italy has its own ___ style of cooking pasta.", "לכל אזור באיטליה יש סגנון נבדל משלו לבישול פסטה."],
 ["Under the microscope, the biologist could see two ___ types of cells.", "מתחת למיקרוסקופ, הביולוג יכול היה לראות שני סוגי תאים נבדלים."],
-["There is a ___ smell of smoke in the kitchen; did someone burn the toast?", "יש ריח ברור של עשן במטבח; מישהו שרף את הטוסט?"],
+["There is a strong, ___ smell of smoke in the kitchen; did someone burn the toast?", "יש ריח חזק וברור של עשן במטבח; מישהו שרף את הטוסט?"],
 ["Hebrew and Arabic are related but ___ languages with separate alphabets.", "עברית וערבית הן שפות קרובות אך נבדלות, עם אלפביתים נפרדים."]
 ],
 "v:distinction": [
@@ -50,7 +50,7 @@
 "v:distortion": [
 ["The film was criticized for its ___ of historical events during the war.", "הסרט ספג ביקורת על הסילוף של אירועים היסטוריים בזמן המלחמה."],
 ["Old radios often produce a lot of ___ when the signal is weak.", "מכשירי רדיו ישנים מפיקים לעיתים קרובות הרבה עיוות כשהקליטה חלשה."],
-["Flat world maps create a ___ that makes Greenland look much bigger than it is.", "מפות עולם שטוחות יוצרות עיוות שגורם לגרינלנד להיראות גדולה בהרבה ממה שהיא."],
+["Flat world maps create a visual ___ that makes Greenland look much bigger than it is.", "מפות עולם שטוחות יוצרות עיוות חזותי שגורם לגרינלנד להיראות גדולה בהרבה ממה שהיא."],
 ["Calling a small peaceful protest a riot is a clear ___ of the truth.", "לקרוא להפגנה קטנה ושקטה מהומה זה סילוף ברור של האמת."]
 ],
 "v:divergence": [
@@ -66,14 +66,14 @@
 ["To stay healthy, try to ___ your diet with different fruits and vegetables.", "כדי להישאר בריא, נסה לגוון את התזונה שלך בפירות וירקות שונים."]
 ],
 "v:diversion": [
-["Because of the roadworks, drivers must follow a ___ through the village.", "בגלל עבודות הכביש, נהגים חייבים לנסוע במעקף דרך הכפר."],
+["Because of the roadworks, drivers must follow the ___ through the village.", "בגלל עבודות הכביש, נהגים חייבים לנסוע במעקף דרך הכפר."],
 ["Watching a funny movie was a welcome ___ from studying for exams.", "צפייה בסרט מצחיק הייתה הסחת דעת רצויה מהלמידה למבחנים."],
 ["The ___ of river water to farms has left the lake almost dry.", "הטיית מי הנהר לחוות השאירה את האגם כמעט יבש."],
-["While one thief created a ___ at the front door, the other stole the jewels.", "בזמן שגנב אחד יצר הסחה בדלת הכניסה, השני גנב את התכשיטים."]
+["While one thief created a loud ___ at the front door, the other stole the jewels.", "בזמן שגנב אחד יצר הסחה רועשת בדלת הכניסה, השני גנב את התכשיטים."]
 ],
 "v:docile": [
 ["Cows are usually ___ animals that follow the farmer without any trouble.", "פרות הן בדרך כלל בעלי חיים צייתנים שהולכים אחרי החקלאי בלי שום בעיה."],
-["The dictator wanted a ___ population that would never question his decisions.", "הרודן רצה אוכלוסייה צייתנית שלעולם לא תטיל ספק בהחלטותיו."],
+["The dictator wanted a quiet, ___ population that would never question his decisions.", "הרודן רצה אוכלוסייה שקטה וצייתנית שלעולם לא תטיל ספק בהחלטותיו."],
 ["After the medicine took effect, the wild cat became quiet and ___.", "אחרי שהתרופה השפיעה, החתול הפראי נעשה שקט וצייתן."],
 ["The new employees seemed ___ at first but soon started to demand better conditions.", "העובדים החדשים נראו צייתנים בהתחלה, אבל מהר מאוד התחילו לדרוש תנאים טובים יותר."]
 ],
@@ -102,7 +102,7 @@
 ["My aunt has always tended to ___ on her nieces, buying them gifts every visit.", "דודתי תמיד נטתה לפנק בהגזמה את אחייניותיה ולקנות להן מתנות בכל ביקור."]
 ],
 "v:drab": [
-["The office walls were painted a ___ brown that made everyone feel tired.", "קירות המשרד נצבעו בחום אפרורי ומשמים שגרם לכולם להרגיש עייפים."],
+["The office walls were painted a dull, ___ brown that made everyone feel tired.", "קירות המשרד נצבעו בחום אפרורי ומשמים שגרם לכולם להרגיש עייפים."],
 ["After the colorful festival ended, the town looked ___ and empty.", "אחרי שהפסטיבל הצבעוני הסתיים, העיירה נראתה אפורה וריקה."],
 ["She replaced her ___ winter coat with a bright red one.", "היא החליפה את מעיל החורף האפור והמשעמם שלה במעיל אדום ובוהק."],
 ["Many people find life in the suburbs ___ compared with the excitement of the city.", "אנשים רבים מוצאים שהחיים בפרברים משעממים בהשוואה לריגוש של העיר."]
@@ -120,7 +120,7 @@
 ["Geologists say the continents ___ a few centimeters every year.", "גיאולוגים אומרים שהיבשות נסחפות כמה סנטימטרים בכל שנה."]
 ],
 "v:dubious": [
-["The website offered a ___ cure for cancer made only of lemon juice.", "האתר הציע תרופה מפוקפקת לסרטן שעשויה רק ממיץ לימון."],
+["The website offered a highly ___ cure for cancer made only of lemon juice.", "האתר הציע תרופה מפוקפקת לסרטן שעשויה רק ממיץ לימון."],
 ["Investors grew ___ about the start-up after it missed three deadlines.", "המשקיעים נעשו ספקנים לגבי הסטארט־אפ אחרי שהחמיץ שלושה מועדי יעד."],
 ["He made his fortune in ___ ways, and the police are now investigating.", "הוא עשה את הונו בדרכים מפוקפקות, והמשטרה חוקרת כעת."],
 ["The team won the game, but the referee's last decision was highly ___.", "הקבוצה ניצחה במשחק, אבל ההחלטה האחרונה של השופט הייתה מפוקפקת מאוד."]
@@ -138,9 +138,9 @@
 ["Engineers hope to ___ the success of the first factory in other countries.", "המהנדסים מקווים לשחזר את ההצלחה של המפעל הראשון במדינות אחרות."]
 ],
 "v:durable": [
-["Engineers chose a ___ material for the bridge so it could survive strong winds.", "המהנדסים בחרו חומר עמיד לגשר כדי שיוכל לשרוד רוחות חזקות."],
+["Engineers chose a very ___ material for the bridge so it could survive strong winds.", "המהנדסים בחרו חומר עמיד לגשר כדי שיוכל לשרוד רוחות חזקות."],
 ["Children's toys need to be ___, because kids drop and throw them all the time.", "צעצועי ילדים צריכים להיות עמידים, כי ילדים מפילים וזורקים אותם כל הזמן."],
-["The two countries hope to reach a ___ peace that will last for generations.", "שתי המדינות מקוות להגיע לשלום בר קיימא שיחזיק מעמד דורות."],
+["The two countries hope to reach a stable and ___ peace that will last for generations.", "שתי המדינות מקוות להגיע לשלום יציב ובר קיימא שיחזיק מעמד דורות."],
 ["Leather bags are expensive but more ___ than cheap plastic ones.", "תיקי עור יקרים אבל עמידים יותר מתיקי פלסטיק זולים."]
 ],
 "v:dwindle": [
@@ -168,22 +168,22 @@
 ["In buildings with thin walls, neighbors can ___ on each other without even trying.", "בבניינים עם קירות דקים, שכנים יכולים לצותת זה לזה אפילו בלי להתכוון."]
 ],
 "v:eclectic": [
-["The restaurant serves an ___ menu with dishes from Japan, Mexico and Morocco.", "המסעדה מגישה תפריט אקלקטי עם מנות מיפן, ממקסיקו וממרוקו."],
-["His apartment is decorated in an ___ style, mixing antique chairs with modern art.", "הדירה שלו מעוצבת בסגנון אקלקטי, שמשלב כיסאות עתיקים עם אמנות מודרנית."],
-["The festival attracts an ___ crowd of students, families and retired people.", "הפסטיבל מושך קהל מגוון של סטודנטים, משפחות וגמלאים."],
-["The philosopher took an ___ approach, borrowing ideas from many different schools of thought.", "הפילוסוף נקט גישה אקלקטית ושאל רעיונות מאסכולות מחשבה רבות ושונות."]
+["The restaurant serves a truly ___ menu with dishes from Japan, Mexico and Morocco.", "המסעדה מגישה תפריט אקלקטי עם מנות מיפן, ממקסיקו וממרוקו."],
+["His apartment is decorated in a very ___ style, mixing antique chairs with modern art.", "הדירה שלו מעוצבת בסגנון אקלקטי, שמשלב כיסאות עתיקים עם אמנות מודרנית."],
+["The festival attracts a large, ___ crowd of students, families and retired people.", "הפסטיבל מושך קהל גדול ומגוון של סטודנטים, משפחות וגמלאים."],
+["The philosopher took a broad, ___ approach, borrowing ideas from many different schools of thought.", "הפילוסוף נקט גישה רחבה ואקלקטית ושאל רעיונות מאסכולות מחשבה רבות ושונות."]
 ],
 "v:eclipse": [
 ["During a total ___, the sky turns dark in the middle of the day.", "במהלך ליקוי מלא, השמים מחשיכים באמצע היום."],
-["Ancient people often believed that an ___ was a sign of anger from the gods.", "אנשים בעת העתיקה האמינו לעיתים קרובות שליקוי הוא סימן לכעס האלים."],
+["Ancient people often believed that the ___ of the sun was a sign of anger from the gods.", "אנשים בעת העתיקה האמינו לעיתים קרובות שליקוי השמש הוא סימן לכעס האלים."],
 ["Astronomers can predict the next lunar ___ to the exact minute.", "אסטרונומים יכולים לחזות את ליקוי הלבנה הבא בדיוק של דקה."],
 ["The singer's career went into ___ after a series of failed albums.", "הקריירה של הזמר נכנסה לדעיכה אחרי סדרה של אלבומים כושלים."]
 ],
 "v:elaborate": [
-["The thieves made an ___ plan with maps, codes and fake uniforms.", "הגנבים הכינו תוכנית מורכבת ומפורטת עם מפות, קודים ומדים מזויפים."],
-["Her wedding cake was an ___ creation of five layers and sugar flowers.", "עוגת החתונה שלה הייתה יצירה מורכבת של חמש קומות ופרחי סוכר."],
+["The thieves made a very ___ plan with maps, codes and fake uniforms.", "הגנבים הכינו תוכנית מורכבת ומפורטת עם מפות, קודים ומדים מזויפים."],
+["Her wedding cake was a truly ___ creation of five layers and sugar flowers.", "עוגת החתונה שלה הייתה יצירה מורכבת של חמש קומות ופרחי סוכר."],
 ["The ancient temple has ___ carvings on every wall and column.", "במקדש העתיק יש גילופים מורכבים ומפורטים על כל קיר ועמוד."],
-["There is no need for an ___ explanation; a simple yes or no will do.", "אין צורך בהסבר מפורט ומסובך; מספיק כן או לא פשוט."]
+["There is no need for a long, ___ explanation; a simple yes or no will do.", "אין צורך בהסבר ארוך ומסובך; מספיק כן או לא פשוט."]
 ],
 "v:embrace": [
 ["Older workers are sometimes slow to ___ new technology.", "עובדים מבוגרים ממהרים פחות לפעמים לאמץ טכנולוגיה חדשה."],
@@ -204,7 +204,7 @@
 ["Doctors noticed the ___ of symptoms only two days after the infection.", "הרופאים הבחינו בהופעת התסמינים רק יומיים אחרי ההדבקה."]
 ],
 "v:emergent": [
-["Doctors are closely watching an ___ disease that has appeared in several countries.", "הרופאים עוקבים מקרוב אחר מחלה מתהווה שהופיעה בכמה מדינות."],
+["Doctors are closely watching a new and ___ disease that has appeared in several countries.", "הרופאים עוקבים מקרוב אחר מחלה חדשה ומתהווה שהופיעה בכמה מדינות."],
 ["The ___ field of artificial intelligence attracts many young researchers.", "התחום המתפתח של בינה מלאכותית מושך חוקרים צעירים רבים."],
 ["Kindergarten teachers should encourage the ___ reading skills of young children.", "גננות צריכות לעודד את כישורי הקריאה המתפתחים של ילדים צעירים."],
 ["The city's ___ art scene now fills old factories with galleries.", "סצנת האמנות המתהווה של העיר ממלאת כיום מפעלים ישנים בגלריות."]
@@ -228,7 +228,7 @@
 ["Few historians have achieved the ___ that she enjoys today.", "מעט היסטוריונים השיגו את המעמד הנכבד שהיא נהנית ממנו היום."]
 ],
 "v:eminent": [
-["An ___ surgeon was flown in from abroad to perform the difficult operation.", "מנתח בולט הוטס מחו״ל כדי לבצע את הניתוח הקשה."],
+["The most ___ surgeon in the field was flown in from abroad to perform the difficult operation.", "המנתח הבולט ביותר בתחום הוטס מחו״ל כדי לבצע את הניתוח הקשה."],
 ["The book was reviewed by several ___ historians, who praised its research.", "על הספר כתבו ביקורת כמה היסטוריונים נכבדים, ששיבחו את המחקר שבו."],
 ["Our town's most ___ resident was a writer who won the Nobel Prize.", "התושב הבולט ביותר בעיירה שלנו היה סופר שזכה בפרס נובל."],
 ["The conference brought together ___ economists from twenty countries.", "הכנס הפגיש כלכלנים נכבדים מעשרים מדינות."]
@@ -291,13 +291,13 @@
 ["In the ___, the director explains what happened to each character after the war.", "באחרית הדבר, הבמאי מסביר מה קרה לכל דמות אחרי המלחמה."],
 ["The play ends with a short ___ in which the narrator speaks to the audience.", "המחזה מסתיים באחרית דבר קצרה שבה המספר פונה לקהל."],
 ["Some readers skip the ___, but it often answers questions the story leaves open.", "יש קוראים שמדלגים על אחרית הדבר, אבל היא עונה לעיתים קרובות על שאלות שהסיפור משאיר פתוחות."],
-["For the second edition, the historian added an ___ describing new research.", "למהדורה השנייה, ההיסטוריון הוסיף אחרית דבר שמתארת מחקר חדש."]
+["For the second edition, the historian added a short ___ describing new research.", "למהדורה השנייה, ההיסטוריון הוסיף אחרית דבר קצרה שמתארת מחקר חדש."]
 ],
 "v:equivalent": [
 ["A bachelor's degree from abroad is not always considered ___ to an Israeli one.", "תואר ראשון מחו״ל לא תמיד נחשב שווה ערך לתואר ישראלי."],
-["The new job offered an ___ salary, so she saw no reason to move.", "המשרה החדשה הציעה משכורת שוות ערך, ולכן היא לא ראתה סיבה לעבור."],
+["The new job offered a roughly ___ salary, so she saw no reason to move.", "המשרה החדשה הציעה משכורת שוות ערך בערך, ולכן היא לא ראתה סיבה לעבור."],
 ["There is no exact ___ word in Hebrew for this English expression.", "אין בעברית מילה מקבילה מדויקת לביטוי האנגלי הזה."],
-["Students may present an ___ certificate from another country instead of the local diploma.", "תלמידים רשאים להציג תעודה שוות ערך ממדינה אחרת במקום התעודה המקומית."]
+["Students may present the ___ certificate from another country instead of the local diploma.", "תלמידים רשאים להציג תעודה שוות ערך ממדינה אחרת במקום התעודה המקומית."]
 ],
 "v:equivocal": [
 ["The test results were ___, so the doctor asked for another blood sample.", "תוצאות הבדיקה היו לא חד משמעיות, ולכן הרופא ביקש דגימת דם נוספת."],
@@ -306,7 +306,7 @@
 ["The witness's ___ statement could support either side of the case.", "העדות הדו־משמעית של העד יכולה לתמוך בכל אחד מהצדדים בתיק."]
 ],
 "v:erroneous": [
-["The bank sent an ___ bill, charging me twice for the same purchase.", "הבנק שלח חשבון שגוי, וחייב אותי פעמיים על אותה רכישה."],
+["The bank sent me a completely ___ bill, charging me twice for the same purchase.", "הבנק שלח לי חשבון שגוי לגמרי, וחייב אותי פעמיים על אותה רכישה."],
 ["Many ___ beliefs about nutrition spread quickly on social media.", "אמונות שגויות רבות על תזונה מתפשטות במהירות ברשתות החברתיות."],
 ["The pilot received ___ data from a broken sensor and changed altitude.", "הטייס קיבל נתונים שגויים מחיישן תקול ושינה גובה."],
 ["The researcher admitted that her earlier conclusions had been ___.", "החוקרת הודתה שהמסקנות הקודמות שלה היו שגויות."]
@@ -349,9 +349,9 @@
 ],
 "v:eulogy": [
 ["His best friend wrote a short ___ full of funny memories.", "החבר הכי טוב שלו כתב הספד קצר מלא בזיכרונות מצחיקים."],
-["At the memorial for the fallen soldiers, the commander read a ___ for each one.", "בטקס הזיכרון לחיילים שנפלו, המפקד הקריא הספד לכל אחד מהם."],
+["At the memorial for the fallen soldiers, the commander read a short ___ for each one.", "בטקס הזיכרון לחיילים שנפלו, המפקד הקריא הספד קצר לכל אחד מהם."],
 ["The ___ for the scientist described her lifetime of discoveries.", "ההספד למדענית תיאר את תגליות חייה."],
-["It was the hardest speech of his life: a ___ for his own father.", "זה היה הנאום הקשה ביותר בחייו: הספד לאביו שלו."]
+["It was the hardest speech of his life: the ___ for his own father.", "זה היה הנאום הקשה ביותר בחייו: הספד לאביו שלו."]
 ],
 "v:evenly": [
 ["The prize money was divided ___ among the four team members.", "כספי הפרס חולקו באופן שווה בין ארבעת חברי הצוות."],
@@ -393,7 +393,7 @@
 ["From the plane, we saw a huge ___ of green forest below.", "מהמטוס ראינו מרחב עצום של יער ירוק מתחתינו."],
 ["The astronauts looked out at the endless dark ___ of space.", "האסטרונאוטים הביטו החוצה אל המרחב החשוך והאינסופי של החלל."],
 ["A wide ___ of ice covers most of Antarctica.", "מרחב רחב של קרח מכסה את רוב אנטארקטיקה."],
-["The farmer owns an ___ of land larger than the whole town.", "לחקלאי יש שטח אדמה נרחב שגדול מהעיירה כולה."]
+["The farmer owns a huge ___ of land larger than the whole town.", "לחקלאי יש שטח אדמה עצום שגדול מהעיירה כולה."]
 ],
 "v:expedition": [
 ["The scientific ___ collected rare plants from the Amazon rainforest.", "המשלחת המדעית אספה צמחים נדירים מיערות הגשם של האמזונס."],
@@ -414,7 +414,7 @@
 ["Keep a record of every ___ so you know where your money goes.", "רשום כל הוצאה כדי שתדע לאן הכסף שלך הולך."]
 ],
 "v:explicit": [
-["The contract includes an ___ ban on sharing company secrets.", "החוזה כולל איסור מפורש על שיתוף סודות החברה."],
+["The contract includes a clear and ___ ban on sharing company secrets.", "החוזה כולל איסור ברור ומפורש על שיתוף סודות החברה."],
 ["The movie contains ___ violence and is not suitable for children.", "הסרט מכיל אלימות בוטה ומפורשת ואינו מתאים לילדים."],
 ["She made her feelings ___: she did not want to move to another city.", "היא הבהירה את רגשותיה באופן מפורש: היא לא רצתה לעבור לעיר אחרת."],
 ["Soldiers received ___ orders not to open fire on civilians.", "החיילים קיבלו פקודות מפורשות לא לפתוח באש על אזרחים."]
@@ -428,7 +428,7 @@
 "v:extensive": [
 ["The doctor ordered ___ tests to find the cause of the pain.", "הרופא הזמין בדיקות נרחבות כדי למצוא את הסיבה לכאב."],
 ["She has ___ experience in teaching, after thirty years in schools.", "יש לה ניסיון רב היקף בהוראה, אחרי שלושים שנה בבתי ספר."],
-["The library has an ___ collection of rare books from the Middle Ages.", "בספרייה יש אוסף נרחב של ספרים נדירים מימי הביניים."],
+["The library has a very ___ collection of rare books from the Middle Ages.", "בספרייה יש אוסף נרחב של ספרים נדירים מימי הביניים."],
 ["After ___ research, the team finally discovered a cure for the disease.", "אחרי מחקר נרחב, הצוות גילה לבסוף תרופה למחלה."]
 ],
 "v:extent": [
@@ -439,7 +439,7 @@
 ],
 "v:external": [
 ["The building's ___ walls were painted white to reflect the sun.", "הקירות החיצוניים של הבניין נצבעו בלבן כדי להחזיר את קרני השמש."],
-["The company hired an ___ auditor to check its accounts.", "החברה שכרה מבקר חשבונות חיצוני כדי לבדוק את החשבונות שלה."],
+["The company hired its own ___ auditor to check its accounts.", "החברה שכרה מבקר חשבונות חיצוני משלה כדי לבדוק את החשבונות שלה."],
 ["Children's behavior is shaped by ___ factors such as friends and media.", "ההתנהגות של ילדים מעוצבת על ידי גורמים חיצוניים כמו חברים ותקשורת."],
 ["This cream is for ___ use only and must not be swallowed.", "המשחה הזו מיועדת לשימוש חיצוני בלבד ואסור לבלוע אותה."]
 ],
@@ -475,15 +475,15 @@
 ],
 "v:falsehood": [
 ["The witness was accused of telling a deliberate ___ in court.", "העד הואשם באמירת שקר מכוון בבית המשפט."],
-["Online, a ___ can spread much faster than the truth.", "ברשת, שקר יכול להתפשט הרבה יותר מהר מהאמת."],
+["Online, a single ___ can spread much faster than the truth.", "ברשת, שקר אחד יכול להתפשט הרבה יותר מהר מהאמת."],
 ["Young children must learn the difference between truth and ___.", "ילדים צעירים צריכים ללמוד את ההבדל בין אמת לשקר."],
-["The advertisement contained a ___ about the product's health benefits.", "הפרסומת הכילה שקר לגבי היתרונות הבריאותיים של המוצר."]
+["The advertisement contained a dangerous ___ about the product's health benefits.", "הפרסומת הכילה שקר מסוכן לגבי היתרונות הבריאותיים של המוצר."]
 ],
 "v:fastidious": [
 ["The ___ editor checked every comma before the book went to print.", "העורך הקפדן בדק כל פסיק לפני שהספר נשלח לדפוס."],
 ["Cats are ___ animals that spend hours cleaning their fur.", "חתולים הם בעלי חיים קפדניים שמבלים שעות בניקוי הפרווה שלהם."],
 ["My sister is ___ about food and refuses to eat anything with onions.", "אחותי בררנית באוכל ומסרבת לאכול כל דבר עם בצל."],
-["A ___ surgeon double-checks every instrument before an operation.", "מנתח קפדן בודק פעמיים כל מכשיר לפני ניתוח."]
+["Every ___ surgeon double-checks each instrument before an operation.", "כל מנתח קפדן בודק פעמיים כל מכשיר לפני ניתוח."]
 ],
 "v:fauna": [
 ["Desert ___ includes animals like snakes, scorpions and foxes.", "החי של המדבר כולל בעלי חיים כמו נחשים, עקרבים ושועלים."],
@@ -492,10 +492,10 @@
 ["Rats brought by ships destroyed much of the island's native ___.", "חולדות שהגיעו עם ספינות השמידו חלק גדול מבעלי החיים המקומיים של האי."]
 ],
 "v:feast": [
-["After the long fast, the village celebrated with a ___ that lasted all night.", "אחרי הצום הארוך, הכפר חגג בסעודה שנמשכה כל הלילה."],
+["After the long fast, the village celebrated with a huge ___ that lasted all night.", "אחרי הצום הארוך, הכפר חגג בסעודה ענקית שנמשכה כל הלילה."],
 ["The king held a royal ___ to celebrate his daughter's wedding.", "המלך ערך משתה מלכותי כדי לחגוג את חתונת בתו."],
-["For art lovers, the new museum is a ___ for the eyes.", "עבור חובבי אמנות, המוזיאון החדש הוא חגיגה לעיניים."],
-["The wolves enjoyed a ___ after hunting a large deer.", "הזאבים נהנו מסעודה אחרי שצדו צבי גדול."]
+["For art lovers, the new museum is a real ___ for the eyes.", "עבור חובבי אמנות, המוזיאון החדש הוא חגיגה לעיניים."],
+["The wolves enjoyed a bloody ___ after hunting a large deer.", "הזאבים נהנו מסעודה עקובה מדם אחרי שצדו צבי גדול."]
 ],
 "v:fetus": [
 ["Smoking during pregnancy can harm the developing ___.", "עישון במהלך ההיריון עלול לפגוע בעובר המתפתח."],
@@ -505,12 +505,12 @@
 ],
 "v:fiasco": [
 ["The product launch was a complete ___, as the website crashed within minutes.", "השקת המוצר הייתה כישלון חרוץ, כי האתר קרס בתוך דקות."],
-["The birthday party ended in a ___ when the cake fell on the floor.", "מסיבת יום ההולדת הסתיימה בכישלון חרוץ כשהעוגה נפלה על הרצפה."],
-["Critics called the military operation a ___ that cost many lives.", "מבקרים כינו את המבצע הצבאי כישלון חרוץ שעלה בחיים רבים."],
+["The birthday party ended in a total ___ when the cake fell on the floor.", "מסיבת יום ההולדת הסתיימה בכישלון חרוץ כשהעוגה נפלה על הרצפה."],
+["Critics called the military operation a terrible ___ that cost many lives.", "מבקרים כינו את המבצע הצבאי כישלון חרוץ ונורא שעלה בחיים רבים."],
 ["After last year's ___, the organizers planned the festival much more carefully.", "אחרי הכישלון החרוץ של השנה שעברה, המארגנים תכננו את הפסטיבל בזהירות רבה יותר."]
 ],
 "v:figurative": [
-["When she said she was drowning in work, she was speaking in a ___ way.", "כשהיא אמרה שהיא טובעת בעבודה, היא דיברה באופן מטפורי."],
+["When she said she was drowning in work, she was speaking in a purely ___ way.", "כשהיא אמרה שהיא טובעת בעבודה, היא דיברה באופן מטפורי."],
 ["Poets use ___ language to create strong images in the reader's mind.", "משוררים משתמשים בשפה מטפורית כדי ליצור דימויים חזקים בדמיון הקורא."],
 ["The ___ meaning of \"break the ice\" is to start a friendly conversation.", "המשמעות המטפורית של ״לשבור את הקרח״ היא לפתוח בשיחה ידידותית."],
 ["Students must explain both the literal and the ___ sense of each proverb.", "התלמידים צריכים להסביר גם את המובן המילולי וגם את המובן המטפורי של כל פתגם."]
@@ -522,16 +522,16 @@
 ["She exercises every day to keep a slim ___.", "היא מתאמנת כל יום כדי לשמור על גזרה דקה."]
 ],
 "v:firm": [
-["Test the mattress before buying it; some people prefer a ___ one.", "נסה את המזרן לפני שאתה קונה אותו; יש אנשים שמעדיפים מזרן מוצק."],
-["The government took a ___ stand against corruption.", "הממשלה נקטה עמדה תקיפה נגד שחיתות."],
-["Hold the ladder with a ___ grip while I climb.", "תחזיק את הסולם באחיזה יציבה בזמן שאני מטפס."],
+["Test the mattress before buying it; some people prefer a very ___ one.", "נסה את המזרן לפני שאתה קונה אותו; יש אנשים שמעדיפים מזרן מוצק."],
+["The government took a strong and ___ stand against corruption.", "הממשלה נקטה עמדה חזקה ותקיפה נגד שחיתות."],
+["Hold the ladder with a strong, ___ grip while I climb.", "תחזיק את הסולם באחיזה חזקה ויציבה בזמן שאני מטפס."],
 ["The ground here is ___ enough to build a house.", "האדמה כאן מוצקה מספיק כדי לבנות בית."]
 ],
 "v:flagrant": [
-["Taking money from the charity was a ___ abuse of trust.", "לקיחת כסף מהעמותה הייתה הפרת אמון בוטה."],
-["The referee gave a red card for a ___ foul against the goalkeeper.", "השופט הוציא כרטיס אדום על עבירה בוטה נגד השוער."],
+["Taking money from the charity was a clear and ___ abuse of trust.", "לקיחת כסף מהעמותה הייתה הפרת אמון בוטה."],
+["The referee gave a red card for a clearly ___ foul against the goalkeeper.", "השופט הוציא כרטיס אדום על עבירה בוטה נגד השוער."],
 ["The report described ___ human rights violations in the prison.", "הדוח תיאר הפרות בוטות של זכויות אדם בכלא."],
-["Copying an entire essay from the internet is a ___ case of cheating.", "העתקת חיבור שלם מהאינטרנט היא מקרה בוטה של רמאות."]
+["Copying an entire essay from the internet is a truly ___ case of cheating.", "העתקת חיבור שלם מהאינטרנט היא מקרה בוטה של רמאות."]
 ],
 "v:flex": [
 ["Before lifting heavy boxes, ___ your knees to protect your back.", "לפני הרמת ארגזים כבדים, כופף את הברכיים כדי להגן על הגב."],
@@ -588,16 +588,16 @@
 ["The city restored the old castle to its ___ glory.", "העירייה שיקמה את הטירה העתיקה לתפארתה הקודמת."]
 ],
 "v:formidable": [
-["Climbing Everest without oxygen is a ___ challenge.", "טיפוס על האוורסט בלי חמצן הוא אתגר אדיר."],
-["The lawyer was known as a ___ speaker who rarely lost a case.", "עורך הדין היה ידוע כנואם מרתיע שרק לעיתים רחוקות הפסיד בתיק."],
+["Climbing Everest without oxygen is a truly ___ challenge.", "טיפוס על האוורסט בלי חמצן הוא אתגר אדיר."],
+["The lawyer was known as a truly ___ speaker who rarely lost a case.", "עורך הדין היה ידוע כנואם מרתיע שרק לעיתים רחוקות הפסיד בתיק."],
 ["The castle's ___ walls kept enemies out for centuries.", "החומות האדירות של הטירה הרחיקו אויבים במשך מאות שנים."],
-["The new government faces a ___ task: rebuilding the economy after the war.", "הממשלה החדשה ניצבת בפני משימה אדירה: לבנות מחדש את הכלכלה אחרי המלחמה."]
+["The new government faces a truly ___ task: rebuilding the economy after the war.", "הממשלה החדשה ניצבת בפני משימה אדירה: לבנות מחדש את הכלכלה אחרי המלחמה."]
 ],
 "v:fortnight": [
-["The doctor told me to rest for a ___ and then come back for a check-up.", "הרופא אמר לי לנוח שבועיים ואז לחזור לבדיקה."],
-["The magazine is published once a ___, on every second Thursday.", "המגזין יוצא לאור פעם בשבועיים, בכל יום חמישי שני."],
-["Soldiers on the remote base get home leave only once a ___.", "חיילים בבסיס המרוחק יוצאים הביתה רק פעם בשבועיים."],
-["The wild flowers last only a ___ before the summer heat dries them.", "פרחי הבר מחזיקים רק שבועיים לפני שחום הקיץ מייבש אותם."]
+["The doctor told me to rest for a full ___ and then come back for a check-up.", "הרופא אמר לי לנוח שבועיים ואז לחזור לבדיקה."],
+["The magazine is published every ___, on every second Thursday.", "המגזין יוצא לאור כל שבועיים, בכל יום חמישי שני."],
+["Soldiers on the remote base get home leave only once every ___.", "חיילים בבסיס המרוחק יוצאים הביתה רק פעם בשבועיים."],
+["The wild flowers last only one short ___ before the summer heat dries them.", "פרחי הבר מחזיקים רק שבועיים קצרים לפני שחום הקיץ מייבש אותם."]
 ],
 "v:found": [
 ["The Romans decided to ___ a new city on the bank of the river.", "הרומאים החליטו לייסד עיר חדשה על גדת הנהר."],
@@ -618,22 +618,22 @@
 ["Water leaking under the house slowly damaged its ___.", "מים שדלפו מתחת לבית פגעו לאט ביסודות שלו."]
 ],
 "v:fraction": [
-["Three quarters is a ___ that equals seventy-five percent.", "שלושה רבעים הוא שבר ששווה לשבעים וחמישה אחוז."],
-["The new phone costs a ___ of the price of last year's model.", "הטלפון החדש עולה חלק קטן מהמחיר של הדגם של השנה שעברה."],
-["For a ___ of a second, the driver lost control of the car.", "לשבריר שנייה, הנהג איבד שליטה על המכונית."],
-["In math class, we learned to add a ___ to a whole number.", "בשיעור מתמטיקה למדנו לחבר שבר למספר שלם."]
+["Three quarters is the ___ that equals seventy-five percent.", "שלושה רבעים הוא שבר ששווה לשבעים וחמישה אחוז."],
+["The new phone costs only a small ___ of the price of last year's model.", "הטלפון החדש עולה חלק קטן מהמחיר של הדגם של השנה שעברה."],
+["For a split ___ of a second, the driver lost control of the car.", "לשבריר שנייה, הנהג איבד שליטה על המכונית."],
+["In math class, we learned to add a simple ___ to a whole number.", "בשיעור מתמטיקה למדנו לחבר שבר פשוט למספר שלם."]
 ],
 "v:fracture": [
 ["The X-ray showed a small ___ in the soldier's foot.", "צילום הרנטגן הראה שבר קטן בכף הרגל של החייל."],
 ["Elderly people with weak bones are at higher risk of a hip ___.", "אנשים מבוגרים עם עצמות חלשות נמצאים בסיכון גבוה יותר לשבר בירך."],
-["Engineers found a ___ in one of the bridge's steel beams.", "מהנדסים מצאו סדק באחת מקורות הפלדה של הגשר."],
+["Engineers found a dangerous ___ in one of the bridge's steel beams.", "מהנדסים מצאו סדק מסוכן באחת מקורות הפלדה של הגשר."],
 ["A deep ___ in the party led to the creation of two separate movements.", "שבר עמוק במפלגה הוביל להקמת שתי תנועות נפרדות."]
 ],
 "v:frequency": [
 ["Each radio station broadcasts on a different ___.", "כל תחנת רדיו משדרת בתדר אחר."],
 ["Increase the ___ of your workouts slowly to avoid injury.", "הגבר את תדירות האימונים שלך בהדרגה כדי להימנע מפציעה."],
 ["Buses run with greater ___ during rush hour.", "האוטובוסים נוסעים בתדירות גבוהה יותר בשעות העומס."],
-["Dogs can hear sounds at a ___ too high for humans.", "כלבים יכולים לשמוע צלילים בתדר גבוה מדי לבני אדם."]
+["Dogs can hear sounds at a very high ___ that humans cannot hear at all.", "כלבים יכולים לשמוע צלילים בתדר גבוה מאוד שבני אדם לא שומעים כלל."]
 ],
 "v:fringe": [
 ["Her dress had a long ___ that moved when she danced.", "לשמלה שלה היו פרנזים ארוכים שזזו כשהיא רקדה."],
@@ -656,8 +656,8 @@
 "v:fugitive": [
 ["The ___ was finally caught at the airport trying to leave the country.", "הנמלט נתפס לבסוף בנמל התעופה כשניסה לעזוב את הארץ."],
 ["For ten years, the ___ lived under a false name in a small village.", "במשך עשר שנים, הנמלט חי תחת שם בדוי בכפר קטן."],
-["Anyone who helps a ___ hide from the authorities can be arrested.", "כל מי שעוזר לבורח מהחוק להסתתר מהרשויות עלול להיעצר."],
-["The film tells the story of a ___ who must prove his innocence.", "הסרט מספר את סיפורו של נמלט שחייב להוכיח את חפותו."]
+["Anyone who helps the ___ hide from the authorities can be arrested.", "כל מי שעוזר לבורח מהחוק להסתתר מהרשויות עלול להיעצר."],
+["The film tells the story of a desperate ___ who must prove his innocence.", "הסרט מספר את סיפורו של נמלט נואש שחייב להוכיח את חפותו."]
 ],
 "v:fulfill": [
 ["The company failed to ___ its promise to deliver the order on time.", "החברה לא הצליחה לקיים את הבטחתה לספק את ההזמנה בזמן."],
@@ -673,14 +673,14 @@
 ],
 "v:futile": [
 ["Arguing with him is ___; he never changes his mind.", "להתווכח איתו זה חסר תועלת; הוא אף פעם לא משנה את דעתו."],
-["The doctors made a ___ attempt to save the patient.", "הרופאים עשו ניסיון לשווא להציל את המטופל."],
+["The doctors made one last, ___ attempt to save the patient.", "הרופאים עשו ניסיון אחרון לשווא להציל את המטופל."],
 ["Without water, any effort to cross the desert would be ___.", "בלי מים, כל מאמץ לחצות את המדבר יהיה לשווא."],
 ["It is ___ to study all night before an exam if you haven't learned during the year.", "אין טעם ללמוד כל הלילה לפני מבחן אם לא למדת במהלך השנה."]
 ],
 "v:garment": [
 ["Every ___ in the store is made from recycled cotton.", "כל פריט לבוש בחנות עשוי מכותנה ממוחזרת."],
 ["Wash this ___ by hand in cold water to keep its color.", "כבסו את הבגד הזה ביד במים קרים כדי לשמור על הצבע שלו."],
-["In the museum, we saw a ___ worn by a queen three hundred years ago.", "במוזיאון ראינו בגד שלבשה מלכה לפני שלוש מאות שנה."],
+["In the museum, we saw a silk ___ worn by a queen three hundred years ago.", "במוזיאון ראינו בגד משי שלבשה מלכה לפני שלוש מאות שנה."],
 ["A warm outer ___ is essential when hiking in the mountains in winter.", "בגד עליון חם הוא הכרחי בטיול בהרים בחורף."]
 ],
 "v:genesis": [
@@ -691,12 +691,12 @@
 ],
 "v:genuine": [
 ["Her apology seemed ___, so we decided to forgive her.", "ההתנצלות שלה נראתה כנה, ולכן החלטנו לסלוח לה."],
-["The museum confirmed that the painting is a ___ Van Gogh.", "המוזיאון אישר שהציור הוא ואן גוך אמיתי."],
-["He showed a ___ interest in the problems of the workers.", "הוא גילה עניין אמיתי בבעיות של העובדים."],
+["The museum confirmed that the Van Gogh painting is ___ and not a copy.", "המוזיאון אישר שציור ואן גוך הוא אמיתי ולא העתק."],
+["He showed a deep and ___ interest in the problems of the workers.", "הוא גילה עניין עמוק ואמיתי בבעיות של העובדים."],
 ["Customers can tell the difference between ___ service and fake smiles.", "לקוחות יודעים להבחין בין שירות כן לבין חיוכים מזויפים."]
 ],
 "v:gesture": [
-["As a ___ of peace, the two leaders shook hands in front of the cameras.", "כמחווה של שלום, שני המנהיגים לחצו ידיים מול המצלמות."],
+["As a friendly ___ of peace, the two leaders shook hands in front of the cameras.", "כמחווה ידידותית של שלום, שני המנהיגים לחצו ידיים מול המצלמות."],
 ["The driver made an angry ___ with his hand at the slow car.", "הנהג עשה תנועת יד כועסת כלפי המכונית האיטית."],
 ["Speakers use a simple ___ like pointing to help explain their ideas.", "דוברים משתמשים בתנועת יד פשוטה כמו הצבעה כדי לעזור להסביר את רעיונותיהם."],
 ["Sending flowers was a small ___, but it meant a lot to her.", "שליחת הפרחים הייתה מחווה קטנה, אבל היא הייתה חשובה לה מאוד."]
@@ -709,7 +709,7 @@
 ],
 "v:glimpse": [
 ["Through the clouds, the pilots got a brief ___ of the runway.", "מבעד לעננים, הטייסים הבחינו לרגע במסלול הנחיתה."],
-["Hikers who reach the summit may get a ___ of the sea on a clear day.", "מטיילים שמגיעים לפסגה עשויים להציץ בים ביום בהיר."],
+["Hikers who reach the summit may get a brief ___ of the sea on a clear day.", "מטיילים שמגיעים לפסגה עשויים להציץ בים ביום בהיר."],
 ["The lookout soldiers had only a quick ___ of the enemy vehicle before it disappeared.", "התצפיתנים קלטו רק הצצה מהירה של רכב האויב לפני שנעלם."],
 ["The documentary gives viewers a rare ___ of life inside a prison.", "הסרט התיעודי מעניק לצופים הצצה נדירה לחיים בתוך כלא."]
 ]

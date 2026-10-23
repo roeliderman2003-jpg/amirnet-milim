@@ -1,11 +1,11 @@
 {
  "v:modest": [
   [
-   "Despite his huge fortune, the businessman lives in a ___ apartment with old furniture.",
-   "למרות הונו העצום, איש העסקים גר בדירה צנועה עם רהיטים ישנים."
+   "Despite his huge fortune, the businessman lives in a small, ___ apartment with old furniture.",
+   "למרות הונו העצום, איש העסקים גר בדירה קטנה וצנועה עם רהיטים ישנים."
   ],
   [
-   "The new policy led to only a ___ drop in unemployment, about half a percent.",
+   "The new policy led to only a very ___ drop in unemployment, about half a percent.",
    "המדיניות החדשה הובילה לירידה צנועה בלבד באבטלה, כחצי אחוז."
   ],
   [
@@ -13,14 +13,14 @@
    "המדענית המפורסמת הייתה צנועה מכדי להזכיר את תפקידה שלה בתגלית."
   ],
   [
-   "Our club set a ___ goal for the season: simply to avoid finishing last.",
+   "Our club set a very ___ goal for the season: simply to avoid finishing last.",
    "המועדון שלנו הציב מטרה צנועה לעונה: פשוט לא לסיים במקום האחרון."
   ]
  ],
  "v:modification": [
   [
-   "After complaints from drivers, the city approved a ___ to the timing of the traffic lights.",
-   "בעקבות תלונות של נהגים, העירייה אישרה שינוי בתזמון הרמזורים."
+   "After complaints from drivers, the city approved a small ___ to the timing of the traffic lights.",
+   "בעקבות תלונות של נהגים, העירייה אישרה שינוי קטן בתזמון הרמזורים."
   ],
   [
    "Any ___ to the contract must be signed by both sides.",
@@ -55,11 +55,11 @@
  ],
  "v:momentary": [
   [
-   "A ___ loss of concentration caused the driver to miss the exit.",
+   "One ___ loss of concentration caused the driver to miss the exit.",
    "איבוד ריכוז רגעי גרם לנהג לפספס את היציאה."
   ],
   [
-   "The stock market suffered only a ___ drop before prices rose again.",
+   "The stock market suffered only a short, ___ drop before prices rose again.",
    "שוק המניות סבל מירידה רגעית בלבד לפני שהמחירים עלו שוב."
   ],
   [
@@ -91,11 +91,11 @@
  ],
  "v:mutual": [
   [
-   "The two countries signed a ___ defense agreement, promising to help each other if attacked.",
+   "The two countries signed a formal ___ defense agreement, promising to help each other if attacked.",
    "שתי המדינות חתמו על הסכם הגנה הדדי, והבטיחו לעזור זו לזו אם יותקפו."
   ],
   [
-   "Dan and I met through a ___ friend who invited us both to dinner.",
+   "Dan and I met through our ___ friend, who invited us both to dinner.",
    "דן ואני הכרנו דרך חבר משותף שהזמין את שנינו לארוחת ערב."
   ],
   [
@@ -109,7 +109,7 @@
  ],
  "v:necessity": [
   [
-   "For many families, a car is a ___ because no bus reaches their village.",
+   "For many families, a car is a real ___ because no bus reaches their village.",
    "עבור משפחות רבות, מכונית היא הכרח כי אף אוטובוס לא מגיע לכפר שלהן."
   ],
   [
@@ -117,12 +117,12 @@
    "הרופא הדגיש את ההכרח בנטילת התרופה מדי יום."
   ],
   [
-   "During the war, rationing food became a ___ rather than a choice.",
-   "במהלך המלחמה, הקצבת המזון הפכה להכרח ולא לבחירה."
+   "During the war, rationing food became a matter of ___ rather than a choice.",
+   "במהלך המלחמה, הקצבת המזון הפכה לעניין של הכרח ולא לבחירה."
   ],
   [
-   "Learning English is now a ___ for anyone who wants to work in high-tech.",
-   "לימוד אנגלית הוא כיום הכרח עבור כל מי שרוצה לעבוד בהייטק."
+   "Learning English is now a basic ___ for anyone who wants to work in high-tech.",
+   "לימוד אנגלית הוא כיום הכרח בסיסי עבור כל מי שרוצה לעבוד בהייטק."
   ]
  ],
  "v:neglect": [
@@ -181,19 +181,19 @@
  ],
  "v:noble": [
   [
-   "Fighting for the rights of refugees is a ___ cause that deserves our support.",
+   "Fighting for the rights of refugees is a truly ___ cause that deserves our support.",
    "המאבק למען זכויות פליטים הוא מטרה אצילית הראויה לתמיכתנו."
   ],
   [
-   "The prince came from a ___ family that had ruled the region for centuries.",
-   "הנסיך בא ממשפחת אצילים ששלטה באזור במשך מאות שנים."
+   "The prince came from an old ___ family that had ruled the region for centuries.",
+   "הנסיך בא ממשפחת אצילים עתיקה ששלטה באזור במשך מאות שנים."
   ],
   [
-   "Despite losing the final, the team showed a ___ spirit and congratulated the winners.",
+   "Despite losing the final, the team showed a truly ___ spirit and congratulated the winners.",
    "למרות ההפסד בגמר, הקבוצה הפגינה רוח אצילית ובירכה את המנצחים."
   ],
   [
-   "Gold is called a ___ metal because it does not rust or react easily.",
+   "Gold is called the ___ metal because it does not rust or react easily.",
    "זהב נקרא מתכת אצילה כי הוא אינו מחליד ואינו מגיב בקלות."
   ]
  ],
@@ -217,7 +217,7 @@
  ],
  "v:nominal": [
   [
-   "The museum charges only a ___ entrance fee of one shekel for students.",
+   "The museum charges only a tiny ___ entrance fee of one shekel for students.",
    "המוזיאון גובה דמי כניסה סמליים של שקל אחד בלבד מסטודנטים."
   ],
   [
@@ -225,7 +225,7 @@
    "המלכה היא ראשת המדינה באופן סמלי, אך ראש הממשלה מחזיק בכוח האמיתי."
   ],
   [
-   "The old farmer sold his land to the town for a ___ sum because he loved the community.",
+   "The old farmer sold his land to the town for a purely ___ sum because he loved the community.",
    "האיכר הזקן מכר את אדמתו לעיר בסכום סמלי כי אהב את הקהילה."
   ],
   [
@@ -293,8 +293,8 @@
    "אמא תרזה הייתה נזירה קתולית שטיפלה בעניים בהודו."
   ],
   [
-   "At eighteen, she left her family and became a ___ in a monastery near Jerusalem.",
-   "בגיל שמונה עשרה היא עזבה את משפחתה והפכה לנזירה במנזר ליד ירושלים."
+   "At eighteen, she left her family and became a Catholic ___ in a monastery near Jerusalem.",
+   "בגיל שמונה עשרה היא עזבה את משפחתה והפכה לנזירה קתולית במנזר ליד ירושלים."
   ],
   [
    "The old ___ in a black and white robe taught music at the girls' school.",
@@ -343,8 +343,8 @@
  ],
  "v:objection": [
   [
-   "The lawyer raised an ___ when the witness began to guess instead of answering.",
-   "עורך הדין הגיש התנגדות כאשר העד התחיל לנחש במקום לענות."
+   "The lawyer raised a formal ___ when the witness began to guess instead of answering.",
+   "עורך הדין הגיש התנגדות רשמית כאשר העד התחיל לנחש במקום לענות."
   ],
   [
    "Residents voiced a strong ___ to the plan to build a factory next to the school.",
@@ -379,7 +379,7 @@
  ],
  "v:obscure": [
   [
-   "The professor found the answer in an ___ article published in a tiny journal.",
+   "The professor found the answer in a very ___ article published in a tiny journal.",
    "הפרופסור מצא את התשובה במאמר עלום שפורסם בכתב עת קטנטן."
   ],
   [
@@ -391,7 +391,7 @@
    "הלהקה הייתה לא מוכרת במשך שנים עד שאחד משיריה הפך לוויראלי ברשת."
   ],
   [
-   "The team won thanks to an ___ rule in the league that even the referee had forgotten.",
+   "The team won thanks to a little-known, ___ rule in the league that even the referee had forgotten.",
    "הקבוצה ניצחה בזכות כלל לא מוכר בליגה שאפילו השופט שכח."
   ]
  ],
@@ -523,15 +523,15 @@
  ],
  "v:opportune": [
   [
-   "The thieves chose an ___ time to strike, when the guards were changing shifts.",
-   "הגנבים בחרו זמן מתאים לפעול, כאשר השומרים החליפו משמרות."
+   "The thieves chose the most ___ time to strike, when the guards were changing shifts.",
+   "הגנבים בחרו את הזמן המתאים ביותר לפעול, כאשר השומרים החליפו משמרות."
   ],
   [
-   "The rain came at an ___ moment, just as the farmers were planting their seeds.",
+   "The rain came at the most ___ moment, just as the farmers were planting their seeds.",
    "הגשם הגיע ברגע המתאים, בדיוק כשהחקלאים זרעו את הזרעים שלהם."
   ],
   [
-   "This is not an ___ time to raise taxes, since many families are already struggling.",
+   "This is not a very ___ time to raise taxes, since many families are already struggling.",
    "זה לא זמן מתאים להעלות מיסים, שכן משפחות רבות כבר נאבקות."
   ],
   [
@@ -667,8 +667,8 @@
  ],
  "v:outgrowth": [
   [
-   "The internet was partly an ___ of military research during the Cold War.",
-   "האינטרנט היה בחלקו תוצר של מחקר צבאי בתקופת המלחמה הקרה."
+   "The internet was partly a direct ___ of military research during the Cold War.",
+   "האינטרנט היה בחלקו תוצר ישיר של מחקר צבאי בתקופת המלחמה הקרה."
   ],
   [
    "Her interest in medicine was a natural ___ of years spent caring for her sick father.",
@@ -679,8 +679,8 @@
    "ביולוגים בדקו גידול מוזר על גזע העץ שנראה כמו יד קטנה."
   ],
   [
-   "The protest movement grew as an ___ of anger over rising housing prices.",
-   "תנועת המחאה צמחה כתוצר של הזעם על עליית מחירי הדיור."
+   "The protest movement grew as a natural ___ of anger over rising housing prices.",
+   "תנועת המחאה צמחה כתוצר טבעי של הזעם על עליית מחירי הדיור."
   ]
  ],
  "v:outline": [
@@ -697,8 +697,8 @@
    "הילדים העתיקו את קווי המתאר של ידיהם על נייר וצבעו אותם."
   ],
   [
-   "Before the trip, the guide sent us an ___ of the route and the daily schedule.",
-   "לפני הטיול, המדריך שלח לנו תוכנית כללית של המסלול ולוח הזמנים היומי."
+   "Before the trip, the guide sent us a short ___ of the route and the daily schedule.",
+   "לפני הטיול, המדריך שלח לנו תוכנית כללית קצרה של המסלול ולוח הזמנים היומי."
   ]
  ],
  "v:outrage": [
@@ -757,8 +757,8 @@
  ],
  "v:pedestrian": [
   [
-   "The driver slowed down when he saw a ___ stepping onto the crosswalk.",
-   "הנהג האט כשראה הולך רגל עולה על מעבר החצייה."
+   "The driver slowed down when he saw an elderly ___ stepping onto the crosswalk.",
+   "הנהג האט כשראה הולך רגל מבוגר עולה על מעבר החצייה."
   ],
   [
    "Smartphones make the average ___ less careful when crossing busy roads.",
@@ -905,16 +905,16 @@
    "עכברים הם מזיק נפוץ בבניינים ישנים, במיוחד בחורף."
   ],
   [
-   "My little brother is such a ___; he never stops bothering me while I study.",
-   "אחי הקטן הוא כזה מטרד; הוא אף פעם לא מפסיק להטריד אותי כשאני לומד."
+   "My little brother is a real ___; he never stops bothering me while I study.",
+   "אחי הקטן הוא מטרד אמיתי; הוא אף פעם לא מפסיק להטריד אותי כשאני לומד."
   ],
   [
    "Instead of using poison, some farmers bring birds that eat the ___ attacking their crops.",
    "במקום להשתמש ברעל, כמה חקלאים מביאים ציפורים שאוכלות את המזיק התוקף את היבולים שלהם."
   ],
   [
-   "The cockroach is a ___ that can survive almost anywhere, even in very clean kitchens.",
-   "התיקן הוא מזיק שיכול לשרוד כמעט בכל מקום, אפילו במטבחים נקיים מאוד."
+   "The cockroach is a tough ___ that can survive almost anywhere, even in very clean kitchens.",
+   "התיקן הוא מזיק עמיד שיכול לשרוד כמעט בכל מקום, אפילו במטבחים נקיים מאוד."
   ]
  ],
  "v:petulant": [
@@ -923,8 +923,8 @@
    "הכוכב הרגזן סירב להופיע כי חדר ההלבשה שלו היה קטן מדי."
   ],
   [
-   "When the referee showed him a yellow card, the player kicked the ball away in a ___ manner.",
-   "כשהשופט הראה לו כרטיס צהוב, השחקן בעט בכדור הצידה בצורה קפריזית."
+   "When the referee showed him a yellow card, the player kicked the ball away in a childish, ___ manner.",
+   "כשהשופט הראה לו כרטיס צהוב, השחקן בעט בכדור הצידה בצורה ילדותית וקפריזית."
   ],
   [
    "Her ___ reply showed that she was still angry about losing the argument.",
@@ -937,7 +937,7 @@
  ],
  "v:pioneer": [
   [
-   "As a ___ of early aviation, she flew alone across the ocean in 1932.",
+   "As a true ___ of early aviation, she flew alone across the ocean in 1932.",
    "כחלוצה של התעופה המוקדמת, היא טסה לבדה מעבר לאוקיינוס ב-1932."
   ],
   [
@@ -945,12 +945,12 @@
    "כל חלוץ שהגיע לעמק יזרעאל נאלץ לייבש ביצות ולהילחם במלריה."
   ],
   [
-   "The small company became a ___ in solar energy long before it was popular.",
-   "החברה הקטנה הפכה לחלוצה באנרגיה סולארית הרבה לפני שזה היה פופולרי."
+   "The small company became a leading ___ in solar energy long before it was popular.",
+   "החברה הקטנה הפכה לחלוצה מובילה באנרגיה סולארית הרבה לפני שזה היה פופולרי."
   ],
   [
-   "The surgeon was a ___ who performed the country's first heart transplant.",
-   "המנתח היה חלוץ שביצע את השתלת הלב הראשונה במדינה."
+   "The surgeon was a medical ___ who performed the country's first heart transplant.",
+   "המנתח היה חלוץ רפואי שביצע את השתלת הלב הראשונה במדינה."
   ]
  ],
  "v:portion": [
@@ -1093,8 +1093,8 @@
    "כנסיית הכפר שכרה מטיף צעיר שנשא דרשות קצרות ותוססות."
   ],
   [
-   "My grandfather sounds like a ___ whenever he lectures us about hard work.",
-   "סבא שלי נשמע כמו מטיף בכל פעם שהוא מרצה לנו על עבודה קשה."
+   "My grandfather sounds like a church ___ whenever he lectures us about hard work.",
+   "סבא שלי נשמע כמו מטיף בכנסייה בכל פעם שהוא מרצה לנו על עבודה קשה."
   ]
  ],
  "v:precede": [
@@ -1171,8 +1171,8 @@
  ],
  "v:prescription": [
   [
-   "You cannot buy this strong painkiller without a ___ from your doctor.",
-   "אי אפשר לקנות את משכך הכאבים החזק הזה בלי מרשם מהרופא שלך."
+   "You cannot buy this strong painkiller without a valid ___ from your doctor.",
+   "אי אפשר לקנות את משכך הכאבים החזק הזה בלי מרשם תקף מהרופא שלך."
   ],
   [
    "The pharmacist checked the ___ carefully before handing over the pills.",
@@ -1261,7 +1261,7 @@
  ],
  "v:profound": [
   [
-   "The death of her grandmother left a ___ sadness that lasted for months.",
+   "The death of her grandmother left a deep, ___ sadness that lasted for months.",
    "מות סבתה הותיר עצב עמוק שנמשך חודשים."
   ],
   [
@@ -1333,20 +1333,20 @@
  ],
  "v:prosperous": [
   [
-   "Venice was a ___ trading city that grew rich from ships and markets.",
-   "ונציה הייתה עיר מסחר משגשגת שהתעשרה מספינות ושווקים."
+   "Venice was a rich and ___ trading city that grew wealthy from ships and markets.",
+   "ונציה הייתה עיר מסחר עשירה ומשגשגת שהתעשרה מספינות ושווקים."
   ],
   [
    "We wish you a happy and ___ new year.",
    "אנו מאחלים לכם שנה חדשה שמחה ומשגשגת."
   ],
   [
-   "His parents came from a ___ family that owned several hotels.",
+   "His parents came from a very ___ family that owned several hotels.",
    "הוריו באו ממשפחה אמידה שהחזיקה בכמה מלונות."
   ],
   [
-   "After years of drought, the farmers finally enjoyed a ___ season with rich harvests.",
-   "אחרי שנים של בצורת, החקלאים נהנו סוף סוף מעונה משגשגת עם יבולים עשירים."
+   "After years of drought, the farmers finally enjoyed a long, ___ season with rich harvests.",
+   "אחרי שנים של בצורת, החקלאים נהנו סוף סוף מעונה ארוכה ומשגשגת עם יבולים עשירים."
   ]
  ],
  "v:provisional": [
@@ -1355,12 +1355,12 @@
    "התוצאות זמניות ועשויות להשתנות לאחר שכל הקולות ייספרו."
   ],
   [
-   "New drivers receive a ___ license and must drive with an adult for three months.",
-   "נהגים חדשים מקבלים רישיון זמני וחייבים לנהוג עם מבוגר במשך שלושה חודשים."
+   "New drivers first receive their ___ license and must drive with an adult for three months.",
+   "נהגים חדשים מקבלים תחילה רישיון זמני וחייבים לנהוג עם מבוגר במשך שלושה חודשים."
   ],
   [
-   "The two sides reached a ___ agreement, but the final details are still being discussed.",
-   "שני הצדדים הגיעו להסכם זמני, אך הפרטים הסופיים עדיין נדונים."
+   "The two sides reached a short-term, ___ agreement, but the final details are still being discussed.",
+   "שני הצדדים הגיעו להסכם זמני לטווח קצר, אך הפרטים הסופיים עדיין נדונים."
   ],
   [
    "Refugees lived in ___ camps for years after the earthquake.",
@@ -1431,8 +1431,8 @@
    "אסטרונומים תוהים לגבי אות מוזר שחוזר כל שישה עשר יום."
   ],
   [
-   "My dog gave me a ___ look when I started singing in the kitchen.",
-   "הכלב שלי נתן בי מבט תוהה כשהתחלתי לשיר במטבח."
+   "My dog gave me a strange, ___ look when I started singing in the kitchen.",
+   "הכלב שלי נתן בי מבט מוזר ותוהה כשהתחלתי לשיר במטבח."
   ],
   [
    "Customers were ___ to find the shop closed in the middle of a weekday.",
@@ -1567,11 +1567,11 @@
  ],
  "v:reciprocal": [
   [
-   "The two universities have a ___ agreement allowing students to study at either campus.",
+   "The two universities have a formal ___ agreement allowing students to study at either campus.",
    "לשתי האוניברסיטאות יש הסכם הדדי המאפשר לסטודנטים ללמוד בכל אחד מהקמפוסים."
   ],
   [
-   "Bees and flowers share a ___ relationship: each helps the other survive.",
+   "Bees and flowers share a truly ___ relationship: each helps the other survive.",
    "לדבורים ולפרחים יש מערכת יחסים הדדית: כל אחד עוזר לשני לשרוד."
   ],
   [
@@ -1705,8 +1705,8 @@
    "השיקום של הנהר המזוהם נמשך חמש עשרה שנה ועלה מיליונים."
   ],
   [
-   "After years of drug addiction, he entered a ___ clinic and finally got clean.",
-   "אחרי שנים של התמכרות לסמים, הוא נכנס למרפאת שיקום ולבסוף נגמל."
+   "After years of drug addiction, he entered a private ___ clinic and finally got clean.",
+   "אחרי שנים של התמכרות לסמים, הוא נכנס למרפאת שיקום פרטית ולבסוף נגמל."
   ]
  ],
  "v:relate": [
@@ -1813,8 +1813,8 @@
    "החתול שלי לא מוכן לצאת החוצה כשיורד גשם."
   ],
   [
-   "He gave a ___ smile and agreed to wash the dishes again.",
-   "הוא חייך חיוך מהוסס והסכים לשטוף שוב את הכלים."
+   "He gave a small, ___ smile and agreed to wash the dishes again.",
+   "הוא חייך חיוך קטן ומהוסס והסכים לשטוף שוב את הכלים."
   ]
  ],
  "v:remainder": [
@@ -1855,16 +1855,16 @@
  ],
  "v:remnant": [
   [
-   "Archaeologists found a ___ of a Roman road buried under the parking lot.",
-   "ארכיאולוגים מצאו שריד של דרך רומית קבור מתחת לחניון."
+   "Archaeologists found a well-preserved ___ of a Roman road buried under the parking lot.",
+   "ארכיאולוגים מצאו שריד שמור היטב של דרך רומית קבור מתחת לחניון."
   ],
   [
-   "The tailor made a small bag from a ___ of expensive silk.",
+   "The tailor made a small bag from a leftover ___ of expensive silk.",
    "החייט הכין תיק קטן משארית של משי יקר."
   ],
   [
-   "This custom is a ___ of the days when the region was ruled by the Ottomans.",
-   "המנהג הזה הוא שריד מהימים שבהם האזור נשלט על ידי העות׳מאנים."
+   "This custom is a living ___ of the days when the region was ruled by the Ottomans.",
+   "המנהג הזה הוא שריד חי מהימים שבהם האזור נשלט על ידי העות׳מאנים."
   ],
   [
    "Only a small ___ of the once-great army returned home after the winter campaign.",
@@ -2003,8 +2003,8 @@
    "ההחלטה שלי לשנה החדשה היא לקרוא ספר אחד בכל חודש."
   ],
   [
-   "The UN Security Council adopted a ___ calling for an immediate ceasefire.",
-   "מועצת הביטחון של האו״ם קיבלה החלטה הקוראת להפסקת אש מיידית."
+   "The UN Security Council adopted a new ___ calling for an immediate ceasefire.",
+   "מועצת הביטחון של האו״ם קיבלה החלטה חדשה הקוראת להפסקת אש מיידית."
   ],
   [
    "Both sides hope for a peaceful ___ of the border dispute.",
@@ -2053,19 +2053,19 @@
  ],
  "v:restatement": [
   [
-   "The new law is not a change but simply a ___ of the old rules in clearer language.",
-   "החוק החדש אינו שינוי אלא רק ניסוח מחדש של הכללים הישנים בשפה ברורה יותר."
+   "The new law is not a change but simply a clearer ___ of the old rules.",
+   "החוק החדש אינו שינוי אלא רק ניסוח מחדש ברור יותר של הכללים הישנים."
   ],
   [
    "The last paragraph of an essay is often a short ___ of its main argument.",
    "הפסקה האחרונה של חיבור היא לעתים קרובות ניסוח מחדש קצר של הטיעון המרכזי שלו."
   ],
   [
-   "In the reading test, the correct answer is usually a ___ of a sentence from the text.",
+   "In the reading test, the correct answer is usually a simple ___ of a sentence from the text.",
    "במבחן ההבנה, התשובה הנכונה היא בדרך כלל ניסוח מחדש של משפט מהטקסט."
   ],
   [
-   "To check understanding, the nurse asked the patient for a ___ of the instructions in his own words.",
+   "To check understanding, the nurse asked the patient for a short ___ of the instructions in his own words.",
    "כדי לבדוק הבנה, האחות ביקשה מהמטופל ניסוח מחדש של ההוראות במילים שלו."
   ]
  ],
@@ -2119,8 +2119,8 @@
    "הסופר כותב על אירועים כואבים באיפוק, בלי לנסות אף פעם לזעזע את הקורא."
   ],
   [
-   "The new law places a ___ on how much a landlord can raise the rent.",
-   "החוק החדש מטיל מגבלה על השיעור שבו משכיר יכול להעלות את שכר הדירה."
+   "The new law places a strict ___ on how much a landlord can raise the rent.",
+   "החוק החדש מטיל מגבלה נוקשה על השיעור שבו משכיר יכול להעלות את שכר הדירה."
   ]
  ],
  "v:restrict": [

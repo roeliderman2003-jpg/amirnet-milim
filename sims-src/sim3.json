@@ -258,8 +258,8 @@
           "o": [
             "The way people describe an event can later change how they remember it.",
             "People remember films more accurately than real-life events.",
-            "Listeners usually adopt the speaker's opinion of a character.",
-            "Volunteers deliberately lied in order to please their listeners."
+            "Listeners usually adopt the speaker's opinion of a character after hearing the story.",
+            "Volunteers deliberately lied about the film in order to please their listeners."
           ],
           "a": 0,
           "ex": "המתנדבים שתיארו את הדמות באופן שלילי זכרו אותה כך גם שבועות אחר כך, «even when asked to recall the film itself». כלומר הגרסה שסיפרו שינתה את הזיכרון. לא נאמר שהם שיקרו בכוונה.",
@@ -277,7 +277,7 @@
         {
           "q": "The main purpose of the last paragraph is to",
           "o": [
-            "describe a new experiment carried out on witnesses",
+            "describe a new experiment carried out on witnesses who had repeated their stories",
             "prove that human memory should never be trusted",
             "point out both a practical risk and an advantage of memory's flexibility",
             "argue that courts should stop relying on witnesses"
@@ -303,7 +303,7 @@
         {
           "q": "Although the new medication reduced symptoms in most patients, doctors remain cautious because its long-term effects have not yet been studied in sufficient depth.",
           "o": [
-            "Because the new medication reduced symptoms in most patients, doctors are confident that its long-term effects will also be safe for them.",
+            "Because the new medication reduced symptoms in most patients, doctors are confident that its long-term effects will also prove to be safe for them.",
             "The new medication helped only a few patients, so doctors will remain cautious until its long-term effects are studied in depth.",
             "Doctors have stopped prescribing the new medication to most patients, since recent studies have shown that its long-term effects are harmful.",
             "Doctors are still careful about the new medication, even though it helped most patients, since its long-term effects have not been studied enough."

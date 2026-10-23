@@ -127,7 +127,7 @@ const S3 = {
   "simultaneously|tim": ["The concert was shown on TV and online ___, so fans everywhere could watch it live.", "ההופעה שודרה בטלוויזיה וברשת בו-זמנית, כך שמעריצים בכל מקום יכלו לצפות בה בשידור חי."],
   "formerly|tim": ["The hotel, ___ a royal palace, still has its original gold ceilings.", "המלון, שהיה בעבר ארמון מלכותי, עדיין שומר על תקרות הזהב המקוריות שלו."],
   "thereafter|tim": ["The company opened its first shop in 1990 and grew very quickly ___.", "החברה פתחה את החנות הראשונה שלה ב-1990, ולאחר מכן גדלה מהר מאוד."],
-  "hitherto|tim": ["The old letters revealed a ___ secret chapter in the king's life.", "המכתבים הישנים חשפו פרק שהיה סודי עד כה בחייו של המלך."],
+  "hitherto|tim": ["The old letters revealed the ___ secret chapter in the king's life.", "המכתבים הישנים חשפו פרק שהיה סודי עד כה בחייו של המלך."],
   "henceforth|tim": ["The bank announced a new policy this morning. ___, customers will pay no fees for online transfers.", "הבנק הודיע הבוקר על מדיניות חדשה. מעתה והלאה, הלקוחות לא ישלמו עמלות על העברות ברשת."],
   "upon|tim": ["___ entering the temple, visitors must take off their shoes.", "עם הכניסה למקדש, המבקרים חייבים לחלוץ את הנעליים."],
 

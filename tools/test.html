@@ -1,5 +1,5 @@
 <!doctype html>
-<!-- בדיקה מקומית: האפליקציה עם כניסה ושמירה מדומות, ו-drive.js שמריץ שיעורים לבד. פותחים: /tools/test.html?n=60 -->
+<!-- בדיקה מקומית: האפליקציה עם כניסה, שמירה, גישה ותשלום מדומים, ו-drive.js שמריץ שיעורים לבד. פותחים: /tools/test.html (גישה מלאה) או /tools/test.html?free=1 -->
 <html lang="he" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <base href="../">
 <script>
@@ -7,9 +7,18 @@ window.__errors = [];
 window.addEventListener('error', e => window.__errors.push(String(e.message)));
 window.__saved = null;
 window.supabase = { createClient: () => ({
-  auth: { getSession: async () => ({ data: { session: { user: { id: 'test-user', email: 'test@example.com', user_metadata: { full_name: 'בודק אוטומטי' } } } } }), signOut: async () => ({}), signInWithOAuth: async () => ({}) },
-  rpc: async (fn, body) => { if (fn === 'amirnet_save') { window.__saved = body.p_data; return { data: { ok: true } }; } return { data: { data: window.__saved } }; },
+  auth: { getSession: async () => ({ data: { session: /out=1/.test(location.search) ? null : { user: { id: 'test-user', email: 'test@example.com', user_metadata: { full_name: 'בודק אוטומטי' } } } } }), signOut: async () => ({}), signInWithOAuth: async () => ({}) },
+  rpc: async (fn, body) => {
+    if (fn === 'amirnet_save') { window.__saved = body.p_data; return { data: { ok: true } }; }
+    // גישה מלאה כברירת מחדל; ?free=1 בודק את הגרסה החינמית
+    if (fn === 'amirnet_me') return { data: FREE ? { active: false } : { active: true, plan: 'm4', valid_until: '2027-02-01T00:00:00Z' } };
+    if (fn === 'amirnet_log' || fn === 'amirnet_real_score') { (window.__logs = window.__logs || []).push([fn, body]); return { data: { ok: true } }; }
+    return { data: { data: window.__saved } };
+  },
+  storage: { from: () => ({ download: async () => { const r = await fetch('paid/paid.js'); return r.ok ? { data: await r.blob() } : { error: new Error('no paid') }; } }) },
+  functions: { invoke: async (fn, o) => { window.__invoke = [fn, o]; return { data: { url: location.href.split('#')[0] + '#grow-test' } }; } },
 }) };
+const FREE = /free=1/.test(location.search);
 try { localStorage.clear(); } catch (e) {}
 </script>
 </head><body><div id="app"></div>

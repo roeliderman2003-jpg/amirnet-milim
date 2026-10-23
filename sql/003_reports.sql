@@ -1,5 +1,5 @@
 -- דיווח על טעות מתוך האפליקציה: נשמר בטבלה, ונשלח לרועי בווצאפ מיד (דרך roee-context).
--- הטוקן של roee-context שמור ב-vault בשם amirnet_ctx_token (לא בקוד).
+-- הטוקן, הכתובת ומספר הווצאפ שמורים ב-vault (amirnet_ctx_token, amirnet_ctx_url, amirnet_wa_chat), לא בקוד. הגרסה העדכנית בקובץ 004.
 create extension if not exists pg_net;
 
 create table if not exists amirnet.reports (
@@ -45,9 +45,9 @@ begin
       || coalesce('הערה: ' || nullif(p_message, ''), 'הערה: (בלי)');
     if tok is not null then
       perform net.http_post(
-        url := 'https://wudafstgeulzvwbyxbpg.supabase.co/functions/v1/roee-context/t/whatsapp_send',
+        url := (select decrypted_secret from vault.decrypted_secrets where name = 'amirnet_ctx_url'),
         headers := jsonb_build_object('Authorization', 'Bearer ' || tok, 'Content-Type', 'application/json'),
-        body := jsonb_build_object('chat_id', '972552277213@c.us', 'message', msg));
+        body := jsonb_build_object('chat_id', (select decrypted_secret from vault.decrypted_secrets where name = 'amirnet_wa_chat'), 'message', msg));
     end if;
   end if;
   return jsonb_build_object('ok', true, 'id', rid);

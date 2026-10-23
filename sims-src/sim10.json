@@ -93,7 +93,7 @@
         {
           "q": "According to the second paragraph, plant-eating fish help reefs recover because they",
           "o": [
-            "carry coral larvae from healthy reefs to damaged ones",
+            "carry coral larvae on their bodies from healthy reefs to damaged ones",
             "feed on the algae that bleached corals expel",
             "protect young corals from fish that eat them",
             "keep the rock clear enough for larvae to attach to it"
@@ -113,7 +113,7 @@
           "q": "The third paragraph mainly serves to",
           "o": [
             "explain why branching corals withstand heat better than massive ones",
-            "show that all coral species need about a decade to recover",
+            "show that all coral species need about a decade to recover fully from a bleaching event",
             "warn that a reef that looks recovered may have changed in important ways",
             "describe how scientists determine the age of massive corals"
           ],
@@ -156,7 +156,7 @@
             "Although very few of the ancient city's original buildings came through the earthquake undamaged, archaeologists managed to recreate a large part of its plan using the foundations left under the ruins.",
             "Most of the ancient city's original buildings survived the earthquake undamaged, so archaeologists could easily reconstruct its layout without having to dig through the rubble to reach the foundations.",
             "Because only a few of the ancient city's buildings survived the earthquake, archaeologists could reconstruct barely any of its layout, even though the foundations beneath the rubble remained.",
-            "Archaeologists reconstructed the entire layout of the ancient city from its foundations, and as a result, a handful of its original buildings were restored to their condition before the earthquake."
+            "Archaeologists reconstructed the entire layout of the ancient city from its foundations, and as a result, a handful of its original buildings were restored to the condition they had been in before the earthquake."
           ],
           "a": 0,
           "ex": "«Only a handful» = רק מעט מאוד, ו-«much of its layout» = חלק גדול מהתוכנית. התשובה הנכונה שומרת על שתי הכמויות. «Most» הופך את «מעט» ל«רוב», ו-«barely any» הופך את «הרבה» ל«כמעט כלום».",

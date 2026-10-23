@@ -1,0 +1,36 @@
+# מפרסם לאתר רק את הקבצים הציבוריים. התוכן המלא (words.js, vocab.js, sims.js וכו') לא עולה לאתר:
+# הוא מגיע רק למי ששילם, מתוך Supabase Storage (paid.js). כדי שזה יעבוד: Settings → Pages → Source: GitHub Actions
+name: Deploy site
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Collect public files
+        run: |
+          mkdir _site
+          cp index.html app.js sim-app.js pro.js loader.js cloud.js free.js sw.js manifest.json icon.svg \
+             privacy.html terms.html accessibility.html _site/
+          cp -r icons vendor _site/
+          touch _site/.nojekyll
+          ls -la _site
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - id: deployment
+        uses: actions/deploy-pages@v4

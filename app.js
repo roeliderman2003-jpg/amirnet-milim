@@ -3,7 +3,7 @@
 // שני נושאים: מילות קישור (words.js) ואוצר מילים כללי (vocab.js). לכל נושא קבוצות, יחידות ויעד משלו.
 // ההתקדמות משותפת באותו חשבון, ולכן המזהים של אוצר המילים מתחילים ב-v:
 const TOPICS = {
-  link: { he: 'מילות קישור', icon: '🔗', raw: RAW, cats: CATS, days: 3, id: r => r[0] + '|' + r[2] },
+  link: { he: 'מילות קישור', icon: '🔗', raw: RAW, cats: CATS, days: 14, id: r => r[0] + '|' + r[2] },
   vocab: { he: 'אוצר מילים', icon: '📚', raw: VRAW, cats: VCATS, days: 30, id: r => 'v:' + r[0] },
 };
 const ALL = [];
@@ -95,7 +95,8 @@ const levelName = lvl => `שלב ${levelsOf().indexOf(lvl) + 1} · ${LEVEL_HE[lv
 
 // ===== שמירה וחשבון =====
 // כניסה עם Google בלבד (Supabase Auth). ההתקדמות נשמרת בדפדפן (עותק מהיר) ובענן; הגרסה עם savedAt החדש יותר מנצחת.
-const sb = supabase.createClient(CLOUD.url, CLOUD.key, { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
+// הלקוח נוצר ב-loader.js (שבודק גם אם יש גישה מלאה)
+const sb = window.sb || supabase.createClient(CLOUD.url, CLOUD.key, { auth: { flowType: 'pkce', detectSessionInUrl: true, persistSession: true } });
 const BYID = Object.fromEntries(ALL.map(w => [w.id, w]));
 let ME = null, booting = true;
 const userKey = () => KEY + ':' + ME.id;
@@ -111,6 +112,8 @@ const twinRank = x => x ? (x.known ? 99 : x.b) * 1e6 + (x.ok || 0) : -1;
 function migrate(s) {
   for (const id of Object.keys(s.w)) {
     if (BYID[id]) continue;
+    // בגרסה החינמית נטענות רק חלק מהמילים: לא מוחקים התקדמות של מילים שלא נטענו (למשל אם הגישה פגה או התוכן לא נטען)
+    if (!FULL) continue;
     const en = id.split('|')[0];
     const it = TOPICS.link.items.find(x => x.en === en && !s.w[x.id] && (x.cat === 'con' || x.cat === 'cnc'));
     if (it) s.w[it.id] = s.w[id];
@@ -147,6 +150,7 @@ async function push() {
   try {
     const r = await rpc('amirnet_save', { p_data: S });
     if (r.error === 'no_auth') return logout(true);
+    if (r.error === 'slow') return pushSoon(2500);
     setSync(r.ok ? 'ok' : 'err');
   } catch (e) { setSync('err'); }
 }
@@ -569,6 +573,7 @@ function matchTap(side, idx) {
   render();
 }
 function finish() {
+  logEv('lesson', { title: L.title, n: L.done, ok: L.ok, bad: L.bad });
   const k = dayKey();
   if (S.lastDay !== k) { S.streak = (S.lastDay && daysBetween(S.lastDay, k) === 1) ? S.streak + 1 : 1; S.lastDay = k; }
   save();
@@ -624,8 +629,9 @@ function renderHome() {
   const cuLeft = cu >= 0 ? UNITS[cu].items.filter(w => !S.w[w.id] || !reached(w)).length : 0, cuNew = cu >= 0 && UNITS[cu].items.some(w => !S.w[w.id]);
   h += cu >= 0
     ? `<button class="btn big" onclick="startLesson(buildLearn(${cu}),'יחידה ${cu + 1}')">${cuNew ? `המשך ללמוד · יחידה ${cu + 1}` : `חיזוק יחידה ${cu + 1} · עוד ${cuLeft} מילים עד המעבר`}</button>`
+    : !FULL ? `<button class="btn big" onclick="openBuy('home')">סיימת את היחידות החינמיות! לפתיחת כל ${TIER_META.units[topic]} היחידות</button>`
     : `<button class="btn big" onclick="startLesson(buildReview(),'חזרה')">הכרת את כל המילים! עכשיו חזרה עד שליטה</button>`;
-  h += `<div class="row"><button class="btn blue" onclick="startLesson(buildReview(),'חזרה')">🔁 חזרה${dueN ? ` (${dueN})` : ''}</button><button class="btn ghost" onclick="startLesson(buildWeak(),'נקודות חלשות')">🎯 חלשות${weakN ? ` (${weakN})` : ''}</button></div>`;
+  h += `<div class="row"><button class="btn blue" onclick="startLesson(buildReview(),'חזרה')">🔁 חזרה${dueN ? ` (${dueN})` : ''}</button><button class="btn ghost" onclick="startLesson(buildWeak(),'נקודות חלשות')">🎯 חלשות${weakN ? ` (${weakN})` : ''}</button></div>` + diagCard();
   let lvl = 0;
   UNITS.forEach((un, u) => {
     if (un.lvl !== lvl) { lvl = un.lvl; h += `<h2 class="sec lvlh"><span>${levelName(lvl)}</span>${!unlocked(u) ? `<button class="skip" onclick="jumpTo(${u})">⏭️ לדלג לשלב הזה</button>` : ''}</h2>`; }
@@ -637,6 +643,7 @@ function renderHome() {
       <span class="bar sm"><i style="width:${Math.round(inf.score * 100)}%;background:${inf.done ? 'var(--y)' : 'var(--g)'}"></i></span>
       <span class="us">${inf.intro < inf.total ? `${inf.intro}/${inf.total} מילים` : `${inf.passedN}/${inf.total} מוכרות${inf.passed ? ' ✓' : ''}`} · ${Math.round(inf.score * 100)}% שליטה</span></span></button>`;
   });
+  h += lockedUnits();
   h += `<p class="foot">יחידה נפתחת רק כשכל המילים ביחידה הקודמת «מוכרות» (עברו את שלב ${topic === 'link' ? 'הקבוצה' : 'התרגום לאנגלית'}). עד אז «המשך ללמוד» מחזק את היחידה הנוכחית. טעית? המילה תחזור בקרוב. צדקת? היא תחזור בעוד יותר זמן. ${topic === 'link' ? 'כל מילה עוברת מפירוש, לקבוצה ובסוף להשלמת משפטים.' : 'כל מילה עוברת מפירוש, לתרגום לאנגלית, למשפט, לכתיבת התרגום בעברית ובסוף לכתיבה באנגלית.'}</p>`;
   return h + '</main>' + navBar();
 }
@@ -804,12 +811,14 @@ function renderSettings() {
       <button class="btn ghost" onclick="logout()">התנתק</button></div>
     <div class="card"><label class="sw">יעד ל${TOPICS[topic].he}: <select class="sel" onchange="setPlan(this.value)">${[3, 7, 14, 21, 30, 45, 60, 90].map(n => `<option value="${n}" ${n === planDays() ? 'selected' : ''}>${n} ימים</option>`).join('')}</select></label></div>
     <div class="card"><div class="row"><button class="btn ghost" onclick="restartPlan()">התחל את ${planDays()} הימים מהיום</button><button class="btn red" onclick="resetAll()">איפוס מלא</button></div></div>
+    ${proSettings()}
   </main>` + navBar();
 }
 
 // ===== כניסה עם Google =====
 const G_LOGO = '<svg width="20" height="20" viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3C33.7 32.7 29.2 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.4-.4-3.5z"/><path fill="#FF3D00" d="M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.5H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.4-.4-3.5z"/></svg>';
 function renderLogin() {
+  if (typeof renderLanding === 'function') return renderLanding(booting);
   return `<main class="login">
     <img src="icon.svg" alt="" class="logo">
     <h1>מילים לאמירנט</h1>
@@ -866,7 +875,10 @@ async function boot() {
     const { data } = await sb.auth.getSession();
     if (data.session) {
       await enter(data.session.user);
-      if (location.search.includes('code=')) { history.replaceState(null, '', location.pathname); toast('שלום ' + ME.name.split(' ')[0] + '! 👋'); }
+      if (location.search.includes('code=')) { history.replaceState(null, '', location.pathname); toast('שלום ' + ME.name.split(' ')[0] + '! 👋'); logEv('login', {}); }
+      if (!S.onb) view = 'onb';
+      logEv('open', { paid_error: window.PAID_ERROR || null });
+      setTimeout(checkPaidReturn, 50);
     }
   } catch (e) {}
   booting = false;
@@ -886,7 +898,7 @@ function toast(t) {
 function render() {
   const app = document.getElementById('app');
   app.className = view;
-  app.innerHTML = !ME ? renderLogin() : view === 'lesson' && L ? renderLesson() : view === 'sims' && window.renderSims ? renderSims() : view === 'dict' ? renderDict() : view === 'settings' ? renderSettings() : renderHome();
+  app.innerHTML = !ME ? renderLogin() : view === 'onb' ? renderOnb() : view === 'lesson' && L ? renderLesson() : view === 'sims' && window.renderSims ? renderSims() : view === 'dict' ? renderDict() : view === 'settings' ? renderSettings() : renderHome();
   const ty = document.getElementById('ty');
   if (ty && !ty.disabled) setTimeout(() => ty.focus(), 50);
 }

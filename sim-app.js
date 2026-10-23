@@ -58,7 +58,7 @@ function simTheta(resp) {
 const simScale = t => Math.round(Math.max(50, Math.min(150, 100 + 25 * t)));
 function simResponses(chs, ans) { return chs.flatMap((c, ci) => c.qs.map((q, qi) => [SIM_B[c.tier], ans[ci][qi] === q.a])); }
 function simScoreHow() {
-  return 'המבחן מתאים את עצמו כמו אמירנט: הפרק הראשון ברמה בינונית, ולפי ההצלחה בכל פרק הפרק הבא קשה או קל יותר. הציון מחושב מכל התשובות ומהקושי של כל שאלה: תשובה נכונה בשאלה קשה מעלה יותר, וניחוש לא מוריד. מאל"ו מפרסם רק את העיקרון. מספר רמות הקושי (כאן 4), הנוסחה (מודל IRT עם סיכוי ניחוש של 25%) וההמרה לסולם הן הנחות שלנו, ולכן הציון מדויק בערך ±10.';
+  return 'המבחן מתאים את עצמו כמו אמירנט: הפרק הראשון ברמה בינונית, ולפי ההצלחה בכל פרק הפרק הבא קשה או קל יותר. הציון מחושב מכל התשובות ומהקושי של כל שאלה: תשובה נכונה בשאלה קשה מעלה יותר, וניחוש לא מוריד. מאל"ו מפרסם רק את העיקרון. מספר רמות הקושי (כאן 4), הנוסחה (מודל IRT עם סיכוי ניחוש של 25%) וההמרה לסולם הן הנחות שלנו. לכן זה ציון משוער בלבד (בערך ±15), ולא תחזית או התחייבות לציון במבחן עצמו.';
 }
 // מה חסר לרמה הבאה: כמה תשובות שגויות היו צריכות להיות נכונות (מהקשות, ששוות יותר) כדי לעבור את הסף
 function simNextGoal(rec, chs) {
@@ -113,6 +113,7 @@ function simEndChapter() {
 function simNextChapter() {
   clearInterval(simTick);
   if (SM.practice) return prFinish();
+  if (SM.diag) return diagNext();
   const c = SM.chs[SM.ch], ok = c.qs.filter((q, i) => SM.ans[SM.ch][i] === q.a).length;
   if (SM.ch < SIM_ORDER.length - 1) {
     const key = simNextKey(c.key, ok, c.qs.length), nx = simChapter(SM.form.slots[SM.ch + 1][key], key);
@@ -122,7 +123,7 @@ function simNextChapter() {
   simFinish();
 }
 function simQuit() {
-  if (SM && !SM.done && !confirm(SM.practice ? 'לצאת מהתרגול? התשובות של הפרק הזה לא יישמרו.' : 'לצאת מהסימולציה? התשובות של הניסיון הזה לא יישמרו.')) return;
+  if (SM && !SM.done && !confirm(SM.practice ? 'לצאת מהתרגול? התשובות של הפרק הזה לא יישמרו.' : SM.diag ? 'לצאת מהאבחון? אפשר להתחיל אותו שוב מהמסך הראשי.' : 'לצאת מהסימולציה? התשובות של הניסיון הזה לא יישמרו.')) return;
   clearInterval(simTick); SM = null; render(); window.scrollTo(0, 0);
 }
 
@@ -235,6 +236,8 @@ function prCard() {
       <span class="ut"><span class="uh">${t.he}</span><span class="us">${t.n} שאלות · ${t.min} דקות</span>
       <span class="us">${mine.length}/${list.length} פרקים נעשו${pct === null ? '' : ` · ${pct}% נכונות`}</span></span></button>`;
   }
+  const prLocked = TIER_META.practice - Object.keys(PRACTICE_SETS).length;
+  if (prLocked > 0 && typeof lockCard === 'function') h += lockCard(`עוד ${prLocked} פרקי תרגול`).replace('class="card lockc"', 'class="card lockc" style="margin-top:10px"');
   return h + `<label class="sw"><input type="checkbox" ${simStore().pnt ? 'checked' : ''} onchange="simStore().pnt=this.checked;save()"> בלי טיימר (תרגול רגוע)</label></div>`;
 }
 function renderPrResult() {
@@ -255,7 +258,7 @@ function renderPrResult() {
 // ----- מסכים -----
 function renderSims() {
   if (!SM) return renderSimList();
-  if (SM.done) return SM.practice ? renderPrResult() : renderSimResult();
+  if (SM.done) return SM.practice ? renderPrResult() : SM.diag ? renderDiagResult() : renderSimResult();
   if (SM.intro) return renderSimIntro();
   return renderSimQuestion();
 }
@@ -279,6 +282,7 @@ function renderSimList() {
       ${last ? `<button class="simtr" onclick="simShowLast('${f.id}')">תוצאות והסברים</button>` : ''}</div>`;
   });
   h += `</div>`;
+  if (typeof lockCard === 'function' && TIER_META.sims > SIM_FORMS.length) h += lockCard(`עוד ${TIER_META.sims - SIM_FORMS.length} סימולציות מלאות`);
   const words = Object.values(st.words).sort((a, b) => b.at - a.at);
   if (words.length) {
     h += `<h2 class="sec">💪 מילים לחיזוק מהסימולציות (${words.length})</h2><div class="card">
@@ -291,7 +295,7 @@ function renderSimList() {
 function renderSimIntro() {
   const c = SM.chs[SM.ch], t = SIM_TYPE[c.type];
   return `<main class="done simintro"><div class="trophy">${c.type === 'rc' ? '📄' : c.type === 'rs' ? '🔄' : '✏️'}</div>
-    <div class="un">${SM.practice ? `תרגול · רמה ${SIM_TIER_HE[c.tier]}` : `${SM.form.he} · פרק ${SM.ch + 1} מתוך ${SIM_ORDER.length}`}</div>
+    <div class="un">${SM.practice ? `תרגול · רמה ${SIM_TIER_HE[c.tier]}` : SM.diag ? `אבחון · שלב ${SM.ch + 1} מתוך ${SM.total}` : `${SM.form.he} · פרק ${SM.ch + 1} מתוך ${SIM_ORDER.length}`}</div>
     <h2>${t.he}</h2><p class="simhow">${t.how}</p>
     <div class="kpis"><div class="kpi b"><b>${c.qs.length}</b><span>שאלות</span></div><div class="kpi y"><b>${SM.notimer ? '∞' : t.min}</b><span>דקות</span></div></div>
     <button class="btn big" onclick="simBeginChapter()">להתחיל את הפרק</button>
@@ -301,7 +305,7 @@ function renderSimQuestion() {
   const c = SM.chs[SM.ch], q = c.qs[SM.qi], a = SM.ans[SM.ch][SM.qi], t = SIM_TYPE[c.type];
   const left = SM.end - Date.now(), last = SM.qi === c.qs.length - 1, pin = SM.pins[SM.ch + ':' + SM.qi];
   let h = `<header class="lhead simhead"><button class="x" onclick="simQuit()" aria-label="יציאה">✕</button>
-    <span class="simt">${SM.practice ? `תרגול · ${t.he} · ${SIM_TIER_HE[c.tier]}` : `פרק ${SM.ch + 1}/${SIM_ORDER.length} · ${t.he}`}</span>
+    <span class="simt">${SM.practice ? `תרגול · ${t.he} · ${SIM_TIER_HE[c.tier]}` : SM.diag ? `אבחון ${SM.ch + 1}/${SM.total} · ${t.he}` : `פרק ${SM.ch + 1}/${SIM_ORDER.length} · ${t.he}`}</span>
     ${SM.notimer ? '' : `<button id="simclock" class="simclock ${left < 60000 ? 'low' : ''} ${SM.hideClock ? 'hid' : ''}" onclick="simToggleClock()" title="הסתרת השעון">${SM.hideClock ? '⏱️' : simClock(left)}</button>`}</header>
     <nav class="simbar">${c.qs.map((x, i) => `<button class="${i === SM.qi ? 'cur' : ''} ${SM.ans[SM.ch][i] >= 0 ? 'ans' : ''}" onclick="simGoQ(${i})">${i + 1}${SM.pins[SM.ch + ':' + i] ? '📌' : ''}</button>`).join('')}</nav>
     <main class="lbody simbody">`;
@@ -334,7 +338,7 @@ function renderSimResult() {
   const best = simRecs(form.id).reduce((m, r) => Math.max(m, r.est), 0);
   let h = topBar() + `<main><div class="done simres"><div class="trophy">${pct >= 80 ? '🏆' : pct >= 55 ? '💪' : '📚'}</div>
     <div class="un">${form.he}${rec.notimer ? ' · בלי טיימר' : ''}</div>
-    <div class="simscore">${rec.est}</div><div class="simband">ציון אמירנט · ${simBand(rec.est)}</div>
+    <div class="simscore">${rec.est}</div><div class="simband">ציון משוער · ${simBand(rec.est)}</div>
     <div class="simgoal">${simNextGoal(rec, chs)}</div>
     <div class="kpis"><div class="kpi g"><b>${rec.ok}/${rec.n}</b><span>נכונות</span></div>
       <div class="kpi b"><b>${rec.by.sc[0]}/${rec.by.sc[1]}</b><span>השלמת משפטים</span></div>

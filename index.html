@@ -3,14 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>מילים לאמירנט</title>
-<meta name="description" content="לימוד מילות קישור ואוצר מילים לאמירנט בשיטת חזרה מרווחת, כמו בדואלינגו">
+<title>פטורנט · הכנה לאמירנט</title>
+<meta name="description" content="פטורנט: הכנה לאמירנט. אוצר מילים ומילות קישור בחזרה מרווחת, סימולציות אדפטיביות עם ציון משוער ותרגול לפי חלק. מוצר עצמאי, לא קשור למאל״ו.">
 <meta name="theme-color" content="#58cc02">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="מילות קישור">
+<meta name="apple-mobile-web-app-title" content="פטורנט">
+<meta name="application-name" content="פטורנט">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icons/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png" sizes="180x180">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap" rel="stylesheet">
@@ -191,16 +194,13 @@ main{flex:1;padding:16px 16px 100px}
 </head>
 <body>
 <div id="app"></div>
-<script src="words.js"></script>
-<script src="vocab.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
-<script src="sentences2.js" onerror="void 0"></script>
-<script src="sentences3.js" onerror="void 0"></script>
-<script src="sentences-more.js" onerror="void 0"></script>
+<!-- התוכן החינמי ב-free.js. התוכן המלא נטען רק למי שיש גישה (loader.js). אחר כך sim-app.js, pro.js ו-app.js -->
+<script src="vendor/supabase.js"></script>
 <script src="cloud.js"></script>
-<script src="sims.js"></script>
-<script src="practice.js" onerror="void 0"></script>
-<script src="sim-app.js"></script>
-<script src="app.js"></script>
+<script src="free.js"></script>
+<script src="loader.js"></script>
+<script>
+if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(() => {}));
+</script>
 </body>
 </html>

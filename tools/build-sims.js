@@ -33,18 +33,20 @@ function checkSet(set, at) {
     if (set.type === 'sc' && (q.q.match(/___/g) || []).length !== 1) e(a + ' needs exactly one ___');
     if (!q.ex || q.ex.includes('—')) e(a + ' explanation missing or has a long dash');
     if (!Array.isArray(q.w) || !q.w.every(x => Array.isArray(x) && x.length === 2 && x[0] && x[1])) e(a + ' words');
-    // בניסוח מחדש התשובה הנכונה לא בולטת באורך
-    if (set.type === 'rs') {
+    // בניסוח מחדש ובהבנת הנקרא התשובה הנכונה לא בולטת באורך
+    if (set.type === 'rs' || set.type === 'rc') {
       const w = q.o.map(words), other = Math.max(...w.filter((_, i) => i !== q.a));
-      if (w[q.a] > other + 2) e(`${a} correct restatement is ${w[q.a]} words vs ${other}`);
+      if (w[q.a] > other + 2) e(`${a} correct ${set.type} option is ${w[q.a]} words vs ${other}`);
     }
   });
 }
-// הנכונה היא הארוכה ביותר בלא יותר משליש משאלות הניסוח מחדש בקובץ
+// הנכונה היא הארוכה ביותר (לבדה) בלא יותר מ-30% משאלות הניסוח מחדש, ובנפרד משאלות הבנת הנקרא, בכל קובץ
 function checkLongest(list, at) {
-  const qs = list.filter(s => s.type === 'rs').flatMap(s => s.qs);
-  const longest = qs.filter(q => { const w = q.o.map(words); return w[q.a] > Math.max(...w.filter((_, i) => i !== q.a)); }).length;
-  if (qs.length && longest > Math.ceil(qs.length / 3)) errs.push(`${at}: correct restatement is the longest in ${longest}/${qs.length} questions`);
+  for (const type of ['rs', 'rc']) {
+    const qs = list.filter(s => s.type === type).flatMap(s => s.qs);
+    const longest = qs.filter(q => { const w = q.o.map(words); return w[q.a] > Math.max(...w.filter((_, i) => i !== q.a)); }).length;
+    if (qs.length && longest > Math.floor(qs.length * 3 / 10)) errs.push(`${at}: correct ${type} option is the longest in ${longest}/${qs.length} questions (max 30%)`);
+  }
 }
 
 for (const f of fs.readdirSync(src).sort()) {
