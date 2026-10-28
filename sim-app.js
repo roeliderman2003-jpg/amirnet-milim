@@ -225,8 +225,6 @@ function prFinish() {
 }
 function prCard() {
   if (typeof PRACTICE_SETS === 'undefined') return '';
-  // בגרסה החינמית אין תרגול לפי חלק (רק בתשלום). הפרקים של האבחון נטענים, אבל לא מוצעים כאן
-  if (!FULL) return `<h2 class="sec">🎯 תרגול לפי חלק</h2>` + (typeof lockCard === 'function' ? lockCard(`תרגול לפי חלק: השלמת משפטים, ניסוח מחדש והבנת הנקרא, ${TIER_META.practice} פרקים ב-4 רמות`) : '');
   const tier = prTier(), auto = prTierAuto(), done = prStore();
   let h = `<h2 class="sec">🎯 תרגול לפי חלק</h2><div class="card"><p>כל פעם פרק אחד מהמבחן, בזמן של אמירנט, ובסוף התשובות עם הסברים. השאלות כאן נפרדות מהסימולציות, כך שהציון בסימולציה נשאר אמין.</p>
     <div class="prtiers">${SIM_TIER_HE.map((t, i) => `<button class="${i === tier ? 'on' : ''}" onclick="prSetTier(${i})">${t}${i === auto ? ' ⭐' : ''}</button>`).join('')}</div>
@@ -238,8 +236,6 @@ function prCard() {
       <span class="ut"><span class="uh">${t.he}</span><span class="us">${t.n} שאלות · ${t.min} דקות</span>
       <span class="us">${mine.length}/${list.length} פרקים נעשו${pct === null ? '' : ` · ${pct}% נכונות`}</span></span></button>`;
   }
-  const prLocked = TIER_META.practice - Object.keys(PRACTICE_SETS).length;
-  if (prLocked > 0 && typeof lockCard === 'function') h += lockCard(`עוד ${prLocked} פרקי תרגול`).replace('class="card lockc"', 'class="card lockc" style="margin-top:10px"');
   return h + `<label class="sw"><input type="checkbox" ${simStore().pnt ? 'checked' : ''} onchange="simStore().pnt=this.checked;save()"> בלי טיימר (תרגול רגוע)</label></div>`;
 }
 function renderPrResult() {
@@ -284,7 +280,6 @@ function renderSimList() {
       ${last ? `<button class="simtr" onclick="simShowLast('${f.id}')">תוצאות והסברים</button>` : ''}</div>`;
   });
   h += `</div>`;
-  if (typeof lockCard === 'function' && TIER_META.sims > SIM_FORMS.length) h += lockCard(`עוד ${TIER_META.sims - SIM_FORMS.length} סימולציות מלאות`);
   const words = Object.values(st.words).sort((a, b) => b.at - a.at);
   if (words.length) {
     h += `<h2 class="sec">💪 מילים לחיזוק מהסימולציות (${words.length})</h2><div class="card">

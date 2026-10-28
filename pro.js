@@ -1,13 +1,9 @@
 'use strict';
-// ===== פטורנט: דף נחיתה, היכרות ואבחון, תשלום (Grow), נעילת תוכן, הגדרות חשבון ולוג =====
+// ===== פטורנט: דף נחיתה, היכרות ואבחון, הגדרות חשבון ולוג =====
 // נטען אחרי sim-app.js ולפני app.js (loader.js). משתמש בפונקציות של app.js רק בזמן ריצה.
-// FULL = התוכן המלא נטען (יש גישה פעילה). PLAN = מה שחזר מ-amirnet_me. TIER_META = כמה יש בגרסה המלאה (free.js)
+// הכול חינם ופתוח לכולם (רועי 28/10): free.js מכיל את כל התוכן. TIER_META = כמה יש (free.js)
 
 const BRAND = 'פטורנט', CONTACT = 'roe.liderman2003@gmail.com';
-// להצגה בלבד. המחיר שנגבה בפועל נקבע בשרת (supabase/functions/_shared/grow.ts), וחייב להיות זהה
-const PRICES = [
-  { id: 'life', sum: 99, he: 'לכל החיים', best: true },
-];
 
 // ----- לוג אירועים ושגיאות (לטבלה amirnet.events, עד 300 ביום למשתמש) -----
 let logN = 0;
@@ -27,22 +23,17 @@ function renderLanding(booting) {
   return `<main class="land">
     <section class="hero"><img src="icon.svg" alt="" class="logo"><h1>${BRAND}</h1>
       <p class="tag">הכנה ממוקדת לאמירנט: לפטור באנגלית, לרמה שצריך לתואר, או לעבור את סף הקבלה</p>
-      ${cta}<p class="fine">בלי כרטיס אשראי. ההתקדמות נשמרת בחשבון שלך, מכל טלפון או מחשב.</p></section>
+      ${cta}<p class="fine">חינם לגמרי, בלי כרטיס אשראי. ההתקדמות נשמרת בחשבון שלך, מכל טלפון או מחשב.</p></section>
     <section class="feat">
       <div><span>📚</span><b>${words} מילים שחוזרות באמירנט</b><p>מילות קישור ואוצר מילים בחזרה מרווחת, כמו בדואלינגו. 10 דקות ביום מזיזות ציון.</p></div>
       <div><span>📝</span><b>${m.sims} סימולציות אדפטיביות</b><p>במבנה של המבחן, עם שעון לכל פרק, ציון משוער בסולם 50-150 והסבר לכל שאלה.</p></div>
       <div><span>🎯</span><b>תרגול לפי חלק</b><p>השלמת משפטים, ניסוח מחדש והבנת הנקרא, ב-4 רמות קושי, ${m.practice} פרקים.</p></div>
       <div><span>🧭</span><b>אבחון ותוכנית אישית</b><p>מבחן קצר בהתחלה קובע את הרמה שלך, ויעד יומי שמתאים לתאריך המבחן.</p></div>
     </section>
-    <section class="price"><h2>כמה זה עולה</h2>
-      <div class="pgrid"><div class="pc"><b>חינם</b><span class="pp">0 ₪</span><p>5 יחידות בכל נושא, סימולציה מלאה אחת ואבחון התחלתי</p></div>
-      ${PRICES.map(p => `<div class="pc best"><b>גישה מלאה ${p.he}</b><span class="pp">${p.sum} ₪</span><p>תשלום אחד בלבד, בלי מנוי ובלי חיוב מתחדש. כל המילים, הסימולציות והתרגול לפי חלק</p></div>`).join('')}</div>
-      <p class="fine">אפשר לבטל תוך 14 יום לפי חוק הגנת הצרכן. פרטים ב<a href="terms.html">תנאי השימוש</a>.</p></section>
     <section class="faq"><h2>שאלות נפוצות</h2>
+      <details><summary>כמה זה עולה?</summary><p>כלום. כל המילים, הסימולציות והתרגול לפי חלק פתוחים לכולם, בלי תשלום ובלי מנוי.</p></details>
       <details><summary>הציון בסימולציה הוא הציון שאקבל?</summary><p>לא בהכרח. זו הערכה לפי התשובות וקושי השאלות, ולא תחזית או התחייבות. היא טובה כדי לראות התקדמות ואיזה חלק לחזק.</p></details>
       <details><summary>זה קשור למאל"ו או לאמירנט הרשמי?</summary><p>לא. ${BRAND} הוא מוצר עצמאי להכנה לבחינה, ואין לו קשר למרכז הארצי לבחינות ולהערכה. כל השאלות נכתבו במיוחד.</p></details>
-      <details><summary>מה ההבדל בין חינם לגישה מלאה?</summary><p>בחינם אפשר להכיר את השיטה: 5 יחידות בכל נושא, סימולציה מלאה אחת ואבחון. הגישה המלאה פותחת הכול, בתשלום אחד של ${PRICES[0].sum} ₪, לכל החיים.</p></details>
-      <details><summary>איך משלמים?</summary><p>בכרטיס אשראי או ביט, בעמוד התשלום המאובטח של Grow. חשבונית נשלחת למייל.</p></details>
       <details><summary>אפשר בטלפון?</summary><p>כן. אפשר גם להתקין למסך הבית ולתרגל בלי אינטרנט.</p></details>
     </section>
     ${booting ? '' : `<section class="hero"><button class="btn gbtn" onclick="googleLogin()">${G_LOGO}<span>להתחיל בחינם</span></button></section>`}
@@ -51,96 +42,6 @@ function renderLanding(booting) {
 function legalFoot() {
   return `<footer class="legal"><a href="terms.html">תנאי שימוש</a> · <a href="privacy.html">מדיניות פרטיות</a> · <a href="accessibility.html">הצהרת נגישות</a> · <a href="mailto:${CONTACT}">יצירת קשר</a>
     <p>${BRAND} הוא מוצר עצמאי ואינו קשור למרכז הארצי לבחינות ולהערכה (מאל"ו). «אמירנט» מוזכר רק כדי לתאר את הבחינה.</p></footer>`;
-}
-
-// ----- נעילה: מה שיש רק בגרסה המלאה -----
-function lockCard(what) {
-  if (window.FULL) return '';
-  return `<div class="card lockc"><b>🔒 ${what}</b><p>בגרסה המלאה: כל ${TIER_META.words.link + TIER_META.words.vocab} המילים, ${TIER_META.sims} סימולציות ו-${TIER_META.practice} פרקי תרגול.</p>
-    <button class="btn" onclick="openBuy('${what.replace(/'/g, '')}')">פתיחת הגישה המלאה · ${PRICES[0].sum} ₪ לכל החיים</button></div>`;
-}
-function lockedUnits() {
-  const n = TIER_META.units[topic] - UNITS.length, w = TIER_META.words[topic] - ITEMS.length;
-  return n > 0 ? lockCard(`עוד ${n} יחידות (${w} מילים) ב${TOPICS[topic].he}`) : '';
-}
-
-// ----- תשלום ב-Grow -----
-// PAY_LINK: קישור תשלום שיוצרים בממשק של Grow (99 ₪, תיאור שכולל «פטורנט», כתובת חזרה: האתר עם ?paid=1).
-// כשיש קישור, הרכישה עוברת דרכו והגישה נפתחת לפי המייל שהוזן בעמוד התשלום (webhook → grow-notify).
-// בלי קישור: דרך ה-API (grow-create), שדורש userId ו-pageCode מ-Grow
-const PAY_LINK = '';
-function openBuy(from) {
-  logEv('buy_open', { from: from || '' });
-  if (PAY_LINK) return openBuyLink();
-  const el = document.createElement('div');
-  el.className = 'modal';
-  el.innerHTML = `<div class="mbox buy"><b class="mt1">פתיחת הגישה המלאה</b>
-    <div class="plans">${PRICES.map(p => `<label class="bplan best"><input type="radio" name="plan" value="${p.id}" checked>
-      <span><b>גישה מלאה ${p.he}</b> · ${p.sum} ₪</span></label>`).join('')}</div>
-    <p class="fine">תשלום אחד, בלי מנוי ובלי חיוב מתחדש. הגישה נפתחת מיד אחרי התשלום.</p>
-    <label class="fld">שם מלא (לחשבונית)<input id="bname" autocomplete="name" value="${esc(ME.name || '')}"></label>
-    <label class="fld">טלפון נייד (Grow דורשים)<input id="bphone" type="tel" inputmode="tel" autocomplete="tel" placeholder="05X-XXXXXXX"></label>
-    <label class="sw"><input type="checkbox" id="bterms"> קראתי ואני מסכים ל<a href="terms.html" target="_blank">תנאי השימוש</a> ול<a href="privacy.html" target="_blank">מדיניות הפרטיות</a></label>
-    <div id="bmsg" class="lmsg"></div>
-    <div class="row"><button class="btn ghost" onclick="this.closest('.modal').remove()">ביטול</button><button class="btn" id="bgo" onclick="buy(this)">לתשלום מאובטח</button></div></div>`;
-  document.body.appendChild(el);
-}
-function openBuyLink() {
-  const el = document.createElement('div');
-  el.className = 'modal';
-  el.innerHTML = `<div class="mbox buy"><b class="mt1">פתיחת הגישה המלאה · ${PRICES[0].sum} ₪ לכל החיים</b>
-    <p class="fine">תשלום אחד, בלי מנוי ובלי חיוב מתחדש. אשראי או ביט, בעמוד המאובטח של Grow.</p>
-    <div class="card" style="margin:0"><b>חשוב: בעמוד התשלום כתוב את המייל הזה</b>
-      <div class="row" style="align-items:center;margin-top:6px"><span class="en" style="flex:1;font-weight:700">${esc(ME.email || '')}</span><button class="skip" onclick="navigator.clipboard&&navigator.clipboard.writeText('${esc(ME.email || '')}').then(()=>toast('הועתק'))">העתקה</button></div>
-      <p class="fine">לפי המייל אנחנו מזהים את התשלום ופותחים לך את הגישה. כתבת מייל אחר? הגישה תיפתח כשתיכנס עם חשבון Google של המייל ההוא, או כתוב לנו.</p></div>
-    <label class="sw"><input type="checkbox" id="bterms"> קראתי ואני מסכים ל<a href="terms.html" target="_blank">תנאי השימוש</a> ול<a href="privacy.html" target="_blank">מדיניות הפרטיות</a></label>
-    <div id="bmsg" class="lmsg"></div>
-    <div class="row"><button class="btn ghost" onclick="this.closest('.modal').remove()">ביטול</button><button class="btn" onclick="buyLink(this)">לתשלום מאובטח</button></div></div>`;
-  document.body.appendChild(el);
-}
-function buyLink(btn) {
-  const box = btn.closest('.mbox');
-  if (!box.querySelector('#bterms').checked) { box.querySelector('#bmsg').textContent = 'צריך לאשר את תנאי השימוש'; return; }
-  logEv('buy_click', { plan: 'life', via: 'link' });
-  try { localStorage.setItem('patornet-paying', String(Date.now())); } catch (e) {}
-  location.href = PAY_LINK;
-}
-async function buy(btn) {
-  const box = btn.closest('.mbox'), msg = t => { box.querySelector('#bmsg').textContent = t; };
-  const plan = (box.querySelector('input[name=plan]:checked') || {}).value;
-  const fullName = box.querySelector('#bname').value.trim(), phone = box.querySelector('#bphone').value.replace(/\D/g, '');
-  if (!plan) return msg('צריך לבחור תוכנית');
-  if (fullName.split(/\s+/).length < 2) return msg('צריך שם פרטי ושם משפחה');
-  if (!/^05\d{8}$/.test(phone.replace(/^972/, '0'))) return msg('צריך מספר נייד ישראלי, למשל 0501234567');
-  if (!box.querySelector('#bterms').checked) return msg('צריך לאשר את תנאי השימוש');
-  btn.disabled = true; msg('פותח את עמוד התשלום...');
-  logEv('buy_click', { plan });
-  try {
-    const { data, error } = await sb.functions.invoke('grow-create', { body: { plan, fullName, phone } });
-    if (error || !data || !data.url) throw error || new Error(data && data.error);
-    location.href = data.url;
-  } catch (e) {
-    btn.disabled = false;
-    msg(`לא הצלחנו לפתוח את עמוד התשלום. אפשר לנסות שוב, או לכתוב ל-${CONTACT}`);
-    logEv('buy_error', { m: String(e && e.message || e).slice(0, 200) });
-  }
-}
-// חזרה מ-Grow: מחכים שהשרת יאשר את התשלום (ההודעה מ-Grow מגיעה לשרת, לא לדפדפן), ואז טוענים מחדש עם התוכן המלא
-async function checkPaidReturn() {
-  const q = new URLSearchParams(location.search);
-  if (!q.has('paid')) return;
-  history.replaceState(null, '', location.pathname);
-  if (q.get('paid') !== '1') { toast('התשלום בוטל'); return; }
-  if (window.FULL) { toast('✓ הגישה המלאה פתוחה'); return; }
-  const el = document.createElement('div');
-  el.className = 'modal';
-  el.innerHTML = `<div class="mbox"><b class="mt1">מאשרים את התשלום...</b><p id="pwait">זה לוקח בדרך כלל כמה שניות.</p></div>`;
-  document.body.appendChild(el);
-  for (let i = 0; i < 40; i++) {
-    await new Promise(r => setTimeout(r, 3000));
-    try { const r = await sb.rpc('amirnet_me'); if (r.data && r.data.active) { logEv('paid', {}); location.reload(); return; } } catch (e) {}
-  }
-  el.querySelector('#pwait').innerHTML = `התשלום עוד לא אושר אצלנו. אם חויבת והגישה לא נפתחת תוך כמה דקות, כתוב ל-<a href="mailto:${CONTACT}">${CONTACT}</a> ונסדר מיד.<br><button class="btn" style="margin-top:12px" onclick="location.reload()">לבדוק שוב</button>`;
 }
 
 // ----- היכרות: 3 שאלות, ואז אבחון -----
@@ -202,8 +103,7 @@ function renderDiagResult() {
       ${days !== null && days > 0 ? ` נשארו ${days} ימים עד המבחן, והיעד היומי נקבע לפי זה.` : ''}</div></div>
     <p class="foot">האבחון קצר (${rec.n} שאלות) ולכן הציון הוא הערכה גסה בלבד, בטווח של כ-15 נקודות לכל כיוון. סימולציה מלאה תיתן הערכה טובה יותר.
       רמת התרגול הומלצה לפי התוצאה: ${SIM_TIER_HE[simStore().pt]}.</p>
-    <button class="btn big" onclick="SM=null;go('home')">להתחיל ללמוד</button>
-    ${window.FULL ? '' : `<button class="btn blue" onclick="openBuy('diag')">פתיחת הגישה המלאה · ${PRICES[0].sum} ₪ לכל החיים</button>`}`;
+    <button class="btn big" onclick="SM=null;go('home')">להתחיל ללמוד</button>`;
   h += simWeakBlock(weak) + simReview(chs, rec.ans);
   return h + '</main>' + navBar();
 }
@@ -212,15 +112,9 @@ function diagCard() {
   return `<div class="card diagc"><b>🧭 אבחון התחלתי</b><p>כ-14 דקות, 11 שאלות. נותן ציון משוער ובוחר בשבילך את רמת התרגול.</p><button class="btn blue" onclick="diagStart()">להתחיל אבחון</button></div>`;
 }
 
-// ----- הגדרות: גישה, ציון אמיתי, הורדת נתונים, מחיקת חשבון -----
+// ----- הגדרות: ציון אמיתי, הורדת נתונים, מחיקת חשבון -----
 function proSettings() {
-  const until = PLAN.valid_until ? new Date(PLAN.valid_until).toLocaleDateString('he-IL') : '';
-  return `<div class="card"><b>💳 הגישה שלך</b>
-      ${window.FULL ? `<p>✅ גישה מלאה${PLAN.valid_until && new Date(PLAN.valid_until).getFullYear() > 2100 ? ' לכל החיים' : ` עד ${until}`}.</p>`
-        : PLAN.active ? `<p>יש לך גישה מלאה עד ${until}, אבל התוכן המלא לא נטען${window.PAID_ERROR ? ' (שגיאה בטעינה)' : ''}. כדאי לרענן את הדף.</p><button class="btn" onclick="location.reload()">לרענן</button>`
-        : `<p>גרסה חינמית.</p><button class="btn" onclick="openBuy('settings')">פתיחת הגישה המלאה · ${PRICES[0].sum} ₪ לכל החיים</button>`}
-      </div>
-    <div class="card"><b>📮 כבר נבחנת באמירנט?</b><p>ספר לנו מה קיבלת. זה עוזר לנו לדייק את הציון המשוער לכולם.</p>
+  return `<div class="card"><b>📮 כבר נבחנת באמירנט?</b><p>ספר לנו מה קיבלת. זה עוזר לנו לדייק את הציון המשוער לכולם.</p>
       <div class="row"><input id="rscore" class="search" type="number" min="50" max="150" inputmode="numeric" placeholder="הציון (50-150)"><input id="rdate" class="search" type="date" max="${dayKey()}"></div>
       <button class="btn ghost" onclick="sendRealScore(this)">שליחה</button></div>
     <div class="card"><b>🔐 הנתונים שלך</b><p>אפשר להוריד עותק של כל ההתקדמות שלך, או למחוק את החשבון לגמרי.</p>
@@ -237,14 +131,13 @@ async function sendRealScore(btn) {
   btn.disabled = false;
 }
 function downloadMyData() {
-  const blob = new Blob([JSON.stringify({ account: { name: ME.name, email: ME.email }, plan: PLAN, progress: S, exported: new Date().toISOString() }, null, 1)], { type: 'application/json' });
+  const blob = new Blob([JSON.stringify({ account: { name: ME.name, email: ME.email }, progress: S, exported: new Date().toISOString() }, null, 1)], { type: 'application/json' });
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob); a.download = 'patornet-my-data.json'; a.click();
   setTimeout(() => URL.revokeObjectURL(a.href), 2000);
 }
 async function deleteMe() {
   if (!confirm('למחוק את החשבון וכל ההתקדמות? אי אפשר לשחזר.')) return;
-  if (!confirm('בטוח? גם גישה ששולמה תימחק (רשומת התשלום עצמה נשמרת לפי חוק, בלי המייל).')) return;
   try {
     const r = await rpc('amirnet_delete_me');
     if (!r.ok) throw r;
@@ -269,34 +162,19 @@ async function deleteMe() {
 .feat span{font-size:28px;grid-row:span 2}
 .feat b{font-size:16px}
 .feat p{margin:2px 0 0;font-size:14px;color:#4b4b4b;line-height:1.5}
-.price h2,.faq h2{font-size:20px;margin:0 0 10px;text-align:center}
-.pgrid{display:grid;gap:10px}
-.pc{border:2px solid var(--line);border-radius:16px;padding:12px 14px;position:relative}
-.pc.best{border-color:var(--g);box-shadow:0 3px 0 var(--g)}
-.pc i{position:absolute;top:-11px;left:12px;background:var(--g);color:#fff;font-style:normal;font-size:12px;font-weight:700;border-radius:99px;padding:2px 10px}
-.pc b{display:block;font-size:16px}
-.pp{font-size:26px;font-weight:800;color:var(--gd)}
-.pc p{margin:4px 0 0;font-size:14px;color:#4b4b4b}
+.faq h2{font-size:20px;margin:0 0 10px;text-align:center}
 .faq details{border:2px solid var(--line);border-radius:14px;padding:10px 14px;margin-bottom:8px}
 .faq summary{font-weight:700;cursor:pointer}
 .faq p{margin:8px 0 0;line-height:1.55;color:#4b4b4b;font-size:15px}
 .legal{text-align:center;font-size:13px;color:var(--mut);line-height:1.7;margin-top:8px}
 .legal a{color:var(--bd)}
 .legal p{margin:6px 0 0}
-.lockc{border-color:#ffd56b;background:#fffaeb}
-.lockc p{font-size:14px}
 .diagc{border-color:#bfe6fd;background:#f2fbff}
 .onb{padding:16px 16px 40px}
 .sub2{color:var(--mut);margin:0 4px 12px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
 .skip.on{background:#ddf4ff;border-color:var(--b)}
 .onb .search,.card .search{width:100%;margin-top:8px}
-.buy .plans{display:grid;gap:8px}
-.bplan{border:2px solid var(--line);border-radius:14px;padding:10px 12px;display:flex;gap:8px;align-items:center}
-.bplan.best{border-color:var(--g)}
-.bplan i{font-style:normal;font-size:12px;color:var(--gd);font-weight:700}
-.fld{display:flex;flex-direction:column;gap:4px;font-size:14px;font-weight:600}
-.fld input{border:2px solid var(--line);border-radius:12px;padding:10px;font:inherit;font-size:16px}
 `;
   const el = document.createElement('style');
   el.textContent = css;

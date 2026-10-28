@@ -629,7 +629,6 @@ function renderHome() {
   const cuLeft = cu >= 0 ? UNITS[cu].items.filter(w => !S.w[w.id] || !reached(w)).length : 0, cuNew = cu >= 0 && UNITS[cu].items.some(w => !S.w[w.id]);
   h += cu >= 0
     ? `<button class="btn big" onclick="startLesson(buildLearn(${cu}),'יחידה ${cu + 1}')">${cuNew ? `המשך ללמוד · יחידה ${cu + 1}` : `חיזוק יחידה ${cu + 1} · עוד ${cuLeft} מילים עד המעבר`}</button>`
-    : !FULL ? `<button class="btn big" onclick="openBuy('home')">סיימת את היחידות החינמיות! לפתיחת כל ${TIER_META.units[topic]} היחידות</button>`
     : `<button class="btn big" onclick="startLesson(buildReview(),'חזרה')">הכרת את כל המילים! עכשיו חזרה עד שליטה</button>`;
   h += `<div class="row"><button class="btn blue" onclick="startLesson(buildReview(),'חזרה')">🔁 חזרה${dueN ? ` (${dueN})` : ''}</button><button class="btn ghost" onclick="startLesson(buildWeak(),'נקודות חלשות')">🎯 חלשות${weakN ? ` (${weakN})` : ''}</button></div>` + diagCard();
   let lvl = 0;
@@ -643,7 +642,6 @@ function renderHome() {
       <span class="bar sm"><i style="width:${Math.round(inf.score * 100)}%;background:${inf.done ? 'var(--y)' : 'var(--g)'}"></i></span>
       <span class="us">${inf.intro < inf.total ? `${inf.intro}/${inf.total} מילים` : `${inf.passedN}/${inf.total} מוכרות${inf.passed ? ' ✓' : ''}`} · ${Math.round(inf.score * 100)}% שליטה</span></span></button>`;
   });
-  h += lockedUnits();
   h += `<p class="foot">יחידה נפתחת רק כשכל המילים ביחידה הקודמת «מוכרות» (עברו את שלב ${topic === 'link' ? 'הקבוצה' : 'התרגום לאנגלית'}). עד אז «המשך ללמוד» מחזק את היחידה הנוכחית. טעית? המילה תחזור בקרוב. צדקת? היא תחזור בעוד יותר זמן. ${topic === 'link' ? 'כל מילה עוברת מפירוש, לקבוצה ובסוף להשלמת משפטים.' : 'כל מילה עוברת מפירוש, לתרגום לאנגלית, למשפט, לכתיבת התרגום בעברית ובסוף לכתיבה באנגלית.'}</p>`;
   return h + '</main>' + navBar();
 }
@@ -877,8 +875,7 @@ async function boot() {
       await enter(data.session.user);
       if (location.search.includes('code=')) { history.replaceState(null, '', location.pathname); toast('שלום ' + ME.name.split(' ')[0] + '! 👋'); logEv('login', {}); }
       if (!S.onb) view = 'onb';
-      logEv('open', { paid_error: window.PAID_ERROR || null });
-      setTimeout(checkPaidReturn, 50);
+      logEv('open', {});
     }
   } catch (e) {}
   booting = false;

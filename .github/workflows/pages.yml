@@ -1,5 +1,5 @@
-# מפרסם לאתר רק את הקבצים הציבוריים. התוכן המלא (words.js, vocab.js, sims.js וכו') לא עולה לאתר:
-# הוא מגיע רק למי ששילם, מתוך Supabase Storage (paid.js). כדי שזה יעבוד: Settings → Pages → Source: GitHub Actions
+# מפרסם לאתר רק את קבצי האתר (בלי קבצי המקור). כל התוכן נמצא ב-free.js, פתוח לכולם.
+# כדי שזה יעבוד: Settings → Pages → Source: GitHub Actions
 name: Deploy site
 on:
   push:

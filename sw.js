@@ -1,7 +1,7 @@
 /* פטורנט – service worker (offline support).
  * Bump VERSION whenever the precache list or this file's logic changes;
  * day-to-day content updates arrive anyway via network-first. */
-const VERSION = 'v2'; // התוכן המלא לא כאן: loader.js שומר אותו במטמון נפרד (patornet-paid) רק למי שיש גישה
+const VERSION = 'v3'; // v3: כל התוכן ב-free.js, פתוח לכולם
 const CACHE = `petornet-${VERSION}`;
 const FONT_CACHE = `petornet-fonts-${VERSION}`;
 
