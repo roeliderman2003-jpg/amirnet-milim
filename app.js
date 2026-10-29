@@ -217,11 +217,46 @@ function beep(ok) {
   }
   if (!ok && navigator.vibrate) navigator.vibrate(120);
 }
-function speak(t, force) {
-  if ((!S.sound && !force) || !window.speechSynthesis) return;
-  try { speechSynthesis.cancel(); const u = new SpeechSynthesisUtterance(t.replace(/\.\.\./g, ', ')); u.lang = 'en-US'; u.rate = 0.9; speechSynthesis.speak(u); } catch (e) {}
+// בוחרים קול אנגלי במפורש: בלי זה אנדרואיד/ווינדוס בעברית מקריאים לפעמים בקול העברי של המכשיר, ובמק עלול לצאת קול «מצחיק» (רועי 29/10)
+const VOICE_BAD = /espeak|albert|bad news|bahh|bells|boing|bubbles|cellos|deranged|good news|hysterical|jester|organ|superstar|trinoids|whisper|wobble|zarvox|junior|ralph|fred|kathy|grandma|grandpa|eddy|flo|reed|rocko|sandy|shelley/i;
+let VOICE = null;
+function voiceScore(v) {
+  const lang = (v.lang || '').replace('_', '-').toLowerCase(), n = v.name || '';
+  if (!lang.startsWith('en') || VOICE_BAD.test(n)) return -1;
+  let s = lang === 'en-us' ? 30 : lang === 'en-gb' ? 20 : 10;
+  if (/natural|neural|online/i.test(n)) s += 40;          // Edge: Aria / Jenny / Guy
+  if (/premium|enhanced/i.test(n)) s += 35;               // iOS / מק אחרי הורדה
+  if (/google/i.test(n)) s += 25;                         // כרום
+  if (/samantha|ava|allison|zoe|evan|nathan/i.test(n)) s += 15;
+  if (/aria|jenny|guy|zira|david/i.test(n)) s += 5;
+  return s;
 }
-function say(i) { speak(ALL[i].en, true); }
+function pickVoice() {
+  if (!window.speechSynthesis) return;
+  VOICE = speechSynthesis.getVoices().reduce((b, v) => voiceScore(v) > (b ? voiceScore(b) : -1) ? v : b, null);
+}
+if (window.speechSynthesis) { pickVoice(); speechSynthesis.addEventListener?.('voiceschanged', pickVoice); }
+// מה נאמר בפועל: קיצורים באותיות, ופעלים שבלי «to» המנוע קורא בהטעמה של שם העצם (CONduct במקום conDUCT)
+const SAY_AS = { 'i.e.': 'I. E.', 'e.g.': 'E. G.' };
+const VERB_STRESS = new Set(['advocate', 'alternate', 'attribute', 'conduct', 'convict', 'duplicate']);
+function spoken(w) {
+  const t = String(w.en || w), k = t.toLowerCase();
+  if (SAY_AS[k]) return SAY_AS[k];
+  if (w.pos === 'v' && VERB_STRESS.has(k)) return 'to ' + t;
+  return t.replace(/\.\.\./g, ', ');
+}
+function speak(w, force) {
+  if ((!S.sound && !force) || !window.speechSynthesis) return;
+  try {
+    if (!VOICE) pickVoice();
+    const u = new SpeechSynthesisUtterance(spoken(w));
+    u.lang = VOICE ? VOICE.lang.replace('_', '-') : 'en-US'; if (VOICE) u.voice = VOICE; u.rate = 0.9;
+    // ספארי באייפון זורק לפעמים דיבור שמתחיל מיד אחרי cancel
+    if (speechSynthesis.speaking || speechSynthesis.pending) { speechSynthesis.cancel(); setTimeout(() => speechSynthesis.speak(u), 60); }
+    else speechSynthesis.speak(u);
+  } catch (e) {}
+}
+function say(i) { speak(ALL[i], true); }
 
 // ===== חזרה מרווחת =====
 function introduce(w) { S.w[w.id] = { b: 0, due: now(), ok: 0, bad: 0, intro: now() }; syncTwin(w); const d = today(), k = freshKey(w.topic); d[k] = (d[k] || 0) + 1; save(); }
@@ -433,7 +468,7 @@ function prepare() {
   if (it.k === 'intro') {
     if (!S.w[it.w.id]) { introduce(it.w); L.fresh++; }
     L.cur = { k: 'intro' };
-    setTimeout(() => speak(it.w.en), 250);
+    setTimeout(() => speak(it.w), 250);
     return;
   }
   if (it.k === 'match') {
@@ -462,7 +497,7 @@ function prepare() {
     const pickI = pick(cand);
     st.ls = pickI; st.lh = [...used, pickI].slice(-8); c.sent = all[pickI];
   }
-  if (type === 'typeHe') setTimeout(() => speak(w.en), 250);
+  if (type === 'typeHe') setTimeout(() => speak(w), 250);
   L.cur = c;
 }
 // מילה שכבר מכירים: עוברת ל«מילים שאני מכיר» ויוצאת מהשיעור
@@ -497,7 +532,7 @@ function answerOpt(i) {
   if (!ok) noteConfusion(w, c, c.opts[i]);
   grade(w, c.type, ok);
   beep(ok);
-  if (ok) speak(w.en);
+  if (ok) speak(w);
   render();
 }
 function checkType() {
@@ -509,7 +544,7 @@ function checkType() {
   if (!r.ok) c.undo = { st: Object.assign({}, S.w[w.id]), day: Object.assign({}, today()), xp: S.xp, L: { ok: L.ok, bad: L.bad, xp: L.xp } };
   grade(w, c.type, r.ok);
   beep(r.ok);
-  if (r.ok) speak(w.en);
+  if (r.ok) speak(w);
   render();
 }
 // «לא יודע» בשאלת כתיבה: במקום לנחש סתם, רואים את התשובה. נחשב כטעות, אז המילה חוזרת לתרגול (רועי 21/10)
@@ -519,7 +554,7 @@ function typeDontKnow() {
   const w = L.q[0].w;
   c.ans = { typed: '', ok: false, idk: true };
   grade(w, c.type, false);
-  speak(w.en);
+  speak(w);
   render();
 }
 // «התכוונתי לזה»: באמירנט לא בודקים איות (כל המילים כתובות), אז טעות כתיב שלא זוהתה לבד נחשבת נכונה (רועי 21/10)
@@ -530,7 +565,7 @@ function typeMeant() {
   S.w[w.id] = u.st; S.days[dayKey()] = u.day; S.xp = u.xp; Object.assign(L, u.L);
   grade(w, c.type, true);
   c.ans = { typed: c.ans.typed, ok: true, typo: true, meant: true }; c.undo = null;
-  beep(true); speak(w.en);
+  beep(true); speak(w);
   render();
 }
 function next() {
@@ -549,7 +584,7 @@ function matchTap(side, idx) {
   if (!c || c.k !== 'match') return;
   const w = (side === 'l' ? c.left : c.right)[idx];
   if (c.done.has(w.id)) return;
-  if (!c.sel || c.sel.side === side) { c.sel = { side, idx, w }; if (side === 'l') speak(w.en); render(); return; }
+  if (!c.sel || c.sel.side === side) { c.sel = { side, idx, w }; if (side === 'l') speak(w); render(); return; }
   if (c.sel.w.id === w.id) {
     c.done.add(w.id); c.sel = null; beep(true);
     if (c.done.size === c.left.length) {
