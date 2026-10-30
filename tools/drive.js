@@ -119,6 +119,8 @@ async function runAll(n = 60, wrongRate = 0.15) {
   { const P = []; pickTopic('link');
     const pool = flashWords('all'), w = pool.find(x => TWIN[x.id]) || pool[0], srs = () => JSON.stringify(S.w, (k, v) => k === 'c' ? undefined : v), before = srs();
     chk(pool.length && pool.every(x => S.w[x.id] && !isKnown(x)), 'במאגר יש מילה שלא תורגלה או מסומנת כמוכרת', P);
+    chk(new Set(pool.map(x => x.topic)).size === 2, 'הכרטיסיות לא מערבבות את שני הנושאים', P);
+    chk(new Set(pool.map(x => x.en.toLowerCase().trim())).size >= pool.length - 3 && !pool.some(x => TWIN[x.id] && pool.includes(TWIN[x.id])), 'מילה מופיעה פעמיים', P);
     go('flash'); htmlOk(P, 'flash');
     startFlash('all'); chk(F.q.length === pool.length, 'לא כל המילים בחפיסה', P); htmlOk(P, 'flashplay');
     F.q = [w.i, ...F.q.filter(i => i !== w.i)]; render();

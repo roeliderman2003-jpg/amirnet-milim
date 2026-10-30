@@ -834,7 +834,7 @@ function dictList() {
 }
 
 // ===== כרטיסיות =====
-// אנגלית בצד אחד, תרגום בשני, ודירוג שנכנס לרשימה לחזרה. המאגר: כל המילים שתורגלו בנושא הנוכחי (רועי 30/10)
+// אנגלית בצד אחד, תרגום בשני, ודירוג שנכנס לרשימה לחזרה. המאגר: כל המילים שתורגלו, משני הנושאים יחד (רועי 31/10)
 // הדירוג נשמר כתו אחד בתוך רשומת המילה (S.w[id].c), כי לשמירה בשרת יש מגבלת גודל. שאר הרשומה, לוח החזרה המרווחת, לא משתנה
 const RATES = {
   k: { ic: '✅', he: 'יודע', cls: 'k-good' },
@@ -844,8 +844,9 @@ const RATES = {
 let F = null, flashOpen = null;
 const rateOf = w => (S.w[w.id] || {}).c || null;
 function flashWords(key) {
-  if (key === 'all') return practiced();
-  return practiced().filter(w => rateOf(w) === (key === 'new' ? null : key));
+  // מילה שנמצאת בשני הנושאים מופיעה פעם אחת
+  const pool = ALL.filter(w => S.w[w.id] && !isKnown(w) && !(w.topic === 'vocab' && TWIN[w.id]));
+  return key === 'all' ? pool : pool.filter(w => rateOf(w) === (key === 'new' ? null : key));
 }
 function setCard(w, c) { const s = ws(w); if (c) s.c = c; else delete s.c; syncTwin(w); save(); }
 function flashTitle(key) { return key === 'all' ? 'כל המילים שתורגלו' : key === 'new' ? 'עוד לא דירגתי' : RATES[key].he; }
@@ -879,8 +880,8 @@ function flashUndo() {
 function flashQuit() { F = null; go('flash'); }
 function renderFlash() {
   const pool = flashWords('all'), fresh = flashWords('new');
-  let h = topBar() + `<main>${topicTabs()}<h2 class="sec">🃏 כרטיסיות</h2>`;
-  if (!pool.length) return h + `<div class="card"><p>עוד אין כאן מילים שתרגלת ב${TOPICS[topic].he}. אחרי השיעור הראשון הן יחכו לך כאן.</p><button class="btn" onclick="go('home')">לשיעור</button></div></main>` + navBar();
+  let h = topBar() + `<main><h2 class="sec">🃏 כרטיסיות</h2>`;
+  if (!pool.length) return h + `<div class="card"><p>עוד אין כאן מילים שתרגלת. אחרי השיעור הראשון הן יחכו לך כאן.</p><button class="btn" onclick="go('home')">לשיעור</button></div></main>` + navBar();
   h += `<button class="btn big" onclick="startFlash('all')">כל המילים שתורגלו (${pool.length})</button>`;
   if (fresh.length && fresh.length < pool.length) h += `<button class="btn ghost" onclick="startFlash('new')">רק מה שעוד לא דירגתי (${fresh.length})</button>`;
   h += '<h2 class="sec">הרשימות שלי</h2>';
@@ -891,7 +892,7 @@ function renderFlash() {
     if (open) h += its.map(w => `<div class="dw" onclick="say(${w.i})"><b class="en">${esc(disp(w.en))}</b><span class="dhe">${esc(w.he)}</span><span>🔊</span></div>`).join('');
     h += '</div>';
   }
-  return h + `<p class="foot">המילים כאן הן כל מה שכבר תרגלת ב${TOPICS[topic].he}, בלי «מילים שאני מכיר». דירוג חדש מחליף את הקודם, והמילה עוברת לרשימה החדשה.</p></main>` + navBar();
+  return h + `<p class="foot">המילים כאן הן כל מה שכבר תרגלת, ממילות הקישור ומאוצר המילים יחד, בלי «מילים שאני מכיר». דירוג חדש מחליף את הקודם, והמילה עוברת לרשימה החדשה.</p></main>` + navBar();
 }
 function renderFlashPlay() {
   const total = F.q.length;
