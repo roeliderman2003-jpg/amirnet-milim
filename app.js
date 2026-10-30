@@ -629,7 +629,7 @@ function topBar() {
 }
 function navBar() {
   const b = (v, ic, t) => `<button class="${view === v ? 'on' : ''}" onclick="go('${v}')"><span class="ic">${ic}</span>${t}</button>`;
-  return `<nav class="nav">${b('home', '🏠', 'לימוד')}${b('sims', '📝', 'מבחנים')}${b('dict', '📖', 'מילון')}${b('settings', '⚙️', 'הגדרות')}</nav>`;
+  return `<nav class="nav">${b('home', '🏠', 'לימוד')}${b('sims', '📝', 'מבחנים')}${b('flash', '🃏', 'כרטיסיות')}${b('dict', '📖', 'מילון')}${b('settings', '⚙️', 'הגדרות')}</nav>`;
 }
 // בחירת נושא: מילות קישור / אוצר מילים
 function topicTabs() {
@@ -833,6 +833,91 @@ function dictList() {
   return h || '<p class="foot">לא נמצאו מילים</p>';
 }
 
+// ===== כרטיסיות =====
+// אנגלית בצד אחד, תרגום בשני, ודירוג שנכנס לרשימה לחזרה. המאגר: כל המילים שתורגלו בנושא הנוכחי (רועי 30/10)
+// הדירוג נשמר כתו אחד בתוך רשומת המילה (S.w[id].c), כי לשמירה בשרת יש מגבלת גודל. שאר הרשומה, לוח החזרה המרווחת, לא משתנה
+const RATES = {
+  k: { ic: '✅', he: 'יודע', cls: 'k-good' },
+  s: { ic: '🤔', he: 'קצת מכיר', cls: 'k-some' },
+  n: { ic: '❌', he: 'לא יודע', cls: 'k-no' },
+};
+let F = null, flashOpen = null;
+const rateOf = w => (S.w[w.id] || {}).c || null;
+function flashWords(key) {
+  if (key === 'all') return practiced();
+  return practiced().filter(w => rateOf(w) === (key === 'new' ? null : key));
+}
+function setCard(w, c) { const s = ws(w); if (c) s.c = c; else delete s.c; syncTwin(w); save(); }
+function flashTitle(key) { return key === 'all' ? 'כל המילים שתורגלו' : key === 'new' ? 'עוד לא דירגתי' : RATES[key].he; }
+function startFlash(key) {
+  // קודם מה שעוד לא דורג ומה שפחות ידוע, ובתוך כל קבוצה סדר אקראי
+  const rank = w => ({ n: 1, s: 2, k: 3 }[rateOf(w)] || 0);
+  const q = shuffle(flashWords(key)).sort((a, b) => rank(a) - rank(b)).map(w => w.i);
+  if (!q.length) return;
+  F = { key, q, pos: 0, flip: false, undo: null, tally: { k: 0, s: 0, n: 0 } };
+  go('flashplay');
+}
+function flashFlip() {
+  F.flip = !F.flip;
+  document.getElementById('fc').classList.toggle('flip', F.flip);
+  document.getElementById('ff').classList.toggle('wait', !F.flip);
+}
+function flashRate(r) {
+  const w = ALL[F.q[F.pos]];
+  F.undo = { old: rateOf(w), r };
+  setCard(w, r);
+  F.tally[r]++; F.pos++; F.flip = false;
+  render(); window.scrollTo(0, 0);
+}
+function flashUndo() {
+  if (!F.undo) return;
+  F.pos--; F.tally[F.undo.r]--; F.flip = true;
+  setCard(ALL[F.q[F.pos]], F.undo.old);
+  F.undo = null;
+  render();
+}
+function flashQuit() { F = null; go('flash'); }
+function renderFlash() {
+  const pool = flashWords('all'), fresh = flashWords('new');
+  let h = topBar() + `<main>${topicTabs()}<h2 class="sec">🃏 כרטיסיות</h2>`;
+  if (!pool.length) return h + `<div class="card"><p>עוד אין כאן מילים שתרגלת ב${TOPICS[topic].he}. אחרי השיעור הראשון הן יחכו לך כאן.</p><button class="btn" onclick="go('home')">לשיעור</button></div></main>` + navBar();
+  h += `<button class="btn big" onclick="startFlash('all')">כל המילים שתורגלו (${pool.length})</button>`;
+  if (fresh.length && fresh.length < pool.length) h += `<button class="btn ghost" onclick="startFlash('new')">רק מה שעוד לא דירגתי (${fresh.length})</button>`;
+  h += '<h2 class="sec">הרשימות שלי</h2>';
+  for (const k of ['n', 's', 'k']) {
+    const its = flashWords(k), r = RATES[k], open = flashOpen === k && its.length;
+    h += `<div class="card flist"><div class="fl-h"><span class="fl-t">${r.ic} ${r.he} <small>${its.length}</small></span>
+      ${its.length ? `<button class="skip" onclick="flashOpen=flashOpen==='${k}'?null:'${k}';render()">${open ? 'להסתיר' : 'הצג מילים'}</button><button class="skip fl-go" onclick="startFlash('${k}')">לתרגל</button>` : ''}</div>`;
+    if (open) h += its.map(w => `<div class="dw" onclick="say(${w.i})"><b class="en">${esc(disp(w.en))}</b><span class="dhe">${esc(w.he)}</span><span>🔊</span></div>`).join('');
+    h += '</div>';
+  }
+  return h + `<p class="foot">המילים כאן הן כל מה שכבר תרגלת ב${TOPICS[topic].he}, בלי «מילים שאני מכיר». דירוג חדש מחליף את הקודם, והמילה עוברת לרשימה החדשה.</p></main>` + navBar();
+}
+function renderFlashPlay() {
+  const total = F.q.length;
+  if (F.pos >= total) {
+    const again = ['n', 's'].map(k => [k, flashWords(k).length]).filter(x => x[1]);
+    return `<main class="done"><div class="trophy">🃏</div><h2>סיימת ${total} כרטיסיות</h2>
+      <div class="kpis"><div class="kpi g"><b>${F.tally.k}</b><span>יודע</span></div><div class="kpi b"><b>${F.tally.s}</b><span>קצת מכיר</span></div><div class="kpi y"><b>${F.tally.n}</b><span>לא יודע</span></div></div>
+      ${again.map(([k, n]) => `<button class="btn ${k === 'n' ? '' : 'ghost'}" onclick="startFlash('${k}')">לעבור שוב על «${RATES[k].he}» (${n})</button>`).join('')}
+      <button class="btn ghost" onclick="flashQuit()">חזרה לכרטיסיות</button></main>`;
+  }
+  const w = ALL[F.q[F.pos]], was = rateOf(w);
+  const spk = `<button class="spk" aria-label="השמע" onclick="event.stopPropagation();say(${w.i})">🔊</button>`;
+  return `<div class="lhead"><button class="x" aria-label="יציאה" onclick="flashQuit()">✕</button><div class="bar"><i style="width:${F.pos / total * 100}%"></i></div><b class="fc-n">${F.pos + 1}/${total}</b></div>
+    <div class="lbody">
+      <div class="fcw"><div id="fc" class="fc ${F.flip ? 'flip' : ''}" role="button" tabindex="0" aria-label="הפוך כרטיס" onclick="flashFlip()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();flashFlip()}">
+        <div class="fcf"><div class="nc-word"><span class="en">${esc(disp(w.en))}</span>${spk}</div><div class="nc-tip">לחיצה הופכת לתרגום</div></div>
+        <div class="fcf fcb"><div class="nc-word fc-small"><span class="en">${esc(disp(w.en))}</span>${spk}</div><div class="nc-mean">${esc(w.he)}</div>${chip(w.cat)}
+          <div class="nc-ex"><div class="en">${fillSentence(w.s, w.en)}</div><div class="exhe">${esc(w.sh)}</div></div>
+          ${was ? `<div class="nc-tip">בפעם הקודמת: ${RATES[was].he}</div>` : ''}</div>
+      </div></div>
+      ${F.undo ? '<button class="linkbtn fc-undo" onclick="flashUndo()">↩️ חזרה למילה הקודמת</button>' : ''}
+    </div>
+    <div id="ff" class="lfoot know3 ${F.flip ? '' : 'wait'}"><button class="btn blue ff-hint" onclick="flashFlip()">הפוך לתרגום</button>
+      <div class="k3">${Object.entries(RATES).map(([k, r]) => `<button class="kbtn ${r.cls}" onclick="flashRate('${k}')"><span class="ki">${r.ic}</span><b>${r.he}</b></button>`).join('')}</div></div>`;
+}
+
 function renderSettings() {
   return topBar() + `<main><h2 class="sec">⚙️ הגדרות</h2>
     <div class="card"><label class="sw"><input type="checkbox" ${S.sound ? 'checked' : ''} onchange="S.sound=this.checked;save()"> צלילים והקראה של המילים</label></div>
@@ -930,7 +1015,7 @@ function toast(t) {
 function render() {
   const app = document.getElementById('app');
   app.className = view;
-  app.innerHTML = !ME ? renderLogin() : view === 'onb' ? renderOnb() : view === 'lesson' && L ? renderLesson() : view === 'sims' && window.renderSims ? renderSims() : view === 'dict' ? renderDict() : view === 'settings' ? renderSettings() : renderHome();
+  app.innerHTML = !ME ? renderLogin() : view === 'onb' ? renderOnb() : view === 'lesson' && L ? renderLesson() : view === 'sims' && window.renderSims ? renderSims() : view === 'flash' ? renderFlash() : view === 'flashplay' && F ? renderFlashPlay() : view === 'dict' ? renderDict() : view === 'settings' ? renderSettings() : renderHome();
   const ty = document.getElementById('ty');
   if (ty && !ty.disabled) setTimeout(() => ty.focus(), 50);
 }

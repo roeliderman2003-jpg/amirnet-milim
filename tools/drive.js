@@ -115,6 +115,23 @@ async function runAll(n = 60, wrongRate = 0.15) {
     chk(old.w[TWIN[l1.id].id] && old.w[TWIN[l1.id].id].b === 4, 'התקדמות ישנה לא עברה לתאומה', P);
     chk(old.w[l2.id] && old.w[l2.id].known, '«מכיר» לא עבר לתאומה', P);
     out.twins = { pairs: pairs.length / 2, introducedPairs: pairs.filter(id => S.w[id]).length / 2, problems: P }; }
+  // כרטיסיות: רק מילים שתורגלו, דירוג נכנס לרשימה (וגם לתאומה), דירוג חדש מחליף, ביטול מחזיר, בלי לגעת בחזרה המרווחת
+  { const P = []; pickTopic('link');
+    const pool = flashWords('all'), w = pool.find(x => TWIN[x.id]) || pool[0], srs = () => JSON.stringify(S.w, (k, v) => k === 'c' ? undefined : v), before = srs();
+    chk(pool.length && pool.every(x => S.w[x.id] && !isKnown(x)), 'במאגר יש מילה שלא תורגלה או מסומנת כמוכרת', P);
+    go('flash'); htmlOk(P, 'flash');
+    startFlash('all'); chk(F.q.length === pool.length, 'לא כל המילים בחפיסה', P); htmlOk(P, 'flashplay');
+    F.q = [w.i, ...F.q.filter(i => i !== w.i)]; render();
+    flashFlip(); chk(document.getElementById('fc').classList.contains('flip') && !document.getElementById('ff').classList.contains('wait'), 'ההיפוך לא עבד', P);
+    flashRate('n'); chk(rateOf(w) === 'n' && flashWords('n').includes(w), 'הדירוג לא נכנס לרשימה', P);
+    if (TWIN[w.id]) chk(rateOf(TWIN[w.id]) === 'n', 'הדירוג לא עבר לתאומה', P);
+    flashUndo(); chk(rateOf(w) === null && F.pos === 0 && F.tally.n === 0, 'הביטול לא החזיר', P);
+    flashRate('s'); chk(rateOf(w) === 's' && !flashWords('n').includes(w), 'דירוג חדש לא החליף', P);
+    while (F.pos < F.q.length) flashRate('k');
+    htmlOk(P, 'flash-done'); chk(flashWords('new').length === 0, 'נשארו מילים לא מדורגות', P);
+    chk(srs() === before, 'הכרטיסיות שינו את החזרה המרווחת', P);
+    flashOpen = 's'; flashQuit(); htmlOk(P, 'flash-lists');
+    out.flash = { pool: pool.length, problems: P }; for (const id in S.w) delete S.w[id].c; flashOpen = null; go('home'); }
   out.simItem = typeof simAppItem === 'function' ? [!!simAppItem('although'), !!simAppItem('abundant')] : 'no sims';
   out.errors = window.__errors.slice(0, 20);
   out.savedTopic = window.__saved && window.__saved.topic;
