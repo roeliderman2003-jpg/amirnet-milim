@@ -1,0 +1,23 @@
+# שומר את שרת הנתונים (Supabase lidercontent-prod) פעיל: בתוכנית החינם פרויקט בלי שימוש כשבוע מושהה,
+# ואז הכניסה לאמירנט והשמירה בענן של הפסיכומטרי נופלות (קרה ב-19/11/26). קריאה אחת ביום, קריאה בלבד.
+# הריפו ציבורי, ולכן הדקות של Actions חינם. GitHub מכבה משימה מתוזמנת אחרי 60 יום בלי commit בריפו.
+name: Keep database awake
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+permissions: {}
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Read-only call to the database
+        run: |
+          code=$(curl -s -m 30 -o out.txt -w "%{http_code}" -X POST \
+            "https://jezxhibenekurxymwxrb.supabase.co/rest/v1/rpc/psycho_load" \
+            -H "apikey: sb_publishable_xGZcm2vZSZFN-mesHdnArg_vxRKIh3S" \
+            -H "Content-Type: application/json" \
+            -d '{"p_id":"0000000000000000000000000000000000000000000000000000000000000000"}')
+          echo "HTTP $code: $(cat out.txt)"
+          test "$code" = "200"
